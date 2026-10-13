@@ -1,0 +1,76 @@
+[
+  {
+    "original": "AVERBACAO.mp4",
+    "bytes": 5033624752,
+    "parts": [
+      {
+        "name": "AVERBACAO.mp4.part001",
+        "bytes": 1610612736,
+        "sha256": "6bb501b5c464158f9e4a7ec6adcf8505acf8994fed57f22f8344848a50eb1ad1"
+      },
+      {
+        "name": "AVERBACAO.mp4.part002",
+        "bytes": 1610612736,
+        "sha256": "b86745ae5aa13cbf88c0139dd7e765fbc0a8007660aa6856158ea479b704216c"
+      },
+      {
+        "name": "AVERBACAO.mp4.part003",
+        "bytes": 1610612736,
+        "sha256": "dcd4fbbaf4c7e9765c5e2c6ed3529601b10ce11262a1700239b57f47b80b9397"
+      },
+      {
+        "name": "AVERBACAO.mp4.part004",
+        "bytes": 201786544,
+        "sha256": "e240867af5238fd195f82c2d818f2d1668372c97b168b67a4e197355f8198c4a"
+      }
+    ]
+  },
+  {
+    "original": "dESAVERBAÇÃO.mp4",
+    "bytes": 2531378142,
+    "parts": [
+      {
+        "name": "dESAVERBAÇÃO.mp4.part001",
+        "bytes": 1610612736,
+        "sha256": "40d90b320472059c25d78678030bae1ec361c7de5ebb48bbe053a70f33052f90"
+      },
+      {
+        "name": "dESAVERBAÇÃO.mp4.part002",
+        "bytes": 920765406,
+        "sha256": "55e2fb9ea7328f9bf79f1094a0857f7460be4ac930191f1886bb43fbeff68263"
+      }
+    ]
+  },
+  {
+    "original": "Gravando 2026-10-07 132428.mp4",
+    "bytes": 3151497131,
+    "parts": [
+      {
+        "name": "Gravando 2026-10-07 132428.mp4.part001",
+        "bytes": 1610612736,
+        "sha256": "413e67e8f4d996bcefd0f7a972dab623f3772fb3124e306977002ef3981c76c4"
+      },
+      {
+        "name": "Gravando 2026-10-07 132428.mp4.part002",
+        "bytes": 1540884395,
+        "sha256": "0d802553618b4ec44b5e9dc4e7ca5bba742973ec9d9c32de8ecc0a6b09bd586d"
+      }
+    ]
+  },
+  {
+    "original": "recalculo.mp4",
+    "bytes": 2434086989,
+    "parts": [
+      {
+        "name": "recalculo.mp4.part001",
+        "bytes": 1610612736,
+        "sha256": "4dfb48902df2599ec7ba2b7a9d9b6b246eb38362789d0d76c80199dd7111d112"
+      },
+      {
+        "name": "recalculo.mp4.part002",
+        "bytes": 823474253,
+        "sha256": "5bf1add1dc2bd94d2342fbdc2adf36bf6e305d49f5815c53255204c2ae271f26"
+      }
+    ]
+  }
+]
