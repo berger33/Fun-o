@@ -61,9 +61,11 @@
     informações no documento.
 
 13. **Que evidência visual sustenta a regra de exibição? (00:03:18; 00:05:03; 00:06:18)**
-    A **Figura 1** do documento — "Cédula de Crédito bancário INSS refinanciamento – Página 1" — com
-    o bloco de contratos/operação/credor/saldo devedor e a indicação da página de reprot. Os valores
-    de exemplo foram **omitidos** nesta extração (ver `incertezas.md`, item 3).
+    A **Figura 1** do documento — "Cédula de Crédito bancário INSS refinanciamento – Página 1"
+    ([`capturas/03-figura1-exemplo-ccb.png`](capturas/03-figura1-exemplo-ccb.png)) — com o bloco de
+    exemplo: `(i) Contrato/Operação Original: 9048421935;9048421936;9048421937;9048421938`,
+    `(ii) Credor Original: Teste INSS` e `(iii) Saldo Devedor (estimado): 1.897,00`, além da
+    indicação da página de reprot.
 
 14. **O que não ficou claro na reunião? (00:04:37 – 00:05:47; 00:07:32)**
     (a) a distinção/parametrização do credor por operação; (b) a divisão "21, 3 e 16" do plano de

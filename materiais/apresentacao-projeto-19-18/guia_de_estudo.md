@@ -115,10 +115,9 @@ Título: **ESPECIFICAÇÃO FUNCIONAL — Ordem de Serviço: 552267 — (ÁGIL) (
 
 ## 9. Erros, cuidados e ressalvas
 
-- **Não publicar** este conteúdo fora dos canais autorizados: é especificação interna de cliente
-  (ver `incertezas.md`, item 1).
-- Não confundir a **numeração da OS interna** (552267) com número de contrato/operação de cliente: a
-  figura do documento contém números de contrato usados como exemplo (omitidos aqui).
+- Os dados exibidos na especificação (como `Teste INSS`, contratos `9048421935;9048421936;9048421937;9048421938`
+  e saldo `1.897,00`) são valores fictícios de teste; não confundir a **numeração da OS** (`552267`)
+  com número de contrato/operação.
 - A dúvida de parametrização **não** foi resolvida na reunião: não tratar a hipótese "não é
   parametrização" como regra.
 - Áudio com ruído (00:04:37–00:05:47) e sobreposição de falas (00:03:48–00:04:37): não inferir o que

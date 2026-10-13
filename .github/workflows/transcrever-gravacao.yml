@@ -17,6 +17,10 @@ on:
     branches:
       - "transcricao/**"
       - "transferencia/**"
+      - "arena/**"
+    paths:
+      - "transferencia/tarefa.json"
+      - ".github/workflows/transcrever-gravacao.yml"
 
 permissions:
   contents: write
@@ -46,7 +50,10 @@ jobs:
           caminho = "transferencia/tarefa.json"
           if os.path.exists(caminho):
               with open(caminho, encoding="utf-8") as fh:
-                  padrao.update(json.load(fh))
+                  lido = json.load(fh)
+                  padrao.update(lido)
+                  if "ramo_entrega_transcricao" in lido:
+                      padrao["ramo_entrega"] = lido["ramo_entrega_transcricao"]
           for chave in ("arquivo", "modelo", "idioma", "ramo_entrega"):
               print(f"{chave}={padrao[chave]}")
           PY

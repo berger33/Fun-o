@@ -32,6 +32,10 @@ on:
   push:
     branches:
       - "transferencia/**"
+      - "arena/**"
+    paths:
+      - "transferencia/tarefa.json"
+      - ".github/workflows/transferir-gravacao.yml"
 
 permissions:
   contents: write
@@ -63,12 +67,13 @@ jobs:
           # entradas do workflow_dispatch têm prioridade quando preenchidas
           if os.environ.get("ARQUIVO_INPUT", "").strip():
               dados["arquivo"] = os.environ["ARQUIVO_INPUT"].strip()
+          ramo = dados.get("ramo_entrega_partes") or dados.get("ramo_entrega") or "entrega/piloto-19-18"
           if os.environ.get("RAMO_INPUT", "").strip():
-              dados["ramo_entrega"] = os.environ["RAMO_INPUT"].strip()
+              ramo = os.environ["RAMO_INPUT"].strip()
           if os.environ.get("BLOCO_INPUT", "").strip():
               dados["tamanho_bloco_mb"] = os.environ["BLOCO_INPUT"].strip()
           print(f"ARQUIVO={dados.get('arquivo', 'Apresentação projeto 19-18.mp4')}")
-          print(f"RAMO_ENTREGA={dados.get('ramo_entrega', 'entrega/piloto-19-18')}")
+          print(f"RAMO_ENTREGA={ramo}")
           print(f"BLOCO_MB={dados.get('tamanho_bloco_mb', '64')}")
           PY
         env:

@@ -1,6 +1,8 @@
 {
-  "arquivo": "Gravando 2026-07-07 155307.mp4",
+  "arquivo": "Gravando 2026-10-07 152044.mp4",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega": "entrega/transcricao-gravando-2026-07-07-155307"
+  "tamanho_bloco_mb": "64",
+  "ramo_entrega_partes": "entrega/partes-gravando-2026-10-07-152044",
+  "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-10-07-152044"
 }

@@ -14,6 +14,9 @@
 | **CQ** | Controle de qualidade | PROCESSOS | idem — 00:07:04 |
 | **Plano de teste** | Artefato de teste com esforço citado ("21, 3 e 16") | PROCESSOS | idem — 00:07:32 |
 | **Reprot** | Referência de página do documento de teste ("Página 3 REPROT - CÉDULA") | SISTEMAS | idem — 00:06:18 |
+| **EPT** | Artefato de especificação/plano de teste vinculado a um item ágil (ex.: `570023 - [EPT]` vinculado a `558139 - [ÁGIL]`), utilizado para guiar a execução dos testes | PROCESSOS | [`gravando-2026-07-07-155307`](gravando-2026-07-07-155307/glossario.md) — 00:00:01, 00:00:07, 00:00:51 |
+| **Margem de tolerância (parâmetro)** | Parâmetro funcional alvo dos itens `558139` e `570023` no contexto C6 Consig | NEGOCIO | idem — 00:00:00, 00:00:07 |
+| **Base / UDL Base ("subir na base, mudar a pastinha")** | Ambiente compartilhado de banco/arquivos usado nos testes de CQ, cuja alteração requer verificar antes se outro operador já modificou | INFRA_E_ACESSO | idem — 00:00:00, 00:01:18 – 00:01:24 |
 
 > Definições completas, com todas as fontes e timestamps, em
 > [`apresentacao-projeto-19-18/glossario.md`](apresentacao-projeto-19-18/glossario.md).

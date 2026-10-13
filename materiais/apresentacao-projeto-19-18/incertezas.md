@@ -7,24 +7,20 @@
 # Incertezas e pendências — Apresentação projeto 19-18.mp4
 
 
-## 1. Autorização de divulgação — **bloqueia a publicação** (pendência humana)
+## 1. Autorização de divulgação — resolvida pelo responsável (2026-10-13)
 
-- A gravação expõe: **nome de cliente/instituição** (nos títulos da reunião e do documento),
-  **número de ordem de serviço interna**, **nomes completos e fotos de participantes**, **nomes de
-  canais/times internos**, além do **conteúdo integral de uma especificação funcional restrita**
-  (tela compartilhada do documento com regras de negócio e figura com números de contrato de
-  exemplo) e de **estimativas internas de esforço**.
-- O repositório `berger33/Fun-o` é **público**. O `README.md` e o `PLANO_EXTRACAO_ARENA.md` exigem
-  autorização do responsável pela divulgação antes de publicar documentação interna restrita,
-  informação de clientes ou fluxos confidenciais.
-- **Decisão tomada (conservadora):** os documentos derivados existem e estão completos, mas ficam
-  **fora do Git**, em `fun-o-privado/materiais/apresentacao-projeto-19-18/`, até autorização
-  explícita. No repositório público foi criado apenas um aviso neutro em
-  `materiais/apresentacao-projeto-19-18/LEIA-ME.md` e o estado `em revisão` em `STATUS.md` —
-  **sem revelar conteúdo, cliente ou nomes**.
-- **Pergunta ao responsável:** (a) o material **descritivo** (sem cliente, sem nomes, sem números de
-  contrato e sem o conteúdo literal da especificação) pode ser publicado? (b) o material **completo**
-  deve ir para algum repositório privado/ambiente interno em vez deste?
+- A gravação exibe: **nome de cliente/instituição** (`C6 Consig`, nos títulos da reunião e do documento),
+  **número de ordem de serviço interna** (`OS 552267`), **nomes de participantes** e **nomes de
+  canais/times internos**, além do **conteúdo de uma especificação funcional** (tela compartilhada
+  do documento com regras de negócio e figura com números de contrato de exemplo) e de **estimativas
+  internas de esforço**.
+- Em **2026-10-13**, o responsável pela divulgação declarou que **todos os dados da gravação são
+  fictícios/de teste** e autorizou a publicação dos materiais derivados no repositório, instruindo a
+  preservar o nome **Função Sistemas** e os **nomes dos operadores** (como Michelle, Zé, Felipe,
+  Gabriel, William, Jonas).
+- **Cuidado mantido:** imagens de **câmeras/fotos de participantes**, painel lateral de chat com
+  avatares e barra de tarefas pessoal foram **recortados/omitidos** das capturas publicadas em
+  [`capturas/`](capturas/).
 
 ## 2. Tornar público é irreversível — inclusive em ramos apagados
 
@@ -34,18 +30,17 @@
   **anônima** (sem token), pela API e pelo fetch do GitHub — comportamento padrão de repositórios
   GitHub para commits de ramos removidos. Ou seja, apagar o ramo **não** removeu os bytes do servidor.
 - **Recomendação:** solicitar ao GitHub Support, por escrito, a remoção dos objetos órfãos
-  (referenciando o repositório, o SHA do commit e a data), e/ou avaliar a exclusão do repositório e a
-  recriação a partir do histórico atual. Ver `../../../Fun-o/materiais/PRIVACIDADE_E_RETENCAO.md` no repositório.
+  (referenciando o repositório, o SHA do commit e a data), se desejado. Ver [`../PRIVACIDADE_E_RETENCAO.md`](../PRIVACIDADE_E_RETENCAO.md).
 - **Atenção:** os objetos de Git LFS usados pelo repositório (os vídeos) permanecem igualmente
   acessíveis por quem tiver acesso ao repositório — a *remoção* de LFS também é irreversível e deve
   ser avaliada com o responsável.
 
-## 3. Valores de exemplo da Figura 1 **omitidos**
+## 3. Valores de exemplo da Figura 1 (dados fictícios de teste)
 
-- A figura do documento mostra uma tabela de exemplo com **números de contrato/operação**, **valores
-  de saldo devedor** e textos jurídicos. Foram **deliberadamente omitidos** dos derivados por poderem
-  conter dados reais de cliente. Se forem valores fictícios (comum em especificações), o responsável
-  pode autorizar a inclusão; até lá, permanecem fora.
+- A figura do documento ([`capturas/03-figura1-exemplo-ccb.png`](capturas/03-figura1-exemplo-ccb.png))
+  mostra uma tabela de exemplo com **(i) Contrato/Operação Original:** `9048421935;9048421936;9048421937;9048421938`,
+  **(ii) Credor Original:** `Teste INSS` e **(iii) Saldo Devedor (estimado):** `1.897,00`. Conforme
+  confirmação do responsável em 2026-10-13, tratam-se de valores fictícios de teste da especificação.
 
 ## 4. Conciliar módulo x escopo
 

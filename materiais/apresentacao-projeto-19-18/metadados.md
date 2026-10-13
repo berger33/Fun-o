@@ -55,6 +55,8 @@
 
 ## Estado de publicação
 
-- **Categoria de publicação:** **restrita** — aguardando autorização (ver `incertezas.md`, item 1).
-- Este conjunto de documentos está em área privada (`fun-o-privado/`), **fora do Git**.
+- **Categoria de publicação:** **autorizada pelo responsável em 2026-10-13** (dados declarados
+  fictícios/de teste; nome **Função Sistemas** e nomes dos operadores preservados; sem imagens de
+  pessoas).
+- **Estado no `STATUS.md`:** `concluído` (auditoria do roteiro aprovada com 0 falhas).
 - Nenhum segredo foi copiado para qualquer arquivo derivado, inclusive este.

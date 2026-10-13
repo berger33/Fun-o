@@ -4,31 +4,28 @@ Atualizado em **2026-10-13**.
 
 ## Conflitos entre gravações
 
-Nenhum conflito **de conteúdo** identificado até o momento (nenhuma gravação analisada). Há, porém, duplicidade de **arquivo**:
+Nenhum conflito **de regras de negócio** entre gravações distintas foi identificado nos 2 vídeos concluídos até o momento (`Apresentação projeto 19-18.mp4` e `Gravando 2026-07-07 155307.mp4`). Há duplicidade de **arquivo** confirmada no manifesto:
 
 ### Duplicidades confirmadas por objeto LFS (2026-10-13)
 
-| Arquivos | Objeto LFS (oid, prefixo) | Evidência | Ação proposta |
+| Arquivos | Objeto LFS (oid, prefixo) | Evidência | Ação adotada |
 |---|---|---|---|
-| `Gravando 2026-08-24 124650.mp4` = `Gravando 2026-08-24 161729.mp4` | `1b9b6afd8564…` | Mesmo `oid` nos dois ponteiros versionados (`tools/checar_manifesto.py`) | Analisar uma única vez e apontar a segunda entrada para o mesmo material; o plano proíbe fundir gravações **diferentes**, não proíbe tratar cópias idênticas como uma. |
+| `Gravando 2026-08-24 124650.mp4` = `Gravando 2026-08-24 161729.mp4` | `1b9b6afd8564…` | Mesmo `oid` nos dois ponteiros versionados (`tools/checar_manifesto.py`) | Analisar uma única vez e apontar a segunda entrada para o mesmo material; o plano proíbe fundir gravações **diferentes**, não cópias byte-idênticas. |
 | `Jonas EPT explicação.mp4` = `jonas2309.mp4` | `f99bd7955fbc…` | Mesmo `oid` nos dois ponteiros versionados | Idem. |
 
-Consequência para a contagem: 24 arquivos no manifesto correspondem a **22 conteúdos distintos**. Confirmar com o responsável se as duas cópias devem continuar listadas — nenhum valor sensível está envolvido nesta conclusão (apenas hashes já públicos nos ponteiros).
+Consequência para a contagem: 24 arquivos no manifesto correspondem a **22 conteúdos distintos**.
 
-## Pendências de validação
+## Pendências técnicas e operacionais registradas por vídeo
 
-1. **Autorização de divulgação — piloto `Apresentação projeto 19-18.mp4`** *(bloqueia a conclusão)*.
-   A extração está **completa** (fonte verificada: 179956679 bytes, SHA-256 `ac4b6621…`), mas a
-   revisão de privacidade e confidencialidade identificou **documentação interna restrita e
-   informação de cliente**, além de **nomes e imagens de pessoas**. Por isso os derivados ficaram em
-   área privada, fora do Git, e o vídeo está `em revisão` — **sem revelar o conteúdo nesta
-   pendência**. Decisão necessária do responsável pela divulgação: autorizar versão descritiva
-   sanitizada ou manter privado. Ver [`apresentacao-projeto-19-18/LEIA-ME.md`](apresentacao-projeto-19-18/LEIA-ME.md).
-2. **Retenção de objetos no GitHub** — o ramo temporário da transferência foi apagado, mas o commit
-   **continua acessível por SHA** (verificado, inclusive sem autenticação). Avaliar pedido de
-   remoção ao GitHub Support. Ver [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md).
-3. **Acesso ao Git LFS no ambiente Arena** — o download direto segue bloqueado; o contorno por ponte
-   temporária funcionou para um vídeo e pode ser reutilizado com os cuidados do item 2. Ver
-   [`BLOQUEIO_LFS_ARENA.md`](BLOQUEIO_LFS_ARENA.md).
-2. **Pesos de transcrição automática** — hospedados em `huggingface.co`, fora da lista de hosts permitidos no Arena; avaliar liberação ou uso de `SRT/VTT` fornecido.
-3. **Possíveis duplicidades de fonte** — `Jonas EPT explicação.mp4` × `jonas2309.mp4` (318342582 bytes cada) e `Gravando 2026-08-24 124650.mp4` × `Gravando 2026-08-24 161729.mp4` (644238242 bytes cada): confirmar se são gravações distintas antes da extração, pois o plano proíbe fundir fontes diferentes.
+1. **`Apresentação projeto 19-18.mp4`** (ver [`apresentacao-projeto-19-18/incertezas.md`](apresentacao-projeto-19-18/incertezas.md)):
+   - **Parametrização/identificação do credor por operação (00:03:34 – 00:06:45):** ficou em aberto na reunião verificar no fonte/query (suspeita de convênio × informação da proposta).
+   - **Conciliação de escopo de módulos (00:00:00 × 00:05:03):** item 1.3 cita **Web Autorizador**, item I cita **SIC Minutas do Autorizador** e a fala cita **API de formalização / jornada de contratação**.
+   - **Distribuição de horas do plano de teste (00:07:32):** valores falados `"21, 3 e 16"` sem explicação da quebra.
+2. **`Gravando 2026-07-07 155307.mp4`** (ver [`gravando-2026-07-07-155307/incertezas.md`](gravando-2026-07-07-155307/incertezas.md)):
+   - **Procedimento técnico de "subir na base" e "mudar a pastinha" (00:01:18 – 00:01:24):** apenas mencionado verbalmente na ligação; deverá ser complementado quando demonstrado nos vídeos mais longos da fila.
+   - **Sigla falada "IPT" × tag escrita `[EPT]` (00:00:01 – 00:00:51):** o ASR transcreveu "IPT", enquanto a tela mostra `[EPT]` no item `570023`.
+
+## Diretrizes já validadas pelo responsável
+
+- **Dados de teste e nomes (resolvido em 2026-10-13):** o responsável confirmou que todos os dados exibidos nas gravações são fictícios/de teste e autorizou a publicação dos materiais derivados preservando o nome **Função Sistemas** e os **nomes dos operadores** (Jonas, William, Gabriel, Michelle, Felipe, Zé, Santana, etc.), mantendo a omissão de fotos/câmeras de pessoas.
+- **Retenção de objetos no GitHub:** os ramos temporários de ponte são removidos imediatamente após a coleta; detalhes em [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md).

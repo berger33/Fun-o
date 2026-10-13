@@ -144,10 +144,11 @@ subtítulo **"(ÁGIL) (I) Atualização Novo Modelo CCB"**, aplicação com o t�
   saldo devedor são exibidas uma abaixo da outra no documento. — 1.3 LIMITES DO ESCOPO: As
   implementações descritas neste escopo serão disponibilizadas para o módulo **Web Autorizador**."
 - **[00:03:18 / 00:05:03, p. 3/4]** Figura de exemplo de CCB de refinanciamento com bloco de valores
-  de contratos/operação/credor/saldo devedor (valores omitidos nesta transcrição — ver
-  `incertezas.md`, item 3). Legendas: "Figura 1 - Cédula de Crédito bancário INSS refinanciamento -
-  Página 1" e "Página 3 REPROT - CÉDULA". Abaixo: "**Funcionamento:**" com os itens I a IV
-  (transcritos em `guia_de_estudo.md` §3).
+  fictícios de teste (`(i) Contrato/Operação Original: 9048421935;9048421936;9048421937;9048421938`,
+  `(ii) Credor Original: Teste INSS`, `(iii) Saldo Devedor (estimado): 1.897,00` — ver
+  [`capturas/03-figura1-exemplo-ccb.png`](capturas/03-figura1-exemplo-ccb.png)). Legendas: "Figura 1 -
+  Cédula de Crédito bancário INSS refinanciamento - Página 1" e "Página 3 REPROT - CÉDULA". Abaixo:
+  "**Funcionamento:**" com os itens I a IV (transcritos em `guia_de_estudo.md` §3).
 - **[00:07:40, painel de chat]** Conversa da reunião com mensagens e lista de participantes —
   conteúdo **omisso** nesta transcrição (nomes de pessoas): ver `incertezas.md`, item 2.
 
