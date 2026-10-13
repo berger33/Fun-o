@@ -1,11 +1,11 @@
 {
-  "arquivo": "Jonas EPT explicação.mp4",
-  "slug": "jonas-ept-explicacao",
+  "arquivo": "Gravando 2026-07-08 182343.mp4",
+  "slug": "gravando-2026-07-08-182343",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_partes": "entrega/partes-jonas-ept-explicacao",
-  "ramo_entrega_transcricao": "entrega/transcricao-jonas-ept-explicacao",
+  "ramo_entrega_partes": "entrega/partes-gravando-2026-07-08-182343",
+  "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-07-08-182343",
   "tamanho_bloco_mb": "64",
-  "lote": "proximo menor da fila apos Gravando 2026-09-22 111258 (concluido no PR #3). jonas2309.mp4 e duplicata exata por oid (f99bd795...): analisar uma vez. Ramos entrega/* dos disparos anteriores (arena/e81830e4 e arena/3755a69f) ja nao existem no remoto (verificado por git ls-remote em 2026-10-13); re-disparo necessario",
+  "lote": "proximo menor da fila apos Jonas EPT explicacao (concluido no lote 7, PR #4/#5). Lote 8: gravando-2026-07-08-182343 (356602844 bytes, oid 07a7166a...). Ramos entrega/* inexistentes no remoto em 2026-10-13 (git ls-remote); este push dispara a ponte",
   "sessao": "arena/e3de2b35-fun-o"
 }

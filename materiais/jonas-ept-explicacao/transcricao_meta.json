@@ -1,0 +1,13 @@
+{
+  "arquivo": "Jonas EPT explicação.mp4",
+  "bytes": 318342582,
+  "sha256": "f99bd7955fbcb8960a2356d727233b00fe4847ba145baf7d96f938e8005a894e",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 625.24,
+  "segmentos": 91,
+  "duracao_transcricao_s": 296.1,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
