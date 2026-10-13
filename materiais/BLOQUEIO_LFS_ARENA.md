@@ -90,3 +90,4 @@ Sem os bytes do vídeo não é possível: extrair áudio, transcrever com timest
 ## 6. Pendência humana
 
 - Decisão necessária: escolher um dos caminhos do item 5 (ação de plataforma/infraestrutura ou fornecimento do arquivo/transcrição). Sem isso, o piloto "Apresentação projeto 19-18.mp4" **não pode** ser analisado e **não deve** ser marcado como concluído.
+- **2026-10-13 — encaminhamento escolhido pelo responsável: liberar o egress na plataforma** (opção 1). Aguardando a liberação dos hosts mínimos `objects.githubusercontent.com` e `github-cloud.githubusercontent.com` para repetir o comando do item 1 e retomar a análise. Nova verificação de conectividade em 2026-10-13: hosts ainda inacessíveis (`SSL_ERROR_SYSCALL`).
