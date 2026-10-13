@@ -68,3 +68,12 @@ Ao encontrar conteúdo restrito (documentação interna e informação de client
   - transcrição, 2º disparo: `842507e4e7e051220553138ce29fa1230a84afd6`;
   - 1º disparo: SHAs não registrados (ramos publicados ~20:25–20:28 UTC e apagados ~20:33 UTC de 2026-10-13).
 - **Recomendação:** somar esses SHAs ao pedido de remoção do §4 (GitHub Support) e manter a diretriz de coletar/apagar o mais rápido possível em cada novo disparo.
+
+### 5.1. Aditivo — atividade de sessão paralela (2026-10-13, ~22:50–23:00 UTC)
+
+Após a fusão do PR #4 (lote `Jonas EPT explicação.mp4`), outra branch de sessão (`arena/e3de2b35-fun-o`) re-disparou a ponte do mesmo vídeo e ramos `entrega/*` foram publicados e apagados novamente — inclusive os do próximo vídeo (`Gravando 2026-07-08 182343.mp4`), criados pelo commit de encerramento deste lote. Commits órfãos adicionais, **confirmados como retidos** (acessíveis via API em 2026-10-13):
+
+- `4299f397f1c54d880e7deaef91d88a0defe0e5c9` — `entrega/partes-gravando-2026-07-08-182343` (**bytes de vídeo** do próximo da fila);
+- `bb31e7d7235ecbf2eb4146775a3862333ecdf276` — republicação da transcrição de `Jonas EPT explicação.mp4` (texto, mesmo conteúdo do `842507e4…` já registrado).
+
+O ramo de **partes** do jonas re-publicado pela sessão paralela (run 38480441190) também carrega bytes de vídeo; o SHA dele não pôde ser capturado nesta sessão (ramo apagado antes da observação). **Incluir todos no pedido de remoção ao GitHub Support** e redobrar a coordenação para não disparar a ponte do mesmo vídeo em sessões simultâneas.
