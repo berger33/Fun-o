@@ -50,14 +50,6 @@ jobs:
         with:
           lfs: false
 
-      - name: Baixar somente o objeto solicitado
-        run: |
-          set -euo pipefail
-          echo "arquivo alvo: $ARQUIVO"
-          git lfs install --local
-          git lfs pull --include="$ARQUIVO"
-          ls -l "$ARQUIVO"
-
       - name: Ler tarefa (se houver)
         run: |
           set -euo pipefail
@@ -83,6 +75,14 @@ jobs:
           ARQUIVO_INPUT: ${{ github.event.inputs.arquivo }}
           RAMO_INPUT: ${{ github.event.inputs.ramo_entrega }}
           BLOCO_INPUT: ${{ github.event.inputs.tamanho_bloco_mb }}
+
+      - name: Baixar somente o objeto solicitado
+        run: |
+          set -euo pipefail
+          echo "arquivo alvo: $ARQUIVO"
+          git lfs install --local
+          git lfs pull --include="$ARQUIVO"
+          ls -l "$ARQUIVO"
 
       - name: Conferir tamanho e SHA-256 contra manifesto e ponteiro
         run: |
