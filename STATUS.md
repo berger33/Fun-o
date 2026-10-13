@@ -14,15 +14,15 @@ Atualizado em **2026-10-13** (Arena). Estados: `pendente`, `em análise`, `em re
 | explicacao mesa c6.mp4 | explicacao-mesa-c6 | 1982033592 | pendente | — | — | — | — |
 | Gravando 2026-07-07 155307.mp4 | gravando-2026-07-07-155307 | 56195092 | pendente | — | — | — | — |
 | Gravando 2026-07-08 182343.mp4 | gravando-2026-07-08-182343 | 356602844 | pendente | — | — | — | — |
-| Gravando 2026-08-24 124650.mp4 | gravando-2026-08-24-124650 | 644238242 | pendente | — | — | — | — |
-| Gravando 2026-08-24 161729.mp4 | gravando-2026-08-24-161729 | 644238242 | pendente | — | — | — | Mesmo tamanho de `Gravando 2026-08-24 124650.mp4`; conferir se são gravações distintas antes de analisar. |
+| Gravando 2026-08-24 124650.mp4 | gravando-2026-08-24-124650 | 644238242 | pendente | — | — | — | **Duplicado exato** de `Gravando 2026-08-24 161729.mp4` (mesmo objeto LFS `1b9b6afd…`): analisar uma vez e remeter a outra. |
+| Gravando 2026-08-24 161729.mp4 | gravando-2026-08-24-161729 | 644238242 | pendente | — | — | — | **Duplicado exato** de `Gravando 2026-08-24 124650.mp4` (mesmo objeto LFS `1b9b6afd…`). |
 | Gravando 2026-09-22 111258.mp4 | gravando-2026-09-22-111258 | 297627736 | pendente | — | — | — | — |
 | Gravando 2026-09-23 164626.mp4 | gravando-2026-09-23-164626 | 1087239062 | pendente | — | — | — | — |
 | Gravando 2026-10-06 110907.mp4 | gravando-2026-10-06-110907 | 770228772 | pendente | — | — | — | — |
 | Gravando 2026-10-07 132428.mp4 | gravando-2026-10-07-132428 | 3151497131 | pendente | — | — | — | Dividido em 2 partes; exige reconstrução seletiva. |
 | Gravando 2026-10-07 152044.mp4 | gravando-2026-10-07-152044 | 134290125 | pendente | — | — | — | — |
-| Jonas EPT explicação.mp4 | jonas-ept-explicacao | 318342582 | pendente | — | — | — | Mesmo tamanho de `jonas2309.mp4`; conferir duplicidade antes de analisar. |
-| jonas2309.mp4 | jonas2309 | 318342582 | pendente | — | — | — | Mesmo tamanho de `Jonas EPT explicação.mp4`; conferir duplicidade antes de analisar. |
+| Jonas EPT explicação.mp4 | jonas-ept-explicacao | 318342582 | pendente | — | — | — | **Duplicado exato** de `jonas2309.mp4` (mesmo objeto LFS `f99bd795…`): analisar uma vez. |
+| jonas2309.mp4 | jonas2309 | 318342582 | pendente | — | — | — | **Duplicado exato** de `Jonas EPT explicação.mp4` (mesmo objeto LFS `f99bd795…`). |
 | Liberação padrão - Glauco.mp4 | liberacao-padrao-glauco | 181378373 | pendente | — | — | — | — |
 | MCB - QISTA.mp4 | mcb-qista | 543851523 | pendente | — | — | — | — |
 | MICHELLE CTC PORTABILIDADE REFIN.mp4 | michelle-ctc-portabilidade-refin | 473540507 | pendente | — | — | — | — |
@@ -33,17 +33,18 @@ Atualizado em **2026-10-13** (Arena). Estados: `pendente`, `em análise`, `em re
 
 ## Resumo da coleção
 
-- Vídeos no manifesto: **24** (conferidos linha a linha contra os arquivos/ponteiros presentes no repositório).
+- Vídeos no manifesto: **24** (conferidos linha a linha contra os arquivos/ponteiros presentes no repositório pelo `tools/checar_manifesto.py`).
+- Conteúdos distintos: **22** — dois pares são cópias exatas (mesmo objeto LFS), confirmado por oid: `Gravando 2026-08-24 124650/161729.mp4` e `Jonas EPT explicação.mp4`/`jonas2309.mp4`.
 - Concluídos: **0**.
 - Em análise: **0**.
 - Em revisão: **0**.
 - Pendentes: **24** — nenhum vídeo analisado até o momento (a extração depende de download LFS funcional; ver bloqueio abaixo).
-- Último lote/commit publicado: índice da biblioteca, registro do bloqueio LFS e ferramenta `tools/baixar_objeto_lfs.py` (2026-10-13).
+- Último lote/commit publicado: índice da biblioteca, registro do bloqueio LFS e ferramentas `tools/baixar_objeto_lfs.py`, `tools/checar_manifesto.py`, `tools/validar_materiais.py` + workflow de auditoria (2026-10-13).
 - Recheque de egress em 2026-10-13 (2ª rodada): hosts do LFS seguem bloqueados; **nada baixado**, nenhuma gravação analisada.
 - Pendências de validação humana:
   1. **Bloqueio de egress LFS no Arena** para o piloto `Apresentação projeto 19-18.mp4` — nenhum byte do vídeo pode ser baixado (cliente `git-lfs` ausente; `objects.githubusercontent.com`/`github-cloud.githubusercontent.com` inacessíveis). Detalhes, comandos e erro exato em [`materiais/BLOQUEIO_LFS_ARENA.md`](materiais/BLOQUEIO_LFS_ARENA.md). Requer ação de infraestrutura/plataforma ou entrega do arquivo/transcrição.
   2. Transcrição automática também depende de pesos de modelo em host não permitido (`huggingface.co` bloqueado); avaliar liberação ou fornecimento de `SRT/VTT`.
-  3. Possíveis duplicidades de gravação com o mesmo tamanho (`Jonas EPT explicação.mp4` × `jonas2309.mp4`; `Gravando 2026-08-24 124650.mp4` × `Gravando 2026-08-24 161729.mp4`) — confirmar antes de extrair para não fundir fontes distintas.
+  3. Duplicidades **confirmadas por oid** (cópias exatas): `Gravando 2026-08-24 124650.mp4` = `Gravando 2026-08-24 161729.mp4`; `Jonas EPT explicação.mp4` = `jonas2309.mp4`. Plano: analisar uma vez e referenciar a partir da outra entrada; confirmar com o responsável apenas se as duas cópias devem permanecer no manifesto.
   4. Nenhum conteúdo foi publicado em `materiais/<slug>/`; nada a revisar do ponto de vista de privacidade até aqui.
 
 > Observação de método: o plano só permite anunciar uma gravação como analisada depois de ver a fonte do início ao fim, com timestamps, categorias, prints sanitizados e índices atualizados. Como a fonte não pôde ser obtida, o piloto **permanece `pendente`**.

@@ -1,0 +1,28 @@
+name: Auditoria de materiais
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  auditores:
+    name: Inventário, qualidade e privacidade
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (sem objetos LFS)
+        uses: actions/checkout@v4
+        with:
+          # Importante: NÃO baixar LFS. Os vídeos somam ~26 GB e cada execução consumiria
+          # banda de LFS sem necessidade — os verificadores leem apenas os ponteiros.
+          lfs: false
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Conferir manifesto e partes dos vídeos
+        run: python3 tools/checar_manifesto.py
+
+      - name: Auditar qualidade e privacidade dos derivados
+        run: python3 tools/validar_materiais.py

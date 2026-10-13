@@ -18,6 +18,17 @@ Este repositório reúne gravações de treinamento e um processo para convertê
 
 Os índices transversais em `materiais/` conectam gravações, consultas SQL, sistemas, processos e glossário, sempre preservando a origem detalhada.
 
+## Ferramentas (`tools/`)
+
+| Comando | Para que serve |
+|---|---|
+| `python3 tools/baixar_objeto_lfs.py "ARQUIVO.mp4"` | Baixa **um único** objeto LFS pela API do repositório (com retomada e conferência de tamanho/SHA-256), sem `git lfs pull` geral. `--verificar` só confere. |
+| `python3 tools/checar_manifesto.py` | Confere `manifesto.csv` e `partes-videos.json` contra os arquivos locais: ponteiros, tamanhos, partes e objetos LFS repetidos. Não baixa nada. |
+| `python3 tools/validar_materiais.py` | Auditoria do §6 do plano: arquivos obrigatórios, metadados, timestamps, perguntas, links e varredura de privacidade (CPF/CNPJ, e-mail, telefone, segredos). Nunca imprime o valor sensível encontrado. Saída: 0 ok, 1 falhas, 2 achado de privacidade. |
+| `python3 tools/reconstruir_videos.py` | Reconstrói os quatro vídeos divididos (exige todas as partes). |
+
+As duas verificações rodam automaticamente em cada push/PR pelo workflow `.github/workflows/auditar-materiais.yml`, que faz checkout **sem** baixar LFS.
+
 ## Integridade, privacidade e limites de publicação
 
 Não invente conteúdo ausente. Diferencie fala/observação, síntese e inferência. Minimize nomes, dados de clientes, credenciais e dados pessoais nos materiais derivados; mascare segredos de modo irreversível em qualquer print ou omita a captura se não puder sanitizar com confiança. Este repositório é público: antes de enviar novos derivados, verifique se o material pode ser compartilhado publicamente pela empresa. Não publique documentação interna restrita, informação de clientes ou fluxos confidenciais sem autorização do responsável pela divulgação.

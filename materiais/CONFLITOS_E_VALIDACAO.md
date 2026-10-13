@@ -4,7 +4,16 @@ Atualizado em **2026-10-13**.
 
 ## Conflitos entre gravações
 
-Nenhum identificado até o momento (nenhuma gravação analisada).
+Nenhum conflito **de conteúdo** identificado até o momento (nenhuma gravação analisada). Há, porém, duplicidade de **arquivo**:
+
+### Duplicidades confirmadas por objeto LFS (2026-10-13)
+
+| Arquivos | Objeto LFS (oid, prefixo) | Evidência | Ação proposta |
+|---|---|---|---|
+| `Gravando 2026-08-24 124650.mp4` = `Gravando 2026-08-24 161729.mp4` | `1b9b6afd8564…` | Mesmo `oid` nos dois ponteiros versionados (`tools/checar_manifesto.py`) | Analisar uma única vez e apontar a segunda entrada para o mesmo material; o plano proíbe fundir gravações **diferentes**, não proíbe tratar cópias idênticas como uma. |
+| `Jonas EPT explicação.mp4` = `jonas2309.mp4` | `f99bd7955fbc…` | Mesmo `oid` nos dois ponteiros versionados | Idem. |
+
+Consequência para a contagem: 24 arquivos no manifesto correspondem a **22 conteúdos distintos**. Confirmar com o responsável se as duas cópias devem continuar listadas — nenhum valor sensível está envolvido nesta conclusão (apenas hashes já públicos nos ponteiros).
 
 ## Pendências de validação
 
