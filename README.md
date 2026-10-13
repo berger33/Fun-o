@@ -5,9 +5,9 @@ Este repositório reúne gravações de treinamento e um processo para convertê
 ## Comece aqui
 
 1. Leia [`PLANO_EXTRACAO_ARENA.md`](PLANO_EXTRACAO_ARENA.md) para conhecer as etapas, categorias, revisão de prints e critérios de conclusão.
-2. Cole o prompt de início do Arena.ai fornecido junto com o plano; o roteiro operacional está em [`ROTEIRO_ARENA.md`](ROTEIRO_ARENA.md).
-3. Use [`manifesto.csv`](manifesto.csv) para identificar cada vídeo. O identificador é o nome do arquivo, sem extensão.
-4. Produza um diretório por vídeo em `materiais/`, sem combinar gravações diferentes. Atualize [`STATUS.md`](STATUS.md) e registre timestamps `HH:MM:SS` em toda afirmação específica.
+2. Use [`BAIXAR_VIDEO_SOB_DEMANDA.md`](BAIXAR_VIDEO_SOB_DEMANDA.md) para obter somente o vídeo do lote atual. O endpoint de conteúdo do GitHub pode mostrar um ponteiro LFS de 134 bytes; baixe os bytes via Git LFS em um clone.
+3. Cole o prompt de início do Arena.ai fornecido junto com o plano; o roteiro operacional está em [`ROTEIRO_ARENA.md`](ROTEIRO_ARENA.md).
+4. Use [`manifesto.csv`](manifesto.csv) para identificar cada vídeo. Produza um diretório por vídeo em `materiais/`, sem combinar gravações diferentes. Atualize [`STATUS.md`](STATUS.md) e registre timestamps `HH:MM:SS` em toda afirmação específica.
 5. Publique documentos e prints apenas após revisar privacidade e diffs. Não publique segredos ou dados pessoais nos materiais derivados.
 
 ## Conteúdo esperado por gravação
@@ -18,8 +18,8 @@ Este repositório reúne gravações de treinamento e um processo para convertê
 
 Os índices transversais em `materiais/` conectam gravações, consultas SQL, sistemas, processos e glossário, sempre preservando a origem detalhada.
 
-## Integridade e privacidade
+## Integridade, privacidade e limites de publicação
 
-Não invente conteúdo ausente. Diferencie fala/observação, síntese e inferência. Minimize nomes, dados de clientes, credenciais e dados pessoais nos materiais derivados; mascare segredos de modo irreversível em qualquer print ou omita a captura se não puder sanitizar com confiança.
+Não invente conteúdo ausente. Diferencie fala/observação, síntese e inferência. Minimize nomes, dados de clientes, credenciais e dados pessoais nos materiais derivados; mascare segredos de modo irreversível em qualquer print ou omita a captura se não puder sanitizar com confiança. Este repositório é público: antes de enviar novos derivados, verifique se o material pode ser compartilhado publicamente pela empresa. Não publique documentação interna restrita, informação de clientes ou fluxos confidenciais sem autorização do responsável pela divulgação.
 
-Quatro vídeos excedem o limite individual do Git LFS e estão armazenados como partes binárias exatas. Consulte [`RECUPERAR_VIDEOS.md`](RECUPERAR_VIDEOS.md) para reconstruí-los antes da análise.
+Quatro vídeos excedem o limite individual do Git LFS e estão armazenados como partes binárias exatas. Consulte [`RECUPERAR_VIDEOS.md`](RECUPERAR_VIDEOS.md) para reconstrução geral e [`BAIXAR_VIDEO_SOB_DEMANDA.md`](BAIXAR_VIDEO_SOB_DEMANDA.md) para baixar somente um piloto.
