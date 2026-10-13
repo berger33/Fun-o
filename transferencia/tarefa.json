@@ -1,8 +1,6 @@
 {
-  "arquivo": "Gravando 2026-10-07 152044.mp4",
+  "arquivo": "Liberação padrão - Glauco.mp4",
+  "slug": "liberacao-padrao-glauco",
   "modelo": "large-v3",
-  "idioma": "pt",
-  "tamanho_bloco_mb": "64",
-  "ramo_entrega_partes": "entrega/partes-gravando-2026-10-07-152044",
-  "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-10-07-152044"
+  "idioma": "pt"
 }
