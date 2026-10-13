@@ -58,6 +58,32 @@ jobs:
           git lfs pull --include="$ARQUIVO"
           ls -l "$ARQUIVO"
 
+      - name: Ler tarefa (se houver)
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' >> "$GITHUB_ENV"
+          import json, os
+          caminho = "transferencia/tarefa.json"
+          dados = {}
+          if os.path.exists(caminho):
+              with open(caminho, encoding="utf-8") as fh:
+                  dados = json.load(fh)
+          # entradas do workflow_dispatch têm prioridade quando preenchidas
+          if os.environ.get("ARQUIVO_INPUT", "").strip():
+              dados["arquivo"] = os.environ["ARQUIVO_INPUT"].strip()
+          if os.environ.get("RAMO_INPUT", "").strip():
+              dados["ramo_entrega"] = os.environ["RAMO_INPUT"].strip()
+          if os.environ.get("BLOCO_INPUT", "").strip():
+              dados["tamanho_bloco_mb"] = os.environ["BLOCO_INPUT"].strip()
+          print(f"ARQUIVO={dados.get('arquivo', 'Apresentação projeto 19-18.mp4')}")
+          print(f"RAMO_ENTREGA={dados.get('ramo_entrega', 'entrega/piloto-19-18')}")
+          print(f"BLOCO_MB={dados.get('tamanho_bloco_mb', '64')}")
+          PY
+        env:
+          ARQUIVO_INPUT: ${{ github.event.inputs.arquivo }}
+          RAMO_INPUT: ${{ github.event.inputs.ramo_entrega }}
+          BLOCO_INPUT: ${{ github.event.inputs.tamanho_bloco_mb }}
+
       - name: Conferir tamanho e SHA-256 contra manifesto e ponteiro
         run: |
           set -euo pipefail

@@ -1,6 +1,5 @@
 {
-  "arquivo": "Apresentação projeto 19-18.mp4",
-  "modelo": "large-v3",
-  "idioma": "pt",
-  "ramo_entrega": "entrega/transcricao-piloto-19-18"
+  "arquivo": "Gravando 2026-07-07 155307.mp4",
+  "ramo_entrega": "entrega/gravando-2026-07-07-155307",
+  "tamanho_bloco_mb": "64"
 }
