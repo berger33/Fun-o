@@ -78,6 +78,19 @@ def extrair_audio(video: str, destino_wav: str) -> None:
     subprocess.run(comando, check=True)
 
 
+def ler_wav_16k(caminho: str) -> "object":
+    """Lê o WAV mono 16 kHz como array float32 (evita o decodificador PyAV do faster-whisper)."""
+    import wave
+
+    import numpy as np
+
+    with wave.open(caminho, "rb") as fh:
+        if fh.getframerate() != 16000:
+            raise SystemExit("[erro] WAV extraído não está em 16 kHz")
+        quadros = fh.readframes(fh.getnframes())
+    return np.frombuffer(quadros, dtype=np.int16).astype(np.float32) / 32768.0
+
+
 def hhmmss(segundos: float) -> str:
     return time.strftime("%H:%M:%S", time.gmtime(int(segundos)))
 
@@ -125,8 +138,15 @@ def principal() -> int:
             raise SystemExit("[erro] instale `faster-whisper` (pip install faster-whisper).")
 
         modelo = WhisperModel(args.modelo, device="cpu", compute_type="int8")
+        try:
+            import av
+
+            print(f"      (PyAV {getattr(av, '__version__', 'desconhecida')} — decodificação feita pelo próprio script)")
+        except Exception:
+            pass
+        audio = ler_wav_16k(wav)
         segmentos, info = modelo.transcribe(
-            wav, language=args.idioma, beam_size=5, vad_filter=True,
+            audio, language=args.idioma, beam_size=5, vad_filter=True,
             condition_on_previous_text=False,
         )
         segmentos = list(segmentos)
