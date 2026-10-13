@@ -92,6 +92,15 @@ Comportamento verificado: recusa nome fora do `manifesto.csv`; lê `oid`/tamanho
 
 Mesmo com o vídeo em mãos, a transcrição automática continua dependendo de pesos de modelo hospedados fora dos hosts permitidos (`huggingface.co` e `openaipublic.azureedge.net` estão bloqueados). Verificado nos pacotes do PyPI (host permitido): trazem apenas o **código**, não os modelos — `pywhispercpp` (wheel de 4,7 MB, sem `.bin`), `whisper-cpp-python` (sdist de 3,8 MB), `openai-whisper`/`faster-whisper` (sem pesos); `pocketsphinx` embute apenas modelo de inglês. Alternativas: liberar os hosts de pesos **ou** receber do responsável um `SRT/VTT` da gravação para amarrar a transcrição aos timestamps.
 
+## 4.3 Esteira de decodificação validada a seco
+
+Para reduzir o risco na hora do desbloqueio, a esteira foi testada com um vídeo sintético (fora do repositório, em `/tmp`):
+
+- `ffmpeg` estático 7.0.2 obtido do wheel `imageio-ffmpeg` (29,5 MB, host PyPI permitido) — decodifica, mede duração e extrai quadros para PNG;
+- captura de quadro em timestamp exato gera imagem legível pronta para `materiais/<slug>/capturas/`.
+
+Pendente apenas o insumo (o MP4) para produzir `transcricao.md`, capturas e demais derivados.
+
 ## 5. Caminhos para desbloquear (em ordem de preferência)
 
 1. **Permitir egress no Arena** para `objects.githubusercontent.com` e `github-cloud.githubusercontent.com` (e, para outros vídeos, `media.githubusercontent.com`). Com isso, basta repetir:
