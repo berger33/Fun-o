@@ -30,3 +30,11 @@
 > [`apresentacao-projeto-19-18/glossario.md`](apresentacao-projeto-19-18/glossario.md).
 
 Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo vídeo, categoria e todas as fontes com timestamps. Divergências de definição entre gravações ficam registradas em [`CONFLITOS_E_VALIDACAO.md`](CONFLITOS_E_VALIDACAO.md), sem escolher uma versão.
+
+## Termos de `PROJETO 14-08.mp4`
+
+- **ServCom / Envio da Proposta ao Sistema Externo:** módulo e plugin que enviam a proposta à instituição para formalização digital (00:00:03).
+- **CRN:** *Company Registration Number* — campo de layout com o CNPJ do empregador (tela em 00:02:00).
+- **ETRACPD / ETRAINSS:** prefixos de campos de origem usados nas tabelas de layout das EFs (00:02:00; 00:07:00).
+- **simulation_id:** ID da simulação de reaproveitamento (pro rata) retornado pelo plugin de consulta de reaproveitamento de seguro; vazio fora de reaproveitamento (00:06:00).
+- **OS 556576:** "Gravação do ID da simulação na consulta do pro rata" (00:05:36).

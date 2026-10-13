@@ -1,0 +1,196 @@
+# Transcrição automática — PROJETO 14-08.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 191
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] Então, o que a gente vai fazer, basicamente?
+[00:00:03] A gente vai implementar ali no módulo Servicom, no plugin,
+[00:00:08] envio da proposta ao sistema externo um novo campo.
+[00:00:12] O que seria esse campo?
+[00:00:14] É o CNPJ, que é responsável ali pelo número do cadastro nacional da pessoa jurídica.
+[00:00:22] Tá bom?
+[00:00:22] Então, para compor as informações desse plugin,
+[00:00:25] que enviam informações ao sistema externo da instituição
+[00:00:32] para a formalização digital,
+[00:00:36] a gente vai incluir um novo campo de CNPJ
+[00:00:39] destinado a um envio do número
+[00:00:41] da descrição do Cadastro Nacional de Pessoa Jurídica do empregador.
+[00:00:46] É isso.
+[00:00:47] Essa informação vem da consulta de margem
+[00:00:49] ou a gente vai ter que puxar baseado na origem 4 da proposta?
+[00:00:55] Na origem 4, Zé, se eu não me engano.
+[00:00:57] Porque ele está no meio do bloco
+[00:00:59] Lá da E3CPD
+[00:01:01] A consulta que a gente faz
+[00:01:03] Lá na consulta de margem
+[00:01:04] Deixa eu abrir a EF aqui
+[00:01:06] Eu digo lá no layout
+[00:01:10] Lá do envio
+[00:01:12] Não, da E3CPD mesmo
+[00:01:27] A gente tem a informação de qual campo que é?
+[00:01:32] Isso eu não tenho
+[00:01:33] Precisa pegar então
+[00:01:34] Só que acho que quando a gente começar lá
+[00:01:36] É só a gente colocar lá no select
+[00:01:39] É quando você pegar a semana
+[00:01:44] para a Pri, aí a gente põe na EF, Pri, também,
+[00:01:46] para deixar qual o campo que a gente está enviando.
+[00:01:49] Por favor.
+[00:01:51] Oi, não entendi.
+[00:01:52] O Zé vai pegar
+[00:01:53] da onde que é o campo que a gente vai enviar
+[00:01:56] a informação.
+[00:01:57] Na verdade, eu perguntei para o negócio.
+[00:02:00] Eu estou perguntando para o negócio qual é o campo.
+[00:02:02] Então, a gente
+[00:02:04] pode até ver com alguém do empregador lá
+[00:02:06] para a gente ver se a gente consegue
+[00:02:08] achar essa informação, mas aí
+[00:02:10] eu teria que colocar na EF esse cara de qualquer forma.
+[00:02:12] Você vai complementar aí.
+[00:02:13] entra cpd.nome do campo
+[00:02:15] só pra gente ter registrado
+[00:02:18] qualquer um
+[00:02:18] eu não sei se tá ruim
+[00:02:22] só pra mim, gente, eu não tô ouvindo
+[00:02:23] tá um pouco abafado agora
+[00:02:25] tá ruim, tá ruim
+[00:02:26] porra desse notebook
+[00:02:28] Silveirinho tá no percamar
+[00:02:30] tá me ouvindo?
+[00:02:35] é
+[00:02:35] eu já falei com a infra, agora acho que eu finalmente
+[00:02:39] vou arrumar essa porra
+[00:02:40] a gente só vai incluir ali na última coluna depois
+[00:02:42] o nome do campo
+[00:02:43] Tá vendo que tem vários campos
+[00:02:46] E-CPD ponto alguma coisa
+[00:02:47] A gente vai colocar um E-CPD ponto nome do campo
+[00:02:50] Ali só, só isso
+[00:02:52] É
+[00:02:55] O Zé vai ver qual é o nome
+[00:02:58] Vai mandar pra gente e a gente vai colocar
+[00:03:00] Depois
+[00:03:00] Alguém tem mais alguma dúvida?
+[00:03:05] Sim, aí eu posso cadastrar proposta do meu cliente
+[00:03:08] Com o CPF normal dele ainda
+[00:03:10] Então eu vou ter que cadastrar usando
+[00:03:12] O CNPJ
+[00:03:13] Não, pode cadastrar normal
+[00:03:15] E aí vai entrar no empregador
+[00:03:17] então isso. Porque aí tá falando, a descrição dele
+[00:03:19] é esse projeto do empregador, né?
+[00:03:20] Isso. Tá.
+[00:03:23] Mais alguém?
+[00:03:32] Não.
+[00:03:34] Então, próxima EF.
+[00:03:36] Você não vai apresentar, Pri? A próxima EF, que também
+[00:04:06] é nossa. Mas se você
+[00:04:08] não for, eu apresento aqui.
+[00:04:16] Peraí. Só, peraí. Rapidinho.
+[00:04:19] É que travou tudo.
+[00:04:22] Deixa eu ver aqui também.
+[00:04:40] Você tem ela fácil aí,
+[00:04:41] Augusto? Minha tela tá toda
+[00:04:46] travada, gente. Não tô conseguindo.
+[00:04:48] O que tem aqui? Eu vou compartilhar.
+[00:04:53] É 556776...
+[00:04:58] 556576.
+[00:05:02] Deixa eu abrir aqui.
+[00:05:04] Só um momento.
+[00:05:08] Estão vendo a minha tela?
+[00:05:26] Estamos.
+[00:05:28] Bom, esse item aqui também é um item simples, tá?
+[00:05:30] É uma EF de um item só.
+[00:05:34] Onde é aqui no item...
+[00:05:36] No projeto 55676, tá?
+[00:05:40] Onde o objetivo aqui é viabilizar a integração
+[00:05:42] de informações mediante a simulação do reaproveitamento,
+[00:05:45] do reaproveitamento lá do ProRata, né?
+[00:05:49] No plugin de envio ao propósito do sistema externo.
+[00:05:52] Onde, a partir de agora, aqui no...
+[00:05:54] Vamos voltar também aqui.
+[00:05:56] A partir de agora, eles vão começar a passar para nós
+[00:05:58] o ID da simulação, né?
+[00:06:02] Então, com isso, lá no plugin do Envio Propósito Sistema Externo, nós vamos acrescentar um novo campo, que chama Simulation ID, e com isso ele vai trazer qual foi o ID da simulação do ProRata, tá?
+[00:06:16] se aqui nós colocamos aqui
+[00:06:18] o JSON, né, que eles mandaram pra nós
+[00:06:20] que vai vir assim, nós vamos
+[00:06:22] enviar lá no nosso
+[00:06:23] plugin de envio para o sistema externo
+[00:06:26] esse campo
+[00:06:28] de Simulation ID, tá?
+[00:06:30] Que tá aqui no
+[00:06:31] no
+[00:06:33] eita, peraí, que é gigante
+[00:06:36] esse plugin, né? Cadê
+[00:06:41] a informação?
+[00:06:50] Certo?
+[00:06:58] Augusto, aí dentro dele vai ter só
+[00:07:00] só o ID, né, aquele JSON
+[00:07:02] O JSON é o JSON que eles enviam
+[00:07:05] Pra nós, né, do ProRato e tudo mais
+[00:07:06] Com as informações do ProRato
+[00:07:08] Colocamos aqui na EF o JSON completo
+[00:07:11] Do jeito que eles passam pra nós
+[00:07:12] Mas o campo que nós vamos ver vai ser esse aqui
+[00:07:15] O Simulation ID, que é o novo campo
+[00:07:17] Que a partir de agora vai ter
+[00:07:18] E aí dentro da
+[00:07:20] Lá vai ter esse ID
+[00:07:22] Que eles passam pra nós
+[00:07:24] No plugin
+[00:07:26] Beleza?
+[00:07:30] Entendi, beleza
+[00:07:31] É isso, esse item também
+[00:07:33] Ele é um item simples também
+[00:07:34] Pequeno, né
+[00:07:36] Tem alguma especificação de
+[00:07:38] De nova
+[00:07:40] Refinanciamento, alguma coisa
+[00:07:42] Ah, é, reaproveitamento, né
+[00:07:43] Isso, é reaproveitamento, né, então quando é reaproveitamento
+[00:07:46] É ter todo aquele
+[00:07:48] Aquele
+[00:07:49] É ter uma esquemia, toda configuração pra fazer
+[00:07:53] Não, tá bom, tem gente
+[00:07:54] Tá
+[00:07:54] Aí no reaproveitamento você vai ver se ele se trouxe
+[00:07:58] O campo, se ele trouxe é vazio
+[00:08:00] ele vai enviar vazio também, tá bom?
+[00:08:02] Ele vai trazer o que veio aqui
+[00:08:04] no cara, se tá aprovado,
+[00:08:06] qual foi, só muda isso,
+[00:08:08] vai ter só esse novo campo aqui, tá bom?
+[00:08:10] Lá na...
+[00:08:12] no cara também.
+[00:08:13] Se não for reaproveitamento, vai vir vazio
+[00:08:16] esse número, esse ID.
+[00:08:18] Isso.
+[00:08:20] Tá bom? Ok, é isso.
+[00:08:30] Fechamos as dúvidas, então, pessoal?
+[00:08:33] É, esse aí
+[00:08:33] até que é relativamente simples, é só
+[00:08:35] a gente já tem o campo, né? A gente já retorna
+[00:08:37] esse campo lá, então é só levantar ele lá
+[00:08:39] no e-build do plugin
+[00:08:41] e passar ele pra frente.
+[00:08:44] Isso, perfeito. Isso mesmo.
+[00:08:47] Zé, você acha que você consegue
+[00:08:48] me mandar o Gantt desses dois
+[00:08:50] projetos quando? Segunda.
+[00:08:53] Segunda? Tá bom.
+[00:08:54] Eu já criei o do... Esse é do pacote 4, né?
+[00:08:57] Isso. Então a gente já
+[00:08:59] cria ele separado lá pra deixar e
+[00:09:00] já vai colocando os
+[00:09:02] os outros projetos dele depois.
+[00:09:04] aí Zé, quando você passar
+[00:09:07] o Gantt, nos avisa pra colocar
+[00:09:09] certinho aqui no mapa
+[00:09:10] valeu
+[00:09:13] aí dá um toque no
+[00:09:16] Gabriel também, pras horas dele no Gantt
+[00:09:19] tá Zé?
+[00:09:20] tá bom, beleza
+[00:09:21] valeu, valeu pessoal

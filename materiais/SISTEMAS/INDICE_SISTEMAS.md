@@ -17,3 +17,4 @@
 > especificação** e o painel da reunião. Sistemas citados acima vêm do texto do documento e da fala.
 
 Quando houver entradas, cada linha deve trazer: nome visível do sistema/módulo/tela, objetivo, caminho de navegação demonstrado, gravação e timestamp, procedimento relacionado e capturas pertinentes.
+| **ServCom — plugin Envio da Proposta ao Sistema Externo** | tabela de layout da EF (campo `CRN`, origens `ETRACPD.*`) e OS 556576 (campo `simulation_id`) | Incluir o CNPJ do empregador (`CRN`) e o ID da simulação de reaproveitamento (`simulation_id`) no envio à instituição para formalização digital | `PROJETO 14-08.mp4` — 00:00:00 – 00:08:44 | [`../projeto-14-08/procedimentos.md`](../projeto-14-08/procedimentos.md) Fluxos A e B | [`01`](../projeto-14-08/capturas/01-tabela-campos-crn-destacado.png), [`02`](../projeto-14-08/capturas/02-os-556576-simulation-id.png), [`03`](../projeto-14-08/capturas/03-tabela-layout-etrainss.png) |

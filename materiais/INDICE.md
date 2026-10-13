@@ -7,8 +7,8 @@ Atualizado em **2026-10-13**. Conecta as gravações extraídas aos respectivos 
 | Item | Estado |
 |---|---|
 | Vídeos no manifesto | 24 (22 conteúdos distintos) |
-| Gravações concluídas e publicadas | **4** (`Apresentação projeto 19-18.mp4`, `Gravando 2026-07-07 155307.mp4`, `Gravando 2026-10-07 152044.mp4`, `Liberação padrão - Glauco.mp4`) |
-| Em análise no lote atual | **1** (`PROJETO 14-08.mp4`) |
+| Gravações concluídas e publicadas | **5** (`Apresentação projeto 19-18.mp4`, `Gravando 2026-07-07 155307.mp4`, `Gravando 2026-10-07 152044.mp4`, `Liberação padrão - Glauco.mp4`, `PROJETO 14-08.mp4`) |
+| Em análise no lote atual | **1** (`Gravando 2026-09-22 111258.mp4`) |
 | Método de obtenção no Arena | Ponte seletiva por vídeo via CI (`git lfs pull --include`) + validação de bytes e SHA-256 — ver [`BLOQUEIO_LFS_ARENA.md`](BLOQUEIO_LFS_ARENA.md) e [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md) |
 
 ## Por categoria
@@ -58,3 +58,7 @@ Fila completa e estados oficiais em [`../STATUS.md`](../STATUS.md) (24 vídeos).
 - [`GLOSSARIO_GERAL.md`](GLOSSARIO_GERAL.md)
 - [`CONFLITOS_E_VALIDACAO.md`](CONFLITOS_E_VALIDACAO.md)
 - [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md)
+
+## Gravações publicadas (detalhe)
+
+- [`PROJETO 14-08.mp4`](projeto-14-08/LEIA-ME.md) — ServCom: campo CNPJ do empregador (`CRN`) e campo `simulation_id` (OS 556576) no plugin de envio ao sistema externo.
