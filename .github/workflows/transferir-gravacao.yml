@@ -1,0 +1,125 @@
+name: Transferir gravação por ponte temporária
+
+# Ponte de transferência para ambientes SEM acesso ao host de conteúdo do Git LFS
+# (por exemplo o sandbox do Arena, onde objects.githubusercontent.com é bloqueado).
+#
+# O runner do GitHub Actions TEM acesso ao LFS: ele baixa SOMENTE o arquivo indicado
+# (`git lfs pull --include`), confere tamanho e SHA-256 contra manifesto.csv/ponteiro,
+# parte o arquivo em blocos < 100 MB (limite por arquivo do Git) e publica os blocos em
+# um ramo temporário, que pode ser baixado via codeload.github.com.
+#
+# Regras de uso:
+#   - NUNCA usar isto para o repositório inteiro: sempre um arquivo por vez;
+#   - apagar o ramo de entrega assim que os bytes forem transferidos e conferidos;
+#   - o ramo de entrega contém cópia temporária de conteúdo já publicado no repositório
+#     via LFS; não é material derivado e não deve ser mantido.
+
+on:
+  workflow_dispatch:
+    inputs:
+      arquivo:
+        description: "Nome exato do arquivo em manifesto.csv"
+        required: true
+        default: "Apresentação projeto 19-18.mp4"
+      ramo_entrega:
+        description: "Ramo temporário que receberá as partes"
+        required: true
+        default: "entrega/piloto-19-18"
+      tamanho_bloco_mb:
+        description: "Tamanho de cada bloco em MB (máx. 90)"
+        required: true
+        default: "64"
+  push:
+    branches:
+      - "transferencia/**"
+
+permissions:
+  contents: write
+
+jobs:
+  transferir:
+    name: Baixar LFS e publicar partes
+    runs-on: ubuntu-latest
+    env:
+      ARQUIVO: ${{ github.event.inputs.arquivo || 'Apresentação projeto 19-18.mp4' }}
+      RAMO_ENTREGA: ${{ github.event.inputs.ramo_entrega || 'entrega/piloto-19-18' }}
+      BLOCO_MB: ${{ github.event.inputs.tamanho_bloco_mb || '64' }}
+    steps:
+      - name: Checkout (sem LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - name: Baixar somente o objeto solicitado
+        run: |
+          set -euo pipefail
+          echo "arquivo alvo: $ARQUIVO"
+          git lfs install --local
+          git lfs pull --include="$ARQUIVO"
+          ls -l "$ARQUIVO"
+
+      - name: Conferir tamanho e SHA-256 contra manifesto e ponteiro
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import csv, hashlib, os, re, sys
+          arquivo = os.environ["ARQUIVO"]
+          esperado = None
+          with open("manifesto.csv", newline="", encoding="utf-8-sig") as fh:
+              for linha in csv.DictReader(fh):
+                  if linha["arquivo"] == arquivo:
+                      esperado = int(linha["bytes"])
+          if esperado is None:
+              sys.exit(f"[erro] `{arquivo}` não está em manifesto.csv")
+          tam = os.path.getsize(arquivo)
+          if tam != esperado:
+              sys.exit(f"[erro] tamanho {tam} != {esperado} do manifesto")
+          ponteiro = open(arquivo, encoding="utf-8", errors="replace").read(2048)
+          if "git-lfs.github.com/spec/v1" in ponteiro:
+              sys.exit("[erro] o arquivo ainda é o ponteiro LFS; o objeto não foi baixado")
+          h = hashlib.sha256()
+          with open(arquivo, "rb") as fh:
+              for bloco in iter(lambda: fh.read(8 * 1024 * 1024), b""):
+                  h.update(bloco)
+          resumo = h.hexdigest()
+          print(f"[ok] {arquivo}: {tam} bytes, sha256 {resumo}")
+          with open("sha256.txt", "w", encoding="utf-8") as fh:
+              fh.write(resumo + "\n")
+          PY
+
+      - name: Particionar em blocos menores que 100 MB
+        run: |
+          set -euo pipefail
+          ALVO="transferencia/$(basename "$ARQUIVO" | tr ' ' '_')"
+          mkdir -p "$ALVO"
+          split -b "${BLOCO_MB}M" -d -a 3 --numeric-suffixes=1 --additional-suffix=.bin "$ARQUIVO" "$ALVO/parte"
+          ls -l "$ALVO"
+          SHA=$(cat sha256.txt)
+          TAM=$(stat -c %s "$ARQUIVO")
+          {
+            echo "# Como remontar (temporário)"
+            echo
+            echo "- Arquivo original: \`$ARQUIVO\`"
+            echo "- Tamanho: $TAM bytes (conferido contra manifesto.csv)"
+            echo "- SHA-256 do original: $SHA"
+            echo "- Partes: $(ls "$ALVO"/parte*.bin | wc -l) blocos de ${BLOCO_MB} MB (o último menor)"
+            echo
+            echo '```bash'
+            echo "cat $(basename "$ALVO")/parte*.bin > \"$ARQUIVO\""
+            echo "sha256sum \"$ARQUIVO\"   # deve ser $SHA"
+            echo '```'
+            echo
+            echo "Apague este ramo (\`$RAMO_ENTREGA\`) depois de conferir."
+          } > "$ALVO/COMO_REMONTAR.md"
+          echo "TRANSFERENCIA_OK sha256=$SHA partes=$(ls "$ALVO"/parte*.bin | wc -l) bytes=$TAM"
+          echo "diretorio=$ALVO"
+
+      - name: Publicar no ramo temporário de entrega
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A transferencia
+          git commit -m "Ponte temporária: partes de '$ARQUIVO' para transferência fora do LFS"
+          git push --force origin "HEAD:refs/heads/$RAMO_ENTREGA"
+          echo "publicado em $RAMO_ENTREGA"
