@@ -11,6 +11,9 @@ name: Transferir gravação por ponte temporária
 # Regras de uso:
 #   - NUNCA usar isto para o repositório inteiro: sempre um arquivo por vez;
 #   - apagar o ramo de entrega assim que os bytes forem transferidos e conferidos;
+#   - re-disparo de 2026-10-13 (arena/792a3d47-fun-o): o ramo de partes do lote
+#     'Gravando 2026-09-22 111258.mp4' precisou ser republicado; altera-se SOMENTE este
+#     arquivo para re-disparar a ponte sem re-executar a transcrição automática.
 #   - o ramo de entrega contém cópia temporária de conteúdo já publicado no repositório
 #     via LFS; não é material derivado e não deve ser mantido.
 
