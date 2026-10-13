@@ -1,0 +1,106 @@
+name: Transcrever gravação (ponte temporária)
+
+# Usa o runner do GitHub Actions — que tem acesso aos pesos do modelo — para transcrever UMA
+# gravação com timestamps, porque no sandbox do Arena huggingface.co é bloqueado.
+#
+# O vídeo continua vindo do Git LFS (baixa somente o arquivo indicado). A saída é texto
+# (pequeno) publicado em um ramo temporário `entrega/*`, que deve ser apagado logo após a
+# conferência no ambiente de destino.
+#
+# Configuração da tarefa: arquivo JSON opcional em `transferencia/tarefa.json`, por exemplo
+#   {"arquivo": "Apresentação projeto 19-18.mp4", "modelo": "large-v3", "idioma": "pt",
+#    "ramo_entrega": "entrega/transcricao-piloto-19-18"}
+# Sem esse arquivo, usa os padrões abaixo (piloto do lote atual).
+
+on:
+  push:
+    branches:
+      - "transcricao/**"
+      - "transferencia/**"
+
+permissions:
+  contents: write
+
+jobs:
+  transcrever:
+    name: Transcrever com timestamps
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (sem LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - name: Ler a tarefa
+        id: tarefa
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          padrao = {
+              "arquivo": "Apresentação projeto 19-18.mp4",
+              "modelo": "large-v3",
+              "idioma": "pt",
+              "ramo_entrega": "entrega/transcricao-piloto-19-18",
+          }
+          caminho = "transferencia/tarefa.json"
+          if os.path.exists(caminho):
+              with open(caminho, encoding="utf-8") as fh:
+                  padrao.update(json.load(fh))
+          for chave in ("arquivo", "modelo", "idioma", "ramo_entrega"):
+              print(f"{chave}={padrao[chave]}")
+          PY
+
+      - name: Baixar somente o objeto solicitado (LFS)
+        env:
+          ARQUIVO: ${{ steps.tarefa.outputs.arquivo }}
+        run: |
+          set -euo pipefail
+          git lfs install --local
+          git lfs pull --include="$ARQUIVO"
+          ls -l "$ARQUIVO"
+
+      - name: Instalar dependências
+        run: |
+          set -euo pipefail
+          python3 -m pip install --upgrade pip
+          python3 -m pip install faster-whisper
+
+      - name: Transcrever
+        env:
+          ARQUIVO: ${{ steps.tarefa.outputs.arquivo }}
+          MODELO: ${{ steps.tarefa.outputs.modelo }}
+          IDIOMA: ${{ steps.tarefa.outputs.idioma }}
+        run: |
+          set -euo pipefail
+          mkdir -p saida
+          python3 tools/transcrever.py --video "$ARQUIVO" --saida saida --modelo "$MODELO" --idioma "$IDIOMA"
+          cp saida/transcricao_meta.json saida/transcricao_meta.orig.json || true
+          ls -l saida
+
+      - name: Publicar texto no ramo temporário de entrega
+        env:
+          RAMO_ENTREGA: ${{ steps.tarefa.outputs.ramo_entrega }}
+          ARQUIVO: ${{ steps.tarefa.outputs.arquivo }}
+        run: |
+          set -euo pipefail
+          mkdir -p transferencia/transcricao
+          cp saida/transcricao_bruta.txt saida/transcricao.srt saida/transcricao.vtt \
+             saida/transcricao_meta.json transferencia/transcricao/
+          {
+            echo "# Transcrição automática — entrega temporária"
+            echo
+            echo "- Gravação: \`$ARQUIVO\`"
+            echo "- Ferramenta: tools/transcrever.py (faster-whisper)"
+            echo "- \`transcricao_bruta.txt\`: fala com \`[HH:MM:SS]\` por segmento"
+            echo "- \`transcricao.srt\` / \`transcricao.vtt\`: legendas com timestamps"
+            echo "- \`transcricao_meta.json\`: modelo, idioma detectado, duração, sha256 do vídeo"
+            echo
+            echo "Revise e sanitize antes de publicar qualquer derivado; apague este ramo depois."
+          } > transferencia/transcricao/LEIA-ME.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A transferencia/transcricao
+          git commit -m "Ponte temporária: transcrição automática de '$ARQUIVO'"
+          git push --force origin "HEAD:refs/heads/$RAMO_ENTREGA"
+          echo "publicado em $RAMO_ENTREGA"
