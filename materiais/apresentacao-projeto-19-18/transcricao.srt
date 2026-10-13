@@ -1,0 +1,587 @@
+1
+00:00:11,020 --> 00:00:12,580
+Se você estiver falando, tá no mundo, tá?
+
+2
+00:00:15,130 --> 00:00:17,050
+Eita, eu tava falando.
+
+3
+00:00:18,270 --> 00:00:18,830
+Esqueci.
+
+4
+00:00:19,390 --> 00:00:24,990
+Bom, esse item é bem simples aqui, que o banco pediu a criação de três variáveis, tá?
+
+5
+00:00:25,110 --> 00:00:31,850
+Pra acrescentar no documento lá da CCB do refim, quando tem múltiplos contratos, né?
+
+6
+00:00:34,290 --> 00:00:40,290
+Atualmente, eles têm nesse agrupamento aqui da CCB,
+
+7
+00:00:40,290 --> 00:00:48,990
+eles têm na opção do contratos, operação, eles têm os números dos contratos aparecem um abaixo do outro.
+
+8
+00:00:49,810 --> 00:00:56,310
+O pedido aqui foi a criação de uma variável que ela apresentasse os contratos por ponto e vírgula,
+
+9
+00:00:56,590 --> 00:00:59,050
+uma do lado do outro por ponto e vírgula.
+
+10
+00:01:00,010 --> 00:01:06,030
+A segunda variável é o credor, que hoje, quando tem os múltiplos contratos aqui,
+
+11
+00:01:06,030 --> 00:01:08,030
+elas se repetem quando
+
+12
+00:01:08,030 --> 00:01:12,450
+aparece várias vezes o nome do credor
+
+13
+00:01:12,450 --> 00:01:13,210
+repetidamente
+
+14
+00:01:13,210 --> 00:01:16,410
+e aqui eles estão pedindo para que
+
+15
+00:01:16,410 --> 00:01:17,750
+agora quando tivesse
+
+16
+00:01:17,750 --> 00:01:20,690
+vários contratos
+
+17
+00:01:20,690 --> 00:01:22,410
+aparecesse uma vez só, se fosse
+
+18
+00:01:22,410 --> 00:01:24,150
+o mesmo, caso tenha
+
+19
+00:01:24,150 --> 00:01:25,710
+outro
+
+20
+00:01:25,710 --> 00:01:28,170
+aí sim vai poder aparecer
+
+21
+00:01:28,170 --> 00:01:30,270
+mais de um credor, se forem
+
+22
+00:01:30,270 --> 00:01:32,370
+diferentes ele pode aparecer mais de um credor
+
+23
+00:01:32,370 --> 00:01:33,730
+se for o mesmo
+
+24
+00:01:33,730 --> 00:01:36,630
+não se repete, aparece apenas uma vez.
+
+25
+00:01:37,630 --> 00:01:40,710
+E a terceira variável é em relação ao saldo devedor.
+
+26
+00:01:41,970 --> 00:01:45,030
+Aqui na CCB atual de refim,
+
+27
+00:01:45,170 --> 00:01:49,030
+para cada cooperação aparece o saldo devedor dela.
+
+28
+00:01:49,150 --> 00:01:51,970
+Eles pediram a somatória de todos os saldos devedores
+
+29
+00:01:51,970 --> 00:01:55,710
+de todos os contratos que estão relacionados àquele refim.
+
+30
+00:01:55,710 --> 00:02:06,130
+Bom, aqui a gente colocou a nomenclatura,
+
+31
+00:02:06,230 --> 00:02:09,970
+das variáveis, e é
+
+32
+00:02:09,970 --> 00:02:12,030
+isso. Aqui no segundo
+
+33
+00:02:12,030 --> 00:02:13,670
+item, Zé, é sobre a pay de
+
+34
+00:02:13,670 --> 00:02:15,890
+formalização, pra atualizar
+
+35
+00:02:15,890 --> 00:02:17,770
+com as novas variáveis, pra que
+
+36
+00:02:17,770 --> 00:02:20,150
+quando eles usam a jornada, na jornada
+
+37
+00:02:20,150 --> 00:02:21,850
+de contratação, eles
+
+38
+00:02:21,850 --> 00:02:24,130
+consigam tirar a CCB
+
+39
+00:02:24,130 --> 00:02:25,970
+também, com essas variáveis
+
+40
+00:02:25,970 --> 00:02:26,990
+atualizadas.
+
+41
+00:02:28,130 --> 00:02:30,170
+E é isso, acho que é isso.
+
+42
+00:02:30,690 --> 00:02:31,830
+Eu acho que eu já conversei com
+
+43
+00:02:31,830 --> 00:02:33,730
+o Felipe, já tinha conversado com o Zé.
+
+44
+00:02:34,650 --> 00:02:35,910
+Zé, você quer ter alguma dúvida?
+
+45
+00:02:36,070 --> 00:02:37,050
+O Felipe, alguma dúvida?
+
+46
+00:02:37,050 --> 00:02:40,510
+Só para recapitular ali
+
+47
+00:02:40,510 --> 00:02:41,930
+Na questão do credor
+
+48
+00:02:41,930 --> 00:02:44,070
+Quando tem lá
+
+49
+00:02:44,070 --> 00:02:46,850
+O contrato original
+
+50
+00:02:46,850 --> 00:02:49,150
+O X é para o credor X
+
+51
+00:02:49,150 --> 00:02:51,010
+E aí eu tenho outro contrato
+
+52
+00:02:51,010 --> 00:02:52,030
+Que é para o credor Y
+
+53
+00:02:52,030 --> 00:02:54,850
+Aí eu vou concatenar igual estou fazendo com a operação
+
+54
+00:02:54,850 --> 00:02:57,050
+Isso, vai aparecer
+
+55
+00:02:57,050 --> 00:02:58,530
+Caso seja o mesmo
+
+56
+00:02:58,530 --> 00:03:00,350
+Ele vai aparecer uma vez só
+
+57
+00:03:00,350 --> 00:03:01,590
+Se todas as operações
+
+58
+00:03:01,590 --> 00:03:04,170
+Caso tenha diferença
+
+59
+00:03:04,170 --> 00:03:05,890
+Ele vai apresentar um
+
+60
+00:03:05,890 --> 00:03:08,710
+e o outro diferente, se for
+
+61
+00:03:08,710 --> 00:03:10,710
+diferente. Separado por ponto e vírgula
+
+62
+00:03:10,710 --> 00:03:12,590
+também igual ao contrato. Isso, por ponto e vírgula, igual
+
+63
+00:03:12,590 --> 00:03:14,470
+isso, exatamente. Tá bom.
+
+64
+00:03:14,910 --> 00:03:15,730
+Tá bom? Beleza.
+
+65
+00:03:20,820 --> 00:03:22,800
+Bom, é isso. Esse item é bem
+
+66
+00:03:22,800 --> 00:03:26,490
+simples. Você já tinha
+
+67
+00:03:26,490 --> 00:03:28,730
+colocado as
+
+68
+00:03:28,730 --> 00:03:29,330
+horas.
+
+69
+00:03:33,270 --> 00:03:34,690
+Michelle. Oi.
+
+70
+00:03:34,730 --> 00:03:35,910
+Como que a gente investiu?
+
+71
+00:03:36,430 --> 00:03:38,550
+Qual que é o contrato
+
+72
+00:03:38,550 --> 00:03:40,510
+em x criador e outro
+
+73
+00:03:40,510 --> 00:03:45,420
+não entendi, desculpa
+
+74
+00:03:45,420 --> 00:03:46,160
+acho que tava meio
+
+75
+00:03:46,160 --> 00:03:48,160
+tá cortando um pouco
+
+76
+00:03:48,160 --> 00:03:50,140
+como que distingue
+
+77
+00:03:50,140 --> 00:03:52,580
+a informação do criador
+
+78
+00:03:52,580 --> 00:03:54,780
+da operação X
+
+79
+00:03:54,780 --> 00:03:56,020
+e da Y
+
+80
+00:03:56,020 --> 00:03:59,520
+como que distingue ou como parametriza
+
+81
+00:03:59,520 --> 00:03:59,900
+é isso?
+
+82
+00:04:00,540 --> 00:04:01,580
+não, como que distingue
+
+83
+00:04:01,580 --> 00:04:05,320
+eu tenho várias operações
+
+84
+00:04:05,320 --> 00:04:06,560
+do mesmo criador, certo?
+
+85
+00:04:07,420 --> 00:04:09,020
+se eu tiver um criador diferente
+
+86
+00:04:09,020 --> 00:04:10,020
+uma operação diferente
+
+87
+00:04:10,020 --> 00:04:16,780
+aqui não vai discriminar
+
+88
+00:04:16,780 --> 00:04:18,320
+vai só aparecer os dois
+
+89
+00:04:18,320 --> 00:04:20,740
+não vai discriminar a operação em si
+
+90
+00:04:20,740 --> 00:04:22,900
+vai falar que pra todos
+
+91
+00:04:22,900 --> 00:04:24,180
+aqueles operações
+
+92
+00:04:24,180 --> 00:04:26,300
+pra todas aquelas operações de
+
+93
+00:04:26,300 --> 00:04:28,240
+refim, existe
+
+94
+00:04:28,240 --> 00:04:30,620
+o credor teste
+
+95
+00:04:30,620 --> 00:04:32,560
+NSS e o teste SOL
+
+96
+00:04:32,560 --> 00:04:34,540
+por exemplo, ele não vai
+
+97
+00:04:34,540 --> 00:04:37,000
+determinar qual é a operação
+
+98
+00:04:37,000 --> 00:04:37,920
+distinta, entendeu?
+
+99
+00:04:37,920 --> 00:04:54,700
+Eu não entendi, porque está um pouquinho barulho ainda.
+
+100
+00:05:04,860 --> 00:05:06,220
+Manda no chat, Gabriel.
+
+101
+00:05:06,220 --> 00:05:07,120
+Manda no chat.
+
+102
+00:05:07,920 --> 00:05:11,720
+Ou tem alguém com o microfone aberto aí,
+
+103
+00:05:11,760 --> 00:05:12,420
+tá fazendo barulho.
+
+104
+00:05:12,920 --> 00:05:13,900
+Não, é onde ele tá mesmo.
+
+105
+00:05:19,020 --> 00:05:20,960
+Abaixa o volume da televisão
+
+106
+00:05:20,960 --> 00:05:23,040
+e me escuta pelo telefone.
+
+107
+00:05:24,400 --> 00:05:25,260
+É sacanagem.
+
+108
+00:05:27,020 --> 00:05:28,840
+É muito SBT, hein, seu Marinho?
+
+109
+00:05:30,100 --> 00:05:41,960
+Eu não sei se ele perguntou
+
+110
+00:05:41,960 --> 00:05:43,580
+pra parametrizar, era isso, será?
+
+111
+00:05:44,120 --> 00:05:45,560
+Não, ele vai mandar no chat, ele mandou
+
+112
+00:05:45,560 --> 00:05:46,200
+que tá na função.
+
+113
+00:05:47,600 --> 00:05:49,740
+Ele vai mandar a dúvida aí no chat, mas tem que entender.
+
+114
+00:05:50,180 --> 00:05:59,810
+Ah, era isso.
+
+115
+00:06:00,450 --> 00:06:02,070
+A parametrização do credor.
+
+116
+00:06:02,710 --> 00:06:04,430
+Isso. Eu acredito
+
+117
+00:06:04,430 --> 00:06:06,270
+que a parametrização ou ele...
+
+118
+00:06:07,270 --> 00:06:08,270
+Credor...
+
+119
+00:06:12,210 --> 00:06:13,490
+Você consegue ver no fonte, Felipe?
+
+120
+00:06:13,790 --> 00:06:15,870
+Não dá pra ver na query, na hora que ele levanta?
+
+121
+00:06:15,870 --> 00:06:16,090
+Dá.
+
+122
+00:06:17,390 --> 00:06:18,470
+Dá pra ver.
+
+123
+00:06:19,470 --> 00:06:21,750
+Eu não sei se é no convênio.
+
+124
+00:06:22,130 --> 00:06:23,390
+Vou ver certinho aqui, peraí.
+
+125
+00:06:34,770 --> 00:06:36,870
+Mas essa é a informação aí, Gabriel, da proposta.
+
+126
+00:06:38,190 --> 00:06:38,750
+Eu acho que não é
+
+127
+00:06:38,750 --> 00:06:39,990
+uma parametrização.
+
+128
+00:06:39,990 --> 00:06:41,950
+Te manda depois, Gabriel
+
+129
+00:06:41,950 --> 00:06:43,170
+É, te manda aí
+
+130
+00:06:43,170 --> 00:06:45,290
+Vou dar uma olhadinha aqui no fã, te manda
+
+131
+00:06:45,290 --> 00:06:48,190
+Perfeito, qualquer coisa a gente alinha com desenvolvimento
+
+132
+00:06:48,190 --> 00:06:49,150
+Nesse caso
+
+133
+00:06:49,150 --> 00:06:54,930
+Então, beijamos, então
+
+134
+00:06:54,930 --> 00:07:00,960
+Só pra confirmar aqui, as horas vão ficar as mesmas
+
+135
+00:07:00,960 --> 00:07:02,580
+Que vocês tinham passado
+
+136
+00:07:02,580 --> 00:07:04,300
+Ficou 28 do desenvolvimento
+
+137
+00:07:04,300 --> 00:07:05,380
+E 21 do CQ
+
+138
+00:07:05,380 --> 00:07:07,140
+Lá tava
+
+139
+00:07:07,140 --> 00:07:12,150
+Isso, da parte do desenvolvimento era
+
+140
+00:07:12,150 --> 00:07:13,490
+Isso aí, eu não sei o Gabriel
+
+141
+00:07:13,490 --> 00:07:21,140
+Aí ficou 6 também
+
+142
+00:07:21,140 --> 00:07:24,160
+Ficou 28 no primeiro item, que é para a criação das variáveis,
+
+143
+00:07:24,380 --> 00:07:29,160
+e 6 para a API de formalização, para atualizar a API.
+
+144
+00:07:29,800 --> 00:07:31,680
+O Gabriel falou que é ok para o CQ também.
+
+145
+00:07:32,160 --> 00:07:35,500
+Tá, aí ficou 21, 3 e 16 para o plano de teste.
+
+146
+00:07:35,720 --> 00:07:36,460
+Tá certo, então.
+
+147
+00:07:42,540 --> 00:07:44,120
+Beleza, então, gente, é isso.

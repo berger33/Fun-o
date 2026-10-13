@@ -1,18 +1,15 @@
-# Materiais extraídos — publicação suspensa
+# Materiais da gravação — publicados com autorização
 
-A gravação **`Apresentação projeto 19-18.mp4`** (179956679 bytes) foi **analisada integralmente**:
-transcrição com timestamps, leitura de tela, procedimentos, perguntas, glossário, incertezas e
-metadados estão **prontos**.
+A gravação **`Apresentação projeto 19-18.mp4`** (179956679 bytes, SHA-256 `ac4b6621…`) foi
+analisada integralmente e os derivados estão **publicados nesta pasta**.
 
-A publicação neste repositório **não foi feita** porque a revisão de privacidade e confidencialidade
-concluiu que o conteúdo depende de **autorização de divulgação do responsável** (documentação
-interna restrita e informação de cliente). A decisão segue o `README.md` e o
-`PLANO_EXTRACAO_ARENA.md`: na dúvida, não publicar; registrar a pendência sem revelar o conteúdo.
-
-- **Onde está o material:** área privada `fun-o-privado/materiais/apresentacao-projeto-19-18/`
-  (fora do Git, não versionada, não enviada ao GitHub).
-- **Estado da gravação:** `em revisão` em [`../../STATUS.md`](../../STATUS.md) — extração feita,
-  auditoria de privacidade/confidencialidade pendente de decisão humana.
-- **Descrição da pendência sem revelar dados:** [`../CONFLITOS_E_VALIDACAO.md`](../CONFLITOS_E_VALIDACAO.md)
-  e [`../PRIVACIDADE_E_RETENCAO.md`](../PRIVACIDADE_E_RETENCAO.md).
-- **Nada sensível foi publicado:** nem nomes, nem cliente, nem o conteúdo do documento, nem capturas.
+- **Autorização:** concedida pelo responsável em **2026-10-13**. Os dados da gravação foram
+  declarados **fictícios/de teste**; a instrução foi preservar o nome **Função Sistemas** e os
+  **nomes dos operadores**, publicando apenas recortes do **documento** (sem imagens de pessoas).
+- **Documentos:** [`transcricao.md`](transcricao.md), [`guia_de_estudo.md`](guia_de_estudo.md),
+  [`procedimentos.md`](procedimentos.md), [`perguntas.md`](perguntas.md), [`glossario.md`](glossario.md),
+  [`incertezas.md`](incertezas.md), [`metadados.md`](metadados.md), [`capturas.md`](capturas.md) e
+  `transcricao_bruta.txt` / `transcricao.srt` / `transcricao_meta.json` (transcrição automática).
+- **Capturas:** três recortes do documento em [`capturas/`](capturas/).
+- **Estado:** `concluído` em [`../../STATUS.md`](../../STATUS.md), com a auditoria do roteiro
+  executada (`tools/validar_materiais.py`).

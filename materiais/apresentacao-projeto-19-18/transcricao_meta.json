@@ -1,0 +1,13 @@
+{
+  "arquivo": "Apresentação projeto 19-18.mp4",
+  "bytes": 179956679,
+  "sha256": "ac4b6621f1d0ad5750065d1e36a7988a9bfcd13e55d86aaa45860ee9b8d72bb8",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 464.87,
+  "segmentos": 147,
+  "duracao_transcricao_s": 343.3,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

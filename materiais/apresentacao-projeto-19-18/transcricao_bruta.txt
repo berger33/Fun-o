@@ -1,0 +1,152 @@
+# Transcrição automática — Apresentação projeto 19-18.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 147
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:11] Se você estiver falando, tá no mundo, tá?
+[00:00:15] Eita, eu tava falando.
+[00:00:18] Esqueci.
+[00:00:19] Bom, esse item é bem simples aqui, que o banco pediu a criação de três variáveis, tá?
+[00:00:25] Pra acrescentar no documento lá da CCB do refim, quando tem múltiplos contratos, né?
+[00:00:34] Atualmente, eles têm nesse agrupamento aqui da CCB,
+[00:00:40] eles têm na opção do contratos, operação, eles têm os números dos contratos aparecem um abaixo do outro.
+[00:00:49] O pedido aqui foi a criação de uma variável que ela apresentasse os contratos por ponto e vírgula,
+[00:00:56] uma do lado do outro por ponto e vírgula.
+[00:01:00] A segunda variável é o credor, que hoje, quando tem os múltiplos contratos aqui,
+[00:01:06] elas se repetem quando
+[00:01:08] aparece várias vezes o nome do credor
+[00:01:12] repetidamente
+[00:01:13] e aqui eles estão pedindo para que
+[00:01:16] agora quando tivesse
+[00:01:17] vários contratos
+[00:01:20] aparecesse uma vez só, se fosse
+[00:01:22] o mesmo, caso tenha
+[00:01:24] outro
+[00:01:25] aí sim vai poder aparecer
+[00:01:28] mais de um credor, se forem
+[00:01:30] diferentes ele pode aparecer mais de um credor
+[00:01:32] se for o mesmo
+[00:01:33] não se repete, aparece apenas uma vez.
+[00:01:37] E a terceira variável é em relação ao saldo devedor.
+[00:01:41] Aqui na CCB atual de refim,
+[00:01:45] para cada cooperação aparece o saldo devedor dela.
+[00:01:49] Eles pediram a somatória de todos os saldos devedores
+[00:01:51] de todos os contratos que estão relacionados àquele refim.
+[00:01:55] Bom, aqui a gente colocou a nomenclatura,
+[00:02:06] das variáveis, e é
+[00:02:09] isso. Aqui no segundo
+[00:02:12] item, Zé, é sobre a pay de
+[00:02:13] formalização, pra atualizar
+[00:02:15] com as novas variáveis, pra que
+[00:02:17] quando eles usam a jornada, na jornada
+[00:02:20] de contratação, eles
+[00:02:21] consigam tirar a CCB
+[00:02:24] também, com essas variáveis
+[00:02:25] atualizadas.
+[00:02:28] E é isso, acho que é isso.
+[00:02:30] Eu acho que eu já conversei com
+[00:02:31] o Felipe, já tinha conversado com o Zé.
+[00:02:34] Zé, você quer ter alguma dúvida?
+[00:02:36] O Felipe, alguma dúvida?
+[00:02:37] Só para recapitular ali
+[00:02:40] Na questão do credor
+[00:02:41] Quando tem lá
+[00:02:44] O contrato original
+[00:02:46] O X é para o credor X
+[00:02:49] E aí eu tenho outro contrato
+[00:02:51] Que é para o credor Y
+[00:02:52] Aí eu vou concatenar igual estou fazendo com a operação
+[00:02:54] Isso, vai aparecer
+[00:02:57] Caso seja o mesmo
+[00:02:58] Ele vai aparecer uma vez só
+[00:03:00] Se todas as operações
+[00:03:01] Caso tenha diferença
+[00:03:04] Ele vai apresentar um
+[00:03:05] e o outro diferente, se for
+[00:03:08] diferente. Separado por ponto e vírgula
+[00:03:10] também igual ao contrato. Isso, por ponto e vírgula, igual
+[00:03:12] isso, exatamente. Tá bom.
+[00:03:14] Tá bom? Beleza.
+[00:03:20] Bom, é isso. Esse item é bem
+[00:03:22] simples. Você já tinha
+[00:03:26] colocado as
+[00:03:28] horas.
+[00:03:33] Michelle. Oi.
+[00:03:34] Como que a gente investiu?
+[00:03:36] Qual que é o contrato
+[00:03:38] em x criador e outro
+[00:03:40] não entendi, desculpa
+[00:03:45] acho que tava meio
+[00:03:46] tá cortando um pouco
+[00:03:48] como que distingue
+[00:03:50] a informação do criador
+[00:03:52] da operação X
+[00:03:54] e da Y
+[00:03:56] como que distingue ou como parametriza
+[00:03:59] é isso?
+[00:04:00] não, como que distingue
+[00:04:01] eu tenho várias operações
+[00:04:05] do mesmo criador, certo?
+[00:04:07] se eu tiver um criador diferente
+[00:04:09] uma operação diferente
+[00:04:10] aqui não vai discriminar
+[00:04:16] vai só aparecer os dois
+[00:04:18] não vai discriminar a operação em si
+[00:04:20] vai falar que pra todos
+[00:04:22] aqueles operações
+[00:04:24] pra todas aquelas operações de
+[00:04:26] refim, existe
+[00:04:28] o credor teste
+[00:04:30] NSS e o teste SOL
+[00:04:32] por exemplo, ele não vai
+[00:04:34] determinar qual é a operação
+[00:04:37] distinta, entendeu?
+[00:04:37] Eu não entendi, porque está um pouquinho barulho ainda.
+[00:05:04] Manda no chat, Gabriel.
+[00:05:06] Manda no chat.
+[00:05:07] Ou tem alguém com o microfone aberto aí,
+[00:05:11] tá fazendo barulho.
+[00:05:12] Não, é onde ele tá mesmo.
+[00:05:19] Abaixa o volume da televisão
+[00:05:20] e me escuta pelo telefone.
+[00:05:24] É sacanagem.
+[00:05:27] É muito SBT, hein, seu Marinho?
+[00:05:30] Eu não sei se ele perguntou
+[00:05:41] pra parametrizar, era isso, será?
+[00:05:44] Não, ele vai mandar no chat, ele mandou
+[00:05:45] que tá na função.
+[00:05:47] Ele vai mandar a dúvida aí no chat, mas tem que entender.
+[00:05:50] Ah, era isso.
+[00:06:00] A parametrização do credor.
+[00:06:02] Isso. Eu acredito
+[00:06:04] que a parametrização ou ele...
+[00:06:07] Credor...
+[00:06:12] Você consegue ver no fonte, Felipe?
+[00:06:13] Não dá pra ver na query, na hora que ele levanta?
+[00:06:15] Dá.
+[00:06:17] Dá pra ver.
+[00:06:19] Eu não sei se é no convênio.
+[00:06:22] Vou ver certinho aqui, peraí.
+[00:06:34] Mas essa é a informação aí, Gabriel, da proposta.
+[00:06:38] Eu acho que não é
+[00:06:38] uma parametrização.
+[00:06:39] Te manda depois, Gabriel
+[00:06:41] É, te manda aí
+[00:06:43] Vou dar uma olhadinha aqui no fã, te manda
+[00:06:45] Perfeito, qualquer coisa a gente alinha com desenvolvimento
+[00:06:48] Nesse caso
+[00:06:49] Então, beijamos, então
+[00:06:54] Só pra confirmar aqui, as horas vão ficar as mesmas
+[00:07:00] Que vocês tinham passado
+[00:07:02] Ficou 28 do desenvolvimento
+[00:07:04] E 21 do CQ
+[00:07:05] Lá tava
+[00:07:07] Isso, da parte do desenvolvimento era
+[00:07:12] Isso aí, eu não sei o Gabriel
+[00:07:13] Aí ficou 6 também
+[00:07:21] Ficou 28 no primeiro item, que é para a criação das variáveis,
+[00:07:24] e 6 para a API de formalização, para atualizar a API.
+[00:07:29] O Gabriel falou que é ok para o CQ também.
+[00:07:32] Tá, aí ficou 21, 3 e 16 para o plano de teste.
+[00:07:35] Tá certo, então.
+[00:07:42] Beleza, então, gente, é isso.
