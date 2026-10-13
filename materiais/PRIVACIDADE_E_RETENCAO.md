@@ -48,3 +48,13 @@ Ao encontrar conteúdo restrito (documentação interna e informação de client
 2. **Não revelar** o conteúdo na pendência: descrever apenas o **tipo** de risco e o timestamp.
 3. Registrar o estado real (`em revisão`) em `STATUS.md` e pedir decisão ao responsável pela
    divulgação — sem marcar o vídeo como `concluído`.
+
+## 4. Registro — lote `Gravando 2026-09-22 111258.mp4` (2026-10-13)
+
+- **Constatação:** ao iniciar o lote, os ramos `entrega/partes-gravando-2026-09-22-111258` e `entrega/transcricao-gravando-2026-09-22-111258` **não existiam mais** no remoto (`git ls-remote` vazio; codeload 404). Os logs de execução do Actions não puderam ser lidos no sandbox, e o SHA do 1º disparo não ficou registrado.
+- **Ação:** novo disparo da ponte pela branch do lote (`transferencia/tarefa.json`). Bytes conferidos (297627736 bytes; SHA-256 `c617494d…`) e ramo de partes apagado logo após a coleta.
+- **Objetos que permanecem acessíveis por SHA (provavelmente retidos):**
+  - partes, 2º disparo: `d55b80a7bf78886556ac78cc5784e787b689cfeb`;
+  - transcrição, 2º disparo: `3a1920d32ad9e278cfefd11e7a6063f8f38ba36a`;
+  - 1º disparo: SHA não registrado nesta sessão (ramos criados em 2026-10-13 entre 19:25 e 19:44 UTC).
+- **Recomendação:** incluir esses SHAs no pedido de remoção ao GitHub Support (§1, item 1) e não reutilizar a ponte para outros vídeos até decisão do responsável sobre exposição.

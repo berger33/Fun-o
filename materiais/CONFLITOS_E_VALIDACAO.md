@@ -30,6 +30,16 @@ Consequência para a contagem: 24 arquivos no manifesto correspondem a **22 cont
 4. **`Liberação padrão - Glauco.mp4`** (ver [`liberacao-padrao-glauco/incertezas.md`](liberacao-padrao-glauco/incertezas.md)):
    - **Divergência entre texto da planilha `Liberacao_Padrao_V30.xlsx` e instrução oral de Glauco (linha 86, 00:02:35 – 00:02:43):** a linha 86 da planilha diz apenas `"Criação de procedures: .NET - com a opção C, sem erros."`, mas Glauco alerta expressamente que esse texto está desatualizado e que é necessário também fazer/conferir se a opção **`W`** existe lá.
 
+## Pendências de `Gravando 2026-09-22 111258.mp4` (2026-10-13)
+
+Detalhes e evidências em [`gravando-2026-09-22-111258/incertezas.md`](gravando-2026-09-22-111258/incertezas.md).
+
+1. **`document_type`: código × descrição (`00:04:02`–`00:05:08`):** a fala conclui "código", mas um participante lembra que a descrição foi pedida ao cliente. **Validar com o responsável pela RFP001 antes de implementar.**
+2. **Campos já existentes na base (`00:03:10`–`00:03:29`):** afirmação falada sem conferência; a própria fala indica consulta ("vale consultar").
+3. **Código do perfil no web service e no SIC (`00:05:13`–`00:05:46`):** risco de falha por configuração ausente; não há valor nem tela. **Não registrar valores.**
+4. **Considerações e Anexo I da especificação:** lidos só em miniatura; **validar a página 3 completa e o anexo** no PDF `DS586780 (3)`.
+5. **Demais páginas do PDF (41):** não analisadas nesta gravação (só páginas 2–3).
+
 ## Diretrizes já validadas pelo responsável
 
 - **Dados de teste e nomes (resolvido em 2026-10-13):** o responsável confirmou que todos os dados exibidos nas gravações são fictícios/de teste e autorizou a publicação dos materiais derivados preservando o nome **Função Sistemas** e os **nomes dos operadores** (Jonas, William, Gabriel, Michelle, Felipe, Zé, Santana, etc.), mantendo a omissão de fotos/câmeras de pessoas.

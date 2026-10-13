@@ -38,3 +38,13 @@ Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo
 - **ETRACPD / ETRAINSS:** prefixos de campos de origem usados nas tabelas de layout das EFs (00:02:00; 00:07:00).
 - **simulation_id:** ID da simulação de reaproveitamento (pro rata) retornado pelo plugin de consulta de reaproveitamento de seguro; vazio fora de reaproveitamento (00:06:00).
 - **OS 556576:** "Gravação do ID da simulação na consulta do pro rata" (00:05:36).
+
+## Termos de `Gravando 2026-09-22 111258.mp4`
+
+- **attachment_document:** nome do agrupamento que informa documentos anexados no envio ao sistema externo (RFP001 `001.1`, `00:02:30`; especificação `00:03:05`). Ver [`glossário do lote`](gravando-2026-09-22-111258/glossario.md).
+- **document_type / document_name / user:** campos do agrupamento — tipo do documento, nome do documento anexado e usuário que anexou (`00:03:05`). `document_type` como **código** ou **descrição**: em aberto (`00:04:02`–`00:05:08`).
+- **null:** valor enviado quando não há documento anexado ou quando a informação não existe na base (`00:03:43`–`00:03:50`).
+- **SIC:** sistema de onde, segundo a fala, as informações devem ser obtidas; exige código do perfil (`00:05:13`–`00:05:20`).
+- **Código do perfil:** configuração necessária no SIC e no web service; valor não registrado (`00:05:22`–`00:05:34`).
+- **Review:** revisão feita ao fechar o pacote de versão; local de apresentação de projetos (`00:06:09`–`00:06:35`).
+- **IP:** situação do item de desenvolvimento; sigla não definida na gravação (`00:07:30`).
