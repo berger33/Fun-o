@@ -5,5 +5,6 @@
   "idioma": "pt",
   "ramo_entrega_partes": "entrega/partes-gravando-2026-09-22-111258",
   "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-09-22-111258",
-  "lote": "proximo menor da fila apos PROJETO 14-08 (arena/0f53ea0c-fun-o, 2026-10-13)"
+  "lote": "retomada em arena/792a3d47-fun-o (2026-10-13): re-disparo da ponte de partes, pois o ramo entrega/partes-gravando-2026-09-22-111258 havia sido removido depois de coleta anterior e nao estava mais publicado",
+  "tamanho_bloco_mb": "64"
 }
