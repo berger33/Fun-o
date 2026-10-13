@@ -1,0 +1,13 @@
+{
+  "arquivo": "Liberação padrão - Glauco.mp4",
+  "bytes": 181378373,
+  "sha256": "067265c553f7cf9ece67a7f65c681200e34aa4505549ccd623a826ca5ec31bac",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 316.5,
+  "segmentos": 85,
+  "duracao_transcricao_s": 121.4,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

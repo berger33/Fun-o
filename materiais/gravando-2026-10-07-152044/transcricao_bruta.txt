@@ -1,0 +1,68 @@
+# Transcrição automática — Gravando 2026-10-07 152044.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 63
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:06] Então, você está aí nessa tela, certo?
+[00:00:11] O que é uma despesa, você sabe?
+[00:00:14] O que é um seguro, você sabe o que é?
+[00:00:16] Aí na tela, onde fica?
+[00:00:27] Beleza?
+[00:00:29] Você sabe qual é a diferença?
+[00:00:32] Assim, a despesa, uma despesa, são vários tipos, né?
+[00:00:38] Então, a despesa do tipo seguro é um tipo da guia, tá?
+[00:00:45] Então, você consegue configurar diversos tipos de despesas do convênio, certo?
+[00:00:51] Então, no caso aí, você tá usando essa aí, certo?
+[00:00:55] 9998, seguro A, despesa, beleza?
+[00:01:01] Beleza
+[00:01:03] Acho que não
+[00:01:07] Eu não tenho certeza
+[00:01:09] Ele faz parte
+[00:01:10] Ele complementa
+[00:01:12] Mas não é a parte
+[00:01:15] Ele não é
+[00:01:15] Ele não é uma despesa
+[00:01:19] Ele tipo, tá junto aí
+[00:01:21] Ele faz parte da despesa
+[00:01:23] Mas não é uma despesa
+[00:01:25] Apartada
+[00:01:26] Você vai ver
+[00:01:29] Beleza, então
+[00:01:31] Duplica a tela do autorizador
+[00:01:33] Vamos abrir a tela do doutor Isabel.
+[00:01:36] Já tem uma aberta aí.
+[00:01:38] Mantenha essa tela aí.
+[00:01:41] Isso, então deixa só uma.
+[00:01:43] Vamos ver outra tela aí, outra tela.
+[00:01:55] Beleza, então vamos consultar o convênio.
+[00:02:07] Qual convênio que você quer consultar aí?
+[00:02:12] Você quer consultar o convênio que você tá usando.
+[00:02:18] Qual convênio você vai usar pra fazer?
+[00:02:24] Qual convênio você vai usar pra fazer?
+[00:02:26] Não quer que você chute, me fala.
+[00:02:33] É o 0012?
+[00:02:34] É ele que tá selecionado aí?
+[00:02:39] Isso.
+[00:02:50] Beleza.
+[00:02:52] Aí, tá vendo que tem um botão
+[00:02:54] que se chama despesas?
+[00:03:07] Isso, tá vendo? Tá ali, ó.
+[00:03:08] Código de despesas.
+[00:03:10] Qual código que tá aí que eu não tô enxergando? Tá muito pequeno?
+[00:03:16] 98.
+[00:03:17] Beleza. Então, você vai lá
+[00:03:19] consultar esse código. Então, a gente já sabe que o código
+[00:03:21] dele é 98, beleza? Então,
+[00:03:23] você já tem uma informação dessa P aí.
+[00:03:34] Então, beleza.
+[00:03:36] Beleza. Então, agora, você já
+[00:03:38] abstraiu essa informação, certo?
+[00:03:40] Agora sai dessa tela.
+[00:03:41] Agora a gente quer ver
+[00:03:43] A política em si
+[00:03:45] A gente sabe que a despesa
+[00:03:46] A despesa é 98
+[00:03:48] Agora a gente quer ver a política
+[00:03:51] Então pode ir
+[00:03:52] Agora essa não é a sua
+[00:03:54] Pode voltar pra tela

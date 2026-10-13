@@ -1,0 +1,763 @@
+1
+00:00:00,500 --> 00:00:02,800
+Então, o que a gente vai fazer, basicamente?
+
+2
+00:00:03,660 --> 00:00:07,280
+A gente vai implementar ali no módulo Servicom, no plugin,
+
+3
+00:00:08,440 --> 00:00:12,620
+envio da proposta ao sistema externo um novo campo.
+
+4
+00:00:12,900 --> 00:00:13,800
+O que seria esse campo?
+
+5
+00:00:14,820 --> 00:00:21,100
+É o CNPJ, que é responsável ali pelo número do cadastro nacional da pessoa jurídica.
+
+6
+00:00:22,000 --> 00:00:22,340
+Tá bom?
+
+7
+00:00:22,940 --> 00:00:25,400
+Então, para compor as informações desse plugin,
+
+8
+00:00:25,400 --> 00:00:32,960
+que enviam informações ao sistema externo da instituição
+
+9
+00:00:32,960 --> 00:00:36,160
+para a formalização digital,
+
+10
+00:00:36,820 --> 00:00:39,120
+a gente vai incluir um novo campo de CNPJ
+
+11
+00:00:39,120 --> 00:00:41,740
+destinado a um envio do número
+
+12
+00:00:41,740 --> 00:00:46,080
+da descrição do Cadastro Nacional de Pessoa Jurídica do empregador.
+
+13
+00:00:46,680 --> 00:00:47,180
+É isso.
+
+14
+00:00:47,600 --> 00:00:49,680
+Essa informação vem da consulta de margem
+
+15
+00:00:49,680 --> 00:00:52,420
+ou a gente vai ter que puxar baseado na origem 4 da proposta?
+
+16
+00:00:55,440 --> 00:00:57,120
+Na origem 4, Zé, se eu não me engano.
+
+17
+00:00:57,120 --> 00:00:59,580
+Porque ele está no meio do bloco
+
+18
+00:00:59,580 --> 00:01:01,300
+Lá da E3CPD
+
+19
+00:01:01,300 --> 00:01:03,260
+A consulta que a gente faz
+
+20
+00:01:03,260 --> 00:01:04,780
+Lá na consulta de margem
+
+21
+00:01:04,780 --> 00:01:06,460
+Deixa eu abrir a EF aqui
+
+22
+00:01:06,460 --> 00:01:10,780
+Eu digo lá no layout
+
+23
+00:01:10,780 --> 00:01:12,200
+Lá do envio
+
+24
+00:01:12,200 --> 00:01:27,230
+Não, da E3CPD mesmo
+
+25
+00:01:27,230 --> 00:01:30,790
+A gente tem a informação de qual campo que é?
+
+26
+00:01:32,650 --> 00:01:33,510
+Isso eu não tenho
+
+27
+00:01:33,510 --> 00:01:34,730
+Precisa pegar então
+
+28
+00:01:34,730 --> 00:01:36,950
+Só que acho que quando a gente começar lá
+
+29
+00:01:36,950 --> 00:01:39,190
+É só a gente colocar lá no select
+
+30
+00:01:39,190 --> 00:01:44,330
+É quando você pegar a semana
+
+31
+00:01:44,330 --> 00:01:46,170
+para a Pri, aí a gente põe na EF, Pri, também,
+
+32
+00:01:46,250 --> 00:01:48,330
+para deixar qual o campo que a gente está enviando.
+
+33
+00:01:49,550 --> 00:01:49,910
+Por favor.
+
+34
+00:01:51,470 --> 00:01:52,190
+Oi, não entendi.
+
+35
+00:01:52,870 --> 00:01:53,490
+O Zé vai pegar
+
+36
+00:01:53,490 --> 00:01:56,090
+da onde que é o campo que a gente vai enviar
+
+37
+00:01:56,090 --> 00:01:56,550
+a informação.
+
+38
+00:01:57,110 --> 00:02:00,150
+Na verdade, eu perguntei para o negócio.
+
+39
+00:02:00,450 --> 00:02:02,410
+Eu estou perguntando para o negócio qual é o campo.
+
+40
+00:02:02,770 --> 00:02:04,310
+Então, a gente
+
+41
+00:02:04,310 --> 00:02:06,150
+pode até ver com alguém do empregador lá
+
+42
+00:02:06,150 --> 00:02:08,050
+para a gente ver se a gente consegue
+
+43
+00:02:08,050 --> 00:02:10,270
+achar essa informação, mas aí
+
+44
+00:02:10,270 --> 00:02:12,030
+eu teria que colocar na EF esse cara de qualquer forma.
+
+45
+00:02:12,090 --> 00:02:13,290
+Você vai complementar aí.
+
+46
+00:02:13,290 --> 00:02:15,370
+entra cpd.nome do campo
+
+47
+00:02:15,370 --> 00:02:18,210
+só pra gente ter registrado
+
+48
+00:02:18,210 --> 00:02:18,990
+qualquer um
+
+49
+00:02:18,990 --> 00:02:22,070
+eu não sei se tá ruim
+
+50
+00:02:22,070 --> 00:02:23,410
+só pra mim, gente, eu não tô ouvindo
+
+51
+00:02:23,410 --> 00:02:25,450
+tá um pouco abafado agora
+
+52
+00:02:25,450 --> 00:02:26,470
+tá ruim, tá ruim
+
+53
+00:02:26,470 --> 00:02:28,410
+porra desse notebook
+
+54
+00:02:28,410 --> 00:02:30,230
+Silveirinho tá no percamar
+
+55
+00:02:30,230 --> 00:02:34,640
+tá me ouvindo?
+
+56
+00:02:35,400 --> 00:02:35,640
+é
+
+57
+00:02:35,640 --> 00:02:39,040
+eu já falei com a infra, agora acho que eu finalmente
+
+58
+00:02:39,040 --> 00:02:40,000
+vou arrumar essa porra
+
+59
+00:02:40,000 --> 00:02:42,920
+a gente só vai incluir ali na última coluna depois
+
+60
+00:02:42,920 --> 00:02:43,820
+o nome do campo
+
+61
+00:02:43,820 --> 00:02:46,420
+Tá vendo que tem vários campos
+
+62
+00:02:46,420 --> 00:02:47,960
+E-CPD ponto alguma coisa
+
+63
+00:02:47,960 --> 00:02:50,960
+A gente vai colocar um E-CPD ponto nome do campo
+
+64
+00:02:50,960 --> 00:02:52,240
+Ali só, só isso
+
+65
+00:02:52,240 --> 00:02:55,320
+É
+
+66
+00:02:55,320 --> 00:02:58,660
+O Zé vai ver qual é o nome
+
+67
+00:02:58,660 --> 00:03:00,400
+Vai mandar pra gente e a gente vai colocar
+
+68
+00:03:00,400 --> 00:03:00,920
+Depois
+
+69
+00:03:00,920 --> 00:03:04,810
+Alguém tem mais alguma dúvida?
+
+70
+00:03:05,190 --> 00:03:08,530
+Sim, aí eu posso cadastrar proposta do meu cliente
+
+71
+00:03:08,530 --> 00:03:10,470
+Com o CPF normal dele ainda
+
+72
+00:03:10,470 --> 00:03:12,290
+Então eu vou ter que cadastrar usando
+
+73
+00:03:12,290 --> 00:03:13,110
+O CNPJ
+
+74
+00:03:13,110 --> 00:03:15,010
+Não, pode cadastrar normal
+
+75
+00:03:15,010 --> 00:03:17,270
+E aí vai entrar no empregador
+
+76
+00:03:17,270 --> 00:03:19,130
+então isso. Porque aí tá falando, a descrição dele
+
+77
+00:03:19,130 --> 00:03:20,450
+é esse projeto do empregador, né?
+
+78
+00:03:20,950 --> 00:03:22,410
+Isso. Tá.
+
+79
+00:03:23,010 --> 00:03:29,100
+Mais alguém?
+
+80
+00:03:32,800 --> 00:03:33,060
+Não.
+
+81
+00:03:34,740 --> 00:03:35,680
+Então, próxima EF.
+
+82
+00:03:36,020 --> 00:04:06,390
+Você não vai apresentar, Pri? A próxima EF, que também
+
+83
+00:04:06,390 --> 00:04:08,530
+é nossa. Mas se você
+
+84
+00:04:08,530 --> 00:04:09,510
+não for, eu apresento aqui.
+
+85
+00:04:16,360 --> 00:04:18,760
+Peraí. Só, peraí. Rapidinho.
+
+86
+00:04:19,020 --> 00:04:19,780
+É que travou tudo.
+
+87
+00:04:22,320 --> 00:04:23,880
+Deixa eu ver aqui também.
+
+88
+00:04:40,110 --> 00:04:41,230
+Você tem ela fácil aí,
+
+89
+00:04:41,310 --> 00:04:46,100
+Augusto? Minha tela tá toda
+
+90
+00:04:46,100 --> 00:04:47,680
+travada, gente. Não tô conseguindo.
+
+91
+00:04:48,320 --> 00:04:50,120
+O que tem aqui? Eu vou compartilhar.
+
+92
+00:04:53,160 --> 00:04:58,510
+É 556776...
+
+93
+00:04:58,510 --> 00:05:02,590
+556576.
+
+94
+00:05:02,950 --> 00:05:03,750
+Deixa eu abrir aqui.
+
+95
+00:05:04,870 --> 00:05:05,590
+Só um momento.
+
+96
+00:05:08,430 --> 00:05:25,880
+Estão vendo a minha tela?
+
+97
+00:05:26,680 --> 00:05:27,080
+Estamos.
+
+98
+00:05:28,420 --> 00:05:30,560
+Bom, esse item aqui também é um item simples, tá?
+
+99
+00:05:30,940 --> 00:05:32,920
+É uma EF de um item só.
+
+100
+00:05:34,120 --> 00:05:36,220
+Onde é aqui no item...
+
+101
+00:05:36,220 --> 00:05:39,500
+No projeto 55676, tá?
+
+102
+00:05:40,120 --> 00:05:42,480
+Onde o objetivo aqui é viabilizar a integração
+
+103
+00:05:42,480 --> 00:05:45,240
+de informações mediante a simulação do reaproveitamento,
+
+104
+00:05:45,860 --> 00:05:49,760
+do reaproveitamento lá do ProRata, né?
+
+105
+00:05:49,920 --> 00:05:51,760
+No plugin de envio ao propósito do sistema externo.
+
+106
+00:05:52,340 --> 00:05:54,800
+Onde, a partir de agora, aqui no...
+
+107
+00:05:54,800 --> 00:05:55,540
+Vamos voltar também aqui.
+
+108
+00:05:56,120 --> 00:05:58,920
+A partir de agora, eles vão começar a passar para nós
+
+109
+00:05:58,920 --> 00:06:02,260
+o ID da simulação, né?
+
+110
+00:06:02,260 --> 00:06:16,160
+Então, com isso, lá no plugin do Envio Propósito Sistema Externo, nós vamos acrescentar um novo campo, que chama Simulation ID, e com isso ele vai trazer qual foi o ID da simulação do ProRata, tá?
+
+111
+00:06:16,160 --> 00:06:18,020
+se aqui nós colocamos aqui
+
+112
+00:06:18,020 --> 00:06:20,480
+o JSON, né, que eles mandaram pra nós
+
+113
+00:06:20,480 --> 00:06:22,520
+que vai vir assim, nós vamos
+
+114
+00:06:22,520 --> 00:06:23,900
+enviar lá no nosso
+
+115
+00:06:23,900 --> 00:06:26,640
+plugin de envio para o sistema externo
+
+116
+00:06:26,640 --> 00:06:28,380
+esse campo
+
+117
+00:06:28,380 --> 00:06:30,360
+de Simulation ID, tá?
+
+118
+00:06:30,540 --> 00:06:31,600
+Que tá aqui no
+
+119
+00:06:31,600 --> 00:06:33,840
+no
+
+120
+00:06:33,840 --> 00:06:36,340
+eita, peraí, que é gigante
+
+121
+00:06:36,340 --> 00:06:41,720
+esse plugin, né? Cadê
+
+122
+00:06:41,720 --> 00:06:47,180
+a informação?
+
+123
+00:06:50,670 --> 00:06:51,010
+Certo?
+
+124
+00:06:58,580 --> 00:07:00,000
+Augusto, aí dentro dele vai ter só
+
+125
+00:07:00,000 --> 00:07:02,400
+só o ID, né, aquele JSON
+
+126
+00:07:02,400 --> 00:07:05,360
+O JSON é o JSON que eles enviam
+
+127
+00:07:05,360 --> 00:07:06,820
+Pra nós, né, do ProRato e tudo mais
+
+128
+00:07:06,820 --> 00:07:08,020
+Com as informações do ProRato
+
+129
+00:07:08,020 --> 00:07:11,140
+Colocamos aqui na EF o JSON completo
+
+130
+00:07:11,140 --> 00:07:12,420
+Do jeito que eles passam pra nós
+
+131
+00:07:12,420 --> 00:07:15,040
+Mas o campo que nós vamos ver vai ser esse aqui
+
+132
+00:07:15,040 --> 00:07:17,100
+O Simulation ID, que é o novo campo
+
+133
+00:07:17,100 --> 00:07:18,860
+Que a partir de agora vai ter
+
+134
+00:07:18,860 --> 00:07:20,700
+E aí dentro da
+
+135
+00:07:20,700 --> 00:07:22,380
+Lá vai ter esse ID
+
+136
+00:07:22,380 --> 00:07:24,240
+Que eles passam pra nós
+
+137
+00:07:24,240 --> 00:07:26,520
+No plugin
+
+138
+00:07:26,520 --> 00:07:28,520
+Beleza?
+
+139
+00:07:30,280 --> 00:07:31,020
+Entendi, beleza
+
+140
+00:07:31,020 --> 00:07:33,340
+É isso, esse item também
+
+141
+00:07:33,340 --> 00:07:34,960
+Ele é um item simples também
+
+142
+00:07:34,960 --> 00:07:36,180
+Pequeno, né
+
+143
+00:07:36,180 --> 00:07:38,480
+Tem alguma especificação de
+
+144
+00:07:38,480 --> 00:07:40,280
+De nova
+
+145
+00:07:40,280 --> 00:07:42,080
+Refinanciamento, alguma coisa
+
+146
+00:07:42,080 --> 00:07:43,620
+Ah, é, reaproveitamento, né
+
+147
+00:07:43,620 --> 00:07:46,520
+Isso, é reaproveitamento, né, então quando é reaproveitamento
+
+148
+00:07:46,520 --> 00:07:48,240
+É ter todo aquele
+
+149
+00:07:48,240 --> 00:07:49,900
+Aquele
+
+150
+00:07:49,900 --> 00:07:53,040
+É ter uma esquemia, toda configuração pra fazer
+
+151
+00:07:53,040 --> 00:07:54,080
+Não, tá bom, tem gente
+
+152
+00:07:54,080 --> 00:07:54,920
+Tá
+
+153
+00:07:54,920 --> 00:07:58,580
+Aí no reaproveitamento você vai ver se ele se trouxe
+
+154
+00:07:58,580 --> 00:08:00,260
+O campo, se ele trouxe é vazio
+
+155
+00:08:00,260 --> 00:08:02,220
+ele vai enviar vazio também, tá bom?
+
+156
+00:08:02,920 --> 00:08:04,280
+Ele vai trazer o que veio aqui
+
+157
+00:08:04,280 --> 00:08:06,280
+no cara, se tá aprovado,
+
+158
+00:08:06,400 --> 00:08:08,300
+qual foi, só muda isso,
+
+159
+00:08:08,360 --> 00:08:10,160
+vai ter só esse novo campo aqui, tá bom?
+
+160
+00:08:10,780 --> 00:08:12,340
+Lá na...
+
+161
+00:08:12,340 --> 00:08:13,020
+no cara também.
+
+162
+00:08:13,420 --> 00:08:16,480
+Se não for reaproveitamento, vai vir vazio
+
+163
+00:08:16,480 --> 00:08:17,800
+esse número, esse ID.
+
+164
+00:08:18,380 --> 00:08:18,780
+Isso.
+
+165
+00:08:20,000 --> 00:08:23,400
+Tá bom? Ok, é isso.
+
+166
+00:08:30,260 --> 00:08:31,720
+Fechamos as dúvidas, então, pessoal?
+
+167
+00:08:33,000 --> 00:08:33,580
+É, esse aí
+
+168
+00:08:33,580 --> 00:08:35,440
+até que é relativamente simples, é só
+
+169
+00:08:35,440 --> 00:08:37,580
+a gente já tem o campo, né? A gente já retorna
+
+170
+00:08:37,580 --> 00:08:39,340
+esse campo lá, então é só levantar ele lá
+
+171
+00:08:39,340 --> 00:08:41,040
+no e-build do plugin
+
+172
+00:08:41,040 --> 00:08:43,340
+e passar ele pra frente.
+
+173
+00:08:44,000 --> 00:08:45,480
+Isso, perfeito. Isso mesmo.
+
+174
+00:08:47,580 --> 00:08:48,940
+Zé, você acha que você consegue
+
+175
+00:08:48,940 --> 00:08:50,840
+me mandar o Gantt desses dois
+
+176
+00:08:50,840 --> 00:08:52,660
+projetos quando? Segunda.
+
+177
+00:08:53,340 --> 00:08:54,540
+Segunda? Tá bom.
+
+178
+00:08:54,680 --> 00:08:57,160
+Eu já criei o do... Esse é do pacote 4, né?
+
+179
+00:08:57,680 --> 00:08:59,060
+Isso. Então a gente já
+
+180
+00:08:59,060 --> 00:09:00,900
+cria ele separado lá pra deixar e
+
+181
+00:09:00,900 --> 00:09:02,020
+já vai colocando os
+
+182
+00:09:02,020 --> 00:09:04,620
+os outros projetos dele depois.
+
+183
+00:09:04,620 --> 00:09:07,900
+aí Zé, quando você passar
+
+184
+00:09:07,900 --> 00:09:09,700
+o Gantt, nos avisa pra colocar
+
+185
+00:09:09,700 --> 00:09:10,920
+certinho aqui no mapa
+
+186
+00:09:10,920 --> 00:09:13,060
+valeu
+
+187
+00:09:13,060 --> 00:09:16,920
+aí dá um toque no
+
+188
+00:09:16,920 --> 00:09:19,700
+Gabriel também, pras horas dele no Gantt
+
+189
+00:09:19,700 --> 00:09:20,120
+tá Zé?
+
+190
+00:09:20,120 --> 00:09:21,020
+tá bom, beleza
+
+191
+00:09:21,020 --> 00:09:24,900
+valeu, valeu pessoal

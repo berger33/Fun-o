@@ -1,0 +1,13 @@
+{
+  "arquivo": "PROJETO 14-08.mp4",
+  "bytes": 231977005,
+  "sha256": "5d5e9a2ce86709552d449c28025fdc71f5056f3e81dc035c9aa1d041bd5241ca",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 565.29,
+  "segmentos": 191,
+  "duracao_transcricao_s": 438.5,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

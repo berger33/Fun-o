@@ -1,0 +1,90 @@
+# Transcrição automática — Liberação padrão - Glauco.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 85
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] Uma OS função antiga e disponibilizar.
+[00:00:02] Esse tipo a gente não fazia aqui.
+[00:00:05] Acho que o pessoal também nem sabe.
+[00:00:07] Até os mais experientes acho que não sabem esse tipo de disponibilização, entendeu?
+[00:00:13] Perfeito.
+[00:00:14] A gente vai começar a fazer aqui.
+[00:00:17] Meio que saiu lá do galo e vai vir para a gente.
+[00:00:22] Já deixa eu até explicar, então, mais ou menos aqui rapidinho para o pessoal como que vai funcionar.
+[00:00:27] Até para você mesmo, mas é assim.
+[00:00:29] A gente tem essa planilha aqui, pessoal
+[00:00:31] Vocês estão vendo minha tela aí?
+[00:00:33] Sim
+[00:00:33] A gente tem essa planilha
+[00:00:36] Essa planilha é a planilha de disponibilização padrão
+[00:00:39] O que a gente faz?
+[00:00:41] A gente ignora todos esses campos aqui embaixo
+[00:00:44] Que são abas de cálculo
+[00:00:47] E deixa somente nessa aba aqui de cenários
+[00:00:50] E aí a gente tem que ver o que nós estamos testando
+[00:00:53] Por exemplo, se nós estamos testando um website
+[00:00:57] Se nós estamos testando um website
+[00:00:59] A gente vai marcar aqui
+[00:01:01] O website que a gente está testando
+[00:01:02] Se a gente está testando, sei lá, um plugin
+[00:01:05] A gente coloca aqui o plugin
+[00:01:07] Conforme o que a gente marcar aqui
+[00:01:09] Vai ser demonstrado
+[00:01:11] O que a gente precisa estar
+[00:01:13] Testando
+[00:01:14] Então basicamente é só seguir esses processos
+[00:01:17] Aqui que está sendo pedido na planilha
+[00:01:19] E vida que segue
+[00:01:21] É basicamente isso aqui
+[00:01:23] Que a gente precisa testar
+[00:01:24] E também evidenciar
+[00:01:26] Basicamente é isso
+[00:01:28] Alguns são muito mais simples
+[00:01:32] Por exemplo, se a gente for testar um plugin
+[00:01:33] É basicamente só mostrar ele instalado
+[00:01:38] E rodando
+[00:01:39] Está rodando, basicamente é isso
+[00:01:42] O restante tem coisas aqui que a gente precisa analisar
+[00:01:45] Se precisa colocar evidência, às vezes não
+[00:01:48] Por exemplo, lista de plugins conforme a planilha disponível
+[00:01:51] Tem que colocar evidência disso
+[00:01:53] É só uma conferência para a gente ver se está ok
+[00:01:56] Então, alguns vai a evidência, outras coisas não vão.
+[00:02:00] E aqui no lado, tem também o que a gente está fazendo.
+[00:02:05] Se o cliente já tem o módulo, se é uma entrega inicial completa e tudo mais.
+[00:02:10] Nesse caso do Willian, a gente coloca...
+[00:02:13] Deixa eu ver aqui, o que é o dele aqui?
+[00:02:17] Portobank.
+[00:02:19] Liberação do módulo padrão.
+[00:02:21] É, o cliente não tem.
+[00:02:22] Então, vai ser essa entrega inicial completa.
+[00:02:25] Aí você marca aqui como sim
+[00:02:27] Essa entrega inicial completa aqui
+[00:02:29] E aí a gente vê aqui que o cara vai testar
+[00:02:31] No caso do plugin seria só
+[00:02:33] Mostrar ele aberto, criação com C
+[00:02:35] Isso aqui está desatualizado
+[00:02:37] Precisa também fazer a criação com W
+[00:02:39] Na verdade só conferir se o W
+[00:02:41] Existe lá, para ver se
+[00:02:42] Está tudo certinho
+[00:02:44] Fechou, belezinha
+[00:02:48] Boa, isso que eu ia pedir
+[00:02:51] Tá bom, aí deu para entender
+[00:02:53] Caso não, eu te
+[00:02:55] Explico melhor depois se precisar
+[00:02:57] Fechou?
+[00:03:01] Beleza, e aí
+[00:03:02] Por hoje você pode fazer isso daí, tá?
+[00:03:05] Tinha pedido pra você iniciar a sua outra função
+[00:03:06] Mas por hoje você pode iniciar
+[00:03:08] Esse cara aí, fechou?
+[00:03:13] Beleza, acho que a princípio é isso com você, mano
+[00:03:15] Belezinha? Bom dia, viu?
+[00:03:19] O que foi logo?
+[00:03:22] O função então não iniciou ainda, né?
+[00:03:23] O função azul
+[00:03:25] 53, 54 já finalizou
+[00:03:27] Ah, tá, beleza
+[00:03:29] Está finalizado.
+[00:03:33] Fechou, William. Obrigado, viu? Bom dia, bom trabalho.
