@@ -27,6 +27,8 @@ Consequência para a contagem: 24 arquivos no manifesto correspondem a **22 cont
 3. **`Gravando 2026-10-07 152044.mp4`** (ver [`gravando-2026-10-07-152044/incertezas.md`](gravando-2026-10-07-152044/incertezas.md)):
    - **Erro de reconhecimento automático ("doutor Isabel" × "Autorizador", 00:01:31):** corrigido na transcrição limpa com base nas abas abertas do **Autorizador Web**.
    - **Continuação da consulta em `Política de Despesas e Tarifas` (00:03:41 – 00:04:10):** o vídeo encerra logo após o orientador indicar a consulta da política `98` em si.
+4. **`Liberação padrão - Glauco.mp4`** (ver [`liberacao-padrao-glauco/incertezas.md`](liberacao-padrao-glauco/incertezas.md)):
+   - **Divergência entre texto da planilha `Liberacao_Padrao_V30.xlsx` e instrução oral de Glauco (linha 86, 00:02:35 – 00:02:43):** a linha 86 da planilha diz apenas `"Criação de procedures: .NET - com a opção C, sem erros."`, mas Glauco alerta expressamente que esse texto está desatualizado e que é necessário também fazer/conferir se a opção **`W`** existe lá.
 
 ## Diretrizes já validadas pelo responsável
 

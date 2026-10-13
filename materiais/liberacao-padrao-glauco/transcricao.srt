@@ -1,0 +1,339 @@
+1
+00:00:00,000 --> 00:00:01,940
+Uma OS função antiga e disponibilizar.
+
+2
+00:00:02,380 --> 00:00:04,020
+Esse tipo a gente não fazia aqui.
+
+3
+00:00:05,040 --> 00:00:06,620
+Acho que o pessoal também nem sabe.
+
+4
+00:00:07,900 --> 00:00:12,480
+Até os mais experientes acho que não sabem esse tipo de disponibilização, entendeu?
+
+5
+00:00:13,520 --> 00:00:14,000
+Perfeito.
+
+6
+00:00:14,220 --> 00:00:17,020
+A gente vai começar a fazer aqui.
+
+7
+00:00:17,200 --> 00:00:20,300
+Meio que saiu lá do galo e vai vir para a gente.
+
+8
+00:00:22,060 --> 00:00:27,020
+Já deixa eu até explicar, então, mais ou menos aqui rapidinho para o pessoal como que vai funcionar.
+
+9
+00:00:27,020 --> 00:00:29,100
+Até para você mesmo, mas é assim.
+
+10
+00:00:29,100 --> 00:00:31,360
+A gente tem essa planilha aqui, pessoal
+
+11
+00:00:31,360 --> 00:00:32,540
+Vocês estão vendo minha tela aí?
+
+12
+00:00:33,280 --> 00:00:33,560
+Sim
+
+13
+00:00:33,560 --> 00:00:36,880
+A gente tem essa planilha
+
+14
+00:00:36,880 --> 00:00:39,880
+Essa planilha é a planilha de disponibilização padrão
+
+15
+00:00:39,880 --> 00:00:41,080
+O que a gente faz?
+
+16
+00:00:41,200 --> 00:00:44,420
+A gente ignora todos esses campos aqui embaixo
+
+17
+00:00:44,420 --> 00:00:47,700
+Que são abas de cálculo
+
+18
+00:00:47,700 --> 00:00:50,620
+E deixa somente nessa aba aqui de cenários
+
+19
+00:00:50,620 --> 00:00:53,980
+E aí a gente tem que ver o que nós estamos testando
+
+20
+00:00:53,980 --> 00:00:57,080
+Por exemplo, se nós estamos testando um website
+
+21
+00:00:57,080 --> 00:00:59,640
+Se nós estamos testando um website
+
+22
+00:00:59,640 --> 00:01:01,000
+A gente vai marcar aqui
+
+23
+00:01:01,000 --> 00:01:02,880
+O website que a gente está testando
+
+24
+00:01:02,880 --> 00:01:05,780
+Se a gente está testando, sei lá, um plugin
+
+25
+00:01:05,780 --> 00:01:07,120
+A gente coloca aqui o plugin
+
+26
+00:01:07,120 --> 00:01:09,760
+Conforme o que a gente marcar aqui
+
+27
+00:01:09,760 --> 00:01:11,540
+Vai ser demonstrado
+
+28
+00:01:11,540 --> 00:01:13,480
+O que a gente precisa estar
+
+29
+00:01:13,480 --> 00:01:14,620
+Testando
+
+30
+00:01:14,620 --> 00:01:17,540
+Então basicamente é só seguir esses processos
+
+31
+00:01:17,540 --> 00:01:19,820
+Aqui que está sendo pedido na planilha
+
+32
+00:01:19,820 --> 00:01:21,600
+E vida que segue
+
+33
+00:01:21,600 --> 00:01:23,340
+É basicamente isso aqui
+
+34
+00:01:23,340 --> 00:01:24,740
+Que a gente precisa testar
+
+35
+00:01:24,740 --> 00:01:26,400
+E também evidenciar
+
+36
+00:01:26,400 --> 00:01:28,900
+Basicamente é isso
+
+37
+00:01:28,900 --> 00:01:32,080
+Alguns são muito mais simples
+
+38
+00:01:32,080 --> 00:01:33,680
+Por exemplo, se a gente for testar um plugin
+
+39
+00:01:33,680 --> 00:01:38,200
+É basicamente só mostrar ele instalado
+
+40
+00:01:38,200 --> 00:01:39,880
+E rodando
+
+41
+00:01:39,880 --> 00:01:42,140
+Está rodando, basicamente é isso
+
+42
+00:01:42,140 --> 00:01:45,580
+O restante tem coisas aqui que a gente precisa analisar
+
+43
+00:01:45,580 --> 00:01:48,400
+Se precisa colocar evidência, às vezes não
+
+44
+00:01:48,400 --> 00:01:51,140
+Por exemplo, lista de plugins conforme a planilha disponível
+
+45
+00:01:51,140 --> 00:01:53,220
+Tem que colocar evidência disso
+
+46
+00:01:53,220 --> 00:01:56,340
+É só uma conferência para a gente ver se está ok
+
+47
+00:01:56,960 --> 00:01:59,360
+Então, alguns vai a evidência, outras coisas não vão.
+
+48
+00:02:00,200 --> 00:02:05,520
+E aqui no lado, tem também o que a gente está fazendo.
+
+49
+00:02:05,520 --> 00:02:10,100
+Se o cliente já tem o módulo, se é uma entrega inicial completa e tudo mais.
+
+50
+00:02:10,700 --> 00:02:13,800
+Nesse caso do Willian, a gente coloca...
+
+51
+00:02:13,800 --> 00:02:15,720
+Deixa eu ver aqui, o que é o dele aqui?
+
+52
+00:02:17,060 --> 00:02:17,580
+Portobank.
+
+53
+00:02:19,620 --> 00:02:21,000
+Liberação do módulo padrão.
+
+54
+00:02:21,180 --> 00:02:22,040
+É, o cliente não tem.
+
+55
+00:02:22,360 --> 00:02:25,360
+Então, vai ser essa entrega inicial completa.
+
+56
+00:02:25,360 --> 00:02:27,100
+Aí você marca aqui como sim
+
+57
+00:02:27,100 --> 00:02:29,300
+Essa entrega inicial completa aqui
+
+58
+00:02:29,300 --> 00:02:31,700
+E aí a gente vê aqui que o cara vai testar
+
+59
+00:02:31,700 --> 00:02:33,060
+No caso do plugin seria só
+
+60
+00:02:33,060 --> 00:02:35,540
+Mostrar ele aberto, criação com C
+
+61
+00:02:35,540 --> 00:02:37,220
+Isso aqui está desatualizado
+
+62
+00:02:37,220 --> 00:02:39,160
+Precisa também fazer a criação com W
+
+63
+00:02:39,160 --> 00:02:41,440
+Na verdade só conferir se o W
+
+64
+00:02:41,440 --> 00:02:42,680
+Existe lá, para ver se
+
+65
+00:02:42,680 --> 00:02:44,200
+Está tudo certinho
+
+66
+00:02:44,200 --> 00:02:48,400
+Fechou, belezinha
+
+67
+00:02:48,400 --> 00:02:51,740
+Boa, isso que eu ia pedir
+
+68
+00:02:51,740 --> 00:02:53,640
+Tá bom, aí deu para entender
+
+69
+00:02:53,640 --> 00:02:55,200
+Caso não, eu te
+
+70
+00:02:55,200 --> 00:02:57,320
+Explico melhor depois se precisar
+
+71
+00:02:57,320 --> 00:02:57,920
+Fechou?
+
+72
+00:03:01,260 --> 00:03:02,140
+Beleza, e aí
+
+73
+00:03:02,140 --> 00:03:04,820
+Por hoje você pode fazer isso daí, tá?
+
+74
+00:03:05,320 --> 00:03:06,940
+Tinha pedido pra você iniciar a sua outra função
+
+75
+00:03:06,940 --> 00:03:08,420
+Mas por hoje você pode iniciar
+
+76
+00:03:08,420 --> 00:03:10,360
+Esse cara aí, fechou?
+
+77
+00:03:13,550 --> 00:03:15,550
+Beleza, acho que a princípio é isso com você, mano
+
+78
+00:03:15,550 --> 00:03:19,010
+Belezinha? Bom dia, viu?
+
+79
+00:03:19,310 --> 00:03:21,670
+O que foi logo?
+
+80
+00:03:22,210 --> 00:03:23,850
+O função então não iniciou ainda, né?
+
+81
+00:03:23,850 --> 00:03:25,730
+O função azul
+
+82
+00:03:25,730 --> 00:03:27,670
+53, 54 já finalizou
+
+83
+00:03:27,670 --> 00:03:29,310
+Ah, tá, beleza
+
+84
+00:03:29,310 --> 00:03:30,170
+Está finalizado.
+
+85
+00:03:33,110 --> 00:03:34,810
+Fechou, William. Obrigado, viu? Bom dia, bom trabalho.

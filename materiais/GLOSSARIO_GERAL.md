@@ -21,6 +21,10 @@
 | **Cód. Política de Despesa/Tarifa (`98`)** | Código que vincula um convênio (`989898 - CONV MS`) à sua política de despesas e tarifas, consultado no botão `Despesas` da tela de convênio | SISTEMAS / NEGOCIO | idem — 00:03:07 – 00:03:21 |
 | **Reaproveitamento de seguro** | Funcionalidade de refinanciamento em que o seguro da operação anterior é reaproveitado, monitorada em testes de integração | NEGOCIO | idem — 00:00:00 |
 | **`FCSMONITOREMPR` (`ECONSULT` / `TBPERFCON`)** | Banco e tabelas de monitoramento de consultas/eventos de esteira e averbação por proposta (`CSNRPROP`) | SQL / SISTEMAS | idem — 00:00:00 |
+| **Disponibilização padrão (`Liberacao_Padrao_V30.xlsx`)** | Processo de validação e evidenciação de pacotes de liberação padrão guiado pela aba `Cenários` da planilha `Liberacao_Padrao_V30.xlsx` | PROCESSOS | [`liberacao-padrao-glauco`](liberacao-padrao-glauco/glossario.md) — 00:00:29 – 00:02:47 |
+| **Entrega inicial - Completo (coluna `G`)** | Modalidade de disponibilização padrão aplicada quando o cliente ainda não possui o módulo (ex.: Portobank) | PROCESSOS / NEGOCIO | idem — 00:02:00 – 00:02:28 |
+| **Opções `C` e `W` (procedures `.NET`)** | Opções de criação/conferência de procedures `.NET` na liberação padrão (planilha cita `C`, mas deve-se conferir também `W`) | SISTEMAS / SQL | idem — 00:02:33 – 00:02:43 |
+| **`TPARWFIUTIL` (`PWALIAS`) / `WFIUTIL` / `TRTHB` / `FI.SQLResutil` / `WebAcesso`** | Tabelas, campos e utilitários descritos nos cenários de `Web Site .Net` e `Plugin` da planilha de liberação padrão | SISTEMAS / SQL | idem — 00:00:50, 00:01:40 |
 
 > Definições completas, com todas as fontes e timestamps, em
 > [`apresentacao-projeto-19-18/glossario.md`](apresentacao-projeto-19-18/glossario.md).

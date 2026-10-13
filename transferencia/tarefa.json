@@ -1,6 +1,8 @@
 {
-  "arquivo": "Liberação padrão - Glauco.mp4",
-  "slug": "liberacao-padrao-glauco",
+  "arquivo": "PROJETO 14-08.mp4",
+  "slug": "projeto-14-08",
   "modelo": "large-v3",
-  "idioma": "pt"
+  "idioma": "pt",
+  "ramo_entrega_partes": "entrega/partes-projeto-14-08",
+  "ramo_entrega_transcricao": "entrega/transcricao-projeto-14-08"
 }
