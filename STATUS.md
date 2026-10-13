@@ -1,16 +1,48 @@
 # Status da extração
 
-| Vídeo | Estado | Responsável/data | Último timestamp processado | Categorias | Observações / commit |
-|---|---|---|---|---|---|
+Atualizado em **2026-10-13** (Arena). Estados: `pendente`, `em análise`, `em revisão`, `concluído`.
 
-Estados: `pendente`, `em análise`, `em revisão`, `concluído`.
+**Piloto do lote atual:** `Apresentação projeto 19-18.mp4` — download via Git LFS **bloqueado neste ambiente**. Evidências, comandos e erro exato em [`materiais/BLOQUEIO_LFS_ARENA.md`](materiais/BLOQUEIO_LFS_ARENA.md).
+
+| Vídeo | Slug previsto | Bytes (manifesto) | Estado | Responsável/data | Último timestamp processado | Categorias | Observações / commit |
+|---|---|---|---|---|---|---|---|
+| Apresentação projeto 19-18.mp4 | apresentacao-projeto-19-18 | 179956679 | pendente | Arena / 2026-10-13 | — | — | Piloto do lote. Download LFS bloqueado no Arena (cliente `git-lfs` ausente e host de conteúdo inacessível). Nenhum byte baixado; ver `materiais/BLOQUEIO_LFS_ARENA.md`. |
+| AVERBACAO.mp4 | averbacao | 5033624752 | pendente | — | — | — | Dividido em 4 partes; exige reconstrução seletiva. |
+| ClientSecret EWEN TREINAMENTO.mp4 | clientsecret-ewen-treinamento | 1681225396 | pendente | — | — | — | — |
+| Como fazer EPT.mp4 | como-fazer-ept | 1229228708 | pendente | — | — | — | — |
+| dESAVERBAÇÃO.mp4 | desaverbacao | 2531378142 | pendente | — | — | — | Dividido em 2 partes; exige reconstrução seletiva. |
+| explicacao mesa c6.mp4 | explicacao-mesa-c6 | 1982033592 | pendente | — | — | — | — |
+| Gravando 2026-07-07 155307.mp4 | gravando-2026-07-07-155307 | 56195092 | pendente | — | — | — | — |
+| Gravando 2026-07-08 182343.mp4 | gravando-2026-07-08-182343 | 356602844 | pendente | — | — | — | — |
+| Gravando 2026-08-24 124650.mp4 | gravando-2026-08-24-124650 | 644238242 | pendente | — | — | — | — |
+| Gravando 2026-08-24 161729.mp4 | gravando-2026-08-24-161729 | 644238242 | pendente | — | — | — | Mesmo tamanho de `Gravando 2026-08-24 124650.mp4`; conferir se são gravações distintas antes de analisar. |
+| Gravando 2026-09-22 111258.mp4 | gravando-2026-09-22-111258 | 297627736 | pendente | — | — | — | — |
+| Gravando 2026-09-23 164626.mp4 | gravando-2026-09-23-164626 | 1087239062 | pendente | — | — | — | — |
+| Gravando 2026-10-06 110907.mp4 | gravando-2026-10-06-110907 | 770228772 | pendente | — | — | — | — |
+| Gravando 2026-10-07 132428.mp4 | gravando-2026-10-07-132428 | 3151497131 | pendente | — | — | — | Dividido em 2 partes; exige reconstrução seletiva. |
+| Gravando 2026-10-07 152044.mp4 | gravando-2026-10-07-152044 | 134290125 | pendente | — | — | — | — |
+| Jonas EPT explicação.mp4 | jonas-ept-explicacao | 318342582 | pendente | — | — | — | Mesmo tamanho de `jonas2309.mp4`; conferir duplicidade antes de analisar. |
+| jonas2309.mp4 | jonas2309 | 318342582 | pendente | — | — | — | Mesmo tamanho de `Jonas EPT explicação.mp4`; conferir duplicidade antes de analisar. |
+| Liberação padrão - Glauco.mp4 | liberacao-padrao-glauco | 181378373 | pendente | — | — | — | — |
+| MCB - QISTA.mp4 | mcb-qista | 543851523 | pendente | — | — | — | — |
+| MICHELLE CTC PORTABILIDADE REFIN.mp4 | michelle-ctc-portabilidade-refin | 473540507 | pendente | — | — | — | — |
+| Primeiro projeto.mp4 | primeiro-projeto | 616715835 | pendente | — | — | — | — |
+| PROJETO 14-08.mp4 | projeto-14-08 | 231977005 | pendente | — | — | — | — |
+| projeto EPT.mp4 | projeto-ept | 1246682448 | pendente | — | — | — | — |
+| recalculo.mp4 | recalculo | 2434086989 | pendente | — | — | — | Dividido em 2 partes; exige reconstrução seletiva. |
 
 ## Resumo da coleção
 
-- Vídeos no manifesto: preencher após conferência.
-- Concluídos: 0.
-- Em análise: 0.
-- Em revisão: 0.
-- Pendentes: preencher após conferência.
-- Último lote/commit publicado: plano e roteiro iniciais.
-- Pendências de validação humana: nenhuma registrada até iniciar a análise.
+- Vídeos no manifesto: **24** (conferidos linha a linha contra os arquivos/ponteiros presentes no repositório).
+- Concluídos: **0**.
+- Em análise: **0**.
+- Em revisão: **0**.
+- Pendentes: **24** — nenhum vídeo analisado até o momento (a extração depende de download LFS funcional; ver bloqueio abaixo).
+- Último lote/commit publicado: índice da biblioteca e registro do bloqueio LFS (2026-10-13).
+- Pendências de validação humana:
+  1. **Bloqueio de egress LFS no Arena** para o piloto `Apresentação projeto 19-18.mp4` — nenhum byte do vídeo pode ser baixado (cliente `git-lfs` ausente; `objects.githubusercontent.com`/`github-cloud.githubusercontent.com` inacessíveis). Detalhes, comandos e erro exato em [`materiais/BLOQUEIO_LFS_ARENA.md`](materiais/BLOQUEIO_LFS_ARENA.md). Requer ação de infraestrutura/plataforma ou entrega do arquivo/transcrição.
+  2. Transcrição automática também depende de pesos de modelo em host não permitido (`huggingface.co` bloqueado); avaliar liberação ou fornecimento de `SRT/VTT`.
+  3. Possíveis duplicidades de gravação com o mesmo tamanho (`Jonas EPT explicação.mp4` × `jonas2309.mp4`; `Gravando 2026-08-24 124650.mp4` × `Gravando 2026-08-24 161729.mp4`) — confirmar antes de extrair para não fundir fontes distintas.
+  4. Nenhum conteúdo foi publicado em `materiais/<slug>/`; nada a revisar do ponto de vista de privacidade até aqui.
+
+> Observação de método: o plano só permite anunciar uma gravação como analisada depois de ver a fonte do início ao fim, com timestamps, categorias, prints sanitizados e índices atualizados. Como a fonte não pôde ser obtida, o piloto **permanece `pendente`**.
