@@ -72,13 +72,17 @@ jobs:
           MODELO: ${{ steps.tarefa.outputs.modelo }}
           IDIOMA: ${{ steps.tarefa.outputs.idioma }}
         run: |
-          set -euo pipefail
+          # Sem `set -e`: o log da tentativa precisa ser publicado mesmo em caso de falha.
           mkdir -p saida
-          python3 tools/transcrever.py --video "$ARQUIVO" --saida saida --modelo "$MODELO" --idioma "$IDIOMA"
-          cp saida/transcricao_meta.json saida/transcricao_meta.orig.json || true
-          ls -l saida
+          set -o pipefail
+          python3 -v 2>/dev/null | head -1 || true
+          python3 -m pip show faster-whisper ctranslate2 | sed -n '1,20p' > saida/ambiente.txt 2>&1 || true
+          python3 tools/transcrever.py --video "$ARQUIVO" --saida saida --modelo "$MODELO" --idioma "$IDIOMA" 2>&1 | tee saida/execucao.log
+          echo "codigo_saida=${PIPESTATUS[0]}" | tee -a saida/execucao.log
+          ls -l saida || true
 
       - name: Publicar texto no ramo temporário de entrega
+        if: always()
         env:
           RAMO_ENTREGA: ${{ steps.tarefa.outputs.ramo_entrega }}
           ARQUIVO: ${{ steps.tarefa.outputs.arquivo }}
@@ -86,7 +90,8 @@ jobs:
           set -euo pipefail
           mkdir -p transferencia/transcricao
           cp saida/transcricao_bruta.txt saida/transcricao.srt saida/transcricao.vtt \
-             saida/transcricao_meta.json transferencia/transcricao/
+             saida/transcricao_meta.json transferencia/transcricao/ 2>/dev/null || true
+          cp saida/execucao.log saida/ambiente.txt transferencia/transcricao/ 2>/dev/null || true
           {
             echo "# Transcrição automática — entrega temporária"
             echo
