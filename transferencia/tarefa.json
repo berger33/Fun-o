@@ -5,5 +5,6 @@
   "idioma": "pt",
   "ramo_entrega_partes": "entrega/partes-gravando-2026-09-22-111258",
   "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-09-22-111258",
-  "lote": "proximo menor da fila apos PROJETO 14-08 (arena/0f53ea0c-fun-o, 2026-10-13)"
+  "lote": "proximo menor da fila apos PROJETO 14-08 (arena/e81830e4-fun-o, 2026-10-13): re-disparo da ponte de partes e transcricao; os ramos entrega/* anteriores nao existem mais no remoto (404)",
+  "sessao": "arena/e81830e4-fun-o"
 }
