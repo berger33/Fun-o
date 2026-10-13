@@ -16,7 +16,7 @@ Atualizado em **2026-10-13** (Arena). Estados: `pendente`, `em análise`, `em re
 | Gravando 2026-07-08 182343.mp4 | gravando-2026-07-08-182343 | 356602844 | pendente | — | — | — | — |
 | Gravando 2026-08-24 124650.mp4 | gravando-2026-08-24-124650 | 644238242 | pendente | — | — | — | **Duplicado exato** de `Gravando 2026-08-24 161729.mp4` (mesmo objeto LFS `1b9b6afd…`): analisar uma vez e remeter a outra. |
 | Gravando 2026-08-24 161729.mp4 | gravando-2026-08-24-161729 | 644238242 | pendente | — | — | — | **Duplicado exato** de `Gravando 2026-08-24 124650.mp4` (mesmo objeto LFS `1b9b6afd…`). |
-| Gravando 2026-09-22 111258.mp4 | gravando-2026-09-22-111258 | 297627736 | em análise | Arena / 2026-10-13 | — | — | Próximo menor vídeo da fila; transferência/transcrição sob demanda disparadas. |
+| Gravando 2026-09-22 111258.mp4 | gravando-2026-09-22-111258 | 297627736 | **concluído** | Arena / 2026-10-13 | 00:08:43 (fim) | SISTEMAS, PROCESSOS, NEGOCIO, INFRA_E_ACESSO, DÚVIDA_OU_CONFLITO (sem SQL demonstrado) | Fonte obtida e verificada (297627736 bytes; SHA-256 `c617494d…`) pela ponte, com 2 disparos (ramos `entrega/*` do 1º disparo já inexistentes; ver nota de retenção). 8 documentos + 2 capturas sanitizadas em [`materiais/gravando-2026-09-22-111258/`](materiais/gravando-2026-09-22-111258/LEIA-ME.md). Auditoria do roteiro: 0 falhas, 0 achados de privacidade. Commits de ponte da 2ª rodada (objetos provavelmente retidos): partes `d55b80a7…`, transcrição `3a1920d3…`. |
 | Gravando 2026-09-23 164626.mp4 | gravando-2026-09-23-164626 | 1087239062 | pendente | — | — | — | — |
 | Gravando 2026-10-06 110907.mp4 | gravando-2026-10-06-110907 | 770228772 | pendente | — | — | — | — |
 | Gravando 2026-10-07 132428.mp4 | gravando-2026-10-07-132428 | 3151497131 | pendente | — | — | — | Dividido em 2 partes; exige reconstrução seletiva. |
@@ -35,13 +35,15 @@ Atualizado em **2026-10-13** (Arena). Estados: `pendente`, `em análise`, `em re
 
 - Vídeos no manifesto: **24** (conferidos linha a linha contra os arquivos/ponteiros presentes no repositório pelo `tools/checar_manifesto.py`).
 - Conteúdos distintos: **22** — dois pares são cópias exatas (mesmo objeto LFS), confirmado por oid: `Gravando 2026-08-24 124650/161729.mp4` e `Jonas EPT explicação.mp4`/`jonas2309.mp4`.
-- Concluídos: **5** — `Apresentação projeto 19-18.mp4`, `Gravando 2026-07-07 155307.mp4`, `Gravando 2026-10-07 152044.mp4`, `Liberação padrão - Glauco.mp4` e `PROJETO 14-08.mp4`.
-- Em análise: **1** — `Gravando 2026-09-22 111258.mp4` (próximo menor da fila).
+- Concluídos: **6** — `Apresentação projeto 19-18.mp4`, `Gravando 2026-07-07 155307.mp4`, `Gravando 2026-09-22 111258.mp4`, `Gravando 2026-10-07 152044.mp4`, `Liberação padrão - Glauco.mp4` e `PROJETO 14-08.mp4`.
+- Em análise: **0**.
 - Em revisão: **0**.
-- Pendentes: **18** — aguardando a vez na fila (ordem: menor → maior).
-- Último lote/commit publicado: `PROJETO 14-08.mp4` **concluído** e publicado na retomada (2026-10-13).
+- Pendentes: **18** linhas do manifesto (**16** conteúdos distintos) — aguardando a vez na fila (ordem: menor → maior). Próximo: `Jonas EPT explicação.mp4` (318342582 bytes), com `jonas2309.mp4` como duplicata.
+- Último lote/commit publicado: `Gravando 2026-09-22 111258.mp4` **concluído** (lote 2026-10-13, branch `arena/e81830e4-fun-o`); commit de encerramento e PR para `main` conforme o padrão do lote.
+- Observação do lote: ao iniciar, os ramos `entrega/partes-` e `entrega/transcricao-gravando-2026-09-22-111258` **não existiam mais** no remoto (404), apesar de o relatório anterior indicar que a transferência estava concluída. Foi feito um **novo disparo** da ponte pela branch deste lote; os ramos foram usados e o de partes apagado após a conferência (SHA-256 OK).
 - Ordem da fila adotada: **do menor para o maior** (por `bytes` do manifesto), pulando duplicatas exatas por oid.
 - Pendências e diretrizes humanas registradas:
   1. **Autorização de divulgação** — concedida em 2026-10-13 (dados declarados fictícios/de teste; preservar o nome **Função Sistemas** e os nomes dos operadores como Jonas, William, Gabriel, etc.; não publicar fotos/câmeras de pessoas).
   2. **Retenção de objetos no GitHub** — os ramos temporários usados na transferência são apagados imediatamente após a coleta, mas os commits órfãos permanecem acessíveis por SHA até coleta de lixo do GitHub. Ver [`materiais/PRIVACIDADE_E_RETENCAO.md`](materiais/PRIVACIDADE_E_RETENCAO.md).
   3. **Duplicidades confirmadas por oid** (cópias exatas): `Gravando 2026-08-24 124650.mp4` = `Gravando 2026-08-24 161729.mp4`; `Jonas EPT explicação.mp4` = `jonas2309.mp4`. Analisar uma vez e referenciar a partir da outra entrada.
+- Retenção (lote `Gravando 2026-09-22 111258.mp4`, 2026-10-13): os bytes desse vídeo foram publicados em **dois** conjuntos de ramos temporários (1º disparo, cujo SHA não ficou registrado nesta sessão; 2º disparo, commits `d55b80a7bf78886556ac78cc5784e787b689cfeb` — partes — e `3a1920d32ad9e278cfefd11e7a6063f8f38ba36a` — transcrição). Os ramos foram apagados, mas os commits permanecem acessíveis por SHA. **Pendência:** pedido de remoção ao GitHub Support (repositório `berger33/Fun-o`, SHAs acima) e decisão do responsável sobre novos disparos da ponte. Ver [`materiais/PRIVACIDADE_E_RETENCAO.md`](materiais/PRIVACIDADE_E_RETENCAO.md) §4.

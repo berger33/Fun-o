@@ -1,0 +1,270 @@
+# Transcrição — Gravando 2026-09-22 111258.mp4
+
+Fala com timestamps `HH:MM:SS` (tempo do arquivo). Transcrição automática (`faster-whisper`, `large-v3`, idioma `pt`) **revisada contra a tela** nos pontos listados em *Notas de revisão*. Falantes identificados apenas pelo primeiro nome dito na fala, sem atribuição confirmada por imagem. Nomes completos de participantes omitidos. Segredos: nenhum identificado na fala.
+
+> Transcrição automática é insumo, não verdade. Trechos com conversa paralela, ruído e frases cortadas estão preservados como foram transcritos.
+
+## Trechos transcritos
+
+### 00:00:00
+
+- `[00:00:04]` Bora lá, você que vai apresentar hoje, Pri?
+- `[00:00:07]` Acho que é o Matheus, né?
+- `[00:00:13]` Silveirinho?
+- `[00:00:13]` Sabia que era eu, não, mas deixa eu pegar o F aqui.
+- `[00:00:17]` Quem sabe faz ao vivo.
+- `[00:00:22]` Eu tô sem internet, mas essa F, quem fez?
+- `[00:00:27]` O Silveirinho.
+- `[00:00:28]` Se doeu nessa porra que saiu de casa.
+- `[00:00:31]` Caralho!
+- `[00:00:33]` Eu não sei, ué, eu achei que era de você e o Augusto.
+- `[00:00:36]` Não, essa F não foi eu que fiz, não, hein?
+- `[00:00:39]` É, pra mim era Pri e Augusto
+- `[00:00:43]` Não, gente
+- `[00:00:46]` Não
+- `[00:00:48]` Será?
+- `[00:00:50]` Será lá
+- `[00:00:51]` Faz tempo que eu não faço pastel
+- `[00:00:53]` Meu pastel de sexta-feira não fez não?
+- `[00:00:57]` Priscila e Augusto (sobrenomes omitidos)
+### 00:01:00
+
+- `[00:01:00]` É, eu tô lembrando
+- `[00:01:01]` Então, gente
+- `[00:01:03]` Amanda, é uma presença porra aqui
+- `[00:01:10]` Incluir três campos
+- `[00:01:12]` é, não, é nada demais
+- `[00:01:14]` mas é que eu também sou sem internet
+- `[00:01:15]` aí eu tô pelo celular
+- `[00:01:16]` você já tá querendo me dar a toca
+- `[00:01:18]` olha
+- `[00:01:19]` gente, tô maluca sim
+- `[00:01:25]` sim
+- `[00:01:25]` o pastel do Silveira já tá até frito
+- `[00:01:30]` mas não é esse que a gente já fez
+- `[00:01:31]` exatamente
+- `[00:01:32]` tá devendo duas, hein, Priscila
+- `[00:01:44]` se vocês estiverem vendo a tela
+- `[00:01:47]` aí vocês me avisem
+- `[00:01:48]` peraí que eu vou pra gravar, peraí
+- `[00:01:50]` não, deixa eu apresentar
+- `[00:01:52]` Que isso
+- `[00:01:53]` Agora que tá gravando, não
+- `[00:01:55]` Não, não, não
+- `[00:01:58]` É meu?
+### 00:02:00
+
+- `[00:02:00]` Já está me devendo, já está me devendo
+- `[00:02:01]` Não vai ter como
+- `[00:02:02]` Não, não, não
+- `[00:02:02]` Já foi, já foi
+- `[00:02:04]` Tá todo mundo devendo
+- `[00:02:05]` Não vai ter como
+- `[00:02:06]` Nossa, que loucura, velho
+- `[00:02:08]` Pessoal, esse daqui é uma alteração, beleza?
+- `[00:02:13]` Naquele plugin maravilhoso que a gente tem do envio externo
+- `[00:02:16]` Todo mundo ama muito
+- `[00:02:17]` Pra adicionar um novo agrupamento
+- `[00:02:19]` Tá?
+- `[00:02:22]` os agrupamentos
+- `[00:02:24]` são em respeito à documentação do cliente.
+- `[00:02:26]` Pelo que eu me recordo, embora
+- `[00:02:28]` eu não tenha participado diretamente dessa análise,
+- `[00:02:30]` quando eu conversei com o Augusto,
+- `[00:02:32]` é porque vocês precisavam de algumas informações
+- `[00:02:34]` lá na jornada de formalização
+- `[00:02:36]` deles. Então,
+- `[00:02:38]` a gente vai pôr mais coisa nesse plugin,
+- `[00:02:40]` que é o motivo deles usarem. Fechou?
+- `[00:02:43]` O agrupamento novo
+- `[00:02:44]` segue o padrão em inglês
+- `[00:02:46]` que o C6 tem.
+- `[00:02:48]` Me recusam a ler em inglês, mas o nome do agrupamento
+- `[00:02:50]` vai ser esse aqui e a gente vai
+- `[00:02:54]` ter três campos novos, o tipo do documento
+- `[00:02:56]` o nome do documento e o usuário
+- `[00:02:58]` que anexou esse documento, beleza?
+### 00:03:00
+
+- `[00:03:00]` Aí, não sei se é o Zé ou
+- `[00:03:02]` o Gleison, eu acredito que a gente já tem
+- `[00:03:04]` essas informações na base, mas
+- `[00:03:06]` vale consultar
+- `[00:03:07]` pelo que eu me lembro das conversas
+- `[00:03:10]` a gente já tem esses campos sim, então
+- `[00:03:12]` a gente não vai precisar de
+- `[00:03:14]` implementar nenhum outro lugar pra gravar
+- `[00:03:16]` essas informações, a gente só vai ter que resgatar
+- `[00:03:18]` aí se vocês quiserem
+- `[00:03:21]` vocês podem me chamar depois pra gente ver
+- `[00:03:23]` onde que tá essas informações
+- `[00:03:25]` caso vocês não achem, mas a gente não vai
+- `[00:03:27]` precisar de criar a informação não
+- `[00:03:29]` a gente só vai enviar, beleza?
+- `[00:03:33]` talvez tenha alguma
+- `[00:03:34]` coisa específica
+- `[00:03:35]` são os documentos de acredito da proposta
+- `[00:03:37]` etc, etc
+- `[00:03:38]` não, é isso mesmo
+- `[00:03:43]` a gente já tem os campos na base
+- `[00:03:46]` e aí quando não tiver, a gente tem que
+- `[00:03:48]` enviar nulo
+- `[00:03:49]` sem mais, alguém tem alguma dúvida?
+- `[00:03:53]` tem
+- `[00:03:53]` Manda
+- `[00:03:54]` Sobe um pouco aí
+### 00:04:00
+
+- `[00:04:00]` Não, desce um pouco agora
+- `[00:04:02]` Pra eu ver a listinha das informações ali
+- `[00:04:04]` O type é o tipo de documento
+- `[00:04:07]` É o código ou a descrição
+- `[00:04:08]` Na minha análise
+- `[00:04:11]` É o código, isso aí
+- `[00:04:12]` Sabe, Pri, que a descrição é o nome
+- `[00:04:17]` É o que tá aí embaixo
+- `[00:04:19]` Não, não
+- `[00:04:20]` O nome do documento
+- `[00:04:23]` Mas você consegue colocar o nome do tipo
+- `[00:04:25]` Não, não
+- `[00:04:27]` O tipo de documento lá no GDOC
+- `[00:04:29]` Você consegue cadastrar e dar um nome pra ele
+- `[00:04:31]` Você tem o código de tipo
+- `[00:04:33]` De documento 1 e o nome que você dá
+- `[00:04:35]` É o CPF do cara
+- `[00:04:37]` É o RG do cara
+- `[00:04:38]` É o comprovante de interesse do cara
+- `[00:04:39]` O nome XPT é o que você mesmo coloca pra aquela informação
+- `[00:04:42]` Isso, então aí é o código ou a descrição
+- `[00:04:45]` Pra mim tem que ser o código
+- `[00:04:47]` Você sabe, Pri?
+- `[00:04:49]` Isso, o tipo de documento é o código
+- `[00:04:51]` O nome é o...
+- `[00:04:52]` Esses caras vão plugar isso lá
+- `[00:04:55]` Do lado deles e ia ser esquisito
+- `[00:04:57]` eles ficarem plugando por string lá.
+- `[00:04:59]` Aí, então,
+### 00:05:00
+
+- `[00:05:00]` eu já marquei aqui que eu pego
+- `[00:05:02]` ele no
+- `[00:05:04]` guia, pedi pra ele deixar a descrição,
+- `[00:05:06]` mas então é só ficar atento lá
+- `[00:05:08]` na implementação pra colocar o código.
+- `[00:05:11]` Beleza?
+- `[00:05:13]` E de resto, acho que tá
+- `[00:05:14]` tranquilo. Dá pra gente pegar tudo do SIC,
+- `[00:05:17]` a gente vai ter que integrar com o SIC,
+- `[00:05:18]` então tem que ter lá o
+- `[00:05:20]` código do perfil, tudo certinho, mas
+- `[00:05:22]` aí o único receio
+- `[00:05:24]` é que se ele estiver executando
+- `[00:05:26]` pelo web service e ele tem
+- `[00:05:28]` que estar com o código do perfil lá configurado também,
+- `[00:05:30]` tá?
+- `[00:05:32]` Dentro do web service. Isso, isso.
+- `[00:05:34]` Entendeu? Isso aí é permissão já desse cara.
+- `[00:05:36]` Tá.
+- `[00:05:38]` É que, como a rotina que eles
+- `[00:05:40]` estão falando ali é só via tela do autorizador,
+- `[00:05:42]` né? Às vezes o pessoal não configura
+- `[00:05:44]` esse código do perfil.
+- `[00:05:46]` É. Web service.
+- `[00:05:48]` Entendeu?
+- `[00:05:50]` Mas é só...
+- `[00:05:51]` De dúvida é só isso daí. Dá pra gente pegar tudo de lá.
+- `[00:05:55]` Aí, Jéssica,
+- `[00:05:56]` O pessoal da importação aí, a gente monta
+- `[00:05:58]` um tipo de documento lá pra eles,
+### 00:06:00
+
+- `[00:06:00]` não monta? Depois da versão
+- `[00:06:02]` entregue ou é só de versão entregue? Como que é?
+- `[00:06:05]` Ultimamente tá difícil, é
+- `[00:06:06]` o review, né? Tá na fúria?
+- `[00:06:09]` É o review, né? Que a gente faz geralmente
+- `[00:06:10]` quando a gente fecha o pacote.
+- `[00:06:12]` É porque essa talvez seja uma informação que não é
+- `[00:06:14]` uma informação a nível de F, mas é o que
+- `[00:06:16]` vale a gente mandar. Senão
+- `[00:06:18]` eles mandam, não conseguem, eles vão abrir um erro
+- `[00:06:20]` pra tu, pra você ter que falar, não, mas é só isso aqui.
+- `[00:06:23]` Então se você quer detalhar
+- `[00:06:24]` no documento de teste dele lá, colocar um passo
+- `[00:06:26]` lá falando, ó, está configurado aqui
+- `[00:06:28]` o perfil, a coisa e bota lá no
+- `[00:06:30]` site.
+- `[00:06:33]` Entendeu? A gente costuma
+- `[00:06:34]` fazer a apresentação
+- `[00:06:35]` dos projetos, geralmente fica na review.
+- `[00:06:38]` Review? Não lembro agora.
+- `[00:06:39]` Qual foi a última que o Léo fez?
+- `[00:06:42]` Não tá rolando, né?
+- `[00:06:44]` A gente fez, acho que, mano, dois, né?
+- `[00:06:46]` Só.
+- `[00:06:48]` Nem lembro.
+- `[00:06:50]` Faz tempo, faz tempo.
+- `[00:06:52]` Jonas, você quer? Que vai desenrolar você, Jonas?
+- `[00:06:55]` Eu vou, vai eu e o William
+- `[00:06:56]` em conjunto nesse teste aí.
+- `[00:06:58]` Anota aí, por favor.
+### 00:07:00
+
+- `[00:07:01]` Mostrar as procurações lá do web service.
+- `[00:07:03]` Mas se precisar, vocês me chamam,
+- `[00:07:05]` chamam o Zé aí.
+- `[00:07:07]` Beleza.
+- `[00:07:08]` Aí, Jonas, você acha que você consegue passar as horas
+- `[00:07:10]` até uma meia de meia, mais ou menos?
+- `[00:07:12]` Já passei, já.
+- `[00:07:13]` Já tem lá no Gantt, já tem lá
+- `[00:07:15]` nos projetos separados, tá?
+- `[00:07:18]` Se você for procurar.
+- `[00:07:19]` Então, Pri, depois preenche o mapa, por favor.
+- `[00:07:23]` E altere isso aqui também.
+- `[00:07:25]` Coloca que a gente está falando de código
+- `[00:07:28]` só para não ter desencarga.
+- `[00:07:30]` Esse documento está IP.
+- `[00:07:32]` Quando tiver aberto o item,
+- `[00:07:33]` lá se me avisa para eu já marcar
+- `[00:07:34]` para iniciar o desenvolvimento aqui.
+- `[00:07:39]` Sem o item eu não consigo iniciar.
+- `[00:07:47]` Beleza.
+- `[00:07:52]` Olha, explodiu o seu item.
+- `[00:07:53]` Deixa eu ver se explodiu ou se eu estou doido.
+- `[00:07:55]` Não, eu só oitei de dentro.
+- `[00:07:57]` Isso.
+- `[00:07:57]` Não, o resto vai ser agora quando eu marcar.
+- `[00:07:59]` Mas aí, Jéssica, a gente já sabe que deu certo
+### 00:08:00
+
+- `[00:08:02]` Se quiser parar de gravar, pode parar de gravar já
+- `[00:08:04]` Mas aí nos cenários futuros
+- `[00:08:07]` Em que precisar de estourar só o item de análise
+- `[00:08:09]` Antes, a gente já sabe que se marcar lá no mapa
+- `[00:08:11]` Ele sozinho, com um minuto, um minuto, ele explode
+- `[00:08:13]` Boa, tá bom
+- `[00:08:15]` Vou tentar encerrar o outro ali
+- `[00:08:16]` Ver se eu consigo, pra não ficar poluindo
+- `[00:08:18]` É, deixa eu só ver qual dos dois
+- `[00:08:21]` Que é agora
+- `[00:08:21]` O que você explodiu, acho que é esse que tá em definição
+- `[00:08:25]` De prazo, né
+- `[00:08:25]` O vermelhinho
+- `[00:08:27]` e o meu é o triage
+- `[00:08:30]` alguém tem mais alguma dúvida?
+- `[00:08:36]` não, não pode não
+- `[00:08:37]` então Priscila, já arrisca aí
+- `[00:08:39]` eu já estava te devendo alguns chocolates
+- `[00:08:41]` já pode ir
+
+## Notas de revisão contra a tela
+
+- `[00:00:17]`–`[00:00:22]`: a fala "F" corresponde a **Flag** (título da janela: *Nova Flag informativa de Docs anexados no SrvEnvioPropExt*).
+- `[00:02:08]`: "alteração" confere com a RFP001 (*Novo Campo no Plugin de Envio da Proposta ao Sistema Externo*), visível em `[00:02:30]`.
+- `[00:02:13]` "Naquele plugin maravilhoso que a gente tem do envio externo": na tela, o plugin é **Envio da Proposta ao Sistema Externo**, módulo **ServCon**.
+- `[00:02:43]`–`[00:02:58]`: os três campos ditos (tipo do documento, nome do documento, usuário) conferem com `document_type`, `document_name` e `user` na especificação (`[00:03:05]`).
+- `[00:03:43]`–`[00:03:48]`: "enviar nulo" confere com "será enviado como 'null'" na especificação (`[00:03:50]`).
+- `[00:04:04]`–`[00:04:49]`: discussão sobre código × descrição do tipo de documento. Não há confirmação na tela; a conclusão falada é **código** (`[00:04:49]`), com ressalva em `[00:05:00]`–`[00:05:08]`.
+- `[00:05:14]`–`[00:05:46]`: "web service" e "código do perfil" são falas sem tela correspondente; as expressões "procurações" (`[00:07:01]`) e "explodiu" (`[00:07:52]`) não foram confirmadas.
+- `[00:08:02]`: "parar de gravar" confere com o aviso de encerramento de gravação/transcrição visível na tela na faixa de `00:08:15` (leitura aproximada).

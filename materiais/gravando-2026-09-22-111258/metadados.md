@@ -1,0 +1,22 @@
+# Metadados — Gravando 2026-09-22 111258.mp4
+
+- **Arquivo de origem:** `Gravando 2026-09-22 111258.mp4`
+- **Slug em `materiais/`:** `materiais/gravando-2026-09-22-111258/`
+- **Tamanho confirmado (bytes):** `297627736` (100% idêntico ao `manifesto.csv`)
+- **OID / SHA-256 confirmado:** `c617494db6888bd8c2368148d3d31103a1565e8240aad9b1fd293d356ba52c34` (igual ao oid do ponteiro LFS e ao SHA-256 do bloco remontado)
+- **Duração:** `00:08:42.93` (`522.9` s)
+- **Resolução e taxa de quadros:** `1358×766`, `30 fps`, H.264 (`Main`, `yuv420p`), `4358 kb/s`
+- **Áudio:** AAC LC, `48000 Hz`, estéreo, `192 kb/s`
+- **Data/hora:** `2026-09-22`, conforme o nome do arquivo. O relógio da barra de tarefas visível na gravação vai de cerca de `11:02` (início) a `11:12` (fim), horário local (BRT).
+- **Relógio do Teams:** o cronômetro de gravação exibido na janela (`02:13`–`10:43`) é **deslocado** do tempo do arquivo: tempo do arquivo ≈ relógio do Teams − `02:09`. Todas as referências deste material usam o **tempo do arquivo**.
+- **Motor de transcrição utilizado:** `faster-whisper` (CTranslate2), modelo `large-v3`, idioma declarado e detectado `pt` (probabilidade `1.0`), `233` segmentos, `351.7` s de processamento (`transcricao_meta.json`)
+- **Categorias aplicáveis:** `SISTEMAS`, `PROCESSOS`, `NEGOCIO`, `INFRA_E_ACESSO`, `DÚVIDA_OU_CONFLITO`. `SQL`: não demonstrado.
+- **Sistemas identificados:** Autorizador (*Anexar/Consultar Documentação*), SrvEnvioPropExt / ServCon (*Envio da Proposta ao Sistema Externo*), SIC (fala), web service (fala).
+- **Cobertura de análise:** transcrição completa (`233` segmentos); quadros amostrados a cada `10 s` (`52` quadros); quadros em tamanho real em `115`, `150`, `185`, `230`, `250`, `300` e `340` s. Não foi feita análise quadro a quadro.
+- **Capturas:** `2` (ver [`capturas.md`](capturas.md)).
+- **Origem técnica:** bytes obtidos pela ponte temporária do CI (`transferir-gravacao.yml`), partes de 64 MB conferidas por SHA-256 e remontadas no sandbox. Transcrição obtida pela ponte `transcrever-gravacao.yml`. Ramos `entrega/*` apagados após a coleta.
+  - Commit da ponte de partes (2º disparo): `d55b80a7bf78886556ac78cc5784e787b689cfeb` — ramo apagado, objeto **provavelmente retido** (ver `STATUS.md`).
+  - Commit da ponte de transcrição (2º disparo): `3a1920d32ad9e278cfefd11e7a6063f8f38ba36a` — ramo apagado, objeto **provavelmente retido**.
+  - Um 1º disparo anterior (`entrega/partes-` e `entrega/transcricao-` de 19:25–19:44 UTC) não tem SHA registrado no ambiente desta sessão; também pode estar retido.
+- **Status da auditoria do roteiro (§6):** ver `STATUS.md`.
+- **Limitações:** áudio com sobreposição e cortes; transcrição automática sem correção humana completa; trechos de tela em miniatura; PDF da especificação analisado só nas páginas 2–3.
