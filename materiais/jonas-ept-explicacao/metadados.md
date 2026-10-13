@@ -1,0 +1,24 @@
+# Metadados — Jonas EPT explicação.mp4
+
+- **Arquivo de origem:** `Jonas EPT explicação.mp4`
+- **Duplicata exata:** `jonas2309.mp4` — mesmo objeto LFS (`f99bd795…`), bytes idênticos; esta análise cobre as duas entradas do manifesto (ver [`../../STATUS.md`](../../STATUS.md)).
+- **Slug em `materiais/`:** `materiais/jonas-ept-explicacao/`
+- **Tamanho confirmado (bytes):** `318342582` (100% idêntico ao `manifesto.csv`)
+- **OID / SHA-256 confirmado:** `f99bd7955fbcb8960a2356d727233b00fe4847ba145baf7d96f938e8005a894e` (igual ao oid do ponteiro LFS e ao SHA-256 do bloco remontado)
+- **Duração:** `00:10:25.27` (`625.3` s)
+- **Resolução e taxa de quadros:** `1278×724`, `30 fps`, H.264 (`Main`, `yuv420p` progressivo), `3878 kb/s`
+- **Áudio:** AAC LC, `48000 Hz`, estéreo, `192 kb/s`
+- **Data/hora:** gravação de **2026-09-23**, entre aproximadamente `09:23` e `09:38` (relógio da barra de tarefas `09:27`–`09:38`; registros de `ECONSULT` exibidos na tela com timestamps `2026-09-23 09:30`); reunião do Teams já em andamento há ~4 min quando a gravação começa (cronômetro `04:13` em `00:00:00`).
+- **Participantes:** **Jonas** compartilha a tela e conduz (identificado pela fala de encerramento "[Obrigado] Jonas" em `00:10:18` e pelo usuário da barra de tarefas); o interlocutor não se apresenta na fala — o chat do Teams em tela mostra conversa com **William** ("consegue falar?" / "eu te mostro aqui melhor do que ficar mandando msg", `00:09:00`–`00:09:20`), o que indica William como ouvinte/gravador. Sobrenomes de participantes omitidos dos derivados.
+- **Motor de transcrição utilizado:** `faster-whisper` (CTranslate2), modelo `large-v3`, idioma declarado e detectado `pt` (probabilidade `1.0`), `91` segmentos, `296.1` s de processamento (`transcricao_meta.json`)
+- **Método de análise visual:** extração de 63 quadros (1 a cada 10 s) em resolução nativa + leitura assistida por OCR dos quadros e de recortes ampliados em timestamps-chave (a fala é esparsa e a demonstração é essencialmente de tela). Não foi feita análise quadro a quadro.
+- **Categorias aplicáveis:** `SQL`, `SISTEMAS`, `PROCESSOS`, `NEGOCIO`, `INFRA_E_ACESSO`, `DÚVIDA_OU_CONFLITO`.
+- **Sistemas/ferramentas identificados:** SQL Server Management Studio (bancos `FCSMONITOREMPR` e `FCSPROPEMPR` do ambiente de CQ), Autorizador Web (`WebAutorizador` — telas `Proposta Sintetizada`, `Cadastro de Decisão`, `Aprovação/Consulta`, `ESCOLHAPCS`), Notepad++ (payload JSON), Microsoft Edge (PDF da Especificação Funcional da OS 586780), Excel (planilha `EPT_586780`), Word (`Relatório_de_Testes_586780`), Teams, Explorador de Arquivos (rede `Mesa_C6`).
+- **Cobertura de análise:** transcrição completa (`91` segmentos); quadros amostrados a cada `10 s` (`63` quadros) e recortes ampliados lidos por OCR em ~40 timestamps. Trechos com fonte pequena (literais SQL, números de proposta) ficaram com leitura parcial — registrados em [`incertezas.md`](incertezas.md).
+- **Capturas:** `7` (ver [`capturas.md`](capturas.md)).
+- **Origem técnica:** bytes obtidos pela ponte temporária do CI (`transferir-gravacao.yml`), 5 partes de 64 MB conferidas por tamanho e SHA-256 e remontadas no sandbox. Transcrição obtida pela ponte `transcrever-gravacao.yml`. Ramos `entrega/*` apagados após a coleta.
+  - Commit da ponte de partes (2º disparo, `arena/3755a69f-fun-o`): `acb6a44844071309f8320dc9e318492ad561cac6` — ramo apagado, objeto **provavelmente retido** (ver `STATUS.md`).
+  - Commit da ponte de transcrição (2º disparo): `842507e4e7e051220553138ce29fa1230a84afd6` — ramo apagado, objeto **provavelmente retido**.
+  - Um 1º disparo (pelo commit de encerramento do lote anterior, `arena/e81830e4-fun-o`) publicou os mesmos ramos em 2026-10-13 ~20:25–20:28 UTC; os ramos foram apagados às ~20:33 UTC **sem coleta nesta sessão** e os SHAs não ficaram registrados — os objetos também podem estar retidos.
+- **Status da auditoria do roteiro (§6):** ver `STATUS.md`.
+- **Limitações:** fala esparsa com bastante silêncio (91 segmentos em 10:25); transcrição automática com termos técnicos corrompidos (ex.: "IconSuiteD" = `ECONSULTD`, "Jason" = JSON), corrigidos contra a tela onde possível; literais numéricos (números de proposta) ilegíveis em parte dos quadros; análise visual feita por OCR (sem revisão humana quadro a quadro).

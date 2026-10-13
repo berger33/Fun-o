@@ -1,11 +1,11 @@
 {
-  "arquivo": "Jonas EPT explicação.mp4",
-  "slug": "jonas-ept-explicacao",
+  "arquivo": "Gravando 2026-07-08 182343.mp4",
+  "slug": "gravando-2026-07-08-182343",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_partes": "entrega/partes-jonas-ept-explicacao",
-  "ramo_entrega_transcricao": "entrega/transcricao-jonas-ept-explicacao",
+  "ramo_entrega_partes": "entrega/partes-gravando-2026-07-08-182343",
+  "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-07-08-182343",
   "tamanho_bloco_mb": "64",
-  "lote": "proximo menor da fila apos Gravando 2026-09-22 111258 (arena/e81830e4-fun-o, 2026-10-13). jonas2309.mp4 e duplicata exata por oid (f99bd795...): analisar uma vez. Ramos entrega/* do 1o disparo (20:25/20:28 UTC) foram apagados as 20:33 UTC sem coleta nesta sessao; re-disparo necessario",
+  "lote": "proximo menor da fila apos Jonas EPT explicacao (arena/3755a69f-fun-o, 2026-10-13). Lote Jonas EPT concluido (7/24; jonas2309.mp4 concluida por referencia como duplicata exata por oid f99bd795...). Ramos entrega/* do 1o disparo deste lote (20:25/20:28 UTC, branch arena/e81830e4-fun-o) foram apagados as ~20:33 UTC sem coleta; 2o disparo coletado e ramos apagados (SHAs registrados no STATUS.md)",
   "sessao": "arena/3755a69f-fun-o"
 }

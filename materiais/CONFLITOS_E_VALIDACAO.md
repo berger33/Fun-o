@@ -4,14 +4,14 @@ Atualizado em **2026-10-13**.
 
 ## Conflitos entre gravações
 
-Nenhum conflito **de regras de negócio** entre gravações distintas foi identificado nos 2 vídeos concluídos até o momento (`Apresentação projeto 19-18.mp4` e `Gravando 2026-07-07 155307.mp4`). Há duplicidade de **arquivo** confirmada no manifesto:
+Nenhum conflito **de regras de negócio** entre gravações distintas foi identificado nos 7 vídeos concluídos até o momento. Foi registrado o primeiro conflito **de leitura de tela** entre gravações (ver §"Pendências de `Jonas EPT explicação.mp4`", item 1). Há duplicidade de **arquivo** confirmada no manifesto:
 
 ### Duplicidades confirmadas por objeto LFS (2026-10-13)
 
 | Arquivos | Objeto LFS (oid, prefixo) | Evidência | Ação adotada |
 |---|---|---|---|
 | `Gravando 2026-08-24 124650.mp4` = `Gravando 2026-08-24 161729.mp4` | `1b9b6afd8564…` | Mesmo `oid` nos dois ponteiros versionados (`tools/checar_manifesto.py`) | Analisar uma única vez e apontar a segunda entrada para o mesmo material; o plano proíbe fundir gravações **diferentes**, não cópias byte-idênticas. |
-| `Jonas EPT explicação.mp4` = `jonas2309.mp4` | `f99bd7955fbc…` | Mesmo `oid` nos dois ponteiros versionados | Idem. |
+| `Jonas EPT explicação.mp4` = `jonas2309.mp4` | `f99bd7955fbc…` | Mesmo `oid` nos dois ponteiros versionados | **Concluído (2026-10-13):** analisada como `Jonas EPT explicação.mp4` (`materiais/jonas-ept-explicacao/`); `jonas2309.mp4` marcada como concluída por referência no `STATUS.md` — bytes idênticos (SHA-256 `f99bd795…` conferido na coleta). |
 
 Consequência para a contagem: 24 arquivos no manifesto correspondem a **22 conteúdos distintos**.
 
@@ -50,3 +50,12 @@ Detalhes e evidências em [`gravando-2026-09-22-111258/incertezas.md`](gravando-
 - **Campo de origem do CNPJ (`ETRACPD.*`) desconhecido:** aguardar retorno do Zé e o complemento da EF (`00:01:27–00:03:00`).
 - **Número do item 2:** fala oscila entre 556776/556576/55676; a tela confirma **OS 556576** — validar se existe OS 556776 distinta.
 - **Gantt do pacote 4:** envio prometido para segunda-feira, com as horas do Gabriel (`00:08:47–00:09:21`) — conferir recebimento fora desta biblioteca.
+
+## Pendências de `Jonas EPT explicação.mp4` (2026-10-13)
+
+Detalhes e evidências em [`jonas-ept-explicacao/incertezas.md`](jonas-ept-explicacao/incertezas.md).
+
+1. **Grafia do objeto do agrupamento: `attached_document` × `attachment_document` (conflito entre gravações).** A página de tabelas de layout da EF exibida nesta gravação (`00:04:20`) lê-se como **`attached_document`** ("Início do objeto attached_document"), enquanto a gravação `Gravando 2026-09-22 111258.mp4` registrou **`attachment_document`** (página 3 do mesmo PDF `DS586780`). Pode ser divergência real dentro da própria especificação ou erro de leitura em uma das gravações. **As duas formas permanecem registradas; não padronizar sem conferir o PDF.**
+2. **Literais de número de proposta ilegíveis:** `CSNRPROP` na grade (`000033264` aproximado; leituras alternativas `000003264`/`800033264`) e filtros `8??83216?`/`8??8321??`/`8??83288?` no editor — não confirmados quadro a quadro; **não usar como referência numérica**.
+3. **Finalidade das tabelas `CLOGREFIN`, `CLOGREFIND`, `EREAPSEG`, `CCOMP` (`FCSPROPEMPR`):** consultas preparadas no editor, sem execução ou explicação na gravação.
+4. **Ajuste do número da proposta no envio ao sistema externo (`00:09:31`–`00:09:39`):** citado como "a única coisa que a gente tem que ajustar", sem detalhamento (EPT, relatório ou payload).
