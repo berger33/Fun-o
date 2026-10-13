@@ -5,3 +5,8 @@
 /recalculo.mp4
 
 /*.mp4.reconstruindo
+
+# Download parcial de objeto LFS (retomável), nunca deve ser commitado
+*.parcial
+__pycache__/
+*.pyc

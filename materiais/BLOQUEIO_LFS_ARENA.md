@@ -77,6 +77,21 @@ Sem os bytes do vídeo não é possível: extrair áudio, transcrever com timest
 - Nenhuma captura de tela foi produzida (não há imagem disponível).
 - O `oid` acima já é público: consta no ponteiro versionado no repositório.
 
+## 4.1 Ferramenta pronta para o momento em que o acesso abrir
+
+`tools/baixar_objeto_lfs.py` (novo, validado neste ambiente) baixa **um único** objeto pela API LFS do repositório, sem `git lfs pull` geral:
+
+```bash
+python3 tools/baixar_objeto_lfs.py "Apresentação projeto 19-18.mp4"             # baixa e confere
+python3 tools/baixar_objeto_lfs.py --verificar "Apresentação projeto 19-18.mp4" # só confere
+```
+
+Comportamento verificado: recusa nome fora do `manifesto.csv`; lê `oid`/tamanho do ponteiro e confere com o manifesto; consulta a API LFS (funciona **sem token** neste repositório público); baixa retomando de `<arquivo>.parcial`; só renomeia após conferir tamanho e SHA-256; em falha de rede reporta o host e o erro, sem baixar nada. Testado localmente com objeto servido por `file://`, com retomada de download parcial e com hash propositalmente errado.
+
+## 4.2 Transcrição automática: pré-requisito pendente
+
+Mesmo com o vídeo em mãos, a transcrição automática continua dependendo de pesos de modelo hospedados fora dos hosts permitidos (`huggingface.co` e `openaipublic.azureedge.net` estão bloqueados). Verificado nos pacotes do PyPI (host permitido): trazem apenas o **código**, não os modelos — `pywhispercpp` (wheel de 4,7 MB, sem `.bin`), `whisper-cpp-python` (sdist de 3,8 MB), `openai-whisper`/`faster-whisper` (sem pesos); `pocketsphinx` embute apenas modelo de inglês. Alternativas: liberar os hosts de pesos **ou** receber do responsável um `SRT/VTT` da gravação para amarrar a transcrição aos timestamps.
+
 ## 5. Caminhos para desbloquear (em ordem de preferência)
 
 1. **Permitir egress no Arena** para `objects.githubusercontent.com` e `github-cloud.githubusercontent.com` (e, para outros vídeos, `media.githubusercontent.com`). Com isso, basta repetir:
@@ -90,4 +105,4 @@ Sem os bytes do vídeo não é possível: extrair áudio, transcrever com timest
 ## 6. Pendência humana
 
 - Decisão necessária: escolher um dos caminhos do item 5 (ação de plataforma/infraestrutura ou fornecimento do arquivo/transcrição). Sem isso, o piloto "Apresentação projeto 19-18.mp4" **não pode** ser analisado e **não deve** ser marcado como concluído.
-- **2026-10-13 — encaminhamento escolhido pelo responsável: liberar o egress na plataforma** (opção 1). Aguardando a liberação dos hosts mínimos `objects.githubusercontent.com` e `github-cloud.githubusercontent.com` para repetir o comando do item 1 e retomar a análise. Nova verificação de conectividade em 2026-10-13: hosts ainda inacessíveis (`SSL_ERROR_SYSCALL`).
+- **2026-10-13 — encaminhamento escolhido pelo responsável: liberar o egress na plataforma** (opção 1). Aguardando a liberação dos hosts mínimos `objects.githubusercontent.com` e `github-cloud.githubusercontent.com` para repetir o comando do item 1 e retomar a análise. Nova verificação de conectividade em 2026-10-13 (2ª rodada, após a decisão): `objects.githubusercontent.com`, `github-cloud.githubusercontent.com`, `raw.githubusercontent.com`, `media.githubusercontent.com` e `huggingface.co` continuam inacessíveis (`SSL_ERROR_SYSCALL`), enquanto `github.com`/`api.github.com` respondem 200 e a API LFS segue devolvendo o objeto de 179956679 bytes. Nada foi baixado; piloto continua `pendente`.

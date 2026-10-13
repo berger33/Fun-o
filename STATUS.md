@@ -38,7 +38,8 @@ Atualizado em **2026-10-13** (Arena). Estados: `pendente`, `em análise`, `em re
 - Em análise: **0**.
 - Em revisão: **0**.
 - Pendentes: **24** — nenhum vídeo analisado até o momento (a extração depende de download LFS funcional; ver bloqueio abaixo).
-- Último lote/commit publicado: índice da biblioteca e registro do bloqueio LFS (2026-10-13).
+- Último lote/commit publicado: índice da biblioteca, registro do bloqueio LFS e ferramenta `tools/baixar_objeto_lfs.py` (2026-10-13).
+- Recheque de egress em 2026-10-13 (2ª rodada): hosts do LFS seguem bloqueados; **nada baixado**, nenhuma gravação analisada.
 - Pendências de validação humana:
   1. **Bloqueio de egress LFS no Arena** para o piloto `Apresentação projeto 19-18.mp4` — nenhum byte do vídeo pode ser baixado (cliente `git-lfs` ausente; `objects.githubusercontent.com`/`github-cloud.githubusercontent.com` inacessíveis). Detalhes, comandos e erro exato em [`materiais/BLOQUEIO_LFS_ARENA.md`](materiais/BLOQUEIO_LFS_ARENA.md). Requer ação de infraestrutura/plataforma ou entrega do arquivo/transcrição.
   2. Transcrição automática também depende de pesos de modelo em host não permitido (`huggingface.co` bloqueado); avaliar liberação ou fornecimento de `SRT/VTT`.
