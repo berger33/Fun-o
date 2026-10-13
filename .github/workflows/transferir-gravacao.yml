@@ -86,8 +86,9 @@ jobs:
 
       - name: Conferir tamanho e SHA-256 contra manifesto e ponteiro
         run: |
-          set -euo pipefail
-          python3 - <<'PY'
+          set -o pipefail
+          mkdir -p transferencia/diagnostico
+          python3 - <<'PY' 2>&1 | tee transferencia/diagnostico/conferencia.log
           import csv, hashlib, os, re, sys
           arquivo = os.environ["ARQUIVO"]
           esperado = None
@@ -141,6 +142,7 @@ jobs:
           echo "diretorio=$ALVO"
 
       - name: Publicar no ramo temporário de entrega
+        if: always()
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
