@@ -1,28 +1,25 @@
 # Função — biblioteca de treinamento
 
-Este repositório reúne gravações de treinamento e um processo para convertê-las em material de estudo rastreável. Os vídeos são fontes primárias: preserve o que foi dito/mostrado e marque dúvidas, cortes e partes inaudíveis.
+Este repositório reúne gravações de treinamento e um processo para convertê-las em material de estudo rastreável para o trabalho diário na Função Sistemas. Os vídeos são fontes primárias: preserve o conteúdo e registre dúvidas, cortes e partes inaudíveis.
 
 ## Comece aqui
 
-1. Leia [`ROTEIRO_ARENA.md`](ROTEIRO_ARENA.md) antes de analisar qualquer gravação.
-2. Use [`manifesto.csv`](manifesto.csv) para identificar cada vídeo. O identificador é o nome do arquivo, sem extensão.
-3. Produza um diretório por vídeo em `materiais/`, usando o nome do vídeo como slug seguro. Não combine gravações diferentes.
-4. Atualize [`STATUS.md`](STATUS.md) ao iniciar e concluir cada item.
-5. Compare cada afirmação do material com o vídeo e inclua timestamps `HH:MM:SS`.
+1. Leia [`PLANO_EXTRACAO_ARENA.md`](PLANO_EXTRACAO_ARENA.md) para conhecer as etapas, categorias, revisão de prints e critérios de conclusão.
+2. Cole o prompt de início do Arena.ai fornecido junto com o plano; o roteiro operacional está em [`ROTEIRO_ARENA.md`](ROTEIRO_ARENA.md).
+3. Use [`manifesto.csv`](manifesto.csv) para identificar cada vídeo. O identificador é o nome do arquivo, sem extensão.
+4. Produza um diretório por vídeo em `materiais/`, sem combinar gravações diferentes. Atualize [`STATUS.md`](STATUS.md) e registre timestamps `HH:MM:SS` em toda afirmação específica.
+5. Publique documentos e prints apenas após revisar privacidade e diffs. Não publique segredos ou dados pessoais nos materiais derivados.
 
-## Estrutura esperada por gravação
+## Conteúdo esperado por gravação
 
-- `transcricao.md` — transcrição integral, com timestamps e identificação de falantes quando possível.
-- `guia_de_estudo.md` — objetivos, conceitos, explicação passo a passo, exemplos, termos e resumo.
-- `procedimentos.md` — processos ensinados, pré-requisitos, entradas, ações, decisões, resultados e exceções.
-- `perguntas.md` — perguntas de revisão e respostas fundamentadas nos timestamps.
-- `glossario.md` — vocabulário e siglas contextualizados.
-- `incertezas.md` — trechos inaudíveis, ambiguidades, divergências e pontos que exigem confirmação humana.
-- `metadados.md` — arquivo fonte, duração, data de análise, ferramenta/modelo e limitações.
+- `transcricao.md`, `guia_de_estudo.md`, `procedimentos.md`, `perguntas.md`, `glossario.md`, `incertezas.md` e `metadados.md`.
+- `capturas.md` e `capturas/` quando imagens sanitizadas ajudarem a ensinar uma tela ou procedimento.
+- Classificação consistente por SQL, sistemas, processos, negócio, infraestrutura/acesso e dúvidas/conflitos.
+
+Os índices transversais em `materiais/` conectam gravações, consultas SQL, sistemas, processos e glossário, sempre preservando a origem detalhada.
 
 ## Integridade e privacidade
 
-Não invente conteúdo ausente. Diferencie explicitamente observação, fala literal, resumo e inferência. Registre nomes de clientes, documentos, credenciais ou dados pessoais apenas quando forem necessários para entender o procedimento; mascare valores secretos e minimize dados identificáveis nos materiais derivados. Como os vídeos originais foram autorizados para este repositório público, não replique segredos em transcrições ou exemplos.
+Não invente conteúdo ausente. Diferencie fala/observação, síntese e inferência. Minimize nomes, dados de clientes, credenciais e dados pessoais nos materiais derivados; mascare segredos de modo irreversível em qualquer print ou omita a captura se não puder sanitizar com confiança.
 
-
-Quatro vídeos excedem o limite individual do Git LFS e estão armazenados como partes binárias exatas. Consulte [RECUPERAR_VIDEOS.md](RECUPERAR_VIDEOS.md) para reconstruí-los antes da análise.
+Quatro vídeos excedem o limite individual do Git LFS e estão armazenados como partes binárias exatas. Consulte [`RECUPERAR_VIDEOS.md`](RECUPERAR_VIDEOS.md) para reconstruí-los antes da análise.

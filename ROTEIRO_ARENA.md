@@ -1,53 +1,50 @@
-## Preparação obrigatória
-
-Antes de iniciar a análise, baixe todos os objetos Git LFS. Leia `partes-videos.json` e execute `python tools/reconstruir_videos.py` para recompor e validar os quatro vídeos divididos. Confirme a conclusão do script e só então analise cada vídeo original listado em `manifesto.csv`, sem tratar fragmentos `.partNNN` como gravações separadas. Se a validação falhar, interrompa a análise do vídeo afetado e registre o problema.
 # Roteiro de análise para Arena.ai
 
 ## Objetivo
 
-Analise **cada vídeo individualmente** desta coleção e transforme todo o conteúdo instrutivo audível e visível em material de estudo completo, fiel à fonte, pesquisável e verificável. Não encerre após um resumo superficial: percorra o vídeo do início ao fim, inclusive demonstrações na tela, ressalvas, perguntas, respostas, exemplos, exceções e etapas repetidas que acrescentem informação.
+Analise integralmente cada vídeo desta coleção e converta todo o conteúdo instrutivo audível e visível em material de estudo completo, categorizado e rastreável, voltado ao trabalho diário na Função Sistemas. Siga o plano detalhado em [`PLANO_EXTRACAO_ARENA.md`](PLANO_EXTRACAO_ARENA.md). Não encerre em resumos superficiais: cubra falas, demonstrações, consultas SQL, processos, ressalvas, perguntas, respostas, exemplos e exceções.
 
-## Regras de execução
+## Instruções de execução
 
-1. Leia `manifesto.csv` e `STATUS.md`. Faça uma gravação por vez e marque seu estado; não misture falas ou procedimentos de arquivos diferentes.
-2. Confirme o nome do arquivo e a duração. Assista/analise a gravação integralmente, em ordem. Use trechos menores quando necessário para manter precisão e retome do último timestamp confirmado.
-3. Para cada fato importante, procedimento, definição, exemplo ou ressalva, anote timestamp `HH:MM:SS`. A transcrição deve cobrir toda fala compreensível; marque `[inaudível HH:MM:SS–HH:MM:SS]` em vez de adivinhar.
-4. Separe: **(a)** conteúdo explícito no vídeo, **(b)** síntese didática, **(c)** inferência sua. Identifique inferências e não as apresente como regra ensinada.
-5. Preserve números, nomes de campos, ordem das ações, condições, exceções e consequências conforme a fonte. Se algo parecer errado, contraditório ou desatualizado, registre como ponto a validar, sem corrigir silenciosamente.
-6. Não invente telas, passos, definições ou respostas. Quando a imagem estiver ilegível, o falante não puder ser identificado ou houver ambiguidade, registre a limitação em `incertezas.md`.
-7. Trate credenciais, tokens, senhas, chaves, dados bancários/documentais e dados pessoais com minimização: não transcreva valores secretos. Use `[SEGREDO OMITIDO]` ou `[DADO PESSOAL OMITIDO]`, mantendo contexto e timestamp suficientes para localizar o trecho. Não inclua esses valores em perguntas, respostas, exemplos ou nomes de arquivos.
-8. Ao final, faça uma auditoria de cobertura comparando a duração total com os timestamps da transcrição e do guia. Todo intervalo instrutivo deve estar coberto ou explicitamente marcado como não instrutivo/inaudível.
+1. Leia `README.md`, `PLANO_EXTRACAO_ARENA.md`, `manifesto.csv`, `STATUS.md`, `PRIVACIDADE.md` e `RECUPERAR_VIDEOS.md`.
+2. Baixe os objetos Git LFS. Reconstrua os vídeos divididos com `python tools/reconstruir_videos.py` e confirme integridade. Não analise fragmentos `.partNNN` como vídeos.
+3. Trabalhe em um vídeo por vez, do primeiro ao último timestamp, e atualize o estado/checkpoint em `STATUS.md`. Não declare vídeo concluído antes da auditoria de qualidade.
+4. Para cada fato, conceito, procedimento, código ou tela relevante, registre fonte e timestamp `HH:MM:SS`. Separe transcrição/observação, síntese didática e inferência. Marque inaudível/ilegível em vez de adivinhar.
+5. Categorize cada item como `SQL`, `SISTEMAS`, `PROCESSOS`,`NEGOCIO`, `INFRA_E_ACESSO` e/ou `DÚVIDA_OU_CONFLITO`. Use também sistema/módulo e assunto quando conhecidos.
+6. Siga os requisitos específicos de SQL, sistemas e prints em `PLANO_EXTRACAO_ARENA.md`. Nunca execute SQL nem altere dados de sistemas. Identifique efeitos de comandos de alteração e marque validação operacional necessária.
+7. Minimize dados pessoais e segredos. Não os copie para texto, código, captura, log, commit ou resposta; use `[SEGREDO OMITIDO]`/`[DADO PESSOAL OMITIDO]` e timestamp. Prints derivados devem ser revisados e sanitizados antes de entrarem no Git.
+8. Produza todos os arquivos obrigatórios por vídeo. Depois atualize os índices transversais descritos no plano. Mantenha links relativos funcionais e fonte detalhada sem duplicação silenciosa.
+9. Faça controle de qualidade e verifique o `git diff` antes de cada publicação. Envie ao GitHub em lotes pequenos revisáveis; descreva o lote e atualize `STATUS.md`. Se houver dúvida de privacidade, exclua o derivado afetado e registre apenas a ocorrência sem o dado.
+10. Não pare para perguntar sobre detalhes rotineiros: escolha a interpretação mais conservadora, documente incerteza e avance. Só interrompa se a fonte não estiver disponível, reconstrução falhar, ou uma decisão humana for necessária para tratar risco de exposição.
 
-## Arquivos obrigatórios por vídeo
+## Estrutura obrigatória por vídeo
 
-Crie `materiais/<slug-do-arquivo>/` contendo:
+Em `materiais/<slug>/`, crie:
 
-### `transcricao.md`
-Transcrição integral com timestamps regulares e em cada mudança de assunto/etapa. Identifique os falantes como `Instrutor`, `Participante 1` etc. quando não souber seus nomes. Descreva elementos visuais relevantes entre colchetes, com timestamp. Remova segredos conforme a regra 7.
+- `transcricao.md` — toda fala compreensível com timestamps; falantes identificados genericamente se necessário; indicações visuais relevantes; segredos omitidos.
+- `guia_de_estudo.md` — objetivo, público/pré-requisitos, metadados de categoria/sistema/assunto/confiança, conceitos, explicações, exemplos, erros/cuidados e resumo; seções ligadas a timestamps.
+- `procedimentos.md` — pré-condições, entradas, sequência numerada, decisões, validações, resultado, exceções e timestamp; fluxos separados.
+- `perguntas.md` — pelo menos 10 perguntas ou uma por conceito/etapa relevante se menos de 10; respostas com justificativa e timestamps.
+- `glossario.md` — siglas, termos técnicos e campos com significado sustentado e timestamp.
+- `incertezas.md` — lacunas, contradições, dados omitidos e validações humanas necessárias; ou`Nenhuma identificada` após revisão.
+- `metadados.md` — nome original, tamanho conforme manifesto, duração, cobertura, data, ferramenta/modelo, idioma e limitações.
+- `capturas.md` e `capturas/` — somente se imagens forem didaticamente úteis; cada captura com legenda, timestamp, contexto, finalidade e revisão de privacidade. Se não forem úteis, registre isso em `capturas.md`.
 
-### `guia_de_estudo.md`
-Inclua título, objetivo do treinamento, público/pré-requisitos, visão geral, conceitos explicados, explicação didática de todas as etapas, exemplos do vídeo, erros e cuidados citados, resumo final e referência temporal em cada seção. Uma pessoa que não assistiu ao vídeo deve conseguir estudar o conteúdo sem perder os detalhes instrutivos.
+## Índices da biblioteca
 
-### `procedimentos.md`
-Para cada fluxo demonstrado, descreva pré-condições, dados/insumos necessários (sem valores pessoais), sequência numerada, decisões e ramificações, resultado esperado, exceções/erros e timestamp. Mantenha fluxos separados.
+Mantenha em `materiais/`:
 
-### `perguntas.md`
-Crie pelo menos 10 perguntas de revisão ou uma por conceito/etapa relevante se houver menos de 10. Inclua resposta, justificativa breve e timestamp(s). Cubra compreensão, ordem de passos, aplicação em cenário e exceções. Não crie fatos externos.
+- `INDICE.md`
+- `SQL/INDICE_SQL.md`
+- `SISTEMAS/INDICE_SISTEMAS.md`
+- `PROCESSOS/INDICE_PROCESSOS.md`
+- `GLOSSARIO_GERAL.md`
+- `CONFLITOS_E_VALIDACAO.md`
 
-### `glossario.md`
-Liste siglas, termos técnicos e nomes de campos exatamente como aparecem (salvo dado pessoal), explicando apenas o significado sustentado pelo vídeo; timestamp para cada termo.
+Atualize os índices a cada lote. Cada entrada deve apontar ao vídeo, documento e timestamp que sustentam o tópico.
 
-### `incertezas.md`
-Registre lacunas, trechos inaudíveis/ilegíveis, possíveis contradições, conteúdo possivelmente sensível omitido e perguntas que exigem validação humana. Se não houver, escreva `Nenhuma identificada`, após conferir.
+## Controle de qualidade e relatório
 
-### `metadados.md`
-Registre nome original, tamanho conforme manifesto, duração, cobertura temporal, data da análise, ferramenta/modelo usado, idioma e limitações. Não declare validação por ferramenta que não foi usada.
+Antes de marcar cada vídeo como `concluído`, confira cobertura integral, timestamps, fidelidade de SQL e procedimentos, utilidade/legibilidade/sanitização dos prints, incertezas, privacidade e links. Faça commits pequenos e publique no repositório público só após revisar os arquivos alterados e o diff.
 
-## Controle de qualidade
-
-Antes de marcar `concluído` em `STATUS.md`, verifique: (1) vídeo percorrido até o final; (2) transcrição cobre toda fala inteligível; (3) guia cobre demonstrações e exceções; (4) procedimentos respeitam a ordem mostrada; (5) perguntas têm respostas rastreáveis; (6) todas as afirmações específicas têm timestamp; (7) segredos/dados pessoais foram minimizados; (8) incertezas foram registradas. Se qualquer item falhar, marque `em revisão` e explique.
-
-## Relatório final
-
-Ao terminar a coleção, atualize `STATUS.md` com contagem de concluídos, em revisão e pendentes; liste obstáculos e vídeos que precisam de revisão humana. Não alegue que a coleção está completa enquanto houver pendências.
-
+Ao concluir a coleção, informe totais concluídos/em revisão/pendentes, categorias encontradas, índices criados, capturas incluídas/omitidas, commits publicados e limitações. Nunca afirme conclusão se algum vídeo ou trecho instrutivo permanecer sem análise.
