@@ -6,6 +6,6 @@
   "ramo_entrega_partes": "entrega/partes-jonas-ept-explicacao",
   "ramo_entrega_transcricao": "entrega/transcricao-jonas-ept-explicacao",
   "tamanho_bloco_mb": "64",
-  "lote": "proximo menor da fila apos Gravando 2026-09-22 111258 (arena/e81830e4-fun-o, 2026-10-13). jonas2309.mp4 e duplicata exata por oid (f99bd795...): analisar uma vez",
-  "sessao": "arena/e81830e4-fun-o"
+  "lote": "proximo menor da fila apos Gravando 2026-09-22 111258 (arena/e81830e4-fun-o, 2026-10-13). jonas2309.mp4 e duplicata exata por oid (f99bd795...): analisar uma vez. Ramos entrega/* do 1o disparo (20:25/20:28 UTC) foram apagados as 20:33 UTC sem coleta nesta sessao; re-disparo necessario",
+  "sessao": "arena/3755a69f-fun-o"
 }
