@@ -48,3 +48,16 @@ Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo
 - **Código do perfil:** configuração necessária no SIC e no web service; valor não registrado (`00:05:22`–`00:05:34`).
 - **Review:** revisão feita ao fechar o pacote de versão; local de apresentação de projetos (`00:06:09`–`00:06:35`).
 - **IP:** situação do item de desenvolvimento; sigla não definida na gravação (`00:07:30`).
+
+## Termos de `Jonas EPT explicação.mp4`
+
+- **ECONSULTD:** tabela de **detalhe** da consulta (`FCSMONITOREMPR`), em chave-valor (`CDIDCONS`, `CDCONTROLE`, `CDCAMPO` + conteúdo), onde fica o JSON do payload do envio ao sistema externo (`00:03:11`–`00:03:42`).
+- **Rastreio por nome do serviço:** variação do diagnóstico em `ECONSULT` filtrando por `PRDESCPFCON LIKE ('%Servico de Envio da Proposta ao Sistema Externo%')` em vez de por `CSNRPROP` (`00:02:50`).
+- **Payload do envio ao sistema externo:** JSON com campos de contrato (`contract_amount`, `contract_net_amount`, `bank_code`, `formalization_type "D"`, …), objeto `client` e objeto `corban_data` (`00:04:30`–`00:05:20`).
+- **`client` (objeto do payload):** bloco de dados do cliente; o novo agrupamento de documentos anexados entra dentro dele ("ele vai estar em client", `00:05:04`).
+- **`corban_data` / Origem 3:** dados da promotora/correspondente no payload (`id "001010"` = "Origem 3" da proposta); a EF define `phone` (Telefone Corban ≤9) e `phone_area_code` (DDD Corban ≤3) "de acordo com o cadastro da Origem 3" (`00:05:00`).
+- **`/proposal/import` e `/proposal/update`:** fluxos de integração citados nos cenários de teste (importação de proposta nova e atualização de proposta existente com documento anexado no checklist) (`00:09:00`–`00:09:30`).
+- **Resposta de sucesso da integração:** `200 OK` com `success=true`, `type=ok`, `message=proposal imported` e `details` conforme o padrão do serviço; falha de validação → `400 BadRequest`/`409 Conflict` (`00:09:20`).
+- **Estruturas a preservar sem regressão:** `corbanData`, `Credor associatedProposals`, `last_ConsultINSS`, `Insurance_reuse` (`00:09:20`).
+- **Planilha EPT (`EPT_586780`):** documento de casos de teste do CQ (colunas `CT`, `Ref.`, `Etapa`, `Resultado esperado`, `Status`, `Observações`; seções de prê-missas e validações básicas) — aqui vista **preenchida**, complementando a visão de `Gravando 2026-07-07 155307.mp4` (`00:05:50`–`00:08:10`).
+- **Relatório de Testes (`Relatorio_de_Testes_586780`):** documento Word padrão "CQ - Controle de Qualidade / Evidências de Testes" com cenários prontos a reaproveitar na EPT (`00:08:27`–`00:09:30`).
