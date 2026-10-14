@@ -98,3 +98,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/mcb-qista/`. O ramo temporário `entrega/transcricao-mcb-qista` foi apagado após a coleta.
 - **Objeto provavelmente retido:** commit `83f223e8d5ce3a2b561b968772bbd73e6021704a`; após apagar o ramo, a API ainda o retorna. Contém texto da transcrição e diagnósticos, não o MP4.
 - **Pendência:** incluir esse SHA no pedido ao GitHub Support; apagar o ramo não garante a remoção do commit órfão.
+
+## 9. Registro — transcrição de `Primeiro projeto.mp4` (2026-10-14)
+
+- **Ação:** run `38510583430` transcreveu o áudio com `faster-whisper` `large-v3` (274 segmentos); auditoria `38510583443` concluiu com sucesso. Fonte conferida pelo manifesto: `616715835` bytes, SHA-256 `3f761d2a7a1dadeae053910a2a3940d081bcd1e0afd90a96cb826c46d8bd1ac0`.
+- **Minimização na cópia integrada:** os arquivos públicos em `materiais/primeiro-projeto/` omitem o trecho lateral `00:16:15.940–00:17:48.660` por privacidade; TXT, SRT e VTT contêm um marcador neutro, e o metadado distingue os 274 segmentos gerados dos 256 publicados.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-primeiro-projeto` foi apagado após a coleta, mas o commit `687bd0dbdd4309881da958330f68b247f45ff22e` continua acessível pela API do GitHub por SHA. Ele contém a transcrição original, anterior à omissão (incluindo o intervalo removido na cópia pública), além dos diagnósticos; não contém o MP4.
+- **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A exclusão do ramo não revoga o acesso ao commit por SHA; tratar o material integrado, já sanitizado, separadamente do objeto temporário retido.

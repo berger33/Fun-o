@@ -1,0 +1,21 @@
+{
+  "arquivo": "Primeiro projeto.mp4",
+  "bytes": 616715835,
+  "sha256": "3f761d2a7a1dadeae053910a2a3940d081bcd1e0afd90a96cb826c46d8bd1ac0",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 1073.66,
+  "segmentos": 274,
+  "duracao_transcricao_s": 896.4,
+  "ferramenta": "faster-whisper (CTranslate2)",
+  "segmentos_publicados": 256,
+  "trechos_omitidos_versao_publica": [
+    {
+      "inicio": "00:16:15.940",
+      "fim": "00:17:48.660",
+      "motivo": "conversa lateral omitida por privacidade"
+    }
+  ]
+}
