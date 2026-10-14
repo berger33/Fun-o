@@ -1,6 +1,5 @@
 # Transcrição automática — Primeiro projeto.mp4
 # modelo: large-v3 | idioma: pt | segmentos: 274
-# Versão pública: trecho de conversa lateral entre 00:16:15.940 e 00:17:48.660 omitido por privacidade.
 # ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
 # nomes, números e jargões antes de publicar qualquer derivado.
 
@@ -259,4 +258,22 @@
 [00:16:00] porque se deu, aí eu te chamo de novo
 [00:16:01] para a gente ver o que está acontecendo,
 [00:16:02] Porque tá estranho, mas se for direto, pode ser as versões antigas que eu tava te mandando e tava dando erro mesmo, mas é isso, aí qualquer dúvida você me fala, tá legal?
-[00:16:15] [Trecho de conversa lateral omitido na versão pública por privacidade.]
+[00:16:15] Imagina, qualquer coisa estamos aí, claro, a gente recebe o nosso salário dia 15, isso, dia 15 e dia 30, nosso salário dia 15 e dia 30
+[00:16:41] Ah, então é dividido, é dividido no mês
+[00:16:44] Aí o nosso VR a gente recebe dia 20
+[00:16:47] Claro
+[00:16:54] Cara, em algumas opções ela fornece, mas são casos assim bem específicos
+[00:17:07] Por exemplo, um amigo meu da nossa equipe, ele precisava do notebook pra trabalhar
+[00:17:13] Mas eles falaram que só fornecia pra Dev
+[00:17:16] Então, em casos assim extremos, eles fornecem pra CQ
+[00:17:20] De resto, se eu não me engano, é só pra Dev
+[00:17:22] Eu também, eu também
+[00:17:29] Nada
+[00:17:30] Eu também acho, porque olha só por Deus
+[00:17:34] Mas quando for para a Dev
+[00:17:35] Eu acho que é mais fácil conseguir o notebook da função
+[00:17:37] Não vai ser o jeito
+[00:17:42] Tá bom
+[00:17:43] Bom dia para você, amigo
+[00:17:46] Até depois
+[00:17:47] Imagina

@@ -102,16 +102,14 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 ## 9. Registro — transcrição de `Primeiro projeto.mp4` (2026-10-14)
 
 - **Ação:** run `38510583430` transcreveu o áudio com `faster-whisper` `large-v3` (274 segmentos); auditoria `38510583443` concluiu com sucesso. Fonte conferida pelo manifesto: `616715835` bytes, SHA-256 `3f761d2a7a1dadeae053910a2a3940d081bcd1e0afd90a96cb826c46d8bd1ac0`.
-- **Minimização na cópia integrada:** os arquivos públicos em `materiais/primeiro-projeto/` omitem o trecho lateral `00:16:15.940–00:17:48.660` por privacidade; TXT, SRT e VTT contêm um marcador neutro, e o metadado distingue os 274 segmentos gerados dos 256 publicados.
-- **Retenção da entrega temporária:** o ramo `entrega/transcricao-primeiro-projeto` foi apagado após a coleta, mas o commit `687bd0dbdd4309881da958330f68b247f45ff22e` continua acessível pela API do GitHub por SHA. Ele contém a transcrição original, anterior à omissão (incluindo o intervalo removido na cópia pública), além dos diagnósticos; não contém o MP4.
-- **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A exclusão do ramo não revoga o acesso ao commit por SHA; tratar o material integrado, já sanitizado, separadamente do objeto temporário retido.
+- **Versão integrada:** após a instrução expressa do responsável (registrada no §13), os quatro arquivos de saída originais foram restaurados de `687bd0dbdd4309881da958330f68b247f45ff22e`; a transcrição integrada agora contém os 274 segmentos originais, sem cortes ou mascaramento.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-primeiro-projeto` foi apagado, mas o commit `687bd0dbdd4309881da958330f68b247f45ff22e` continua acessível pela API do GitHub por SHA. Ele contém a mesma transcrição integral e diagnósticos; não contém o MP4.
 
 ## 10. Registro — transcrição de `Gravando 2026-08-24 124650.mp4` (2026-10-14)
 
 - **Ação:** run `38512446731` transcreveu 352 segmentos com `faster-whisper` `large-v3`; auditoria `38512446609` concluiu com sucesso. Tamanho e SHA-256 conferem com manifesto/ponteiro: `644238242` bytes, `1b9b6afd8564786180ac96df1582f64fc7be773b16a20a1df52e82c2234f256c`. É o mesmo objeto LFS de `Gravando 2026-08-24 161729.mp4`.
-- **Minimização na cópia integrada:** um nome próprio em exemplo de teste foi substituído por `[nome próprio omitido]` em TXT/SRT/VTT (`00:08:36`). A transcrição menciona CPF como dado de teste, mas não contém um número; a varredura automática não encontrou padrão de CPF/CNPJ, e-mail, telefone ou credencial.
-- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-08-24-124650` foi apagado após a coleta. O commit `7421c127d9bdd81cc1767119e4ac81babf7a741f` continua acessível pela API do GitHub por SHA e contém o nome anterior à minimização e os diagnósticos; não contém o MP4.
-- **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A gravação duplicada fica coberta por referência à fonte única em análise.
+- **Versão integrada:** após a instrução expressa do responsável (registrada no §13), os quatro arquivos de saída originais foram restaurados de `7421c127d9bdd81cc1767119e4ac81babf7a741f`; a transcrição integrada agora contém os 352 segmentos originais, sem cortes ou mascaramento. Não há um número de CPF completo nos artefatos gerados.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-08-24-124650` foi apagado, mas o commit `7421c127d9bdd81cc1767119e4ac81babf7a741f` continua acessível pela API do GitHub por SHA e contém a mesma transcrição integral e diagnósticos; não contém o MP4. A gravação duplicada fica coberta por referência à fonte única em análise.
 
 ## 11. Registro — transcrição de `Gravando 2026-10-06 110907.mp4` (2026-10-14)
 
@@ -123,6 +121,11 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 ## 12. Registro — transcrição de `Gravando 2026-09-23 164626.mp4` (2026-10-14)
 
 - **Ação:** run `38516262063` transcreveu 396 segmentos com `faster-whisper` `large-v3`; auditoria `38516261919` concluiu com sucesso. Tamanho e SHA-256 conferem com manifesto/ponteiro: `1087239062` bytes, `e533f6e54565688b09519b83ccf32b121494ebf33d211245d261ccb769e9d8b8`.
-- **Minimização na cópia integrada:** o trecho lateral `00:08:19.860–00:10:24.140` foi omitido e identificadores internos/parciais foram mascarados. TXT/SRT/VTT têm 340 entradas públicas (incluindo marcadores); os metadados registram as faixas alteradas. A varredura automática não encontrou padrões comuns de CPF/CNPJ, e-mail, telefone ou credencial.
-- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-09-23-164626` foi apagado após a coleta. O commit `91c25e6484be239dbbf77615a9eb76d4a7924e48` continua acessível pela API do GitHub por SHA; contém a transcrição original anterior à minimização e os diagnósticos, não o MP4.
-- **Pendência:** incluir esse SHA no pedido ao GitHub Support para remoção dos objetos órfãos. Como a ponte publica a transcrição bruta antes da revisão e o commit órfão continua acessível por SHA, suspender novos usos da ponte para gravações que possam conter conversa pessoal/localização ou identificadores até decidir por um canal de transferência que permita revisar antes da exposição pública.
+- **Versão integrada:** após a instrução expressa do responsável (registrada no §13), os quatro arquivos de saída originais foram restaurados de `91c25e6484be239dbbf77615a9eb76d4a7924e48`; a transcrição integrada agora contém os 396 segmentos originais, sem cortes ou mascaramento.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-09-23-164626` foi apagado, mas o commit `91c25e6484be239dbbf77615a9eb76d4a7924e48` continua acessível pela API do GitHub por SHA; contém a mesma transcrição integral e diagnósticos, não o MP4.
+
+## 13. Instrução do responsável — preservação integral (2026-10-14)
+
+O responsável instruiu expressamente a **não ocultar nenhuma informação** e autorizou a continuidade com transcrições integrais, declarando que copiará o conteúdo para uso interno da empresa ao término e depois excluirá o repositório. Em resposta, os arquivos TXT/SRT/VTT/metadados de `Primeiro projeto.mp4`, `Gravando 2026-08-24 124650.mp4` e `Gravando 2026-09-23 164626.mp4` foram restaurados dos commits originais de entrega temporária, sem cortes ou mascaramento. Os artefatos integrados preservam agora a transcrição automática completa; a revisão humana continua pendente.
+
+Enquanto o repositório não for excluído, ele permanece público. Apagar um ramo temporário não apaga os commits acessíveis por SHA, conforme §1. O responsável planeja copiar os materiais e excluir o repositório após a conclusão da fila.

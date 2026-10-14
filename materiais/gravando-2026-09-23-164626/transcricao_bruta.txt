@@ -1,7 +1,5 @@
 # Transcrição automática — Gravando 2026-09-23 164626.mp4
 # modelo: large-v3 | idioma: pt | segmentos: 396
-# Versão pública: conversa lateral de 00:08:19.860–00:10:24.140 omitida por privacidade.
-# Identificadores internos/parciais foram mascarados nos timestamps registrados em transcricao_meta.json.
 # ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
 # nomes, números e jargões antes de publicar qualquer derivado.
 
@@ -65,7 +63,9 @@
 [00:02:16] E cara
 [00:02:18] Eu tava vendo aqui que eu acho que tem outra máquina
 [00:02:20] Do CQ rodando aqui
-[00:02:21] [Identificador interno de máquina omitido por privacidade.]
+[00:02:21] Essa aqui AKWK
+[00:02:24] 01232CQ
+[00:02:27] É a minha
 [00:02:28] Mas isso aí é outro plugin
 [00:02:30] Esse aí é o plugin de esteira
 [00:02:32] Ah
@@ -75,8 +75,8 @@
 [00:02:39] O nome da proposta, é.
 [00:02:41] É, eu coloquei a proposta e trouxe ele também.
 [00:02:43] O sistema externo.
-[00:02:45] E no caso, o sistema externo aqui seria o meu aqui, é da minha máquina essa aqui, [identificador de máquina omitido].
-[00:02:53] Então, esse ID, [identificador parcial omitido]
+[00:02:45] E no caso, o sistema externo aqui seria o meu aqui, é da minha máquina essa aqui, 182710.
+[00:02:53] Então, esse ID, 533...
 [00:02:59] Não, é o outro, eu acho, não?
 [00:03:04] Deixa eu mandar aqui pro seu.
 [00:03:05] Esse cara aqui
@@ -157,7 +157,61 @@
 [00:07:45] Maravilhoso
 [00:08:07] O login não tá nada relevante
 [00:08:17] Beleza
-[00:08:19] [Trecho de conversa lateral omitido na versão pública por privacidade.]
+[00:08:19] Vocês estão participando desse plantão que tá rolando?
+[00:08:34] Esse aqui por enquanto não, cara
+[00:08:36] Também
+[00:08:38] Gente, eu tenho que entender essa porra, hein
+[00:08:41] O que é pra testar
+[00:08:43] Já basta a gente estar
+[00:08:45] vindo no presencial, mano.
+[00:08:48] Vocês estão trabalhando no presencial?
+[00:08:50] Pô, estamos vindo uma vez na semana.
+[00:08:52] Nunca foi nada.
+[00:08:54] Mas por quê?
+[00:08:55] Isso foi imposto agora?
+[00:08:57] Ou vocês já faziam isso antes?
+[00:08:59] Faz um mês. Um mês passado.
+[00:09:02] Nunca fiz.
+[00:09:03] Nunca fizeram?
+[00:09:05] É novo, então.
+[00:09:08] Eu não tenho como fazer isso
+[00:09:09] porque eu estou no Espírito Santo.
+[00:09:10] Eles podiam fazer pelo menos um convite
+[00:09:14] Nessa galera aí, de vez em quando
+[00:09:15] Pra conhecer a função, integrar mais com a empresa
+[00:09:18] Pegar umas cabeças aí que estão mais tempo
+[00:09:21] Será que é custo também pra função?
+[00:09:24] É, mano
+[00:09:25] Mas eu acho interessante, cara
+[00:09:27] Porque, tipo assim
+[00:09:28] Eu acho que você gera
+[00:09:32] Um elo mais
+[00:09:33] Mais forte com a empresa que você trabalha
+[00:09:36] Tipo, eu sou a tua distância
+[00:09:38] Eu nunca vi a cara, não sei
+[00:09:39] Eu faço ideia nem do tamanho
+[00:09:40] a galera que
+[00:09:42] eu falo são você, mas assim
+[00:09:45] é distância, nunca vi ninguém presencial
+[00:09:47] então não sei nem o peso
+[00:09:49] quando você aparece presencialmente
+[00:09:51] é uma outra pegada
+[00:09:53] é tipo
+[00:09:55] o que o povo fala
+[00:09:57] quando você assiste futebol
+[00:09:59] pela televisão, quando você vai no estádio
+[00:10:02] sua percepção muda
+[00:10:03] todo mundo fala isso
+[00:10:05] eu nunca fui, mas todo mundo comenta
+[00:10:07] enfim, eu acho que seria um custo altíssimo
+[00:10:10] Tem uma galera que trabalha
+[00:10:11] Mas aqui é legal
+[00:10:15] Aqui a região
+[00:10:15] Perto da 25, centro de São Paulo
+[00:10:18] Tem uma igreja aqui
+[00:10:20] Mano, tem uma igreja aqui
+[00:10:22] Eu nunca tinha entrado
+[00:10:23] Hoje eu entrei lá
 [00:10:24] O documento é o que eu gerei agora?
 [00:10:28] Não, não
 [00:10:28] O tipo do documento é por CPS
@@ -251,7 +305,7 @@
 [00:18:24] Processor
 [00:18:35] Pendente
 [00:18:45] Pendente
-[00:18:46] [identificador parcial omitido], essa é de
+[00:18:46] 533, essa é de
 [00:19:08] Processor, beleza
 [00:19:46] Documento Type, CCD assinada, ok, documento Name, nome do documento, User, Supervisor.
 [00:19:56] É esses três campos só?

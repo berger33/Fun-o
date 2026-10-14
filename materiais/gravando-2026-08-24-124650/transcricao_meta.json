@@ -9,12 +9,5 @@
   "duracao_audio_s": 1125.82,
   "segmentos": 352,
   "duracao_transcricao_s": 650.2,
-  "ferramenta": "faster-whisper (CTranslate2)",
-  "segmentos_publicados": 352,
-  "elementos_anonimizados_versao_publica": [
-    {
-      "timestamp": "00:08:36",
-      "tipo": "nome próprio em exemplo de teste omitido"
-    }
-  ]
+  "ferramenta": "faster-whisper (CTranslate2)"
 }

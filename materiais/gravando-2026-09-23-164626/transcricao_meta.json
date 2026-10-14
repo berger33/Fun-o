@@ -9,32 +9,5 @@
   "duracao_audio_s": 2039.98,
   "segmentos": 396,
   "duracao_transcricao_s": 891.9,
-  "ferramenta": "faster-whisper (CTranslate2)",
-  "segmentos_publicados": 340,
-  "trechos_omitidos_versao_publica": [
-    {
-      "inicio": "00:08:19.860",
-      "fim": "00:10:24.140",
-      "motivo": "conversa lateral omitida por privacidade"
-    }
-  ],
-  "elementos_anonimizados_versao_publica": [
-    {
-      "inicio": "00:02:21.620",
-      "fim": "00:02:28.440",
-      "tipo": "identificador interno de máquina"
-    },
-    {
-      "timestamp": "00:02:45.540",
-      "tipo": "identificador de máquina"
-    },
-    {
-      "timestamp": "00:02:53.420",
-      "tipo": "identificador parcial"
-    },
-    {
-      "timestamp": "00:18:46",
-      "tipo": "identificador parcial"
-    }
-  ]
+  "ferramenta": "faster-whisper (CTranslate2)"
 }
