@@ -1,0 +1,654 @@
+# Transcrição automática — ClientSecret EWEN TREINAMENTO.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 649
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] Opa! Beleza, William?
+[00:00:12] Tô te ouvindo.
+[00:00:16] Então, o Gabriel falou pra eu passar umas coisas pra você que eu acho que você não tinha visto ainda.
+[00:00:21] Seria o
+[00:00:23] CloudSecret
+[00:00:24] Licença, quando disponibiliza
+[00:00:27] Alguma API nova, um método novo
+[00:00:29] De alguma API
+[00:00:30] E
+[00:00:31] CTC
+[00:00:34] O CTC eu tô vendo aqui, tô preparando
+[00:00:36] A base no servidor
+[00:00:38] Pra ver se eu consigo te
+[00:00:41] Te mostrar, né, antes de eu ir
+[00:00:43] Mas aí, por enquanto
+[00:00:45] Vamos fazendo lá o CloudSecret
+[00:00:47] Aí se você quiser
+[00:00:49] Compartilhar na tela
+[00:00:50] que aí você vai falando pra mim
+[00:00:52] o que você entendeu lá dos vídeos
+[00:00:55] e qualquer coisa eu vou te auxiliando em alguma
+[00:00:57] isso mesmo
+[00:01:20] Mas aí, então, vamos criar um
+[00:01:29] Client Secret pra você
+[00:01:30] Geralmente, tipo assim, a gente só vai fazer isso
+[00:01:33] Uma vez na vida
+[00:01:34] Mas, né, você sabe
+[00:01:50] Opa, agora eu estou vendo
+[00:01:58] Então
+[00:02:00] Isso daí é o ORECA
+[00:02:03] Aí pode abrir o site do acesso
+[00:02:17] Ah não
+[00:02:18] É o nosso acesso mesmo
+[00:02:20] O site que a gente tem do C6
+[00:02:22] Ah, você subiu na sua própria
+[00:02:48] a máquina?
+[00:02:57] Boa.
+[00:03:02] Ah, legal. Mas aí, então,
+[00:03:04] é...
+[00:03:05] Vai estar apontando para as nossas UDLs
+[00:03:08] mesmo, né?
+[00:03:10] Ah, então, ok.
+[00:03:11] Então pode abrir por aí.
+[00:03:18] E é uma coisa assim que meio que você vai fazer
+[00:03:24] Só pra
+[00:03:26] Uma vez na vida, né
+[00:03:28] Aqui mesmo eu só fiz uma vez
+[00:03:30] Na mesa, lá na fábrica
+[00:03:32] Eu tive que fazer várias vezes porque eram várias bases diferentes
+[00:03:35] Mas é sempre bom colocar a mão na massa
+[00:03:48] Já voou
+[00:04:06] Esse vai dar certo, né
+[00:04:13] Mano, desde os meus
+[00:04:14] 18 anos
+[00:04:17] Nada, é só
+[00:04:25] Tô com 23
+[00:04:26] Eu vou desenrolando
+[00:04:30] Eu vou pegando
+[00:04:31] E vou aprendendo, sabe
+[00:04:33] Eu tenho a base toda
+[00:04:34] Mas nunca toquei
+[00:04:37] É que a função é o meu primeiro trabalho na vida
+[00:04:39] Então, tipo assim
+[00:04:41] Nunca fiz algum trampo
+[00:04:43] Real, profissional
+[00:04:44] Com programação
+[00:04:46] Obrigado.
+[00:05:16] Não, então
+[00:05:37] eu acho que se você tiver a base
+[00:05:40] eu acho que tem que primeiro entender a base
+[00:05:42] e pegar a lógica de programação
+[00:05:44] porque IA
+[00:05:45] eu acho que ninguém vai conseguir fugir
+[00:05:47] todo mundo no futuro vai ter que usar IA
+[00:05:49] mas tipo, se você
+[00:05:51] não tiver uma base de programação
+[00:05:53] quando der algum problema
+[00:05:55] eu acho que você não iria conseguir resolver
+[00:05:57] mesmo se tivesse IA
+[00:05:58] então eu acho que se você criar uma base
+[00:06:01] e depois você pode
+[00:06:03] utilizar sim IA pra te ajudar
+[00:06:05] auxiliar, a IA dá pra você usar
+[00:06:07] pra aprender muito mais rápido mesmo
+[00:06:09] mas eu acho importante criar
+[00:06:13] Sim, é, tipo, você vai
+[00:06:23] Você falou o Python
+[00:06:25] Então você vai
+[00:06:26] Pegar a base do Python
+[00:06:29] Que é a sintaxe
+[00:06:31] Como que algumas coisas são estruturadas
+[00:06:34] Alguns padrões de projetos dele
+[00:06:35] E depois que você começa a ver isso
+[00:06:37] Você começa a fazer
+[00:06:38] Alguns projetinhos
+[00:06:40] E aí, o que você pode fazer
+[00:06:43] que foi uma coisa que eu fiz
+[00:06:45] quando fiz a prova do Dev aqui
+[00:06:47] eu não usei IA, o que eu usei IA
+[00:06:49] foi pra, tipo, eu implementava
+[00:06:52] aí não saiu
+[00:06:54] o que eu esperava
+[00:06:54] aí eu pegava aquilo e mostrava
+[00:06:58] pra IA, mas eu não falava pra IA
+[00:06:59] me dar a solução
+[00:07:01] ela apontar o que eu errei
+[00:07:04] aí nisso
+[00:07:05] eu voltei pra ela, se eu falasse
+[00:07:07] implementar essa coisa pra mim, ela iria fazer
+[00:07:09] com certeza, mas
+[00:07:11] aí eu não iria aprender, né
+[00:07:13] então acho que
+[00:07:43] Isso.
+[00:08:05] Então, aí você pode...
+[00:08:08] serviços mesmo
+[00:08:12] aí vai ter
+[00:08:22] isso
+[00:08:22] gerenciamento de licenças
+[00:08:24] aí primeiro
+[00:08:26] dessa daí que você tem que entrar
+[00:08:28] seria
+[00:08:30] liberação de acesso para geração de
+[00:08:35] Cloud Secret
+[00:08:36] Incluir.
+[00:09:06] Aí, ó, você vai colocar
+[00:09:19] Não, aí não precisa, não
+[00:09:21] É o que você vai fazer
+[00:09:23] Você vai colocar o nome do seu
+[00:09:26] Você já tem um usuário criado aí, né?
+[00:09:31] Aí você pode
+[00:09:31] Não, não, pode deixar
+[00:09:34] Supervisor mesmo
+[00:09:35] Aí você coloca o seu usuário ali
+[00:09:38] Aí incluir
+[00:09:43] Isso
+[00:09:45] Aí você pode
+[00:09:47] Pegar
+[00:09:50] Pode jogar esses dois pro lado
+[00:09:54] Aí tem dois MPJs
+[00:10:00] Agora seleciona ali o outro
+[00:10:01] Isso
+[00:10:01] Ah, pode clicar em OK
+[00:10:04] Ah não, então é esse daí mesmo
+[00:10:05] Isso, aí pode clicar em gravar.
+[00:10:10] Ah, coloca alguma coisa ali na descrição.
+[00:10:28] Ah, é que a gente clicou em incluir, é alterar.
+[00:10:32] Porque já tem isso aí.
+[00:10:47] Aí a chave de acesso, pesquisa aí.
+[00:10:56] É esse primeiro.
+[00:11:02] Isso, agora sim, aí você, tá certo, aí é só você adicionar ali o nome do seu usuário, incluir e salvar.
+[00:11:14] Beleza, aí você já pode deslogar o acesso.
+[00:11:29] E logo funciona.
+[00:11:32] Aí você vai em geração de client-secret para WPWebService, aí clica ali nesse link
+[00:11:52] Aí você pode colocar ali uma descrição e a data de expiração coloca bem longa.
+[00:12:06] Aí copie esse número aí, que depois a gente não vai conseguir ver ele de novo.
+[00:12:20] aí pode confirmar
+[00:12:25] e gravar
+[00:12:30] beleza
+[00:12:32] aí esse é o seu
+[00:12:34] client secret
+[00:12:34] agora abre o
+[00:12:37] test API
+[00:12:37] aí eu vou ter que
+[00:12:47] reiniciar minha máquina
+[00:12:48] Obrigado.
+[00:13:18] aí clica ali em configurações
+[00:13:21] aí coloca
+[00:13:28] a CloudSecret
+[00:13:29] aí, ó, isso daí depende
+[00:13:32] um pouco de cada API
+[00:13:34] mas o CloudSecret sempre vai ser esse mesmo
+[00:13:36] o login e a senha também
+[00:13:38] o do seu usuário
+[00:13:39] e aí, ó, vai lá no
+[00:13:47] onde ficam as APIs
+[00:13:50] e abre uma API aí no
+[00:13:52] navegador.
+[00:14:00] Deixa eu te mandar o caminho aqui.
+[00:14:17] Aí pode colar isso daqui no navegador
+[00:14:21] Aí vai ter todas as aplicações que a gente tem aqui no Sensei
+[00:14:25] Tá tudo na máquina do Gabriel
+[00:14:27] Aí pesquisa aí o
+[00:14:35] Simula a proposta
+[00:14:45] Aí abre a documentação
+[00:14:46] aí como a gente está fazendo pelo test API
+[00:14:55] a gente não vai usar todas as informações
+[00:14:56] já se a gente fosse usar pelo
+[00:14:58] postman
+[00:15:00] a gente teria que
+[00:15:02] usar algumas outras, mas como a gente está
+[00:15:05] usando o test API, a gente só precisa pegar
+[00:15:06] aquele client ID ali
+[00:15:09] que é 99500
+[00:15:11] em algumas APIs
+[00:15:15] esse número muda
+[00:15:16] aí você pode botar lá
+[00:15:18] essa API, colocar ele lá
+[00:15:20] aí beleza, teoricamente você já
+[00:15:23] vai conseguir usar a API, você pode
+[00:15:24] clicar ali, ó, incluir cenário
+[00:15:26] ele já salva automaticamente
+[00:15:31] e se incluir
+[00:15:33] grupo
+[00:15:33] aí dá um, coloca
+[00:15:38] C6 APIs
+[00:15:40] Aí você já pode clicar ali em cima
+[00:15:47] Que surge uma
+[00:15:48] Aí sim que você clica em incluir cenário
+[00:15:51] Aí você coloca como nome
+[00:15:55] API de simulação
+[00:16:04] Aí você pode colar o URL daquela API
+[00:16:07] E aí?
+[00:16:19] Isso daí.
+[00:16:20] Essa URL aí.
+[00:16:23] Não, não, não.
+[00:16:24] Isso, essa daí.
+[00:16:37] Aí você pode selecionar o primeiro método
+[00:16:41] E aí
+[00:16:43] Abriu ela
+[00:16:46] E você pode preencher nos campos
+[00:16:48] Aí eu vou te mandar aqui
+[00:16:51] Só preencher mais rápido
+[00:16:52] Já o Jason tudo completo
+[00:17:07] Aí você copia esse Jason aí.
+[00:17:37] aí cola, aí pode ir salvar
+[00:17:42] aí é só apertar no botão
+[00:17:44] lá embaixo de incluir
+[00:17:46] de testar cenário
+[00:17:48] vai lá no acesso
+[00:18:01] no web acesso mesmo
+[00:18:07] Aí clica ali
+[00:18:09] Entra como Supervisor
+[00:18:11] Aí vai em Cadastro
+[00:18:18] Usuários
+[00:18:23] Alterar
+[00:18:26] Aí você coloca o seu usuário aí
+[00:18:31] Confirmar
+[00:18:37] Aí você pode descer tudo
+[00:18:53] Aí velho, direitos por rotina
+[00:19:07] aí você pesquisa aí
+[00:19:20] é que tem cp no nome
+[00:19:25] vê se tem uma que não seja com cp
+[00:19:28] simulação, proposta
+[00:19:31] Ali, ó
+[00:19:37] Ah, já tá com merda
+[00:19:44] Abre aquela caixinha ali pra ver
+[00:19:46] Ok
+[00:19:57] Pode clicar em confirmar
+[00:19:59] pode gravar aí, já está certo
+[00:20:03] então peraí, tem uma outra coisa
+[00:20:05] que estamos deixando passar
+[00:20:29] Deixa eu ver de novo a sua config lá
+[00:20:37] Ué, mas
+[00:20:59] O Client Secret que você colou lá tá certinho, né?
+[00:21:12] O Client ID também, né? 995000
+[00:21:29] É isso mesmo.
+[00:21:59] Arrasta ele para o lado aí
+[00:22:10] Aí coloca o seu usuário
+[00:22:14] Ah, você já está ali
+[00:22:16] Não, então está certo
+[00:22:29] E aí
+[00:22:59] É o 99, é lá naquela tela de configurações do teste API.
+[00:23:29] Coloca aí
+[00:23:39] Supervisor, sim, a 1, 2, 3, 4, 5, 6
+[00:23:41] Só pra, não sei
+[00:23:42] Já altera automático
+[00:23:54] Isso
+[00:23:55] Obrigado.
+[00:24:25] Peraí, peraí, deixa eu...
+[00:24:55] ver se está rodando
+[00:24:58] na base os pulmões.
+[00:25:25] só tá rodando
+[00:25:30] um tipo só
+[00:25:55] Eu que tinha feito o teste antes de vir aqui, eu também não tô conseguindo não. Alguma coisa que mexeram.
+[00:26:21] É, sempre isso que acontece.
+[00:26:25] E aí
+[00:26:55] E aí
+[00:27:25] E aí
+[00:27:55] do meu teste, peraí que eu vou alterar aqui o convênio
+[00:28:25] E aí
+[00:28:55] Bom dia, Sérgio da Escada.
+[00:29:25] Você já trabalhou em quais empresas?
+[00:29:43] Nossa, que top!
+[00:29:49] Ah não, você tem uma...
+[00:29:55] Mexer com o público deve ser muito estressante, né?
+[00:30:25] Ah, mano, é porque o povo não conhece, eles olham o código na tela e falam
+[00:30:31] Nossa, meu Deus, que coisa complicada, meu Deus
+[00:30:33] Mas não é tudo isso, não
+[00:30:35] Muito
+[00:30:51] e essa daqui
+[00:30:56] é uma empresa boa
+[00:30:58] porque tipo
+[00:30:58] eu tenho uns amigos que já trabalham
+[00:31:02] aqui, né, aí eles falaram
+[00:31:04] que aqui a oportunidade de crescer
+[00:31:06] é bem alta, mano, que nem
+[00:31:07] eu, antes de ir pro desenvolvimento
+[00:31:10] eu já recebi proposta
+[00:31:11] pra poder ir pra
+[00:31:13] é
+[00:31:15] implantação, recentemente
+[00:31:18] e
+[00:31:20] é suporte que se fala?
+[00:31:24] Não, não se fala suporte, mas é uma outra área aqui da função
+[00:31:26] também. Sustentação.
+[00:31:29] Quando eu tava na fábrica,
+[00:31:30] já me chamaram pra ir pra sustentação
+[00:31:32] e agora com eu aqui na mesa, me chamaram
+[00:31:34] pra ir pra implantação. Só que eu sempre falei
+[00:31:36] não, porque o meu objetivo era
+[00:31:38] deve. Aí
+[00:31:40] hoje consegui realizar.
+[00:31:43] Mas tipo assim, depois de um tempo
+[00:31:44] a oportunidade aqui vai
+[00:31:46] elas vão surgindo, sabe?
+[00:31:47] Aí você tem que ver o que você mais gosta
+[00:31:50] Se é negócio, sustentação, implantação
+[00:31:52] Continuar não sei o que
+[00:31:54] Tenta aí agora de novo
+[00:32:17] Mano, então, aparentemente
+[00:32:24] agora
+[00:32:26] estão precisando, porque
+[00:32:28] esses meus amigos
+[00:32:31] também, eles falaram que eles fizeram a prova
+[00:32:33] e demoraram, eles fizeram, foram
+[00:32:35] aprovados, mas demoraram bastante
+[00:32:36] aí eu fiz a prova
+[00:32:39] e já vou entrar
+[00:32:40] foi muito rápido
+[00:32:42] eu queria até um tempinho a mais pra poder
+[00:32:44] pegar, estudar um pouco
+[00:32:46] mais, mas já me chamaram, então
+[00:32:49] aparentemente tá com vaga.
+[00:32:51] Uma coisa que a função não faz
+[00:32:52] é abrir vaga
+[00:32:54] desde o 18.
+[00:32:57] Uns 4 anos que eu tô aqui.
+[00:33:00] É 5 anos.
+[00:33:01] É que eu entrei com 18
+[00:33:03] e uma semana
+[00:33:04] depois eu fiz 19.
+[00:33:14] Sim.
+[00:33:16] Aí foi isso.
+[00:33:20] Aí se você quiser, você pode salvar aí.
+[00:33:23] Ah não, é.
+[00:33:24] Você vai ver.
+[00:33:25] A empresa aqui é boa.
+[00:33:30] Ah não, ali você pode clicar em sim.
+[00:33:34] Aí beleza.
+[00:33:35] Já fica salvo aí quando você precisar mexer de novo.
+[00:33:39] Aí esse foi a criação do Clash Secret.
+[00:33:42] E aí agora, lembra que a gente...
+[00:33:43] Deixa eu te mostrar o que aconteceu.
+[00:33:45] O que a gente tinha feito de errado lá.
+[00:33:46] Vai lá no acesso
+[00:33:47] Sim, é
+[00:33:59] Você nunca mais vai precisar fazer isso na sua vida
+[00:34:01] Se você não perdeu o seu Client Secret
+[00:34:03] Você nunca mais vai ter que fazer isso na sua vida
+[00:34:05] É, então
+[00:34:15] Aí depois eu posso até te explicar pra você como que faz
+[00:34:17] Pelo post, né
+[00:34:18] Aí, ó
+[00:34:21] Vai lá
+[00:34:22] Vai ali em serviços
+[00:34:26] Em semento
+[00:34:29] Aí lembra que a gente tinha clicado em incluir?
+[00:34:32] Aí quando a gente clicou em incluir
+[00:34:33] A gente mudou umas coisas
+[00:34:34] O certo era só a gente ir em alterar
+[00:34:37] Aí vai em alterar
+[00:34:38] Coloca aí o primeiro
+[00:34:45] E aí a gente tinha mudado
+[00:34:47] A gente tinha pegado essa licença aí
+[00:34:50] E arrastado para o lado
+[00:34:52] Mas na verdade ela tem que ficar ali
+[00:34:54] Do lado, por isso estava dando aquele erro de token
+[00:34:56] Aí vocês
+[00:34:58] Não, não
+[00:35:00] Tinha que ficar licença selecionadas
+[00:35:01] Porque essa licença aí
+[00:35:03] Vai ficar para todos esses usuários
+[00:35:05] Que está aí embaixo
+[00:35:06] Aí como a gente tinha mexido
+[00:35:09] A gente deixou ela
+[00:35:11] Para esse outro lado, licenças disponíveis
+[00:35:13] E depois adicionou, mas tá errado
+[00:35:16] A gente só tinha que adicionar o usuário
+[00:35:18] E gravar, era só isso
+[00:35:19] Aí beleza
+[00:35:24] Aí ó
+[00:35:26] Clica em voltar aí
+[00:35:28] Voltar
+[00:35:30] Aí o que acontece
+[00:35:32] É meio difícil de acontecer isso
+[00:35:35] Mas eu já peguei algumas vezes
+[00:35:36] Aqui quando eu tava na mesa
+[00:35:37] Que vai surgir um novo produto da função
+[00:35:41] E o C6 ele quis
+[00:35:42] contratar. Aí
+[00:35:44] a função fez uma API
+[00:35:47] nova, ou dentro de uma mesma
+[00:35:48] API criou um método novo.
+[00:35:52] Aí o que
+[00:35:52] o...
+[00:35:55] como que funciona, né?
+[00:35:57] Tem um arquivo de licenças.
+[00:35:58] Esse arquivo de licenças é o
+[00:36:01] que o C6 precisa
+[00:36:03] pra ele conseguir
+[00:36:04] poder
+[00:36:07] usar esses novos métodos,
+[00:36:08] essas novas APIs.
+[00:36:11] Aí, ó, vai lá no grupo, no grupo
+[00:36:12] eu tinha pedido, no grupo dos devs, eu tinha pedido
+[00:36:15] se alguém poderia me mandar uma licença.
+[00:36:17] Aí eles mandaram lá pra mim.
+[00:36:24] Você tá no grupo dos devs com isso aqui?
+[00:36:28] Ah, então pera, deixa eu...
+[00:36:30] Nossa, deixa eu te colocar então.
+[00:36:35] Ah, é que você ainda não tava...
+[00:36:37] É que agora que você veio direto pra cá,
+[00:36:39] então já dá pra eu te colocar já aqui.
+[00:36:42] Ai, peraí
+[00:36:55] Eu fiz
+[00:36:55] É que eu quero te
+[00:36:57] Peraí, eu vou retirar você
+[00:37:00] E vou colocar de novo
+[00:37:02] Pra eu incluir o histórico de chat
+[00:37:04] Aí você vai ver todas as conversas que a gente tem
+[00:37:08] Anteriores
+[00:37:10] Aí quem sabe isso um dia te ajuda
+[00:37:12] Nunca demais
+[00:37:24] Aí, ó, sobe um pouquinho a conversa
+[00:37:34] Aí eu tinha pedido, né
+[00:37:35] E o Zé me mandou
+[00:37:38] Um caminho pra máquina dele
+[00:37:42] Onde tem a licença
+[00:37:42] Só quem gera a licença
+[00:37:46] É o dev
+[00:37:46] Tá mais pra baixo
+[00:37:50] Tá bem no comecinho
+[00:37:53] Foi ontem às 16
+[00:37:55] 16h50
+[00:38:12] Isso, aí você copia isso
+[00:38:15] Aí o Zé mandou pra mim
+[00:38:17] Aí você pode
+[00:38:19] Abrir aí no gerenciador, né
+[00:38:23] Aí você pode copiar isso pra sua máquina
+[00:38:27] Pode...
+[00:38:34] É, pode colocar aí na mesa
+[00:38:36] Pode deixar ela em qualquer lugar
+[00:38:38] Aí, ó, vai lá no acesso
+[00:38:41] aí vai ter serviços
+[00:38:47] gerenciamento de licenças
+[00:38:51] aí primeiro vamos fazer o seguinte
+[00:38:53] vamos consultar licenças instaladas
+[00:39:06] aí
+[00:39:07] abre o primeiro
+[00:39:08] que esse é o CNPJ
+[00:39:10] do C6. Aí,
+[00:39:12] ó, tudo isso que tá
+[00:39:14] aparecendo aí são todas as APIs
+[00:39:16] e os métodos dela
+[00:39:18] que o C6
+[00:39:20] comprou da função. Então, ó,
+[00:39:22] abre aí
+[00:39:24] qualquer API, qualquer API, tipo, não é esse
+[00:39:26] maisinho. Aí vai mostrar
+[00:39:29] os métodos de cada API.
+[00:39:31] Vai abrindo outros aí pra ver
+[00:39:32] se tem um que tenha mais métodos.
+[00:39:40] Aí ó, essa daí já tem mais métodos
+[00:39:43] Cadastro, consulta de cliente PF
+[00:39:45] Já tem
+[00:39:46] Quatro métodos nessa daí
+[00:39:48] Aí vamos supor
+[00:39:51] Que teve um trabalho
+[00:39:52] Que
+[00:39:54] Nessa API adicionou um outro método
+[00:39:57] Sobe lá em cima
+[00:39:59] Pra ver qual que é a versão do arquivo leak
+[00:40:01] Que tá
+[00:40:01] Versão 42, o nosso é versão 45
+[00:40:05] Vê lá
+[00:40:10] Ó, versão
+[00:40:13] 42
+[00:40:16] Isso, 92, eu falei errado
+[00:40:19] Eu tenho TDAH
+[00:40:21] Aí, ó
+[00:40:22] Então
+[00:40:23] Então o arquivo que o Zé passou
+[00:40:26] Ele é maior, né
+[00:40:28] Porque ele passou, era 45
+[00:40:31] Isso, a 45, então a gente pode
+[00:40:37] Isso, 95
+[00:40:38] Por que eu tô com 40 na cabeça, meu Deus
+[00:40:40] Aí então vamos pegar essa licença
+[00:40:43] E vamos instalar ela
+[00:40:44] Aí pode clicar em voltar
+[00:40:46] Serviços
+[00:40:48] Instalar licenças
+[00:40:52] E aí você vai ali
+[00:40:57] Escolher arquivo
+[00:40:59] Aí você vai selecionar o arquivo
+[00:41:03] Lá do
+[00:41:04] Beleza, aí clica ali
+[00:41:09] em gerar
+[00:41:10] ele gerou esse número
+[00:41:13] esse número aí, a gente vai
+[00:41:15] pegar ele, aí você
+[00:41:17] vai mandar pra alguém que é analista
+[00:41:19] que no caso é o Gabriel
+[00:41:21] então manda uma mensagem pro Gabriel
+[00:41:23] mano, você pode gerar autorização pra arquivo de licença
+[00:41:26] aí você manda esse número
+[00:41:27] porque o que o Gabriel vai fazer
+[00:41:29] ele vai pegar
+[00:41:31] esse número que você vai mandar pra ele
+[00:41:33] vai numa rotina do atende
+[00:41:35] e vai gerar
+[00:41:36] uma contrassenha
+[00:41:39] Que é essa autorização para a gente poder instalar
+[00:41:41] É, agora vamos esperar ele
+[00:41:59] Gerar para a gente, para a gente colocar
+[00:42:01] Naquele
+[00:42:03] Naquela outra caixa
+[00:42:06] Para poder instalar
+[00:42:07] Eita, alguém ligou pra mim
+[00:42:12] Alguém ligou pra mim
+[00:42:19] Alguém ligou
+[00:42:19] Instaladas com sucesso
+[00:42:32] Beleza
+[00:42:33] Aí, o que aconteceu?
+[00:42:35] como esse é um arquivo novo, então teve
+[00:42:38] alguma mudança aí que a gente
+[00:42:39] não viu, né? Mas quando a gente for
+[00:42:42] pegar algum trabalho, vai falar com
+[00:42:44] os 10 e vão falar pra gente que foi
+[00:42:46] adicionado. E aí, sempre
+[00:42:48] que a gente instalar uma licença nova e a gente for
+[00:42:50] testar o que é de novo, a gente
+[00:42:52] tem que entrar naquela rotina lá de cadastro,
+[00:42:54] no acesso, usuários
+[00:42:56] e dar permissão
+[00:42:58] pro nosso
+[00:43:00] usuário pra nova coisa que foi disponibilizada.
+[00:43:05] Aí vai ter lá direitos por rotina
+[00:43:15] E aí a gente vai selecionar aí
+[00:43:19] O que é que tem de novo
+[00:43:20] E dá
+[00:43:23] Clicar no botão adicionar
+[00:43:25] Clicar naquele checkbox ali e gravar
+[00:43:27] Para o nosso usuário ter
+[00:43:29] Os acessos a essa nova implementação
+[00:43:31] Ah, uma outra coisa importante
+[00:43:34] aí a gente vai
+[00:43:37] instalar essa API
+[00:43:38] na nossa máquina
+[00:43:40] aí o que você pode fazer
+[00:43:42] é o que você sempre tem que fazer
+[00:43:44] abre o SQL Result
+[00:43:46] de alguma API
+[00:43:57] aleatória aí
+[00:44:01] ah nossa
+[00:44:02] eu falei
+[00:44:03] É, pode ser, pode abrir aí.
+[00:44:17] Só que aí, no caso, a gente iria para a API nova, né?
+[00:44:22] Mas no acesso também é importante ir.
+[00:44:24] Porque, ó, no acesso vai ter essa opção A,
+[00:44:28] cadastrar rotinas no website do acesso,
+[00:44:31] mas nas APIs
+[00:44:33] vai ter
+[00:44:35] a opção M
+[00:44:36] que é cadastrar métodos
+[00:44:38] então a gente
+[00:44:41] você tem alguma API aí?
+[00:44:47] ali ó, API similar proposta
+[00:45:01] Aí vai ter a opção M
+[00:45:15] Cadastrar método no acesso
+[00:45:17] Então, nas APIs a gente vai rodar com M
+[00:45:20] E no SQL Result
+[00:45:24] Do acesso a gente vai rodar com A
+[00:45:27] E aí, assim que a gente fazer isso
+[00:45:30] que vai aparecer lá no
+[00:45:33] website do acesso
+[00:45:34] na rotina
+[00:45:36] direitos por rotina
+[00:45:38] a disponibilização nova
+[00:45:43] isso
+[00:45:44] aí sobre licença
+[00:45:51] e credit circuit é isso
+[00:45:52] aí o que o Gabriel tinha me falado também
+[00:45:57] que a gente vai
+[00:45:59] criar uma portabilidade
+[00:46:01] mandar um arquivo pra CIP
+[00:46:03] a CIP vai retornar um arquivo
+[00:46:05] pro nosso sistema e a gente vai
+[00:46:07] e aí a gente vai mandar de novo
+[00:46:09] um arquivo pra CIP pra falar que chegou
+[00:46:11] aqui
+[00:46:12] o fluxo de CTC é esse
+[00:46:15] aí eu queria
+[00:46:16] só preparar a base
+[00:46:20] aqui pra eu conseguir mostrar isso pra você
+[00:46:22] aqui na mesa eu não testei muito
+[00:46:26] o CTC, eu acho que eu testei umas duas
+[00:46:28] vezes CTC, tanto que eu estou
+[00:46:29] meio esquecido de CTC,
+[00:46:31] porque eu testava mais na fábrica.
+[00:46:33] Mas pode
+[00:46:35] acontecer de cair
+[00:46:37] algum projeto de CTC aqui, porque CTC
+[00:46:39] é do módulo do autorizador, né?
+[00:46:41] E a gente está numa mesa que é do autorizador.
+[00:46:44] Então pode cair em algum
+[00:46:45] momento.
+[00:46:50] Aí eu vou preparar
+[00:46:52] aqui, aí se
+[00:46:53] eu conseguir, eu
+[00:46:55] te chamo mais tarde, beleza?
+[00:46:58] no Eureka
+[00:47:03] eu acho que ele tem
+[00:47:08] uma coisa explicando sobre
+[00:47:09] essa relação do nosso sistema
+[00:47:12] com a CIP
+[00:47:28] Deixa eu ver se tem alguma coisa
+[00:47:41] de CTC aí
+[00:47:42] Só tem isso?
+[00:47:49] É que tem como pedir
+[00:47:51] pra solicitar
+[00:47:52] outras trilhas também
+[00:47:57] então
+[00:48:18] a gente tem que abrir uma OS
+[00:48:20] a gente tem que abrir uma OS
+[00:48:23] não sei se é pra infra
+[00:48:24] ou pro RH
+[00:48:26] aí o RH vai
+[00:48:27] colocar um curso
+[00:48:30] aí pra você visualizar
+[00:48:32] só que eu não sei
+[00:48:34] agora se a gente tem que pedir direto pro RH
+[00:48:36] ou pro Gabriel
+[00:48:38] mas o Gabriel, eu não sei se ele também sabe
+[00:48:40] ai, tem alguém me ligando
+[00:48:47] mas fica assim, mano, eu vou ver aqui
+[00:48:50] aí eu tento te falar
+[00:48:52] beleza? falou
+[00:48:53] Obrigado.

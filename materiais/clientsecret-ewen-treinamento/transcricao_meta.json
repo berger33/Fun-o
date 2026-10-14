@@ -1,0 +1,14 @@
+{
+  "arquivo": "ClientSecret EWEN TREINAMENTO.mp4",
+  "bytes": 1681225396,
+  "sha256": "edf619d212cf3bc2868cde0e7548987b51024404b5b641469f902990c1d62022",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 2936.36,
+  "segmentos": 649,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 1799.9,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
