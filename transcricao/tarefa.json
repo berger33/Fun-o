@@ -1,10 +1,10 @@
 {
-  "arquivo": "recalculo.mp4",
-  "slug": "recalculo",
+  "arquivo": "dESAVERBAÇÃO.mp4",
+  "slug": "desaverbacao",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-recalculo",
-  "lote": "próxima pendência por tamanho após explicacao mesa c6.mp4",
+  "ramo_entrega_transcricao": "entrega/transcricao-desaverbacao",
+  "lote": "próxima pendência por tamanho após recalculo.mp4",
   "sessao": "arena/17453ccc-fun-o",
   "usar_vad": false
 }
