@@ -1,9 +1,9 @@
 {
-  "arquivo": "MCB - QISTA.mp4",
-  "slug": "mcb-qista",
+  "arquivo": "Primeiro projeto.mp4",
+  "slug": "primeiro-projeto",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-mcb-qista",
-  "lote": "próxima pendência da fila após a transcrição preliminar de MICHELLE CTC PORTABILIDADE REFIN.mp4",
+  "ramo_entrega_transcricao": "entrega/transcricao-primeiro-projeto",
+  "lote": "próxima pendência da fila após a transcrição preliminar de MCB - QISTA.mp4",
   "sessao": "arena/17453ccc-fun-o"
 }
