@@ -1,0 +1,40 @@
+{
+  "arquivo": "Gravando 2026-09-23 164626.mp4",
+  "bytes": 1087239062,
+  "sha256": "e533f6e54565688b09519b83ccf32b121494ebf33d211245d261ccb769e9d8b8",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 2039.98,
+  "segmentos": 396,
+  "duracao_transcricao_s": 891.9,
+  "ferramenta": "faster-whisper (CTranslate2)",
+  "segmentos_publicados": 340,
+  "trechos_omitidos_versao_publica": [
+    {
+      "inicio": "00:08:19.860",
+      "fim": "00:10:24.140",
+      "motivo": "conversa lateral omitida por privacidade"
+    }
+  ],
+  "elementos_anonimizados_versao_publica": [
+    {
+      "inicio": "00:02:21.620",
+      "fim": "00:02:28.440",
+      "tipo": "identificador interno de máquina"
+    },
+    {
+      "timestamp": "00:02:45.540",
+      "tipo": "identificador de máquina"
+    },
+    {
+      "timestamp": "00:02:53.420",
+      "tipo": "identificador parcial"
+    },
+    {
+      "timestamp": "00:18:46",
+      "tipo": "identificador parcial"
+    }
+  ]
+}

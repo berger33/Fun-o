@@ -119,3 +119,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Varredura:** não foram encontrados padrões comuns de CPF/CNPJ, e-mail, telefone ou credencial no texto coletado. Isso não substitui a revisão de contexto nem a conferência das imagens.
 - **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-10-06-110907` foi apagado após a coleta. O commit `abe0f542cb2c13581fdac5b318bd709e4cc1ca26` continua acessível pela API do GitHub por SHA; contém a transcrição e diagnósticos, não o MP4.
 - **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A transcrição permanece preliminar e em análise.
+
+## 12. Registro — transcrição de `Gravando 2026-09-23 164626.mp4` (2026-10-14)
+
+- **Ação:** run `38516262063` transcreveu 396 segmentos com `faster-whisper` `large-v3`; auditoria `38516261919` concluiu com sucesso. Tamanho e SHA-256 conferem com manifesto/ponteiro: `1087239062` bytes, `e533f6e54565688b09519b83ccf32b121494ebf33d211245d261ccb769e9d8b8`.
+- **Minimização na cópia integrada:** o trecho lateral `00:08:19.860–00:10:24.140` foi omitido e identificadores internos/parciais foram mascarados. TXT/SRT/VTT têm 340 entradas públicas (incluindo marcadores); os metadados registram as faixas alteradas. A varredura automática não encontrou padrões comuns de CPF/CNPJ, e-mail, telefone ou credencial.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-09-23-164626` foi apagado após a coleta. O commit `91c25e6484be239dbbf77615a9eb76d4a7924e48` continua acessível pela API do GitHub por SHA; contém a transcrição original anterior à minimização e os diagnósticos, não o MP4.
+- **Pendência:** incluir esse SHA no pedido ao GitHub Support para remoção dos objetos órfãos. Como a ponte publica a transcrição bruta antes da revisão e o commit órfão continua acessível por SHA, suspender novos usos da ponte para gravações que possam conter conversa pessoal/localização ou identificadores até decidir por um canal de transferência que permita revisar antes da exposição pública.
