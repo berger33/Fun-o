@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[1/3] extraindo áudio de Gravando 2026-10-07 132428.mp4 (3151497131 bytes)
+[2/3] transcrevendo com large-v3 (idioma pt, sem filtro VAD)
+      (PyAV 19.0.1 — decodificação feita pelo próprio script)
+[3/3] pronto: 1288 segmentos, 2298.8s de processamento
+      arquivos em saida
+codigo_saida=0

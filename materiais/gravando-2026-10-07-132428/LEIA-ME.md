@@ -8,6 +8,7 @@ Esta pasta contém a saída automática integral da gravação. O texto não foi
 - **Duração de áudio informada pelo reconhecedor:** 5858,05 s (`01:37:38.05`)
 - **Transcrição automática:** `faster-whisper`, modelo `large-v3`, idioma declarado/detectado `pt` (probabilidade 1), 1288 segmentos; filtro VAD desativado (`filtro_vad: false`)
 - **Execução:** GitHub Actions run `38615030242` (concluído com sucesso); auditoria da configuração run `38615030273` e auditoria após integração run `38642848388` concluídas com sucesso
-- **Arquivos:** [`transcricao_bruta.txt`](transcricao_bruta.txt), [`transcricao.srt`](transcricao.srt), [`transcricao.vtt`](transcricao.vtt) e [`transcricao_meta.json`](transcricao_meta.json)
+- **Arquivos da transcrição:** [`transcricao_bruta.txt`](transcricao_bruta.txt), [`transcricao.srt`](transcricao.srt), [`transcricao.vtt`](transcricao.vtt) e [`transcricao_meta.json`](transcricao_meta.json)
+- **Diagnósticos preservados integralmente:** [`ambiente.txt`](ambiente.txt) (inclui `faster-whisper` 1.2.1 e `ctranslate2` 4.8.3) e [`execucao.log`](execucao.log) (inclui extração, decodificação via PyAV 19.0.1, conclusão e código de saída 0); ambos foram recuperados da entrega temporária e comparados byte a byte.
 - **Último segmento:** SRT/VTT `01:37:27.740–01:37:32.560`; termina dentro da duração de áudio informada.
 - **Estado:** em análise; revisão humana, análise visual e demais materiais pendentes.
