@@ -112,3 +112,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Minimização na cópia integrada:** um nome próprio em exemplo de teste foi substituído por `[nome próprio omitido]` em TXT/SRT/VTT (`00:08:36`). A transcrição menciona CPF como dado de teste, mas não contém um número; a varredura automática não encontrou padrão de CPF/CNPJ, e-mail, telefone ou credencial.
 - **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-08-24-124650` foi apagado após a coleta. O commit `7421c127d9bdd81cc1767119e4ac81babf7a741f` continua acessível pela API do GitHub por SHA e contém o nome anterior à minimização e os diagnósticos; não contém o MP4.
 - **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A gravação duplicada fica coberta por referência à fonte única em análise.
+
+## 11. Registro — transcrição de `Gravando 2026-10-06 110907.mp4` (2026-10-14)
+
+- **Ação:** run `38513838946` transcreveu 683 segmentos com `faster-whisper` `large-v3`; auditoria `38513838921` concluiu com sucesso. Tamanho e SHA-256 conferem com manifesto/ponteiro: `770228772` bytes, `66e36717be17ba97597a75eb1cf057a4b34a33f843d528ea90f1c3a42f90deb3`.
+- **Varredura:** não foram encontrados padrões comuns de CPF/CNPJ, e-mail, telefone ou credencial no texto coletado. Isso não substitui a revisão de contexto nem a conferência das imagens.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-10-06-110907` foi apagado após a coleta. O commit `abe0f542cb2c13581fdac5b318bd709e4cc1ca26` continua acessível pela API do GitHub por SHA; contém a transcrição e diagnósticos, não o MP4.
+- **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A transcrição permanece preliminar e em análise.
