@@ -84,3 +84,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/gravando-2026-07-08-182343/`. O ramo temporário `entrega/transcricao-gravando-2026-07-08-182343` foi apagado após a coleta.
 - **Objeto provavelmente retido:** commit `114674378a63cee686b77091365b1007ff2a0510` (a API ainda o retorna após apagar o ramo). Esse commit contém texto da transcrição e arquivos de diagnóstico; não contém o MP4.
 - **Pendência:** incluir esse SHA e o SHA não registrado do run `38484199544` no pedido ao GitHub Support. Esse run anterior terminou com sucesso, mas o ramo de entrega foi apagado antes da coleta; a exclusão do ramo não garante a remoção dos commits órfãos.
+
+## 7. Registro — transcrição de `MICHELLE CTC PORTABILIDADE REFIN.mp4` (2026-10-14)
+
+- **Ação:** run do GitHub Actions `38504260909` executou o workflow de transcrição a partir de `transcricao/tarefa.json`; não disparou a ponte de partes. Tamanho e SHA-256 conferem com o manifesto/ponteiro: `473540507` bytes, `621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493`. Foram gerados 388 segmentos em português com `faster-whisper` `large-v3`.
+- **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/michelle-ctc-portabilidade-refin/`. O ramo temporário `entrega/transcricao-michelle-ctc-portabilidade-refin` foi apagado após a coleta.
+- **Objeto provavelmente retido:** commit `7b319cc4cb3af8e12971c2be2d96109b7a76bc79`; após apagar o ramo, a API ainda o retorna. Contém texto da transcrição e diagnósticos, não o MP4.
+- **Pendência:** incluir esse SHA no pedido ao GitHub Support; apagar o ramo não garante a remoção do commit órfão.
