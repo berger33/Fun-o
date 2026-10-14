@@ -1,10 +1,10 @@
 {
-  "arquivo": "explicacao mesa c6.mp4",
-  "slug": "explicacao-mesa-c6",
+  "arquivo": "recalculo.mp4",
+  "slug": "recalculo",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-explicacao-mesa-c6",
-  "lote": "próxima pendência por tamanho após ClientSecret EWEN TREINAMENTO.mp4",
+  "ramo_entrega_transcricao": "entrega/transcricao-recalculo",
+  "lote": "próxima pendência por tamanho após explicacao mesa c6.mp4",
   "sessao": "arena/17453ccc-fun-o",
   "usar_vad": false
 }

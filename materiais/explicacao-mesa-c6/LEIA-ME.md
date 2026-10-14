@@ -7,7 +7,7 @@ Esta pasta contém somente a saída automática de reconhecimento de fala. Ela a
 - **SHA-256 da fonte:** `44344aaad2c507992b90790b981678729dac4abe7d20f0015ee533da74b54998` (igual ao OID do ponteiro LFS)
 - **Duração do áudio:** 3461,57 s (`00:57:41.57`); último segmento reconhecido em `00:57:29`
 - **Transcrição automática:** `faster-whisper`, modelo `large-v3`, idioma detectado `pt`, 1394 segmentos; filtro VAD desativado (`filtro_vad: false`)
-- **Execução:** GitHub Actions run `38592430811`; auditoria da configuração run `38592430977`
+- **Execução:** GitHub Actions run `38592430811`; auditoria após integração run `38599760998` concluída com sucesso (auditoria da configuração: `38592430977`)
 - **Arquivos:** [`transcricao_bruta.txt`](transcricao_bruta.txt), [`transcricao.srt`](transcricao.srt), [`transcricao.vtt`](transcricao.vtt) e [`transcricao_meta.json`](transcricao_meta.json)
 - **Estado no `STATUS.md`:** em análise; revisão humana, análise visual e demais materiais pendentes.
 

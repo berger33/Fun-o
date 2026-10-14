@@ -3,7 +3,8 @@ name: Transcrever gravação (ponte temporária)
 # Usa o runner do GitHub Actions — que tem acesso aos pesos do modelo — para transcrever UMA
 # gravação com timestamps, porque no sandbox do Arena huggingface.co é bloqueado.
 #
-# O vídeo continua vindo do Git LFS (baixa somente o arquivo indicado). A saída é texto
+# O vídeo continua vindo do Git LFS (baixa somente o arquivo indicado ou as partes listadas
+# para esse original e reconstrói somente ele, se a gravação estiver dividida). A saída é texto
 # (pequeno) publicado em um ramo temporário `entrega/*`, que deve ser apagado logo após a
 # conferência no ambiente de destino.
 #
@@ -104,13 +105,37 @@ jobs:
               print(f"{chave}={padrao[chave]}")
           PY
 
-      - name: Baixar somente o objeto solicitado (LFS)
+      - name: Baixar o original solicitado (LFS; ou partes selecionadas)
         env:
           ARQUIVO: ${{ steps.tarefa.outputs.arquivo }}
         run: |
           set -euo pipefail
           git lfs install --local
-          git lfs pull --include="$ARQUIVO"
+          if [[ -f "$ARQUIVO" ]]; then
+            git lfs pull --include="$ARQUIVO"
+          else
+            python3 - "$ARQUIVO" > /tmp/partes-lfs.txt <<'PY'
+          import json, sys
+          alvo = sys.argv[1]
+          registros = json.load(open("partes-videos.json", encoding="utf-8"))
+          encontrados = [r for r in registros if r["original"] == alvo]
+          if len(encontrados) != 1:
+              raise SystemExit(f"[erro] fonte ausente do Git LFS e sem índice de partes: {alvo}")
+          for parte in encontrados[0]["parts"]:
+              print(parte["name"])
+          PY
+            mapfile -t PARTES < /tmp/partes-lfs.txt
+            if [[ ${#PARTES[@]} -eq 0 ]]; then
+              echo "[erro] nenhuma parte encontrada para $ARQUIVO" >&2
+              exit 1
+            fi
+            for parte in "${PARTES[@]}"; do
+              echo "baixando parte selecionada: $parte"
+              git lfs pull --include="$parte"
+            done
+            python3 tools/reconstruir_videos.py --video "$ARQUIVO"
+          fi
+          test -s "$ARQUIVO"
           ls -l "$ARQUIVO"
 
       - name: Instalar dependências
