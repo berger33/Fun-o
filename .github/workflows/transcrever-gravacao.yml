@@ -13,6 +13,8 @@ name: Transcrever gravação (ponte temporária)
 # Sem esse arquivo, usa os padrões abaixo (piloto do lote atual).
 
 on:
+  # Permite reprocessar a tarefa atual sem alterar arquivos de configuração.
+  workflow_dispatch:
   push:
     branches:
       - "transcricao/**"
