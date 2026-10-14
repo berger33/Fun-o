@@ -126,6 +126,12 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 
 ## 13. Instrução do responsável — preservação integral (2026-10-14)
 
-O responsável instruiu expressamente a **não ocultar nenhuma informação** e autorizou a continuidade com transcrições integrais, declarando que copiará o conteúdo para uso interno da empresa ao término e depois excluirá o repositório. Em resposta, os arquivos TXT/SRT/VTT/metadados de `Primeiro projeto.mp4`, `Gravando 2026-08-24 124650.mp4` e `Gravando 2026-09-23 164626.mp4` foram restaurados dos commits originais de entrega temporária, sem cortes ou mascaramento. Os artefatos integrados preservam agora a transcrição automática completa; a revisão humana continua pendente.
+O responsável instruiu expressamente a **não ocultar nenhuma informação** e autorizou a continuidade com transcrições integrais, declarando que copiará o conteúdo para uso interno da empresa ao término e depois excluirá o repositório. Em resposta, os arquivos TXT/SRT/VTT/metadados de `Primeiro projeto.mp4`, `Gravando 2026-08-24 124650.mp4` e `Gravando 2026-09-23 164626.mp4` foram restaurados dos commits originais de entrega temporária, sem cortes ou mascaramento. Os artefatos integrados preservam agora a transcrição automática completa; a revisão humana continua pendente. Essa diretriz permanece valendo para os vídeos seguintes da fila, até que o responsável a altere.
 
 Enquanto o repositório não for excluído, ele permanece público. Apagar um ramo temporário não apaga os commits acessíveis por SHA, conforme §1. O responsável planeja copiar os materiais e excluir o repositório após a conclusão da fila.
+
+## 14. Registro — transcrição de `Como fazer EPT.mp4` (2026-10-14)
+
+- **Ação:** run `38578382172` executou somente o workflow de transcrição via `transcricao/tarefa.json`, com `faster-whisper` `large-v3`, idioma `pt`, gerando 854 segmentos. Tamanho e SHA-256 conferem com manifesto/ponteiro: `1229228708` bytes, `52cbfc76a421a37d639f7e9a2887386687f175f04dfda2cf41c65abb577102b6`. Duração do áudio: 2147,18 s (`00:35:47.18`); último segmento reconhecido em `00:35:41`.
+- **Versão integrada:** os quatro artefatos TXT/SRT/VTT/metadados foram copiados sem alteração, byte a byte, da saída do workflow. Os três arquivos de transcrição têm 854 entradas; a saída automática foi preservada integralmente, sem cortes ou mascaramento posterior, conforme §13. A revisão humana continua pendente.
+- **Retenção da entrega temporária:** após a coleta, o ramo `entrega/transcricao-como-fazer-ept` foi apagado. O commit `ef0e24ee90bdd78007c8a6fb426da2534b7fe7fc` continua acessível pela API do GitHub por SHA; contém transcrição e diagnósticos, não o MP4.
