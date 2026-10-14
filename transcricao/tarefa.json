@@ -1,10 +1,10 @@
 {
-  "arquivo": "projeto EPT.mp4",
-  "slug": "projeto-ept",
+  "arquivo": "ClientSecret EWEN TREINAMENTO.mp4",
+  "slug": "clientsecret-ewen-treinamento",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-projeto-ept-sem-vad",
-  "lote": "reprocessamento comparativo sem VAD: o primeiro passe reconheceu 1 segmento em 2176,70 s de áudio",
+  "ramo_entrega_transcricao": "entrega/transcricao-clientsecret-ewen-treinamento",
+  "lote": "próxima pendência por tamanho após projeto EPT.mp4",
   "sessao": "arena/17453ccc-fun-o",
   "usar_vad": false
 }
