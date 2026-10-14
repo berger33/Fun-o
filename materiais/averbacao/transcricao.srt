@@ -1,0 +1,6875 @@
+1
+00:00:00,000 --> 00:00:03,040
+O que a gente tem que fazer?
+
+2
+00:00:03,240 --> 00:00:05,400
+A gente tem que ajustar o mock lá, o stub
+
+3
+00:00:05,400 --> 00:00:07,840
+Pra que ele traga uma data vigente
+
+4
+00:00:07,840 --> 00:00:08,840
+Beleza?
+
+5
+00:00:10,440 --> 00:00:11,680
+Então vai lá no stub, mano
+
+6
+00:00:11,680 --> 00:00:13,380
+E passa uma data vigente aí, né?
+
+7
+00:00:13,520 --> 00:00:15,240
+Joga um pouco mais pra frente, obviamente, né?
+
+8
+00:00:16,600 --> 00:00:17,340
+Pra que a gente
+
+9
+00:00:17,340 --> 00:00:19,360
+Consiga solicitar autorização
+
+10
+00:00:19,360 --> 00:00:21,100
+Beleza?
+
+11
+00:00:25,920 --> 00:00:27,740
+Isso, como você tá falando de validade, mano
+
+12
+00:00:27,740 --> 00:00:29,400
+É bom jogar pra frente, né? Bem pra frente
+
+13
+00:00:29,400 --> 00:00:30,580
+Sei lá, final do ano
+
+14
+00:00:30,580 --> 00:00:47,580
+Aí joga, sei lá, 2026
+
+15
+00:00:47,580 --> 00:00:48,600
+Aí joga mês 12
+
+16
+00:00:48,600 --> 00:00:50,740
+É, pode ser 2007, pode ser isso aí também, mano
+
+17
+00:00:50,740 --> 00:00:52,260
+Salva aí
+
+18
+00:00:52,260 --> 00:00:54,020
+E tenta atorizar lá de novo
+
+19
+00:00:54,020 --> 00:00:57,740
+Dá só um Ctrl S aí, mano
+
+20
+00:00:57,740 --> 00:00:59,480
+Que já salva, tá ligado?
+
+21
+00:01:03,480 --> 00:01:04,700
+Aí autoriza de novo
+
+22
+00:01:04,700 --> 00:01:08,200
+Pode só clicar no botão de autorizar
+
+23
+00:01:08,200 --> 00:01:10,720
+Se você clicar no voltar
+
+24
+00:01:10,720 --> 00:01:12,580
+Você vai ter que fazer todo o processo de novo
+
+25
+00:01:12,580 --> 00:01:13,540
+É isso aí
+
+26
+00:01:13,540 --> 00:01:16,600
+Beleza?
+
+27
+00:01:17,720 --> 00:01:18,580
+Então vamos lá
+
+28
+00:01:18,580 --> 00:01:21,120
+Você fez a solicitação da autorização
+
+29
+00:01:21,120 --> 00:01:22,780
+Aí ele trouxe pra você o quê?
+
+30
+00:01:22,860 --> 00:01:23,860
+O seu vínculo, tá bom?
+
+31
+00:01:24,260 --> 00:01:25,700
+Então ele trouxe ali o número do benefício
+
+32
+00:01:25,700 --> 00:01:27,100
+Que é a sua matrícula, tá?
+
+33
+00:01:27,100 --> 00:01:29,360
+A matrícula no CPD, mano
+
+34
+00:01:29,360 --> 00:01:32,080
+Ela pode chegar até 30 posições
+
+35
+00:01:32,080 --> 00:01:32,660
+Tá bom?
+
+36
+00:01:33,740 --> 00:01:35,480
+Tendo letras e números, beleza?
+
+37
+00:01:39,020 --> 00:01:41,960
+E aí a gente tem o número da inscrição
+
+38
+00:01:41,960 --> 00:01:43,260
+Pensa que a gente tá falando do quê?
+
+39
+00:01:43,360 --> 00:01:45,540
+Você conhece o consignado CLT?
+
+40
+00:01:46,540 --> 00:01:47,760
+Que é aquele lá da carteira de trabalho?
+
+41
+00:01:47,900 --> 00:01:48,180
+Tá bom
+
+42
+00:01:48,180 --> 00:01:49,200
+É basicamente
+
+43
+00:01:49,200 --> 00:01:55,300
+Isso, agora o banco
+
+44
+00:01:55,300 --> 00:01:58,160
+O governo implementou aquele
+
+45
+00:01:58,160 --> 00:02:00,140
+Empréstimo CLT
+
+46
+00:02:00,140 --> 00:02:02,660
+Que você já desconta da folha
+
+47
+00:02:02,660 --> 00:02:03,940
+Lá e faz os negócios, beleza?
+
+48
+00:02:05,700 --> 00:02:06,380
+E o que acontece?
+
+49
+00:02:06,540 --> 00:02:08,020
+Então pensa o seguinte, você tá fazendo empréstimo
+
+50
+00:02:08,020 --> 00:02:10,280
+Pra um CLT, ou seja, ele vai estar atrelado
+
+51
+00:02:10,280 --> 00:02:12,080
+A o que? A uma empresa, correto?
+
+52
+00:02:13,620 --> 00:02:14,280
+Então, mano
+
+53
+00:02:14,280 --> 00:02:16,320
+Se ele tá atrelado a uma empresa, o que ele vai ter?
+
+54
+00:02:16,380 --> 00:02:17,960
+Ele vai ter o número de inscrição da empresa
+
+55
+00:02:17,960 --> 00:02:19,600
+Ou seja, o CNPJ daquela empresa
+
+56
+00:02:19,600 --> 00:02:22,060
+Ou o CPF, se for uma empresa PF
+
+57
+00:02:22,060 --> 00:02:23,580
+Empresa PF é foda
+
+58
+00:02:23,580 --> 00:02:26,740
+empresa PF é foda, mas tem o tipo de pessoa
+
+59
+00:02:26,740 --> 00:02:28,660
+PF, né, que trabalha
+
+60
+00:02:28,660 --> 00:02:29,060
+pra alguém
+
+61
+00:02:29,060 --> 00:02:32,420
+que é a famosa, as empregadas, né
+
+62
+00:02:32,420 --> 00:02:36,560
+e tem a questão da matrícula, né
+
+63
+00:02:36,560 --> 00:02:39,080
+porque se ele tá atrelado a uma empresa, mano, ele tem que ter um registro
+
+64
+00:02:39,080 --> 00:02:39,380
+beleza?
+
+65
+00:02:41,420 --> 00:02:42,740
+então a gente tá fazendo o que?
+
+66
+00:02:42,800 --> 00:02:44,840
+a gente fez a solicitação da autorização
+
+67
+00:02:44,840 --> 00:02:46,500
+e ele retornou o vínculo
+
+68
+00:02:46,500 --> 00:02:48,140
+aqui autorizado, ou seja
+
+69
+00:02:48,140 --> 00:02:50,420
+ele retornou ali a empresa do cara
+
+70
+00:02:50,420 --> 00:02:52,360
+beleza? e retornou
+
+71
+00:02:52,360 --> 00:02:54,220
+O vínculo dele com essa empresa ali
+
+72
+00:02:54,220 --> 00:02:55,300
+A matrícula, tá bom?
+
+73
+00:02:55,920 --> 00:02:57,920
+E ele fala, ó, elegível para empréstimo
+
+74
+00:02:57,920 --> 00:03:00,140
+Ou seja, a gente consegue consultar esse cara, tá bom?
+
+75
+00:03:00,960 --> 00:03:02,340
+Agora o que a gente vai fazer, mano?
+
+76
+00:03:02,480 --> 00:03:04,380
+A gente vai consultar os dados desse cara
+
+77
+00:03:04,380 --> 00:03:05,600
+Lá na outra rotina, beleza?
+
+78
+00:03:07,720 --> 00:03:08,580
+Vamos lá na rotina
+
+79
+00:03:08,580 --> 00:03:10,260
+De consulta de dados do trabalhador agora, então
+
+80
+00:03:10,260 --> 00:03:10,660
+Por favor
+
+81
+00:03:22,360 --> 00:03:41,840
+Só que vamos lá
+
+82
+00:03:41,840 --> 00:03:42,840
+Lembra que eu falei pra você
+
+83
+00:03:42,840 --> 00:03:44,720
+Você tá fazendo um teste mocado, certo?
+
+84
+00:03:46,940 --> 00:03:48,960
+Então, olha só o CPF que retornou ali
+
+85
+00:03:48,960 --> 00:03:55,360
+Lembra? Do stub
+
+86
+00:03:55,360 --> 00:03:56,860
+Agora vai lá no seu stub, por favor
+
+87
+00:03:56,860 --> 00:04:01,320
+Volta aí uma pasta
+
+88
+00:04:01,320 --> 00:04:03,060
+Ó
+
+89
+00:04:03,060 --> 00:04:05,180
+Isso tudo aí, mano, são serviços, tá?
+
+90
+00:04:05,320 --> 00:04:07,220
+São retornos de serviço, que é como eu falei pra você
+
+91
+00:04:07,220 --> 00:04:09,400
+A gente tá fazendo um teste mocado
+
+92
+00:04:09,400 --> 00:04:11,860
+A gente não tá batendo na data breve lá
+
+93
+00:04:11,860 --> 00:04:13,440
+Você tá ligado?
+
+94
+00:04:13,440 --> 00:04:15,600
+Como você falou que mexeu com o empréstimo consignado
+
+95
+00:04:15,600 --> 00:04:17,440
+Mano, eu vou começar a usar uns termos técnicos aí, tá bom?
+
+96
+00:04:17,440 --> 00:04:18,380
+Eu acho que você vai conhecer
+
+97
+00:04:18,380 --> 00:04:19,620
+Caso você não conheça, você avisa
+
+98
+00:04:19,620 --> 00:04:21,580
+A data prévia você conhece, né?
+
+99
+00:04:22,940 --> 00:04:23,140
+Tá
+
+100
+00:04:23,140 --> 00:04:24,000
+Então, beleza
+
+101
+00:04:24,000 --> 00:04:25,840
+Então, a gente tem esses serviços aqui do motor
+
+102
+00:04:25,840 --> 00:04:27,340
+Que a gente bate lá na data prévia
+
+103
+00:04:27,340 --> 00:04:29,880
+Ou seja, a gente tem os acionadores, né?
+
+104
+00:04:29,900 --> 00:04:31,740
+Temos serviços, plugins e APIs
+
+105
+00:04:31,740 --> 00:04:34,000
+Que fazem essa comunicação
+
+106
+00:04:34,000 --> 00:04:35,760
+Então, por exemplo, se é uma chamada via API
+
+107
+00:04:35,760 --> 00:04:36,620
+Plugin
+
+108
+00:04:36,620 --> 00:04:40,340
+O plugin, ele aciona lá o serviço via Web API
+
+109
+00:04:40,340 --> 00:04:44,760
+A API dispara a comunicação lá com a data prévia, né?
+
+110
+00:04:44,860 --> 00:04:46,560
+Através daquelas URLs lá
+
+111
+00:04:46,560 --> 00:04:48,500
+que a gente parametrizou, só que
+
+112
+00:04:48,500 --> 00:04:50,260
+diferente no cliente, em vez de estar o stub
+
+113
+00:04:50,260 --> 00:04:52,200
+vai estar lá o URL do
+
+114
+00:04:52,200 --> 00:04:53,720
+da Dataprev
+
+115
+00:04:53,720 --> 00:04:56,360
+então
+
+116
+00:04:56,360 --> 00:04:58,080
+a gente vai estar batendo o serviço da Dataprev
+
+117
+00:04:58,080 --> 00:05:00,480
+aí a Dataprev vai fazer o que? Ela vai retornar as informações
+
+118
+00:05:00,480 --> 00:05:02,740
+pra gente. Como a gente não consegue
+
+119
+00:05:02,740 --> 00:05:04,520
+bater lá direto, pelo nosso
+
+120
+00:05:04,520 --> 00:05:06,640
+ambiente, não está configurado pra fazer isso
+
+121
+00:05:06,640 --> 00:05:08,540
+o que a gente está fazendo? A gente
+
+122
+00:05:08,540 --> 00:05:10,440
+está usando um stub pra retornar
+
+123
+00:05:10,440 --> 00:05:12,420
+as informações que seriam retornadas pela Dataprev
+
+124
+00:05:12,420 --> 00:05:14,360
+então cada
+
+125
+00:05:14,360 --> 00:05:16,700
+pastinha disso aí é um serviço
+
+126
+00:05:16,700 --> 00:05:18,180
+onde ele possui o retorno
+
+127
+00:05:18,180 --> 00:05:19,940
+da data breve, beleza?
+
+128
+00:05:22,940 --> 00:05:24,660
+É isso, exatamente, simulação
+
+129
+00:05:24,660 --> 00:05:26,520
+da resposta da data breve. Então,
+
+130
+00:05:26,620 --> 00:05:28,460
+o que acontece? A gente pode ter um cenário
+
+131
+00:05:28,460 --> 00:05:29,900
+onde a gente tem que retornar um erro,
+
+132
+00:05:30,320 --> 00:05:32,880
+a gente pode ter um cenário que a gente tem que retornar um sucesso,
+
+133
+00:05:33,340 --> 00:05:34,540
+a gente pode ter um cenário
+
+134
+00:05:34,540 --> 00:05:36,420
+que a gente tem que retornar uma informação de certa
+
+135
+00:05:36,420 --> 00:05:37,560
+forma, tá ligado?
+
+136
+00:05:38,320 --> 00:05:40,480
+Então, mano, tem que ficar atento com relação a isso,
+
+137
+00:05:40,560 --> 00:05:42,180
+porque pensa, você tá testando um bocado,
+
+138
+00:05:42,880 --> 00:05:44,220
+o seu teste tem que estar
+
+139
+00:05:44,220 --> 00:05:46,380
+dentro do que você precisa. Ah, mano,
+
+140
+00:05:46,400 --> 00:05:48,180
+eu preciso que seja retornada uma empresa
+
+141
+00:05:48,180 --> 00:05:50,320
+que inicie lá
+
+142
+00:05:50,320 --> 00:05:52,060
+com zero, à esquerda.
+
+143
+00:05:52,540 --> 00:05:54,080
+O CNPJ inicie com zero à esquerda.
+
+144
+00:05:54,420 --> 00:05:56,240
+Então, no stub, você tem que passar uma empresa
+
+145
+00:05:56,240 --> 00:05:57,420
+que inicie com zero à esquerda.
+
+146
+00:05:58,300 --> 00:06:00,340
+Ah, mano, eu preciso retornar um código de
+
+147
+00:06:00,340 --> 00:06:02,560
+erro na consulta
+
+148
+00:06:02,560 --> 00:06:04,540
+dos dados. Então, mano, você tem que pegar um retorno
+
+149
+00:06:04,540 --> 00:06:05,880
+de erro, colocá-la no
+
+150
+00:06:05,880 --> 00:06:08,540
+stub pra gente fazer isso.
+
+151
+00:06:09,120 --> 00:06:09,440
+Beleza?
+
+152
+00:06:10,540 --> 00:06:12,540
+Tá bom. Beleza.
+
+153
+00:06:12,540 --> 00:06:14,580
+agora faz o seguinte, mano, aí dentro das
+
+154
+00:06:14,580 --> 00:06:16,440
+pastinhas, você vai ver que tem dois caras aí
+
+155
+00:06:16,440 --> 00:06:18,760
+muito importantes, pra esse fluxo que você tá fazendo agora
+
+156
+00:06:18,760 --> 00:06:20,680
+na consulta de dados, que é o consulta
+
+157
+00:06:20,680 --> 00:06:21,560
+lista benefício
+
+158
+00:06:21,560 --> 00:06:23,980
+e o consulta dados do trabalhador
+
+159
+00:06:23,980 --> 00:06:26,380
+esses dois caras aí, o que são? Clica primeiro
+
+160
+00:06:26,380 --> 00:06:27,820
+nesse aí no consulta lista benefício
+
+161
+00:06:27,820 --> 00:06:29,620
+vai em retorno aí
+
+162
+00:06:29,620 --> 00:06:32,500
+o que que esse cara retorna pra você
+
+163
+00:06:32,500 --> 00:06:34,600
+mano, expande ali um pouquinho, por favor
+
+164
+00:06:34,600 --> 00:06:36,600
+isso, o que que
+
+165
+00:06:36,600 --> 00:06:38,360
+ele tá te trazendo? Ele tá te trazendo um vínculo
+
+166
+00:06:38,360 --> 00:06:40,180
+da empresa apenas, tá bom? Então tá
+
+167
+00:06:40,180 --> 00:06:41,500
+Eu passo o meu CPF
+
+168
+00:06:41,500 --> 00:06:43,080
+Fiz a consulta do vínculo
+
+169
+00:06:43,080 --> 00:06:44,820
+Ele vai retornar a minha matrícula
+
+170
+00:06:44,820 --> 00:06:46,120
+E vai retornar a minha empresa
+
+171
+00:06:46,120 --> 00:06:47,180
+Tá bom?
+
+172
+00:06:49,180 --> 00:06:50,940
+E aí tem uma informação que é importante também
+
+173
+00:06:50,940 --> 00:06:53,120
+Que é o código da inscrição do empregador
+
+174
+00:06:53,120 --> 00:06:53,900
+Que tá ali em cima
+
+175
+00:06:53,900 --> 00:06:57,020
+Aí embaixo de matrícula
+
+176
+00:06:57,020 --> 00:06:59,020
+Tá vendo ali? Tem o código 1 e a inscrição
+
+177
+00:06:59,020 --> 00:07:01,180
+Tá, a gente trabalha com
+
+178
+00:07:01,180 --> 00:07:03,220
+Enums, tá? Então a gente tem dois códigos
+
+179
+00:07:03,220 --> 00:07:04,680
+O código 1, mano
+
+180
+00:07:04,680 --> 00:07:05,960
+É o CNPJ
+
+181
+00:07:05,960 --> 00:07:09,240
+E o código 2 é o CPF
+
+182
+00:07:09,240 --> 00:07:10,520
+Então, 1
+
+183
+00:07:10,520 --> 00:07:13,340
+PJ, 2, PF
+
+184
+00:07:13,340 --> 00:07:13,800
+Beleza?
+
+185
+00:07:14,900 --> 00:07:17,440
+A descrição aí, mano, como a gente tá utilizando o código 1
+
+186
+00:07:17,440 --> 00:07:19,700
+A gente vai colocar a descrição do código
+
+187
+00:07:19,700 --> 00:07:21,320
+Da inscrição como CNPJ
+
+188
+00:07:21,320 --> 00:07:21,780
+Ali em cima
+
+189
+00:07:21,780 --> 00:07:35,000
+Pera aí, mano, rapidão
+
+190
+00:07:39,240 --> 00:08:04,440
+Peraí, só deixa eu fazer um ajuste de datas aqui para o pessoal ver.
+
+191
+00:08:09,240 --> 00:08:39,220
+Legenda Adriana Zanotto
+
+192
+00:08:39,240 --> 00:09:09,220
+E assim ficou pronto.
+
+193
+00:09:09,240 --> 00:09:39,220
+E aí
+
+194
+00:09:39,240 --> 00:10:09,220
+E aí
+
+195
+00:10:09,240 --> 00:10:39,220
+Legenda Adriana Zanotto
+
+196
+00:10:39,240 --> 00:11:09,220
+E aí
+
+197
+00:11:09,240 --> 00:11:39,220
+Legenda Adriana Zanotto
+
+198
+00:11:39,240 --> 00:12:09,220
+Legenda Adriana Zanotto
+
+199
+00:12:09,240 --> 00:12:39,220
+Legenda Adriana Zanotto
+
+200
+00:12:39,240 --> 00:12:53,700
+tá bom, beleza
+
+201
+00:12:53,700 --> 00:12:56,140
+voltei aqui, tá, como eu falei
+
+202
+00:12:56,140 --> 00:12:57,900
+então aí a gente tem CNPJ
+
+203
+00:12:57,900 --> 00:13:00,060
+se caso a gente mudasse ali pra 2, a gente teria que trocar
+
+204
+00:13:00,060 --> 00:13:02,120
+a descrição pra CPF, entendeu
+
+205
+00:13:02,120 --> 00:13:04,020
+beleza
+
+206
+00:13:04,020 --> 00:13:06,140
+tá, número da inscrição
+
+207
+00:13:06,140 --> 00:13:08,520
+número da inscrição, mano, se a gente tá falando de CNPJ
+
+208
+00:13:08,520 --> 00:13:10,120
+A gente pode ter até no máximo
+
+209
+00:13:10,120 --> 00:13:11,480
+14 posições, correto?
+
+210
+00:13:13,020 --> 00:13:14,380
+Se a gente está falando
+
+211
+00:13:14,380 --> 00:13:15,720
+De uma pessoa física
+
+212
+00:13:15,720 --> 00:13:17,560
+Ou seja, CPF
+
+213
+00:13:17,560 --> 00:13:19,040
+Até 11 posições, beleza?
+
+214
+00:13:20,840 --> 00:13:22,260
+Só que também vai ter casos, mano
+
+215
+00:13:22,260 --> 00:13:23,860
+Onde vai iniciar com 0
+
+216
+00:13:23,860 --> 00:13:25,480
+Ou vai ser passado pra gente
+
+217
+00:13:25,480 --> 00:13:27,320
+O CNPJ base
+
+218
+00:13:27,320 --> 00:13:29,840
+Não sei se você conhece aí, mas é aquele SPB lá
+
+219
+00:13:29,840 --> 00:13:31,820
+Que é as
+
+220
+00:13:31,820 --> 00:13:34,280
+8 primeiras posições do CNPJ
+
+221
+00:13:34,280 --> 00:13:36,220
+Que é o
+
+222
+00:13:36,220 --> 00:13:38,140
+CNPJ raiz
+
+223
+00:13:38,140 --> 00:13:39,900
+Entendeu?
+
+224
+00:13:40,060 --> 00:13:42,540
+Sem a barra, sem a matriz
+
+225
+00:13:42,540 --> 00:13:43,260
+E sem o dígito
+
+226
+00:13:43,260 --> 00:13:44,760
+Ou seja
+
+227
+00:13:44,760 --> 00:13:46,720
+É basicamente isso aqui
+
+228
+00:13:46,720 --> 00:13:49,700
+6
+
+229
+00:13:49,700 --> 00:13:52,060
+7
+
+230
+00:13:52,060 --> 00:13:53,480
+Aí vem aqui
+
+231
+00:13:53,480 --> 00:13:54,940
+00001
+
+232
+00:13:54,940 --> 00:13:56,240
+1
+
+233
+00:13:56,240 --> 00:14:00,740
+Isso, isso aqui é um CNPJ completo
+
+234
+00:14:00,740 --> 00:14:02,480
+Obviamente não está totalmente formatado
+
+235
+00:14:02,480 --> 00:14:05,520
+O correto dele seria
+
+236
+00:14:05,520 --> 00:14:06,980
+Se eu não me engano
+
+237
+00:14:06,980 --> 00:14:09,620
+Isso aqui, beleza?
+
+238
+00:14:10,760 --> 00:14:11,700
+Só que o que acontece
+
+239
+00:14:11,700 --> 00:14:14,280
+O CNPJ, ele pode vir dessa forma aqui
+
+240
+00:14:14,280 --> 00:14:16,100
+CNPJ
+
+241
+00:14:16,100 --> 00:14:17,700
+Base
+
+242
+00:14:17,700 --> 00:14:20,220
+Então sempre que a gente faz a CNPJ
+
+243
+00:14:20,220 --> 00:14:21,880
+Base, mano, é as oito primeiras posições
+
+244
+00:14:21,880 --> 00:14:22,780
+Beleza?
+
+245
+00:14:24,100 --> 00:14:25,960
+Só que pode acontecer isso aqui também
+
+246
+00:14:25,960 --> 00:14:30,980
+O CNPJ começa com zero
+
+247
+00:14:30,980 --> 00:14:35,260
+Beleza?
+
+248
+00:14:35,260 --> 00:14:37,600
+Então esse cenário também pode acontecer
+
+249
+00:14:37,600 --> 00:14:38,840
+Tá bom?
+
+250
+00:14:40,060 --> 00:14:41,820
+Beleza, então esse serviço aí
+
+251
+00:14:41,820 --> 00:14:43,960
+Mano, ele vai consultar a matrícula
+
+252
+00:14:43,960 --> 00:14:45,860
+E a empresa do cara, tá bom?
+
+253
+00:14:46,140 --> 00:14:47,920
+É basicamente isso, ele vai retornar essas informações
+
+254
+00:14:47,920 --> 00:14:48,400
+Pra gente
+
+255
+00:14:48,400 --> 00:14:51,940
+Agora entra no consulta dados do trabalhador, por favor
+
+256
+00:14:51,940 --> 00:14:56,260
+Ô Luiz, rapidinho, é pra passar pela verbação, né?
+
+257
+00:14:56,920 --> 00:14:58,000
+Isso aí, ô
+
+258
+00:14:58,000 --> 00:14:59,920
+Álvaro, eu acho que o plugin do Matheus tá ligado, mano
+
+259
+00:15:00,680 --> 00:15:02,340
+Deixa eu, já vou chamar aqui
+
+260
+00:15:02,340 --> 00:15:03,500
+Já achei a proposta
+
+261
+00:15:03,500 --> 00:15:14,980
+Ó, já ajusta aí também, tá, William, por favor
+
+262
+00:15:14,980 --> 00:15:25,300
+Beleza, agora vamos falar lá com relação
+
+263
+00:15:25,300 --> 00:15:27,680
+A matrícula
+
+264
+00:15:27,680 --> 00:15:32,160
+A nossa matrícula, ela pode ter
+
+265
+00:15:32,160 --> 00:15:33,260
+Letras
+
+266
+00:15:33,260 --> 00:15:35,120
+E números
+
+267
+00:15:35,120 --> 00:15:37,000
+A gente geralmente tem um padrão aqui, mano
+
+268
+00:15:37,000 --> 00:15:39,260
+Aí a gente só fica alternando lá conforme os clientes
+
+269
+00:15:39,260 --> 00:15:41,200
+Deixa eu pegar aqui a matrícula que a gente geralmente usa
+
+270
+00:16:02,160 --> 00:16:12,580
+Aqui, ó
+
+271
+00:16:12,580 --> 00:16:14,300
+Dá pra você colocar essa matrícula aí
+
+272
+00:16:14,300 --> 00:16:17,060
+Tanto, mano, nesse retorno
+
+273
+00:16:17,060 --> 00:16:19,140
+Quanto no outro lá, no lista benefício, tá?
+
+274
+00:16:20,700 --> 00:16:22,040
+Pra gente deixar certinho
+
+275
+00:16:22,040 --> 00:16:23,600
+Porque a matrícula tem que bater, né?
+
+276
+00:16:23,700 --> 00:16:25,360
+Então eu não posso ter um endpoint com uma matrícula
+
+277
+00:16:25,360 --> 00:16:26,200
+E o outro com outra
+
+278
+00:16:26,200 --> 00:16:29,080
+Pra esse cara
+
+279
+00:16:29,080 --> 00:16:30,960
+Beleza
+
+280
+00:16:30,960 --> 00:16:33,860
+Agora, vamos falar com o CPF do cara
+
+281
+00:16:33,860 --> 00:16:35,820
+O CPF do cara que tá nos retornos é o seu?
+
+282
+00:16:37,960 --> 00:16:39,220
+Então ajusta aí também, tá?
+
+283
+00:16:39,800 --> 00:16:41,440
+Como eu falei, ele vai retornar, tá?
+
+284
+00:16:41,520 --> 00:16:42,560
+Mas pra ficar mais bonitinho
+
+285
+00:16:42,560 --> 00:16:44,000
+Ei, mano, a gente vai deixar igual
+
+286
+00:16:44,000 --> 00:16:45,200
+Beleza?
+
+287
+00:16:45,520 --> 00:16:46,760
+E olha a formatação que ele tá
+
+288
+00:16:46,760 --> 00:16:48,440
+Você viu ali que ele tá sem pontuação, né?
+
+289
+00:16:52,380 --> 00:16:52,740
+Exatamente
+
+290
+00:16:52,740 --> 00:16:54,360
+Você tem que...
+
+291
+00:16:54,360 --> 00:16:54,820
+Isso
+
+292
+00:16:54,820 --> 00:16:57,100
+Você tem que ir de acordo lá com o que tá esperando
+
+293
+00:16:57,100 --> 00:16:58,540
+Na informação
+
+294
+00:16:58,540 --> 00:17:26,120
+Lista benefícios.
+
+295
+00:17:26,120 --> 00:17:28,800
+É o lista benefício e o dados trabalhador
+
+296
+00:17:56,120 --> 00:18:11,100
+Beleza, agora a consulta
+
+297
+00:18:11,100 --> 00:18:13,120
+Antes de você fazer a consulta de novo
+
+298
+00:18:13,120 --> 00:18:15,200
+Vamos parar pra pensar o seguinte
+
+299
+00:18:15,200 --> 00:18:18,040
+Olha ali a sua consulta dos dados do trabalhador
+
+300
+00:18:18,040 --> 00:18:21,760
+Pensa que a gente tá consultando os dados do cara
+
+301
+00:18:21,760 --> 00:18:22,600
+Pra fazer o empréstimo
+
+302
+00:18:22,600 --> 00:18:24,340
+Então ele precisa ter valor de margem, certo?
+
+303
+00:18:24,340 --> 00:18:26,960
+Olha os valores de margem que tá vindo ali
+
+304
+00:18:26,960 --> 00:18:30,200
+Tá zerado
+
+305
+00:18:30,200 --> 00:18:31,780
+Ou seja
+
+306
+00:18:31,780 --> 00:18:34,760
+Tem que arrumar a margem
+
+307
+00:18:34,760 --> 00:18:54,720
+Arrumou a margem ali? Você colocou o valor?
+
+308
+00:18:56,720 --> 00:18:57,820
+No consulta-dados do trabalhador
+
+309
+00:18:57,820 --> 00:19:00,460
+Pensa o seguinte
+
+310
+00:19:00,460 --> 00:19:02,920
+O consulta-lista vai trazer a matrícula e a empresa
+
+311
+00:19:02,920 --> 00:19:04,220
+O consulta dados do trabalhador
+
+312
+00:19:04,220 --> 00:19:05,820
+Ele tá trazendo as informações do trabalhador
+
+313
+00:19:05,820 --> 00:19:07,080
+Cessa lá, por favor
+
+314
+00:19:07,080 --> 00:19:09,780
+Ó, o que ele vai trazer?
+
+315
+00:19:09,880 --> 00:19:11,060
+Ele vai trazer o sexo do cara
+
+316
+00:19:11,060 --> 00:19:12,800
+Vai trazer a data de nascimento
+
+317
+00:19:12,800 --> 00:19:14,340
+Vamos ajustar essa data de nascimento
+
+318
+00:19:14,340 --> 00:19:16,100
+Pra ficar um pouco mais real ali também, ó
+
+319
+00:19:16,100 --> 00:19:21,020
+Beleza
+
+320
+00:19:21,020 --> 00:19:23,080
+Ó, os valores aí do cara
+
+321
+00:19:23,080 --> 00:19:24,840
+Coloca um valor de margem aí
+
+322
+00:19:24,840 --> 00:19:25,660
+Pra ele
+
+323
+00:19:25,660 --> 00:19:31,800
+Isso
+
+324
+00:19:31,800 --> 00:19:36,060
+Valor mesmo
+
+325
+00:19:36,060 --> 00:19:37,120
+Valor direto
+
+326
+00:19:37,120 --> 00:19:40,480
+Pode colocar dois
+
+327
+00:19:40,480 --> 00:19:49,800
+É, pode colocar
+
+328
+00:19:49,800 --> 00:19:51,220
+Pode colocar mais, tá?
+
+329
+00:19:51,280 --> 00:19:53,600
+Pra gente fazer uns testes aí, conseguir cadastrar uma surposta
+
+330
+00:19:53,600 --> 00:19:55,180
+Que basicamente vai consumir
+
+331
+00:19:55,180 --> 00:19:57,320
+Pode colocar a base
+
+332
+00:19:57,320 --> 00:19:58,800
+E isso aí
+
+333
+00:19:58,800 --> 00:20:00,040
+Beleza
+
+334
+00:20:00,040 --> 00:20:02,480
+Aí a gente tem ali também a data de admissão
+
+335
+00:20:02,480 --> 00:20:04,300
+Ou seja, mano, a gente tá falando de um cara CLT
+
+336
+00:20:04,300 --> 00:20:05,880
+Ele foi contratado
+
+337
+00:20:05,880 --> 00:20:07,760
+Beleza
+
+338
+00:20:07,760 --> 00:20:16,040
+Não, pode
+
+339
+00:20:16,040 --> 00:20:17,840
+É, ele tá na empresa
+
+340
+00:20:17,840 --> 00:20:19,200
+Pode deixar dessa forma aí, tá?
+
+341
+00:20:19,340 --> 00:20:20,860
+É que basicamente tem alguns
+
+342
+00:20:20,860 --> 00:20:23,100
+Retornos que é o seguinte
+
+343
+00:20:23,100 --> 00:20:26,240
+Ele retorna o alerta se o cara tá afastado
+
+344
+00:20:26,240 --> 00:20:27,020
+Ou tá desligado
+
+345
+00:20:27,020 --> 00:20:29,700
+Beleza? Só que nesse caso aí
+
+346
+00:20:29,700 --> 00:20:31,780
+Pode deixar dessa forma que tá mesmo, pelo menos não.
+
+347
+00:20:34,400 --> 00:20:38,340
+Ali, ó, o nome da mãe ajusta também, coloca o nome real ali de uma mãe.
+
+348
+00:20:44,720 --> 00:20:45,760
+Desce aí, por favor.
+
+349
+00:20:47,060 --> 00:20:47,980
+Beleza, desce.
+
+350
+00:20:58,360 --> 00:20:59,080
+Tá bom.
+
+351
+00:20:59,700 --> 00:21:06,800
+Pode descer, pode descer seus impressos no legado que ele tem, se ele tem inegibilidade, desce um pouquinho mais, por favor.
+
+352
+00:21:07,540 --> 00:21:14,820
+E tem ali, tem um campo novo ali que é a verba recisória, que agora, mano, tem as garantias que o cara precisa informar lá pra cadastrar a proposta.
+
+353
+00:21:17,060 --> 00:21:20,680
+Não é a parte do FGTS, mas pode deixar dessa forma aí também, beleza?
+
+354
+00:21:23,700 --> 00:21:27,540
+Isso é porcentagem, é percentual. Pode deixar 35%.
+
+355
+00:21:29,700 --> 00:21:34,020
+Tá bom, beleza, pode salvar aí
+
+356
+00:21:34,020 --> 00:21:38,040
+Agora consulta os dados de novo lá, por favor
+
+357
+00:21:38,040 --> 00:21:42,740
+Pode cancelar aí
+
+358
+00:21:59,700 --> 00:22:16,160
+Tá bom, top, beleza
+
+359
+00:22:16,160 --> 00:22:19,500
+Fechou
+
+360
+00:22:19,500 --> 00:22:22,120
+Agora vamos tentar consultar os dados na tela de cadastro
+
+361
+00:22:22,120 --> 00:22:32,900
+Na tela de cadastro, lá no autorizador
+
+362
+00:22:32,900 --> 00:22:35,140
+Agora a gente vai cadastrar uma proposta
+
+363
+00:22:35,140 --> 00:22:36,680
+Consultando os dados do cara, entendeu?
+
+364
+00:22:52,120 --> 00:23:22,100
+Legenda Adriana Zanotto
+
+365
+00:23:22,120 --> 00:23:43,280
+Deu certo aí a aprovação?
+
+366
+00:23:43,280 --> 00:23:52,940
+Perdi o mouse aqui
+
+367
+00:23:52,940 --> 00:23:55,480
+Fiz a chamada
+
+368
+00:23:55,480 --> 00:23:56,920
+Passou pelo CPD
+
+369
+00:23:56,920 --> 00:23:57,960
+Deixa eu ver
+
+370
+00:23:57,960 --> 00:24:01,180
+Na CEMP aqui como é que tá
+
+371
+00:24:01,180 --> 00:24:03,280
+Acabei de fazer a chamada
+
+372
+00:24:03,280 --> 00:24:05,200
+Vê na observação da proposta
+
+373
+00:24:05,200 --> 00:24:05,860
+Se ele tiver
+
+374
+00:24:05,860 --> 00:24:07,960
+Cravado lá ele avermou
+
+375
+00:24:07,960 --> 00:24:10,420
+É que eu
+
+376
+00:24:10,420 --> 00:24:14,140
+É, eu confio muito na verbação, mas...
+
+377
+00:24:14,140 --> 00:24:16,260
+E tem a CPD de Isonlog também, tá, mano?
+
+378
+00:24:18,920 --> 00:24:20,700
+Ah, peraí, retornou a U.
+
+379
+00:24:21,640 --> 00:24:22,500
+O que ele fala de U?
+
+380
+00:24:22,500 --> 00:24:22,920
+Não é Stubb, tá?
+
+381
+00:24:23,760 --> 00:24:25,180
+Não é Stubb, você tá batendo na TAPREV.
+
+382
+00:24:26,300 --> 00:24:27,760
+Ah, é. Ah, é, pode parar.
+
+383
+00:24:28,280 --> 00:24:30,760
+Você cadastrou o cara com o mesmo nome que tava na oferta?
+
+384
+00:24:33,180 --> 00:24:34,800
+Ah, foi, mano, peraí.
+
+385
+00:24:36,600 --> 00:24:38,160
+Deixa eu só dar uma conferida aqui.
+
+386
+00:24:38,160 --> 00:25:01,660
+Teste Maria, deixa eu ver a oferta aqui agora, esqueci que tava na nota pra ele, é aqui, ó, interesse em sim, CPF, a gente quer esse daqui, é aqui, comece em zero, deixa eu ver esse nome aqui do cara,
+
+387
+00:25:01,660 --> 00:25:07,700
+Teste Maria
+
+388
+00:25:07,700 --> 00:25:08,800
+É o mesmo nome
+
+389
+00:25:08,800 --> 00:25:16,280
+Compartilha a tela aí Álvaro, por favor
+
+390
+00:25:16,280 --> 00:25:18,020
+Deixa
+
+391
+00:25:18,020 --> 00:25:26,760
+Ó, nome inválido
+
+392
+00:25:26,760 --> 00:25:28,500
+Mano, verifica
+
+393
+00:25:28,500 --> 00:25:32,220
+Verifica na CPD Jason Log
+
+394
+00:25:32,220 --> 00:25:33,480
+O que ele mandou pra Dataprev
+
+395
+00:25:33,480 --> 00:25:35,900
+CPD Jason Log, tá bom
+
+396
+00:25:35,900 --> 00:25:36,820
+Deixa eu ver se eu já tenho
+
+397
+00:25:36,820 --> 00:25:40,340
+Eu vou te mandar um selects
+
+398
+00:25:40,340 --> 00:25:40,840
+Aqui, mano
+
+399
+00:25:40,840 --> 00:25:43,000
+Aí você vê, por favor
+
+400
+00:25:58,500 --> 00:26:02,160
+Ah, vou mandar no seu chat aí, tá?
+
+401
+00:26:02,540 --> 00:26:03,500
+Não vou nem mandar aqui no grupo
+
+402
+00:26:03,500 --> 00:26:12,720
+Mano, deixa eu ficar de olho aqui
+
+403
+00:26:12,720 --> 00:26:14,300
+Pra ver se o 2.3 não caiu
+
+404
+00:26:14,300 --> 00:26:24,400
+Pô, eu esqueci de mandar os incidentes, mano
+
+405
+00:26:24,400 --> 00:26:26,680
+Rapaz
+
+406
+00:26:26,680 --> 00:26:33,520
+ai, caraca
+
+407
+00:26:33,520 --> 00:26:35,520
+nossa, melhorou nunca
+
+408
+00:26:35,520 --> 00:26:37,380
+que bosta, deixa eu ver aqui, select
+
+409
+00:26:37,380 --> 00:26:41,780
+ah, tá, tá, acesse uma oferta
+
+410
+00:26:41,780 --> 00:26:43,400
+e lpd
+
+411
+00:26:43,400 --> 00:26:45,260
+acho que
+
+412
+00:26:45,260 --> 00:26:47,300
+esse aqui eu já tinha, esse aqui eu já tinha
+
+413
+00:26:47,300 --> 00:26:51,060
+lpd diesel log
+
+414
+00:26:51,060 --> 00:26:55,440
+seria o diesel log
+
+415
+00:26:55,440 --> 00:26:56,420
+RVB, no caso, né?
+
+416
+00:26:59,760 --> 00:27:00,940
+Isso, exatamente.
+
+417
+00:27:09,980 --> 00:27:10,460
+Determinado
+
+418
+00:27:10,460 --> 00:27:13,020
+que tem no subsite, né?
+
+419
+00:27:14,020 --> 00:27:14,760
+Então, por exemplo,
+
+420
+00:27:15,580 --> 00:27:17,580
+pode falar, Luiz?
+
+421
+00:27:18,480 --> 00:27:19,380
+Não, o que eu ia falar
+
+422
+00:27:19,380 --> 00:27:21,340
+era de pensar que o
+
+423
+00:27:21,340 --> 00:27:22,600
+chassi é uma carcaça, entendeu?
+
+424
+00:27:23,320 --> 00:27:25,200
+Pensa o seguinte, é só uma carcaça.
+
+425
+00:27:25,440 --> 00:27:27,680
+O subsite é o que vai completar ele, entendeu?
+
+426
+00:27:28,300 --> 00:27:29,260
+Então, tipo, você vai ver que
+
+427
+00:27:29,260 --> 00:27:31,520
+se você não estiver usando os dois atrelados,
+
+428
+00:27:31,840 --> 00:27:33,740
+vai aparecer só as rotinas do chassi
+
+429
+00:27:33,740 --> 00:27:35,740
+se você acessar por ele. O subsite
+
+430
+00:27:35,740 --> 00:27:37,020
+você não consegue entrar nele.
+
+431
+00:27:37,520 --> 00:27:39,560
+Então você tem que adicionar ele pra
+
+432
+00:27:39,560 --> 00:27:41,420
+atribuir as rotinas, entendeu? Por isso que tem
+
+433
+00:27:41,420 --> 00:27:42,420
+aqueles chassi settings.
+
+434
+00:27:48,240 --> 00:27:48,680
+Fechou.
+
+435
+00:27:49,820 --> 00:27:50,440
+Fechou, mano.
+
+436
+00:27:51,160 --> 00:27:52,800
+Todos vocês estão envolvidos
+
+437
+00:27:52,800 --> 00:27:54,640
+nesse assunto, né? Então acho que é bom
+
+438
+00:27:54,640 --> 00:27:56,440
+deixar todo mundo alinhado. Faltou uma pessoa,
+
+439
+00:27:56,600 --> 00:27:57,920
+mas depois eu converso com eles.
+
+440
+00:27:59,520 --> 00:28:00,740
+É, seguinte,
+
+441
+00:28:01,560 --> 00:28:02,460
+o que acontece?
+
+442
+00:28:03,320 --> 00:28:04,520
+Estava previsto
+
+443
+00:28:04,520 --> 00:28:05,740
+o William
+
+444
+00:28:05,740 --> 00:28:08,420
+ele substituir
+
+445
+00:28:08,420 --> 00:28:10,640
+o Vitor aí no
+
+446
+00:28:10,640 --> 00:28:11,740
+meia-sete, certo, Vitor?
+
+447
+00:28:12,200 --> 00:28:12,960
+Poder confirmar?
+
+448
+00:28:15,240 --> 00:28:16,720
+Correto, eu acredito que sim.
+
+449
+00:28:16,860 --> 00:28:18,660
+Deixa eu só confirmar aqui que eu tenho o grupo
+
+450
+00:28:18,660 --> 00:28:19,780
+aqui que a gente tinha criado.
+
+451
+00:28:20,760 --> 00:28:21,200
+Beleza.
+
+452
+00:28:23,680 --> 00:28:24,440
+É, assim,
+
+453
+00:28:24,640 --> 00:28:27,140
+só pra não falar besteira aqui, beleza
+
+454
+00:28:27,140 --> 00:28:29,320
+então aí seria no mês 7
+
+455
+00:28:29,320 --> 00:28:31,300
+completo aí que o William ia substituir o
+
+456
+00:28:31,300 --> 00:28:32,880
+Victor, então
+
+457
+00:28:32,880 --> 00:28:35,000
+só que a gente vai ter que fazer uma troca, tá
+
+458
+00:28:35,000 --> 00:28:37,240
+a gente tá com umas mudanças aqui
+
+459
+00:28:37,240 --> 00:28:39,120
+e a gente não vai
+
+460
+00:28:39,120 --> 00:28:41,220
+conseguir mais deixar o William aí com você, Victor
+
+461
+00:28:41,220 --> 00:28:43,480
+então será um outro rapaz
+
+462
+00:28:43,480 --> 00:28:45,440
+que vai substituir
+
+463
+00:28:45,440 --> 00:28:47,200
+que é o Christian, que eu não consegui colocar
+
+464
+00:28:47,200 --> 00:28:49,160
+ele nessa cal agora, mas a gente conversa com ele
+
+465
+00:28:49,160 --> 00:28:51,240
+depois, então
+
+466
+00:28:51,240 --> 00:28:53,020
+eu vou avisar a GP também, né
+
+467
+00:28:53,020 --> 00:28:55,640
+aí da mesa do Digio, acho que é a Sandra
+
+468
+00:28:55,640 --> 00:28:57,600
+se eu não me engano, vou conversar com ela
+
+469
+00:28:57,600 --> 00:28:59,700
+e eu queria deixar você
+
+470
+00:28:59,700 --> 00:29:01,660
+sentir já, né, porque em algum momento
+
+471
+00:29:01,660 --> 00:29:03,580
+o Christian que vai te chamar
+
+472
+00:29:03,580 --> 00:29:05,500
+aí pra poder absorver, né
+
+473
+00:29:05,500 --> 00:29:07,000
+os conteúdos, os trabalhos
+
+474
+00:29:07,000 --> 00:29:09,660
+e o Bruno, né, que também
+
+475
+00:29:09,660 --> 00:29:11,720
+aí também faz parte da mesa da Digio
+
+476
+00:29:11,720 --> 00:29:13,780
+é o rapaz que vai dar um auxílio
+
+477
+00:29:13,780 --> 00:29:15,140
+pro Christian, tá Bruno? Então
+
+478
+00:29:15,140 --> 00:29:17,680
+eu queria que você ficasse ciente, né
+
+479
+00:29:17,680 --> 00:29:18,960
+que o
+
+480
+00:29:18,960 --> 00:29:21,680
+Victor vai sair de férias, acho que você já sabe
+
+481
+00:29:21,680 --> 00:29:23,980
+Mas que vai ser o Christian
+
+482
+00:29:23,980 --> 00:29:26,400
+Que vai substituir ele
+
+483
+00:29:26,400 --> 00:29:27,220
+E provavelmente
+
+484
+00:29:27,220 --> 00:29:29,960
+Claro, o Victor vai dar o apoio ali
+
+485
+00:29:29,960 --> 00:29:31,200
+Antes de sair de férias
+
+486
+00:29:31,200 --> 00:29:33,020
+Vai passar todo o conteúdo, as atividades
+
+487
+00:29:33,020 --> 00:29:35,080
+Mas provavelmente ele vai precisar de um apoio ainda
+
+488
+00:29:35,080 --> 00:29:37,520
+Então acredito que você consiga ajudar ele
+
+489
+00:29:37,520 --> 00:29:38,100
+Nesse período
+
+490
+00:29:38,100 --> 00:29:40,760
+Beleza
+
+491
+00:29:40,760 --> 00:29:43,080
+Mas é isso
+
+492
+00:29:43,080 --> 00:29:45,760
+Eu vou atualizar lá o grupo
+
+493
+00:29:45,760 --> 00:29:47,220
+Que eu tinha falado com a Sandra
+
+494
+00:29:47,220 --> 00:29:49,880
+Eu vou avisar que não vai ser mais o William
+
+495
+00:29:49,880 --> 00:29:51,280
+Vai ser o Christian
+
+496
+00:29:51,280 --> 00:29:54,380
+E pro William
+
+497
+00:29:54,380 --> 00:29:55,520
+A gente tem um novo papel
+
+498
+00:29:55,520 --> 00:29:58,220
+Você ainda vai substituir uma mesa
+
+499
+00:29:58,220 --> 00:30:01,020
+Porém vai ser a mesa do C6
+
+500
+00:30:01,020 --> 00:30:02,840
+Que envolve o Gabriel
+
+501
+00:30:02,840 --> 00:30:04,760
+E o Matheus que estão aqui com a gente
+
+502
+00:30:04,760 --> 00:30:08,940
+O Matheus ele também vai sair de férias
+
+503
+00:30:08,940 --> 00:30:11,400
+Que dia que você sai de férias Matheus?
+
+504
+00:30:11,520 --> 00:30:12,560
+Pode confirmar por favor
+
+505
+00:30:12,560 --> 00:30:15,760
+Dia 23
+
+506
+00:30:15,760 --> 00:30:19,120
+Dia 23 agora né
+
+507
+00:30:19,120 --> 00:30:19,420
+Já
+
+508
+00:30:19,420 --> 00:30:24,440
+então William
+
+509
+00:30:24,440 --> 00:30:26,360
+é isso que eu queria alinhar com você
+
+510
+00:30:26,360 --> 00:30:28,640
+você tem algum
+
+511
+00:30:28,640 --> 00:30:30,200
+trabalho em pauta
+
+512
+00:30:30,200 --> 00:30:33,120
+nessa próxima semana
+
+513
+00:30:33,120 --> 00:30:33,640
+ou
+
+514
+00:30:33,640 --> 00:30:36,840
+está tranquilo e a gente pode substituir
+
+515
+00:30:36,840 --> 00:30:37,500
+o Matheus
+
+516
+00:30:49,420 --> 00:30:53,820
+Entendi
+
+517
+00:30:53,820 --> 00:30:55,420
+Ah, legal, então não vai ter problemas
+
+518
+00:30:55,420 --> 00:30:58,900
+Então vamos considerar aí que você vai substituir o Matheus
+
+519
+00:30:58,900 --> 00:31:01,280
+A partir do dia 23 do 6
+
+520
+00:31:01,280 --> 00:31:02,480
+E vai
+
+521
+00:31:02,480 --> 00:31:04,660
+Na mesa do C6
+
+522
+00:31:04,660 --> 00:31:05,720
+E vai até que dia, Matheus?
+
+523
+00:31:08,720 --> 00:31:11,040
+Até o dia 4
+
+524
+00:31:11,040 --> 00:31:12,360
+Acho que é 3, né?
+
+525
+00:31:13,140 --> 00:31:14,380
+Isso, acho que é isso
+
+526
+00:31:14,380 --> 00:31:15,540
+3 do 7
+
+527
+00:31:15,540 --> 00:31:17,580
+Até o dia 3 que é sexta do 7
+
+528
+00:31:17,580 --> 00:31:19,460
+Ah, entendi
+
+529
+00:31:19,460 --> 00:31:22,480
+Então até dia 3, William
+
+530
+00:31:22,480 --> 00:31:24,900
+Você ficaria cobrindo aí a mesa do C6
+
+531
+00:31:24,900 --> 00:31:25,900
+Tá, Matheus
+
+532
+00:31:25,900 --> 00:31:27,240
+Porém
+
+533
+00:31:27,240 --> 00:31:30,180
+Além de cobrir as férias dele
+
+534
+00:31:30,180 --> 00:31:32,240
+A gente também vai pedir pra você
+
+535
+00:31:32,240 --> 00:31:34,540
+Continuar um pouquinho na mesa do C6
+
+536
+00:31:34,540 --> 00:31:36,640
+Tá, o Gabriel que tá na cala
+
+537
+00:31:36,640 --> 00:31:38,540
+Aqui com a gente, ele é o analista de CQ
+
+538
+00:31:38,540 --> 00:31:40,080
+Lá da mesa do C6
+
+539
+00:31:40,080 --> 00:31:42,700
+E ele vai te acompanhar
+
+540
+00:31:42,700 --> 00:31:44,060
+Tá, nesse processo aí
+
+541
+00:31:44,060 --> 00:31:46,180
+Substituindo o Matheus, ele vai te auxiliar
+
+542
+00:31:46,180 --> 00:31:47,260
+Vai te orientar
+
+543
+00:31:47,260 --> 00:31:49,420
+só que quando o Matheus voltar
+
+544
+00:31:49,420 --> 00:31:50,560
+você não volta
+
+545
+00:31:50,560 --> 00:31:53,200
+pra equipe aí do
+
+546
+00:31:53,200 --> 00:31:55,500
+Glauco, quem que é o seu analista aí hoje?
+
+547
+00:31:58,820 --> 00:31:59,300
+Gustavo
+
+548
+00:31:59,300 --> 00:32:00,160
+tá
+
+549
+00:32:00,160 --> 00:32:03,100
+isso, então retornando
+
+550
+00:32:03,100 --> 00:32:05,260
+o Matheus retornando, você ainda não volta
+
+551
+00:32:05,260 --> 00:32:07,380
+pro Gustavo, tá bom? Você vai ficar mais
+
+552
+00:32:07,380 --> 00:32:08,860
+uma semaninha aí com o Gabriel
+
+553
+00:32:08,860 --> 00:32:11,160
+e depois já tem
+
+554
+00:32:11,160 --> 00:32:12,200
+outras férias
+
+555
+00:32:12,200 --> 00:32:15,060
+que é o Jonas, o Jonas não tá aqui
+
+556
+00:32:15,060 --> 00:32:17,760
+Mas ele também vai tirar férias
+
+557
+00:32:17,760 --> 00:32:19,260
+Uma semana depois do Matheus
+
+558
+00:32:19,260 --> 00:32:21,400
+E a gente vai precisar também da sua ajuda
+
+559
+00:32:21,400 --> 00:32:23,540
+Pra cobrir essas férias dele
+
+560
+00:32:23,540 --> 00:32:24,320
+Então você faria
+
+561
+00:32:24,320 --> 00:32:27,880
+Ia cobrir duas férias basicamente na sequência
+
+562
+00:32:27,880 --> 00:32:28,380
+Tá bom?
+
+563
+00:32:30,380 --> 00:32:31,280
+Então a gente vai precisar
+
+564
+00:32:31,280 --> 00:32:32,940
+Desse apoio aí
+
+565
+00:32:32,940 --> 00:32:35,300
+E aí nesse período vai ter
+
+566
+00:32:35,300 --> 00:32:36,840
+O Gabriel aí pra te ajudar
+
+567
+00:32:36,840 --> 00:32:39,700
+Então qualquer coisa que você tiver problemas
+
+568
+00:32:39,700 --> 00:32:42,020
+Pode chamar que o Gabriel ajuda
+
+569
+00:32:42,020 --> 00:32:44,080
+Claro, se tiver alguma coisa administrativa
+
+570
+00:32:44,080 --> 00:32:45,760
+também que eu posso ajudar, você pode me acionar
+
+571
+00:32:45,760 --> 00:32:46,580
+também, tá bom?
+
+572
+00:32:47,980 --> 00:32:49,860
+Então, aí eu chamei o Caio também
+
+573
+00:32:49,860 --> 00:32:51,720
+aqui na Cal, porque vai envolver
+
+574
+00:32:51,720 --> 00:32:53,500
+o Christian, né Caio? Então
+
+575
+00:32:53,500 --> 00:32:55,640
+o Christian aí que tá na sua alçada aí
+
+576
+00:32:55,640 --> 00:32:58,160
+e ele ia substituir
+
+577
+00:32:58,160 --> 00:32:59,560
+a mesa do C6, né?
+
+578
+00:33:01,160 --> 00:33:02,000
+Nesse caso
+
+579
+00:33:02,000 --> 00:33:03,760
+a gente vai ter que fazer a troca
+
+580
+00:33:03,760 --> 00:33:05,880
+pra mesa do Digio, que é
+
+581
+00:33:05,880 --> 00:33:07,520
+onde o Vitor tá, beleza?
+
+582
+00:33:10,000 --> 00:33:10,400
+E...
+
+583
+00:33:10,400 --> 00:33:11,520
+Aí eu...
+
+584
+00:33:11,520 --> 00:33:13,540
+Só que eu tinha conversado com você, né Caio, da gente
+
+585
+00:33:13,540 --> 00:33:13,960
+tentar
+
+586
+00:33:13,960 --> 00:33:17,360
+deixar essa
+
+587
+00:33:17,360 --> 00:33:19,360
+substituição do Christian pra outra pessoa,
+
+588
+00:33:19,520 --> 00:33:21,080
+eu ainda tô vendo essa questão, tá bom?
+
+589
+00:33:21,460 --> 00:33:23,880
+Mas, por enquanto, vai ter que ser o Christian.
+
+590
+00:33:24,540 --> 00:33:25,540
+Tá? Só pra você ficar
+
+591
+00:33:25,540 --> 00:33:27,080
+ciente. Beleza, beleza.
+
+592
+00:33:28,220 --> 00:33:29,560
+Inclusive, a pauta do Christian
+
+593
+00:33:29,560 --> 00:33:31,500
+é M7, eu não sei nem se
+
+594
+00:33:31,500 --> 00:33:33,560
+tem alguma coisa, hein? Esqueci de ver, peraí.
+
+595
+00:33:34,400 --> 00:33:35,480
+Acho que tá só o
+
+596
+00:33:35,480 --> 00:33:36,060
+C6 mesmo.
+
+597
+00:33:37,540 --> 00:33:39,500
+É, porque basicamente o William
+
+598
+00:33:39,500 --> 00:33:40,440
+vai substituir.
+
+599
+00:33:42,360 --> 00:33:43,360
+Então, vai sair do
+
+600
+00:33:43,360 --> 00:33:45,580
+Christian, ele é
+
+601
+00:33:45,580 --> 00:33:47,000
+para a Digi, então vai dar certo.
+
+602
+00:33:48,360 --> 00:33:49,700
+Então, pessoal, esse é o recado,
+
+603
+00:33:49,840 --> 00:33:51,300
+tá? Queria deixar todo mundo
+
+604
+00:33:51,300 --> 00:33:52,860
+ciente, todo mundo alinhado aí.
+
+605
+00:33:54,500 --> 00:33:55,360
+E alguém
+
+606
+00:33:55,360 --> 00:33:57,120
+ficou com alguma dúvida? Falei
+
+607
+00:33:57,120 --> 00:33:58,200
+muito rápido.
+
+608
+00:34:00,040 --> 00:34:00,740
+Que boa.
+
+609
+00:34:01,460 --> 00:34:02,580
+Aí, o Raiz,
+
+610
+00:34:03,200 --> 00:34:05,200
+o William pode terminar o treinamento dele hoje,
+
+611
+00:34:05,200 --> 00:34:06,800
+que ele tem, do empreendedor,
+
+612
+00:34:07,040 --> 00:34:09,060
+né? E aí na segunda ele já vem?
+
+613
+00:34:09,480 --> 00:34:11,040
+Ou ele termina até terça e
+
+614
+00:34:11,040 --> 00:34:12,140
+vem na quarta para mim?
+
+615
+00:34:13,360 --> 00:34:17,220
+Olha, eu acho que depende mais de como está o ritmo aí, né, William?
+
+616
+00:34:17,280 --> 00:34:21,140
+Eu não sei se o pessoal está com o trampo para ver se é hoje,
+
+617
+00:34:21,140 --> 00:34:25,180
+mas por mim, quanto antes você conseguir começar, melhor.
+
+618
+00:34:25,540 --> 00:34:26,240
+Lá com o Gabriel.
+
+619
+00:34:27,720 --> 00:34:29,360
+Se você quiser alinhar com o Gustavo, né?
+
+620
+00:34:39,840 --> 00:34:41,280
+Você conversa aí com o Gustavo?
+
+621
+00:34:43,360 --> 00:34:45,880
+aí qualquer coisa você avisa o Gabriel
+
+622
+00:34:45,880 --> 00:34:48,460
+aí o Gabriel já tá ciente aí quando você vai começar
+
+623
+00:34:48,460 --> 00:34:50,520
+e é isso
+
+624
+00:34:50,520 --> 00:34:52,540
+aí você já começa aí na próxima semana
+
+625
+00:34:52,540 --> 00:34:57,740
+beleza
+
+626
+00:34:57,740 --> 00:35:00,480
+bom pessoal, é isso
+
+627
+00:35:00,480 --> 00:35:02,540
+qualquer tipo de mudança aí que tiver
+
+628
+00:35:02,540 --> 00:35:03,920
+de novo eu vou avisando vocês
+
+629
+00:35:03,920 --> 00:35:06,500
+mas acredito que agora já tá todo mundo na mesma
+
+630
+00:35:06,500 --> 00:35:07,220
+página aí
+
+631
+00:35:07,220 --> 00:35:10,720
+então é isso, obrigado aí, obrigado, valeu
+
+632
+00:35:10,720 --> 00:35:11,000
+falou
+
+633
+00:35:13,360 --> 00:35:15,140
+Falou pessoal, bom trabalho, tchau, tchau.
+
+634
+00:35:43,360 --> 00:36:13,340
+Legenda Adriana Zanotto
+
+635
+00:36:13,360 --> 00:36:16,940
+café aqui
+
+636
+00:36:16,940 --> 00:36:20,920
+aí o Luiz falou de subir o subsite
+
+637
+00:36:20,920 --> 00:36:22,460
+pra cadastrar proposta
+
+638
+00:36:22,460 --> 00:36:24,000
+foi isso
+
+639
+00:36:40,000 --> 00:36:40,980
+fechou mano
+
+640
+00:36:40,980 --> 00:36:41,420
+é isso aí
+
+641
+00:36:41,420 --> 00:36:42,020
+então
+
+642
+00:36:42,020 --> 00:36:45,080
+todas essas rotinas aí, mano
+
+643
+00:36:45,080 --> 00:36:46,680
+tipo proposta consignado
+
+644
+00:36:46,680 --> 00:36:48,940
+proposta saque parcelado
+
+645
+00:36:48,940 --> 00:36:50,940
+até, ó, vai ali
+
+646
+00:36:50,940 --> 00:36:52,620
+no menu tabelas lá
+
+647
+00:36:52,620 --> 00:36:54,740
+pode mostrar
+
+648
+00:36:54,740 --> 00:36:57,260
+ó, tá vendo que tem uma barra dividida
+
+649
+00:36:57,260 --> 00:36:57,900
+aí bem no meio
+
+650
+00:36:57,900 --> 00:37:00,640
+essa barrinha
+
+651
+00:37:00,640 --> 00:37:02,620
+meio que assim, tudo que tá pra cima
+
+652
+00:37:02,620 --> 00:37:04,840
+são rotinas provenientes do
+
+653
+00:37:04,840 --> 00:37:06,400
+subset consignado, né
+
+654
+00:37:06,400 --> 00:37:08,000
+que como o Luiz falou
+
+655
+00:37:08,000 --> 00:37:10,520
+o chassi é só um esqueleto
+
+656
+00:37:10,520 --> 00:37:12,340
+Ele tem algumas rotinas base
+
+657
+00:37:12,340 --> 00:37:14,300
+Mas o que complementa
+
+658
+00:37:14,300 --> 00:37:16,640
+É o subset consignado
+
+659
+00:37:16,640 --> 00:37:18,380
+Então vamos lá
+
+660
+00:37:18,380 --> 00:37:20,020
+Vamos cadastrar
+
+661
+00:37:20,020 --> 00:37:23,080
+Acho que não sei se cadastrar proposta
+
+662
+00:37:23,080 --> 00:37:24,180
+Mas é a margem
+
+663
+00:37:24,180 --> 00:37:27,020
+Que vocês estavam configurando
+
+664
+00:37:27,020 --> 00:37:28,320
+Vamos lá então
+
+665
+00:37:28,320 --> 00:37:29,860
+No cadastro mesmo
+
+666
+00:37:29,860 --> 00:37:31,620
+Cadastro proposta consignado
+
+667
+00:37:31,620 --> 00:37:33,920
+Isso
+
+668
+00:37:33,920 --> 00:37:43,680
+de início ele demora um pouquinho
+
+669
+00:37:43,680 --> 00:37:45,780
+pra abrir, porque ele tá abrindo um outro site
+
+670
+00:37:45,780 --> 00:37:45,960
+né
+
+671
+00:37:45,960 --> 00:37:49,780
+...
+
+672
+00:38:03,920 --> 00:38:09,820
+Isso, isso
+
+673
+00:38:09,820 --> 00:38:12,400
+Então tipo assim, ah, se tiver o subset de cartão
+
+674
+00:38:12,400 --> 00:38:14,500
+Aí vai aparecer lá como vem o cartão
+
+675
+00:38:14,500 --> 00:38:16,180
+E outras rotinas também do
+
+676
+00:38:16,180 --> 00:38:17,780
+Do subset, mano
+
+677
+00:38:17,780 --> 00:38:20,380
+É isso aí
+
+678
+00:38:20,380 --> 00:38:21,700
+Vai colocar a origem 1
+
+679
+00:38:21,700 --> 00:38:23,780
+Que geralmente é a que a gente sempre tá usando
+
+680
+00:38:33,920 --> 00:39:03,900
+Legenda Adriana Zanotto
+
+681
+00:39:03,920 --> 00:39:14,520
+Espera ele abrir aí.
+
+682
+00:39:33,920 --> 00:40:03,900
+E aí
+
+683
+00:40:03,920 --> 00:40:12,540
+Não demora mesmo, mano
+
+684
+00:40:12,540 --> 00:40:14,400
+No começo, assim, porque tem muito campo
+
+685
+00:40:14,400 --> 00:40:15,480
+Abriu
+
+686
+00:40:15,480 --> 00:40:18,720
+Isso, pode pôr proposta nova
+
+687
+00:40:18,720 --> 00:40:21,980
+É privado
+
+688
+00:40:21,980 --> 00:40:24,040
+No caso, agora vai ser privado
+
+689
+00:40:24,040 --> 00:40:25,400
+Que a gente vai usar, isso
+
+690
+00:40:25,400 --> 00:40:30,200
+Aí, lembra daquele empregador
+
+691
+00:40:30,200 --> 00:40:31,320
+Que a gente vinculou
+
+692
+00:40:31,320 --> 00:40:33,520
+No modelo de averbação
+
+693
+00:40:33,520 --> 00:40:36,400
+Vai ser agora que a gente vai usar ele
+
+694
+00:40:36,400 --> 00:40:39,380
+Que é esse 32, 32, 33
+
+695
+00:40:39,380 --> 00:40:46,380
+Aí só selecionar
+
+696
+00:40:46,380 --> 00:40:47,140
+Nema regional
+
+697
+00:40:47,140 --> 00:40:49,360
+Acho que pode ser a primeira mesmo
+
+698
+00:40:49,360 --> 00:40:54,240
+Aí no CPF
+
+699
+00:40:54,240 --> 00:40:56,120
+Vai ser o CPF que vocês
+
+700
+00:40:56,120 --> 00:40:57,300
+Autorizaram o termo
+
+701
+00:41:03,520 --> 00:41:08,260
+Isso, vamos ver o que vai dar.
+
+702
+00:41:21,880 --> 00:41:25,920
+Ele vai fazer umas validações aí, né, pra ver se tá ok, que tudo certinho.
+
+703
+00:41:27,460 --> 00:41:31,040
+Se fosse um CPF com termo que não tivesse aprovado, mano,
+
+704
+00:41:31,040 --> 00:41:35,520
+Ele iria criticar na tela e aquele botão de autorização ia ficar habilitado, né?
+
+705
+00:41:36,620 --> 00:41:41,040
+Aí pode clicar nesse consultar vínculos empregatistas, vamos ver o que ele retorna.
+
+706
+00:41:50,980 --> 00:41:53,040
+Fechou, retornou sua matrícula.
+
+707
+00:41:53,900 --> 00:41:58,220
+Só explicando, esse consulta vínculos, mano, ele vai verificar,
+
+708
+00:41:58,220 --> 00:42:00,760
+ele vai retornar não só a matrícula do cara
+
+709
+00:42:00,760 --> 00:42:02,820
+como retornou ali, mas também
+
+710
+00:42:02,820 --> 00:42:04,200
+ele vai verificar se
+
+711
+00:42:04,200 --> 00:42:06,760
+para o
+
+712
+00:42:06,760 --> 00:42:08,780
+CPF que você informou, existe
+
+713
+00:42:08,780 --> 00:42:09,760
+alguma oferta
+
+714
+00:42:09,760 --> 00:42:12,520
+cadastrada contida na base
+
+715
+00:42:12,520 --> 00:42:14,180
+e se tiver
+
+716
+00:42:14,180 --> 00:42:16,600
+ele vai surgir um pop-up na tela
+
+717
+00:42:16,600 --> 00:42:18,820
+perguntando se você quer carregar os
+
+718
+00:42:18,820 --> 00:42:19,900
+dados da oferta
+
+719
+00:42:19,900 --> 00:42:21,860
+na proposta que você está
+
+720
+00:42:21,860 --> 00:42:23,560
+preenchendo o cenário
+
+721
+00:42:23,560 --> 00:42:26,620
+esse vai ser o ponto
+
+722
+00:42:26,620 --> 00:42:29,280
+E aí a gente vai clicar nesse consultor dados trabalhador
+
+723
+00:42:29,280 --> 00:42:39,460
+Dá um ok
+
+724
+00:42:39,460 --> 00:42:41,100
+Nessa crítica
+
+725
+00:42:41,100 --> 00:42:43,200
+Isso
+
+726
+00:42:43,200 --> 00:42:45,740
+Depois eu vou falar por isso que
+
+727
+00:42:45,740 --> 00:42:48,260
+Surgiu essa crítica aí
+
+728
+00:42:48,260 --> 00:42:50,400
+Mas a princípio foi, mano
+
+729
+00:42:50,400 --> 00:42:52,700
+Pode ver que a margem foi retornada
+
+730
+00:42:52,700 --> 00:42:53,680
+Ali como 7 mil
+
+731
+00:42:53,680 --> 00:42:55,840
+A data também
+
+732
+00:42:55,840 --> 00:42:57,700
+Então foi
+
+733
+00:42:57,700 --> 00:42:59,960
+Aconteceu conforme o Luiz explicou
+
+734
+00:42:59,960 --> 00:43:02,060
+Que ele bate lá na data prévia
+
+735
+00:43:02,060 --> 00:43:02,820
+No nosso caso
+
+736
+00:43:02,820 --> 00:43:06,300
+E vai verificar
+
+737
+00:43:06,300 --> 00:43:08,280
+Se lá está vinculado a matrícula
+
+738
+00:43:08,280 --> 00:43:10,120
+Com o CPF que você informou
+
+739
+00:43:10,120 --> 00:43:12,060
+E vai retornar os dados dele
+
+740
+00:43:12,060 --> 00:43:18,520
+Aí acho que seria basicamente isso
+
+741
+00:43:18,520 --> 00:43:19,000
+Mano
+
+742
+00:43:19,000 --> 00:43:21,760
+Depois teria que ver o que o Luiz vai querer
+
+743
+00:43:21,760 --> 00:43:24,240
+Tentar testar contigo
+
+744
+00:43:24,240 --> 00:43:25,580
+Mas aí a partir daí
+
+745
+00:43:25,580 --> 00:43:27,780
+dá pra já seguir com o cadastro
+
+746
+00:43:27,780 --> 00:43:28,700
+da proposta já.
+
+747
+00:43:34,240 --> 00:43:35,320
+Aí acho que seremos
+
+748
+00:43:35,320 --> 00:43:36,960
+esperar ele, mano.
+
+749
+00:43:44,940 --> 00:43:45,620
+É, mano,
+
+750
+00:43:45,740 --> 00:43:47,300
+é uma das mais, assim,
+
+751
+00:43:47,380 --> 00:43:49,300
+a primeira barreira de toda a verbatória.
+
+752
+00:43:49,320 --> 00:43:51,200
+Na parte de averbação, deixa eu ver aqui,
+
+753
+00:43:51,320 --> 00:43:53,560
+você pode ver que tem excluir averbação,
+
+754
+00:43:53,560 --> 00:43:56,460
+inclui, geralmente é incluir
+
+755
+00:43:56,460 --> 00:43:58,780
+deixa eu ver aqui, incluir ctps
+
+756
+00:43:58,780 --> 00:44:04,360
+é, pode
+
+757
+00:44:04,360 --> 00:44:05,500
+descendo, deixa eu ver
+
+758
+00:44:05,500 --> 00:44:08,460
+escolhi a verbação, acho que acabou aí, né
+
+759
+00:44:08,460 --> 00:44:09,860
+sobe até o topo de novo
+
+760
+00:44:09,860 --> 00:44:11,540
+deixa eu ver só
+
+761
+00:44:11,540 --> 00:44:14,240
+ali ó, é a verbação
+
+762
+00:44:14,240 --> 00:44:15,220
+consignado
+
+763
+00:44:15,220 --> 00:44:18,400
+isso
+
+764
+00:44:18,400 --> 00:44:20,240
+aí vai ter dois retornos
+
+765
+00:44:20,240 --> 00:44:22,400
+ó, pode ver que esse aí tá com o retorno
+
+766
+00:44:22,400 --> 00:44:24,560
+de AOCPF não encontrada
+
+767
+00:44:24,560 --> 00:44:25,120
+na base.
+
+768
+00:44:26,280 --> 00:44:27,760
+Então, a gente vai ter que alterar.
+
+769
+00:44:28,120 --> 00:44:30,200
+Aí pode voltar lá no
+
+770
+00:44:30,200 --> 00:44:31,920
+diretório onde está o stub.
+
+771
+00:44:32,760 --> 00:44:33,980
+Entra nesse arquivo,
+
+772
+00:44:34,200 --> 00:44:34,520
+leia-me.
+
+773
+00:44:39,540 --> 00:44:40,140
+Isso.
+
+774
+00:44:40,720 --> 00:44:42,380
+E pode copiar esse retorno
+
+775
+00:44:42,380 --> 00:44:44,600
+de sucesso aí, ó. Número do contrato,
+
+776
+00:44:44,720 --> 00:44:45,500
+teste RET,
+
+777
+00:44:46,200 --> 00:44:48,360
+BD, inclusão efetuada com
+
+778
+00:44:48,360 --> 00:44:48,900
+sucesso.
+
+779
+00:44:51,440 --> 00:44:52,000
+Isso.
+
+780
+00:44:52,400 --> 00:44:54,980
+É
+
+781
+00:44:54,980 --> 00:44:57,980
+Ele substitui
+
+782
+00:44:57,980 --> 00:44:59,420
+No arquivo de retorno lá
+
+783
+00:44:59,420 --> 00:45:01,760
+Pode apagar todo esse
+
+784
+00:45:01,760 --> 00:45:03,980
+Tudo isso
+
+785
+00:45:03,980 --> 00:45:04,780
+Aí foi
+
+786
+00:45:04,780 --> 00:45:07,500
+Só salvar
+
+787
+00:45:07,500 --> 00:45:11,340
+Fechou, aí
+
+788
+00:45:11,340 --> 00:45:13,520
+Só isso, mano, aí a gente já pode
+
+789
+00:45:13,520 --> 00:45:16,040
+Tentar fazer a verbação
+
+790
+00:45:16,040 --> 00:45:17,520
+Certinho pra ver o que que dá
+
+791
+00:45:17,520 --> 00:45:19,920
+Então vamos dar um finaliza
+
+792
+00:45:19,920 --> 00:45:27,260
+É, só tem um ponto, mano
+
+793
+00:45:27,260 --> 00:45:28,960
+Que eu lembrei aqui
+
+794
+00:45:28,960 --> 00:45:31,180
+É, você tá rodando os seus plugins
+
+795
+00:45:31,180 --> 00:45:32,140
+Na sua base, né
+
+796
+00:45:32,140 --> 00:45:35,500
+Tá, abre
+
+797
+00:45:35,500 --> 00:45:41,920
+Ah, tá, fechou
+
+798
+00:45:41,920 --> 00:45:44,940
+Então, aí a gente vai precisar rodar os plugins na base
+
+799
+00:45:44,940 --> 00:45:46,580
+Não só o plugin
+
+800
+00:45:46,580 --> 00:45:48,880
+Isso mesmo, não só o plugin de CPD
+
+801
+00:45:48,880 --> 00:45:50,840
+mas esses de averbação também.
+
+802
+00:45:55,680 --> 00:45:56,960
+Isso, pode abrir
+
+803
+00:45:56,960 --> 00:45:57,460
+normal.
+
+804
+00:46:14,360 --> 00:46:16,980
+Ah, já estão sendo executados aí, beleza.
+
+805
+00:46:16,980 --> 00:46:18,780
+Aí é só conferir, aí tem um
+
+806
+00:46:18,780 --> 00:46:21,640
+O SRV CPD ali nesse acionador.
+
+807
+00:46:22,320 --> 00:46:23,700
+E ali a gente pode ver que ele, ó,
+
+808
+00:46:23,700 --> 00:46:25,500
+o SRV é a verbação padrão,
+
+809
+00:46:25,700 --> 00:46:27,100
+o plugin de averbação tá rodando.
+
+810
+00:46:27,320 --> 00:46:28,280
+Pode descer um pouco.
+
+811
+00:46:29,920 --> 00:46:30,780
+O scroll.
+
+812
+00:46:32,280 --> 00:46:33,040
+Isso, tá aí, ó.
+
+813
+00:46:33,440 --> 00:46:35,780
+SRV é a verbação, os serviços de averbação
+
+814
+00:46:35,780 --> 00:46:36,340
+estão ok.
+
+815
+00:46:38,220 --> 00:46:39,440
+E tem aquele
+
+816
+00:46:39,440 --> 00:46:41,520
+averbação proposta .exe
+
+817
+00:46:41,520 --> 00:46:43,620
+ali embaixo também, que é o que a gente
+
+818
+00:46:43,620 --> 00:46:44,940
+vai precisar. São
+
+819
+00:46:44,940 --> 00:46:47,300
+basicamente dois plugins de averbação
+
+820
+00:46:47,300 --> 00:46:48,900
+que a gente sempre roda
+
+821
+00:46:48,900 --> 00:46:51,920
+mais o da averbadora correspondente
+
+822
+00:46:51,920 --> 00:46:52,820
+que a gente está usando
+
+823
+00:46:52,820 --> 00:46:54,480
+então
+
+824
+00:46:54,480 --> 00:46:57,620
+está ok, pode fazer a chamada
+
+825
+00:46:57,620 --> 00:46:58,620
+lá do serviço
+
+826
+00:46:58,620 --> 00:47:01,780
+e tem uma query aqui que eu vou te
+
+827
+00:47:01,780 --> 00:47:03,560
+passar que ajuda a gente a ver
+
+828
+00:47:03,560 --> 00:47:04,760
+o processamento
+
+829
+00:47:04,760 --> 00:47:11,860
+da mesma forma como você
+
+830
+00:47:11,860 --> 00:47:13,700
+acionou a averbação online
+
+831
+00:47:13,700 --> 00:47:16,240
+da outra vez lá pelo autorizador
+
+832
+00:47:16,240 --> 00:47:17,960
+E clicando em afirmação online
+
+833
+00:47:17,960 --> 00:47:20,900
+Deixa eu ver como é que está aí
+
+834
+00:47:20,900 --> 00:47:24,880
+Isso, pode dar um pesquisar
+
+835
+00:47:24,880 --> 00:47:30,400
+Aí, vai em validação
+
+836
+00:47:30,400 --> 00:47:32,040
+Vamos avançando na esteira
+
+837
+00:47:32,040 --> 00:47:38,320
+Deixa eu pegar aqui a
+
+838
+00:47:38,320 --> 00:47:41,700
+A query, vou te passar
+
+839
+00:47:41,700 --> 00:47:54,120
+isso
+
+840
+00:47:54,120 --> 00:47:56,280
+pode chamar o serviço
+
+841
+00:47:56,280 --> 00:47:58,540
+não mexe mais nada por enquanto
+
+842
+00:47:58,540 --> 00:48:00,180
+a gente vai consultar
+
+843
+00:48:00,180 --> 00:48:02,500
+via essa query aqui
+
+844
+00:48:02,500 --> 00:48:04,300
+que eu já te passei
+
+845
+00:48:04,300 --> 00:48:04,960
+no grupo
+
+846
+00:48:11,700 --> 00:48:32,000
+Se pode abrir o SQL.
+
+847
+00:48:41,700 --> 00:48:59,680
+Isso, jogou
+
+848
+00:48:59,680 --> 00:49:01,940
+Então esses aí são duas queries
+
+849
+00:49:01,940 --> 00:49:03,480
+Isso aqui, calma aí
+
+850
+00:49:03,480 --> 00:49:05,880
+A gente vai fazer a consulta
+
+851
+00:49:05,880 --> 00:49:08,100
+Primeiro ali
+
+852
+00:49:08,100 --> 00:49:10,120
+Tá vendo que tem um CSNR próprio
+
+853
+00:49:10,120 --> 00:49:11,080
+No campo where
+
+854
+00:49:11,080 --> 00:49:16,420
+A gente vai colocar o número da proposta que a gente cadastrou e chamou a verbação.
+
+855
+00:49:20,680 --> 00:49:21,900
+Isso aí, isso.
+
+856
+00:49:28,660 --> 00:49:32,000
+Não tem nenhum registro, vamos voltar lá no autorizador então.
+
+857
+00:49:34,400 --> 00:49:37,840
+Pode chamar o processo aí, a verbação lá.
+
+858
+00:49:38,420 --> 00:49:38,980
+Isso.
+
+859
+00:49:41,080 --> 00:49:46,060
+Aí vamos lá agora no SQL
+
+860
+00:49:46,060 --> 00:49:50,080
+Não precisa clicar ali na guarda
+
+861
+00:49:50,080 --> 00:49:51,400
+Aí pode fazer um
+
+862
+00:49:51,400 --> 00:49:54,080
+Uma consulta
+
+863
+00:49:54,880 --> 00:49:58,360
+Isso
+
+864
+00:49:58,360 --> 00:50:04,940
+Tá, ele tá rodando
+
+865
+00:50:04,940 --> 00:50:07,860
+Pode ir consultando
+
+866
+00:50:07,860 --> 00:50:10,260
+Aí ele, a gente ia acompanhando, né
+
+867
+00:50:10,260 --> 00:50:12,360
+Então, ele chama primeiro o plugin.
+
+868
+00:50:13,640 --> 00:50:15,060
+Não, é o de cima mesmo, mano.
+
+869
+00:50:15,120 --> 00:50:16,040
+O de baixo é...
+
+870
+00:50:16,040 --> 00:50:16,720
+Depois eu explico.
+
+871
+00:50:16,880 --> 00:50:18,260
+É o primeiro de cima.
+
+872
+00:50:20,580 --> 00:50:21,080
+Isso aí.
+
+873
+00:50:21,160 --> 00:50:22,220
+Ele chama primeiro...
+
+874
+00:50:22,220 --> 00:50:24,000
+Esse sempre vai ser o fluxo, mano.
+
+875
+00:50:24,060 --> 00:50:26,320
+Ele vai chamar primeiro a verbação proposta.
+
+876
+00:50:28,140 --> 00:50:30,580
+Com C, quer dizer que ele rodou com sucesso.
+
+877
+00:50:30,720 --> 00:50:31,880
+Com T, é trabalhando.
+
+878
+00:50:32,020 --> 00:50:33,020
+E P, é pendente.
+
+879
+00:50:33,880 --> 00:50:36,060
+Pode ir colocando executar ali.
+
+880
+00:50:36,060 --> 00:50:41,200
+isso, pode ir apertando
+
+881
+00:50:41,200 --> 00:50:42,800
+e aí foi, rodou um
+
+882
+00:50:42,800 --> 00:50:44,900
+rodou os dois, quer dizer, agora ele vai rodar
+
+883
+00:50:44,900 --> 00:50:46,360
+o plugin do CPD
+
+884
+00:50:46,360 --> 00:50:47,800
+por enquanto tá parado
+
+885
+00:50:47,800 --> 00:50:51,000
+aí é o plugin, tipo assim
+
+886
+00:50:51,000 --> 00:50:52,620
+os dois plugins de averbação
+
+887
+00:50:52,620 --> 00:50:54,780
+ele meio que vão formando ali a requisição
+
+888
+00:50:54,780 --> 00:50:56,140
+e aí quem vai dar o
+
+889
+00:50:56,140 --> 00:50:58,640
+ok que conseguiu averbar
+
+890
+00:50:58,640 --> 00:51:00,380
+vai ser o plugin do CPD
+
+891
+00:51:00,380 --> 00:51:05,500
+vamos ver se ele vai rodar
+
+892
+00:51:05,500 --> 00:51:14,420
+Parado
+
+893
+00:51:14,420 --> 00:51:15,880
+Deixa eu ver, tá agendado pras 11
+
+894
+00:51:15,880 --> 00:51:17,900
+É, 11h54, 36
+
+895
+00:51:17,900 --> 00:51:19,840
+Vê se ele roda
+
+896
+00:51:19,840 --> 00:51:26,400
+Ó, trabalhando, beleza
+
+897
+00:51:26,400 --> 00:51:30,360
+Ó, finalizado, ok
+
+898
+00:51:30,360 --> 00:51:32,400
+Aí, mano, ele vai chamar um plugin
+
+899
+00:51:32,400 --> 00:51:34,000
+Que é o de esteira do autorizador
+
+900
+00:51:34,000 --> 00:51:36,540
+grande chance de lhe dar erro, tá?
+
+901
+00:51:36,780 --> 00:51:38,020
+Eu vou explicar o porquê.
+
+902
+00:51:39,860 --> 00:51:41,560
+Ele vai demorar um pouco.
+
+903
+00:51:42,180 --> 00:51:43,100
+Mas aí, por exemplo,
+
+904
+00:51:43,860 --> 00:51:45,720
+deu um finalizado ok,
+
+905
+00:51:46,000 --> 00:51:47,200
+só que a gente não sabe
+
+906
+00:51:47,200 --> 00:51:50,180
+que resultado que deu na verbação.
+
+907
+00:51:50,940 --> 00:51:52,380
+E é aí que a gente consulta
+
+908
+00:51:52,380 --> 00:51:53,580
+aquela tabela de baixo
+
+909
+00:51:53,580 --> 00:51:55,400
+na base do DIGCDC,
+
+910
+00:51:55,400 --> 00:51:57,320
+que é a COINC.
+
+911
+00:51:57,660 --> 00:51:59,760
+Pode consultar
+
+912
+00:51:59,760 --> 00:52:01,520
+esse select de baixo.
+
+913
+00:52:04,000 --> 00:52:08,020
+Então, essa tabela mostra os resultados da averbação.
+
+914
+00:52:08,240 --> 00:52:14,760
+Então, tem esses dois campos, que é o OETP-CIT e OETP-COM.
+
+915
+00:52:15,420 --> 00:52:18,220
+Então, é tipo a situação e outro é o tipo de comando, né?
+
+916
+00:52:18,780 --> 00:52:23,160
+Quando o comando é I, quer dizer que é um comando de inclusão de averbação.
+
+917
+00:52:23,660 --> 00:52:26,540
+E o C quer dizer que ele foi concluído com sucesso.
+
+918
+00:52:26,540 --> 00:52:28,080
+então
+
+919
+00:52:28,080 --> 00:52:30,300
+eu não sei
+
+920
+00:52:30,300 --> 00:52:32,500
+que tipo de teste você por exemplo
+
+921
+00:52:32,500 --> 00:52:33,900
+vai mexer lá na mesa do
+
+922
+00:52:33,900 --> 00:52:36,440
+C6 ou no decorrer
+
+923
+00:52:36,440 --> 00:52:38,540
+da sua jornada aqui na função
+
+924
+00:52:38,540 --> 00:52:40,120
+vamos dizer assim, mas sempre quando
+
+925
+00:52:40,120 --> 00:52:41,760
+precisar fazer uma averbação
+
+926
+00:52:41,760 --> 00:52:44,280
+e consultar na base pra ver se
+
+927
+00:52:44,280 --> 00:52:46,480
+deu certo, sempre vai ser nessa tabela
+
+928
+00:52:46,480 --> 00:52:47,460
+que você vai olhar
+
+929
+00:52:47,460 --> 00:52:50,460
+pra ver se deu bom os status
+
+930
+00:52:50,460 --> 00:52:52,120
+final da averbação
+
+931
+00:52:52,120 --> 00:52:54,580
+tem uma rotina
+
+932
+00:52:54,580 --> 00:52:55,040
+também
+
+933
+00:52:55,040 --> 00:52:57,640
+aí é lá no web empregador
+
+934
+00:52:57,640 --> 00:52:59,380
+aí eu ia pedir para você abrir
+
+935
+00:52:59,380 --> 00:53:01,420
+o web empregador aí também
+
+936
+00:53:01,420 --> 00:53:05,380
+aí é bom que tem essa rotina
+
+937
+00:53:05,380 --> 00:53:07,740
+quando a gente tem que evidenciar
+
+938
+00:53:07,740 --> 00:53:09,440
+para o cliente que a verbação
+
+939
+00:53:09,440 --> 00:53:11,820
+deu sucesso e aí a gente usa essa rotina
+
+940
+00:53:11,820 --> 00:53:13,500
+para evitar de ficar usando a base
+
+941
+00:53:13,500 --> 00:53:16,080
+aí a verbação online
+
+942
+00:53:16,080 --> 00:53:17,560
+e ali a consulta
+
+943
+00:53:17,560 --> 00:53:19,620
+de movimentações por contrato
+
+944
+00:53:19,620 --> 00:53:23,540
+Isso
+
+945
+00:53:23,540 --> 00:53:26,380
+Vai demorar um pouco também para abrir
+
+946
+00:53:26,380 --> 00:53:28,460
+Nesse meio tempo
+
+947
+00:53:28,460 --> 00:53:30,020
+Vamos voltar lá na base
+
+948
+00:53:30,020 --> 00:53:32,120
+E copiar o número do contrato
+
+949
+00:53:32,120 --> 00:53:33,020
+Da proposta
+
+950
+00:53:33,020 --> 00:53:34,740
+Que seria a operação
+
+951
+00:53:34,740 --> 00:53:37,900
+Já está aí
+
+952
+00:53:37,900 --> 00:53:38,960
+Na CEMP
+
+953
+00:53:38,960 --> 00:53:42,140
+Pode ver que a gente filtrou pelo OENR
+
+954
+00:53:42,140 --> 00:53:42,600
+Prop
+
+955
+00:53:42,600 --> 00:53:46,440
+Só que o primeiro campo é o OENR
+
+956
+00:53:46,440 --> 00:53:46,900
+Oper
+
+957
+00:53:46,900 --> 00:53:49,220
+E é esse aí que a gente vai copiar agora
+
+958
+00:53:49,220 --> 00:53:51,140
+Que é o número do contrato
+
+959
+00:53:51,140 --> 00:53:52,840
+Ou da operação
+
+960
+00:53:52,840 --> 00:53:57,520
+Isso, isso daí
+
+961
+00:53:57,520 --> 00:54:01,980
+Combinado
+
+962
+00:54:01,980 --> 00:54:05,400
+Fechou, vamos esperar abrir agora a rotina
+
+963
+00:54:05,400 --> 00:54:07,320
+Demorou um pouco
+
+964
+00:54:07,320 --> 00:54:09,120
+E nesse meio tempo também
+
+965
+00:54:09,120 --> 00:54:10,620
+Ele geralmente
+
+966
+00:54:10,620 --> 00:54:13,120
+Gera uma observação
+
+967
+00:54:13,120 --> 00:54:14,160
+Na proposta, né
+
+968
+00:54:14,160 --> 00:54:17,140
+Que aí a gente pode ver no autorizador
+
+969
+00:54:17,140 --> 00:54:18,760
+Enquanto abre, vamos lá
+
+970
+00:54:18,760 --> 00:54:41,920
+dá uma olhadinha, isso, clica ali, não, não, é ali mesmo, volta lá na esteira, é, vamos no consulta manual 1, isso, foi, pode informar o número da proposta seu aí,
+
+971
+00:54:41,920 --> 00:54:45,540
+foi, agora clica ali
+
+972
+00:54:45,540 --> 00:54:45,940
+no
+
+973
+00:54:45,940 --> 00:54:48,700
+clica ali no lib
+
+974
+00:54:48,700 --> 00:54:51,680
+que aí a gente vai abrir o grid de observação
+
+975
+00:54:51,680 --> 00:54:55,780
+nesse é o grid
+
+976
+00:54:55,780 --> 00:54:57,620
+que ele registra
+
+977
+00:54:57,620 --> 00:54:59,400
+as observações dos processos
+
+978
+00:54:59,400 --> 00:55:00,580
+que a proposta passou
+
+979
+00:55:00,580 --> 00:55:03,620
+e lá embaixo provavelmente deve ter algum
+
+980
+00:55:03,620 --> 00:55:05,320
+aí, esse aí mesmo
+
+981
+00:55:05,320 --> 00:55:09,300
+confirmação de averbação
+
+982
+00:55:09,300 --> 00:55:11,420
+só a mensagem ali
+
+983
+00:55:11,420 --> 00:55:13,420
+que não registrou certinho, eu acho que não
+
+984
+00:55:13,420 --> 00:55:15,380
+é aquele retorno que a gente viu
+
+985
+00:55:15,380 --> 00:55:17,720
+mas depois a gente dá uma olhadinha
+
+986
+00:55:17,720 --> 00:55:19,380
+mas aí ele deu
+
+987
+00:55:19,380 --> 00:55:21,040
+ele averbou com sucesso
+
+988
+00:55:21,040 --> 00:55:25,400
+então quando a gente passa
+
+989
+00:55:25,400 --> 00:55:27,160
+pela averbação, só recapitulando
+
+990
+00:55:27,160 --> 00:55:29,100
+os plugins vão rodar naquela base
+
+991
+00:55:29,100 --> 00:55:31,000
+que é
+
+992
+00:55:31,000 --> 00:55:32,840
+a base do DIG monitor
+
+993
+00:55:32,840 --> 00:55:35,140
+a tabela é consult
+
+994
+00:55:35,140 --> 00:55:37,420
+que a gente verifica os processos
+
+995
+00:55:38,160 --> 00:55:39,560
+depois quando a verba
+
+996
+00:55:39,560 --> 00:55:41,460
+é a COAMP, que é o segundo
+
+997
+00:55:41,460 --> 00:55:42,740
+o SELECT lá.
+
+998
+00:55:43,820 --> 00:55:45,520
+E aí, pra gente ver
+
+999
+00:55:45,520 --> 00:55:47,420
+se averbou, tem a tabela,
+
+1000
+00:55:47,660 --> 00:55:49,700
+tem esses status e tem a rotina
+
+1001
+00:55:49,700 --> 00:55:51,580
+lá no empregador, que eu acho que já abriu.
+
+1002
+00:55:54,260 --> 00:55:55,380
+Então, vamos lá.
+
+1003
+00:55:55,580 --> 00:55:57,380
+Pode ir lá pro empregador.
+
+1004
+00:55:58,440 --> 00:55:58,680
+Isso.
+
+1005
+00:55:59,760 --> 00:56:01,600
+A gente seleciona aí a empresa
+
+1006
+00:56:01,600 --> 00:56:03,740
+averbadora, que aí é o
+
+1007
+00:56:03,740 --> 00:56:05,740
+E-Consignado Trabalhador,
+
+1008
+00:56:05,740 --> 00:56:06,540
+se não me engano.
+
+1009
+00:56:06,540 --> 00:56:09,540
+não, não, não, esse aí é o E-Consign
+
+1010
+00:56:09,540 --> 00:56:10,500
+é ali embaixo
+
+1011
+00:56:10,500 --> 00:56:13,020
+E-Consignado Trabalhador
+
+1012
+00:56:13,020 --> 00:56:13,780
+foi
+
+1013
+00:56:13,780 --> 00:56:17,440
+a data às vezes fica diferente, então pode pôr a data final
+
+1014
+00:56:17,440 --> 00:56:18,420
+para o dia 19
+
+1015
+00:56:18,420 --> 00:56:21,480
+e o contrato é o número
+
+1016
+00:56:21,480 --> 00:56:23,180
+do contrato que a gente copiou lá
+
+1017
+00:56:23,180 --> 00:56:27,120
+isso, então pesquisar
+
+1018
+00:56:30,800 --> 00:56:31,760
+aí fica aí
+
+1019
+00:56:31,760 --> 00:56:33,760
+e é por aí que a gente evidencia
+
+1020
+00:56:33,760 --> 00:56:35,340
+aí se você for expandindo
+
+1021
+00:56:35,340 --> 00:56:37,620
+ele vai dar pra ver as chamadas
+
+1022
+00:56:37,620 --> 00:56:38,920
+e os retornos que teve
+
+1023
+00:56:38,920 --> 00:56:41,420
+então ele mostra
+
+1024
+00:56:41,420 --> 00:56:42,940
+os valores averbados
+
+1025
+00:56:42,940 --> 00:56:44,320
+e aqui que deu sucesso
+
+1026
+00:56:44,320 --> 00:56:46,380
+no caso
+
+1027
+00:56:46,380 --> 00:56:48,600
+ele deu BD string
+
+1028
+00:56:48,600 --> 00:56:50,540
+vamos no estabilar de novo
+
+1029
+00:56:50,540 --> 00:56:53,220
+a gente tinha alterado
+
+1030
+00:56:53,220 --> 00:56:55,240
+o retorno
+
+1031
+00:56:55,240 --> 00:56:57,500
+do averbação consignado
+
+1032
+00:56:57,500 --> 00:56:59,340
+mas eu acho que não era aquele
+
+1033
+00:56:59,340 --> 00:57:01,220
+acho que eu confundi
+
+1034
+00:57:01,220 --> 00:57:02,040
+mas vamos ver
+
+1035
+00:57:02,040 --> 00:57:04,100
+averbação consignado
+
+1036
+00:57:04,100 --> 00:57:06,700
+pode abrir o arquivo de retorno
+
+1037
+00:57:06,700 --> 00:57:09,120
+não é esse porque a mensagem
+
+1038
+00:57:09,120 --> 00:57:11,420
+não registrou com sucesso
+
+1039
+00:57:11,420 --> 00:57:13,080
+ela ficou como bd string
+
+1040
+00:57:13,080 --> 00:57:13,820
+lá no coisa
+
+1041
+00:57:13,820 --> 00:57:16,520
+pode fechar esse leme
+
+1042
+00:57:16,520 --> 00:57:18,220
+o leme a gente só usou pra
+
+1043
+00:57:18,220 --> 00:57:20,720
+vamos voltar uma pasta
+
+1044
+00:57:20,720 --> 00:57:21,140
+isso
+
+1045
+00:57:21,140 --> 00:57:24,640
+deixa eu lembrar qual que era aqui
+
+1046
+00:57:24,640 --> 00:57:28,680
+consulta empréstimo
+
+1047
+00:57:28,680 --> 00:57:29,380
+legado
+
+1048
+00:57:29,380 --> 00:57:32,860
+desce um pouco
+
+1049
+00:57:32,860 --> 00:57:33,420
+por favor
+
+1050
+00:57:33,420 --> 00:57:37,280
+ali, acho que é ali
+
+1051
+00:57:37,280 --> 00:57:39,560
+averbar, consiga e trabalhador
+
+1052
+00:57:39,560 --> 00:57:43,340
+vai na pasta retorno
+
+1053
+00:57:43,340 --> 00:57:44,920
+é aí mesmo
+
+1054
+00:57:44,920 --> 00:57:47,540
+a gente deu sorte que ele tava
+
+1055
+00:57:47,540 --> 00:57:49,180
+com o retorno de sucesso já
+
+1056
+00:57:49,180 --> 00:57:55,540
+aí, assim, pra ficar
+
+1057
+00:57:55,540 --> 00:57:57,240
+bonitinho, a gente pegaria
+
+1058
+00:57:57,240 --> 00:57:59,600
+aquela mensagem de sucesso e colocaria
+
+1059
+00:57:59,600 --> 00:58:01,620
+aí onde tá essa mensagem string
+
+1060
+00:58:01,620 --> 00:58:03,640
+foi por isso que ele
+
+1061
+00:58:03,640 --> 00:58:05,520
+que ele retornou
+
+1062
+00:58:05,520 --> 00:58:06,820
+daquele jeito lá
+
+1063
+00:58:06,820 --> 00:58:09,600
+mas assim, a verbação
+
+1064
+00:58:09,600 --> 00:58:10,740
+deu bom, então
+
+1065
+00:58:10,740 --> 00:58:13,620
+a gente pode voltar agora lá no
+
+1066
+00:58:13,620 --> 00:58:15,100
+no autorizador
+
+1067
+00:58:15,100 --> 00:58:19,460
+o Gustavo tá mandando mensagem
+
+1068
+00:58:19,460 --> 00:58:19,980
+se quiser
+
+1069
+00:58:19,980 --> 00:58:22,240
+isso
+
+1070
+00:58:22,240 --> 00:58:24,800
+pode ler de boa
+
+1071
+00:58:31,620 --> 00:59:01,600
+E aí
+
+1072
+00:59:01,620 --> 00:59:16,540
+Boa
+
+1073
+00:59:16,540 --> 00:59:19,240
+aí é isso
+
+1074
+00:59:19,240 --> 00:59:21,640
+acho que a gente já pode voltar lá no autorizador
+
+1075
+00:59:30,840 --> 00:59:31,360
+aí
+
+1076
+00:59:31,360 --> 00:59:33,080
+Até essa parte da verbação.
+
+1077
+00:59:33,240 --> 00:59:35,000
+Pode permanecer nessa tela, mano.
+
+1078
+00:59:35,080 --> 00:59:36,920
+Aí até essa parte tá ok assim.
+
+1079
+00:59:59,580 --> 01:00:00,660
+Fechou, mano. Beleza.
+
+1080
+01:00:01,360 --> 01:00:05,580
+Beleza, é, nesse caso
+
+1081
+01:00:05,580 --> 01:00:07,780
+aqui do consignado privado, mano
+
+1082
+01:00:07,780 --> 01:00:09,880
+como eu falei, eu acabei confundindo
+
+1083
+01:00:09,880 --> 01:00:11,860
+o retorno que o
+
+1084
+01:00:11,860 --> 01:00:13,820
+sistema olha pra falar se foi averbado
+
+1085
+01:00:13,820 --> 01:00:15,880
+ou não, né, que no caso
+
+1086
+01:00:15,880 --> 01:00:16,920
+é esse averbar
+
+1087
+01:00:16,920 --> 01:00:19,900
+consignado trabalhador, se eu não me engano
+
+1088
+01:00:19,900 --> 01:00:21,280
+e não é o averbação
+
+1089
+01:00:21,280 --> 01:00:22,760
+averbar
+
+1090
+01:00:22,760 --> 01:00:26,040
+averbar pra conseguir empréstimo
+
+1091
+01:00:26,040 --> 01:00:28,020
+alguma coisa assim, né, tem essa diferença
+
+1092
+01:00:28,020 --> 01:00:29,580
+né, e aí cada
+
+1093
+01:00:29,580 --> 01:00:31,440
+a verbadora vai ter o seu retorno
+
+1094
+01:00:31,440 --> 01:00:33,460
+certinho por parte lá da
+
+1095
+01:00:33,460 --> 01:00:35,480
+do stub, né
+
+1096
+01:00:35,480 --> 01:00:37,420
+então, aí
+
+1097
+01:00:37,420 --> 01:00:39,340
+assim, depois você pega o jeito, mano
+
+1098
+01:00:39,340 --> 01:00:41,440
+é um negócio de tentativa e erro às vezes
+
+1099
+01:00:41,440 --> 01:00:43,220
+e decorar, você vê que eu acabei
+
+1100
+01:00:43,220 --> 01:00:45,400
+esquecendo também, mas é um
+
+1101
+01:00:45,400 --> 01:00:47,580
+fato que a gente já conseguiu, né
+
+1102
+01:00:47,580 --> 01:00:51,220
+e aí, mano
+
+1103
+01:00:51,220 --> 01:00:53,960
+só pra gente continuar, né
+
+1104
+01:00:53,960 --> 01:00:55,500
+vamos voltar lá na
+
+1105
+01:00:55,500 --> 01:00:57,120
+base e a gente
+
+1106
+01:00:57,120 --> 01:00:59,400
+ficou pendente um plugin
+
+1107
+01:00:59,400 --> 01:01:00,780
+de esteira lá pra rodar, né?
+
+1108
+01:01:01,500 --> 01:01:03,440
+Vamos ver o que deu a requisição dele.
+
+1109
+01:01:07,680 --> 01:01:09,780
+Na base, no SQL.
+
+1110
+01:01:12,560 --> 01:01:13,420
+Isso, pode
+
+1111
+01:01:13,420 --> 01:01:15,840
+consultar a primeira consulta
+
+1112
+01:01:15,840 --> 01:01:17,340
+aí, que é a do processamento
+
+1113
+01:01:17,340 --> 01:01:19,480
+dos plugins, isso. Então, pode
+
+1114
+01:01:19,480 --> 01:01:21,360
+ver que ele deu erro
+
+1115
+01:01:21,360 --> 01:01:23,640
+nesse plugin esteira autorizador.
+
+1116
+01:01:24,640 --> 01:01:25,660
+E o que que ele dá?
+
+1117
+01:01:26,200 --> 01:01:27,120
+O que que faz esse
+
+1118
+01:01:27,120 --> 01:01:28,820
+plugin esteira autorizador, mano?
+
+1119
+01:01:29,400 --> 01:01:35,480
+Então, voltando para o acesso, a gente vê que os processos de averbação
+
+1120
+01:01:35,480 --> 01:01:43,380
+é o averbação online, aguarda a averbação e retorna a averbação lá no autorizador.
+
+1121
+01:01:44,280 --> 01:01:47,140
+Esse plugin de esteira, o que ele faz?
+
+1122
+01:01:47,320 --> 01:01:52,460
+Ele vai movimentar a proposta de forma automática na esteira
+
+1123
+01:01:52,460 --> 01:01:57,120
+e vai passar do aguarda a averbação para o retorno de forma automática.
+
+1124
+01:01:59,400 --> 01:02:07,180
+Mas assim, mano, pra fazer essa desgrama funcionar, às vezes é um parto, então a gente passa, às vezes, na mão mesmo, né?
+
+1125
+01:02:08,000 --> 01:02:10,220
+Porque ele tem um monte de configuração pra fazer.
+
+1126
+01:02:11,020 --> 01:02:13,880
+Então, voltando lá no autorizador, pode voltar pra lá.
+
+1127
+01:02:15,100 --> 01:02:19,280
+Então, ele iria movimentar, pode ficar aí, é isso.
+
+1128
+01:02:19,720 --> 01:02:26,540
+Ele vai movimentar a proposta e sair desse aguardo-averbação, mas como deu erro, a gente vai ter que mover ele na mão, né?
+
+1129
+01:02:26,540 --> 01:02:28,840
+Então pode clicar ali no
+
+1130
+01:02:28,840 --> 01:02:30,340
+Aguarda a verbação
+
+1131
+01:02:30,340 --> 01:02:37,380
+Aí ela vai pra um processo que é o retorno
+
+1132
+01:02:37,380 --> 01:02:38,280
+Pesquisa de novo
+
+1133
+01:02:38,280 --> 01:02:40,180
+Retorno de averbação
+
+1134
+01:02:40,180 --> 01:02:43,120
+Esse é o fluxo dos processos, mano
+
+1135
+01:02:43,120 --> 01:02:46,000
+Aí pode clicar no retorno
+
+1136
+01:02:46,000 --> 01:02:47,320
+Aí o retorno
+
+1137
+01:02:47,320 --> 01:02:49,980
+A gente move ele manualmente mesmo
+
+1138
+01:02:49,980 --> 01:02:52,280
+Isso
+
+1139
+01:02:52,280 --> 01:02:55,060
+E aí é a revesta online, mano
+
+1140
+01:02:55,060 --> 01:02:57,800
+aí é onde a nossa proposta
+
+1141
+01:02:57,800 --> 01:03:00,000
+ela vai deixar de ser
+
+1142
+01:03:00,000 --> 01:03:02,140
+uma proposta apenas e virar um contrato
+
+1143
+01:03:02,140 --> 01:03:03,560
+e ser efetivado
+
+1144
+01:03:03,560 --> 01:03:04,320
+geralmente
+
+1145
+01:03:04,320 --> 01:03:07,760
+claro que tem outros processos também
+
+1146
+01:03:07,760 --> 01:03:09,800
+mas no mundo real
+
+1147
+01:03:09,800 --> 01:03:11,820
+mas no nosso caso
+
+1148
+01:03:11,820 --> 01:03:12,740
+de testes aqui
+
+1149
+01:03:12,740 --> 01:03:15,760
+esse é o fluxo que a maioria faz
+
+1150
+01:03:15,760 --> 01:03:18,220
+então é
+
+1151
+01:03:18,220 --> 01:03:19,860
+cadastro de propostas
+
+1152
+01:03:19,860 --> 01:03:21,940
+análise de crédito, averbação
+
+1153
+01:03:21,940 --> 01:03:22,680
+e remessa online
+
+1154
+01:03:23,520 --> 01:03:25,040
+Então, pode chamar o processo.
+
+1155
+01:03:25,180 --> 01:03:27,160
+Vamos ver se ele vai gerar alguma crítica.
+
+1156
+01:03:33,680 --> 01:03:36,040
+Não, o remesso online mesmo, isso.
+
+1157
+01:03:39,000 --> 01:03:42,880
+Vamos ver se ele vai integrar a proposta ou vai criticar alguma coisa.
+
+1158
+01:03:52,680 --> 01:03:56,220
+Acho que foi
+
+1159
+01:03:56,220 --> 01:04:05,380
+Isso, o correto seria
+
+1160
+01:04:05,380 --> 01:04:08,340
+ter registrado
+
+1161
+01:04:08,340 --> 01:04:10,040
+uma mensagem bonitinha
+
+1162
+01:04:10,040 --> 01:04:12,000
+a proposta foi integrada com sucesso
+
+1163
+01:04:12,000 --> 01:04:14,040
+mas acho que a esteira não estava configurada
+
+1164
+01:04:22,680 --> 01:04:28,280
+Isso. Aí, para a gente ver se integrou, tem também outras formas, tá?
+
+1165
+01:04:28,380 --> 01:04:36,340
+A gente pode sair dessa rotina, vai ali em esteira, e aí vai ter ali, quer ver?
+
+1166
+01:04:37,760 --> 01:04:39,220
+Cadê a aprovação?
+
+1167
+01:04:40,180 --> 01:04:43,480
+Ali, aprovação, consulta, canceladas e integradas, isso.
+
+1168
+01:04:44,660 --> 01:04:45,420
+Aí mesmo.
+
+1169
+01:04:45,420 --> 01:04:53,660
+Eu acho que já é essa daí
+
+1170
+01:04:53,660 --> 01:04:54,620
+Primeira, né
+
+1171
+01:04:54,620 --> 01:04:59,360
+Ela consta ali com o status int
+
+1172
+01:04:59,360 --> 01:05:00,920
+Que é a amostra que está integrada
+
+1173
+01:05:00,920 --> 01:05:02,960
+Isso já é uma evidência, mano
+
+1174
+01:05:02,960 --> 01:05:03,560
+A outra
+
+1175
+01:05:03,560 --> 01:05:06,480
+A gente consegue ver na base, né
+
+1176
+01:05:06,480 --> 01:05:08,780
+Então, vamos lá na base
+
+1177
+01:05:08,780 --> 01:05:09,560
+Lá nas QL
+
+1178
+01:05:09,560 --> 01:05:15,160
+E pode fazer uma outra query
+
+1179
+01:05:15,160 --> 01:05:17,380
+e aí a gente vai consultar na tabela que chama
+
+1180
+01:05:17,380 --> 01:05:18,060
+C-Oper
+
+1181
+01:05:18,060 --> 01:05:20,900
+não, não, é outra query, eu digo
+
+1182
+01:05:20,900 --> 01:05:22,940
+debaixo dessa daí mesmo
+
+1183
+01:05:22,940 --> 01:05:24,200
+isso
+
+1184
+01:05:24,200 --> 01:05:27,060
+então aí pode pôr o select asterisco
+
+1185
+01:05:27,060 --> 01:05:28,240
+padrão
+
+1186
+01:05:28,240 --> 01:05:31,060
+aí a base da C-Oper é a
+
+1187
+01:05:31,060 --> 01:05:32,900
+digcdcmp também
+
+1188
+01:05:32,900 --> 01:05:37,720
+a mesma de cima
+
+1189
+01:05:37,720 --> 01:05:39,180
+digcdcmpr
+
+1190
+01:05:39,180 --> 01:05:41,080
+dois pontos C-Oper
+
+1191
+01:05:41,080 --> 01:05:44,680
+aí pode filtrar
+
+1192
+01:05:44,680 --> 01:05:45,580
+Colocar on-ware
+
+1193
+01:05:45,580 --> 01:05:50,020
+Coloca
+
+1194
+01:05:50,020 --> 01:05:50,880
+OP
+
+1195
+01:05:50,880 --> 01:05:52,560
+NR
+
+1196
+01:05:52,560 --> 01:05:53,280
+OPER
+
+1197
+01:05:53,280 --> 01:05:58,920
+Isso
+
+1198
+01:05:58,920 --> 01:06:00,300
+Isso, dá pra pôr
+
+1199
+01:06:00,300 --> 01:06:01,960
+Já o número da operação direto
+
+1200
+01:06:01,960 --> 01:06:04,140
+Pode consultar
+
+1201
+01:06:04,140 --> 01:06:07,680
+Isso aí
+
+1202
+01:06:07,680 --> 01:06:08,820
+Ela tá aí já na base
+
+1203
+01:06:08,820 --> 01:06:10,680
+Ela só aparece nessa base
+
+1204
+01:06:10,680 --> 01:06:13,540
+Quando a gente passa pela integração
+
+1205
+01:06:13,540 --> 01:06:16,100
+a remessa online, né, aliás
+
+1206
+01:06:16,100 --> 01:06:19,340
+isso, exatamente
+
+1207
+01:06:19,340 --> 01:06:21,680
+ou seja, tem duas tabelas
+
+1208
+01:06:21,680 --> 01:06:23,740
+que a gente meio que acompanha
+
+1209
+01:06:23,740 --> 01:06:25,660
+a proposta, que é a
+
+1210
+01:06:25,660 --> 01:06:27,800
+Cprop, que é da base
+
+1211
+01:06:27,800 --> 01:06:28,780
+do Digprop
+
+1212
+01:06:28,780 --> 01:06:30,960
+você pode até montar
+
+1213
+01:06:30,960 --> 01:06:32,940
+a query
+
+1214
+01:06:32,940 --> 01:06:36,040
+pra gente se familiarizando
+
+1215
+01:06:36,040 --> 01:06:37,860
+então pode montar
+
+1216
+01:06:37,860 --> 01:06:38,420
+uma outra
+
+1217
+01:06:38,420 --> 01:06:40,540
+isso
+
+1218
+01:06:40,540 --> 01:06:41,600
+é o mesmo
+
+1219
+01:06:41,600 --> 01:06:44,480
+só que aí é
+
+1220
+01:06:44,480 --> 01:06:45,420
+digprop imp
+
+1221
+01:06:45,420 --> 01:06:52,180
+isso, eu acho que é imp
+
+1222
+01:06:52,180 --> 01:06:53,800
+isso, com R no final
+
+1223
+01:06:53,800 --> 01:06:55,700
+dois pontos, cprop
+
+1224
+01:06:55,700 --> 01:06:59,880
+aí
+
+1225
+01:06:59,880 --> 01:07:00,600
+where
+
+1226
+01:07:00,600 --> 01:07:03,300
+ppnr prop
+
+1227
+01:07:03,300 --> 01:07:09,500
+e aí é o número da proposta mesmo
+
+1228
+01:07:09,500 --> 01:07:11,000
+isso
+
+1229
+01:07:11,000 --> 01:07:17,420
+boa, é isso aí
+
+1230
+01:07:17,420 --> 01:07:19,760
+pode ver que até ali ele gera
+
+1231
+01:07:19,760 --> 01:07:21,760
+o número da operação
+
+1232
+01:07:21,760 --> 01:07:23,320
+também, então
+
+1233
+01:07:23,320 --> 01:07:25,620
+quando a gente preenche o
+
+1234
+01:07:25,620 --> 01:07:28,100
+formulário e clica em gravar
+
+1235
+01:07:28,100 --> 01:07:29,260
+aí a proposta
+
+1236
+01:07:29,260 --> 01:07:31,840
+ela já vai passar a ser
+
+1237
+01:07:31,840 --> 01:07:33,380
+listada aí na Cprop
+
+1238
+01:07:33,380 --> 01:07:35,680
+e ela, quando a gente
+
+1239
+01:07:35,680 --> 01:07:37,860
+passa pela remessa, ela vai pra Cprop
+
+1240
+01:07:37,860 --> 01:07:40,400
+até aqui, tudo bem?
+
+1241
+01:07:44,020 --> 01:07:44,820
+Fechou, mano
+
+1242
+01:07:44,820 --> 01:07:46,360
+aí vai ter um
+
+1243
+01:07:46,360 --> 01:07:48,700
+depois quando você vai pegando mais o hábito
+
+1244
+01:07:48,700 --> 01:07:50,180
+de fazer as consultas
+
+1245
+01:07:50,180 --> 01:07:52,780
+ou talvez você já tenha percebido isso
+
+1246
+01:07:52,780 --> 01:07:55,000
+que os campos, tudo tem um padrão
+
+1247
+01:07:55,000 --> 01:07:56,820
+então, por exemplo, ali
+
+1248
+01:07:56,820 --> 01:07:59,220
+a gente consultou três tabelas diferentes
+
+1249
+01:07:59,220 --> 01:08:00,920
+em todas
+
+1250
+01:08:00,920 --> 01:08:02,500
+vamos pôr
+
+1251
+01:08:02,500 --> 01:08:04,480
+NRPROP, NRUOPER
+
+1252
+01:08:04,480 --> 01:08:06,780
+a outra NRPROP aqui embaixo também
+
+1253
+01:08:06,780 --> 01:08:09,640
+até aquela query ali de cima
+
+1254
+01:08:09,640 --> 01:08:11,480
+que é a que a gente consulta
+
+1255
+01:08:11,480 --> 01:08:13,480
+o processamento dos plugins, a gente está
+
+1256
+01:08:13,480 --> 01:08:15,280
+filtrando por uma NR
+
+1257
+01:08:15,280 --> 01:08:17,400
+prop também, a única coisa
+
+1258
+01:08:17,400 --> 01:08:19,160
+que muda são os prefixos
+
+1259
+01:08:19,160 --> 01:08:21,540
+que aí os prefixos
+
+1260
+01:08:21,540 --> 01:08:23,640
+acompanham de cada
+
+1261
+01:08:23,640 --> 01:08:24,220
+tabela
+
+1262
+01:08:24,220 --> 01:08:26,540
+por exemplo
+
+1263
+01:08:26,540 --> 01:08:28,960
+essa tabela E consult
+
+1264
+01:08:28,960 --> 01:08:31,600
+ela tem esse prefixo CS
+
+1265
+01:08:31,600 --> 01:08:33,600
+a
+
+1266
+01:08:33,600 --> 01:08:35,200
+COPER é OE
+
+1267
+01:08:35,200 --> 01:08:37,460
+a outra é OP, a outra é PP
+
+1268
+01:08:37,460 --> 01:08:38,540
+e assim vai
+
+1269
+01:08:38,540 --> 01:08:41,480
+é sempre a mesma coisa, mano, basicamente
+
+1270
+01:08:41,480 --> 01:08:46,020
+e aí você vai pegando os esqueminhas
+
+1271
+01:08:46,020 --> 01:08:47,560
+mas aí é isso
+
+1272
+01:08:47,560 --> 01:08:49,720
+aí integrou, aí já era
+
+1273
+01:08:49,720 --> 01:08:51,900
+geralmente o teste já finaliza
+
+1274
+01:08:51,900 --> 01:08:52,200
+assim
+
+1275
+01:08:52,200 --> 01:08:57,200
+fechou
+
+1276
+01:08:57,200 --> 01:09:00,080
+mas por algum motivo
+
+1277
+01:09:00,080 --> 01:09:01,800
+você cancela a sua proposta
+
+1278
+01:09:01,800 --> 01:09:04,080
+se você ainda estiver em tempo de proposta
+
+1279
+01:09:04,080 --> 01:09:05,100
+você cancelou a proposta
+
+1280
+01:09:05,100 --> 01:09:07,340
+Ou se você já integrou a proposta
+
+1281
+01:09:07,340 --> 01:09:09,060
+Você vai lá e liquidou o contrato
+
+1282
+01:09:09,060 --> 01:09:11,280
+O que a gente vai estar fazendo?
+
+1283
+01:09:11,380 --> 01:09:13,040
+A gente vai estar fazendo uma desaverbação
+
+1284
+01:09:13,040 --> 01:09:15,160
+Porque eu cancelei a proposta
+
+1285
+01:09:15,160 --> 01:09:16,440
+Em tempo de esteira
+
+1286
+01:09:16,440 --> 01:09:19,140
+Não integrei ainda, não transformou no contrato
+
+1287
+01:09:19,140 --> 01:09:20,940
+Eu averbei, cancelei
+
+1288
+01:09:20,940 --> 01:09:22,820
+Então eu tenho que desaverbar
+
+1289
+01:09:22,820 --> 01:09:23,740
+O que eu averbei
+
+1290
+01:09:23,740 --> 01:09:26,160
+Beleza?
+
+1291
+01:09:31,160 --> 01:09:31,680
+Exatamente
+
+1292
+01:09:31,680 --> 01:09:34,280
+E aí
+
+1293
+01:09:34,280 --> 01:09:36,740
+Se eu faço, por exemplo, se eu integrei
+
+1294
+01:09:36,740 --> 01:09:38,980
+O meu contrato
+
+1295
+01:09:38,980 --> 01:09:40,100
+Pensa o seguinte
+
+1296
+01:09:40,100 --> 01:09:42,600
+Eu integrei o contrato
+
+1297
+01:09:42,600 --> 01:09:44,820
+Aí eu tô pagando ele
+
+1298
+01:09:44,820 --> 01:09:46,960
+E eu termino de pagar, eu liquido todo ele
+
+1299
+01:09:46,960 --> 01:09:47,900
+Por completo, beleza?
+
+1300
+01:09:48,580 --> 01:09:51,220
+Ou seja, liquidei o contrato por inteiro
+
+1301
+01:09:51,220 --> 01:09:53,020
+Eu tenho que fazer a desaverbação também
+
+1302
+01:09:53,020 --> 01:09:55,060
+Bom, porque
+
+1303
+01:09:55,060 --> 01:09:55,880
+O contrato
+
+1304
+01:09:55,880 --> 01:09:58,560
+Foi liquidado
+
+1305
+01:09:58,560 --> 01:10:01,080
+Então eu tenho que devolver a margem
+
+1306
+01:10:01,080 --> 01:10:01,500
+Pro cara
+
+1307
+01:10:01,500 --> 01:10:04,600
+Beleza?
+
+1308
+01:10:05,580 --> 01:10:07,640
+Então a gente tem duas formas de fazer
+
+1309
+01:10:07,640 --> 01:10:09,720
+A desaverbação, via cancelamento
+
+1310
+01:10:09,720 --> 01:10:11,320
+De proposta, isso se você ainda não tiver
+
+1311
+01:10:11,320 --> 01:10:12,340
+Integrado a proposta
+
+1312
+01:10:12,340 --> 01:10:15,580
+E o outro fluxo é através
+
+1313
+01:10:15,580 --> 01:10:17,680
+De uma baixa, né? Você fazer a baixa
+
+1314
+01:10:17,680 --> 01:10:18,380
+Do contrato
+
+1315
+01:10:18,380 --> 01:10:21,600
+Via CDC ou via próprio empregador
+
+1316
+01:10:21,600 --> 01:10:23,180
+O CDC é mais fácil, mas
+
+1317
+01:10:23,180 --> 01:10:24,780
+É fazer uma baixa do contrato
+
+1318
+01:10:24,780 --> 01:10:27,100
+A liquidação dele
+
+1319
+01:10:27,100 --> 01:10:27,980
+Beleza?
+
+1320
+01:10:30,480 --> 01:10:30,840
+Fechou?
+
+1321
+01:10:32,300 --> 01:10:32,620
+Beleza.
+
+1322
+01:10:32,720 --> 01:10:34,500
+Então esse vai ser o nosso próximo passo, tá bom?
+
+1323
+01:10:34,760 --> 01:10:36,680
+Ver se a gente consegue desaverbar o contrato.
+
+1324
+01:10:41,980 --> 01:10:42,300
+Oi?
+
+1325
+01:10:45,900 --> 01:10:47,560
+Ah, você já integrou?
+
+1326
+01:10:47,700 --> 01:10:48,660
+Você pode fazer o seguinte, mano.
+
+1327
+01:10:48,680 --> 01:10:51,100
+Você pode cadastrar uma nova proposta, averbar de novo
+
+1328
+01:10:51,100 --> 01:10:53,100
+e cancelar antes de integrar
+
+1329
+01:10:53,100 --> 01:10:56,300
+pra ver se chama o serviço de exclusão de averbação.
+
+1330
+01:10:58,060 --> 01:11:00,060
+Eu acho mais fácil do que você ter que...
+
+1331
+01:11:00,060 --> 01:11:01,860
+você não tem o CDC, porque se você
+
+1332
+01:11:01,860 --> 01:11:03,980
+tivesse o CDC aí, era você pegar a proposta
+
+1333
+01:11:03,980 --> 01:11:05,840
+que você integrou e dar baixa
+
+1334
+01:11:05,840 --> 01:11:06,920
+nas parcelas do contrato.
+
+1335
+01:11:09,340 --> 01:11:09,740
+Beleza?
+
+1336
+01:11:11,280 --> 01:11:11,680
+Lembrando,
+
+1337
+01:11:11,840 --> 01:11:13,940
+ele é um serviço também, então ele tem o retorno aí
+
+1338
+01:11:13,940 --> 01:11:15,660
+que provavelmente acho que é
+
+1339
+01:11:15,660 --> 01:11:18,200
+exclusão de averbação, desaverbação,
+
+1340
+01:11:18,280 --> 01:11:19,520
+não lembro, no stamp.
+
+1341
+01:11:22,240 --> 01:11:23,740
+Beleza? Esse vai ser o nosso
+
+1342
+01:11:23,740 --> 01:11:24,980
+próximo passo aí, tá bom?
+
+1343
+01:11:24,980 --> 01:11:31,360
+Desaverbação é exclusão de averbação
+
+1344
+01:11:31,360 --> 01:11:32,740
+Tem que olhar aí
+
+1345
+01:11:32,740 --> 01:11:36,020
+Excluir averbação
+
+1346
+01:11:36,020 --> 01:11:37,020
+Ixi, tem dois, mano
+
+1347
+01:11:37,020 --> 01:11:38,340
+É um desses dois
+
+1348
+01:11:38,340 --> 01:11:40,180
+Ou é excluir averbação ou é excluir consignado
+
+1349
+01:11:40,180 --> 01:11:41,360
+Agora eu não me lembro de cabeça
+
+1350
+01:11:41,360 --> 01:11:44,260
+Qualquer coisa, configura os dois da mesma forma
+
+1351
+01:11:44,260 --> 01:11:46,900
+Isso aí, você tá vendo?
+
+1352
+01:11:47,040 --> 01:11:48,520
+Ele retorna um código
+
+1353
+01:11:48,520 --> 01:11:50,520
+Que vai realizar a exclusão
+
+1354
+01:11:50,520 --> 01:11:52,800
+E lá no modelo de averbação tem uma aba, mano
+
+1355
+01:11:52,800 --> 01:11:53,640
+Que é a exclusão, tá?
+
+1356
+01:11:53,640 --> 01:11:55,460
+Aba de exclusão
+
+1357
+01:11:55,460 --> 01:11:58,040
+Você tem uma parte dela que você configura
+
+1358
+01:11:58,040 --> 01:11:59,720
+Os códigos que vão confirmar
+
+1359
+01:11:59,720 --> 01:12:01,080
+A desaverbação
+
+1360
+01:12:01,080 --> 01:12:03,840
+Aí a gente tem que depois olhar lá no modelo de averbação
+
+1361
+01:12:03,840 --> 01:12:05,880
+Se esse BF tá configurado pra desaverbar
+
+1362
+01:12:05,880 --> 01:12:13,720
+Tá bom, isso aí
+
+1363
+01:12:13,720 --> 01:12:17,240
+Você vai averbar
+
+1364
+01:12:17,240 --> 01:12:20,080
+E você vai cancelar a proposta
+
+1365
+01:12:20,080 --> 01:12:21,340
+Porque eu acho que é uma forma mais fácil
+
+1366
+01:12:21,340 --> 01:12:24,080
+Ou então você baixa o WebCDC
+
+1367
+01:12:24,080 --> 01:12:28,920
+Não, você pode passar depois da averbação
+
+1368
+01:12:28,920 --> 01:12:30,020
+Ela tem que estar averbada, entendeu?
+
+1369
+01:12:30,220 --> 01:12:32,000
+Então ela tem que passar pelo fluxo de averbação
+
+1370
+01:12:32,000 --> 01:12:34,900
+Sei lá, você cancela quando ela estiver na remessa
+
+1371
+01:12:34,900 --> 01:12:37,480
+Ou quando ela passar
+
+1372
+01:12:37,480 --> 01:12:38,520
+Da averbação lá, mano
+
+1373
+01:12:38,520 --> 01:12:39,760
+Tipo, passou pelo retorno
+
+1374
+01:12:39,760 --> 01:12:41,940
+Aí você está em alguma outra situação
+
+1375
+01:12:41,940 --> 01:12:44,160
+Você vai lá e cancela a proposta, beleza?
+
+1376
+01:12:47,260 --> 01:12:48,540
+E você fazer com ela integrada
+
+1377
+01:12:48,540 --> 01:12:50,380
+E você vai precisar baixar o WebCDC lá
+
+1378
+01:12:50,380 --> 01:12:52,020
+Pra você fazer a liquidação do contrato
+
+1379
+01:12:52,020 --> 01:12:53,160
+Fazer a baixa dos contratos
+
+1380
+01:12:53,160 --> 01:12:56,140
+Beleza?
+
+1381
+01:12:59,100 --> 01:12:59,500
+Bom
+
+1382
+01:12:59,500 --> 01:13:02,300
+Eu acho que dá pra gente fazer das duas formas
+
+1383
+01:13:02,300 --> 01:13:04,620
+Vamos tentar e ver se dá certo
+
+1384
+01:13:04,620 --> 01:13:06,300
+Primeiro com o cancelamento que é mais rápido
+
+1385
+01:13:06,300 --> 01:13:09,040
+Beleza?
+
+1386
+01:13:09,700 --> 01:13:12,180
+Ô Álvaro, deu certo aí então, né mano? A verbação
+
+1387
+01:13:12,180 --> 01:13:16,040
+Sim, mano, deu bom aqui
+
+1388
+01:13:16,040 --> 01:13:17,220
+Tá bom
+
+1389
+01:13:17,220 --> 01:13:20,360
+Cadastrei com uma oferta
+
+1390
+01:13:20,360 --> 01:13:22,120
+Dessa vez eu não pus nome
+
+1391
+01:13:22,120 --> 01:13:22,500
+Nem nada
+
+1392
+01:13:22,500 --> 01:13:23,380
+Não sei porque
+
+1393
+01:13:23,380 --> 01:13:24,260
+Da primeira vez não foi
+
+1394
+01:13:24,260 --> 01:13:25,800
+Mas o CNPJ
+
+1395
+01:13:25,800 --> 01:13:27,200
+Com menos posições
+
+1396
+01:13:27,200 --> 01:13:27,940
+E a Verbo
+
+1397
+01:13:27,940 --> 01:13:28,980
+Tá bom
+
+1398
+01:13:28,980 --> 01:13:29,640
+Beleza, mano
+
+1399
+01:13:29,640 --> 01:13:30,080
+Fechou
+
+1400
+01:13:30,080 --> 01:13:31,820
+Vamos só
+
+1401
+01:13:31,820 --> 01:13:32,560
+E eu tava olhando
+
+1402
+01:13:32,560 --> 01:13:33,440
+O S aqui
+
+1403
+01:13:33,440 --> 01:13:34,640
+Não caiu ainda
+
+1404
+01:13:34,640 --> 01:13:35,840
+Mano, eu acho que não vai cair, tá?
+
+1405
+01:13:35,960 --> 01:13:36,760
+O Melo tá fudido
+
+1406
+01:13:36,760 --> 01:13:37,500
+Pelo que eu entendi
+
+1407
+01:13:37,500 --> 01:13:40,160
+Ou pode ser que ele caia
+
+1408
+01:13:40,160 --> 01:13:42,100
+Ele gosta de dar uns blefe lá, mano
+
+1409
+01:13:42,100 --> 01:13:44,720
+É, ele é muito louco
+
+1410
+01:13:44,720 --> 01:13:45,380
+Safado
+
+1411
+01:13:45,380 --> 01:13:46,480
+Fechou, mano
+
+1412
+01:13:46,480 --> 01:13:49,080
+Eu vou fechar os workers aqui
+
+1413
+01:13:49,080 --> 01:13:52,820
+É, pode fechar só de consulta e solicitação, tá, mano?
+
+1414
+01:13:52,880 --> 01:13:53,940
+Não precisa fechar todos, não
+
+1415
+01:13:53,940 --> 01:13:58,100
+Só pra não ficar chegando oferta e morrer, tá ligado?
+
+1416
+01:13:59,980 --> 01:14:00,780
+Fechou, beleza
+
+1417
+01:14:00,780 --> 01:14:03,560
+Deixa eu ver se o Paraná aqui do Bruno caiu, mano
+
+1418
+01:14:13,560 --> 01:14:13,920
+Mano
+
+1419
+01:14:13,920 --> 01:14:16,240
+O Eduardo mandou alguma coisa aqui no chat
+
+1420
+01:14:16,240 --> 01:14:17,840
+Deixa eu ver o que ele mandou
+
+1421
+01:14:17,840 --> 01:14:18,840
+Obrigado.
+
+1422
+01:14:47,840 --> 01:15:17,820
+Legenda Adriana Zanotto
+
+1423
+01:15:17,840 --> 01:15:47,820
+E aí
+
+1424
+01:15:47,840 --> 01:15:48,280
+entrar ali
+
+1425
+01:15:48,280 --> 01:15:51,760
+pra entender esse problema do Matheus.
+
+1426
+01:15:52,080 --> 01:15:53,720
+Aí o William vai fazer a desaverbação aí, tá,
+
+1427
+01:15:53,840 --> 01:15:55,940
+o Álvaro? Agora que a gente conseguiu
+
+1428
+01:15:55,940 --> 01:15:57,520
+se livrar do fluxo lá, então, mano,
+
+1429
+01:15:59,060 --> 01:16:00,180
+acho que dá pra dar um apoio aí
+
+1430
+01:16:00,180 --> 01:16:00,560
+com o William.
+
+1431
+01:16:02,180 --> 01:16:03,400
+Beleza, eu vou acompanhando aqui.
+
+1432
+01:16:14,180 --> 01:16:16,460
+Deixa o William cadastrando aí a proposta,
+
+1433
+01:16:16,460 --> 01:16:18,540
+E passando pela averbação de novo
+
+1434
+01:16:18,540 --> 01:16:21,160
+A gente já
+
+1435
+01:16:21,160 --> 01:16:22,400
+Vê essa
+
+1436
+01:16:22,400 --> 01:16:24,640
+Essa parte da exclusão
+
+1437
+01:16:24,640 --> 01:16:26,620
+Aí mano, só antes de acionar
+
+1438
+01:16:26,620 --> 01:16:29,000
+Na esteira lá o processo de averbação
+
+1439
+01:16:29,000 --> 01:16:29,420
+Online
+
+1440
+01:16:29,420 --> 01:16:31,860
+Vamos alterar aquela mensagem lá
+
+1441
+01:16:31,860 --> 01:16:33,800
+Pra não ficar como string
+
+1442
+01:16:33,800 --> 01:16:35,280
+E deixar ela como sucesso
+
+1443
+01:16:35,280 --> 01:16:41,760
+Acho que é
+
+1444
+01:16:41,760 --> 01:16:44,520
+Averbar com sig trabalhador
+
+1445
+01:16:44,520 --> 01:16:55,920
+o legado ali embaixo aí pode abrir o retorno e ver se tem outros retornos abertos aí o
+
+1446
+01:16:55,920 --> 01:16:59,580
+bd tem que deixar que é o código né só mensagem que a gente vai alterar
+
+1447
+01:16:59,580 --> 01:17:11,460
+pode fechar isso aí então
+
+1448
+01:17:11,460 --> 01:17:12,860
+minimizar quer dizer
+
+1449
+01:17:12,860 --> 01:17:15,060
+e vamos abrir um outro
+
+1450
+01:17:15,060 --> 01:17:17,040
+só para deixar a mensagem bonitinha
+
+1451
+01:17:17,040 --> 01:17:19,400
+aí abre o averbação consignado lá
+
+1452
+01:17:19,400 --> 01:17:21,960
+retorno
+
+1453
+01:17:21,960 --> 01:17:23,800
+isso, pode copiar
+
+1454
+01:17:23,800 --> 01:17:25,980
+essa inclusão é efetuada com sucesso
+
+1455
+01:17:25,980 --> 01:17:27,320
+só a mensagem, não, não, não
+
+1456
+01:17:27,320 --> 01:17:29,500
+acho que é a mesma, deixa eu ver
+
+1457
+01:17:29,500 --> 01:17:31,100
+Ah não, é diferente
+
+1458
+01:17:31,100 --> 01:17:33,160
+Só a inclusão
+
+1459
+01:17:33,160 --> 01:17:35,060
+Efetuada com sucesso, a mensagem
+
+1460
+01:17:35,060 --> 01:17:36,840
+Isso
+
+1461
+01:17:36,840 --> 01:17:38,320
+Aí o retorno
+
+1462
+01:17:38,320 --> 01:17:40,260
+E aí onde está a mensagem
+
+1463
+01:17:40,260 --> 01:17:43,140
+É isso aí, só salvar agora
+
+1464
+01:17:43,140 --> 01:17:46,860
+É maravilha, mano, é isso aí
+
+1465
+01:17:46,860 --> 01:17:49,220
+Chamando a verbação, a gente já
+
+1466
+01:17:49,220 --> 01:17:51,100
+Já verifica a exclusão
+
+1467
+01:17:59,500 --> 01:18:29,480
+Legenda Adriana Zanotto
+
+1468
+01:18:29,500 --> 01:18:59,480
+Legenda Adriana Zanotto
+
+1469
+01:18:59,500 --> 01:19:06,140
+Isso, mano, só ir passando
+
+1470
+01:19:06,140 --> 01:19:11,120
+Validação
+
+1471
+01:19:11,120 --> 01:19:16,380
+Averbação
+
+1472
+01:19:22,860 --> 01:19:23,860
+Averbação online
+
+1473
+01:19:23,860 --> 01:19:25,120
+Pode chamar o serviço
+
+1474
+01:19:25,120 --> 01:19:26,660
+Vamos acompanhar a requisição
+
+1475
+01:19:26,660 --> 01:19:27,980
+Naquela query
+
+1476
+01:19:27,980 --> 01:19:44,700
+Copia o número da proposta, vamos substituir lá nessa consulta, isso, vamos acompanhando aí, espera de rodar.
+
+1477
+01:19:57,980 --> 01:20:27,960
+Legenda Adriana Zanotto
+
+1478
+01:20:27,980 --> 01:20:39,920
+E demora um pouquinho mesmo.
+
+1479
+01:20:57,980 --> 01:21:06,080
+aí, rodou, fechou
+
+1480
+01:21:06,080 --> 01:21:08,500
+a gente pode já
+
+1481
+01:21:08,500 --> 01:21:10,560
+pegar o número da
+
+1482
+01:21:10,560 --> 01:21:12,380
+quer dizer, desculpa
+
+1483
+01:21:12,380 --> 01:21:14,300
+faz uma consulta ali na
+
+1484
+01:21:14,300 --> 01:21:16,360
+COIMP agora, só pra gente ver
+
+1485
+01:21:16,360 --> 01:21:18,060
+ó, CI
+
+1486
+01:21:18,060 --> 01:21:20,240
+aparentemente foi, copia o número
+
+1487
+01:21:20,240 --> 01:21:21,800
+da operação, isso
+
+1488
+01:21:21,800 --> 01:21:27,460
+o caso aí tá
+
+1489
+01:21:27,460 --> 01:21:29,320
+não tem nada porque a gente não
+
+1490
+01:21:29,320 --> 01:21:31,520
+integrou ela ainda, não passou
+
+1491
+01:21:31,520 --> 01:21:33,220
+pela remessa, vamos lá no
+
+1492
+01:21:33,220 --> 01:21:35,340
+empregador agora, naquela mesma rotina
+
+1493
+01:21:35,340 --> 01:21:37,020
+de consulta manutenção de
+
+1494
+01:21:37,020 --> 01:21:39,560
+movimentação de contrato
+
+1495
+01:21:39,560 --> 01:21:41,220
+lá, isso
+
+1496
+01:21:41,220 --> 01:21:43,100
+aí só substituir, aí é assim mesmo
+
+1497
+01:21:43,100 --> 01:21:45,300
+substituir ali
+
+1498
+01:21:45,300 --> 01:21:46,360
+no contrato
+
+1499
+01:21:46,360 --> 01:21:49,120
+esse novo agora
+
+1500
+01:21:51,800 --> 01:21:53,400
+Ah, esse saiu, né, mano?
+
+1501
+01:21:57,080 --> 01:22:04,740
+Acho que foi a sessão que deve ter caído, mas de boa.
+
+1502
+01:22:11,000 --> 01:22:14,060
+É só pra gente conferir se a mensagem veio certinha.
+
+1503
+01:22:21,800 --> 01:22:24,400
+É, esse aí a gente só vai cancelar
+
+1504
+01:22:24,400 --> 01:22:26,380
+É porque eu vou te mostrar, mano
+
+1505
+01:22:26,380 --> 01:22:27,360
+Que a gente tem
+
+1506
+01:22:27,360 --> 01:22:30,340
+Se eu não me engano, acho que são três tipos
+
+1507
+01:22:30,340 --> 01:22:32,600
+Pelo que eu conheço de cancelar a proposta
+
+1508
+01:22:32,600 --> 01:22:34,580
+Mas aí nesse caso a gente não vai realmente
+
+1509
+01:22:34,580 --> 01:22:35,180
+Integrar
+
+1510
+01:22:35,180 --> 01:22:38,320
+Signar trabalhador
+
+1511
+01:22:38,320 --> 01:22:40,420
+De 19, contrato
+
+1512
+01:22:40,420 --> 01:22:44,700
+Aí a verbô
+
+1513
+01:22:44,700 --> 01:22:46,740
+Vamos expandir só pra ver se a mensagem
+
+1514
+01:22:46,740 --> 01:22:47,960
+Veio certinha dessa vez
+
+1515
+01:22:47,960 --> 01:22:50,060
+Olha lá, BD, inclusão
+
+1516
+01:22:50,060 --> 01:22:51,780
+efetuada com sucesso.
+
+1517
+01:22:51,940 --> 01:22:52,620
+Aí deu bom, mano.
+
+1518
+01:22:54,020 --> 01:22:56,000
+Fechou. Aí, vamos lá,
+
+1519
+01:22:56,140 --> 01:22:58,580
+no processo de
+
+1520
+01:22:58,580 --> 01:22:59,760
+exclusão,
+
+1521
+01:22:59,980 --> 01:23:01,820
+como é que funciona, né? O Luiz deu uma
+
+1522
+01:23:01,820 --> 01:23:03,640
+explicadinha assim por cima, né?
+
+1523
+01:23:04,280 --> 01:23:04,680
+Então,
+
+1524
+01:23:06,260 --> 01:23:07,820
+por exemplo, no cenário real deve ter
+
+1525
+01:23:07,820 --> 01:23:10,120
+várias outras maneiras, mas o cenário
+
+1526
+01:23:10,120 --> 01:23:11,680
+que a gente vai testar aqui,
+
+1527
+01:23:11,840 --> 01:23:13,640
+por exemplo, é quando
+
+1528
+01:23:13,640 --> 01:23:15,600
+a proposta
+
+1529
+01:23:15,600 --> 01:23:17,520
+que foi averbada, ela é
+
+1530
+01:23:17,520 --> 01:23:20,380
+cancelada no sistema, né?
+
+1531
+01:23:21,260 --> 01:23:22,880
+Então, como é que a gente vai fazer?
+
+1532
+01:23:23,020 --> 01:23:25,600
+Vamos voltar lá no autorizador.
+
+1533
+01:23:28,140 --> 01:23:28,840
+Vai ter uma...
+
+1534
+01:23:28,840 --> 01:23:30,600
+Pode deixar aí parada mesmo.
+
+1535
+01:23:31,760 --> 01:23:33,880
+Agora, aí na rotina de cadastro,
+
+1536
+01:23:34,900 --> 01:23:36,280
+vai ter...
+
+1537
+01:23:36,280 --> 01:23:37,060
+Vamos lá.
+
+1538
+01:23:37,260 --> 01:23:37,560
+Ali, ó.
+
+1539
+01:23:37,920 --> 01:23:39,360
+Cancelamento de proposta.
+
+1540
+01:23:40,680 --> 01:23:41,240
+Isso.
+
+1541
+01:23:41,240 --> 01:23:44,680
+No caso, a gente vai pôr o número dela
+
+1542
+01:23:44,680 --> 01:23:45,680
+e clicar em cancelar.
+
+1543
+01:23:45,680 --> 01:23:50,660
+Mas antes, nós vamos ver como é que está o retorno do Stub.
+
+1544
+01:23:55,020 --> 01:23:58,060
+Enquanto abre a rotina, já vamos dar uma conferida lá nele.
+
+1545
+01:23:58,840 --> 01:23:59,920
+Vamos lá no Stub.
+
+1546
+01:24:07,760 --> 01:24:09,960
+Isso, pode descer um pouco.
+
+1547
+01:24:11,020 --> 01:24:14,140
+Vamos ver quantos retornos de exclusão tem.
+
+1548
+01:24:14,140 --> 01:24:27,400
+Então, deixa eu ver aqui, exclusão, excluir a verbação, excluir consignado, acho que é consignado, portabilidade, inclusão, porte, cdps, tá.
+
+1549
+01:24:28,460 --> 01:24:35,760
+Abre para a gente, mano, os arquivos de retorno do excluir a verbação e excluir consignado, só para ver a diferença entre os dois.
+
+1550
+01:24:44,140 --> 01:24:48,720
+Fechou
+
+1551
+01:24:48,720 --> 01:24:51,600
+Tá, deixa eu ver
+
+1552
+01:24:51,600 --> 01:24:53,260
+IPF, mensagem
+
+1553
+01:24:53,260 --> 01:24:55,740
+Exclusão realizada por sucesso
+
+1554
+01:24:55,740 --> 01:24:56,940
+Deixa eu ver o outro lá
+
+1555
+01:24:56,940 --> 01:25:01,640
+Mensagem string
+
+1556
+01:25:01,640 --> 01:25:02,980
+Demora de contato
+
+1557
+01:25:02,980 --> 01:25:04,480
+Tipo de operação
+
+1558
+01:25:04,480 --> 01:25:08,280
+Tá, ó, é só pra gente se blindar
+
+1559
+01:25:08,280 --> 01:25:09,940
+Mano, de talvez
+
+1560
+01:25:09,940 --> 01:25:10,960
+Um possível erro
+
+1561
+01:25:10,960 --> 01:25:13,980
+Vamos alterar esse código de sucesso
+
+1562
+01:25:13,980 --> 01:25:15,920
+de AB pra BF
+
+1563
+01:25:15,920 --> 01:25:24,680
+isso, e a mensagem
+
+1564
+01:25:24,680 --> 01:25:26,060
+vamos copiar a mensagem
+
+1565
+01:25:26,060 --> 01:25:28,040
+que tá no outro retorno também
+
+1566
+01:25:28,040 --> 01:25:30,580
+essa aí é a exclusão ou baixa
+
+1567
+01:25:30,580 --> 01:25:31,940
+efetuada com sucesso
+
+1568
+01:25:31,940 --> 01:25:39,520
+boa, pode salvar
+
+1569
+01:25:39,520 --> 01:25:43,500
+esse é o primeiro
+
+1570
+01:25:43,500 --> 01:25:45,720
+passo, a gente verifica
+
+1571
+01:25:45,720 --> 01:25:48,160
+eu, depois, acho que dá pra gente
+
+1572
+01:25:48,160 --> 01:25:49,600
+verificar, mano, qual
+
+1573
+01:25:49,600 --> 01:25:51,980
+retorno ele considerou
+
+1574
+01:25:51,980 --> 01:25:54,080
+se foi excluir a verbação ou
+
+1575
+01:25:54,080 --> 01:25:56,280
+consignado, mas vamos deixar os dois
+
+1576
+01:25:56,280 --> 01:25:57,960
+no esquema, e
+
+1577
+01:25:57,960 --> 01:25:59,960
+agora, é aquilo que o Luiz falou
+
+1578
+01:25:59,960 --> 01:26:02,260
+da gente vai verificar no modelo
+
+1579
+01:26:02,260 --> 01:26:04,520
+eu não lembro se vocês já vincularam
+
+1580
+01:26:04,520 --> 01:26:06,040
+já o código BF
+
+1581
+01:26:06,040 --> 01:26:06,880
+na exclusão, mano
+
+1582
+01:26:06,880 --> 01:26:19,040
+Ah, então maravilha
+
+1583
+01:26:19,040 --> 01:26:20,720
+Então vamos lá no empregador
+
+1584
+01:26:20,720 --> 01:26:23,140
+Daquela aba do modelo de averbação
+
+1585
+01:26:23,140 --> 01:26:24,320
+Que a gente viu
+
+1586
+01:26:24,320 --> 01:26:27,040
+Eu acho que ontem, né
+
+1587
+01:26:27,040 --> 01:26:28,660
+Então, gerar
+
+1588
+01:26:28,660 --> 01:26:35,840
+Consignado privado
+
+1589
+01:26:35,840 --> 01:26:38,740
+é cadastro de parâmetros
+
+1590
+01:26:38,740 --> 01:26:40,600
+é que a gente chama modelo
+
+1591
+01:26:40,600 --> 01:26:42,420
+de averbação
+
+1592
+01:26:42,420 --> 01:26:44,040
+mas é cadastro de parâmetros
+
+1593
+01:26:44,040 --> 01:26:58,060
+fechou, acho que é o modelo 2
+
+1594
+01:26:58,060 --> 01:27:05,660
+eita, o bot está logando
+
+1595
+01:27:05,660 --> 01:27:08,060
+Mano, se quiser
+
+1596
+01:27:08,060 --> 01:27:10,640
+Dá pra gente ver isso depois do almoço
+
+1597
+01:27:10,640 --> 01:27:11,180
+De repente
+
+1598
+01:27:11,180 --> 01:27:15,180
+Pode ser?
+
+1599
+01:27:15,320 --> 01:27:16,720
+É bem rápido, né?
+
+1600
+01:27:16,780 --> 01:27:19,520
+Mas a gente vê depois do almoço, tá tranquilo
+
+1601
+01:27:19,520 --> 01:27:24,900
+É nóis aí, tamo junto, viu?
+
+1602
+01:27:35,660 --> 01:28:05,640
+Legenda Adriana Zanotto
+
+1603
+01:28:05,660 --> 01:28:35,640
+Legenda Adriana Zanotto
+
+1604
+01:28:35,660 --> 01:29:05,640
+Legenda Adriana Zanotto
+
+1605
+01:29:05,660 --> 01:29:35,640
+Legenda Adriana Zanotto
+
+1606
+01:29:35,660 --> 01:30:05,640
+Legenda Adriana Zanotto
+
+1607
+01:30:05,660 --> 01:30:35,640
+Legenda Adriana Zanotto
+
+1608
+01:30:35,660 --> 01:31:05,640
+Legenda Adriana Zanotto
+
+1609
+01:31:05,660 --> 01:31:35,640
+Legenda Adriana Zanotto
+
+1610
+01:31:35,660 --> 01:31:36,660
+Obrigado.
+
+1611
+01:32:05,660 --> 01:32:35,640
+Legenda Adriana Zanotto
+
+1612
+01:32:35,660 --> 01:33:05,640
+Legenda Adriana Zanotto
+
+1613
+01:33:05,660 --> 01:33:35,640
+Legenda Adriana Zanotto
+
+1614
+01:33:35,660 --> 01:34:05,640
+Legenda Adriana Zanotto
+
+1615
+01:34:05,660 --> 01:34:35,640
+Legenda Adriana Zanotto
+
+1616
+01:34:35,660 --> 01:35:05,640
+Legenda Adriana Zanotto
+
+1617
+01:35:05,660 --> 01:35:35,640
+Legenda Adriana Zanotto
+
+1618
+01:35:35,660 --> 01:36:05,640
+Legenda Adriana Zanotto
+
+1619
+01:36:05,660 --> 01:36:35,640
+Legenda Adriana Zanotto
+
+1620
+01:36:35,660 --> 01:37:05,640
+Legenda Adriana Zanotto
+
+1621
+01:37:05,660 --> 01:37:35,640
+Legenda Adriana Zanotto
+
+1622
+01:37:35,660 --> 01:38:05,640
+Legenda Adriana Zanotto
+
+1623
+01:38:05,660 --> 01:38:35,640
+Legenda Adriana Zanotto
+
+1624
+01:38:35,660 --> 01:39:05,640
+Legenda Adriana Zanotto
+
+1625
+01:39:05,660 --> 01:39:35,640
+Legenda Adriana Zanotto
+
+1626
+01:39:35,660 --> 01:40:05,640
+Legenda Adriana Zanotto
+
+1627
+01:40:05,660 --> 01:40:35,640
+Legenda Adriana Zanotto
+
+1628
+01:40:35,660 --> 01:41:05,640
+Legenda Adriana Zanotto
+
+1629
+01:41:05,660 --> 01:41:35,640
+Legenda Adriana Zanotto
+
+1630
+01:41:35,660 --> 01:42:05,640
+Legenda Adriana Zanotto
+
+1631
+01:42:05,660 --> 01:42:35,640
+Legenda Adriana Zanotto
+
+1632
+01:42:35,660 --> 01:43:05,640
+Legenda Adriana Zanotto
+
+1633
+01:43:05,660 --> 01:43:35,640
+Legenda Adriana Zanotto
+
+1634
+01:43:35,660 --> 01:44:05,640
+Legenda Adriana Zanotto
+
+1635
+01:44:05,660 --> 01:44:35,640
+Legenda Adriana Zanotto
+
+1636
+01:44:35,660 --> 01:45:05,640
+Legenda Adriana Zanotto
+
+1637
+01:45:05,660 --> 01:45:35,640
+Legenda Adriana Zanotto
+
+1638
+01:45:35,660 --> 01:46:05,640
+Legenda Adriana Zanotto
+
+1639
+01:46:05,660 --> 01:46:35,640
+Legenda Adriana Zanotto
+
+1640
+01:46:35,660 --> 01:47:05,640
+Legenda Adriana Zanotto
+
+1641
+01:47:05,660 --> 01:47:35,640
+Legenda Adriana Zanotto
+
+1642
+01:47:35,660 --> 01:48:05,640
+Legenda Adriana Zanotto
+
+1643
+01:48:05,660 --> 01:48:35,640
+Legenda Adriana Zanotto
+
+1644
+01:48:35,660 --> 01:49:05,640
+Legenda Adriana Zanotto
+
+1645
+01:49:05,660 --> 01:49:35,640
+Legenda Adriana Zanotto
+
+1646
+01:49:35,660 --> 01:50:05,640
+Legenda Adriana Zanotto
+
+1647
+01:50:05,660 --> 01:50:35,640
+Legenda Adriana Zanotto
+
+1648
+01:50:35,660 --> 01:51:05,640
+Legenda Adriana Zanotto
+
+1649
+01:51:05,660 --> 01:51:35,640
+Legenda Adriana Zanotto
+
+1650
+01:51:35,660 --> 01:52:05,640
+Legenda Adriana Zanotto
+
+1651
+01:52:05,660 --> 01:52:35,640
+Legenda Adriana Zanotto
+
+1652
+01:52:35,660 --> 01:53:05,640
+Legenda Adriana Zanotto
+
+1653
+01:53:05,660 --> 01:53:35,640
+Legenda Adriana Zanotto
+
+1654
+01:53:35,660 --> 01:54:05,640
+Legenda Adriana Zanotto
+
+1655
+01:54:05,660 --> 01:54:35,640
+Legenda Adriana Zanotto
+
+1656
+01:54:35,660 --> 01:55:05,640
+Legenda Adriana Zanotto
+
+1657
+01:55:05,660 --> 01:55:35,640
+Legenda Adriana Zanotto
+
+1658
+01:55:35,660 --> 01:56:05,640
+Legenda Adriana Zanotto
+
+1659
+01:56:05,660 --> 01:56:35,640
+Legenda Adriana Zanotto
+
+1660
+01:56:35,660 --> 01:57:05,640
+Legenda Adriana Zanotto
+
+1661
+01:57:05,660 --> 01:57:35,640
+Legenda Adriana Zanotto
+
+1662
+01:57:35,660 --> 01:58:05,640
+Legenda Adriana Zanotto
+
+1663
+01:58:05,660 --> 01:58:35,640
+Legenda Adriana Zanotto
+
+1664
+01:58:35,660 --> 01:59:05,640
+Legenda Adriana Zanotto
+
+1665
+01:59:05,660 --> 01:59:35,640
+Legenda Adriana Zanotto
+
+1666
+01:59:35,660 --> 02:00:05,640
+Legenda Adriana Zanotto
+
+1667
+02:00:05,660 --> 02:00:35,640
+Legenda Adriana Zanotto
+
+1668
+02:00:35,660 --> 02:01:05,640
+Legenda Adriana Zanotto
+
+1669
+02:01:05,660 --> 02:01:35,640
+Legenda Adriana Zanotto
+
+1670
+02:01:35,660 --> 02:02:05,640
+Legenda Adriana Zanotto
+
+1671
+02:02:05,660 --> 02:02:35,640
+Legenda Adriana Zanotto
+
+1672
+02:02:35,660 --> 02:03:05,640
+Legenda Adriana Zanotto
+
+1673
+02:03:05,660 --> 02:03:35,640
+Legenda Adriana Zanotto
+
+1674
+02:03:35,660 --> 02:04:05,640
+Legenda Adriana Zanotto
+
+1675
+02:04:05,660 --> 02:04:35,640
+Legenda Adriana Zanotto
+
+1676
+02:04:35,660 --> 02:05:05,640
+Legenda Adriana Zanotto
+
+1677
+02:05:05,660 --> 02:05:35,640
+Legenda Adriana Zanotto
+
+1678
+02:05:35,660 --> 02:06:05,640
+Legenda Adriana Zanotto
+
+1679
+02:06:05,660 --> 02:06:35,640
+Legenda Adriana Zanotto
+
+1680
+02:06:35,660 --> 02:07:05,640
+Legenda Adriana Zanotto
+
+1681
+02:07:05,660 --> 02:07:35,640
+Legenda Adriana Zanotto
+
+1682
+02:07:35,660 --> 02:08:05,640
+Legenda Adriana Zanotto
+
+1683
+02:08:05,660 --> 02:08:35,640
+Legenda Adriana Zanotto
+
+1684
+02:08:35,660 --> 02:09:05,640
+Legenda Adriana Zanotto
+
+1685
+02:09:05,660 --> 02:09:35,640
+Legenda Adriana Zanotto
+
+1686
+02:09:35,660 --> 02:10:05,640
+Legenda Adriana Zanotto
+
+1687
+02:10:05,660 --> 02:10:35,640
+Legenda Adriana Zanotto
+
+1688
+02:10:35,660 --> 02:11:05,640
+Legenda Adriana Zanotto
+
+1689
+02:11:05,660 --> 02:11:35,640
+Legenda Adriana Zanotto
+
+1690
+02:11:35,660 --> 02:12:05,640
+Legenda Adriana Zanotto
+
+1691
+02:12:05,660 --> 02:12:35,640
+Legenda Adriana Zanotto
+
+1692
+02:12:35,660 --> 02:13:05,640
+Legenda Adriana Zanotto
+
+1693
+02:13:05,660 --> 02:13:35,640
+Legenda Adriana Zanotto
+
+1694
+02:13:35,660 --> 02:14:05,640
+Legenda Adriana Zanotto
+
+1695
+02:14:05,660 --> 02:14:35,640
+Legenda Adriana Zanotto
+
+1696
+02:14:35,660 --> 02:15:05,640
+Legenda Adriana Zanotto
+
+1697
+02:15:05,660 --> 02:15:35,640
+Legenda Adriana Zanotto
+
+1698
+02:15:35,660 --> 02:16:05,640
+Legenda Adriana Zanotto
+
+1699
+02:16:05,660 --> 02:16:35,640
+Legenda Adriana Zanotto
+
+1700
+02:16:35,660 --> 02:17:05,640
+Legenda Adriana Zanotto
+
+1701
+02:17:05,660 --> 02:17:35,640
+Legenda Adriana Zanotto
+
+1702
+02:17:35,660 --> 02:18:05,640
+Legenda Adriana Zanotto
+
+1703
+02:18:05,660 --> 02:18:35,640
+Legenda Adriana Zanotto
+
+1704
+02:18:35,660 --> 02:19:05,640
+Legenda Adriana Zanotto
+
+1705
+02:19:05,660 --> 02:19:35,640
+Legenda Adriana Zanotto
+
+1706
+02:19:35,660 --> 02:20:05,640
+Legenda Adriana Zanotto
+
+1707
+02:20:05,660 --> 02:20:35,640
+Legenda Adriana Zanotto
+
+1708
+02:20:35,660 --> 02:21:05,640
+Legenda Adriana Zanotto
+
+1709
+02:21:05,660 --> 02:21:35,640
+Legenda Adriana Zanotto
+
+1710
+02:21:35,660 --> 02:22:05,640
+Legenda Adriana Zanotto
+
+1711
+02:22:05,660 --> 02:22:35,640
+Legenda Adriana Zanotto
+
+1712
+02:22:35,660 --> 02:23:05,640
+Legenda Adriana Zanotto
+
+1713
+02:23:05,660 --> 02:23:35,640
+Legenda Adriana Zanotto
+
+1714
+02:23:35,660 --> 02:24:05,640
+Legenda Adriana Zanotto
+
+1715
+02:24:05,660 --> 02:24:35,640
+Legenda Adriana Zanotto
+
+1716
+02:24:35,660 --> 02:25:05,640
+Legenda Adriana Zanotto
+
+1717
+02:25:05,660 --> 02:25:35,640
+Legenda Adriana Zanotto
+
+1718
+02:25:35,660 --> 02:26:05,640
+Legenda Adriana Zanotto
+
+1719
+02:26:05,660 --> 02:26:35,640
+E aí

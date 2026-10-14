@@ -1,0 +1,1724 @@
+# Transcrição automática — AVERBACAO.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 1719
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] O que a gente tem que fazer?
+[00:00:03] A gente tem que ajustar o mock lá, o stub
+[00:00:05] Pra que ele traga uma data vigente
+[00:00:07] Beleza?
+[00:00:10] Então vai lá no stub, mano
+[00:00:11] E passa uma data vigente aí, né?
+[00:00:13] Joga um pouco mais pra frente, obviamente, né?
+[00:00:16] Pra que a gente
+[00:00:17] Consiga solicitar autorização
+[00:00:19] Beleza?
+[00:00:25] Isso, como você tá falando de validade, mano
+[00:00:27] É bom jogar pra frente, né? Bem pra frente
+[00:00:29] Sei lá, final do ano
+[00:00:30] Aí joga, sei lá, 2026
+[00:00:47] Aí joga mês 12
+[00:00:48] É, pode ser 2007, pode ser isso aí também, mano
+[00:00:50] Salva aí
+[00:00:52] E tenta atorizar lá de novo
+[00:00:54] Dá só um Ctrl S aí, mano
+[00:00:57] Que já salva, tá ligado?
+[00:01:03] Aí autoriza de novo
+[00:01:04] Pode só clicar no botão de autorizar
+[00:01:08] Se você clicar no voltar
+[00:01:10] Você vai ter que fazer todo o processo de novo
+[00:01:12] É isso aí
+[00:01:13] Beleza?
+[00:01:17] Então vamos lá
+[00:01:18] Você fez a solicitação da autorização
+[00:01:21] Aí ele trouxe pra você o quê?
+[00:01:22] O seu vínculo, tá bom?
+[00:01:24] Então ele trouxe ali o número do benefício
+[00:01:25] Que é a sua matrícula, tá?
+[00:01:27] A matrícula no CPD, mano
+[00:01:29] Ela pode chegar até 30 posições
+[00:01:32] Tá bom?
+[00:01:33] Tendo letras e números, beleza?
+[00:01:39] E aí a gente tem o número da inscrição
+[00:01:41] Pensa que a gente tá falando do quê?
+[00:01:43] Você conhece o consignado CLT?
+[00:01:46] Que é aquele lá da carteira de trabalho?
+[00:01:47] Tá bom
+[00:01:48] É basicamente
+[00:01:49] Isso, agora o banco
+[00:01:55] O governo implementou aquele
+[00:01:58] Empréstimo CLT
+[00:02:00] Que você já desconta da folha
+[00:02:02] Lá e faz os negócios, beleza?
+[00:02:05] E o que acontece?
+[00:02:06] Então pensa o seguinte, você tá fazendo empréstimo
+[00:02:08] Pra um CLT, ou seja, ele vai estar atrelado
+[00:02:10] A o que? A uma empresa, correto?
+[00:02:13] Então, mano
+[00:02:14] Se ele tá atrelado a uma empresa, o que ele vai ter?
+[00:02:16] Ele vai ter o número de inscrição da empresa
+[00:02:17] Ou seja, o CNPJ daquela empresa
+[00:02:19] Ou o CPF, se for uma empresa PF
+[00:02:22] Empresa PF é foda
+[00:02:23] empresa PF é foda, mas tem o tipo de pessoa
+[00:02:26] PF, né, que trabalha
+[00:02:28] pra alguém
+[00:02:29] que é a famosa, as empregadas, né
+[00:02:32] e tem a questão da matrícula, né
+[00:02:36] porque se ele tá atrelado a uma empresa, mano, ele tem que ter um registro
+[00:02:39] beleza?
+[00:02:41] então a gente tá fazendo o que?
+[00:02:42] a gente fez a solicitação da autorização
+[00:02:44] e ele retornou o vínculo
+[00:02:46] aqui autorizado, ou seja
+[00:02:48] ele retornou ali a empresa do cara
+[00:02:50] beleza? e retornou
+[00:02:52] O vínculo dele com essa empresa ali
+[00:02:54] A matrícula, tá bom?
+[00:02:55] E ele fala, ó, elegível para empréstimo
+[00:02:57] Ou seja, a gente consegue consultar esse cara, tá bom?
+[00:03:00] Agora o que a gente vai fazer, mano?
+[00:03:02] A gente vai consultar os dados desse cara
+[00:03:04] Lá na outra rotina, beleza?
+[00:03:07] Vamos lá na rotina
+[00:03:08] De consulta de dados do trabalhador agora, então
+[00:03:10] Por favor
+[00:03:22] Só que vamos lá
+[00:03:41] Lembra que eu falei pra você
+[00:03:42] Você tá fazendo um teste mocado, certo?
+[00:03:46] Então, olha só o CPF que retornou ali
+[00:03:48] Lembra? Do stub
+[00:03:55] Agora vai lá no seu stub, por favor
+[00:03:56] Volta aí uma pasta
+[00:04:01] Ó
+[00:04:03] Isso tudo aí, mano, são serviços, tá?
+[00:04:05] São retornos de serviço, que é como eu falei pra você
+[00:04:07] A gente tá fazendo um teste mocado
+[00:04:09] A gente não tá batendo na data breve lá
+[00:04:11] Você tá ligado?
+[00:04:13] Como você falou que mexeu com o empréstimo consignado
+[00:04:15] Mano, eu vou começar a usar uns termos técnicos aí, tá bom?
+[00:04:17] Eu acho que você vai conhecer
+[00:04:18] Caso você não conheça, você avisa
+[00:04:19] A data prévia você conhece, né?
+[00:04:22] Tá
+[00:04:23] Então, beleza
+[00:04:24] Então, a gente tem esses serviços aqui do motor
+[00:04:25] Que a gente bate lá na data prévia
+[00:04:27] Ou seja, a gente tem os acionadores, né?
+[00:04:29] Temos serviços, plugins e APIs
+[00:04:31] Que fazem essa comunicação
+[00:04:34] Então, por exemplo, se é uma chamada via API
+[00:04:35] Plugin
+[00:04:36] O plugin, ele aciona lá o serviço via Web API
+[00:04:40] A API dispara a comunicação lá com a data prévia, né?
+[00:04:44] Através daquelas URLs lá
+[00:04:46] que a gente parametrizou, só que
+[00:04:48] diferente no cliente, em vez de estar o stub
+[00:04:50] vai estar lá o URL do
+[00:04:52] da Dataprev
+[00:04:53] então
+[00:04:56] a gente vai estar batendo o serviço da Dataprev
+[00:04:58] aí a Dataprev vai fazer o que? Ela vai retornar as informações
+[00:05:00] pra gente. Como a gente não consegue
+[00:05:02] bater lá direto, pelo nosso
+[00:05:04] ambiente, não está configurado pra fazer isso
+[00:05:06] o que a gente está fazendo? A gente
+[00:05:08] está usando um stub pra retornar
+[00:05:10] as informações que seriam retornadas pela Dataprev
+[00:05:12] então cada
+[00:05:14] pastinha disso aí é um serviço
+[00:05:16] onde ele possui o retorno
+[00:05:18] da data breve, beleza?
+[00:05:22] É isso, exatamente, simulação
+[00:05:24] da resposta da data breve. Então,
+[00:05:26] o que acontece? A gente pode ter um cenário
+[00:05:28] onde a gente tem que retornar um erro,
+[00:05:30] a gente pode ter um cenário que a gente tem que retornar um sucesso,
+[00:05:33] a gente pode ter um cenário
+[00:05:34] que a gente tem que retornar uma informação de certa
+[00:05:36] forma, tá ligado?
+[00:05:38] Então, mano, tem que ficar atento com relação a isso,
+[00:05:40] porque pensa, você tá testando um bocado,
+[00:05:42] o seu teste tem que estar
+[00:05:44] dentro do que você precisa. Ah, mano,
+[00:05:46] eu preciso que seja retornada uma empresa
+[00:05:48] que inicie lá
+[00:05:50] com zero, à esquerda.
+[00:05:52] O CNPJ inicie com zero à esquerda.
+[00:05:54] Então, no stub, você tem que passar uma empresa
+[00:05:56] que inicie com zero à esquerda.
+[00:05:58] Ah, mano, eu preciso retornar um código de
+[00:06:00] erro na consulta
+[00:06:02] dos dados. Então, mano, você tem que pegar um retorno
+[00:06:04] de erro, colocá-la no
+[00:06:05] stub pra gente fazer isso.
+[00:06:09] Beleza?
+[00:06:10] Tá bom. Beleza.
+[00:06:12] agora faz o seguinte, mano, aí dentro das
+[00:06:14] pastinhas, você vai ver que tem dois caras aí
+[00:06:16] muito importantes, pra esse fluxo que você tá fazendo agora
+[00:06:18] na consulta de dados, que é o consulta
+[00:06:20] lista benefício
+[00:06:21] e o consulta dados do trabalhador
+[00:06:23] esses dois caras aí, o que são? Clica primeiro
+[00:06:26] nesse aí no consulta lista benefício
+[00:06:27] vai em retorno aí
+[00:06:29] o que que esse cara retorna pra você
+[00:06:32] mano, expande ali um pouquinho, por favor
+[00:06:34] isso, o que que
+[00:06:36] ele tá te trazendo? Ele tá te trazendo um vínculo
+[00:06:38] da empresa apenas, tá bom? Então tá
+[00:06:40] Eu passo o meu CPF
+[00:06:41] Fiz a consulta do vínculo
+[00:06:43] Ele vai retornar a minha matrícula
+[00:06:44] E vai retornar a minha empresa
+[00:06:46] Tá bom?
+[00:06:49] E aí tem uma informação que é importante também
+[00:06:50] Que é o código da inscrição do empregador
+[00:06:53] Que tá ali em cima
+[00:06:53] Aí embaixo de matrícula
+[00:06:57] Tá vendo ali? Tem o código 1 e a inscrição
+[00:06:59] Tá, a gente trabalha com
+[00:07:01] Enums, tá? Então a gente tem dois códigos
+[00:07:03] O código 1, mano
+[00:07:04] É o CNPJ
+[00:07:05] E o código 2 é o CPF
+[00:07:09] Então, 1
+[00:07:10] PJ, 2, PF
+[00:07:13] Beleza?
+[00:07:14] A descrição aí, mano, como a gente tá utilizando o código 1
+[00:07:17] A gente vai colocar a descrição do código
+[00:07:19] Da inscrição como CNPJ
+[00:07:21] Ali em cima
+[00:07:21] Pera aí, mano, rapidão
+[00:07:39] Peraí, só deixa eu fazer um ajuste de datas aqui para o pessoal ver.
+[00:08:09] Legenda Adriana Zanotto
+[00:08:39] E assim ficou pronto.
+[00:09:09] E aí
+[00:09:39] E aí
+[00:10:09] Legenda Adriana Zanotto
+[00:10:39] E aí
+[00:11:09] Legenda Adriana Zanotto
+[00:11:39] Legenda Adriana Zanotto
+[00:12:09] Legenda Adriana Zanotto
+[00:12:39] tá bom, beleza
+[00:12:53] voltei aqui, tá, como eu falei
+[00:12:56] então aí a gente tem CNPJ
+[00:12:57] se caso a gente mudasse ali pra 2, a gente teria que trocar
+[00:13:00] a descrição pra CPF, entendeu
+[00:13:02] beleza
+[00:13:04] tá, número da inscrição
+[00:13:06] número da inscrição, mano, se a gente tá falando de CNPJ
+[00:13:08] A gente pode ter até no máximo
+[00:13:10] 14 posições, correto?
+[00:13:13] Se a gente está falando
+[00:13:14] De uma pessoa física
+[00:13:15] Ou seja, CPF
+[00:13:17] Até 11 posições, beleza?
+[00:13:20] Só que também vai ter casos, mano
+[00:13:22] Onde vai iniciar com 0
+[00:13:23] Ou vai ser passado pra gente
+[00:13:25] O CNPJ base
+[00:13:27] Não sei se você conhece aí, mas é aquele SPB lá
+[00:13:29] Que é as
+[00:13:31] 8 primeiras posições do CNPJ
+[00:13:34] Que é o
+[00:13:36] CNPJ raiz
+[00:13:38] Entendeu?
+[00:13:40] Sem a barra, sem a matriz
+[00:13:42] E sem o dígito
+[00:13:43] Ou seja
+[00:13:44] É basicamente isso aqui
+[00:13:46] 6
+[00:13:49] 7
+[00:13:52] Aí vem aqui
+[00:13:53] 00001
+[00:13:54] 1
+[00:13:56] Isso, isso aqui é um CNPJ completo
+[00:14:00] Obviamente não está totalmente formatado
+[00:14:02] O correto dele seria
+[00:14:05] Se eu não me engano
+[00:14:06] Isso aqui, beleza?
+[00:14:10] Só que o que acontece
+[00:14:11] O CNPJ, ele pode vir dessa forma aqui
+[00:14:14] CNPJ
+[00:14:16] Base
+[00:14:17] Então sempre que a gente faz a CNPJ
+[00:14:20] Base, mano, é as oito primeiras posições
+[00:14:21] Beleza?
+[00:14:24] Só que pode acontecer isso aqui também
+[00:14:25] O CNPJ começa com zero
+[00:14:30] Beleza?
+[00:14:35] Então esse cenário também pode acontecer
+[00:14:37] Tá bom?
+[00:14:40] Beleza, então esse serviço aí
+[00:14:41] Mano, ele vai consultar a matrícula
+[00:14:43] E a empresa do cara, tá bom?
+[00:14:46] É basicamente isso, ele vai retornar essas informações
+[00:14:47] Pra gente
+[00:14:48] Agora entra no consulta dados do trabalhador, por favor
+[00:14:51] Ô Luiz, rapidinho, é pra passar pela verbação, né?
+[00:14:56] Isso aí, ô
+[00:14:58] Álvaro, eu acho que o plugin do Matheus tá ligado, mano
+[00:15:00] Deixa eu, já vou chamar aqui
+[00:15:02] Já achei a proposta
+[00:15:03] Ó, já ajusta aí também, tá, William, por favor
+[00:15:14] Beleza, agora vamos falar lá com relação
+[00:15:25] A matrícula
+[00:15:27] A nossa matrícula, ela pode ter
+[00:15:32] Letras
+[00:15:33] E números
+[00:15:35] A gente geralmente tem um padrão aqui, mano
+[00:15:37] Aí a gente só fica alternando lá conforme os clientes
+[00:15:39] Deixa eu pegar aqui a matrícula que a gente geralmente usa
+[00:16:02] Aqui, ó
+[00:16:12] Dá pra você colocar essa matrícula aí
+[00:16:14] Tanto, mano, nesse retorno
+[00:16:17] Quanto no outro lá, no lista benefício, tá?
+[00:16:20] Pra gente deixar certinho
+[00:16:22] Porque a matrícula tem que bater, né?
+[00:16:23] Então eu não posso ter um endpoint com uma matrícula
+[00:16:25] E o outro com outra
+[00:16:26] Pra esse cara
+[00:16:29] Beleza
+[00:16:30] Agora, vamos falar com o CPF do cara
+[00:16:33] O CPF do cara que tá nos retornos é o seu?
+[00:16:37] Então ajusta aí também, tá?
+[00:16:39] Como eu falei, ele vai retornar, tá?
+[00:16:41] Mas pra ficar mais bonitinho
+[00:16:42] Ei, mano, a gente vai deixar igual
+[00:16:44] Beleza?
+[00:16:45] E olha a formatação que ele tá
+[00:16:46] Você viu ali que ele tá sem pontuação, né?
+[00:16:52] Exatamente
+[00:16:52] Você tem que...
+[00:16:54] Isso
+[00:16:54] Você tem que ir de acordo lá com o que tá esperando
+[00:16:57] Na informação
+[00:16:58] Lista benefícios.
+[00:17:26] É o lista benefício e o dados trabalhador
+[00:17:56] Beleza, agora a consulta
+[00:18:11] Antes de você fazer a consulta de novo
+[00:18:13] Vamos parar pra pensar o seguinte
+[00:18:15] Olha ali a sua consulta dos dados do trabalhador
+[00:18:18] Pensa que a gente tá consultando os dados do cara
+[00:18:21] Pra fazer o empréstimo
+[00:18:22] Então ele precisa ter valor de margem, certo?
+[00:18:24] Olha os valores de margem que tá vindo ali
+[00:18:26] Tá zerado
+[00:18:30] Ou seja
+[00:18:31] Tem que arrumar a margem
+[00:18:34] Arrumou a margem ali? Você colocou o valor?
+[00:18:56] No consulta-dados do trabalhador
+[00:18:57] Pensa o seguinte
+[00:19:00] O consulta-lista vai trazer a matrícula e a empresa
+[00:19:02] O consulta dados do trabalhador
+[00:19:04] Ele tá trazendo as informações do trabalhador
+[00:19:05] Cessa lá, por favor
+[00:19:07] Ó, o que ele vai trazer?
+[00:19:09] Ele vai trazer o sexo do cara
+[00:19:11] Vai trazer a data de nascimento
+[00:19:12] Vamos ajustar essa data de nascimento
+[00:19:14] Pra ficar um pouco mais real ali também, ó
+[00:19:16] Beleza
+[00:19:21] Ó, os valores aí do cara
+[00:19:23] Coloca um valor de margem aí
+[00:19:24] Pra ele
+[00:19:25] Isso
+[00:19:31] Valor mesmo
+[00:19:36] Valor direto
+[00:19:37] Pode colocar dois
+[00:19:40] É, pode colocar
+[00:19:49] Pode colocar mais, tá?
+[00:19:51] Pra gente fazer uns testes aí, conseguir cadastrar uma surposta
+[00:19:53] Que basicamente vai consumir
+[00:19:55] Pode colocar a base
+[00:19:57] E isso aí
+[00:19:58] Beleza
+[00:20:00] Aí a gente tem ali também a data de admissão
+[00:20:02] Ou seja, mano, a gente tá falando de um cara CLT
+[00:20:04] Ele foi contratado
+[00:20:05] Beleza
+[00:20:07] Não, pode
+[00:20:16] É, ele tá na empresa
+[00:20:17] Pode deixar dessa forma aí, tá?
+[00:20:19] É que basicamente tem alguns
+[00:20:20] Retornos que é o seguinte
+[00:20:23] Ele retorna o alerta se o cara tá afastado
+[00:20:26] Ou tá desligado
+[00:20:27] Beleza? Só que nesse caso aí
+[00:20:29] Pode deixar dessa forma que tá mesmo, pelo menos não.
+[00:20:34] Ali, ó, o nome da mãe ajusta também, coloca o nome real ali de uma mãe.
+[00:20:44] Desce aí, por favor.
+[00:20:47] Beleza, desce.
+[00:20:58] Tá bom.
+[00:20:59] Pode descer, pode descer seus impressos no legado que ele tem, se ele tem inegibilidade, desce um pouquinho mais, por favor.
+[00:21:07] E tem ali, tem um campo novo ali que é a verba recisória, que agora, mano, tem as garantias que o cara precisa informar lá pra cadastrar a proposta.
+[00:21:17] Não é a parte do FGTS, mas pode deixar dessa forma aí também, beleza?
+[00:21:23] Isso é porcentagem, é percentual. Pode deixar 35%.
+[00:21:29] Tá bom, beleza, pode salvar aí
+[00:21:34] Agora consulta os dados de novo lá, por favor
+[00:21:38] Pode cancelar aí
+[00:21:59] Tá bom, top, beleza
+[00:22:16] Fechou
+[00:22:19] Agora vamos tentar consultar os dados na tela de cadastro
+[00:22:22] Na tela de cadastro, lá no autorizador
+[00:22:32] Agora a gente vai cadastrar uma proposta
+[00:22:35] Consultando os dados do cara, entendeu?
+[00:22:52] Legenda Adriana Zanotto
+[00:23:22] Deu certo aí a aprovação?
+[00:23:43] Perdi o mouse aqui
+[00:23:52] Fiz a chamada
+[00:23:55] Passou pelo CPD
+[00:23:56] Deixa eu ver
+[00:23:57] Na CEMP aqui como é que tá
+[00:24:01] Acabei de fazer a chamada
+[00:24:03] Vê na observação da proposta
+[00:24:05] Se ele tiver
+[00:24:05] Cravado lá ele avermou
+[00:24:07] É que eu
+[00:24:10] É, eu confio muito na verbação, mas...
+[00:24:14] E tem a CPD de Isonlog também, tá, mano?
+[00:24:18] Ah, peraí, retornou a U.
+[00:24:21] O que ele fala de U?
+[00:24:22] Não é Stubb, tá?
+[00:24:23] Não é Stubb, você tá batendo na TAPREV.
+[00:24:26] Ah, é. Ah, é, pode parar.
+[00:24:28] Você cadastrou o cara com o mesmo nome que tava na oferta?
+[00:24:33] Ah, foi, mano, peraí.
+[00:24:36] Deixa eu só dar uma conferida aqui.
+[00:24:38] Teste Maria, deixa eu ver a oferta aqui agora, esqueci que tava na nota pra ele, é aqui, ó, interesse em sim, CPF, a gente quer esse daqui, é aqui, comece em zero, deixa eu ver esse nome aqui do cara,
+[00:25:01] Teste Maria
+[00:25:07] É o mesmo nome
+[00:25:08] Compartilha a tela aí Álvaro, por favor
+[00:25:16] Deixa
+[00:25:18] Ó, nome inválido
+[00:25:26] Mano, verifica
+[00:25:28] Verifica na CPD Jason Log
+[00:25:32] O que ele mandou pra Dataprev
+[00:25:33] CPD Jason Log, tá bom
+[00:25:35] Deixa eu ver se eu já tenho
+[00:25:36] Eu vou te mandar um selects
+[00:25:40] Aqui, mano
+[00:25:40] Aí você vê, por favor
+[00:25:58] Ah, vou mandar no seu chat aí, tá?
+[00:26:02] Não vou nem mandar aqui no grupo
+[00:26:03] Mano, deixa eu ficar de olho aqui
+[00:26:12] Pra ver se o 2.3 não caiu
+[00:26:14] Pô, eu esqueci de mandar os incidentes, mano
+[00:26:24] Rapaz
+[00:26:26] ai, caraca
+[00:26:33] nossa, melhorou nunca
+[00:26:35] que bosta, deixa eu ver aqui, select
+[00:26:37] ah, tá, tá, acesse uma oferta
+[00:26:41] e lpd
+[00:26:43] acho que
+[00:26:45] esse aqui eu já tinha, esse aqui eu já tinha
+[00:26:47] lpd diesel log
+[00:26:51] seria o diesel log
+[00:26:55] RVB, no caso, né?
+[00:26:59] Isso, exatamente.
+[00:27:09] Determinado
+[00:27:10] que tem no subsite, né?
+[00:27:14] Então, por exemplo,
+[00:27:15] pode falar, Luiz?
+[00:27:18] Não, o que eu ia falar
+[00:27:19] era de pensar que o
+[00:27:21] chassi é uma carcaça, entendeu?
+[00:27:23] Pensa o seguinte, é só uma carcaça.
+[00:27:25] O subsite é o que vai completar ele, entendeu?
+[00:27:28] Então, tipo, você vai ver que
+[00:27:29] se você não estiver usando os dois atrelados,
+[00:27:31] vai aparecer só as rotinas do chassi
+[00:27:33] se você acessar por ele. O subsite
+[00:27:35] você não consegue entrar nele.
+[00:27:37] Então você tem que adicionar ele pra
+[00:27:39] atribuir as rotinas, entendeu? Por isso que tem
+[00:27:41] aqueles chassi settings.
+[00:27:48] Fechou.
+[00:27:49] Fechou, mano.
+[00:27:51] Todos vocês estão envolvidos
+[00:27:52] nesse assunto, né? Então acho que é bom
+[00:27:54] deixar todo mundo alinhado. Faltou uma pessoa,
+[00:27:56] mas depois eu converso com eles.
+[00:27:59] É, seguinte,
+[00:28:01] o que acontece?
+[00:28:03] Estava previsto
+[00:28:04] o William
+[00:28:05] ele substituir
+[00:28:08] o Vitor aí no
+[00:28:10] meia-sete, certo, Vitor?
+[00:28:12] Poder confirmar?
+[00:28:15] Correto, eu acredito que sim.
+[00:28:16] Deixa eu só confirmar aqui que eu tenho o grupo
+[00:28:18] aqui que a gente tinha criado.
+[00:28:20] Beleza.
+[00:28:23] É, assim,
+[00:28:24] só pra não falar besteira aqui, beleza
+[00:28:27] então aí seria no mês 7
+[00:28:29] completo aí que o William ia substituir o
+[00:28:31] Victor, então
+[00:28:32] só que a gente vai ter que fazer uma troca, tá
+[00:28:35] a gente tá com umas mudanças aqui
+[00:28:37] e a gente não vai
+[00:28:39] conseguir mais deixar o William aí com você, Victor
+[00:28:41] então será um outro rapaz
+[00:28:43] que vai substituir
+[00:28:45] que é o Christian, que eu não consegui colocar
+[00:28:47] ele nessa cal agora, mas a gente conversa com ele
+[00:28:49] depois, então
+[00:28:51] eu vou avisar a GP também, né
+[00:28:53] aí da mesa do Digio, acho que é a Sandra
+[00:28:55] se eu não me engano, vou conversar com ela
+[00:28:57] e eu queria deixar você
+[00:28:59] sentir já, né, porque em algum momento
+[00:29:01] o Christian que vai te chamar
+[00:29:03] aí pra poder absorver, né
+[00:29:05] os conteúdos, os trabalhos
+[00:29:07] e o Bruno, né, que também
+[00:29:09] aí também faz parte da mesa da Digio
+[00:29:11] é o rapaz que vai dar um auxílio
+[00:29:13] pro Christian, tá Bruno? Então
+[00:29:15] eu queria que você ficasse ciente, né
+[00:29:17] que o
+[00:29:18] Victor vai sair de férias, acho que você já sabe
+[00:29:21] Mas que vai ser o Christian
+[00:29:23] Que vai substituir ele
+[00:29:26] E provavelmente
+[00:29:27] Claro, o Victor vai dar o apoio ali
+[00:29:29] Antes de sair de férias
+[00:29:31] Vai passar todo o conteúdo, as atividades
+[00:29:33] Mas provavelmente ele vai precisar de um apoio ainda
+[00:29:35] Então acredito que você consiga ajudar ele
+[00:29:37] Nesse período
+[00:29:38] Beleza
+[00:29:40] Mas é isso
+[00:29:43] Eu vou atualizar lá o grupo
+[00:29:45] Que eu tinha falado com a Sandra
+[00:29:47] Eu vou avisar que não vai ser mais o William
+[00:29:49] Vai ser o Christian
+[00:29:51] E pro William
+[00:29:54] A gente tem um novo papel
+[00:29:55] Você ainda vai substituir uma mesa
+[00:29:58] Porém vai ser a mesa do C6
+[00:30:01] Que envolve o Gabriel
+[00:30:02] E o Matheus que estão aqui com a gente
+[00:30:04] O Matheus ele também vai sair de férias
+[00:30:08] Que dia que você sai de férias Matheus?
+[00:30:11] Pode confirmar por favor
+[00:30:12] Dia 23
+[00:30:15] Dia 23 agora né
+[00:30:19] Já
+[00:30:19] então William
+[00:30:24] é isso que eu queria alinhar com você
+[00:30:26] você tem algum
+[00:30:28] trabalho em pauta
+[00:30:30] nessa próxima semana
+[00:30:33] ou
+[00:30:33] está tranquilo e a gente pode substituir
+[00:30:36] o Matheus
+[00:30:49] Entendi
+[00:30:53] Ah, legal, então não vai ter problemas
+[00:30:55] Então vamos considerar aí que você vai substituir o Matheus
+[00:30:58] A partir do dia 23 do 6
+[00:31:01] E vai
+[00:31:02] Na mesa do C6
+[00:31:04] E vai até que dia, Matheus?
+[00:31:08] Até o dia 4
+[00:31:11] Acho que é 3, né?
+[00:31:13] Isso, acho que é isso
+[00:31:14] 3 do 7
+[00:31:15] Até o dia 3 que é sexta do 7
+[00:31:17] Ah, entendi
+[00:31:19] Então até dia 3, William
+[00:31:22] Você ficaria cobrindo aí a mesa do C6
+[00:31:24] Tá, Matheus
+[00:31:25] Porém
+[00:31:27] Além de cobrir as férias dele
+[00:31:30] A gente também vai pedir pra você
+[00:31:32] Continuar um pouquinho na mesa do C6
+[00:31:34] Tá, o Gabriel que tá na cala
+[00:31:36] Aqui com a gente, ele é o analista de CQ
+[00:31:38] Lá da mesa do C6
+[00:31:40] E ele vai te acompanhar
+[00:31:42] Tá, nesse processo aí
+[00:31:44] Substituindo o Matheus, ele vai te auxiliar
+[00:31:46] Vai te orientar
+[00:31:47] só que quando o Matheus voltar
+[00:31:49] você não volta
+[00:31:50] pra equipe aí do
+[00:31:53] Glauco, quem que é o seu analista aí hoje?
+[00:31:58] Gustavo
+[00:31:59] tá
+[00:32:00] isso, então retornando
+[00:32:03] o Matheus retornando, você ainda não volta
+[00:32:05] pro Gustavo, tá bom? Você vai ficar mais
+[00:32:07] uma semaninha aí com o Gabriel
+[00:32:08] e depois já tem
+[00:32:11] outras férias
+[00:32:12] que é o Jonas, o Jonas não tá aqui
+[00:32:15] Mas ele também vai tirar férias
+[00:32:17] Uma semana depois do Matheus
+[00:32:19] E a gente vai precisar também da sua ajuda
+[00:32:21] Pra cobrir essas férias dele
+[00:32:23] Então você faria
+[00:32:24] Ia cobrir duas férias basicamente na sequência
+[00:32:27] Tá bom?
+[00:32:30] Então a gente vai precisar
+[00:32:31] Desse apoio aí
+[00:32:32] E aí nesse período vai ter
+[00:32:35] O Gabriel aí pra te ajudar
+[00:32:36] Então qualquer coisa que você tiver problemas
+[00:32:39] Pode chamar que o Gabriel ajuda
+[00:32:42] Claro, se tiver alguma coisa administrativa
+[00:32:44] também que eu posso ajudar, você pode me acionar
+[00:32:45] também, tá bom?
+[00:32:47] Então, aí eu chamei o Caio também
+[00:32:49] aqui na Cal, porque vai envolver
+[00:32:51] o Christian, né Caio? Então
+[00:32:53] o Christian aí que tá na sua alçada aí
+[00:32:55] e ele ia substituir
+[00:32:58] a mesa do C6, né?
+[00:33:01] Nesse caso
+[00:33:02] a gente vai ter que fazer a troca
+[00:33:03] pra mesa do Digio, que é
+[00:33:05] onde o Vitor tá, beleza?
+[00:33:10] E...
+[00:33:10] Aí eu...
+[00:33:11] Só que eu tinha conversado com você, né Caio, da gente
+[00:33:13] tentar
+[00:33:13] deixar essa
+[00:33:17] substituição do Christian pra outra pessoa,
+[00:33:19] eu ainda tô vendo essa questão, tá bom?
+[00:33:21] Mas, por enquanto, vai ter que ser o Christian.
+[00:33:24] Tá? Só pra você ficar
+[00:33:25] ciente. Beleza, beleza.
+[00:33:28] Inclusive, a pauta do Christian
+[00:33:29] é M7, eu não sei nem se
+[00:33:31] tem alguma coisa, hein? Esqueci de ver, peraí.
+[00:33:34] Acho que tá só o
+[00:33:35] C6 mesmo.
+[00:33:37] É, porque basicamente o William
+[00:33:39] vai substituir.
+[00:33:42] Então, vai sair do
+[00:33:43] Christian, ele é
+[00:33:45] para a Digi, então vai dar certo.
+[00:33:48] Então, pessoal, esse é o recado,
+[00:33:49] tá? Queria deixar todo mundo
+[00:33:51] ciente, todo mundo alinhado aí.
+[00:33:54] E alguém
+[00:33:55] ficou com alguma dúvida? Falei
+[00:33:57] muito rápido.
+[00:34:00] Que boa.
+[00:34:01] Aí, o Raiz,
+[00:34:03] o William pode terminar o treinamento dele hoje,
+[00:34:05] que ele tem, do empreendedor,
+[00:34:07] né? E aí na segunda ele já vem?
+[00:34:09] Ou ele termina até terça e
+[00:34:11] vem na quarta para mim?
+[00:34:13] Olha, eu acho que depende mais de como está o ritmo aí, né, William?
+[00:34:17] Eu não sei se o pessoal está com o trampo para ver se é hoje,
+[00:34:21] mas por mim, quanto antes você conseguir começar, melhor.
+[00:34:25] Lá com o Gabriel.
+[00:34:27] Se você quiser alinhar com o Gustavo, né?
+[00:34:39] Você conversa aí com o Gustavo?
+[00:34:43] aí qualquer coisa você avisa o Gabriel
+[00:34:45] aí o Gabriel já tá ciente aí quando você vai começar
+[00:34:48] e é isso
+[00:34:50] aí você já começa aí na próxima semana
+[00:34:52] beleza
+[00:34:57] bom pessoal, é isso
+[00:35:00] qualquer tipo de mudança aí que tiver
+[00:35:02] de novo eu vou avisando vocês
+[00:35:03] mas acredito que agora já tá todo mundo na mesma
+[00:35:06] página aí
+[00:35:07] então é isso, obrigado aí, obrigado, valeu
+[00:35:10] falou
+[00:35:13] Falou pessoal, bom trabalho, tchau, tchau.
+[00:35:43] Legenda Adriana Zanotto
+[00:36:13] café aqui
+[00:36:16] aí o Luiz falou de subir o subsite
+[00:36:20] pra cadastrar proposta
+[00:36:22] foi isso
+[00:36:40] fechou mano
+[00:36:40] é isso aí
+[00:36:41] então
+[00:36:42] todas essas rotinas aí, mano
+[00:36:45] tipo proposta consignado
+[00:36:46] proposta saque parcelado
+[00:36:48] até, ó, vai ali
+[00:36:50] no menu tabelas lá
+[00:36:52] pode mostrar
+[00:36:54] ó, tá vendo que tem uma barra dividida
+[00:36:57] aí bem no meio
+[00:36:57] essa barrinha
+[00:37:00] meio que assim, tudo que tá pra cima
+[00:37:02] são rotinas provenientes do
+[00:37:04] subset consignado, né
+[00:37:06] que como o Luiz falou
+[00:37:08] o chassi é só um esqueleto
+[00:37:10] Ele tem algumas rotinas base
+[00:37:12] Mas o que complementa
+[00:37:14] É o subset consignado
+[00:37:16] Então vamos lá
+[00:37:18] Vamos cadastrar
+[00:37:20] Acho que não sei se cadastrar proposta
+[00:37:23] Mas é a margem
+[00:37:24] Que vocês estavam configurando
+[00:37:27] Vamos lá então
+[00:37:28] No cadastro mesmo
+[00:37:29] Cadastro proposta consignado
+[00:37:31] Isso
+[00:37:33] de início ele demora um pouquinho
+[00:37:43] pra abrir, porque ele tá abrindo um outro site
+[00:37:45] né
+[00:37:45] ...
+[00:38:03] Isso, isso
+[00:38:09] Então tipo assim, ah, se tiver o subset de cartão
+[00:38:12] Aí vai aparecer lá como vem o cartão
+[00:38:14] E outras rotinas também do
+[00:38:16] Do subset, mano
+[00:38:17] É isso aí
+[00:38:20] Vai colocar a origem 1
+[00:38:21] Que geralmente é a que a gente sempre tá usando
+[00:38:33] Legenda Adriana Zanotto
+[00:39:03] Espera ele abrir aí.
+[00:39:33] E aí
+[00:40:03] Não demora mesmo, mano
+[00:40:12] No começo, assim, porque tem muito campo
+[00:40:14] Abriu
+[00:40:15] Isso, pode pôr proposta nova
+[00:40:18] É privado
+[00:40:21] No caso, agora vai ser privado
+[00:40:24] Que a gente vai usar, isso
+[00:40:25] Aí, lembra daquele empregador
+[00:40:30] Que a gente vinculou
+[00:40:31] No modelo de averbação
+[00:40:33] Vai ser agora que a gente vai usar ele
+[00:40:36] Que é esse 32, 32, 33
+[00:40:39] Aí só selecionar
+[00:40:46] Nema regional
+[00:40:47] Acho que pode ser a primeira mesmo
+[00:40:49] Aí no CPF
+[00:40:54] Vai ser o CPF que vocês
+[00:40:56] Autorizaram o termo
+[00:41:03] Isso, vamos ver o que vai dar.
+[00:41:21] Ele vai fazer umas validações aí, né, pra ver se tá ok, que tudo certinho.
+[00:41:27] Se fosse um CPF com termo que não tivesse aprovado, mano,
+[00:41:31] Ele iria criticar na tela e aquele botão de autorização ia ficar habilitado, né?
+[00:41:36] Aí pode clicar nesse consultar vínculos empregatistas, vamos ver o que ele retorna.
+[00:41:50] Fechou, retornou sua matrícula.
+[00:41:53] Só explicando, esse consulta vínculos, mano, ele vai verificar,
+[00:41:58] ele vai retornar não só a matrícula do cara
+[00:42:00] como retornou ali, mas também
+[00:42:02] ele vai verificar se
+[00:42:04] para o
+[00:42:06] CPF que você informou, existe
+[00:42:08] alguma oferta
+[00:42:09] cadastrada contida na base
+[00:42:12] e se tiver
+[00:42:14] ele vai surgir um pop-up na tela
+[00:42:16] perguntando se você quer carregar os
+[00:42:18] dados da oferta
+[00:42:19] na proposta que você está
+[00:42:21] preenchendo o cenário
+[00:42:23] esse vai ser o ponto
+[00:42:26] E aí a gente vai clicar nesse consultor dados trabalhador
+[00:42:29] Dá um ok
+[00:42:39] Nessa crítica
+[00:42:41] Isso
+[00:42:43] Depois eu vou falar por isso que
+[00:42:45] Surgiu essa crítica aí
+[00:42:48] Mas a princípio foi, mano
+[00:42:50] Pode ver que a margem foi retornada
+[00:42:52] Ali como 7 mil
+[00:42:53] A data também
+[00:42:55] Então foi
+[00:42:57] Aconteceu conforme o Luiz explicou
+[00:42:59] Que ele bate lá na data prévia
+[00:43:02] No nosso caso
+[00:43:02] E vai verificar
+[00:43:06] Se lá está vinculado a matrícula
+[00:43:08] Com o CPF que você informou
+[00:43:10] E vai retornar os dados dele
+[00:43:12] Aí acho que seria basicamente isso
+[00:43:18] Mano
+[00:43:19] Depois teria que ver o que o Luiz vai querer
+[00:43:21] Tentar testar contigo
+[00:43:24] Mas aí a partir daí
+[00:43:25] dá pra já seguir com o cadastro
+[00:43:27] da proposta já.
+[00:43:34] Aí acho que seremos
+[00:43:35] esperar ele, mano.
+[00:43:44] É, mano,
+[00:43:45] é uma das mais, assim,
+[00:43:47] a primeira barreira de toda a verbatória.
+[00:43:49] Na parte de averbação, deixa eu ver aqui,
+[00:43:51] você pode ver que tem excluir averbação,
+[00:43:53] inclui, geralmente é incluir
+[00:43:56] deixa eu ver aqui, incluir ctps
+[00:43:58] é, pode
+[00:44:04] descendo, deixa eu ver
+[00:44:05] escolhi a verbação, acho que acabou aí, né
+[00:44:08] sobe até o topo de novo
+[00:44:09] deixa eu ver só
+[00:44:11] ali ó, é a verbação
+[00:44:14] consignado
+[00:44:15] isso
+[00:44:18] aí vai ter dois retornos
+[00:44:20] ó, pode ver que esse aí tá com o retorno
+[00:44:22] de AOCPF não encontrada
+[00:44:24] na base.
+[00:44:26] Então, a gente vai ter que alterar.
+[00:44:28] Aí pode voltar lá no
+[00:44:30] diretório onde está o stub.
+[00:44:32] Entra nesse arquivo,
+[00:44:34] leia-me.
+[00:44:39] Isso.
+[00:44:40] E pode copiar esse retorno
+[00:44:42] de sucesso aí, ó. Número do contrato,
+[00:44:44] teste RET,
+[00:44:46] BD, inclusão efetuada com
+[00:44:48] sucesso.
+[00:44:51] Isso.
+[00:44:52] É
+[00:44:54] Ele substitui
+[00:44:57] No arquivo de retorno lá
+[00:44:59] Pode apagar todo esse
+[00:45:01] Tudo isso
+[00:45:03] Aí foi
+[00:45:04] Só salvar
+[00:45:07] Fechou, aí
+[00:45:11] Só isso, mano, aí a gente já pode
+[00:45:13] Tentar fazer a verbação
+[00:45:16] Certinho pra ver o que que dá
+[00:45:17] Então vamos dar um finaliza
+[00:45:19] É, só tem um ponto, mano
+[00:45:27] Que eu lembrei aqui
+[00:45:28] É, você tá rodando os seus plugins
+[00:45:31] Na sua base, né
+[00:45:32] Tá, abre
+[00:45:35] Ah, tá, fechou
+[00:45:41] Então, aí a gente vai precisar rodar os plugins na base
+[00:45:44] Não só o plugin
+[00:45:46] Isso mesmo, não só o plugin de CPD
+[00:45:48] mas esses de averbação também.
+[00:45:55] Isso, pode abrir
+[00:45:56] normal.
+[00:46:14] Ah, já estão sendo executados aí, beleza.
+[00:46:16] Aí é só conferir, aí tem um
+[00:46:18] O SRV CPD ali nesse acionador.
+[00:46:22] E ali a gente pode ver que ele, ó,
+[00:46:23] o SRV é a verbação padrão,
+[00:46:25] o plugin de averbação tá rodando.
+[00:46:27] Pode descer um pouco.
+[00:46:29] O scroll.
+[00:46:32] Isso, tá aí, ó.
+[00:46:33] SRV é a verbação, os serviços de averbação
+[00:46:35] estão ok.
+[00:46:38] E tem aquele
+[00:46:39] averbação proposta .exe
+[00:46:41] ali embaixo também, que é o que a gente
+[00:46:43] vai precisar. São
+[00:46:44] basicamente dois plugins de averbação
+[00:46:47] que a gente sempre roda
+[00:46:48] mais o da averbadora correspondente
+[00:46:51] que a gente está usando
+[00:46:52] então
+[00:46:54] está ok, pode fazer a chamada
+[00:46:57] lá do serviço
+[00:46:58] e tem uma query aqui que eu vou te
+[00:47:01] passar que ajuda a gente a ver
+[00:47:03] o processamento
+[00:47:04] da mesma forma como você
+[00:47:11] acionou a averbação online
+[00:47:13] da outra vez lá pelo autorizador
+[00:47:16] E clicando em afirmação online
+[00:47:17] Deixa eu ver como é que está aí
+[00:47:20] Isso, pode dar um pesquisar
+[00:47:24] Aí, vai em validação
+[00:47:30] Vamos avançando na esteira
+[00:47:32] Deixa eu pegar aqui a
+[00:47:38] A query, vou te passar
+[00:47:41] isso
+[00:47:54] pode chamar o serviço
+[00:47:56] não mexe mais nada por enquanto
+[00:47:58] a gente vai consultar
+[00:48:00] via essa query aqui
+[00:48:02] que eu já te passei
+[00:48:04] no grupo
+[00:48:11] Se pode abrir o SQL.
+[00:48:41] Isso, jogou
+[00:48:59] Então esses aí são duas queries
+[00:49:01] Isso aqui, calma aí
+[00:49:03] A gente vai fazer a consulta
+[00:49:05] Primeiro ali
+[00:49:08] Tá vendo que tem um CSNR próprio
+[00:49:10] No campo where
+[00:49:11] A gente vai colocar o número da proposta que a gente cadastrou e chamou a verbação.
+[00:49:20] Isso aí, isso.
+[00:49:28] Não tem nenhum registro, vamos voltar lá no autorizador então.
+[00:49:34] Pode chamar o processo aí, a verbação lá.
+[00:49:38] Isso.
+[00:49:41] Aí vamos lá agora no SQL
+[00:49:46] Não precisa clicar ali na guarda
+[00:49:50] Aí pode fazer um
+[00:49:51] Uma consulta
+[00:49:54] Isso
+[00:49:58] Tá, ele tá rodando
+[00:50:04] Pode ir consultando
+[00:50:07] Aí ele, a gente ia acompanhando, né
+[00:50:10] Então, ele chama primeiro o plugin.
+[00:50:13] Não, é o de cima mesmo, mano.
+[00:50:15] O de baixo é...
+[00:50:16] Depois eu explico.
+[00:50:16] É o primeiro de cima.
+[00:50:20] Isso aí.
+[00:50:21] Ele chama primeiro...
+[00:50:22] Esse sempre vai ser o fluxo, mano.
+[00:50:24] Ele vai chamar primeiro a verbação proposta.
+[00:50:28] Com C, quer dizer que ele rodou com sucesso.
+[00:50:30] Com T, é trabalhando.
+[00:50:32] E P, é pendente.
+[00:50:33] Pode ir colocando executar ali.
+[00:50:36] isso, pode ir apertando
+[00:50:41] e aí foi, rodou um
+[00:50:42] rodou os dois, quer dizer, agora ele vai rodar
+[00:50:44] o plugin do CPD
+[00:50:46] por enquanto tá parado
+[00:50:47] aí é o plugin, tipo assim
+[00:50:51] os dois plugins de averbação
+[00:50:52] ele meio que vão formando ali a requisição
+[00:50:54] e aí quem vai dar o
+[00:50:56] ok que conseguiu averbar
+[00:50:58] vai ser o plugin do CPD
+[00:51:00] vamos ver se ele vai rodar
+[00:51:05] Parado
+[00:51:14] Deixa eu ver, tá agendado pras 11
+[00:51:15] É, 11h54, 36
+[00:51:17] Vê se ele roda
+[00:51:19] Ó, trabalhando, beleza
+[00:51:26] Ó, finalizado, ok
+[00:51:30] Aí, mano, ele vai chamar um plugin
+[00:51:32] Que é o de esteira do autorizador
+[00:51:34] grande chance de lhe dar erro, tá?
+[00:51:36] Eu vou explicar o porquê.
+[00:51:39] Ele vai demorar um pouco.
+[00:51:42] Mas aí, por exemplo,
+[00:51:43] deu um finalizado ok,
+[00:51:46] só que a gente não sabe
+[00:51:47] que resultado que deu na verbação.
+[00:51:50] E é aí que a gente consulta
+[00:51:52] aquela tabela de baixo
+[00:51:53] na base do DIGCDC,
+[00:51:55] que é a COINC.
+[00:51:57] Pode consultar
+[00:51:59] esse select de baixo.
+[00:52:04] Então, essa tabela mostra os resultados da averbação.
+[00:52:08] Então, tem esses dois campos, que é o OETP-CIT e OETP-COM.
+[00:52:15] Então, é tipo a situação e outro é o tipo de comando, né?
+[00:52:18] Quando o comando é I, quer dizer que é um comando de inclusão de averbação.
+[00:52:23] E o C quer dizer que ele foi concluído com sucesso.
+[00:52:26] então
+[00:52:28] eu não sei
+[00:52:30] que tipo de teste você por exemplo
+[00:52:32] vai mexer lá na mesa do
+[00:52:33] C6 ou no decorrer
+[00:52:36] da sua jornada aqui na função
+[00:52:38] vamos dizer assim, mas sempre quando
+[00:52:40] precisar fazer uma averbação
+[00:52:41] e consultar na base pra ver se
+[00:52:44] deu certo, sempre vai ser nessa tabela
+[00:52:46] que você vai olhar
+[00:52:47] pra ver se deu bom os status
+[00:52:50] final da averbação
+[00:52:52] tem uma rotina
+[00:52:54] também
+[00:52:55] aí é lá no web empregador
+[00:52:57] aí eu ia pedir para você abrir
+[00:52:59] o web empregador aí também
+[00:53:01] aí é bom que tem essa rotina
+[00:53:05] quando a gente tem que evidenciar
+[00:53:07] para o cliente que a verbação
+[00:53:09] deu sucesso e aí a gente usa essa rotina
+[00:53:11] para evitar de ficar usando a base
+[00:53:13] aí a verbação online
+[00:53:16] e ali a consulta
+[00:53:17] de movimentações por contrato
+[00:53:19] Isso
+[00:53:23] Vai demorar um pouco também para abrir
+[00:53:26] Nesse meio tempo
+[00:53:28] Vamos voltar lá na base
+[00:53:30] E copiar o número do contrato
+[00:53:32] Da proposta
+[00:53:33] Que seria a operação
+[00:53:34] Já está aí
+[00:53:37] Na CEMP
+[00:53:38] Pode ver que a gente filtrou pelo OENR
+[00:53:42] Prop
+[00:53:42] Só que o primeiro campo é o OENR
+[00:53:46] Oper
+[00:53:46] E é esse aí que a gente vai copiar agora
+[00:53:49] Que é o número do contrato
+[00:53:51] Ou da operação
+[00:53:52] Isso, isso daí
+[00:53:57] Combinado
+[00:54:01] Fechou, vamos esperar abrir agora a rotina
+[00:54:05] Demorou um pouco
+[00:54:07] E nesse meio tempo também
+[00:54:09] Ele geralmente
+[00:54:10] Gera uma observação
+[00:54:13] Na proposta, né
+[00:54:14] Que aí a gente pode ver no autorizador
+[00:54:17] Enquanto abre, vamos lá
+[00:54:18] dá uma olhadinha, isso, clica ali, não, não, é ali mesmo, volta lá na esteira, é, vamos no consulta manual 1, isso, foi, pode informar o número da proposta seu aí,
+[00:54:41] foi, agora clica ali
+[00:54:45] no
+[00:54:45] clica ali no lib
+[00:54:48] que aí a gente vai abrir o grid de observação
+[00:54:51] nesse é o grid
+[00:54:55] que ele registra
+[00:54:57] as observações dos processos
+[00:54:59] que a proposta passou
+[00:55:00] e lá embaixo provavelmente deve ter algum
+[00:55:03] aí, esse aí mesmo
+[00:55:05] confirmação de averbação
+[00:55:09] só a mensagem ali
+[00:55:11] que não registrou certinho, eu acho que não
+[00:55:13] é aquele retorno que a gente viu
+[00:55:15] mas depois a gente dá uma olhadinha
+[00:55:17] mas aí ele deu
+[00:55:19] ele averbou com sucesso
+[00:55:21] então quando a gente passa
+[00:55:25] pela averbação, só recapitulando
+[00:55:27] os plugins vão rodar naquela base
+[00:55:29] que é
+[00:55:31] a base do DIG monitor
+[00:55:32] a tabela é consult
+[00:55:35] que a gente verifica os processos
+[00:55:38] depois quando a verba
+[00:55:39] é a COAMP, que é o segundo
+[00:55:41] o SELECT lá.
+[00:55:43] E aí, pra gente ver
+[00:55:45] se averbou, tem a tabela,
+[00:55:47] tem esses status e tem a rotina
+[00:55:49] lá no empregador, que eu acho que já abriu.
+[00:55:54] Então, vamos lá.
+[00:55:55] Pode ir lá pro empregador.
+[00:55:58] Isso.
+[00:55:59] A gente seleciona aí a empresa
+[00:56:01] averbadora, que aí é o
+[00:56:03] E-Consignado Trabalhador,
+[00:56:05] se não me engano.
+[00:56:06] não, não, não, esse aí é o E-Consign
+[00:56:09] é ali embaixo
+[00:56:10] E-Consignado Trabalhador
+[00:56:13] foi
+[00:56:13] a data às vezes fica diferente, então pode pôr a data final
+[00:56:17] para o dia 19
+[00:56:18] e o contrato é o número
+[00:56:21] do contrato que a gente copiou lá
+[00:56:23] isso, então pesquisar
+[00:56:30] aí fica aí
+[00:56:31] e é por aí que a gente evidencia
+[00:56:33] aí se você for expandindo
+[00:56:35] ele vai dar pra ver as chamadas
+[00:56:37] e os retornos que teve
+[00:56:38] então ele mostra
+[00:56:41] os valores averbados
+[00:56:42] e aqui que deu sucesso
+[00:56:44] no caso
+[00:56:46] ele deu BD string
+[00:56:48] vamos no estabilar de novo
+[00:56:50] a gente tinha alterado
+[00:56:53] o retorno
+[00:56:55] do averbação consignado
+[00:56:57] mas eu acho que não era aquele
+[00:56:59] acho que eu confundi
+[00:57:01] mas vamos ver
+[00:57:02] averbação consignado
+[00:57:04] pode abrir o arquivo de retorno
+[00:57:06] não é esse porque a mensagem
+[00:57:09] não registrou com sucesso
+[00:57:11] ela ficou como bd string
+[00:57:13] lá no coisa
+[00:57:13] pode fechar esse leme
+[00:57:16] o leme a gente só usou pra
+[00:57:18] vamos voltar uma pasta
+[00:57:20] isso
+[00:57:21] deixa eu lembrar qual que era aqui
+[00:57:24] consulta empréstimo
+[00:57:28] legado
+[00:57:29] desce um pouco
+[00:57:32] por favor
+[00:57:33] ali, acho que é ali
+[00:57:37] averbar, consiga e trabalhador
+[00:57:39] vai na pasta retorno
+[00:57:43] é aí mesmo
+[00:57:44] a gente deu sorte que ele tava
+[00:57:47] com o retorno de sucesso já
+[00:57:49] aí, assim, pra ficar
+[00:57:55] bonitinho, a gente pegaria
+[00:57:57] aquela mensagem de sucesso e colocaria
+[00:57:59] aí onde tá essa mensagem string
+[00:58:01] foi por isso que ele
+[00:58:03] que ele retornou
+[00:58:05] daquele jeito lá
+[00:58:06] mas assim, a verbação
+[00:58:09] deu bom, então
+[00:58:10] a gente pode voltar agora lá no
+[00:58:13] no autorizador
+[00:58:15] o Gustavo tá mandando mensagem
+[00:58:19] se quiser
+[00:58:19] isso
+[00:58:22] pode ler de boa
+[00:58:31] E aí
+[00:59:01] Boa
+[00:59:16] aí é isso
+[00:59:19] acho que a gente já pode voltar lá no autorizador
+[00:59:30] aí
+[00:59:31] Até essa parte da verbação.
+[00:59:33] Pode permanecer nessa tela, mano.
+[00:59:35] Aí até essa parte tá ok assim.
+[00:59:59] Fechou, mano. Beleza.
+[01:00:01] Beleza, é, nesse caso
+[01:00:05] aqui do consignado privado, mano
+[01:00:07] como eu falei, eu acabei confundindo
+[01:00:09] o retorno que o
+[01:00:11] sistema olha pra falar se foi averbado
+[01:00:13] ou não, né, que no caso
+[01:00:15] é esse averbar
+[01:00:16] consignado trabalhador, se eu não me engano
+[01:00:19] e não é o averbação
+[01:00:21] averbar
+[01:00:22] averbar pra conseguir empréstimo
+[01:00:26] alguma coisa assim, né, tem essa diferença
+[01:00:28] né, e aí cada
+[01:00:29] a verbadora vai ter o seu retorno
+[01:00:31] certinho por parte lá da
+[01:00:33] do stub, né
+[01:00:35] então, aí
+[01:00:37] assim, depois você pega o jeito, mano
+[01:00:39] é um negócio de tentativa e erro às vezes
+[01:00:41] e decorar, você vê que eu acabei
+[01:00:43] esquecendo também, mas é um
+[01:00:45] fato que a gente já conseguiu, né
+[01:00:47] e aí, mano
+[01:00:51] só pra gente continuar, né
+[01:00:53] vamos voltar lá na
+[01:00:55] base e a gente
+[01:00:57] ficou pendente um plugin
+[01:00:59] de esteira lá pra rodar, né?
+[01:01:01] Vamos ver o que deu a requisição dele.
+[01:01:07] Na base, no SQL.
+[01:01:12] Isso, pode
+[01:01:13] consultar a primeira consulta
+[01:01:15] aí, que é a do processamento
+[01:01:17] dos plugins, isso. Então, pode
+[01:01:19] ver que ele deu erro
+[01:01:21] nesse plugin esteira autorizador.
+[01:01:24] E o que que ele dá?
+[01:01:26] O que que faz esse
+[01:01:27] plugin esteira autorizador, mano?
+[01:01:29] Então, voltando para o acesso, a gente vê que os processos de averbação
+[01:01:35] é o averbação online, aguarda a averbação e retorna a averbação lá no autorizador.
+[01:01:44] Esse plugin de esteira, o que ele faz?
+[01:01:47] Ele vai movimentar a proposta de forma automática na esteira
+[01:01:52] e vai passar do aguarda a averbação para o retorno de forma automática.
+[01:01:59] Mas assim, mano, pra fazer essa desgrama funcionar, às vezes é um parto, então a gente passa, às vezes, na mão mesmo, né?
+[01:02:08] Porque ele tem um monte de configuração pra fazer.
+[01:02:11] Então, voltando lá no autorizador, pode voltar pra lá.
+[01:02:15] Então, ele iria movimentar, pode ficar aí, é isso.
+[01:02:19] Ele vai movimentar a proposta e sair desse aguardo-averbação, mas como deu erro, a gente vai ter que mover ele na mão, né?
+[01:02:26] Então pode clicar ali no
+[01:02:28] Aguarda a verbação
+[01:02:30] Aí ela vai pra um processo que é o retorno
+[01:02:37] Pesquisa de novo
+[01:02:38] Retorno de averbação
+[01:02:40] Esse é o fluxo dos processos, mano
+[01:02:43] Aí pode clicar no retorno
+[01:02:46] Aí o retorno
+[01:02:47] A gente move ele manualmente mesmo
+[01:02:49] Isso
+[01:02:52] E aí é a revesta online, mano
+[01:02:55] aí é onde a nossa proposta
+[01:02:57] ela vai deixar de ser
+[01:03:00] uma proposta apenas e virar um contrato
+[01:03:02] e ser efetivado
+[01:03:03] geralmente
+[01:03:04] claro que tem outros processos também
+[01:03:07] mas no mundo real
+[01:03:09] mas no nosso caso
+[01:03:11] de testes aqui
+[01:03:12] esse é o fluxo que a maioria faz
+[01:03:15] então é
+[01:03:18] cadastro de propostas
+[01:03:19] análise de crédito, averbação
+[01:03:21] e remessa online
+[01:03:23] Então, pode chamar o processo.
+[01:03:25] Vamos ver se ele vai gerar alguma crítica.
+[01:03:33] Não, o remesso online mesmo, isso.
+[01:03:39] Vamos ver se ele vai integrar a proposta ou vai criticar alguma coisa.
+[01:03:52] Acho que foi
+[01:03:56] Isso, o correto seria
+[01:04:05] ter registrado
+[01:04:08] uma mensagem bonitinha
+[01:04:10] a proposta foi integrada com sucesso
+[01:04:12] mas acho que a esteira não estava configurada
+[01:04:22] Isso. Aí, para a gente ver se integrou, tem também outras formas, tá?
+[01:04:28] A gente pode sair dessa rotina, vai ali em esteira, e aí vai ter ali, quer ver?
+[01:04:37] Cadê a aprovação?
+[01:04:40] Ali, aprovação, consulta, canceladas e integradas, isso.
+[01:04:44] Aí mesmo.
+[01:04:45] Eu acho que já é essa daí
+[01:04:53] Primeira, né
+[01:04:54] Ela consta ali com o status int
+[01:04:59] Que é a amostra que está integrada
+[01:05:00] Isso já é uma evidência, mano
+[01:05:02] A outra
+[01:05:03] A gente consegue ver na base, né
+[01:05:06] Então, vamos lá na base
+[01:05:08] Lá nas QL
+[01:05:09] E pode fazer uma outra query
+[01:05:15] e aí a gente vai consultar na tabela que chama
+[01:05:17] C-Oper
+[01:05:18] não, não, é outra query, eu digo
+[01:05:20] debaixo dessa daí mesmo
+[01:05:22] isso
+[01:05:24] então aí pode pôr o select asterisco
+[01:05:27] padrão
+[01:05:28] aí a base da C-Oper é a
+[01:05:31] digcdcmp também
+[01:05:32] a mesma de cima
+[01:05:37] digcdcmpr
+[01:05:39] dois pontos C-Oper
+[01:05:41] aí pode filtrar
+[01:05:44] Colocar on-ware
+[01:05:45] Coloca
+[01:05:50] OP
+[01:05:50] NR
+[01:05:52] OPER
+[01:05:53] Isso
+[01:05:58] Isso, dá pra pôr
+[01:06:00] Já o número da operação direto
+[01:06:01] Pode consultar
+[01:06:04] Isso aí
+[01:06:07] Ela tá aí já na base
+[01:06:08] Ela só aparece nessa base
+[01:06:10] Quando a gente passa pela integração
+[01:06:13] a remessa online, né, aliás
+[01:06:16] isso, exatamente
+[01:06:19] ou seja, tem duas tabelas
+[01:06:21] que a gente meio que acompanha
+[01:06:23] a proposta, que é a
+[01:06:25] Cprop, que é da base
+[01:06:27] do Digprop
+[01:06:28] você pode até montar
+[01:06:30] a query
+[01:06:32] pra gente se familiarizando
+[01:06:36] então pode montar
+[01:06:37] uma outra
+[01:06:38] isso
+[01:06:40] é o mesmo
+[01:06:41] só que aí é
+[01:06:44] digprop imp
+[01:06:45] isso, eu acho que é imp
+[01:06:52] isso, com R no final
+[01:06:53] dois pontos, cprop
+[01:06:55] aí
+[01:06:59] where
+[01:07:00] ppnr prop
+[01:07:03] e aí é o número da proposta mesmo
+[01:07:09] isso
+[01:07:11] boa, é isso aí
+[01:07:17] pode ver que até ali ele gera
+[01:07:19] o número da operação
+[01:07:21] também, então
+[01:07:23] quando a gente preenche o
+[01:07:25] formulário e clica em gravar
+[01:07:28] aí a proposta
+[01:07:29] ela já vai passar a ser
+[01:07:31] listada aí na Cprop
+[01:07:33] e ela, quando a gente
+[01:07:35] passa pela remessa, ela vai pra Cprop
+[01:07:37] até aqui, tudo bem?
+[01:07:44] Fechou, mano
+[01:07:44] aí vai ter um
+[01:07:46] depois quando você vai pegando mais o hábito
+[01:07:48] de fazer as consultas
+[01:07:50] ou talvez você já tenha percebido isso
+[01:07:52] que os campos, tudo tem um padrão
+[01:07:55] então, por exemplo, ali
+[01:07:56] a gente consultou três tabelas diferentes
+[01:07:59] em todas
+[01:08:00] vamos pôr
+[01:08:02] NRPROP, NRUOPER
+[01:08:04] a outra NRPROP aqui embaixo também
+[01:08:06] até aquela query ali de cima
+[01:08:09] que é a que a gente consulta
+[01:08:11] o processamento dos plugins, a gente está
+[01:08:13] filtrando por uma NR
+[01:08:15] prop também, a única coisa
+[01:08:17] que muda são os prefixos
+[01:08:19] que aí os prefixos
+[01:08:21] acompanham de cada
+[01:08:23] tabela
+[01:08:24] por exemplo
+[01:08:26] essa tabela E consult
+[01:08:28] ela tem esse prefixo CS
+[01:08:31] a
+[01:08:33] COPER é OE
+[01:08:35] a outra é OP, a outra é PP
+[01:08:37] e assim vai
+[01:08:38] é sempre a mesma coisa, mano, basicamente
+[01:08:41] e aí você vai pegando os esqueminhas
+[01:08:46] mas aí é isso
+[01:08:47] aí integrou, aí já era
+[01:08:49] geralmente o teste já finaliza
+[01:08:51] assim
+[01:08:52] fechou
+[01:08:57] mas por algum motivo
+[01:09:00] você cancela a sua proposta
+[01:09:01] se você ainda estiver em tempo de proposta
+[01:09:04] você cancelou a proposta
+[01:09:05] Ou se você já integrou a proposta
+[01:09:07] Você vai lá e liquidou o contrato
+[01:09:09] O que a gente vai estar fazendo?
+[01:09:11] A gente vai estar fazendo uma desaverbação
+[01:09:13] Porque eu cancelei a proposta
+[01:09:15] Em tempo de esteira
+[01:09:16] Não integrei ainda, não transformou no contrato
+[01:09:19] Eu averbei, cancelei
+[01:09:20] Então eu tenho que desaverbar
+[01:09:22] O que eu averbei
+[01:09:23] Beleza?
+[01:09:31] Exatamente
+[01:09:31] E aí
+[01:09:34] Se eu faço, por exemplo, se eu integrei
+[01:09:36] O meu contrato
+[01:09:38] Pensa o seguinte
+[01:09:40] Eu integrei o contrato
+[01:09:42] Aí eu tô pagando ele
+[01:09:44] E eu termino de pagar, eu liquido todo ele
+[01:09:46] Por completo, beleza?
+[01:09:48] Ou seja, liquidei o contrato por inteiro
+[01:09:51] Eu tenho que fazer a desaverbação também
+[01:09:53] Bom, porque
+[01:09:55] O contrato
+[01:09:55] Foi liquidado
+[01:09:58] Então eu tenho que devolver a margem
+[01:10:01] Pro cara
+[01:10:01] Beleza?
+[01:10:05] Então a gente tem duas formas de fazer
+[01:10:07] A desaverbação, via cancelamento
+[01:10:09] De proposta, isso se você ainda não tiver
+[01:10:11] Integrado a proposta
+[01:10:12] E o outro fluxo é através
+[01:10:15] De uma baixa, né? Você fazer a baixa
+[01:10:17] Do contrato
+[01:10:18] Via CDC ou via próprio empregador
+[01:10:21] O CDC é mais fácil, mas
+[01:10:23] É fazer uma baixa do contrato
+[01:10:24] A liquidação dele
+[01:10:27] Beleza?
+[01:10:30] Fechou?
+[01:10:32] Beleza.
+[01:10:32] Então esse vai ser o nosso próximo passo, tá bom?
+[01:10:34] Ver se a gente consegue desaverbar o contrato.
+[01:10:41] Oi?
+[01:10:45] Ah, você já integrou?
+[01:10:47] Você pode fazer o seguinte, mano.
+[01:10:48] Você pode cadastrar uma nova proposta, averbar de novo
+[01:10:51] e cancelar antes de integrar
+[01:10:53] pra ver se chama o serviço de exclusão de averbação.
+[01:10:58] Eu acho mais fácil do que você ter que...
+[01:11:00] você não tem o CDC, porque se você
+[01:11:01] tivesse o CDC aí, era você pegar a proposta
+[01:11:03] que você integrou e dar baixa
+[01:11:05] nas parcelas do contrato.
+[01:11:09] Beleza?
+[01:11:11] Lembrando,
+[01:11:11] ele é um serviço também, então ele tem o retorno aí
+[01:11:13] que provavelmente acho que é
+[01:11:15] exclusão de averbação, desaverbação,
+[01:11:18] não lembro, no stamp.
+[01:11:22] Beleza? Esse vai ser o nosso
+[01:11:23] próximo passo aí, tá bom?
+[01:11:24] Desaverbação é exclusão de averbação
+[01:11:31] Tem que olhar aí
+[01:11:32] Excluir averbação
+[01:11:36] Ixi, tem dois, mano
+[01:11:37] É um desses dois
+[01:11:38] Ou é excluir averbação ou é excluir consignado
+[01:11:40] Agora eu não me lembro de cabeça
+[01:11:41] Qualquer coisa, configura os dois da mesma forma
+[01:11:44] Isso aí, você tá vendo?
+[01:11:47] Ele retorna um código
+[01:11:48] Que vai realizar a exclusão
+[01:11:50] E lá no modelo de averbação tem uma aba, mano
+[01:11:52] Que é a exclusão, tá?
+[01:11:53] Aba de exclusão
+[01:11:55] Você tem uma parte dela que você configura
+[01:11:58] Os códigos que vão confirmar
+[01:11:59] A desaverbação
+[01:12:01] Aí a gente tem que depois olhar lá no modelo de averbação
+[01:12:03] Se esse BF tá configurado pra desaverbar
+[01:12:05] Tá bom, isso aí
+[01:12:13] Você vai averbar
+[01:12:17] E você vai cancelar a proposta
+[01:12:20] Porque eu acho que é uma forma mais fácil
+[01:12:21] Ou então você baixa o WebCDC
+[01:12:24] Não, você pode passar depois da averbação
+[01:12:28] Ela tem que estar averbada, entendeu?
+[01:12:30] Então ela tem que passar pelo fluxo de averbação
+[01:12:32] Sei lá, você cancela quando ela estiver na remessa
+[01:12:34] Ou quando ela passar
+[01:12:37] Da averbação lá, mano
+[01:12:38] Tipo, passou pelo retorno
+[01:12:39] Aí você está em alguma outra situação
+[01:12:41] Você vai lá e cancela a proposta, beleza?
+[01:12:47] E você fazer com ela integrada
+[01:12:48] E você vai precisar baixar o WebCDC lá
+[01:12:50] Pra você fazer a liquidação do contrato
+[01:12:52] Fazer a baixa dos contratos
+[01:12:53] Beleza?
+[01:12:59] Bom
+[01:12:59] Eu acho que dá pra gente fazer das duas formas
+[01:13:02] Vamos tentar e ver se dá certo
+[01:13:04] Primeiro com o cancelamento que é mais rápido
+[01:13:06] Beleza?
+[01:13:09] Ô Álvaro, deu certo aí então, né mano? A verbação
+[01:13:12] Sim, mano, deu bom aqui
+[01:13:16] Tá bom
+[01:13:17] Cadastrei com uma oferta
+[01:13:20] Dessa vez eu não pus nome
+[01:13:22] Nem nada
+[01:13:22] Não sei porque
+[01:13:23] Da primeira vez não foi
+[01:13:24] Mas o CNPJ
+[01:13:25] Com menos posições
+[01:13:27] E a Verbo
+[01:13:27] Tá bom
+[01:13:28] Beleza, mano
+[01:13:29] Fechou
+[01:13:30] Vamos só
+[01:13:31] E eu tava olhando
+[01:13:32] O S aqui
+[01:13:33] Não caiu ainda
+[01:13:34] Mano, eu acho que não vai cair, tá?
+[01:13:35] O Melo tá fudido
+[01:13:36] Pelo que eu entendi
+[01:13:37] Ou pode ser que ele caia
+[01:13:40] Ele gosta de dar uns blefe lá, mano
+[01:13:42] É, ele é muito louco
+[01:13:44] Safado
+[01:13:45] Fechou, mano
+[01:13:46] Eu vou fechar os workers aqui
+[01:13:49] É, pode fechar só de consulta e solicitação, tá, mano?
+[01:13:52] Não precisa fechar todos, não
+[01:13:53] Só pra não ficar chegando oferta e morrer, tá ligado?
+[01:13:59] Fechou, beleza
+[01:14:00] Deixa eu ver se o Paraná aqui do Bruno caiu, mano
+[01:14:13] Mano
+[01:14:13] O Eduardo mandou alguma coisa aqui no chat
+[01:14:16] Deixa eu ver o que ele mandou
+[01:14:17] Obrigado.
+[01:14:47] Legenda Adriana Zanotto
+[01:15:17] E aí
+[01:15:47] entrar ali
+[01:15:48] pra entender esse problema do Matheus.
+[01:15:52] Aí o William vai fazer a desaverbação aí, tá,
+[01:15:53] o Álvaro? Agora que a gente conseguiu
+[01:15:55] se livrar do fluxo lá, então, mano,
+[01:15:59] acho que dá pra dar um apoio aí
+[01:16:00] com o William.
+[01:16:02] Beleza, eu vou acompanhando aqui.
+[01:16:14] Deixa o William cadastrando aí a proposta,
+[01:16:16] E passando pela averbação de novo
+[01:16:18] A gente já
+[01:16:21] Vê essa
+[01:16:22] Essa parte da exclusão
+[01:16:24] Aí mano, só antes de acionar
+[01:16:26] Na esteira lá o processo de averbação
+[01:16:29] Online
+[01:16:29] Vamos alterar aquela mensagem lá
+[01:16:31] Pra não ficar como string
+[01:16:33] E deixar ela como sucesso
+[01:16:35] Acho que é
+[01:16:41] Averbar com sig trabalhador
+[01:16:44] o legado ali embaixo aí pode abrir o retorno e ver se tem outros retornos abertos aí o
+[01:16:55] bd tem que deixar que é o código né só mensagem que a gente vai alterar
+[01:16:59] pode fechar isso aí então
+[01:17:11] minimizar quer dizer
+[01:17:12] e vamos abrir um outro
+[01:17:15] só para deixar a mensagem bonitinha
+[01:17:17] aí abre o averbação consignado lá
+[01:17:19] retorno
+[01:17:21] isso, pode copiar
+[01:17:23] essa inclusão é efetuada com sucesso
+[01:17:25] só a mensagem, não, não, não
+[01:17:27] acho que é a mesma, deixa eu ver
+[01:17:29] Ah não, é diferente
+[01:17:31] Só a inclusão
+[01:17:33] Efetuada com sucesso, a mensagem
+[01:17:35] Isso
+[01:17:36] Aí o retorno
+[01:17:38] E aí onde está a mensagem
+[01:17:40] É isso aí, só salvar agora
+[01:17:43] É maravilha, mano, é isso aí
+[01:17:46] Chamando a verbação, a gente já
+[01:17:49] Já verifica a exclusão
+[01:17:59] Legenda Adriana Zanotto
+[01:18:29] Legenda Adriana Zanotto
+[01:18:59] Isso, mano, só ir passando
+[01:19:06] Validação
+[01:19:11] Averbação
+[01:19:22] Averbação online
+[01:19:23] Pode chamar o serviço
+[01:19:25] Vamos acompanhar a requisição
+[01:19:26] Naquela query
+[01:19:27] Copia o número da proposta, vamos substituir lá nessa consulta, isso, vamos acompanhando aí, espera de rodar.
+[01:19:57] Legenda Adriana Zanotto
+[01:20:27] E demora um pouquinho mesmo.
+[01:20:57] aí, rodou, fechou
+[01:21:06] a gente pode já
+[01:21:08] pegar o número da
+[01:21:10] quer dizer, desculpa
+[01:21:12] faz uma consulta ali na
+[01:21:14] COIMP agora, só pra gente ver
+[01:21:16] ó, CI
+[01:21:18] aparentemente foi, copia o número
+[01:21:20] da operação, isso
+[01:21:21] o caso aí tá
+[01:21:27] não tem nada porque a gente não
+[01:21:29] integrou ela ainda, não passou
+[01:21:31] pela remessa, vamos lá no
+[01:21:33] empregador agora, naquela mesma rotina
+[01:21:35] de consulta manutenção de
+[01:21:37] movimentação de contrato
+[01:21:39] lá, isso
+[01:21:41] aí só substituir, aí é assim mesmo
+[01:21:43] substituir ali
+[01:21:45] no contrato
+[01:21:46] esse novo agora
+[01:21:51] Ah, esse saiu, né, mano?
+[01:21:57] Acho que foi a sessão que deve ter caído, mas de boa.
+[01:22:11] É só pra gente conferir se a mensagem veio certinha.
+[01:22:21] É, esse aí a gente só vai cancelar
+[01:22:24] É porque eu vou te mostrar, mano
+[01:22:26] Que a gente tem
+[01:22:27] Se eu não me engano, acho que são três tipos
+[01:22:30] Pelo que eu conheço de cancelar a proposta
+[01:22:32] Mas aí nesse caso a gente não vai realmente
+[01:22:34] Integrar
+[01:22:35] Signar trabalhador
+[01:22:38] De 19, contrato
+[01:22:40] Aí a verbô
+[01:22:44] Vamos expandir só pra ver se a mensagem
+[01:22:46] Veio certinha dessa vez
+[01:22:47] Olha lá, BD, inclusão
+[01:22:50] efetuada com sucesso.
+[01:22:51] Aí deu bom, mano.
+[01:22:54] Fechou. Aí, vamos lá,
+[01:22:56] no processo de
+[01:22:58] exclusão,
+[01:22:59] como é que funciona, né? O Luiz deu uma
+[01:23:01] explicadinha assim por cima, né?
+[01:23:04] Então,
+[01:23:06] por exemplo, no cenário real deve ter
+[01:23:07] várias outras maneiras, mas o cenário
+[01:23:10] que a gente vai testar aqui,
+[01:23:11] por exemplo, é quando
+[01:23:13] a proposta
+[01:23:15] que foi averbada, ela é
+[01:23:17] cancelada no sistema, né?
+[01:23:21] Então, como é que a gente vai fazer?
+[01:23:23] Vamos voltar lá no autorizador.
+[01:23:28] Vai ter uma...
+[01:23:28] Pode deixar aí parada mesmo.
+[01:23:31] Agora, aí na rotina de cadastro,
+[01:23:34] vai ter...
+[01:23:36] Vamos lá.
+[01:23:37] Ali, ó.
+[01:23:37] Cancelamento de proposta.
+[01:23:40] Isso.
+[01:23:41] No caso, a gente vai pôr o número dela
+[01:23:44] e clicar em cancelar.
+[01:23:45] Mas antes, nós vamos ver como é que está o retorno do Stub.
+[01:23:55] Enquanto abre a rotina, já vamos dar uma conferida lá nele.
+[01:23:58] Vamos lá no Stub.
+[01:24:07] Isso, pode descer um pouco.
+[01:24:11] Vamos ver quantos retornos de exclusão tem.
+[01:24:14] Então, deixa eu ver aqui, exclusão, excluir a verbação, excluir consignado, acho que é consignado, portabilidade, inclusão, porte, cdps, tá.
+[01:24:28] Abre para a gente, mano, os arquivos de retorno do excluir a verbação e excluir consignado, só para ver a diferença entre os dois.
+[01:24:44] Fechou
+[01:24:48] Tá, deixa eu ver
+[01:24:51] IPF, mensagem
+[01:24:53] Exclusão realizada por sucesso
+[01:24:55] Deixa eu ver o outro lá
+[01:24:56] Mensagem string
+[01:25:01] Demora de contato
+[01:25:02] Tipo de operação
+[01:25:04] Tá, ó, é só pra gente se blindar
+[01:25:08] Mano, de talvez
+[01:25:09] Um possível erro
+[01:25:10] Vamos alterar esse código de sucesso
+[01:25:13] de AB pra BF
+[01:25:15] isso, e a mensagem
+[01:25:24] vamos copiar a mensagem
+[01:25:26] que tá no outro retorno também
+[01:25:28] essa aí é a exclusão ou baixa
+[01:25:30] efetuada com sucesso
+[01:25:31] boa, pode salvar
+[01:25:39] esse é o primeiro
+[01:25:43] passo, a gente verifica
+[01:25:45] eu, depois, acho que dá pra gente
+[01:25:48] verificar, mano, qual
+[01:25:49] retorno ele considerou
+[01:25:51] se foi excluir a verbação ou
+[01:25:54] consignado, mas vamos deixar os dois
+[01:25:56] no esquema, e
+[01:25:57] agora, é aquilo que o Luiz falou
+[01:25:59] da gente vai verificar no modelo
+[01:26:02] eu não lembro se vocês já vincularam
+[01:26:04] já o código BF
+[01:26:06] na exclusão, mano
+[01:26:06] Ah, então maravilha
+[01:26:19] Então vamos lá no empregador
+[01:26:20] Daquela aba do modelo de averbação
+[01:26:23] Que a gente viu
+[01:26:24] Eu acho que ontem, né
+[01:26:27] Então, gerar
+[01:26:28] Consignado privado
+[01:26:35] é cadastro de parâmetros
+[01:26:38] é que a gente chama modelo
+[01:26:40] de averbação
+[01:26:42] mas é cadastro de parâmetros
+[01:26:44] fechou, acho que é o modelo 2
+[01:26:58] eita, o bot está logando
+[01:27:05] Mano, se quiser
+[01:27:08] Dá pra gente ver isso depois do almoço
+[01:27:10] De repente
+[01:27:11] Pode ser?
+[01:27:15] É bem rápido, né?
+[01:27:16] Mas a gente vê depois do almoço, tá tranquilo
+[01:27:19] É nóis aí, tamo junto, viu?
+[01:27:35] Legenda Adriana Zanotto
+[01:28:05] Legenda Adriana Zanotto
+[01:28:35] Legenda Adriana Zanotto
+[01:29:05] Legenda Adriana Zanotto
+[01:29:35] Legenda Adriana Zanotto
+[01:30:05] Legenda Adriana Zanotto
+[01:30:35] Legenda Adriana Zanotto
+[01:31:05] Legenda Adriana Zanotto
+[01:31:35] Obrigado.
+[01:32:05] Legenda Adriana Zanotto
+[01:32:35] Legenda Adriana Zanotto
+[01:33:05] Legenda Adriana Zanotto
+[01:33:35] Legenda Adriana Zanotto
+[01:34:05] Legenda Adriana Zanotto
+[01:34:35] Legenda Adriana Zanotto
+[01:35:05] Legenda Adriana Zanotto
+[01:35:35] Legenda Adriana Zanotto
+[01:36:05] Legenda Adriana Zanotto
+[01:36:35] Legenda Adriana Zanotto
+[01:37:05] Legenda Adriana Zanotto
+[01:37:35] Legenda Adriana Zanotto
+[01:38:05] Legenda Adriana Zanotto
+[01:38:35] Legenda Adriana Zanotto
+[01:39:05] Legenda Adriana Zanotto
+[01:39:35] Legenda Adriana Zanotto
+[01:40:05] Legenda Adriana Zanotto
+[01:40:35] Legenda Adriana Zanotto
+[01:41:05] Legenda Adriana Zanotto
+[01:41:35] Legenda Adriana Zanotto
+[01:42:05] Legenda Adriana Zanotto
+[01:42:35] Legenda Adriana Zanotto
+[01:43:05] Legenda Adriana Zanotto
+[01:43:35] Legenda Adriana Zanotto
+[01:44:05] Legenda Adriana Zanotto
+[01:44:35] Legenda Adriana Zanotto
+[01:45:05] Legenda Adriana Zanotto
+[01:45:35] Legenda Adriana Zanotto
+[01:46:05] Legenda Adriana Zanotto
+[01:46:35] Legenda Adriana Zanotto
+[01:47:05] Legenda Adriana Zanotto
+[01:47:35] Legenda Adriana Zanotto
+[01:48:05] Legenda Adriana Zanotto
+[01:48:35] Legenda Adriana Zanotto
+[01:49:05] Legenda Adriana Zanotto
+[01:49:35] Legenda Adriana Zanotto
+[01:50:05] Legenda Adriana Zanotto
+[01:50:35] Legenda Adriana Zanotto
+[01:51:05] Legenda Adriana Zanotto
+[01:51:35] Legenda Adriana Zanotto
+[01:52:05] Legenda Adriana Zanotto
+[01:52:35] Legenda Adriana Zanotto
+[01:53:05] Legenda Adriana Zanotto
+[01:53:35] Legenda Adriana Zanotto
+[01:54:05] Legenda Adriana Zanotto
+[01:54:35] Legenda Adriana Zanotto
+[01:55:05] Legenda Adriana Zanotto
+[01:55:35] Legenda Adriana Zanotto
+[01:56:05] Legenda Adriana Zanotto
+[01:56:35] Legenda Adriana Zanotto
+[01:57:05] Legenda Adriana Zanotto
+[01:57:35] Legenda Adriana Zanotto
+[01:58:05] Legenda Adriana Zanotto
+[01:58:35] Legenda Adriana Zanotto
+[01:59:05] Legenda Adriana Zanotto
+[01:59:35] Legenda Adriana Zanotto
+[02:00:05] Legenda Adriana Zanotto
+[02:00:35] Legenda Adriana Zanotto
+[02:01:05] Legenda Adriana Zanotto
+[02:01:35] Legenda Adriana Zanotto
+[02:02:05] Legenda Adriana Zanotto
+[02:02:35] Legenda Adriana Zanotto
+[02:03:05] Legenda Adriana Zanotto
+[02:03:35] Legenda Adriana Zanotto
+[02:04:05] Legenda Adriana Zanotto
+[02:04:35] Legenda Adriana Zanotto
+[02:05:05] Legenda Adriana Zanotto
+[02:05:35] Legenda Adriana Zanotto
+[02:06:05] Legenda Adriana Zanotto
+[02:06:35] Legenda Adriana Zanotto
+[02:07:05] Legenda Adriana Zanotto
+[02:07:35] Legenda Adriana Zanotto
+[02:08:05] Legenda Adriana Zanotto
+[02:08:35] Legenda Adriana Zanotto
+[02:09:05] Legenda Adriana Zanotto
+[02:09:35] Legenda Adriana Zanotto
+[02:10:05] Legenda Adriana Zanotto
+[02:10:35] Legenda Adriana Zanotto
+[02:11:05] Legenda Adriana Zanotto
+[02:11:35] Legenda Adriana Zanotto
+[02:12:05] Legenda Adriana Zanotto
+[02:12:35] Legenda Adriana Zanotto
+[02:13:05] Legenda Adriana Zanotto
+[02:13:35] Legenda Adriana Zanotto
+[02:14:05] Legenda Adriana Zanotto
+[02:14:35] Legenda Adriana Zanotto
+[02:15:05] Legenda Adriana Zanotto
+[02:15:35] Legenda Adriana Zanotto
+[02:16:05] Legenda Adriana Zanotto
+[02:16:35] Legenda Adriana Zanotto
+[02:17:05] Legenda Adriana Zanotto
+[02:17:35] Legenda Adriana Zanotto
+[02:18:05] Legenda Adriana Zanotto
+[02:18:35] Legenda Adriana Zanotto
+[02:19:05] Legenda Adriana Zanotto
+[02:19:35] Legenda Adriana Zanotto
+[02:20:05] Legenda Adriana Zanotto
+[02:20:35] Legenda Adriana Zanotto
+[02:21:05] Legenda Adriana Zanotto
+[02:21:35] Legenda Adriana Zanotto
+[02:22:05] Legenda Adriana Zanotto
+[02:22:35] Legenda Adriana Zanotto
+[02:23:05] Legenda Adriana Zanotto
+[02:23:35] Legenda Adriana Zanotto
+[02:24:05] Legenda Adriana Zanotto
+[02:24:35] Legenda Adriana Zanotto
+[02:25:05] Legenda Adriana Zanotto
+[02:25:35] Legenda Adriana Zanotto
+[02:26:05] E aí

@@ -1,0 +1,14 @@
+{
+  "arquivo": "AVERBACAO.mp4",
+  "bytes": 5033624752,
+  "sha256": "f59d80efd98b4418324ca319570603d2c60325f93927d44f1f7413432a0b36e4",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 8789.1,
+  "segmentos": 1719,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 2118.3,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
