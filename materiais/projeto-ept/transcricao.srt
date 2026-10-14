@@ -1,0 +1,291 @@
+1
+00:00:00,000 --> 00:00:29,980
+Legenda Adriana Zanotto
+
+2
+00:00:30,000 --> 00:00:59,980
+Legenda Adriana Zanotto
+
+3
+00:01:00,000 --> 00:01:29,980
+Legenda Adriana Zanotto
+
+4
+00:01:30,000 --> 00:01:59,980
+Legenda Adriana Zanotto
+
+5
+00:02:00,000 --> 00:02:29,980
+Legenda Adriana Zanotto
+
+6
+00:02:30,000 --> 00:02:59,980
+Legenda Adriana Zanotto
+
+7
+00:03:00,000 --> 00:03:29,980
+Legenda Adriana Zanotto
+
+8
+00:03:30,000 --> 00:03:59,980
+Legenda Adriana Zanotto
+
+9
+00:04:00,000 --> 00:04:29,980
+Legenda Adriana Zanotto
+
+10
+00:04:30,000 --> 00:04:59,980
+Legenda Adriana Zanotto
+
+11
+00:05:00,000 --> 00:05:29,980
+Legenda Adriana Zanotto
+
+12
+00:05:30,000 --> 00:05:59,980
+Legenda Adriana Zanotto
+
+13
+00:06:00,000 --> 00:06:29,980
+Legenda Adriana Zanotto
+
+14
+00:06:30,000 --> 00:06:59,980
+Legenda Adriana Zanotto
+
+15
+00:07:00,000 --> 00:07:01,000
+Obrigado.
+
+16
+00:07:30,000 --> 00:07:59,980
+Legenda Adriana Zanotto
+
+17
+00:08:00,000 --> 00:08:29,980
+Legenda Adriana Zanotto
+
+18
+00:08:30,000 --> 00:08:59,980
+Legenda Adriana Zanotto
+
+19
+00:09:00,000 --> 00:09:29,980
+Legenda Adriana Zanotto
+
+20
+00:09:30,000 --> 00:09:59,980
+Legenda Adriana Zanotto
+
+21
+00:10:00,000 --> 00:10:29,980
+Legenda Adriana Zanotto
+
+22
+00:10:30,000 --> 00:10:59,980
+Legenda Adriana Zanotto
+
+23
+00:11:00,000 --> 00:11:29,980
+Legenda Adriana Zanotto
+
+24
+00:11:30,000 --> 00:11:59,980
+Legenda Adriana Zanotto
+
+25
+00:12:00,000 --> 00:12:29,980
+Legenda Adriana Zanotto
+
+26
+00:12:30,000 --> 00:12:59,980
+Legenda Adriana Zanotto
+
+27
+00:13:00,000 --> 00:13:29,980
+Legenda Adriana Zanotto
+
+28
+00:13:30,000 --> 00:13:59,980
+Legenda Adriana Zanotto
+
+29
+00:14:00,000 --> 00:14:29,980
+Legenda Adriana Zanotto
+
+30
+00:14:30,000 --> 00:14:59,980
+Legenda Adriana Zanotto
+
+31
+00:15:00,000 --> 00:15:29,980
+Legenda Adriana Zanotto
+
+32
+00:15:30,000 --> 00:15:59,980
+Legenda Adriana Zanotto
+
+33
+00:16:00,000 --> 00:16:29,980
+Legenda Adriana Zanotto
+
+34
+00:16:30,000 --> 00:16:59,980
+Legenda Adriana Zanotto
+
+35
+00:17:00,000 --> 00:17:29,980
+Legenda Adriana Zanotto
+
+36
+00:17:30,000 --> 00:17:59,980
+Legenda Adriana Zanotto
+
+37
+00:18:00,000 --> 00:18:29,980
+Legenda Adriana Zanotto
+
+38
+00:18:30,000 --> 00:18:59,980
+Legenda Adriana Zanotto
+
+39
+00:19:00,000 --> 00:19:29,980
+Legenda Adriana Zanotto
+
+40
+00:19:30,000 --> 00:19:59,980
+Legenda Adriana Zanotto
+
+41
+00:20:00,000 --> 00:20:29,980
+Legenda Adriana Zanotto
+
+42
+00:20:30,000 --> 00:20:59,980
+Legenda Adriana Zanotto
+
+43
+00:21:00,000 --> 00:21:29,980
+Legenda Adriana Zanotto
+
+44
+00:21:30,000 --> 00:21:59,980
+Legenda Adriana Zanotto
+
+45
+00:22:00,000 --> 00:22:29,980
+Legenda Adriana Zanotto
+
+46
+00:22:30,000 --> 00:22:59,980
+Legenda Adriana Zanotto
+
+47
+00:23:00,000 --> 00:23:29,980
+Legenda Adriana Zanotto
+
+48
+00:23:30,000 --> 00:23:59,980
+Legenda Adriana Zanotto
+
+49
+00:24:00,000 --> 00:24:29,980
+Legenda Adriana Zanotto
+
+50
+00:24:30,000 --> 00:24:59,980
+Legenda Adriana Zanotto
+
+51
+00:25:00,000 --> 00:25:29,980
+Legenda Adriana Zanotto
+
+52
+00:25:30,000 --> 00:25:59,980
+Legenda Adriana Zanotto
+
+53
+00:26:00,000 --> 00:26:29,980
+Legenda Adriana Zanotto
+
+54
+00:26:30,000 --> 00:26:59,980
+Legenda Adriana Zanotto
+
+55
+00:27:00,000 --> 00:27:29,980
+Legenda Adriana Zanotto
+
+56
+00:27:30,000 --> 00:27:59,980
+Legenda Adriana Zanotto
+
+57
+00:28:00,000 --> 00:28:29,980
+Legenda Adriana Zanotto
+
+58
+00:28:30,000 --> 00:28:59,980
+Legenda Adriana Zanotto
+
+59
+00:29:00,000 --> 00:29:29,980
+Legenda Adriana Zanotto
+
+60
+00:29:30,000 --> 00:29:59,980
+Legenda Adriana Zanotto
+
+61
+00:30:00,000 --> 00:30:29,980
+Legenda Adriana Zanotto
+
+62
+00:30:30,000 --> 00:30:59,980
+Obrigado por assistir.
+
+63
+00:31:00,000 --> 00:31:29,980
+Legenda Adriana Zanotto
+
+64
+00:31:30,000 --> 00:31:59,980
+Legenda Adriana Zanotto
+
+65
+00:32:00,000 --> 00:32:29,980
+E aí
+
+66
+00:32:30,000 --> 00:32:59,980
+Legenda Adriana Zanotto
+
+67
+00:33:00,000 --> 00:33:29,980
+Legenda Adriana Zanotto
+
+68
+00:33:30,000 --> 00:33:59,980
+Legenda Adriana Zanotto
+
+69
+00:34:00,000 --> 00:34:29,980
+Legenda Adriana Zanotto
+
+70
+00:34:30,000 --> 00:34:59,980
+Legenda Adriana Zanotto
+
+71
+00:35:00,000 --> 00:35:29,980
+Legenda Adriana Zanotto
+
+72
+00:35:30,000 --> 00:35:59,980
+Legenda Adriana Zanotto
+
+73
+00:36:00,000 --> 00:36:29,980
+E aí
