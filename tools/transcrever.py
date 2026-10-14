@@ -17,6 +17,7 @@ de publicar qualquer derivado, e registre a confiança em `metadados.md`.
 
 Uso:
     python3 tools/transcrever.py --video "ARQUIVO.mp4" [--modelo large-v3] [--idioma pt]
+    Acrescente `--sem-vad` para enviar o áudio inteiro ao reconhecedor sem detecção prévia de fala.
 """
 
 from __future__ import annotations
@@ -111,6 +112,7 @@ def principal() -> int:
     p.add_argument("--saida", default=None, help="diretório de saída (padrão: pasta do vídeo)")
     p.add_argument("--modelo", default="large-v3", help="modelo faster-whisper (ex.: tiny, small, medium, large-v3)")
     p.add_argument("--idioma", default="pt", help="idioma falado (ex.: pt)")
+    p.add_argument("--sem-vad", action="store_true", help="transcreve sem filtro de detecção de fala (VAD)")
     p.add_argument("--sem-conferir-manifesto", action="store_true")
     args = p.parse_args()
 
@@ -131,7 +133,8 @@ def principal() -> int:
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, "audio.wav")
         extrair_audio(args.video, wav)
-        print(f"[2/3] transcrevendo com {args.modelo} (idioma {args.idioma})")
+        estado_vad = "sem filtro VAD" if args.sem_vad else "com filtro VAD"
+        print(f"[2/3] transcrevendo com {args.modelo} (idioma {args.idioma}, {estado_vad})")
         try:
             from faster_whisper import WhisperModel
         except ImportError:
@@ -146,7 +149,7 @@ def principal() -> int:
             pass
         audio = ler_wav_16k(wav)
         segmentos, info = modelo.transcribe(
-            audio, language=args.idioma, beam_size=5, vad_filter=True,
+            audio, language=args.idioma, beam_size=5, vad_filter=not args.sem_vad,
             condition_on_previous_text=False,
         )
         segmentos = list(segmentos)
@@ -184,6 +187,7 @@ def principal() -> int:
         "probabilidade_idioma": round(getattr(info, "language_probability", 0.0), 4),
         "duracao_audio_s": round(getattr(info, "duration", 0.0), 2),
         "segmentos": len(segmentos),
+        "filtro_vad": not args.sem_vad,
         "duracao_transcricao_s": round(time.time() - inicio, 1),
         "ferramenta": "faster-whisper (CTranslate2)",
     }

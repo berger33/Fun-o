@@ -28,6 +28,10 @@ on:
         required: false
         default: "pt"
         type: string
+      usar_vad:
+        description: "Detectar trechos de fala antes da transcrição (padrão: true)"
+        required: false
+        type: string
       ramo_entrega:
         description: "Ramo temporário para o texto gerado"
         required: false
@@ -60,6 +64,7 @@ jobs:
           ARQUIVO_INPUT: ${{ github.event.inputs.arquivo }}
           MODELO_INPUT: ${{ github.event.inputs.modelo }}
           IDIOMA_INPUT: ${{ github.event.inputs.idioma }}
+          USAR_VAD_INPUT: ${{ github.event.inputs.usar_vad }}
           RAMO_ENTREGA_INPUT: ${{ github.event.inputs.ramo_entrega }}
         run: |
           set -euo pipefail
@@ -69,6 +74,7 @@ jobs:
               "arquivo": "Apresentação projeto 19-18.mp4",
               "modelo": "large-v3",
               "idioma": "pt",
+              "usar_vad": "true",
               "ramo_entrega": "entrega/transcricao-piloto-19-18",
           }
           for caminho in ("transcricao/tarefa.json", "transferencia/tarefa.json"):
@@ -78,17 +84,23 @@ jobs:
                       padrao.update(lido)
                       if "ramo_entrega_transcricao" in lido:
                           padrao["ramo_entrega"] = lido["ramo_entrega_transcricao"]
+                      if "usar_vad" in lido:
+                          valor_vad = lido["usar_vad"]
+                          padrao["usar_vad"] = str(valor_vad).lower() if isinstance(valor_vad, bool) else str(valor_vad).strip().lower()
                   break
           for variavel, chave in (
               ("ARQUIVO_INPUT", "arquivo"),
               ("MODELO_INPUT", "modelo"),
               ("IDIOMA_INPUT", "idioma"),
+              ("USAR_VAD_INPUT", "usar_vad"),
               ("RAMO_ENTREGA_INPUT", "ramo_entrega"),
           ):
               valor = os.environ.get(variavel, "").strip()
               if valor:
-                  padrao[chave] = valor
-          for chave in ("arquivo", "modelo", "idioma", "ramo_entrega"):
+                  padrao[chave] = valor.lower() if chave == "usar_vad" else valor
+          if padrao["usar_vad"] not in ("true", "false"):
+              raise SystemExit("usar_vad deve ser true ou false")
+          for chave in ("arquivo", "modelo", "idioma", "usar_vad", "ramo_entrega"):
               print(f"{chave}={padrao[chave]}")
           PY
 
@@ -112,13 +124,16 @@ jobs:
           ARQUIVO: ${{ steps.tarefa.outputs.arquivo }}
           MODELO: ${{ steps.tarefa.outputs.modelo }}
           IDIOMA: ${{ steps.tarefa.outputs.idioma }}
+          USAR_VAD: ${{ steps.tarefa.outputs.usar_vad }}
         run: |
           # Sem `set -e`: o log da tentativa precisa ser publicado mesmo em caso de falha.
           mkdir -p saida
           set -o pipefail
           python3 -v 2>/dev/null | head -1 || true
           python3 -m pip show faster-whisper ctranslate2 | sed -n '1,20p' > saida/ambiente.txt 2>&1 || true
-          python3 tools/transcrever.py --video "$ARQUIVO" --saida saida --modelo "$MODELO" --idioma "$IDIOMA" 2>&1 | tee saida/execucao.log
+          args=(python3 tools/transcrever.py --video "$ARQUIVO" --saida saida --modelo "$MODELO" --idioma "$IDIOMA")
+          if [[ "$USAR_VAD" == "false" ]]; then args+=(--sem-vad); fi
+          "${args[@]}" 2>&1 | tee saida/execucao.log
           echo "codigo_saida=${PIPESTATUS[0]}" | tee -a saida/execucao.log
           ls -l saida || true
 
@@ -142,7 +157,7 @@ jobs:
             echo "- \`transcricao.srt\` / \`transcricao.vtt\`: legendas com timestamps"
             echo "- \`transcricao_meta.json\`: modelo, idioma detectado, duração, sha256 do vídeo"
             echo
-            echo "Revise e sanitize antes de publicar qualquer derivado; apague este ramo depois."
+            echo "Revise o reconhecimento contra a fonte; preserve o conteúdo integral conforme autorização do responsável e apague este ramo após a coleta."
           } > transferencia/transcricao/LEIA-ME.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

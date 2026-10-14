@@ -3,7 +3,8 @@
   "slug": "projeto-ept",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-projeto-ept",
-  "lote": "próxima pendência por tamanho após Como fazer EPT.mp4",
-  "sessao": "arena/17453ccc-fun-o"
+  "ramo_entrega_transcricao": "entrega/transcricao-projeto-ept-sem-vad",
+  "lote": "reprocessamento comparativo sem VAD: o primeiro passe reconheceu 1 segmento em 2176,70 s de áudio",
+  "sessao": "arena/17453ccc-fun-o",
+  "usar_vad": false
 }
