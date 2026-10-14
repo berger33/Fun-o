@@ -58,7 +58,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 - <<'PY' >> "$GITHUB_ENV"
-          import json, os
+          import csv, json, os, re
           caminho = "transferencia/tarefa.json"
           dados = {}
           if os.path.exists(caminho):
@@ -72,9 +72,21 @@ jobs:
               ramo = os.environ["RAMO_INPUT"].strip()
           if os.environ.get("BLOCO_INPUT", "").strip():
               dados["tamanho_bloco_mb"] = os.environ["BLOCO_INPUT"].strip()
-          print(f"ARQUIVO={dados.get('arquivo', 'Apresentação projeto 19-18.mp4')}")
+
+          arquivo = dados.get("arquivo", "Apresentação projeto 19-18.mp4")
+          with open("manifesto.csv", newline="", encoding="utf-8-sig") as fh:
+              nomes = {linha["arquivo"] for linha in csv.DictReader(fh)}
+          if arquivo not in nomes:
+              raise SystemExit(f"arquivo não listado em manifesto.csv: {arquivo}")
+          if not re.fullmatch(r"entrega/[A-Za-z0-9._/-]+", ramo) or ".." in ramo.split("/"):
+              raise SystemExit(f"ramo_entrega inválido: {ramo}")
+          bloco = str(dados.get("tamanho_bloco_mb", "64"))
+          if not bloco.isdigit() or not 1 <= int(bloco) <= 90:
+              raise SystemExit(f"tamanho_bloco_mb deve ser inteiro entre 1 e 90: {bloco}")
+
+          print(f"ARQUIVO={arquivo}")
           print(f"RAMO_ENTREGA={ramo}")
-          print(f"BLOCO_MB={dados.get('tamanho_bloco_mb', '64')}")
+          print(f"BLOCO_MB={bloco}")
           PY
         env:
           ARQUIVO_INPUT: ${{ github.event.inputs.arquivo }}
