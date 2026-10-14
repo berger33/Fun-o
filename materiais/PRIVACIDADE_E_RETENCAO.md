@@ -91,3 +91,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/michelle-ctc-portabilidade-refin/`. O ramo temporário `entrega/transcricao-michelle-ctc-portabilidade-refin` foi apagado após a coleta.
 - **Objeto provavelmente retido:** commit `7b319cc4cb3af8e12971c2be2d96109b7a76bc79`; após apagar o ramo, a API ainda o retorna. Contém texto da transcrição e diagnósticos, não o MP4.
 - **Pendência:** incluir esse SHA no pedido ao GitHub Support; apagar o ramo não garante a remoção do commit órfão.
+
+## 8. Registro — transcrição de `MCB - QISTA.mp4` (2026-10-14)
+
+- **Ação:** run do GitHub Actions `38507869989` executou o workflow isolado de transcrição a partir de `transcricao/tarefa.json`; não disparou a ponte de partes. Tamanho e SHA-256 conferem com o manifesto/ponteiro: `543851523` bytes, `5e9d76d88342fd82a697eaf4f65f52a9e50bd22aa2416b63ac40e889c8fa11a0`. Foram gerados 199 segmentos em português com `faster-whisper` `large-v3`.
+- **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/mcb-qista/`. O ramo temporário `entrega/transcricao-mcb-qista` foi apagado após a coleta.
+- **Objeto provavelmente retido:** commit `83f223e8d5ce3a2b561b968772bbd73e6021704a`; após apagar o ramo, a API ainda o retorna. Contém texto da transcrição e diagnósticos, não o MP4.
+- **Pendência:** incluir esse SHA no pedido ao GitHub Support; apagar o ramo não garante a remoção do commit órfão.
