@@ -1,0 +1,5151 @@
+1
+00:00:00,000 --> 00:00:03,280
+E aí, tá me ouvindo?
+
+2
+00:00:05,760 --> 00:00:06,520
+Tô ouvindo.
+
+3
+00:00:09,820 --> 00:00:19,240
+Mano, eu quero ver como tá o seu progresso aí, nesse último regressivo, né, que eu tinha te passado.
+
+4
+00:00:20,540 --> 00:00:24,220
+Eu vi que você já tá um tempo aí fazendo aí, quebrando a cabeça, umas coisas, né?
+
+5
+00:00:24,840 --> 00:00:25,340
+Fala ela.
+
+6
+00:00:25,340 --> 00:00:29,340
+Eu quero ver o que você tá fazendo aí, porque eu posso te dar uma ajudada.
+
+7
+00:00:30,000 --> 00:00:48,340
+Sim, eu estou lendo
+
+8
+00:00:48,340 --> 00:00:52,780
+Antes de mais nada
+
+9
+00:00:52,780 --> 00:00:55,300
+Não, calma
+
+10
+00:00:55,300 --> 00:00:57,160
+Antes de mais nada
+
+11
+00:00:57,160 --> 00:00:58,320
+Me explica
+
+12
+00:00:58,320 --> 00:01:00,600
+Qual é o seu objetivo?
+
+13
+00:01:00,820 --> 00:01:01,580
+O que você está querendo fazer?
+
+14
+00:01:07,060 --> 00:01:07,960
+Ah, mas por quê?
+
+15
+00:01:10,380 --> 00:01:11,920
+Com qual objetivo você está fazendo isso?
+
+16
+00:01:12,740 --> 00:01:12,940
+Entendeu?
+
+17
+00:01:12,940 --> 00:01:13,940
+Tipo...
+
+18
+00:01:13,940 --> 00:01:28,380
+Como assim?
+
+19
+00:01:29,020 --> 00:01:32,540
+Como assim?
+
+20
+00:01:32,540 --> 00:01:34,420
+Você tá fazendo
+
+21
+00:01:34,420 --> 00:01:36,140
+Mas não sabe nem se isso
+
+22
+00:01:36,140 --> 00:01:37,760
+Tem que ser feito na IPT
+
+23
+00:01:37,760 --> 00:01:44,760
+Entendi
+
+24
+00:01:44,760 --> 00:01:53,300
+Entendi, aí no caso você tá fazendo aí só o refém
+
+25
+00:01:53,300 --> 00:02:06,560
+Entendi
+
+26
+00:02:07,760 --> 00:02:09,760
+Obrigado.
+
+27
+00:02:37,760 --> 00:02:52,480
+Eu quero, antes de mais nada, eu quero que você formule o que você precisa, tipo, na sua cabeça, antes de mais nada, sabe?
+
+28
+00:02:52,480 --> 00:03:05,700
+Então, assim, você tá fazendo, porque você já fez na tela, certo? Você tá me falando, mas você meio que não pegou o porquê que você tá fazendo isso, entendeu?
+
+29
+00:03:05,700 --> 00:03:12,580
+Então, tipo assim, qual o objetivo do projeto que você tá fazendo e por que você tá tendo que fazer um refém, entendeu?
+
+30
+00:03:15,780 --> 00:03:17,780
+Isso você não entendeu ainda, certo?
+
+31
+00:03:35,700 --> 00:03:53,360
+Entendi, tá
+
+32
+00:03:53,360 --> 00:04:05,360
+Entendi
+
+33
+00:04:05,360 --> 00:04:06,800
+Mas assim
+
+34
+00:04:06,800 --> 00:04:09,620
+Se você tá preso nessa tela
+
+35
+00:04:09,620 --> 00:04:10,940
+Dois, três dias
+
+36
+00:04:10,940 --> 00:04:13,020
+Alguma coisa você tá fazendo de errado
+
+37
+00:04:13,020 --> 00:04:14,500
+Não é a aplicação
+
+38
+00:04:14,500 --> 00:04:16,060
+Você concorda comigo?
+
+39
+00:04:17,060 --> 00:04:19,000
+Então às vezes se você entender melhor
+
+40
+00:04:19,000 --> 00:04:21,340
+O que você tá fazendo, o que você tem que fazer
+
+41
+00:04:21,340 --> 00:04:22,600
+Você consegue
+
+42
+00:04:22,600 --> 00:04:25,540
+Fazer as coisas com mais
+
+43
+00:04:25,540 --> 00:04:27,120
+Exatidão, sabe
+
+44
+00:04:27,120 --> 00:04:29,100
+Se você tava perdendo menos tempo
+
+45
+00:04:29,100 --> 00:04:31,780
+Procurando isso, procurando aquilo
+
+46
+00:04:31,780 --> 00:04:33,020
+Porque às vezes nessa que você não sabe
+
+47
+00:04:33,020 --> 00:04:35,280
+Você vai procurando coisa que não tem necessidade
+
+48
+00:04:35,280 --> 00:04:35,900
+Entendeu?
+
+49
+00:04:37,100 --> 00:04:38,700
+Então assim, pra mim
+
+50
+00:04:38,700 --> 00:04:40,640
+Se você conseguiu fazer em tela
+
+51
+00:04:40,640 --> 00:04:42,380
+E não tá conseguindo fazer na API
+
+52
+00:04:42,380 --> 00:04:46,580
+Exatamente você pegar as mesmas informações
+
+53
+00:04:46,580 --> 00:04:48,600
+Da tela e colocar na API
+
+54
+00:04:48,600 --> 00:04:51,180
+Se você fizer exatamente isso, não vai dar errado
+
+55
+00:04:51,180 --> 00:04:52,440
+Não tem como dar errado
+
+56
+00:04:52,440 --> 00:04:53,340
+Você entendeu?
+
+57
+00:04:57,340 --> 00:04:57,820
+Então
+
+58
+00:04:57,820 --> 00:05:00,500
+Então me mostra, por favor
+
+59
+00:05:00,500 --> 00:05:02,420
+Eu quero que você me
+
+60
+00:05:02,420 --> 00:05:05,320
+me mostre a tela
+
+61
+00:05:05,320 --> 00:05:06,780
+o que você fez em tela
+
+62
+00:05:06,780 --> 00:05:08,440
+pague seus prinks aí mesmo
+
+63
+00:05:08,440 --> 00:05:10,880
+e o que você está
+
+64
+00:05:10,880 --> 00:05:12,360
+querendo fazer aí agora na API
+
+65
+00:05:12,360 --> 00:05:20,320
+sim
+
+66
+00:05:20,320 --> 00:05:22,720
+não
+
+67
+00:05:22,720 --> 00:05:30,580
+entendi
+
+68
+00:05:30,580 --> 00:05:33,040
+Mas é, volto a dizer
+
+69
+00:05:33,040 --> 00:05:34,540
+A gente tem que
+
+70
+00:05:34,540 --> 00:05:35,900
+Ser assertivo
+
+71
+00:05:35,900 --> 00:05:38,280
+De repente tá na pergunta, né
+
+72
+00:05:38,280 --> 00:05:40,520
+Então tipo assim, se você souber melhor
+
+73
+00:05:40,520 --> 00:05:41,860
+O que você tá precisando
+
+74
+00:05:41,860 --> 00:05:45,080
+Se você souber a pergunta, às vezes a sua resposta vai ser mais
+
+75
+00:05:45,080 --> 00:05:46,580
+Correta, entendeu
+
+76
+00:05:46,580 --> 00:05:48,460
+Então assim, e outra
+
+77
+00:05:48,460 --> 00:05:49,480
+É
+
+78
+00:05:49,480 --> 00:05:53,040
+Eu já falei pra você várias vezes
+
+79
+00:05:53,040 --> 00:05:55,180
+Não é pra você ficar se matando
+
+80
+00:05:55,180 --> 00:05:57,200
+É pra ser simples, isso já foi testado
+
+81
+00:05:57,200 --> 00:05:58,480
+Tá ligado, não é uma coisa nova
+
+82
+00:05:58,480 --> 00:06:01,100
+então se você tá dois, três dias
+
+83
+00:06:01,100 --> 00:06:02,540
+no mesmo ano, tudo bem que
+
+84
+00:06:02,540 --> 00:06:03,940
+são críticas diferentes
+
+85
+00:06:03,940 --> 00:06:06,320
+mas é uma API
+
+86
+00:06:06,320 --> 00:06:09,000
+quem que já sabe usar ela, a gente já fez
+
+87
+00:06:09,000 --> 00:06:10,300
+você já fez isso
+
+88
+00:06:10,300 --> 00:06:10,780
+entendeu?
+
+89
+00:06:12,620 --> 00:06:15,000
+se você tá dois, três dias, eu já fico preocupado
+
+90
+00:06:15,000 --> 00:06:16,240
+tem alguma coisa de errada
+
+91
+00:06:16,240 --> 00:06:18,260
+uma coisa tá acontecendo
+
+92
+00:06:18,260 --> 00:06:23,980
+então me mostra o
+
+93
+00:06:23,980 --> 00:06:25,420
+não, eu quero ver o seu
+
+94
+00:06:25,420 --> 00:06:28,420
+você vende o seu, alguma coisa ou não?
+
+95
+00:06:28,480 --> 00:06:51,160
+Eu quero ver
+
+96
+00:06:51,160 --> 00:06:52,700
+Qual a etapa então
+
+97
+00:06:52,700 --> 00:06:55,080
+Me mostra a etapa no teste
+
+98
+00:06:55,080 --> 00:06:56,120
+Você está tentando executar
+
+99
+00:06:56,120 --> 00:07:09,120
+Então, se estiver maior ou igual ao valor da série, ele não vai parar.
+
+100
+00:07:26,120 --> 00:07:45,580
+Pesquisa aí a API
+
+101
+00:07:45,580 --> 00:07:48,680
+do NPS.
+
+102
+00:07:56,120 --> 00:07:57,120
+E aí
+
+103
+00:07:57,120 --> 00:08:03,120
+Mas, ó
+
+104
+00:08:03,120 --> 00:08:06,160
+Eu acho que
+
+105
+00:08:06,160 --> 00:08:07,360
+O pessoal não sabe
+
+106
+00:08:07,360 --> 00:08:09,800
+Não deixa a luz
+
+107
+00:08:09,800 --> 00:08:20,560
+Não, mas tá
+
+108
+00:08:20,560 --> 00:08:23,340
+Não, mas tá certo
+
+109
+00:08:23,340 --> 00:08:25,960
+Aqui, ó
+
+110
+00:08:25,960 --> 00:08:27,760
+A resposta, a gente tá falando aqui
+
+111
+00:08:27,760 --> 00:08:29,420
+da resposta, se tiver nulo,
+
+112
+00:08:29,500 --> 00:08:30,940
+tem que meter em cooperação.
+
+113
+00:08:32,500 --> 00:08:33,920
+Tá em verde ou não, Lê?
+
+114
+00:08:34,300 --> 00:08:35,380
+Aí, ó, caso 6.
+
+115
+00:08:35,680 --> 00:08:37,320
+Primeira simulação aí, de API.
+
+116
+00:08:37,740 --> 00:08:38,500
+Eu achei que...
+
+117
+00:08:38,500 --> 00:08:40,420
+Aí, API, simulação...
+
+118
+00:08:40,420 --> 00:08:42,460
+Porque até agora,
+
+119
+00:08:43,040 --> 00:08:45,760
+nenhum processo de API se conseguiu fazer, certo?
+
+120
+00:08:45,760 --> 00:08:47,400
+Então, seria o primeiro caso de API.
+
+121
+00:08:55,960 --> 00:08:58,080
+Essa é só a marca ou é a marca da função?
+
+122
+00:09:12,540 --> 00:09:13,640
+Então, no primeiro caso,
+
+123
+00:09:13,700 --> 00:09:15,940
+é verificar os campos, beleza, não precisa.
+
+124
+00:09:21,300 --> 00:09:22,360
+Sobe um pouquinho.
+
+125
+00:09:24,800 --> 00:09:25,720
+Sobe mais.
+
+126
+00:09:25,960 --> 00:09:28,560
+Quero ver o canal anterior. Ah, não. Já está certo. Beleza.
+
+127
+00:09:30,100 --> 00:09:30,320
+Tá.
+
+128
+00:09:34,740 --> 00:09:36,200
+Então, o que ele está falando aí? Vamos ler.
+
+129
+00:09:55,960 --> 00:10:01,880
+E foi
+
+130
+00:10:01,880 --> 00:10:04,920
+Na máquina
+
+131
+00:10:04,920 --> 00:10:08,020
+Mas também
+
+132
+00:10:08,020 --> 00:10:09,140
+Mas também
+
+133
+00:10:09,140 --> 00:10:22,200
+Beleza
+
+134
+00:10:22,200 --> 00:10:26,380
+vamos ver agora
+
+135
+00:10:26,380 --> 00:10:28,460
+o que ele usou aí na inclusão
+
+136
+00:10:28,460 --> 00:10:29,800
+de proposta
+
+137
+00:10:29,800 --> 00:10:38,200
+vamos ver os prinks
+
+138
+00:10:52,200 --> 00:11:11,540
+Então, vamos ver agora a sua proposta integrada.
+
+139
+00:11:22,200 --> 00:11:45,600
+Deixa eu ver o aspecto do seu clínico.
+
+140
+00:11:50,220 --> 00:11:51,760
+Esse é um clínico novo?
+
+141
+00:11:52,200 --> 00:11:55,340
+Esse aí você criou, é seu
+
+142
+00:11:55,340 --> 00:11:56,860
+Esse cliente é seu
+
+143
+00:11:56,860 --> 00:11:58,880
+Tá, beleza
+
+144
+00:11:58,880 --> 00:12:00,780
+Então tudo que você consultar nele
+
+145
+00:12:00,780 --> 00:12:02,060
+Foi você que usou ele
+
+146
+00:12:02,060 --> 00:12:04,540
+Tá
+
+147
+00:12:04,540 --> 00:12:19,300
+Eu quero ver a proposta
+
+148
+00:12:19,300 --> 00:12:21,420
+A proposta se integrou
+
+149
+00:12:21,420 --> 00:12:34,000
+Vamos lá na tela mesmo
+
+150
+00:12:34,000 --> 00:12:37,560
+Isso, vamos lá na tela
+
+151
+00:12:37,560 --> 00:12:38,200
+Volta aí
+
+152
+00:12:38,200 --> 00:12:40,920
+Não vai achar a proposta aí
+
+153
+00:12:40,920 --> 00:12:44,380
+Isso, tem que ser no outro
+
+154
+00:12:44,380 --> 00:12:45,740
+Isso, no outro
+
+155
+00:12:51,420 --> 00:12:54,480
+Você já copiou?
+
+156
+00:12:58,040 --> 00:12:59,760
+Mas dá um Ctrl V no Windows
+
+157
+00:12:59,760 --> 00:13:06,840
+Tem que selecionar lá antes
+
+158
+00:13:21,420 --> 00:13:36,100
+Certo, cadê a flunilha?
+
+159
+00:13:36,380 --> 00:13:36,760
+Gerou?
+
+160
+00:13:47,760 --> 00:13:49,560
+Gerou a planilha simplificada?
+
+161
+00:13:51,420 --> 00:14:06,660
+Clica ali no da proposta, clica ali em cima ó, clica ali em cima que tem um negocinho
+
+162
+00:14:06,660 --> 00:14:16,300
+nessa tela, lá na URL, lá no finalzinho também tem um xizinho ali ó, não clica
+
+163
+00:14:16,300 --> 00:14:18,300
+clica ai, não clica ai, tira o mouse dai
+
+164
+00:14:18,300 --> 00:14:20,300
+isso, ta vendo, isso ai
+
+165
+00:14:20,300 --> 00:14:22,300
+ta vendo que tem um negocio ai, clica ai
+
+166
+00:14:24,300 --> 00:14:26,300
+isso, permitiu
+
+167
+00:14:30,300 --> 00:14:32,300
+clica de novo la agora
+
+168
+00:14:32,300 --> 00:14:34,300
+não, de novo
+
+169
+00:14:34,300 --> 00:14:36,300
+agora no
+
+170
+00:14:36,300 --> 00:14:38,300
+isso
+
+171
+00:14:46,300 --> 00:14:49,560
+Beleza, então
+
+172
+00:14:49,560 --> 00:14:51,780
+a sua
+
+173
+00:14:51,780 --> 00:14:52,940
+proposta de
+
+174
+00:14:52,940 --> 00:14:55,540
+se quer refinanciar, tem essas
+
+175
+00:14:55,540 --> 00:14:56,460
+informações, certo?
+
+176
+00:15:00,540 --> 00:15:02,100
+Então, tendo isso em vista
+
+177
+00:15:02,100 --> 00:15:08,980
+você também está vendo aqui
+
+178
+00:15:08,980 --> 00:15:11,560
+tem garantias nessa proposta, está vendo ali?
+
+179
+00:15:11,720 --> 00:15:14,060
+Garantias 1, só do FGTS
+
+180
+00:15:14,060 --> 00:15:15,120
+garantia 2
+
+181
+00:15:15,120 --> 00:15:17,460
+Certo?
+
+182
+00:15:17,940 --> 00:15:19,580
+Essas garantias
+
+183
+00:15:19,580 --> 00:15:21,680
+Você colocou o propósito atualmente
+
+184
+00:15:21,680 --> 00:15:23,120
+É por causa do teste
+
+185
+00:15:23,120 --> 00:15:26,320
+É, de onde que veio isso?
+
+186
+00:15:45,120 --> 00:15:46,120
+Obrigado.
+
+187
+00:16:15,120 --> 00:16:20,620
+Não entendi, não entendi
+
+188
+00:16:20,620 --> 00:16:24,120
+Não entendi o que aconteceu
+
+189
+00:16:45,120 --> 00:16:54,640
+Qual convênio você tá usando agora?
+
+190
+00:16:54,800 --> 00:16:56,040
+Você tá usando o mesmo convênio?
+
+191
+00:17:00,460 --> 00:17:02,140
+Sim, mas entende que
+
+192
+00:17:02,140 --> 00:17:04,600
+assim, a proposta
+
+193
+00:17:04,600 --> 00:17:06,780
+que você tá querendo refinanciar é uma proposta
+
+194
+00:17:06,780 --> 00:17:08,460
+certo? Essa que já tá entregada é uma
+
+195
+00:17:08,460 --> 00:17:10,660
+então o que você tá fazendo
+
+196
+00:17:10,660 --> 00:17:12,040
+agora, ela é outra
+
+197
+00:17:12,040 --> 00:17:14,600
+então você pode usar um convênio diferente
+
+198
+00:17:14,600 --> 00:17:16,080
+Por exemplo
+
+199
+00:17:16,080 --> 00:17:17,580
+Ele não precisa ser o mesmo ainda
+
+200
+00:17:17,580 --> 00:17:18,900
+Entende?
+
+201
+00:17:19,680 --> 00:17:22,220
+Você está pegando uma proposta e refinanciando ela
+
+202
+00:17:22,220 --> 00:17:25,340
+Você está criando uma outra proposta
+
+203
+00:17:25,340 --> 00:17:27,000
+Em base da outra
+
+204
+00:17:27,000 --> 00:17:29,760
+Está refinanciando uma proposta com outra
+
+205
+00:17:29,760 --> 00:17:32,240
+Então você não precisa usar a mesma convenha
+
+206
+00:17:32,240 --> 00:17:35,740
+Você não precisa usar a mesma origem
+
+207
+00:17:35,740 --> 00:17:36,260
+Entendeu?
+
+208
+00:17:41,260 --> 00:17:41,900
+Exatamente
+
+209
+00:17:41,900 --> 00:17:42,900
+Então no caso aí
+
+210
+00:17:42,900 --> 00:17:45,280
+Ah, tá criticando a garantia
+
+211
+00:17:45,280 --> 00:17:47,140
+Tenta colocar um convênio diferente
+
+212
+00:17:47,140 --> 00:17:49,660
+Que faça o refinanciamento
+
+213
+00:17:49,660 --> 00:17:51,780
+Ah, não sei qual que vai ser
+
+214
+00:17:51,780 --> 00:17:52,780
+Meu, ó
+
+215
+00:17:52,780 --> 00:17:55,260
+O seu gabarito, tá? O que você faz?
+
+216
+00:17:55,340 --> 00:17:56,980
+Ah, não sei qual convênio vai dar pra usar
+
+217
+00:17:56,980 --> 00:17:58,040
+Não sei o que tá acontecendo
+
+218
+00:17:58,040 --> 00:18:00,880
+Vamos entrar no autorizador
+
+219
+00:18:00,880 --> 00:18:02,740
+Tenta ref...
+
+220
+00:18:02,740 --> 00:18:04,360
+Faz a mesma coisa que você tá fazendo aí, só que em tela
+
+221
+00:18:04,360 --> 00:18:07,460
+E lá ele já vai trazer pra você os convênios que você pode usar
+
+222
+00:18:07,460 --> 00:18:08,960
+Já vai trazer pra você
+
+223
+00:18:08,960 --> 00:18:11,840
+Qual contrato ou não ele pode refinanciar
+
+224
+00:18:11,840 --> 00:18:12,460
+Entendeu?
+
+225
+00:18:12,900 --> 00:18:18,600
+Então, ah, tá muito difícil, vai na tela lá e tenta refinanciar na tela, por tela, entendeu?
+
+226
+00:18:19,740 --> 00:18:30,320
+Ah, você preencheu, deu tudo certo, aí você, é só, nunca quer gravar, aí você só replica a informação que você preencheu na entela, na API, então vamos lá, faz isso.
+
+227
+00:18:36,740 --> 00:18:38,260
+Não, você entendeu o que eu falei?
+
+228
+00:18:38,260 --> 00:18:41,700
+O refinanciamento é uma coisa
+
+229
+00:18:41,700 --> 00:18:42,500
+Certo
+
+230
+00:18:42,500 --> 00:18:44,100
+A proposta que você tem integrada é uma
+
+231
+00:18:44,100 --> 00:18:45,460
+O refinanciamento é outra
+
+232
+00:18:45,460 --> 00:18:46,260
+Certo
+
+233
+00:18:46,260 --> 00:18:47,980
+Então o que eu tô falando pra você
+
+234
+00:18:47,980 --> 00:18:51,840
+Sim
+
+235
+00:18:51,840 --> 00:18:54,120
+E você já não tem a proposta integrada
+
+236
+00:18:54,120 --> 00:18:58,100
+Então
+
+237
+00:18:58,100 --> 00:19:01,740
+Mas não
+
+238
+00:19:01,740 --> 00:19:04,660
+Mas ó
+
+239
+00:19:04,660 --> 00:19:05,460
+Leia de novo
+
+240
+00:19:05,460 --> 00:19:06,660
+Leia então a crítica
+
+241
+00:19:06,660 --> 00:19:13,920
+O produto vinculado ao convênio
+
+242
+00:19:13,920 --> 00:19:16,540
+Exatamente
+
+243
+00:19:16,540 --> 00:19:19,420
+O produto que está
+
+244
+00:19:19,420 --> 00:19:22,780
+O que ele está se referindo
+
+245
+00:19:22,780 --> 00:19:24,320
+É o que você está colocando agora
+
+246
+00:19:24,320 --> 00:19:26,380
+Não na sua proposta integrada
+
+247
+00:19:26,380 --> 00:19:27,240
+Entendeu?
+
+248
+00:19:31,240 --> 00:19:32,620
+Essa crítica
+
+249
+00:19:32,620 --> 00:19:34,480
+É do que você está colocando agora em tela
+
+250
+00:19:34,480 --> 00:19:36,100
+É o que você está colocando agora em tela
+
+251
+00:19:36,100 --> 00:19:38,780
+não do que você já fez que tem garantia
+
+252
+00:19:38,780 --> 00:19:40,760
+agora que já tem garantia, tudo bem
+
+253
+00:19:40,760 --> 00:19:41,820
+já tem garantia, beleza
+
+254
+00:19:41,820 --> 00:19:44,580
+você está dentro desse problema, você não sabe mais o que fazer
+
+255
+00:19:44,580 --> 00:19:47,000
+então estou te dando uma solução
+
+256
+00:19:47,000 --> 00:19:49,140
+entra na tela do autorizador
+
+257
+00:19:49,140 --> 00:19:51,500
+certo? e faz um refinanciamento
+
+258
+00:19:51,500 --> 00:19:53,000
+dessa mesma proposta
+
+259
+00:19:53,000 --> 00:19:55,180
+que você está tentando fazer, dessa mesma operação que você está tentando fazer
+
+260
+00:19:55,180 --> 00:19:57,600
+e aí lá
+
+261
+00:20:06,100 --> 00:20:11,840
+Não, William
+
+262
+00:20:11,840 --> 00:20:13,080
+Eu não tô falando
+
+263
+00:20:13,080 --> 00:20:14,960
+William, eu não tô falando isso
+
+264
+00:20:14,960 --> 00:20:16,060
+Vou repetir pra você de novo
+
+265
+00:20:16,060 --> 00:20:17,080
+Entra no autorizador
+
+266
+00:20:17,080 --> 00:20:18,640
+E faz o que eu tô te falando
+
+267
+00:20:18,640 --> 00:20:21,800
+Revanancia a proposta
+
+268
+00:20:21,800 --> 00:20:23,980
+A operação que você tá fazendo
+
+269
+00:20:23,980 --> 00:20:25,900
+E vê o que vai parecer pra você
+
+270
+00:20:25,900 --> 00:20:27,180
+Vê as informações que você pode usar
+
+271
+00:20:27,180 --> 00:20:30,100
+Pra você não ficar preso numa coisa
+
+272
+00:20:30,100 --> 00:20:32,320
+Você não precisa usar sempre a mesma informação
+
+273
+00:20:32,320 --> 00:20:33,800
+Tá entendendo? É isso que eu tô querendo te dizer
+
+274
+00:20:33,800 --> 00:20:35,220
+Não é nova
+
+275
+00:20:35,220 --> 00:20:37,180
+Não é novo aí, então tá fazendo um refinanciamento
+
+276
+00:20:37,180 --> 00:20:53,280
+Tem certeza que é esse cara aí que você tá usando?
+
+277
+00:20:54,860 --> 00:20:55,200
+Na sua
+
+278
+00:20:55,200 --> 00:20:56,880
+Na sua API?
+
+279
+00:20:57,540 --> 00:20:59,600
+Não, beleza, mas você viu que você escolheu
+
+280
+00:20:59,600 --> 00:21:00,360
+Uma informação ali?
+
+281
+00:21:03,980 --> 00:21:05,020
+Não, como você colocou
+
+282
+00:21:05,020 --> 00:21:07,080
+Quando você colocou o celular
+
+283
+00:21:07,080 --> 00:21:09,280
+Ele apareceu o pop-up na tela
+
+284
+00:21:09,280 --> 00:21:09,780
+Certo?
+
+285
+00:21:11,200 --> 00:21:12,480
+Com três opções
+
+286
+00:21:12,480 --> 00:21:14,760
+Cada um dos três ali
+
+287
+00:21:14,760 --> 00:21:15,800
+São pessoas diferentes
+
+288
+00:21:15,800 --> 00:21:17,620
+Tá?
+
+289
+00:21:35,020 --> 00:21:56,800
+Tá, se acontecer isso de novo, eu já explico, se for o que eu tô pensando já, beleza?
+
+290
+00:21:56,800 --> 00:22:02,800
+Ó, vai começar a dele lá, vamo lá, vamo na dele lá.
+
+291
+00:22:05,020 --> 00:22:35,000
+E aí
+
+292
+00:22:35,020 --> 00:22:51,360
+Vamos lá
+
+293
+00:22:51,360 --> 00:22:53,000
+Primeiro de tudo
+
+294
+00:22:53,000 --> 00:22:55,240
+Vamos bater as informações do cara de novo
+
+295
+00:22:55,240 --> 00:22:57,140
+Então o CPF tá certo
+
+296
+00:22:57,140 --> 00:22:59,000
+Certo, bate lá com o que tá na
+
+297
+00:22:59,000 --> 00:23:02,960
+Abre lá sua tela aí de novo
+
+298
+00:23:02,960 --> 00:23:05,440
+Não, só a tela do
+
+299
+00:23:05,440 --> 00:23:05,900
+do polivador.
+
+300
+00:23:32,960 --> 00:23:39,300
+Calma, não clique em nada
+
+301
+00:23:39,300 --> 00:23:39,720
+Calma
+
+302
+00:23:39,720 --> 00:23:42,200
+Cancela
+
+303
+00:23:42,200 --> 00:23:46,080
+Devagar
+
+304
+00:23:46,080 --> 00:23:53,700
+Beleza
+
+305
+00:23:53,700 --> 00:23:57,180
+Ó, então você colocou ali
+
+306
+00:23:57,180 --> 00:23:58,940
+Certo? E tem a matrícula
+
+307
+00:23:58,940 --> 00:24:00,140
+Você tá reparando aqui
+
+308
+00:24:00,140 --> 00:24:02,740
+Um crédito que você tá colocando não tem matrícula nenhuma
+
+309
+00:24:02,740 --> 00:24:11,520
+E desde que eu te perguntei pra você
+
+310
+00:24:11,520 --> 00:24:13,500
+Você sabe a matéria desse cara?
+
+311
+00:24:13,620 --> 00:24:14,520
+Eu sei, eu sei
+
+312
+00:24:14,520 --> 00:24:16,320
+Então alguma coisa já tem errado nisso
+
+313
+00:24:16,320 --> 00:24:17,220
+Nesse cliente seu
+
+314
+00:24:17,220 --> 00:24:19,740
+Então assim, poxa
+
+315
+00:24:32,740 --> 00:24:44,740
+Beleza, vamos ver se vai aparecer
+
+316
+00:24:44,740 --> 00:24:46,460
+Mesmas coisas ou vai estar diferente
+
+317
+00:24:46,460 --> 00:24:50,420
+Olha só o tanto de contato
+
+318
+00:24:50,420 --> 00:24:51,320
+Que você tem agora aberto
+
+319
+00:24:51,320 --> 00:24:54,540
+Saúde disponível
+
+320
+00:24:54,540 --> 00:24:55,360
+Para operação
+
+321
+00:24:55,360 --> 00:25:01,740
+Agora eu quero ver uma coisa
+
+322
+00:25:01,740 --> 00:25:04,300
+Deixa eu ver a planilha de novo
+
+323
+00:25:04,300 --> 00:25:26,560
+Dá uma aproximada aí na planilha
+
+324
+00:25:26,560 --> 00:25:28,240
+Pra poder enxergar os valores
+
+325
+00:25:31,740 --> 00:26:01,720
+E aí
+
+326
+00:26:01,740 --> 00:26:10,300
+Vamos fazer o seguinte, eu acho que todo esse problema pode estar dando porque você está fazendo um refinanciamento com uma proposta de garantia.
+
+327
+00:26:11,220 --> 00:26:13,900
+E eu não lembro muito bem, deixa eu ver aqui rápido.
+
+328
+00:26:13,900 --> 00:26:25,360
+Bom, proposta com garantia, de dois piseiros, não estou lembrado de um fundamento 100%.
+
+329
+00:26:25,360 --> 00:26:27,420
+É, mas tudo faz.
+
+330
+00:26:28,120 --> 00:26:30,280
+O que eu preciso para refinanciar uma proposta com garantia?
+
+331
+00:26:30,280 --> 00:26:33,480
+Eu consigo finalizar uma proposta de garantia?
+
+332
+00:26:34,540 --> 00:26:35,020
+Não, né?
+
+333
+00:26:35,660 --> 00:26:36,880
+Então, isso tá dando errado
+
+334
+00:26:36,880 --> 00:26:39,200
+Não, é não, então
+
+335
+00:26:39,200 --> 00:26:40,600
+Eu também já tava achando que não era
+
+336
+00:26:40,600 --> 00:26:42,180
+Ela critica alguma coisa?
+
+337
+00:26:43,520 --> 00:26:43,700
+Ela
+
+338
+00:26:43,700 --> 00:26:44,600
+Na
+
+339
+00:26:44,600 --> 00:26:47,600
+Em tela
+
+340
+00:26:47,600 --> 00:26:50,740
+Ela fica com um negocinho
+
+341
+00:26:50,740 --> 00:26:51,460
+Na pay
+
+342
+00:26:51,460 --> 00:26:55,160
+Na pay critica que é saldo zerado
+
+343
+00:26:55,160 --> 00:26:55,800
+Uma coisa assim
+
+344
+00:26:55,800 --> 00:26:57,680
+Então, tipo, como se
+
+345
+00:26:57,680 --> 00:27:00,900
+Sabe aquele cenário que você faz um refinanciamento
+
+346
+00:27:00,900 --> 00:27:01,580
+Com valor
+
+347
+00:27:01,580 --> 00:27:05,140
+E a sua proposta
+
+348
+00:27:05,140 --> 00:27:06,620
+É maior
+
+349
+00:27:06,620 --> 00:27:08,740
+E aí ele dá crítica
+
+350
+00:27:08,740 --> 00:27:10,280
+Porque num pouco você marca o outro
+
+351
+00:27:10,280 --> 00:27:12,800
+Aí ele fica zerado
+
+352
+00:27:12,800 --> 00:27:13,560
+Ou fica negativo
+
+353
+00:27:13,560 --> 00:27:15,120
+Então essa é a crítica da API
+
+354
+00:27:15,120 --> 00:27:17,780
+É saldo disponível para operação
+
+355
+00:27:17,780 --> 00:27:19,060
+Eu tô mostrando aqui
+
+356
+00:27:19,060 --> 00:27:25,640
+Agora tá certo
+
+357
+00:27:25,640 --> 00:27:30,260
+Eu não lembro se dá pra fazer
+
+358
+00:27:30,260 --> 00:27:31,860
+Ou se tem que fazer alguma coisa
+
+359
+00:27:31,860 --> 00:27:33,280
+Pra poder dar pra fazer uma
+
+360
+00:27:33,280 --> 00:27:35,340
+Um garantinho, entendeu?
+
+361
+00:27:35,760 --> 00:27:37,420
+Mas enfim, vou mandar ele fazer outro propósito
+
+362
+00:27:37,420 --> 00:27:38,380
+Sem garantia nenhuma
+
+363
+00:27:38,380 --> 00:27:42,820
+Aham
+
+364
+00:27:42,820 --> 00:27:48,920
+Vou mandar ele fazer uma nova
+
+365
+00:27:48,920 --> 00:27:54,040
+Não, é só
+
+366
+00:27:54,040 --> 00:27:55,620
+Não, não
+
+367
+00:27:55,620 --> 00:27:57,400
+Essa proposta que você tá fazendo é antiga
+
+368
+00:27:57,400 --> 00:27:58,240
+Ele tá reconhecendo
+
+369
+00:27:58,240 --> 00:28:00,300
+É nova, mas antiga
+
+370
+00:28:00,300 --> 00:28:03,320
+Foi isso lá
+
+371
+00:28:03,320 --> 00:28:04,620
+Sexta-feira
+
+372
+00:28:04,620 --> 00:28:09,240
+Tá, voltei
+
+373
+00:28:09,240 --> 00:28:11,060
+É que assim
+
+374
+00:28:11,060 --> 00:28:13,760
+Como você fez uma proposta com garantia
+
+375
+00:28:13,760 --> 00:28:15,040
+Né
+
+376
+00:28:15,040 --> 00:28:18,360
+A primeira, no caso, né
+
+377
+00:28:18,360 --> 00:28:19,740
+Que você tá tentando refinanciar
+
+378
+00:28:19,740 --> 00:28:22,220
+Eu acho que deve precisar de mais dinheiro
+
+379
+00:28:22,220 --> 00:28:23,700
+Pra poder conseguir refinanciar ela
+
+380
+00:28:23,700 --> 00:28:26,560
+Então vamos facilitar a nossa vida
+
+381
+00:28:26,560 --> 00:28:28,840
+Pra gente ficar pesquisando e tudo mais
+
+382
+00:28:28,840 --> 00:28:31,520
+Você sabe qual dessas propostas
+
+383
+00:28:31,520 --> 00:28:32,060
+Você tá usando?
+
+384
+00:28:32,160 --> 00:28:33,280
+Talvez essas estão disponíveis
+
+385
+00:28:33,280 --> 00:28:35,280
+Você sabe alguma delas?
+
+386
+00:28:42,540 --> 00:28:43,740
+Sim, mas eu
+
+387
+00:28:43,740 --> 00:28:46,260
+Tá, mas
+
+388
+00:28:46,260 --> 00:28:47,140
+Essas que são
+
+389
+00:28:47,140 --> 00:28:49,880
+Então, isso que eu falei
+
+390
+00:28:49,880 --> 00:28:50,740
+Isso que eu tô querendo dizer
+
+391
+00:28:50,740 --> 00:28:52,240
+Você sabe qual é a sua proposta?
+
+392
+00:28:53,700 --> 00:28:57,700
+Então cria uma nova, cria uma nova, mais fácil.
+
+393
+00:28:58,700 --> 00:29:11,700
+Não, você tem que, a forma mais simples é você dar um select na base, pelo CPF do cara, e a matrícula, e ver qual que é qual.
+
+394
+00:29:11,700 --> 00:29:14,700
+Ou então você cria uma nova, integra.
+
+395
+00:29:14,700 --> 00:29:20,700
+Não, calma. Usa um CPF novo, vamos dar um CPF novo.
+
+396
+00:29:20,700 --> 00:29:28,260
+e eu queria muito cliente aí para você pega o novo William e ela volta aí volta tudo
+
+397
+00:29:30,760 --> 00:29:32,880
+e é o vídeo 2.0
+
+398
+00:29:32,880 --> 00:29:46,620
+Eu tenho a ferramenta aí?
+
+399
+00:30:02,880 --> 00:30:10,400
+Ó, assim bateu.
+
+400
+00:30:20,400 --> 00:30:22,280
+Assim bate, bate tudo.
+
+401
+00:30:23,580 --> 00:30:26,400
+E eu só vou ver aqui a luta flat.
+
+402
+00:30:26,400 --> 00:30:29,880
+E eu só vou ver aqui a luta flat.
+
+403
+00:30:32,880 --> 00:30:34,880
+Obrigado.
+
+404
+00:31:02,880 --> 00:31:05,320
+de Alves, que continuou
+
+405
+00:31:05,320 --> 00:31:06,200
+com o Centauro,
+
+406
+00:31:06,420 --> 00:31:09,180
+e o Rio também continuou com o Centauro.
+
+407
+00:31:32,880 --> 00:31:45,920
+Da proposta
+
+408
+00:31:45,920 --> 00:31:47,160
+Do privado
+
+409
+00:31:47,160 --> 00:31:47,920
+O que acontece
+
+410
+00:31:47,920 --> 00:31:49,920
+Quando você clica em obter margem
+
+411
+00:31:49,920 --> 00:31:52,900
+Na prática
+
+412
+00:31:52,900 --> 00:31:54,700
+Ele consultaria
+
+413
+00:31:54,700 --> 00:31:55,940
+O CPF
+
+414
+00:31:55,940 --> 00:31:57,520
+Desse cliente
+
+415
+00:31:57,520 --> 00:31:59,320
+E a matrícula desse cliente
+
+416
+00:31:59,320 --> 00:31:59,800
+Certo
+
+417
+00:31:59,800 --> 00:32:01,760
+Na data prev
+
+418
+00:32:01,760 --> 00:32:03,280
+O que é data-prev?
+
+419
+00:32:03,440 --> 00:32:06,260
+Data-prev é lá onde tem os cadastros
+
+420
+00:32:06,260 --> 00:32:08,560
+Da galera que trabalha
+
+421
+00:32:08,560 --> 00:32:10,720
+Da galera que tem cadastro na caixa
+
+422
+00:32:10,720 --> 00:32:11,480
+Esse tipo de coisa
+
+423
+00:32:11,480 --> 00:32:11,960
+Certo?
+
+424
+00:32:15,020 --> 00:32:15,580
+Então
+
+425
+00:32:15,580 --> 00:32:18,920
+Aqui no nosso caso a gente não consulta eles
+
+426
+00:32:18,920 --> 00:32:19,680
+Certo?
+
+427
+00:32:22,440 --> 00:32:23,000
+Certo?
+
+428
+00:32:24,400 --> 00:32:24,900
+Então o que a gente
+
+429
+00:32:24,900 --> 00:32:26,200
+Exatamente
+
+430
+00:32:26,200 --> 00:32:28,660
+Então o que a gente faz pra simular isso?
+
+431
+00:32:30,120 --> 00:32:30,720
+Agora na pergunta
+
+432
+00:32:30,720 --> 00:32:32,320
+o que a gente faz para simular esse cenário
+
+433
+00:32:32,320 --> 00:32:34,980
+como eu te falei, de fazer uma requisição
+
+434
+00:32:34,980 --> 00:32:35,800
+em outro lugar
+
+435
+00:32:35,800 --> 00:32:38,400
+como que a gente faz isso, no cenário de teste
+
+436
+00:32:38,400 --> 00:32:38,960
+aqui na função
+
+437
+00:32:38,960 --> 00:32:54,380
+tem, mas o que a gente usa
+
+438
+00:32:54,380 --> 00:32:55,640
+para poder fazer isso
+
+439
+00:33:00,720 --> 00:33:03,740
+o stub, certo?
+
+440
+00:33:03,900 --> 00:33:05,860
+Então, todos os stubs que a gente tem,
+
+441
+00:33:06,160 --> 00:33:07,880
+tudo que a gente vai consultar fora
+
+442
+00:33:07,880 --> 00:33:09,960
+do nosso sistema, certo?
+
+443
+00:33:10,460 --> 00:33:12,220
+A gente usa o stub pra simular isso.
+
+444
+00:33:12,720 --> 00:33:13,040
+Beleza?
+
+445
+00:33:14,040 --> 00:33:15,800
+Então, no caso, a gente tem o stub
+
+446
+00:33:15,800 --> 00:33:17,540
+do CPD, certo?
+
+447
+00:33:18,060 --> 00:33:19,760
+Que tem todas as informações
+
+448
+00:33:19,760 --> 00:33:22,320
+dos clientes. Então, independente
+
+449
+00:33:22,320 --> 00:33:23,760
+do que você cadastrar
+
+450
+00:33:23,760 --> 00:33:25,960
+no seu cliente, se você
+
+451
+00:33:25,960 --> 00:33:27,960
+estiver consultando a data
+
+452
+00:33:27,960 --> 00:33:29,700
+prévia, entre aspas, que no nosso caso
+
+453
+00:33:29,700 --> 00:33:31,700
+É o stub
+
+454
+00:33:31,700 --> 00:33:33,660
+Ele vai sempre trazer a mesma informação
+
+455
+00:33:33,660 --> 00:33:35,280
+Entendeu?
+
+456
+00:33:50,280 --> 00:33:51,200
+Sim
+
+457
+00:33:51,200 --> 00:33:52,960
+Então, qualquer
+
+458
+00:33:52,960 --> 00:33:55,080
+O stub
+
+459
+00:33:55,080 --> 00:33:57,920
+Não, não é específico
+
+460
+00:33:57,920 --> 00:33:58,660
+Pra qualquer uma
+
+461
+00:33:58,660 --> 00:33:59,720
+Entendeu?
+
+462
+00:34:00,080 --> 00:34:01,920
+O stub, então vamos lá
+
+463
+00:34:01,920 --> 00:34:05,240
+Vamos, calma
+
+464
+00:34:05,240 --> 00:34:17,900
+Isso, exatamente
+
+465
+00:34:17,900 --> 00:34:21,060
+Isso
+
+466
+00:34:21,060 --> 00:34:23,960
+Isso
+
+467
+00:34:23,960 --> 00:34:25,100
+Isso, exatamente
+
+468
+00:34:25,100 --> 00:34:26,960
+Então, no nosso caso
+
+469
+00:34:26,960 --> 00:34:29,460
+a gente tá consultando
+
+470
+00:34:29,460 --> 00:34:31,420
+um stub em específico
+
+471
+00:34:31,420 --> 00:34:32,600
+que é o que tá simulando
+
+472
+00:34:32,600 --> 00:34:35,040
+a data breve no caso do CPD
+
+473
+00:34:35,040 --> 00:34:37,420
+então se você estivesse fazendo alguma outra coisa
+
+474
+00:34:37,420 --> 00:34:39,640
+que fosse consultar
+
+475
+00:34:39,640 --> 00:34:41,280
+um stub, então ele
+
+476
+00:34:41,280 --> 00:34:43,280
+iria consultar o stub daquela coisa
+
+477
+00:34:43,280 --> 00:34:44,460
+específica, entendeu?
+
+478
+00:34:45,900 --> 00:34:46,460
+então
+
+479
+00:34:46,460 --> 00:34:49,120
+antes de mais nada
+
+480
+00:34:49,120 --> 00:34:51,660
+antes de aprofundar mais isso
+
+481
+00:34:51,660 --> 00:34:53,680
+você tá notando tudo, né?
+
+482
+00:34:55,680 --> 00:34:56,040
+ou não?
+
+483
+00:34:56,960 --> 00:34:59,360
+tá, depois eu queria até ver
+
+484
+00:34:59,360 --> 00:34:59,680
+depois
+
+485
+00:34:59,680 --> 00:35:03,360
+não, e depois
+
+486
+00:35:03,360 --> 00:35:04,880
+eu queria até ver as suas anotações
+
+487
+00:35:04,880 --> 00:35:06,200
+pra poder ver o que você já tem
+
+488
+00:35:06,200 --> 00:35:08,400
+se você tá pecando
+
+489
+00:35:08,400 --> 00:35:10,100
+nas anotações, às vezes
+
+490
+00:35:10,100 --> 00:35:12,680
+porque eu vejo que tem coisa que você
+
+491
+00:35:12,680 --> 00:35:14,680
+já te falou, já te mostrou e você ainda
+
+492
+00:35:14,680 --> 00:35:16,620
+tem seguro do que já fez
+
+493
+00:35:16,620 --> 00:35:17,300
+do que tem que ser
+
+494
+00:35:17,300 --> 00:35:19,740
+mas enfim, isso aí depois a gente vai
+
+495
+00:35:19,740 --> 00:35:22,260
+então, pra você contextualizar
+
+496
+00:35:22,260 --> 00:35:23,740
+na sua visão aí
+
+497
+00:35:23,740 --> 00:35:25,080
+vamos abrir um estúdio
+
+498
+00:35:25,080 --> 00:35:44,280
+O que a gente tá fazendo?
+
+499
+00:35:45,140 --> 00:35:45,520
+Vamos lá
+
+500
+00:35:45,520 --> 00:35:48,040
+Você tá entendendo o que a gente tá fazendo
+
+501
+00:35:48,040 --> 00:35:50,180
+Certo, do que?
+
+502
+00:35:50,180 --> 00:35:53,160
+Qual é o produto que a gente tá fazendo?
+
+503
+00:35:55,080 --> 00:36:02,040
+Tá
+
+504
+00:36:02,040 --> 00:36:05,460
+Privado
+
+505
+00:36:05,460 --> 00:36:06,780
+O que isso quer dizer?
+
+506
+00:36:09,960 --> 00:36:11,140
+Sim, mas o que isso quer dizer?
+
+507
+00:36:12,360 --> 00:36:12,760
+Não
+
+508
+00:36:12,760 --> 00:36:14,540
+Todos esses nomes aí
+
+509
+00:36:14,540 --> 00:36:16,460
+Promotora CP
+
+510
+00:36:16,460 --> 00:36:18,140
+Proposta nova
+
+511
+00:36:18,140 --> 00:36:19,360
+Prédito consignado
+
+512
+00:36:19,360 --> 00:36:20,520
+Todos esses nomes aí
+
+513
+00:36:20,520 --> 00:36:21,620
+É a gente que coloca
+
+514
+00:36:21,620 --> 00:36:23,260
+Então se eu quiser colocar aí
+
+515
+00:36:23,260 --> 00:36:23,820
+Qualquer nome
+
+516
+00:36:23,820 --> 00:36:25,420
+Tipo, sei lá
+
+517
+00:36:25,420 --> 00:36:26,500
+Ao invés de colocar
+
+518
+00:36:26,500 --> 00:36:29,000
+No tipo de produto, colocar crédito consignado
+
+519
+00:36:29,000 --> 00:36:31,620
+Vou colocar crédito girafas
+
+520
+00:36:31,620 --> 00:36:33,600
+Sei lá, crédito mecanomics
+
+521
+00:36:33,600 --> 00:36:34,760
+Qualquer coisa que eu escrever aí
+
+522
+00:36:34,760 --> 00:36:37,060
+É o nome daí, entendeu?
+
+523
+00:36:37,500 --> 00:36:38,560
+É só um nome, é só um nome
+
+524
+00:36:38,560 --> 00:36:40,520
+Não é o que ele é na prática, entendeu?
+
+525
+00:36:41,060 --> 00:36:43,580
+Então, no caso, o C6
+
+526
+00:36:43,580 --> 00:36:44,700
+Pra gente
+
+527
+00:36:44,700 --> 00:36:46,640
+A gente tem o INSS
+
+528
+00:36:46,640 --> 00:36:49,040
+O privado e o FGTS
+
+529
+00:36:49,040 --> 00:36:50,140
+Entendeu?
+
+530
+00:36:50,820 --> 00:36:52,160
+Então, o INSS
+
+531
+00:36:52,160 --> 00:36:54,560
+Ele é o consignado padrão
+
+532
+00:36:54,560 --> 00:36:55,500
+Certo?
+
+533
+00:36:55,920 --> 00:36:56,500
+O que é o INSS?
+
+534
+00:36:57,120 --> 00:36:58,440
+É o empréstimo lá das veinhas
+
+535
+00:36:58,440 --> 00:36:59,340
+Da aposentadoria
+
+536
+00:36:59,340 --> 00:37:00,180
+Basicamente
+
+537
+00:37:00,180 --> 00:37:00,700
+Certo?
+
+538
+00:37:01,220 --> 00:37:01,860
+O privado
+
+539
+00:37:01,860 --> 00:37:03,280
+É o CPD que a gente chama
+
+540
+00:37:03,280 --> 00:37:05,540
+Que é o crédito pessoal
+
+541
+00:37:05,540 --> 00:37:06,780
+Do trabalhador
+
+542
+00:37:06,780 --> 00:37:08,460
+Certo?
+
+543
+00:37:08,780 --> 00:37:09,720
+Então no caso
+
+544
+00:37:09,720 --> 00:37:11,040
+O que a gente tá fazendo no privado
+
+545
+00:37:11,040 --> 00:37:11,740
+Ele é CPD
+
+546
+00:37:11,740 --> 00:37:12,720
+Entende?
+
+547
+00:37:14,080 --> 00:37:15,480
+Então é esse o nome basicamente
+
+548
+00:37:15,480 --> 00:37:15,980
+CPD
+
+549
+00:37:15,980 --> 00:37:21,880
+Então no caso
+
+550
+00:37:21,880 --> 00:37:23,740
+a gente tá entrando em qual ombro também?
+
+551
+00:37:37,440 --> 00:37:38,340
+Isso, CPD.
+
+552
+00:37:38,900 --> 00:37:40,260
+Beleza, é isso aí mesmo,
+
+553
+00:37:40,340 --> 00:37:41,340
+que a gente tá fazendo isso, certo?
+
+554
+00:37:42,620 --> 00:37:43,980
+Aí você fala, meu, o que é isso?
+
+555
+00:37:44,860 --> 00:37:45,960
+O que tá acontecendo na sua tela aí?
+
+556
+00:37:46,400 --> 00:37:46,980
+O que foi que falhou?
+
+557
+00:37:49,620 --> 00:37:50,020
+O que é isso aí?
+
+558
+00:37:50,020 --> 00:37:52,180
+Tá vendo aí que tem várias
+
+559
+00:37:52,180 --> 00:37:54,180
+Várias pastas
+
+560
+00:37:54,180 --> 00:37:58,160
+Todas essas pastas
+
+561
+00:37:58,160 --> 00:37:59,540
+São stories diferentes
+
+562
+00:37:59,540 --> 00:38:01,780
+Pra situações diferentes do CPD
+
+563
+00:38:01,780 --> 00:38:03,280
+Entende?
+
+564
+00:38:07,280 --> 00:38:07,840
+Certo?
+
+565
+00:38:08,000 --> 00:38:09,140
+Então beleza, vamos lá
+
+566
+00:38:09,140 --> 00:38:11,260
+Então no caso, o que a gente tá fazendo?
+
+567
+00:38:11,820 --> 00:38:12,620
+A gente tá fazendo
+
+568
+00:38:12,620 --> 00:38:15,940
+Uma
+
+569
+00:38:15,940 --> 00:38:16,180
+Uma
+
+570
+00:38:16,180 --> 00:38:18,940
+Uma consulta, né?
+
+571
+00:38:18,940 --> 00:38:20,580
+A consulta de dados do trabalhador.
+
+572
+00:38:21,840 --> 00:38:23,420
+Consulta de dados do novo trabalhador.
+
+573
+00:38:23,940 --> 00:38:24,180
+Certo?
+
+574
+00:38:25,000 --> 00:38:27,680
+Então, vamos ver se a gente acha algum nome parecido com isso.
+
+575
+00:38:28,060 --> 00:38:30,500
+Porque isso aí é um novo trabalhador, certo?
+
+576
+00:38:30,560 --> 00:38:31,280
+Uma proposta nova.
+
+577
+00:38:35,480 --> 00:38:36,740
+Então, tá vendo aí o que tem aí?
+
+578
+00:38:36,820 --> 00:38:37,940
+A consulta de dados do trabalhador.
+
+579
+00:38:43,000 --> 00:38:43,440
+Retorno.
+
+580
+00:38:44,100 --> 00:38:45,780
+Então, o retorno é o que ele vai ler.
+
+581
+00:38:47,200 --> 00:38:47,640
+Certo.
+
+582
+00:38:48,940 --> 00:38:54,180
+Deixa grande essa API, por favor.
+
+583
+00:38:54,620 --> 00:38:56,200
+Essa API não, é esse JSON.
+
+584
+00:39:02,080 --> 00:39:03,700
+Quero que fique maior, quero ver ele inteiro.
+
+585
+00:39:18,940 --> 00:39:37,300
+Exatamente, porque é informação diferente
+
+586
+00:39:37,300 --> 00:39:39,800
+Exatamente, então beleza
+
+587
+00:39:39,800 --> 00:39:42,660
+Mas esse é só um dos casos
+
+588
+00:39:42,660 --> 00:39:44,720
+No caso mesmo
+
+589
+00:39:44,720 --> 00:39:46,900
+Não é nem esse standard que ele usa
+
+590
+00:39:46,900 --> 00:39:53,100
+É que no caso aí o nome dá os trabalhadores, mas não necessariamente o nome também vai ser condizente com o que você tá fazendo.
+
+591
+00:39:53,920 --> 00:39:56,880
+Então, tipo, muitas vezes, sei lá, pode ser um nome nada a ver com uma coisa que você tá querendo.
+
+592
+00:39:57,140 --> 00:39:59,440
+Tá, só tô te mostrando esse caso aí.
+
+593
+00:40:00,320 --> 00:40:05,040
+Tá, no caso aí, volta um, se não me engano, é detalhes benefícios o nome.
+
+594
+00:40:07,720 --> 00:40:08,960
+Consultorista de detalhes benefícios.
+
+595
+00:40:12,080 --> 00:40:12,900
+Isso, clica aí.
+
+596
+00:40:14,020 --> 00:40:15,500
+Pode ser com um notepad normal.
+
+597
+00:40:15,500 --> 00:40:21,260
+tá vendo que tem outras informações
+
+598
+00:40:21,260 --> 00:40:22,740
+mas ainda
+
+599
+00:40:22,740 --> 00:40:25,280
+o benefício é o mesmo que eu tava usando antes
+
+600
+00:40:25,280 --> 00:40:28,740
+agora vai no outro lado
+
+601
+00:40:28,740 --> 00:40:31,740
+pode fechar
+
+602
+00:40:31,740 --> 00:40:35,800
+e aí se lista o benefício
+
+603
+00:40:35,800 --> 00:40:36,220
+que você mandou
+
+604
+00:40:36,220 --> 00:40:49,760
+Tá vendo que tá diferente aí também?
+
+605
+00:40:53,920 --> 00:40:56,220
+Então, você entende que a gente precisa
+
+606
+00:40:56,220 --> 00:40:59,120
+Quando você vai fazer a vera mesmo
+
+607
+00:40:59,120 --> 00:41:01,040
+Você vai ter que mudar essa informação
+
+608
+00:41:01,040 --> 00:41:02,020
+Em vários lugares
+
+609
+00:41:02,020 --> 00:41:04,360
+Porque ele vai consultando em lugares diferentes
+
+610
+00:41:04,360 --> 00:41:05,300
+Entendeu?
+
+611
+00:41:06,220 --> 00:41:11,540
+Tá
+
+612
+00:41:11,540 --> 00:41:18,060
+Calma, deixa eu
+
+613
+00:41:18,060 --> 00:41:21,020
+Deixa eu abrir o study aqui
+
+614
+00:41:21,020 --> 00:41:22,640
+Mais rápido a gente fala qual que é
+
+615
+00:41:22,640 --> 00:41:23,640
+Obrigado.
+
+616
+00:41:52,640 --> 00:41:54,460
+instalação
+
+617
+00:41:54,460 --> 00:41:57,060
+pode abrir
+
+618
+00:42:11,060 --> 00:42:11,620
+beleza
+
+619
+00:42:11,620 --> 00:42:13,980
+agora que coisa que você faz
+
+620
+00:42:13,980 --> 00:42:16,080
+para que você entenda
+
+621
+00:42:16,080 --> 00:42:16,560
+o que
+
+622
+00:42:16,560 --> 00:42:19,860
+cada informação é
+
+623
+00:42:19,860 --> 00:42:20,140
+não
+
+624
+00:42:20,140 --> 00:42:23,240
+Ah, você já tá com a tela aberta aí?
+
+625
+00:42:23,460 --> 00:42:24,080
+No motor ligador?
+
+626
+00:42:26,080 --> 00:42:26,700
+Já carregada?
+
+627
+00:42:29,160 --> 00:42:30,800
+Tá, agora volta no
+
+628
+00:42:30,800 --> 00:42:31,600
+Instagram lá
+
+629
+00:42:31,600 --> 00:42:36,040
+Agora vai lá no Instagram do
+
+630
+00:42:36,040 --> 00:42:38,500
+consulta dados trabalhador mesmo
+
+631
+00:42:38,500 --> 00:42:40,000
+Essa aí
+
+632
+00:42:40,000 --> 00:42:43,080
+Eu quero que você repara
+
+633
+00:42:43,080 --> 00:42:44,640
+as informações que tá nele
+
+634
+00:42:44,640 --> 00:42:47,020
+e aonde cada informação
+
+635
+00:42:47,020 --> 00:42:47,580
+tá na tela
+
+636
+00:42:47,580 --> 00:42:51,560
+Entendeu?
+
+637
+00:42:51,980 --> 00:42:53,220
+Então você percebe que
+
+638
+00:42:53,220 --> 00:42:55,120
+Tem o CPF, tem a matrícula
+
+639
+00:42:55,120 --> 00:42:57,160
+Tem o nome da inscrição
+
+640
+00:42:57,160 --> 00:42:58,040
+Do empregador
+
+641
+00:42:58,040 --> 00:43:00,580
+Tem o código, tem a data de nascimento
+
+642
+00:43:00,580 --> 00:43:01,720
+Código de trabalhador
+
+643
+00:43:01,720 --> 00:43:04,520
+Valor base
+
+644
+00:43:04,520 --> 00:43:06,520
+Valor mais disponível
+
+645
+00:43:06,520 --> 00:43:08,600
+Agora repara
+
+646
+00:43:08,600 --> 00:43:10,140
+Esses mesmos valores que estão aí
+
+647
+00:43:10,140 --> 00:43:12,060
+Lá no utilizador
+
+648
+00:43:12,060 --> 00:43:13,300
+Pra você ver
+
+649
+00:43:13,300 --> 00:43:15,460
+Pode deixar um pouco menor
+
+650
+00:43:15,460 --> 00:43:17,800
+a tela do
+
+651
+00:43:17,800 --> 00:43:19,420
+JSON, essa tela aí,
+
+652
+00:43:20,140 --> 00:43:21,840
+pra você ir batendo o que é
+
+653
+00:43:21,840 --> 00:43:23,620
+cada coisa. Menor eu digo
+
+654
+00:43:23,620 --> 00:43:25,960
+no i, né, pra você poder ver as telas ao mesmo tempo.
+
+655
+00:43:45,460 --> 00:43:57,520
+Então, repara aqui
+
+656
+00:43:57,520 --> 00:43:59,820
+Número de inscrição do empreendedor
+
+657
+00:43:59,820 --> 00:44:01,300
+Na realidade, ele é
+
+658
+00:44:01,300 --> 00:44:03,060
+Número de inscrição da empresa
+
+659
+00:44:03,060 --> 00:44:04,180
+Certo?
+
+660
+00:44:04,820 --> 00:44:06,600
+Então, se a gente tiver que mexer na empresa
+
+661
+00:44:06,600 --> 00:44:08,640
+Você sabe que é naquele campo ali
+
+662
+00:44:08,640 --> 00:44:09,980
+A matrícula
+
+663
+00:44:09,980 --> 00:44:12,560
+Tá lá, certo?
+
+664
+00:44:13,480 --> 00:44:14,400
+Data de admissão
+
+665
+00:44:14,400 --> 00:44:17,000
+É a mesma data que tá ali
+
+666
+00:44:17,000 --> 00:44:18,140
+24, 9, 12
+
+667
+00:44:18,140 --> 00:44:19,760
+Tá vendo que tem um formato diferente?
+
+668
+00:44:28,660 --> 00:44:30,240
+Tem que ser a data de nascimento
+
+669
+00:44:30,240 --> 00:44:31,200
+Leia o que tá escrito
+
+670
+00:44:31,200 --> 00:44:32,220
+Data de nascimento
+
+671
+00:44:32,220 --> 00:44:37,180
+Data de admissão
+
+672
+00:44:37,180 --> 00:44:37,940
+Tá vendo ali, ó
+
+673
+00:44:37,940 --> 00:44:38,940
+Tá um pouco mais embaixo
+
+674
+00:44:38,940 --> 00:44:42,900
+Então, ó
+
+675
+00:44:42,900 --> 00:44:43,700
+Valor de margem
+
+676
+00:44:43,700 --> 00:44:45,360
+ou seja, o que eu estou querendo dizer com isso
+
+677
+00:44:45,360 --> 00:44:47,780
+vamos supor que você quer fazer
+
+678
+00:44:47,780 --> 00:44:50,080
+uma proposta
+
+679
+00:44:50,080 --> 00:44:51,620
+ou um reforçamento
+
+680
+00:44:51,620 --> 00:44:53,280
+você precisa de mais margem
+
+681
+00:44:53,280 --> 00:44:55,200
+onde você alteraria?
+
+682
+00:44:59,860 --> 00:45:01,940
+porque não aguenta você fazer
+
+683
+00:45:01,940 --> 00:45:04,840
+isso
+
+684
+00:45:13,700 --> 00:45:19,900
+Cara, você tá vendo que tem valor de margem em tela?
+
+685
+00:45:20,440 --> 00:45:20,920
+Certo? Mil.
+
+686
+00:45:21,660 --> 00:45:23,020
+E que tá fechado ele.
+
+687
+00:45:23,240 --> 00:45:24,340
+Tá bloqueado no campo.
+
+688
+00:45:34,800 --> 00:45:36,040
+Tá bloqueado esse valor, certo?
+
+689
+00:45:37,240 --> 00:45:37,600
+Isso.
+
+690
+00:45:40,500 --> 00:45:40,860
+Isso.
+
+691
+00:45:41,640 --> 00:45:42,620
+Então, eu vou repetir a pergunta.
+
+692
+00:45:42,620 --> 00:45:44,540
+Se eu quiser alterar esse valor, como que eu faço?
+
+693
+00:45:47,100 --> 00:45:48,980
+Não, mas aquela taxa é da operação
+
+694
+00:45:48,980 --> 00:45:50,900
+Então, se eu quiser alterar
+
+695
+00:45:50,900 --> 00:45:53,820
+Não, cara
+
+696
+00:45:53,820 --> 00:45:56,540
+Esse valor tá sendo retornado pela data prévia
+
+697
+00:45:56,540 --> 00:45:57,340
+Você lembra que eu te falei?
+
+698
+00:45:57,960 --> 00:46:00,060
+Então, o STAM simula a data prévia, certo?
+
+699
+00:46:00,460 --> 00:46:02,660
+E ele retorna a informação pra gente
+
+700
+00:46:02,660 --> 00:46:03,560
+Beleza?
+
+701
+00:46:04,360 --> 00:46:06,400
+Essa informação tá sendo retornada do STAM
+
+702
+00:46:06,400 --> 00:46:07,220
+Você concorda?
+
+703
+00:46:07,680 --> 00:46:10,480
+Então, se eu quero alterar a informação do valor da margem
+
+704
+00:46:10,480 --> 00:46:11,200
+O que que eu faço?
+
+705
+00:46:12,620 --> 00:46:16,560
+Exatamente
+
+706
+00:46:16,560 --> 00:46:18,140
+Então se eu colocar aí 5 mil
+
+707
+00:46:18,140 --> 00:46:19,720
+Vai alterar lá de novo, vai replicir
+
+708
+00:46:19,720 --> 00:46:22,900
+Por quê? Porque uma informação consome a outra
+
+709
+00:46:22,900 --> 00:46:27,620
+Você tá conseguindo assimilar isso agora?
+
+710
+00:46:38,520 --> 00:46:39,040
+Exatamente
+
+711
+00:46:39,040 --> 00:46:43,620
+Não só aí, pode ser qualquer outra coisa
+
+712
+00:46:43,620 --> 00:46:45,940
+Então, o nome da mãe, por exemplo
+
+713
+00:46:45,940 --> 00:46:47,260
+Olha aí, o nome da mãe
+
+714
+00:46:47,260 --> 00:46:48,700
+Tá teste de mãe
+
+715
+00:46:48,700 --> 00:46:49,920
+Por que tá teste de mãe o nome aí?
+
+716
+00:47:06,760 --> 00:47:07,560
+Sim, por quê?
+
+717
+00:47:09,040 --> 00:47:10,920
+Sim, por quê?
+
+718
+00:47:15,440 --> 00:47:16,880
+Por que que faz isso?
+
+719
+00:47:24,980 --> 00:47:29,020
+Exatamente, porque a gente tá fazendo uma proposta CPD, certo?
+
+720
+00:47:29,500 --> 00:47:32,360
+CPD é o número da data breve, e vai insinuar a data breve de um stub.
+
+721
+00:47:32,940 --> 00:47:36,300
+Então, se você quiser mexer em qualquer informação que esteja
+
+722
+00:47:36,300 --> 00:47:39,040
+Na informação depois do Better Margin
+
+723
+00:47:39,040 --> 00:47:40,760
+Você vai ter que também mexer
+
+724
+00:47:40,760 --> 00:47:41,660
+No
+
+725
+00:47:41,660 --> 00:47:43,920
+End Stub, entendeu?
+
+726
+00:47:48,000 --> 00:47:49,120
+Entendeu isso?
+
+727
+00:47:53,340 --> 00:47:54,460
+Tá, beleza
+
+728
+00:47:54,460 --> 00:47:56,140
+Mas aí eu vou te falar
+
+729
+00:47:56,140 --> 00:47:59,100
+Eu tenho uma configuração que eu consigo fazer
+
+730
+00:47:59,100 --> 00:48:00,920
+Que mesmo
+
+731
+00:48:00,920 --> 00:48:02,600
+Fazendo o CPD
+
+732
+00:48:02,600 --> 00:48:03,840
+Que ele necessita
+
+733
+00:48:03,840 --> 00:48:05,560
+Na Constituição da TAPREV
+
+734
+00:48:05,560 --> 00:48:07,580
+Eu não consulto a data prévia
+
+735
+00:48:07,580 --> 00:48:09,060
+Certo? Então
+
+736
+00:48:09,060 --> 00:48:12,500
+É o hábito
+
+737
+00:48:12,500 --> 00:48:13,460
+É o certo fazer
+
+738
+00:48:13,460 --> 00:48:15,140
+A data prévia
+
+739
+00:48:15,140 --> 00:48:16,340
+Fazer esse caso
+
+740
+00:48:16,340 --> 00:48:19,300
+Mas tem casos que você não vai fazer a data prévia
+
+741
+00:48:19,300 --> 00:48:20,580
+Fazendo a mesma coisa
+
+742
+00:48:20,580 --> 00:48:23,900
+Então a gente tem configuração pra poder alterar isso
+
+743
+00:48:23,900 --> 00:48:24,980
+Entende?
+
+744
+00:48:26,320 --> 00:48:28,000
+Então eu vou te mostrar a configuração agora
+
+745
+00:48:28,000 --> 00:48:31,440
+Abrir a tela do empregador
+
+746
+00:48:35,560 --> 00:48:36,760
+Não, não, não. Não sai daí.
+
+747
+00:48:37,000 --> 00:48:39,240
+Mantenha a tela do utilizador. Abre outra guia
+
+748
+00:48:39,240 --> 00:48:40,800
+com a tela do empregador.
+
+749
+00:49:05,560 --> 00:49:07,560
+Obrigado.
+
+750
+00:49:35,560 --> 00:49:43,680
+Então, se já entrou na tela do empregador alguma vez?
+
+751
+00:49:58,240 --> 00:50:04,460
+Tá, então assim, o empregador, ele vai trabalhar junto com o operador, tá?
+
+752
+00:50:04,460 --> 00:50:07,120
+Então muita coisa que você vê no autorizador
+
+753
+00:50:07,120 --> 00:50:08,280
+É
+
+754
+00:50:08,280 --> 00:50:09,840
+O empregador tá editando
+
+755
+00:50:09,840 --> 00:50:11,820
+Que aquilo deve funcionar daquela maneira
+
+756
+00:50:11,820 --> 00:50:13,460
+Tá, basicamente
+
+757
+00:50:13,460 --> 00:50:15,200
+Beleza?
+
+758
+00:50:19,320 --> 00:50:20,080
+Vamos lá
+
+759
+00:50:20,080 --> 00:50:22,120
+Então vamos dar rotina de averbação online
+
+760
+00:50:22,120 --> 00:50:34,260
+Deixa eu fazer aqui
+
+761
+00:50:34,260 --> 00:50:35,260
+Obrigado.
+
+762
+00:51:04,260 --> 00:51:06,260
+Obrigado.
+
+763
+00:51:34,260 --> 00:51:40,400
+Para fazer a testemunha, para fazer a testemunha, nós precisamos...
+
+764
+00:52:04,260 --> 00:52:07,280
+Não, eu estou olhando aqui.
+
+765
+00:52:07,960 --> 00:52:08,380
+Vamos lá.
+
+766
+00:52:09,220 --> 00:52:09,840
+Atenção online.
+
+767
+00:52:10,300 --> 00:52:11,240
+Aqui na minha verbação online.
+
+768
+00:52:15,940 --> 00:52:18,240
+Isso, aí tem o celular privado, certo?
+
+769
+00:52:27,240 --> 00:52:29,940
+Isso, então vamos conhecer duas telinhas, tá?
+
+770
+00:52:29,940 --> 00:52:31,800
+Vamos conhecer primeiro a parâmetros gerais.
+
+771
+00:52:31,880 --> 00:52:33,060
+Clica aí, parâmetros gerais.
+
+772
+00:52:34,260 --> 00:52:39,720
+Certo
+
+773
+00:52:39,720 --> 00:52:43,000
+E aí, bom dia
+
+774
+00:52:43,000 --> 00:52:44,060
+Tudo bem?
+
+775
+00:52:44,200 --> 00:52:44,660
+Tudo bem
+
+776
+00:52:44,660 --> 00:52:46,860
+Então
+
+777
+00:52:46,860 --> 00:53:03,640
+Tá vendo o que eu te falei?
+
+778
+00:53:04,260 --> 00:53:05,880
+Certo? Então, aí tem muitas coisas
+
+779
+00:53:05,880 --> 00:53:07,960
+que você seta aí como tem que
+
+780
+00:53:07,960 --> 00:53:09,840
+funcionar lá no autorizador, certo?
+
+781
+00:53:09,900 --> 00:53:11,960
+Então, tem os plugins, como tem que funcionar,
+
+782
+00:53:12,320 --> 00:53:13,620
+o horário de início, horário de fim,
+
+783
+00:53:14,020 --> 00:53:15,540
+a quantidade de vezes no dia,
+
+784
+00:53:17,900 --> 00:53:18,160
+certo?
+
+785
+00:53:22,900 --> 00:53:24,240
+Então, por exemplo,
+
+786
+00:53:24,500 --> 00:53:26,100
+sei lá, pode
+
+787
+00:53:26,100 --> 00:53:28,260
+acontecer de um dia você tiver que trabalhar no final de semana,
+
+788
+00:53:28,740 --> 00:53:30,140
+certo? Por algum motivo.
+
+789
+00:53:30,900 --> 00:53:31,880
+E tem algum serviço
+
+790
+00:53:31,880 --> 00:53:33,460
+que aí tá configurado
+
+791
+00:53:33,460 --> 00:53:35,960
+que vai trabalhar de segunda
+
+792
+00:53:35,960 --> 00:53:37,300
+a sexta, mas
+
+793
+00:53:37,300 --> 00:53:39,300
+você vai trabalhar final de semana
+
+794
+00:53:39,300 --> 00:53:41,100
+e você precisa usar esse recurso
+
+795
+00:53:41,100 --> 00:53:43,240
+então você vai ter que entrar aí, certo?
+
+796
+00:53:43,320 --> 00:53:45,180
+e configurar pra ele também trabalhar final de semana
+
+797
+00:53:45,180 --> 00:53:47,500
+senão você não vai conseguir fazer
+
+798
+00:53:47,500 --> 00:53:49,840
+o seu serviço
+
+799
+00:53:49,840 --> 00:53:50,660
+basicamente
+
+800
+00:53:50,660 --> 00:53:53,500
+então isso é um exemplo bem chupo
+
+801
+00:53:53,500 --> 00:53:55,840
+do que você pode estar fazendo aí
+
+802
+00:53:55,840 --> 00:53:57,880
+então desce um pouco aí
+
+803
+00:53:59,680 --> 00:54:00,520
+desce um pouco na tela
+
+804
+00:54:00,520 --> 00:54:20,960
+Tá vendo? Tem quantidade de dias pra considerar um serviço, intervalo, um monte de coisa de tipo como vai funcionar, certo?
+
+805
+00:54:23,500 --> 00:54:24,360
+Tá vendo? Vai descendo
+
+806
+00:54:30,520 --> 00:54:40,460
+só para você conhecer a tela
+
+807
+00:54:40,460 --> 00:54:41,980
+o que você pode estar vendo aí depois
+
+808
+00:54:41,980 --> 00:54:44,420
+tá, mas beleza, volta aí
+
+809
+00:54:50,220 --> 00:54:52,300
+vai na mesma rotina, verbação online
+
+810
+00:54:52,300 --> 00:54:57,900
+você vai clicar em
+
+811
+00:54:57,900 --> 00:54:59,600
+cadastro para o NAMS, isso mesmo
+
+812
+00:54:59,600 --> 00:55:01,060
+alteração
+
+813
+00:55:01,060 --> 00:55:04,960
+é o cálculo número 1
+
+814
+00:55:04,960 --> 00:55:08,820
+isso, mais nada
+
+815
+00:55:08,820 --> 00:55:10,040
+isso
+
+816
+00:55:10,040 --> 00:55:11,980
+antes de mais nada
+
+817
+00:55:11,980 --> 00:55:14,340
+por que a gente tá entrando no empregador, você lembra?
+
+818
+00:55:29,600 --> 00:55:36,400
+Isso, mas no fim, por que eu estou te mostrando isso? Qual foi o motivo da gente entrar nessa tela?
+
+819
+00:55:41,400 --> 00:55:42,380
+Você lembra ou não?
+
+820
+00:55:48,340 --> 00:55:51,760
+Isso, que a data-prev, que a gente simula a data-prev com o stub, certo?
+
+821
+00:55:52,360 --> 00:55:57,640
+E que sempre que você for fazer um CPD, ele vai consultar essa tela, certo?
+
+822
+00:55:57,760 --> 00:55:58,800
+Ele vai consultar o stub.
+
+823
+00:55:58,800 --> 00:56:01,800
+Mas a gente consegue configurar pra não acontecer isso
+
+824
+00:56:01,800 --> 00:56:02,780
+Certo?
+
+825
+00:56:03,360 --> 00:56:04,020
+Lembra que eu falei isso?
+
+826
+00:56:08,020 --> 00:56:09,300
+E aí eu entrei no
+
+827
+00:56:09,300 --> 00:56:10,800
+Entregador pra te mostrar
+
+828
+00:56:10,800 --> 00:56:13,420
+Porque
+
+829
+00:56:13,420 --> 00:56:15,240
+Como que eu faria pra configurar
+
+830
+00:56:15,240 --> 00:56:16,620
+Pra não fazer essa consulta no
+
+831
+00:56:16,620 --> 00:56:18,500
+Não
+
+832
+00:56:18,500 --> 00:56:21,220
+Isso, caso eu precise fazer
+
+833
+00:56:21,220 --> 00:56:22,920
+Alguma, um cenário
+
+834
+00:56:22,920 --> 00:56:25,200
+Em que eu não vou, que eu não quero
+
+835
+00:56:25,200 --> 00:56:27,100
+Consultar o stub
+
+836
+00:56:27,100 --> 00:56:28,740
+Simulando a data breve
+
+837
+00:56:28,740 --> 00:56:30,940
+Certo
+
+838
+00:56:30,940 --> 00:56:33,480
+Foi isso por que a gente usou essa tela aí
+
+839
+00:56:33,480 --> 00:56:34,840
+Beleza
+
+840
+00:56:34,840 --> 00:56:36,340
+Então antes de a gente chegar nessa parte
+
+841
+00:56:36,340 --> 00:56:37,780
+Vou te explicar outra coisa
+
+842
+00:56:37,780 --> 00:56:40,480
+Então você tá vendo essa primeira tela aí
+
+843
+00:56:40,480 --> 00:56:43,560
+Aí no
+
+844
+00:56:43,560 --> 00:56:44,360
+No
+
+845
+00:56:44,360 --> 00:56:47,840
+Dados do empregador, tá vendo ali embaixo
+
+846
+00:56:47,840 --> 00:56:51,480
+Tá vendo o que a gente tem ali
+
+847
+00:56:51,480 --> 00:56:53,580
+Os números ali embaixo
+
+848
+00:56:53,580 --> 00:56:55,680
+Ações, código
+
+849
+00:56:55,680 --> 00:56:56,940
+Descrição
+
+850
+00:56:56,940 --> 00:56:57,880
+Certo
+
+851
+00:56:57,880 --> 00:57:00,520
+Esses
+
+852
+00:57:00,520 --> 00:57:02,660
+Empregadores
+
+853
+00:57:02,660 --> 00:57:04,740
+São empregadores que eles estão
+
+854
+00:57:04,740 --> 00:57:06,160
+Habilitados a fazer
+
+855
+00:57:06,160 --> 00:57:07,840
+A consulta
+
+856
+00:57:07,840 --> 00:57:09,080
+Certo?
+
+857
+00:57:09,500 --> 00:57:10,520
+No CPD
+
+858
+00:57:10,520 --> 00:57:13,040
+Então é por isso que a gente sempre usa o 1010
+
+859
+00:57:13,040 --> 00:57:15,820
+Se você tirar esse 1010 daí
+
+860
+00:57:15,820 --> 00:57:17,420
+E excluir
+
+861
+00:57:17,420 --> 00:57:20,300
+E depois tentar usar ele pra poder fazer
+
+862
+00:57:20,300 --> 00:57:22,020
+No CPD, não vai dar certo
+
+863
+00:57:22,020 --> 00:57:23,120
+Vai dar erro
+
+864
+00:57:23,120 --> 00:57:24,820
+Entendeu?
+
+865
+00:57:25,520 --> 00:57:27,360
+Então você tem que fazer essa parametrização antes
+
+866
+00:57:27,360 --> 00:57:28,560
+Pra poder tá exercendo
+
+867
+00:57:28,560 --> 00:57:31,020
+Fazendo o CPD no autorizador
+
+868
+00:57:31,020 --> 00:57:31,460
+Por exemplo
+
+869
+00:57:31,460 --> 00:57:37,200
+Agora vamos lá em infraestrutura
+
+870
+00:57:37,200 --> 00:57:37,900
+Pra você conhecer a tela
+
+871
+00:57:37,900 --> 00:57:41,480
+Então isso é importante você anotar
+
+872
+00:57:41,480 --> 00:57:43,000
+Porque se algum dia
+
+873
+00:57:43,000 --> 00:57:45,140
+Você precisar, sei lá, configurar isso
+
+874
+00:57:45,140 --> 00:57:46,980
+Em outro lugar, em outra equipe, em outra base
+
+875
+00:57:46,980 --> 00:57:47,940
+Você já sabe
+
+876
+00:57:47,940 --> 00:57:49,460
+Como é que faz
+
+877
+00:57:49,460 --> 00:57:50,380
+Entende?
+
+878
+00:57:55,020 --> 00:57:55,860
+Você anotou?
+
+879
+00:57:57,360 --> 00:58:04,980
+tá, tudo beleza
+
+880
+00:58:04,980 --> 00:58:12,000
+tá, então vamos lá
+
+881
+00:58:12,000 --> 00:58:18,900
+daí, o mais importante que eu quero te mostrar
+
+882
+00:58:18,900 --> 00:58:20,760
+você tá vendo que tem essa URL
+
+883
+00:58:20,760 --> 00:58:22,780
+do WS atualizador
+
+884
+00:58:27,360 --> 00:58:34,360
+Essa, basicamente, é como que ele se comunica com o nosso utilizador.
+
+885
+00:58:34,360 --> 00:58:39,360
+Então, sempre vai estar com o furo da IWS do utilizador mesmo.
+
+886
+00:58:39,360 --> 00:58:42,360
+Qualquer LDL, qualquer base.
+
+887
+00:58:44,360 --> 00:58:46,360
+Aí desce um pouco.
+
+888
+00:58:48,360 --> 00:58:53,360
+E, tá vendo aí, que a URL agora é do stub do CPD?
+
+889
+00:58:57,360 --> 00:59:02,680
+Entendeu? Por que que é?
+
+890
+00:59:03,280 --> 00:59:04,980
+Pra poder configurar
+
+891
+00:59:04,980 --> 00:59:05,860
+E tá simulando
+
+892
+00:59:05,860 --> 00:59:07,600
+A data breve
+
+893
+00:59:07,600 --> 00:59:09,640
+Então, por exemplo, se você tivesse
+
+894
+00:59:09,640 --> 00:59:11,700
+Sei lá, normalmente num banco
+
+895
+00:59:11,700 --> 00:59:13,320
+Provavelmente tivesse essa mesma telinha
+
+896
+00:59:13,320 --> 00:59:15,780
+Você não ia colocar o stub, você ia colocar o link
+
+897
+00:59:15,780 --> 00:59:18,160
+X lá na data breve
+
+898
+00:59:18,160 --> 00:59:19,540
+Que vai consultar, entendeu?
+
+899
+00:59:20,120 --> 00:59:21,300
+E aí teria uma senha
+
+900
+00:59:21,300 --> 00:59:23,800
+Como tem a senha aí, entendeu?
+
+901
+00:59:24,300 --> 00:59:25,280
+Então, no nosso caso
+
+902
+00:59:25,280 --> 00:59:26,760
+A gente tá simulando isso com o stub
+
+903
+00:59:26,760 --> 00:59:27,700
+Por isso que tem desse jeito
+
+904
+00:59:27,700 --> 00:59:32,540
+Beleza?
+
+905
+00:59:33,440 --> 00:59:34,080
+Se você clicar ali
+
+906
+00:59:34,080 --> 00:59:39,500
+Vai perder a comunicação
+
+907
+00:59:39,500 --> 00:59:43,840
+Clica ali no URL pro serviço
+
+908
+00:59:43,840 --> 00:59:52,820
+Você tá me ouvindo atrasado?
+
+909
+00:59:56,760 --> 01:00:04,000
+Eu falo, aí você não fala nada, aí depois você fala
+
+910
+01:00:04,000 --> 01:00:06,980
+Tá
+
+911
+01:00:06,980 --> 01:00:11,180
+Então nessa rede de serviços, clica em averbação, por exemplo
+
+912
+01:00:11,180 --> 01:00:15,140
+Acho que também não tá nada assim, mas tudo bem
+
+913
+01:00:15,140 --> 01:00:18,560
+Tá vendo aí também que é tudo webpcpd
+
+914
+01:00:18,560 --> 01:00:22,480
+Agora vem a explosão
+
+915
+01:00:26,760 --> 01:00:27,720
+E ativação.
+
+916
+01:00:35,340 --> 01:00:35,900
+Consulta.
+
+917
+01:00:36,740 --> 01:00:37,040
+Certo?
+
+918
+01:00:37,140 --> 01:00:38,640
+Por que que é isso?
+
+919
+01:00:38,740 --> 01:00:41,300
+Eu lembro que a gente abriu o Stub lá, certo?
+
+920
+01:00:41,840 --> 01:00:43,160
+E ele tinha várias informações,
+
+921
+01:00:44,660 --> 01:00:47,580
+várias Stubs diferentes dentro do mesmo.
+
+922
+01:00:51,400 --> 01:00:51,960
+Exatamente.
+
+923
+01:00:52,180 --> 01:00:52,820
+Então, por exemplo,
+
+924
+01:00:53,820 --> 01:00:55,180
+a URL é a mesma,
+
+925
+01:00:55,180 --> 01:00:57,980
+só que você não precisa colocar
+
+926
+01:00:57,980 --> 01:01:00,060
+por exemplo, qual é a pasta
+
+927
+01:01:00,060 --> 01:01:02,160
+que ele tem que ir direto, ele mesmo sabe se encontrar
+
+928
+01:01:02,160 --> 01:01:03,900
+através disso, entendeu
+
+929
+01:01:03,900 --> 01:01:05,920
+então tá vendo
+
+930
+01:01:05,920 --> 01:01:08,320
+o RR do serviço de consultor de trabalhador
+
+931
+01:01:08,320 --> 01:01:10,180
+aí você colocou só a primeira
+
+932
+01:01:10,180 --> 01:01:11,980
+e ele vai saber consultar
+
+933
+01:01:11,980 --> 01:01:13,200
+a consultor de trabalhador
+
+934
+01:01:13,200 --> 01:01:14,260
+entendeu
+
+935
+01:01:14,260 --> 01:01:19,540
+então por exemplo, se você tirar algum desses
+
+936
+01:01:19,540 --> 01:01:22,060
+se você for usar algum serviço
+
+937
+01:01:22,060 --> 01:01:24,140
+no futuro não vai funcionar
+
+938
+01:01:24,140 --> 01:01:29,640
+Aí começava a dar gargalo na feira do circo, aí quando caiu a feira, ele tá brincando.
+
+939
+01:01:31,700 --> 01:01:34,200
+Aí ele fez uma parte de C ou S ali, ó.
+
+940
+01:01:34,320 --> 01:01:36,020
+Tá falhando mesmo, mas tá bom, vai, vamos continuar.
+
+941
+01:01:39,400 --> 01:01:44,400
+Aí eu coloquei, eu coloquei...
+
+942
+01:01:44,400 --> 01:01:45,440
+Volta aí.
+
+943
+01:01:49,440 --> 01:01:50,820
+Agora vamos botar a tela.
+
+944
+01:01:50,820 --> 01:01:55,640
+Não, cara
+
+945
+01:01:55,640 --> 01:01:57,540
+Era pra você voltar só uma vez
+
+946
+01:01:57,540 --> 01:02:05,620
+Você tava na tela de
+
+947
+01:02:05,620 --> 01:02:08,980
+Enfim, lá das ORLs
+
+948
+01:02:08,980 --> 01:02:09,700
+Pra você voltar
+
+949
+01:02:09,700 --> 01:02:12,940
+Clica ali em dados da consulta
+
+950
+01:02:12,940 --> 01:02:15,840
+Ó
+
+951
+01:02:15,840 --> 01:02:18,240
+Leia cada linha dessa
+
+952
+01:02:18,240 --> 01:02:41,780
+Não, lê tudo
+
+953
+01:02:41,780 --> 01:02:42,960
+Lê tudo e entenda o que está escrito
+
+954
+01:02:42,960 --> 01:02:43,920
+Que eu vou te perguntar depois
+
+955
+01:02:48,240 --> 01:02:53,460
+Certo, posso perguntar agora?
+
+956
+01:03:18,240 --> 01:03:48,220
+Agora, a gente vai fazer aqui depois.
+
+957
+01:03:48,240 --> 01:03:57,500
+Eu te pergunto
+
+958
+01:03:57,500 --> 01:03:59,940
+Você lembra por que a gente
+
+959
+01:03:59,940 --> 01:04:00,500
+Estou nessa tela?
+
+960
+01:04:03,320 --> 01:04:04,060
+Do pregador
+
+961
+01:04:04,060 --> 01:04:04,960
+Que era pra poder
+
+962
+01:04:04,960 --> 01:04:06,420
+Eu tinha falado que
+
+963
+01:04:06,420 --> 01:04:13,580
+Isso, qual desses faria isso?
+
+964
+01:04:14,040 --> 01:04:15,140
+Qual dessas opções faria isso?
+
+965
+01:04:18,240 --> 01:04:43,420
+Então, o que ela faz aí?
+
+966
+01:04:43,860 --> 01:04:45,820
+Realizar essa restrição dos dados
+
+967
+01:04:45,820 --> 01:04:48,120
+do trabalhador, de toda a data prévia,
+
+968
+01:04:48,240 --> 01:04:50,480
+Nos dados do cliente
+
+969
+01:04:50,480 --> 01:04:52,020
+Ou seja, se você habilita ela
+
+970
+01:04:52,020 --> 01:04:54,220
+Você vai substituir
+
+971
+01:04:54,220 --> 01:04:55,220
+O dado trabalhador que
+
+972
+01:04:55,220 --> 01:04:56,840
+Que se tem
+
+973
+01:04:56,840 --> 01:04:59,200
+Pelo dado prévio, certo?
+
+974
+01:05:00,260 --> 01:05:01,740
+Então hoje já tá fazendo isso
+
+975
+01:05:01,740 --> 01:05:04,140
+Então se eu não quisesse
+
+976
+01:05:04,140 --> 01:05:05,960
+Que fizesse isso, eu teria que desabilitar
+
+977
+01:05:05,960 --> 01:05:06,760
+Basicamente
+
+978
+01:05:06,760 --> 01:05:10,160
+Entendeu?
+
+979
+01:05:17,380 --> 01:05:17,860
+É
+
+980
+01:05:17,860 --> 01:05:21,640
+Isso, exatamente
+
+981
+01:05:21,640 --> 01:05:22,720
+Você pode deixar bilhetado
+
+982
+01:05:22,720 --> 01:05:24,060
+Porque ele é o que tem que ser feito
+
+983
+01:05:24,060 --> 01:05:27,140
+Você pode deixar aí como um truisteiro
+
+984
+01:05:27,140 --> 01:05:32,360
+Isso
+
+985
+01:05:32,360 --> 01:05:34,140
+Beleza
+
+986
+01:05:34,140 --> 01:05:36,280
+Aí, por exemplo
+
+987
+01:05:36,280 --> 01:05:38,680
+Ela
+
+988
+01:05:38,680 --> 01:05:41,600
+Ela substituiu a informação
+
+989
+01:05:41,600 --> 01:05:42,140
+Certo?
+
+990
+01:05:42,760 --> 01:05:44,380
+E aí vamos supor que ela substituiu
+
+991
+01:05:44,380 --> 01:05:45,980
+E, sei lá, o cara
+
+992
+01:05:45,980 --> 01:05:47,960
+Errou o nome da mãe do cara
+
+993
+01:05:47,960 --> 01:05:49,660
+E ele precisa alterar
+
+994
+01:05:49,660 --> 01:05:52,160
+O que aí eu teria que mexer pra poder conseguir fazer isso?
+
+995
+01:06:10,120 --> 01:06:11,880
+Permitir a emissão dos dados
+
+996
+01:06:11,880 --> 01:06:13,200
+Instruídos no fluente
+
+997
+01:06:13,200 --> 01:06:14,780
+Isso
+
+998
+01:06:14,780 --> 01:06:23,880
+Então, beleza
+
+999
+01:06:23,880 --> 01:06:26,380
+Então, entendemos que
+
+1000
+01:06:26,380 --> 01:06:28,380
+Isso é só dois pontos, tá?
+
+1001
+01:06:28,620 --> 01:06:29,640
+Então, você poderia
+
+1002
+01:06:29,640 --> 01:06:31,940
+Isso aqui, falar sobre isso aí
+
+1003
+01:06:31,940 --> 01:06:33,400
+Muito mais coisa, tá?
+
+1004
+01:06:33,980 --> 01:06:36,000
+Mas enfim, só pra gente concluir logo
+
+1005
+01:06:36,000 --> 01:06:38,760
+E pra dar uma proposta
+
+1006
+01:06:38,760 --> 01:06:40,440
+Então, isso aí
+
+1007
+01:06:40,440 --> 01:06:42,200
+Esses dois caras tem a ver com
+
+1008
+01:06:42,200 --> 01:06:43,800
+A nossa telinha que a gente tá mexendo
+
+1009
+01:06:43,800 --> 01:06:45,480
+Certo? Porque a gente tava lá vendo
+
+1010
+01:06:45,480 --> 01:06:46,720
+O que tá acontecendo
+
+1011
+01:06:46,720 --> 01:06:48,180
+Certo? Então, beleza
+
+1012
+01:06:48,180 --> 01:06:49,940
+Você pode gravar aí
+
+1013
+01:06:49,940 --> 01:06:51,760
+E eu vou partilhar pra outros dois
+
+1014
+01:06:51,760 --> 01:06:53,460
+É
+
+1015
+01:06:53,460 --> 01:06:55,860
+Aí eu peguei o de
+
+1016
+01:06:55,860 --> 01:06:56,580
+O que é
+
+1017
+01:06:56,580 --> 01:07:01,940
+O talmaio
+
+1018
+01:07:01,940 --> 01:07:02,520
+O talmaio
+
+1019
+01:07:02,520 --> 01:07:06,400
+O time out
+
+1020
+01:07:06,400 --> 01:07:07,660
+Nossa, tá especificando
+
+1021
+01:07:07,660 --> 01:07:37,640
+Tchau, tchau.
+
+1022
+01:07:37,660 --> 01:07:47,780
+Então beleza, eu vou deixar você cadastrar aí
+
+1023
+01:07:47,780 --> 01:07:48,600
+pra pegar a marca, tá?
+
+1024
+01:08:07,660 --> 01:08:08,660
+Obrigado.
+
+1025
+01:08:37,660 --> 01:08:41,380
+na base. Certo? E esse nomezinho, tá vendo esse nome
+
+1026
+01:08:41,380 --> 01:08:46,960
+que tem aí ó? É o nome do fung, basicamente. Certo? Tá vendo
+
+1027
+01:08:46,960 --> 01:08:52,160
+esse C, C, G, P, F, ponto?
+
+1028
+01:08:54,160 --> 01:09:00,260
+Certo? Tá vendo? É um campo. C, C, G, P, F, ponto.
+
+1029
+01:09:00,260 --> 01:09:06,460
+tá vendo?
+
+1030
+01:09:07,340 --> 01:09:09,300
+esse daí é o ID
+
+1031
+01:09:09,300 --> 01:09:10,380
+de cada plugin
+
+1032
+01:09:10,380 --> 01:09:13,620
+cada plugin tem o ID
+
+1033
+01:09:13,620 --> 01:09:13,940
+dele
+
+1034
+01:09:13,940 --> 01:09:22,500
+então, por exemplo, se você quiser
+
+1035
+01:09:22,500 --> 01:09:26,040
+deixa eu só ver
+
+1036
+01:09:26,040 --> 01:09:27,660
+e, com isso, deixe-me ouvir o que diz.
+
+1037
+01:09:56,040 --> 01:09:57,040
+Obrigado.
+
+1038
+01:10:26,040 --> 01:10:28,500
+É que a gente já é duro, é, tem que esperar.
+
+1039
+01:10:28,920 --> 01:10:29,140
+Pô,
+
+1040
+01:10:30,140 --> 01:10:32,420
+tem umzinho, a tabela,
+
+1041
+01:10:32,540 --> 01:10:34,120
+que fala qual que é o nome do plugin,
+
+1042
+01:10:35,060 --> 01:10:36,220
+que tem mais de, tem tipo,
+
+1043
+01:10:36,300 --> 01:10:37,480
+mais de um plugin e tal.
+
+1044
+01:10:37,680 --> 01:10:39,080
+Tem que colocar o nome, tem que colocar o nome.
+
+1045
+01:10:41,220 --> 01:10:41,900
+TV Perfect.
+
+1046
+01:10:45,980 --> 01:10:47,240
+O monitor, né?
+
+1047
+01:10:47,240 --> 01:10:49,340
+O monitor, né?
+
+1048
+01:10:49,980 --> 01:10:51,720
+O que é isso?
+
+1049
+01:10:51,840 --> 01:10:52,980
+Mano, esse aqui tem
+
+1050
+01:10:52,980 --> 01:10:53,680
+um pouquinho, mano.
+
+1051
+01:10:53,680 --> 01:10:59,520
+O que que é, mano? Eu tenho que saber o que que é cada coisa, né?
+
+1052
+01:11:00,800 --> 01:11:03,040
+Se só executar e dar certo, é difícil.
+
+1053
+01:11:06,660 --> 01:11:10,480
+Mas não que, tipo assim, eu já soube e agora já esqueci, né?
+
+1054
+01:11:11,960 --> 01:11:13,160
+Mas eu que esqueci, mas beleza.
+
+1055
+01:11:17,160 --> 01:11:17,760
+Tá me ouvindo?
+
+1056
+01:11:22,200 --> 01:11:22,600
+Alô?
+
+1057
+01:11:23,680 --> 01:11:26,600
+então chama
+
+1058
+01:11:26,600 --> 01:11:28,100
+dá um celeste agora
+
+1059
+01:11:28,100 --> 01:11:30,660
+dá um outro celeste
+
+1060
+01:11:30,660 --> 01:11:33,280
+dá um outro celeste agora
+
+1061
+01:11:33,280 --> 01:11:34,920
+na
+
+1062
+01:11:34,920 --> 01:11:37,300
+tbperficom
+
+1063
+01:11:37,300 --> 01:11:45,080
+tá vendo aí que tem um númerozinho
+
+1064
+01:11:45,080 --> 01:11:45,900
+certo
+
+1065
+01:11:45,900 --> 01:11:48,100
+p-r-i-g-p-e-f-i-c-o-m
+
+1066
+01:11:48,100 --> 01:11:52,560
+certo, tá ouvindo?
+
+1067
+01:11:53,680 --> 01:12:13,640
+Ele vai ser o mesmo do que você viu lá na Econsult, certo?
+
+1068
+01:12:23,680 --> 01:12:36,800
+Então, por exemplo
+
+1069
+01:12:36,800 --> 01:12:39,580
+Só que assim, ele tem duplicidade
+
+1070
+01:12:39,580 --> 01:12:41,720
+Então pode ser
+
+1071
+01:12:41,720 --> 01:12:43,260
+Que tenha informações antigas
+
+1072
+01:12:43,260 --> 01:12:44,600
+Informações novas
+
+1073
+01:12:44,600 --> 01:12:46,540
+Mas por exemplo, você está vendo aí
+
+1074
+01:12:46,540 --> 01:12:47,780
+Na e-consult
+
+1075
+01:12:47,780 --> 01:12:50,120
+Que rodou aí esse 732
+
+1076
+01:12:50,120 --> 01:12:51,220
+Por exemplo, que é o último
+
+1077
+01:12:51,220 --> 01:12:52,100
+Certo?
+
+1078
+01:12:53,100 --> 01:12:54,680
+Aí se você for na TV Particul
+
+1079
+01:12:54,680 --> 01:12:56,140
+Procurar o 732
+
+1080
+01:12:56,140 --> 01:12:59,860
+Sabe o que é?
+
+1081
+01:13:01,620 --> 01:13:03,500
+INSS Regeneração de Verbação
+
+1082
+01:13:03,500 --> 01:13:08,340
+Então tem que ter o nomezinho ali
+
+1083
+01:13:08,340 --> 01:13:11,400
+Serve INSS Regeneração de Verbação
+
+1084
+01:13:11,400 --> 01:13:12,660
+Lá no
+
+1085
+01:13:12,660 --> 01:13:15,140
+Na tabela da Inconsult
+
+1086
+01:13:15,140 --> 01:13:19,700
+Isso, aí mesmo
+
+1087
+01:13:19,700 --> 01:13:21,920
+Então eu deixo o nome ali
+
+1088
+01:13:21,920 --> 01:13:23,180
+Meio abreviado também
+
+1089
+01:13:23,180 --> 01:13:25,780
+Então se você souber
+
+1090
+01:13:25,780 --> 01:13:27,780
+Você já sabe o que é
+
+1091
+01:13:27,780 --> 01:13:28,440
+Que eu deixei de ser
+
+1092
+01:13:28,440 --> 01:13:31,040
+Enfim
+
+1093
+01:13:31,040 --> 01:13:33,640
+Então nesse caso você poderia ter dado um select
+
+1094
+01:13:33,640 --> 01:13:34,560
+Certo
+
+1095
+01:13:34,560 --> 01:13:37,140
+Pra poder ver
+
+1096
+01:13:37,140 --> 01:13:39,300
+O que estava acontecendo com a sua proposta
+
+1097
+01:13:39,300 --> 01:13:41,480
+Quando você estava usando o labirinto só
+
+1098
+01:13:41,480 --> 01:13:42,400
+Entendeu
+
+1099
+01:13:49,700 --> 01:13:53,540
+No caso, você poderia usar esse seletinho que eu estou te mandando.
+
+1100
+01:14:01,400 --> 01:14:02,680
+Vou te mandar um seletinho.
+
+1101
+01:14:19,700 --> 01:14:24,640
+Lê o Celeste que me chamou aí
+
+1102
+01:14:24,640 --> 01:14:25,260
+Lê ele
+
+1103
+01:14:25,260 --> 01:14:38,740
+Isso, totalmente
+
+1104
+01:14:49,700 --> 01:14:53,180
+Isso aí, nossa, o problema passou, entendeu?
+
+1105
+01:14:53,920 --> 01:14:55,320
+Enfim, só pra você
+
+1106
+01:14:55,320 --> 01:14:57,500
+entender todo o processo, tá?
+
+1107
+01:14:58,320 --> 01:14:59,580
+Então, vamos lá. Então, integrou
+
+1108
+01:14:59,580 --> 01:15:01,180
+você vai integrar
+
+1109
+01:15:01,180 --> 01:15:02,680
+ou você não vai integrar?
+
+1110
+01:15:17,160 --> 01:15:18,860
+Então, integra, por favor.
+
+1111
+01:15:19,700 --> 01:15:20,700
+Obrigado.
+
+1112
+01:15:49,700 --> 01:15:55,600
+O que você vai rodar os três?
+
+1113
+01:15:56,940 --> 01:15:57,860
+O que você vai rodar os três?
+
+1114
+01:16:19,700 --> 01:16:26,180
+Tá, se você só
+
+1115
+01:16:26,180 --> 01:16:27,540
+der um pedaço no
+
+1116
+01:16:27,540 --> 01:16:29,980
+seleciona e já funciona, mas pode dar
+
+1117
+01:16:29,980 --> 01:16:30,340
+nos três
+
+1118
+01:16:30,340 --> 01:16:35,360
+Tá bom, pode rodar
+
+1119
+01:16:49,700 --> 01:17:02,200
+Agora eu vou te perguntar uma coisa
+
+1120
+01:17:02,200 --> 01:17:03,540
+Eu não vi você fazer
+
+1121
+01:17:03,540 --> 01:17:05,400
+Você está dando a sua proposta
+
+1122
+01:17:05,400 --> 01:17:07,720
+Com o seu convênio normal
+
+1123
+01:17:07,720 --> 01:17:09,620
+Ou com o convênio que estava com garantia?
+
+1124
+01:17:18,860 --> 01:17:19,420
+Beleza
+
+1125
+01:17:19,420 --> 01:17:21,660
+É isso mesmo que eu queria, tá.
+
+1126
+01:17:24,440 --> 01:17:25,360
+Vai, eu vou puxar o olho.
+
+1127
+01:17:49,420 --> 01:18:13,020
+É, pelo menos assim, né?
+
+1128
+01:18:14,240 --> 01:18:14,880
+Você tá aí?
+
+1129
+01:18:15,940 --> 01:18:17,420
+Assim, aquele
+
+1130
+01:18:17,420 --> 01:18:19,140
+selete do monitor, ele só vai
+
+1131
+01:18:19,140 --> 01:18:21,500
+funcionar pra você quando você estiver
+
+1132
+01:18:21,500 --> 01:18:22,180
+usando um plugin.
+
+1133
+01:18:23,840 --> 01:18:25,140
+Lembra? Então, quando
+
+1134
+01:18:25,140 --> 01:18:27,520
+algum processo de guisteira acionar um plugin,
+
+1135
+01:18:28,260 --> 01:18:29,340
+você pode usar ele que você vai
+
+1136
+01:18:29,340 --> 01:18:30,820
+conseguir monitorar o que tá acontecendo.
+
+1137
+01:18:32,120 --> 01:18:33,340
+Entendeu? Então, o processo
+
+1138
+01:18:33,340 --> 01:18:35,100
+de guisteira e integração,
+
+1139
+01:18:35,100 --> 01:18:37,340
+ele não aciona o plugin,
+
+1140
+01:18:37,860 --> 01:18:39,540
+então, não vai
+
+1141
+01:18:39,540 --> 01:18:41,160
+mostrar nada, ó, de novo.
+
+1142
+01:18:47,420 --> 01:18:50,860
+isso, então agora eu quero que você
+
+1143
+01:18:50,860 --> 01:18:52,060
+antes de você ir para a API
+
+1144
+01:18:52,060 --> 01:18:52,360
+eu quero
+
+1145
+01:18:52,360 --> 01:18:55,420
+mas vamos fazer em tela primeiro
+
+1146
+01:18:55,420 --> 01:18:57,060
+vamos fazer em tela primeiro
+
+1147
+01:18:57,060 --> 01:18:59,260
+ver se você vai conseguir fazer em tela
+
+1148
+01:19:17,420 --> 01:19:25,060
+Esqueci de baixar.
+
+1149
+01:19:25,680 --> 01:19:29,060
+Eu nem vi nada.
+
+1150
+01:19:47,420 --> 01:19:48,420
+Obrigado.
+
+1151
+01:20:17,420 --> 01:20:25,720
+Beleza, então vamos lá, atualizar ali
+
+1152
+01:20:25,720 --> 01:20:26,660
+5 parcelas
+
+1153
+01:20:26,660 --> 01:20:31,820
+Atualizar ali 5 parcelas
+
+1154
+01:20:31,820 --> 01:20:42,100
+Isso, você vai fazer o que aí?
+
+1155
+01:20:42,160 --> 01:20:42,820
+O que você pode fazer?
+
+1156
+01:20:47,420 --> 01:20:57,180
+Você pode acreditar, é só você clicar em gravar.
+
+1157
+01:21:17,420 --> 01:21:35,960
+Repara que o bruxo não está dando.
+
+1158
+01:21:44,000 --> 01:21:46,720
+Você pode usar esse 200, por exemplo.
+
+1159
+01:21:47,420 --> 01:21:49,580
+Ou 98, 98, 98
+
+1160
+01:21:49,580 --> 01:21:55,580
+Você não é bicho
+
+1161
+01:21:55,580 --> 01:21:56,820
+Já achei falando isso
+
+1162
+01:21:56,820 --> 01:21:59,200
+Você pode fazer o refinançamento com qualquer convênio
+
+1163
+01:21:59,200 --> 01:22:01,100
+Vai fazer a proposta e não vai ser assim
+
+1164
+01:22:01,100 --> 01:22:01,580
+Para os mesmos
+
+1165
+01:22:01,580 --> 01:22:06,680
+Certo?
+
+1166
+01:22:08,240 --> 01:22:09,180
+Faz um teste
+
+1167
+01:22:09,180 --> 01:22:11,360
+Qual é a crítica que está dando
+
+1168
+01:22:11,360 --> 01:22:13,120
+No L12 ali?
+
+1169
+01:22:14,020 --> 01:22:15,020
+Vê a crítica de cada um aí
+
+1170
+01:22:17,420 --> 01:22:33,840
+você pode fazer o que?
+
+1171
+01:22:33,840 --> 01:22:36,840
+você pode fazer um teste
+
+1172
+01:22:36,840 --> 01:22:37,440
+para ver se é bom
+
+1173
+01:22:37,440 --> 01:22:48,600
+Aumentar o valor do seu estado
+
+1174
+01:22:48,600 --> 01:22:53,860
+Coloca aí 3 mil
+
+1175
+01:22:53,860 --> 01:23:11,220
+Agora eu coloco lá o mesmo valor
+
+1176
+01:23:11,220 --> 01:23:12,220
+Que você tinha colocado antes
+
+1177
+01:23:12,220 --> 01:23:13,560
+Lá em cima
+
+1178
+01:23:13,560 --> 01:23:16,960
+Não, não, não
+
+1179
+01:23:16,960 --> 01:23:18,020
+Calma
+
+1180
+01:23:18,020 --> 01:23:19,900
+Sobe um pouco aí
+
+1181
+01:23:19,900 --> 01:23:22,540
+Tá vendo aí que tem o
+
+1182
+01:23:22,540 --> 01:23:25,760
+o saldo na data
+
+1183
+01:23:25,760 --> 01:23:28,400
+e depois ali
+
+1184
+01:23:28,400 --> 01:23:30,720
+quanto que o cara tá pagando, que é 3.085
+
+1185
+01:23:30,720 --> 01:23:36,520
+coloca esse valor
+
+1186
+01:23:36,520 --> 01:23:40,540
+ela ficou 2.284
+
+1187
+01:23:40,540 --> 01:23:48,540
+não, 2.284
+
+1188
+01:23:52,540 --> 01:23:54,040
+Que é o mesmo valor que tava lá antes.
+
+1189
+01:23:57,360 --> 01:23:59,160
+2.234.
+
+1190
+01:23:59,500 --> 01:23:59,860
+Isso.
+
+1191
+01:24:04,300 --> 01:24:05,320
+Isso, esse é o valor.
+
+1192
+01:24:06,840 --> 01:24:08,420
+Aí tá vendo que ele bloqueou tudo?
+
+1193
+01:24:10,360 --> 01:24:12,480
+Ó, você tá mostrando que pode ser menor ou igual
+
+1194
+01:24:12,480 --> 01:24:14,000
+em total
+
+1195
+01:24:14,000 --> 01:24:14,800
+ou em pronunciada.
+
+1196
+01:24:15,560 --> 01:24:17,280
+Ou seja, se você tá refinanciando,
+
+1197
+01:24:17,880 --> 01:24:20,340
+certo? Esse valor sempre tem que ser superior
+
+1198
+01:24:20,340 --> 01:24:21,860
+beleza?
+
+1199
+01:24:21,860 --> 01:24:24,180
+ao que você
+
+1200
+01:24:24,180 --> 01:24:26,440
+tinha antes do contrato.
+
+1201
+01:24:27,040 --> 01:24:28,000
+Então, se o seu contrato
+
+1202
+01:24:28,000 --> 01:24:29,920
+você acabou recebendo
+
+1203
+01:24:29,920 --> 01:24:31,160
+dois mil,
+
+1204
+01:24:32,100 --> 01:24:34,100
+certo? Então, você tem que pedir
+
+1205
+01:24:34,100 --> 01:24:36,280
+mais do que isso pra poder estar
+
+1206
+01:24:36,280 --> 01:24:38,520
+fazendo
+
+1207
+01:24:38,520 --> 01:24:39,980
+refinançamento, senão ele não vai comprar
+
+1208
+01:24:39,980 --> 01:24:40,520
+pra lá.
+
+1209
+01:24:47,940 --> 01:24:49,580
+Enfim, é só que você
+
+1210
+01:24:49,580 --> 01:24:51,680
+pegar a ideia
+
+1211
+01:24:51,680 --> 01:24:53,780
+Beleza, então
+
+1212
+01:24:53,780 --> 01:24:55,360
+Então você já sabe agora quais
+
+1213
+01:24:55,360 --> 01:24:57,660
+Convênios você consegue fazer, certo?
+
+1214
+01:24:58,040 --> 01:24:58,680
+Você consegue usar
+
+1215
+01:24:58,680 --> 01:25:03,680
+Beleza, então agora
+
+1216
+01:25:03,680 --> 01:25:05,520
+Vamos para a API então
+
+1217
+01:25:05,520 --> 01:25:12,540
+Pode deixar aí
+
+1218
+01:25:12,540 --> 01:25:14,960
+Então vamos preencher
+
+1219
+01:25:14,960 --> 01:25:18,820
+Então agora o que eu falo pra você
+
+1220
+01:25:18,820 --> 01:25:20,260
+Preenche e volta lá
+
+1221
+01:25:20,260 --> 01:25:31,820
+Esse num aí
+
+1222
+01:25:31,820 --> 01:25:32,560
+Você pode tirar
+
+1223
+01:25:32,560 --> 01:25:34,980
+Você preencheu o campo
+
+1224
+01:25:34,980 --> 01:25:39,040
+Tirar o checkbox dele
+
+1225
+01:25:39,040 --> 01:25:39,740
+Ele já vai estar num
+
+1226
+01:25:39,740 --> 01:25:47,320
+O que eu ia falar, não vou fazer.
+
+1227
+01:25:47,560 --> 01:25:48,480
+Eu tenho que trabalhar.
+
+1228
+01:25:49,140 --> 01:25:51,040
+Não, eu não tenho nada para fazer,
+
+1229
+01:25:51,100 --> 01:25:52,200
+eu tenho que fazer a conta por cima,
+
+1230
+01:25:52,540 --> 01:25:54,820
+e é mais barato do que você vai levar a lojinha certa.
+
+1231
+01:25:55,720 --> 01:25:57,440
+É mais barato do que você vai levar a lojinha certa.
+
+1232
+01:25:57,440 --> 01:25:58,600
+Você vai tentar fazer...
+
+1233
+01:25:58,600 --> 01:26:01,240
+Você atenta nessa parte dos valores, das taxas.
+
+1234
+01:26:02,680 --> 01:26:04,660
+E é principal, eu faço o que eu tenho que fazer.
+
+1235
+01:26:06,500 --> 01:26:08,080
+Tá, eu vou fazer o que eu tenho que fazer.
+
+1236
+01:26:08,080 --> 01:26:09,080
+Obrigado.
+
+1237
+01:26:38,080 --> 01:26:39,080
+Obrigado.
+
+1238
+01:27:08,080 --> 01:27:09,080
+Obrigado.
+
+1239
+01:27:38,080 --> 01:27:39,080
+Obrigado.
+
+1240
+01:28:08,080 --> 01:28:09,080
+Obrigado.
+
+1241
+01:28:38,080 --> 01:28:39,080
+Obrigado.
+
+1242
+01:29:08,080 --> 01:29:38,060
+O que é isso?
+
+1243
+01:29:38,080 --> 01:29:40,080
+Obrigado.
+
+1244
+01:30:08,080 --> 01:30:09,080
+Obrigado.
+
+1245
+01:30:38,080 --> 01:30:40,080
+Obrigado.
+
+1246
+01:31:08,080 --> 01:31:10,080
+Obrigado.
+
+1247
+01:31:38,080 --> 01:31:43,600
+Você não precisa preencher com zero
+
+1248
+01:31:43,600 --> 01:31:45,340
+Você pode deixar sem nada
+
+1249
+01:32:08,080 --> 01:32:38,060
+Legenda Adriana Zanotto
+
+1250
+01:32:38,080 --> 01:33:08,060
+Legenda Adriana Zanotto
+
+1251
+01:33:08,080 --> 01:33:38,060
+Legenda Adriana Zanotto
+
+1252
+01:33:38,080 --> 01:34:08,060
+O que é isso?
+
+1253
+01:34:08,080 --> 01:34:10,960
+vamos ver se vai
+
+1254
+01:34:10,960 --> 01:34:13,180
+preenche lá
+
+1255
+01:34:13,180 --> 01:34:16,700
+a operação certinha
+
+1256
+01:34:16,700 --> 01:34:18,220
+financiamento e tal
+
+1257
+01:34:18,220 --> 01:34:20,280
+CPF, matrícula
+
+1258
+01:34:20,280 --> 01:34:31,880
+se criticar, se coloca
+
+1259
+01:34:38,080 --> 01:34:41,520
+Esse aí é um representante legal, você pode tirar também.
+
+1260
+01:34:46,660 --> 01:34:48,460
+Olha só, foi, o que aconteceu?
+
+1261
+01:34:48,660 --> 01:34:49,320
+Que hora foi?
+
+1262
+01:34:55,760 --> 01:34:57,900
+Mas aí você não fez esse reprodutimento ainda, certo?
+
+1263
+01:34:57,940 --> 01:34:59,360
+Foi reprodutido também, certo?
+
+1264
+01:35:05,560 --> 01:35:05,960
+Aí?
+
+1265
+01:35:08,080 --> 01:35:11,080
+Aí você não fez o aproveitamento ainda, certo?
+
+1266
+01:35:21,080 --> 01:35:26,080
+Isso. Então, vamos fazer o aproveitamento. Como você faz o aproveitamento?
+
+1267
+01:35:26,080 --> 01:35:37,720
+Ainda fazer aproveitamento
+
+1268
+01:35:37,720 --> 01:35:39,480
+Que é o core do projeto
+
+1269
+01:35:39,480 --> 01:35:43,240
+Até então, fazer
+
+1270
+01:35:43,240 --> 01:35:45,660
+O financiamento
+
+1271
+01:35:45,660 --> 01:35:47,500
+Você já sabia fazer
+
+1272
+01:35:47,500 --> 01:35:50,120
+Você está com dificuldade em bater as informações
+
+1273
+01:35:50,120 --> 01:35:53,060
+Então o reaproveitamento que é novidade
+
+1274
+01:35:53,060 --> 01:36:01,820
+Vamos ver o teste aí, como é que faz
+
+1275
+01:36:23,060 --> 01:36:35,820
+E a minha está atrasada também.
+
+1276
+01:36:47,320 --> 01:36:48,400
+Olha isso aí.
+
+1277
+01:36:48,960 --> 01:36:52,240
+Vamos ver se existe essa possibilidade, se não.
+
+1278
+01:36:53,060 --> 01:37:07,560
+Lê aí o teste, certo?
+
+1279
+01:37:08,240 --> 01:37:09,820
+Entende como é que tem que fazer
+
+1280
+01:37:09,820 --> 01:37:12,060
+o reaproveitamento, beleza?
+
+1281
+01:37:12,620 --> 01:37:14,200
+E depois você vai me explicar como é que faz.
+
+1282
+01:37:15,060 --> 01:37:16,220
+Tá? E já tenta
+
+1283
+01:37:16,220 --> 01:37:18,140
+fazer também. Isso tudo
+
+1284
+01:37:18,140 --> 01:37:19,600
+até depois do almoço, tá bom?
+
+1285
+01:37:19,600 --> 01:37:24,960
+você tem aí 40 minutos, mais uns quebraguinhos
+
+1286
+01:37:24,960 --> 01:37:26,240
+depois eu deixo você
+
+1287
+01:37:26,240 --> 01:37:27,740
+você me explica e faz
+
+1288
+01:37:27,740 --> 01:37:32,560
+beleza, valeu

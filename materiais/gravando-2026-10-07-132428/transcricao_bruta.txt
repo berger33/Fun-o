@@ -1,0 +1,1293 @@
+# Transcrição automática — Gravando 2026-10-07 132428.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 1288
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] E aí, tá me ouvindo?
+[00:00:05] Tô ouvindo.
+[00:00:09] Mano, eu quero ver como tá o seu progresso aí, nesse último regressivo, né, que eu tinha te passado.
+[00:00:20] Eu vi que você já tá um tempo aí fazendo aí, quebrando a cabeça, umas coisas, né?
+[00:00:24] Fala ela.
+[00:00:25] Eu quero ver o que você tá fazendo aí, porque eu posso te dar uma ajudada.
+[00:00:30] Sim, eu estou lendo
+[00:00:48] Antes de mais nada
+[00:00:52] Não, calma
+[00:00:55] Antes de mais nada
+[00:00:57] Me explica
+[00:00:58] Qual é o seu objetivo?
+[00:01:00] O que você está querendo fazer?
+[00:01:07] Ah, mas por quê?
+[00:01:10] Com qual objetivo você está fazendo isso?
+[00:01:12] Entendeu?
+[00:01:12] Tipo...
+[00:01:13] Como assim?
+[00:01:29] Como assim?
+[00:01:32] Você tá fazendo
+[00:01:34] Mas não sabe nem se isso
+[00:01:36] Tem que ser feito na IPT
+[00:01:37] Entendi
+[00:01:44] Entendi, aí no caso você tá fazendo aí só o refém
+[00:01:53] Entendi
+[00:02:07] Obrigado.
+[00:02:37] Eu quero, antes de mais nada, eu quero que você formule o que você precisa, tipo, na sua cabeça, antes de mais nada, sabe?
+[00:02:52] Então, assim, você tá fazendo, porque você já fez na tela, certo? Você tá me falando, mas você meio que não pegou o porquê que você tá fazendo isso, entendeu?
+[00:03:05] Então, tipo assim, qual o objetivo do projeto que você tá fazendo e por que você tá tendo que fazer um refém, entendeu?
+[00:03:15] Isso você não entendeu ainda, certo?
+[00:03:35] Entendi, tá
+[00:03:53] Entendi
+[00:04:05] Mas assim
+[00:04:06] Se você tá preso nessa tela
+[00:04:09] Dois, três dias
+[00:04:10] Alguma coisa você tá fazendo de errado
+[00:04:13] Não é a aplicação
+[00:04:14] Você concorda comigo?
+[00:04:17] Então às vezes se você entender melhor
+[00:04:19] O que você tá fazendo, o que você tem que fazer
+[00:04:21] Você consegue
+[00:04:22] Fazer as coisas com mais
+[00:04:25] Exatidão, sabe
+[00:04:27] Se você tava perdendo menos tempo
+[00:04:29] Procurando isso, procurando aquilo
+[00:04:31] Porque às vezes nessa que você não sabe
+[00:04:33] Você vai procurando coisa que não tem necessidade
+[00:04:35] Entendeu?
+[00:04:37] Então assim, pra mim
+[00:04:38] Se você conseguiu fazer em tela
+[00:04:40] E não tá conseguindo fazer na API
+[00:04:42] Exatamente você pegar as mesmas informações
+[00:04:46] Da tela e colocar na API
+[00:04:48] Se você fizer exatamente isso, não vai dar errado
+[00:04:51] Não tem como dar errado
+[00:04:52] Você entendeu?
+[00:04:57] Então
+[00:04:57] Então me mostra, por favor
+[00:05:00] Eu quero que você me
+[00:05:02] me mostre a tela
+[00:05:05] o que você fez em tela
+[00:05:06] pague seus prinks aí mesmo
+[00:05:08] e o que você está
+[00:05:10] querendo fazer aí agora na API
+[00:05:12] sim
+[00:05:20] não
+[00:05:22] entendi
+[00:05:30] Mas é, volto a dizer
+[00:05:33] A gente tem que
+[00:05:34] Ser assertivo
+[00:05:35] De repente tá na pergunta, né
+[00:05:38] Então tipo assim, se você souber melhor
+[00:05:40] O que você tá precisando
+[00:05:41] Se você souber a pergunta, às vezes a sua resposta vai ser mais
+[00:05:45] Correta, entendeu
+[00:05:46] Então assim, e outra
+[00:05:48] É
+[00:05:49] Eu já falei pra você várias vezes
+[00:05:53] Não é pra você ficar se matando
+[00:05:55] É pra ser simples, isso já foi testado
+[00:05:57] Tá ligado, não é uma coisa nova
+[00:05:58] então se você tá dois, três dias
+[00:06:01] no mesmo ano, tudo bem que
+[00:06:02] são críticas diferentes
+[00:06:03] mas é uma API
+[00:06:06] quem que já sabe usar ela, a gente já fez
+[00:06:09] você já fez isso
+[00:06:10] entendeu?
+[00:06:12] se você tá dois, três dias, eu já fico preocupado
+[00:06:15] tem alguma coisa de errada
+[00:06:16] uma coisa tá acontecendo
+[00:06:18] então me mostra o
+[00:06:23] não, eu quero ver o seu
+[00:06:25] você vende o seu, alguma coisa ou não?
+[00:06:28] Eu quero ver
+[00:06:51] Qual a etapa então
+[00:06:52] Me mostra a etapa no teste
+[00:06:55] Você está tentando executar
+[00:06:56] Então, se estiver maior ou igual ao valor da série, ele não vai parar.
+[00:07:26] Pesquisa aí a API
+[00:07:45] do NPS.
+[00:07:56] E aí
+[00:07:57] Mas, ó
+[00:08:03] Eu acho que
+[00:08:06] O pessoal não sabe
+[00:08:07] Não deixa a luz
+[00:08:09] Não, mas tá
+[00:08:20] Não, mas tá certo
+[00:08:23] Aqui, ó
+[00:08:25] A resposta, a gente tá falando aqui
+[00:08:27] da resposta, se tiver nulo,
+[00:08:29] tem que meter em cooperação.
+[00:08:32] Tá em verde ou não, Lê?
+[00:08:34] Aí, ó, caso 6.
+[00:08:35] Primeira simulação aí, de API.
+[00:08:37] Eu achei que...
+[00:08:38] Aí, API, simulação...
+[00:08:40] Porque até agora,
+[00:08:43] nenhum processo de API se conseguiu fazer, certo?
+[00:08:45] Então, seria o primeiro caso de API.
+[00:08:55] Essa é só a marca ou é a marca da função?
+[00:09:12] Então, no primeiro caso,
+[00:09:13] é verificar os campos, beleza, não precisa.
+[00:09:21] Sobe um pouquinho.
+[00:09:24] Sobe mais.
+[00:09:25] Quero ver o canal anterior. Ah, não. Já está certo. Beleza.
+[00:09:30] Tá.
+[00:09:34] Então, o que ele está falando aí? Vamos ler.
+[00:09:55] E foi
+[00:10:01] Na máquina
+[00:10:04] Mas também
+[00:10:08] Mas também
+[00:10:09] Beleza
+[00:10:22] vamos ver agora
+[00:10:26] o que ele usou aí na inclusão
+[00:10:28] de proposta
+[00:10:29] vamos ver os prinks
+[00:10:52] Então, vamos ver agora a sua proposta integrada.
+[00:11:22] Deixa eu ver o aspecto do seu clínico.
+[00:11:50] Esse é um clínico novo?
+[00:11:52] Esse aí você criou, é seu
+[00:11:55] Esse cliente é seu
+[00:11:56] Tá, beleza
+[00:11:58] Então tudo que você consultar nele
+[00:12:00] Foi você que usou ele
+[00:12:02] Tá
+[00:12:04] Eu quero ver a proposta
+[00:12:19] A proposta se integrou
+[00:12:21] Vamos lá na tela mesmo
+[00:12:34] Isso, vamos lá na tela
+[00:12:37] Volta aí
+[00:12:38] Não vai achar a proposta aí
+[00:12:40] Isso, tem que ser no outro
+[00:12:44] Isso, no outro
+[00:12:51] Você já copiou?
+[00:12:58] Mas dá um Ctrl V no Windows
+[00:12:59] Tem que selecionar lá antes
+[00:13:21] Certo, cadê a flunilha?
+[00:13:36] Gerou?
+[00:13:47] Gerou a planilha simplificada?
+[00:13:51] Clica ali no da proposta, clica ali em cima ó, clica ali em cima que tem um negocinho
+[00:14:06] nessa tela, lá na URL, lá no finalzinho também tem um xizinho ali ó, não clica
+[00:14:16] clica ai, não clica ai, tira o mouse dai
+[00:14:18] isso, ta vendo, isso ai
+[00:14:20] ta vendo que tem um negocio ai, clica ai
+[00:14:24] isso, permitiu
+[00:14:30] clica de novo la agora
+[00:14:32] não, de novo
+[00:14:34] agora no
+[00:14:36] isso
+[00:14:46] Beleza, então
+[00:14:49] a sua
+[00:14:51] proposta de
+[00:14:52] se quer refinanciar, tem essas
+[00:14:55] informações, certo?
+[00:15:00] Então, tendo isso em vista
+[00:15:02] você também está vendo aqui
+[00:15:08] tem garantias nessa proposta, está vendo ali?
+[00:15:11] Garantias 1, só do FGTS
+[00:15:14] garantia 2
+[00:15:15] Certo?
+[00:15:17] Essas garantias
+[00:15:19] Você colocou o propósito atualmente
+[00:15:21] É por causa do teste
+[00:15:23] É, de onde que veio isso?
+[00:15:45] Obrigado.
+[00:16:15] Não entendi, não entendi
+[00:16:20] Não entendi o que aconteceu
+[00:16:45] Qual convênio você tá usando agora?
+[00:16:54] Você tá usando o mesmo convênio?
+[00:17:00] Sim, mas entende que
+[00:17:02] assim, a proposta
+[00:17:04] que você tá querendo refinanciar é uma proposta
+[00:17:06] certo? Essa que já tá entregada é uma
+[00:17:08] então o que você tá fazendo
+[00:17:10] agora, ela é outra
+[00:17:12] então você pode usar um convênio diferente
+[00:17:14] Por exemplo
+[00:17:16] Ele não precisa ser o mesmo ainda
+[00:17:17] Entende?
+[00:17:19] Você está pegando uma proposta e refinanciando ela
+[00:17:22] Você está criando uma outra proposta
+[00:17:25] Em base da outra
+[00:17:27] Está refinanciando uma proposta com outra
+[00:17:29] Então você não precisa usar a mesma convenha
+[00:17:32] Você não precisa usar a mesma origem
+[00:17:35] Entendeu?
+[00:17:41] Exatamente
+[00:17:41] Então no caso aí
+[00:17:42] Ah, tá criticando a garantia
+[00:17:45] Tenta colocar um convênio diferente
+[00:17:47] Que faça o refinanciamento
+[00:17:49] Ah, não sei qual que vai ser
+[00:17:51] Meu, ó
+[00:17:52] O seu gabarito, tá? O que você faz?
+[00:17:55] Ah, não sei qual convênio vai dar pra usar
+[00:17:56] Não sei o que tá acontecendo
+[00:17:58] Vamos entrar no autorizador
+[00:18:00] Tenta ref...
+[00:18:02] Faz a mesma coisa que você tá fazendo aí, só que em tela
+[00:18:04] E lá ele já vai trazer pra você os convênios que você pode usar
+[00:18:07] Já vai trazer pra você
+[00:18:08] Qual contrato ou não ele pode refinanciar
+[00:18:11] Entendeu?
+[00:18:12] Então, ah, tá muito difícil, vai na tela lá e tenta refinanciar na tela, por tela, entendeu?
+[00:18:19] Ah, você preencheu, deu tudo certo, aí você, é só, nunca quer gravar, aí você só replica a informação que você preencheu na entela, na API, então vamos lá, faz isso.
+[00:18:36] Não, você entendeu o que eu falei?
+[00:18:38] O refinanciamento é uma coisa
+[00:18:41] Certo
+[00:18:42] A proposta que você tem integrada é uma
+[00:18:44] O refinanciamento é outra
+[00:18:45] Certo
+[00:18:46] Então o que eu tô falando pra você
+[00:18:47] Sim
+[00:18:51] E você já não tem a proposta integrada
+[00:18:54] Então
+[00:18:58] Mas não
+[00:19:01] Mas ó
+[00:19:04] Leia de novo
+[00:19:05] Leia então a crítica
+[00:19:06] O produto vinculado ao convênio
+[00:19:13] Exatamente
+[00:19:16] O produto que está
+[00:19:19] O que ele está se referindo
+[00:19:22] É o que você está colocando agora
+[00:19:24] Não na sua proposta integrada
+[00:19:26] Entendeu?
+[00:19:31] Essa crítica
+[00:19:32] É do que você está colocando agora em tela
+[00:19:34] É o que você está colocando agora em tela
+[00:19:36] não do que você já fez que tem garantia
+[00:19:38] agora que já tem garantia, tudo bem
+[00:19:40] já tem garantia, beleza
+[00:19:41] você está dentro desse problema, você não sabe mais o que fazer
+[00:19:44] então estou te dando uma solução
+[00:19:47] entra na tela do autorizador
+[00:19:49] certo? e faz um refinanciamento
+[00:19:51] dessa mesma proposta
+[00:19:53] que você está tentando fazer, dessa mesma operação que você está tentando fazer
+[00:19:55] e aí lá
+[00:20:06] Não, William
+[00:20:11] Eu não tô falando
+[00:20:13] William, eu não tô falando isso
+[00:20:14] Vou repetir pra você de novo
+[00:20:16] Entra no autorizador
+[00:20:17] E faz o que eu tô te falando
+[00:20:18] Revanancia a proposta
+[00:20:21] A operação que você tá fazendo
+[00:20:23] E vê o que vai parecer pra você
+[00:20:25] Vê as informações que você pode usar
+[00:20:27] Pra você não ficar preso numa coisa
+[00:20:30] Você não precisa usar sempre a mesma informação
+[00:20:32] Tá entendendo? É isso que eu tô querendo te dizer
+[00:20:33] Não é nova
+[00:20:35] Não é novo aí, então tá fazendo um refinanciamento
+[00:20:37] Tem certeza que é esse cara aí que você tá usando?
+[00:20:54] Na sua
+[00:20:55] Na sua API?
+[00:20:57] Não, beleza, mas você viu que você escolheu
+[00:20:59] Uma informação ali?
+[00:21:03] Não, como você colocou
+[00:21:05] Quando você colocou o celular
+[00:21:07] Ele apareceu o pop-up na tela
+[00:21:09] Certo?
+[00:21:11] Com três opções
+[00:21:12] Cada um dos três ali
+[00:21:14] São pessoas diferentes
+[00:21:15] Tá?
+[00:21:35] Tá, se acontecer isso de novo, eu já explico, se for o que eu tô pensando já, beleza?
+[00:21:56] Ó, vai começar a dele lá, vamo lá, vamo na dele lá.
+[00:22:05] E aí
+[00:22:35] Vamos lá
+[00:22:51] Primeiro de tudo
+[00:22:53] Vamos bater as informações do cara de novo
+[00:22:55] Então o CPF tá certo
+[00:22:57] Certo, bate lá com o que tá na
+[00:22:59] Abre lá sua tela aí de novo
+[00:23:02] Não, só a tela do
+[00:23:05] do polivador.
+[00:23:32] Calma, não clique em nada
+[00:23:39] Calma
+[00:23:39] Cancela
+[00:23:42] Devagar
+[00:23:46] Beleza
+[00:23:53] Ó, então você colocou ali
+[00:23:57] Certo? E tem a matrícula
+[00:23:58] Você tá reparando aqui
+[00:24:00] Um crédito que você tá colocando não tem matrícula nenhuma
+[00:24:02] E desde que eu te perguntei pra você
+[00:24:11] Você sabe a matéria desse cara?
+[00:24:13] Eu sei, eu sei
+[00:24:14] Então alguma coisa já tem errado nisso
+[00:24:16] Nesse cliente seu
+[00:24:17] Então assim, poxa
+[00:24:32] Beleza, vamos ver se vai aparecer
+[00:24:44] Mesmas coisas ou vai estar diferente
+[00:24:46] Olha só o tanto de contato
+[00:24:50] Que você tem agora aberto
+[00:24:51] Saúde disponível
+[00:24:54] Para operação
+[00:24:55] Agora eu quero ver uma coisa
+[00:25:01] Deixa eu ver a planilha de novo
+[00:25:04] Dá uma aproximada aí na planilha
+[00:25:26] Pra poder enxergar os valores
+[00:25:31] E aí
+[00:26:01] Vamos fazer o seguinte, eu acho que todo esse problema pode estar dando porque você está fazendo um refinanciamento com uma proposta de garantia.
+[00:26:11] E eu não lembro muito bem, deixa eu ver aqui rápido.
+[00:26:13] Bom, proposta com garantia, de dois piseiros, não estou lembrado de um fundamento 100%.
+[00:26:25] É, mas tudo faz.
+[00:26:28] O que eu preciso para refinanciar uma proposta com garantia?
+[00:26:30] Eu consigo finalizar uma proposta de garantia?
+[00:26:34] Não, né?
+[00:26:35] Então, isso tá dando errado
+[00:26:36] Não, é não, então
+[00:26:39] Eu também já tava achando que não era
+[00:26:40] Ela critica alguma coisa?
+[00:26:43] Ela
+[00:26:43] Na
+[00:26:44] Em tela
+[00:26:47] Ela fica com um negocinho
+[00:26:50] Na pay
+[00:26:51] Na pay critica que é saldo zerado
+[00:26:55] Uma coisa assim
+[00:26:55] Então, tipo, como se
+[00:26:57] Sabe aquele cenário que você faz um refinanciamento
+[00:27:00] Com valor
+[00:27:01] E a sua proposta
+[00:27:05] É maior
+[00:27:06] E aí ele dá crítica
+[00:27:08] Porque num pouco você marca o outro
+[00:27:10] Aí ele fica zerado
+[00:27:12] Ou fica negativo
+[00:27:13] Então essa é a crítica da API
+[00:27:15] É saldo disponível para operação
+[00:27:17] Eu tô mostrando aqui
+[00:27:19] Agora tá certo
+[00:27:25] Eu não lembro se dá pra fazer
+[00:27:30] Ou se tem que fazer alguma coisa
+[00:27:31] Pra poder dar pra fazer uma
+[00:27:33] Um garantinho, entendeu?
+[00:27:35] Mas enfim, vou mandar ele fazer outro propósito
+[00:27:37] Sem garantia nenhuma
+[00:27:38] Aham
+[00:27:42] Vou mandar ele fazer uma nova
+[00:27:48] Não, é só
+[00:27:54] Não, não
+[00:27:55] Essa proposta que você tá fazendo é antiga
+[00:27:57] Ele tá reconhecendo
+[00:27:58] É nova, mas antiga
+[00:28:00] Foi isso lá
+[00:28:03] Sexta-feira
+[00:28:04] Tá, voltei
+[00:28:09] É que assim
+[00:28:11] Como você fez uma proposta com garantia
+[00:28:13] Né
+[00:28:15] A primeira, no caso, né
+[00:28:18] Que você tá tentando refinanciar
+[00:28:19] Eu acho que deve precisar de mais dinheiro
+[00:28:22] Pra poder conseguir refinanciar ela
+[00:28:23] Então vamos facilitar a nossa vida
+[00:28:26] Pra gente ficar pesquisando e tudo mais
+[00:28:28] Você sabe qual dessas propostas
+[00:28:31] Você tá usando?
+[00:28:32] Talvez essas estão disponíveis
+[00:28:33] Você sabe alguma delas?
+[00:28:42] Sim, mas eu
+[00:28:43] Tá, mas
+[00:28:46] Essas que são
+[00:28:47] Então, isso que eu falei
+[00:28:49] Isso que eu tô querendo dizer
+[00:28:50] Você sabe qual é a sua proposta?
+[00:28:53] Então cria uma nova, cria uma nova, mais fácil.
+[00:28:58] Não, você tem que, a forma mais simples é você dar um select na base, pelo CPF do cara, e a matrícula, e ver qual que é qual.
+[00:29:11] Ou então você cria uma nova, integra.
+[00:29:14] Não, calma. Usa um CPF novo, vamos dar um CPF novo.
+[00:29:20] e eu queria muito cliente aí para você pega o novo William e ela volta aí volta tudo
+[00:29:30] e é o vídeo 2.0
+[00:29:32] Eu tenho a ferramenta aí?
+[00:30:02] Ó, assim bateu.
+[00:30:20] Assim bate, bate tudo.
+[00:30:23] E eu só vou ver aqui a luta flat.
+[00:30:26] E eu só vou ver aqui a luta flat.
+[00:30:32] Obrigado.
+[00:31:02] de Alves, que continuou
+[00:31:05] com o Centauro,
+[00:31:06] e o Rio também continuou com o Centauro.
+[00:31:32] Da proposta
+[00:31:45] Do privado
+[00:31:47] O que acontece
+[00:31:47] Quando você clica em obter margem
+[00:31:49] Na prática
+[00:31:52] Ele consultaria
+[00:31:54] O CPF
+[00:31:55] Desse cliente
+[00:31:57] E a matrícula desse cliente
+[00:31:59] Certo
+[00:31:59] Na data prev
+[00:32:01] O que é data-prev?
+[00:32:03] Data-prev é lá onde tem os cadastros
+[00:32:06] Da galera que trabalha
+[00:32:08] Da galera que tem cadastro na caixa
+[00:32:10] Esse tipo de coisa
+[00:32:11] Certo?
+[00:32:15] Então
+[00:32:15] Aqui no nosso caso a gente não consulta eles
+[00:32:18] Certo?
+[00:32:22] Certo?
+[00:32:24] Então o que a gente
+[00:32:24] Exatamente
+[00:32:26] Então o que a gente faz pra simular isso?
+[00:32:30] Agora na pergunta
+[00:32:30] o que a gente faz para simular esse cenário
+[00:32:32] como eu te falei, de fazer uma requisição
+[00:32:34] em outro lugar
+[00:32:35] como que a gente faz isso, no cenário de teste
+[00:32:38] aqui na função
+[00:32:38] tem, mas o que a gente usa
+[00:32:54] para poder fazer isso
+[00:33:00] o stub, certo?
+[00:33:03] Então, todos os stubs que a gente tem,
+[00:33:06] tudo que a gente vai consultar fora
+[00:33:07] do nosso sistema, certo?
+[00:33:10] A gente usa o stub pra simular isso.
+[00:33:12] Beleza?
+[00:33:14] Então, no caso, a gente tem o stub
+[00:33:15] do CPD, certo?
+[00:33:18] Que tem todas as informações
+[00:33:19] dos clientes. Então, independente
+[00:33:22] do que você cadastrar
+[00:33:23] no seu cliente, se você
+[00:33:25] estiver consultando a data
+[00:33:27] prévia, entre aspas, que no nosso caso
+[00:33:29] É o stub
+[00:33:31] Ele vai sempre trazer a mesma informação
+[00:33:33] Entendeu?
+[00:33:50] Sim
+[00:33:51] Então, qualquer
+[00:33:52] O stub
+[00:33:55] Não, não é específico
+[00:33:57] Pra qualquer uma
+[00:33:58] Entendeu?
+[00:34:00] O stub, então vamos lá
+[00:34:01] Vamos, calma
+[00:34:05] Isso, exatamente
+[00:34:17] Isso
+[00:34:21] Isso
+[00:34:23] Isso, exatamente
+[00:34:25] Então, no nosso caso
+[00:34:26] a gente tá consultando
+[00:34:29] um stub em específico
+[00:34:31] que é o que tá simulando
+[00:34:32] a data breve no caso do CPD
+[00:34:35] então se você estivesse fazendo alguma outra coisa
+[00:34:37] que fosse consultar
+[00:34:39] um stub, então ele
+[00:34:41] iria consultar o stub daquela coisa
+[00:34:43] específica, entendeu?
+[00:34:45] então
+[00:34:46] antes de mais nada
+[00:34:49] antes de aprofundar mais isso
+[00:34:51] você tá notando tudo, né?
+[00:34:55] ou não?
+[00:34:56] tá, depois eu queria até ver
+[00:34:59] depois
+[00:34:59] não, e depois
+[00:35:03] eu queria até ver as suas anotações
+[00:35:04] pra poder ver o que você já tem
+[00:35:06] se você tá pecando
+[00:35:08] nas anotações, às vezes
+[00:35:10] porque eu vejo que tem coisa que você
+[00:35:12] já te falou, já te mostrou e você ainda
+[00:35:14] tem seguro do que já fez
+[00:35:16] do que tem que ser
+[00:35:17] mas enfim, isso aí depois a gente vai
+[00:35:19] então, pra você contextualizar
+[00:35:22] na sua visão aí
+[00:35:23] vamos abrir um estúdio
+[00:35:25] O que a gente tá fazendo?
+[00:35:45] Vamos lá
+[00:35:45] Você tá entendendo o que a gente tá fazendo
+[00:35:48] Certo, do que?
+[00:35:50] Qual é o produto que a gente tá fazendo?
+[00:35:55] Tá
+[00:36:02] Privado
+[00:36:05] O que isso quer dizer?
+[00:36:09] Sim, mas o que isso quer dizer?
+[00:36:12] Não
+[00:36:12] Todos esses nomes aí
+[00:36:14] Promotora CP
+[00:36:16] Proposta nova
+[00:36:18] Prédito consignado
+[00:36:19] Todos esses nomes aí
+[00:36:20] É a gente que coloca
+[00:36:21] Então se eu quiser colocar aí
+[00:36:23] Qualquer nome
+[00:36:23] Tipo, sei lá
+[00:36:25] Ao invés de colocar
+[00:36:26] No tipo de produto, colocar crédito consignado
+[00:36:29] Vou colocar crédito girafas
+[00:36:31] Sei lá, crédito mecanomics
+[00:36:33] Qualquer coisa que eu escrever aí
+[00:36:34] É o nome daí, entendeu?
+[00:36:37] É só um nome, é só um nome
+[00:36:38] Não é o que ele é na prática, entendeu?
+[00:36:41] Então, no caso, o C6
+[00:36:43] Pra gente
+[00:36:44] A gente tem o INSS
+[00:36:46] O privado e o FGTS
+[00:36:49] Entendeu?
+[00:36:50] Então, o INSS
+[00:36:52] Ele é o consignado padrão
+[00:36:54] Certo?
+[00:36:55] O que é o INSS?
+[00:36:57] É o empréstimo lá das veinhas
+[00:36:58] Da aposentadoria
+[00:36:59] Basicamente
+[00:37:00] Certo?
+[00:37:01] O privado
+[00:37:01] É o CPD que a gente chama
+[00:37:03] Que é o crédito pessoal
+[00:37:05] Do trabalhador
+[00:37:06] Certo?
+[00:37:08] Então no caso
+[00:37:09] O que a gente tá fazendo no privado
+[00:37:11] Ele é CPD
+[00:37:11] Entende?
+[00:37:14] Então é esse o nome basicamente
+[00:37:15] CPD
+[00:37:15] Então no caso
+[00:37:21] a gente tá entrando em qual ombro também?
+[00:37:37] Isso, CPD.
+[00:37:38] Beleza, é isso aí mesmo,
+[00:37:40] que a gente tá fazendo isso, certo?
+[00:37:42] Aí você fala, meu, o que é isso?
+[00:37:44] O que tá acontecendo na sua tela aí?
+[00:37:46] O que foi que falhou?
+[00:37:49] O que é isso aí?
+[00:37:50] Tá vendo aí que tem várias
+[00:37:52] Várias pastas
+[00:37:54] Todas essas pastas
+[00:37:58] São stories diferentes
+[00:37:59] Pra situações diferentes do CPD
+[00:38:01] Entende?
+[00:38:07] Certo?
+[00:38:08] Então beleza, vamos lá
+[00:38:09] Então no caso, o que a gente tá fazendo?
+[00:38:11] A gente tá fazendo
+[00:38:12] Uma
+[00:38:15] Uma
+[00:38:16] Uma consulta, né?
+[00:38:18] A consulta de dados do trabalhador.
+[00:38:21] Consulta de dados do novo trabalhador.
+[00:38:23] Certo?
+[00:38:25] Então, vamos ver se a gente acha algum nome parecido com isso.
+[00:38:28] Porque isso aí é um novo trabalhador, certo?
+[00:38:30] Uma proposta nova.
+[00:38:35] Então, tá vendo aí o que tem aí?
+[00:38:36] A consulta de dados do trabalhador.
+[00:38:43] Retorno.
+[00:38:44] Então, o retorno é o que ele vai ler.
+[00:38:47] Certo.
+[00:38:48] Deixa grande essa API, por favor.
+[00:38:54] Essa API não, é esse JSON.
+[00:39:02] Quero que fique maior, quero ver ele inteiro.
+[00:39:18] Exatamente, porque é informação diferente
+[00:39:37] Exatamente, então beleza
+[00:39:39] Mas esse é só um dos casos
+[00:39:42] No caso mesmo
+[00:39:44] Não é nem esse standard que ele usa
+[00:39:46] É que no caso aí o nome dá os trabalhadores, mas não necessariamente o nome também vai ser condizente com o que você tá fazendo.
+[00:39:53] Então, tipo, muitas vezes, sei lá, pode ser um nome nada a ver com uma coisa que você tá querendo.
+[00:39:57] Tá, só tô te mostrando esse caso aí.
+[00:40:00] Tá, no caso aí, volta um, se não me engano, é detalhes benefícios o nome.
+[00:40:07] Consultorista de detalhes benefícios.
+[00:40:12] Isso, clica aí.
+[00:40:14] Pode ser com um notepad normal.
+[00:40:15] tá vendo que tem outras informações
+[00:40:21] mas ainda
+[00:40:22] o benefício é o mesmo que eu tava usando antes
+[00:40:25] agora vai no outro lado
+[00:40:28] pode fechar
+[00:40:31] e aí se lista o benefício
+[00:40:35] que você mandou
+[00:40:36] Tá vendo que tá diferente aí também?
+[00:40:53] Então, você entende que a gente precisa
+[00:40:56] Quando você vai fazer a vera mesmo
+[00:40:59] Você vai ter que mudar essa informação
+[00:41:01] Em vários lugares
+[00:41:02] Porque ele vai consultando em lugares diferentes
+[00:41:04] Entendeu?
+[00:41:06] Tá
+[00:41:11] Calma, deixa eu
+[00:41:18] Deixa eu abrir o study aqui
+[00:41:21] Mais rápido a gente fala qual que é
+[00:41:22] Obrigado.
+[00:41:52] instalação
+[00:41:54] pode abrir
+[00:42:11] beleza
+[00:42:11] agora que coisa que você faz
+[00:42:13] para que você entenda
+[00:42:16] o que
+[00:42:16] cada informação é
+[00:42:19] não
+[00:42:20] Ah, você já tá com a tela aberta aí?
+[00:42:23] No motor ligador?
+[00:42:26] Já carregada?
+[00:42:29] Tá, agora volta no
+[00:42:30] Instagram lá
+[00:42:31] Agora vai lá no Instagram do
+[00:42:36] consulta dados trabalhador mesmo
+[00:42:38] Essa aí
+[00:42:40] Eu quero que você repara
+[00:42:43] as informações que tá nele
+[00:42:44] e aonde cada informação
+[00:42:47] tá na tela
+[00:42:47] Entendeu?
+[00:42:51] Então você percebe que
+[00:42:53] Tem o CPF, tem a matrícula
+[00:42:55] Tem o nome da inscrição
+[00:42:57] Do empregador
+[00:42:58] Tem o código, tem a data de nascimento
+[00:43:00] Código de trabalhador
+[00:43:01] Valor base
+[00:43:04] Valor mais disponível
+[00:43:06] Agora repara
+[00:43:08] Esses mesmos valores que estão aí
+[00:43:10] Lá no utilizador
+[00:43:12] Pra você ver
+[00:43:13] Pode deixar um pouco menor
+[00:43:15] a tela do
+[00:43:17] JSON, essa tela aí,
+[00:43:20] pra você ir batendo o que é
+[00:43:21] cada coisa. Menor eu digo
+[00:43:23] no i, né, pra você poder ver as telas ao mesmo tempo.
+[00:43:45] Então, repara aqui
+[00:43:57] Número de inscrição do empreendedor
+[00:43:59] Na realidade, ele é
+[00:44:01] Número de inscrição da empresa
+[00:44:03] Certo?
+[00:44:04] Então, se a gente tiver que mexer na empresa
+[00:44:06] Você sabe que é naquele campo ali
+[00:44:08] A matrícula
+[00:44:09] Tá lá, certo?
+[00:44:13] Data de admissão
+[00:44:14] É a mesma data que tá ali
+[00:44:17] 24, 9, 12
+[00:44:18] Tá vendo que tem um formato diferente?
+[00:44:28] Tem que ser a data de nascimento
+[00:44:30] Leia o que tá escrito
+[00:44:31] Data de nascimento
+[00:44:32] Data de admissão
+[00:44:37] Tá vendo ali, ó
+[00:44:37] Tá um pouco mais embaixo
+[00:44:38] Então, ó
+[00:44:42] Valor de margem
+[00:44:43] ou seja, o que eu estou querendo dizer com isso
+[00:44:45] vamos supor que você quer fazer
+[00:44:47] uma proposta
+[00:44:50] ou um reforçamento
+[00:44:51] você precisa de mais margem
+[00:44:53] onde você alteraria?
+[00:44:59] porque não aguenta você fazer
+[00:45:01] isso
+[00:45:13] Cara, você tá vendo que tem valor de margem em tela?
+[00:45:20] Certo? Mil.
+[00:45:21] E que tá fechado ele.
+[00:45:23] Tá bloqueado no campo.
+[00:45:34] Tá bloqueado esse valor, certo?
+[00:45:37] Isso.
+[00:45:40] Isso.
+[00:45:41] Então, eu vou repetir a pergunta.
+[00:45:42] Se eu quiser alterar esse valor, como que eu faço?
+[00:45:47] Não, mas aquela taxa é da operação
+[00:45:48] Então, se eu quiser alterar
+[00:45:50] Não, cara
+[00:45:53] Esse valor tá sendo retornado pela data prévia
+[00:45:56] Você lembra que eu te falei?
+[00:45:57] Então, o STAM simula a data prévia, certo?
+[00:46:00] E ele retorna a informação pra gente
+[00:46:02] Beleza?
+[00:46:04] Essa informação tá sendo retornada do STAM
+[00:46:06] Você concorda?
+[00:46:07] Então, se eu quero alterar a informação do valor da margem
+[00:46:10] O que que eu faço?
+[00:46:12] Exatamente
+[00:46:16] Então se eu colocar aí 5 mil
+[00:46:18] Vai alterar lá de novo, vai replicir
+[00:46:19] Por quê? Porque uma informação consome a outra
+[00:46:22] Você tá conseguindo assimilar isso agora?
+[00:46:38] Exatamente
+[00:46:39] Não só aí, pode ser qualquer outra coisa
+[00:46:43] Então, o nome da mãe, por exemplo
+[00:46:45] Olha aí, o nome da mãe
+[00:46:47] Tá teste de mãe
+[00:46:48] Por que tá teste de mãe o nome aí?
+[00:47:06] Sim, por quê?
+[00:47:09] Sim, por quê?
+[00:47:15] Por que que faz isso?
+[00:47:24] Exatamente, porque a gente tá fazendo uma proposta CPD, certo?
+[00:47:29] CPD é o número da data breve, e vai insinuar a data breve de um stub.
+[00:47:32] Então, se você quiser mexer em qualquer informação que esteja
+[00:47:36] Na informação depois do Better Margin
+[00:47:39] Você vai ter que também mexer
+[00:47:40] No
+[00:47:41] End Stub, entendeu?
+[00:47:48] Entendeu isso?
+[00:47:53] Tá, beleza
+[00:47:54] Mas aí eu vou te falar
+[00:47:56] Eu tenho uma configuração que eu consigo fazer
+[00:47:59] Que mesmo
+[00:48:00] Fazendo o CPD
+[00:48:02] Que ele necessita
+[00:48:03] Na Constituição da TAPREV
+[00:48:05] Eu não consulto a data prévia
+[00:48:07] Certo? Então
+[00:48:09] É o hábito
+[00:48:12] É o certo fazer
+[00:48:13] A data prévia
+[00:48:15] Fazer esse caso
+[00:48:16] Mas tem casos que você não vai fazer a data prévia
+[00:48:19] Fazendo a mesma coisa
+[00:48:20] Então a gente tem configuração pra poder alterar isso
+[00:48:23] Entende?
+[00:48:26] Então eu vou te mostrar a configuração agora
+[00:48:28] Abrir a tela do empregador
+[00:48:35] Não, não, não. Não sai daí.
+[00:48:37] Mantenha a tela do utilizador. Abre outra guia
+[00:48:39] com a tela do empregador.
+[00:49:05] Obrigado.
+[00:49:35] Então, se já entrou na tela do empregador alguma vez?
+[00:49:58] Tá, então assim, o empregador, ele vai trabalhar junto com o operador, tá?
+[00:50:04] Então muita coisa que você vê no autorizador
+[00:50:07] É
+[00:50:08] O empregador tá editando
+[00:50:09] Que aquilo deve funcionar daquela maneira
+[00:50:11] Tá, basicamente
+[00:50:13] Beleza?
+[00:50:19] Vamos lá
+[00:50:20] Então vamos dar rotina de averbação online
+[00:50:22] Deixa eu fazer aqui
+[00:50:34] Obrigado.
+[00:51:04] Obrigado.
+[00:51:34] Para fazer a testemunha, para fazer a testemunha, nós precisamos...
+[00:52:04] Não, eu estou olhando aqui.
+[00:52:07] Vamos lá.
+[00:52:09] Atenção online.
+[00:52:10] Aqui na minha verbação online.
+[00:52:15] Isso, aí tem o celular privado, certo?
+[00:52:27] Isso, então vamos conhecer duas telinhas, tá?
+[00:52:29] Vamos conhecer primeiro a parâmetros gerais.
+[00:52:31] Clica aí, parâmetros gerais.
+[00:52:34] Certo
+[00:52:39] E aí, bom dia
+[00:52:43] Tudo bem?
+[00:52:44] Tudo bem
+[00:52:44] Então
+[00:52:46] Tá vendo o que eu te falei?
+[00:53:04] Certo? Então, aí tem muitas coisas
+[00:53:05] que você seta aí como tem que
+[00:53:07] funcionar lá no autorizador, certo?
+[00:53:09] Então, tem os plugins, como tem que funcionar,
+[00:53:12] o horário de início, horário de fim,
+[00:53:14] a quantidade de vezes no dia,
+[00:53:17] certo?
+[00:53:22] Então, por exemplo,
+[00:53:24] sei lá, pode
+[00:53:26] acontecer de um dia você tiver que trabalhar no final de semana,
+[00:53:28] certo? Por algum motivo.
+[00:53:30] E tem algum serviço
+[00:53:31] que aí tá configurado
+[00:53:33] que vai trabalhar de segunda
+[00:53:35] a sexta, mas
+[00:53:37] você vai trabalhar final de semana
+[00:53:39] e você precisa usar esse recurso
+[00:53:41] então você vai ter que entrar aí, certo?
+[00:53:43] e configurar pra ele também trabalhar final de semana
+[00:53:45] senão você não vai conseguir fazer
+[00:53:47] o seu serviço
+[00:53:49] basicamente
+[00:53:50] então isso é um exemplo bem chupo
+[00:53:53] do que você pode estar fazendo aí
+[00:53:55] então desce um pouco aí
+[00:53:59] desce um pouco na tela
+[00:54:00] Tá vendo? Tem quantidade de dias pra considerar um serviço, intervalo, um monte de coisa de tipo como vai funcionar, certo?
+[00:54:23] Tá vendo? Vai descendo
+[00:54:30] só para você conhecer a tela
+[00:54:40] o que você pode estar vendo aí depois
+[00:54:41] tá, mas beleza, volta aí
+[00:54:50] vai na mesma rotina, verbação online
+[00:54:52] você vai clicar em
+[00:54:57] cadastro para o NAMS, isso mesmo
+[00:54:59] alteração
+[00:55:01] é o cálculo número 1
+[00:55:04] isso, mais nada
+[00:55:08] isso
+[00:55:10] antes de mais nada
+[00:55:11] por que a gente tá entrando no empregador, você lembra?
+[00:55:29] Isso, mas no fim, por que eu estou te mostrando isso? Qual foi o motivo da gente entrar nessa tela?
+[00:55:41] Você lembra ou não?
+[00:55:48] Isso, que a data-prev, que a gente simula a data-prev com o stub, certo?
+[00:55:52] E que sempre que você for fazer um CPD, ele vai consultar essa tela, certo?
+[00:55:57] Ele vai consultar o stub.
+[00:55:58] Mas a gente consegue configurar pra não acontecer isso
+[00:56:01] Certo?
+[00:56:03] Lembra que eu falei isso?
+[00:56:08] E aí eu entrei no
+[00:56:09] Entregador pra te mostrar
+[00:56:10] Porque
+[00:56:13] Como que eu faria pra configurar
+[00:56:15] Pra não fazer essa consulta no
+[00:56:16] Não
+[00:56:18] Isso, caso eu precise fazer
+[00:56:21] Alguma, um cenário
+[00:56:22] Em que eu não vou, que eu não quero
+[00:56:25] Consultar o stub
+[00:56:27] Simulando a data breve
+[00:56:28] Certo
+[00:56:30] Foi isso por que a gente usou essa tela aí
+[00:56:33] Beleza
+[00:56:34] Então antes de a gente chegar nessa parte
+[00:56:36] Vou te explicar outra coisa
+[00:56:37] Então você tá vendo essa primeira tela aí
+[00:56:40] Aí no
+[00:56:43] No
+[00:56:44] Dados do empregador, tá vendo ali embaixo
+[00:56:47] Tá vendo o que a gente tem ali
+[00:56:51] Os números ali embaixo
+[00:56:53] Ações, código
+[00:56:55] Descrição
+[00:56:56] Certo
+[00:56:57] Esses
+[00:57:00] Empregadores
+[00:57:02] São empregadores que eles estão
+[00:57:04] Habilitados a fazer
+[00:57:06] A consulta
+[00:57:07] Certo?
+[00:57:09] No CPD
+[00:57:10] Então é por isso que a gente sempre usa o 1010
+[00:57:13] Se você tirar esse 1010 daí
+[00:57:15] E excluir
+[00:57:17] E depois tentar usar ele pra poder fazer
+[00:57:20] No CPD, não vai dar certo
+[00:57:22] Vai dar erro
+[00:57:23] Entendeu?
+[00:57:25] Então você tem que fazer essa parametrização antes
+[00:57:27] Pra poder tá exercendo
+[00:57:28] Fazendo o CPD no autorizador
+[00:57:31] Por exemplo
+[00:57:31] Agora vamos lá em infraestrutura
+[00:57:37] Pra você conhecer a tela
+[00:57:37] Então isso é importante você anotar
+[00:57:41] Porque se algum dia
+[00:57:43] Você precisar, sei lá, configurar isso
+[00:57:45] Em outro lugar, em outra equipe, em outra base
+[00:57:46] Você já sabe
+[00:57:47] Como é que faz
+[00:57:49] Entende?
+[00:57:55] Você anotou?
+[00:57:57] tá, tudo beleza
+[00:58:04] tá, então vamos lá
+[00:58:12] daí, o mais importante que eu quero te mostrar
+[00:58:18] você tá vendo que tem essa URL
+[00:58:20] do WS atualizador
+[00:58:27] Essa, basicamente, é como que ele se comunica com o nosso utilizador.
+[00:58:34] Então, sempre vai estar com o furo da IWS do utilizador mesmo.
+[00:58:39] Qualquer LDL, qualquer base.
+[00:58:44] Aí desce um pouco.
+[00:58:48] E, tá vendo aí, que a URL agora é do stub do CPD?
+[00:58:57] Entendeu? Por que que é?
+[00:59:03] Pra poder configurar
+[00:59:04] E tá simulando
+[00:59:05] A data breve
+[00:59:07] Então, por exemplo, se você tivesse
+[00:59:09] Sei lá, normalmente num banco
+[00:59:11] Provavelmente tivesse essa mesma telinha
+[00:59:13] Você não ia colocar o stub, você ia colocar o link
+[00:59:15] X lá na data breve
+[00:59:18] Que vai consultar, entendeu?
+[00:59:20] E aí teria uma senha
+[00:59:21] Como tem a senha aí, entendeu?
+[00:59:24] Então, no nosso caso
+[00:59:25] A gente tá simulando isso com o stub
+[00:59:26] Por isso que tem desse jeito
+[00:59:27] Beleza?
+[00:59:33] Se você clicar ali
+[00:59:34] Vai perder a comunicação
+[00:59:39] Clica ali no URL pro serviço
+[00:59:43] Você tá me ouvindo atrasado?
+[00:59:56] Eu falo, aí você não fala nada, aí depois você fala
+[01:00:04] Tá
+[01:00:06] Então nessa rede de serviços, clica em averbação, por exemplo
+[01:00:11] Acho que também não tá nada assim, mas tudo bem
+[01:00:15] Tá vendo aí também que é tudo webpcpd
+[01:00:18] Agora vem a explosão
+[01:00:26] E ativação.
+[01:00:35] Consulta.
+[01:00:36] Certo?
+[01:00:37] Por que que é isso?
+[01:00:38] Eu lembro que a gente abriu o Stub lá, certo?
+[01:00:41] E ele tinha várias informações,
+[01:00:44] várias Stubs diferentes dentro do mesmo.
+[01:00:51] Exatamente.
+[01:00:52] Então, por exemplo,
+[01:00:53] a URL é a mesma,
+[01:00:55] só que você não precisa colocar
+[01:00:57] por exemplo, qual é a pasta
+[01:01:00] que ele tem que ir direto, ele mesmo sabe se encontrar
+[01:01:02] através disso, entendeu
+[01:01:03] então tá vendo
+[01:01:05] o RR do serviço de consultor de trabalhador
+[01:01:08] aí você colocou só a primeira
+[01:01:10] e ele vai saber consultar
+[01:01:11] a consultor de trabalhador
+[01:01:13] entendeu
+[01:01:14] então por exemplo, se você tirar algum desses
+[01:01:19] se você for usar algum serviço
+[01:01:22] no futuro não vai funcionar
+[01:01:24] Aí começava a dar gargalo na feira do circo, aí quando caiu a feira, ele tá brincando.
+[01:01:31] Aí ele fez uma parte de C ou S ali, ó.
+[01:01:34] Tá falhando mesmo, mas tá bom, vai, vamos continuar.
+[01:01:39] Aí eu coloquei, eu coloquei...
+[01:01:44] Volta aí.
+[01:01:49] Agora vamos botar a tela.
+[01:01:50] Não, cara
+[01:01:55] Era pra você voltar só uma vez
+[01:01:57] Você tava na tela de
+[01:02:05] Enfim, lá das ORLs
+[01:02:08] Pra você voltar
+[01:02:09] Clica ali em dados da consulta
+[01:02:12] Ó
+[01:02:15] Leia cada linha dessa
+[01:02:18] Não, lê tudo
+[01:02:41] Lê tudo e entenda o que está escrito
+[01:02:42] Que eu vou te perguntar depois
+[01:02:48] Certo, posso perguntar agora?
+[01:03:18] Agora, a gente vai fazer aqui depois.
+[01:03:48] Eu te pergunto
+[01:03:57] Você lembra por que a gente
+[01:03:59] Estou nessa tela?
+[01:04:03] Do pregador
+[01:04:04] Que era pra poder
+[01:04:04] Eu tinha falado que
+[01:04:06] Isso, qual desses faria isso?
+[01:04:14] Qual dessas opções faria isso?
+[01:04:18] Então, o que ela faz aí?
+[01:04:43] Realizar essa restrição dos dados
+[01:04:45] do trabalhador, de toda a data prévia,
+[01:04:48] Nos dados do cliente
+[01:04:50] Ou seja, se você habilita ela
+[01:04:52] Você vai substituir
+[01:04:54] O dado trabalhador que
+[01:04:55] Que se tem
+[01:04:56] Pelo dado prévio, certo?
+[01:05:00] Então hoje já tá fazendo isso
+[01:05:01] Então se eu não quisesse
+[01:05:04] Que fizesse isso, eu teria que desabilitar
+[01:05:05] Basicamente
+[01:05:06] Entendeu?
+[01:05:17] É
+[01:05:17] Isso, exatamente
+[01:05:21] Você pode deixar bilhetado
+[01:05:22] Porque ele é o que tem que ser feito
+[01:05:24] Você pode deixar aí como um truisteiro
+[01:05:27] Isso
+[01:05:32] Beleza
+[01:05:34] Aí, por exemplo
+[01:05:36] Ela
+[01:05:38] Ela substituiu a informação
+[01:05:41] Certo?
+[01:05:42] E aí vamos supor que ela substituiu
+[01:05:44] E, sei lá, o cara
+[01:05:45] Errou o nome da mãe do cara
+[01:05:47] E ele precisa alterar
+[01:05:49] O que aí eu teria que mexer pra poder conseguir fazer isso?
+[01:06:10] Permitir a emissão dos dados
+[01:06:11] Instruídos no fluente
+[01:06:13] Isso
+[01:06:14] Então, beleza
+[01:06:23] Então, entendemos que
+[01:06:26] Isso é só dois pontos, tá?
+[01:06:28] Então, você poderia
+[01:06:29] Isso aqui, falar sobre isso aí
+[01:06:31] Muito mais coisa, tá?
+[01:06:33] Mas enfim, só pra gente concluir logo
+[01:06:36] E pra dar uma proposta
+[01:06:38] Então, isso aí
+[01:06:40] Esses dois caras tem a ver com
+[01:06:42] A nossa telinha que a gente tá mexendo
+[01:06:43] Certo? Porque a gente tava lá vendo
+[01:06:45] O que tá acontecendo
+[01:06:46] Certo? Então, beleza
+[01:06:48] Você pode gravar aí
+[01:06:49] E eu vou partilhar pra outros dois
+[01:06:51] É
+[01:06:53] Aí eu peguei o de
+[01:06:55] O que é
+[01:06:56] O talmaio
+[01:07:01] O talmaio
+[01:07:02] O time out
+[01:07:06] Nossa, tá especificando
+[01:07:07] Tchau, tchau.
+[01:07:37] Então beleza, eu vou deixar você cadastrar aí
+[01:07:47] pra pegar a marca, tá?
+[01:08:07] Obrigado.
+[01:08:37] na base. Certo? E esse nomezinho, tá vendo esse nome
+[01:08:41] que tem aí ó? É o nome do fung, basicamente. Certo? Tá vendo
+[01:08:46] esse C, C, G, P, F, ponto?
+[01:08:54] Certo? Tá vendo? É um campo. C, C, G, P, F, ponto.
+[01:09:00] tá vendo?
+[01:09:07] esse daí é o ID
+[01:09:09] de cada plugin
+[01:09:10] cada plugin tem o ID
+[01:09:13] dele
+[01:09:13] então, por exemplo, se você quiser
+[01:09:22] deixa eu só ver
+[01:09:26] e, com isso, deixe-me ouvir o que diz.
+[01:09:56] Obrigado.
+[01:10:26] É que a gente já é duro, é, tem que esperar.
+[01:10:28] Pô,
+[01:10:30] tem umzinho, a tabela,
+[01:10:32] que fala qual que é o nome do plugin,
+[01:10:35] que tem mais de, tem tipo,
+[01:10:36] mais de um plugin e tal.
+[01:10:37] Tem que colocar o nome, tem que colocar o nome.
+[01:10:41] TV Perfect.
+[01:10:45] O monitor, né?
+[01:10:47] O monitor, né?
+[01:10:49] O que é isso?
+[01:10:51] Mano, esse aqui tem
+[01:10:52] um pouquinho, mano.
+[01:10:53] O que que é, mano? Eu tenho que saber o que que é cada coisa, né?
+[01:11:00] Se só executar e dar certo, é difícil.
+[01:11:06] Mas não que, tipo assim, eu já soube e agora já esqueci, né?
+[01:11:11] Mas eu que esqueci, mas beleza.
+[01:11:17] Tá me ouvindo?
+[01:11:22] Alô?
+[01:11:23] então chama
+[01:11:26] dá um celeste agora
+[01:11:28] dá um outro celeste
+[01:11:30] dá um outro celeste agora
+[01:11:33] na
+[01:11:34] tbperficom
+[01:11:37] tá vendo aí que tem um númerozinho
+[01:11:45] certo
+[01:11:45] p-r-i-g-p-e-f-i-c-o-m
+[01:11:48] certo, tá ouvindo?
+[01:11:53] Ele vai ser o mesmo do que você viu lá na Econsult, certo?
+[01:12:23] Então, por exemplo
+[01:12:36] Só que assim, ele tem duplicidade
+[01:12:39] Então pode ser
+[01:12:41] Que tenha informações antigas
+[01:12:43] Informações novas
+[01:12:44] Mas por exemplo, você está vendo aí
+[01:12:46] Na e-consult
+[01:12:47] Que rodou aí esse 732
+[01:12:50] Por exemplo, que é o último
+[01:12:51] Certo?
+[01:12:53] Aí se você for na TV Particul
+[01:12:54] Procurar o 732
+[01:12:56] Sabe o que é?
+[01:13:01] INSS Regeneração de Verbação
+[01:13:03] Então tem que ter o nomezinho ali
+[01:13:08] Serve INSS Regeneração de Verbação
+[01:13:11] Lá no
+[01:13:12] Na tabela da Inconsult
+[01:13:15] Isso, aí mesmo
+[01:13:19] Então eu deixo o nome ali
+[01:13:21] Meio abreviado também
+[01:13:23] Então se você souber
+[01:13:25] Você já sabe o que é
+[01:13:27] Que eu deixei de ser
+[01:13:28] Enfim
+[01:13:31] Então nesse caso você poderia ter dado um select
+[01:13:33] Certo
+[01:13:34] Pra poder ver
+[01:13:37] O que estava acontecendo com a sua proposta
+[01:13:39] Quando você estava usando o labirinto só
+[01:13:41] Entendeu
+[01:13:49] No caso, você poderia usar esse seletinho que eu estou te mandando.
+[01:14:01] Vou te mandar um seletinho.
+[01:14:19] Lê o Celeste que me chamou aí
+[01:14:24] Lê ele
+[01:14:25] Isso, totalmente
+[01:14:49] Isso aí, nossa, o problema passou, entendeu?
+[01:14:53] Enfim, só pra você
+[01:14:55] entender todo o processo, tá?
+[01:14:58] Então, vamos lá. Então, integrou
+[01:14:59] você vai integrar
+[01:15:01] ou você não vai integrar?
+[01:15:17] Então, integra, por favor.
+[01:15:19] Obrigado.
+[01:15:49] O que você vai rodar os três?
+[01:15:56] O que você vai rodar os três?
+[01:16:19] Tá, se você só
+[01:16:26] der um pedaço no
+[01:16:27] seleciona e já funciona, mas pode dar
+[01:16:29] nos três
+[01:16:30] Tá bom, pode rodar
+[01:16:49] Agora eu vou te perguntar uma coisa
+[01:17:02] Eu não vi você fazer
+[01:17:03] Você está dando a sua proposta
+[01:17:05] Com o seu convênio normal
+[01:17:07] Ou com o convênio que estava com garantia?
+[01:17:18] Beleza
+[01:17:19] É isso mesmo que eu queria, tá.
+[01:17:24] Vai, eu vou puxar o olho.
+[01:17:49] É, pelo menos assim, né?
+[01:18:14] Você tá aí?
+[01:18:15] Assim, aquele
+[01:18:17] selete do monitor, ele só vai
+[01:18:19] funcionar pra você quando você estiver
+[01:18:21] usando um plugin.
+[01:18:23] Lembra? Então, quando
+[01:18:25] algum processo de guisteira acionar um plugin,
+[01:18:28] você pode usar ele que você vai
+[01:18:29] conseguir monitorar o que tá acontecendo.
+[01:18:32] Entendeu? Então, o processo
+[01:18:33] de guisteira e integração,
+[01:18:35] ele não aciona o plugin,
+[01:18:37] então, não vai
+[01:18:39] mostrar nada, ó, de novo.
+[01:18:47] isso, então agora eu quero que você
+[01:18:50] antes de você ir para a API
+[01:18:52] eu quero
+[01:18:52] mas vamos fazer em tela primeiro
+[01:18:55] vamos fazer em tela primeiro
+[01:18:57] ver se você vai conseguir fazer em tela
+[01:19:17] Esqueci de baixar.
+[01:19:25] Eu nem vi nada.
+[01:19:47] Obrigado.
+[01:20:17] Beleza, então vamos lá, atualizar ali
+[01:20:25] 5 parcelas
+[01:20:26] Atualizar ali 5 parcelas
+[01:20:31] Isso, você vai fazer o que aí?
+[01:20:42] O que você pode fazer?
+[01:20:47] Você pode acreditar, é só você clicar em gravar.
+[01:21:17] Repara que o bruxo não está dando.
+[01:21:44] Você pode usar esse 200, por exemplo.
+[01:21:47] Ou 98, 98, 98
+[01:21:49] Você não é bicho
+[01:21:55] Já achei falando isso
+[01:21:56] Você pode fazer o refinançamento com qualquer convênio
+[01:21:59] Vai fazer a proposta e não vai ser assim
+[01:22:01] Para os mesmos
+[01:22:01] Certo?
+[01:22:08] Faz um teste
+[01:22:09] Qual é a crítica que está dando
+[01:22:11] No L12 ali?
+[01:22:14] Vê a crítica de cada um aí
+[01:22:17] você pode fazer o que?
+[01:22:33] você pode fazer um teste
+[01:22:36] para ver se é bom
+[01:22:37] Aumentar o valor do seu estado
+[01:22:48] Coloca aí 3 mil
+[01:22:53] Agora eu coloco lá o mesmo valor
+[01:23:11] Que você tinha colocado antes
+[01:23:12] Lá em cima
+[01:23:13] Não, não, não
+[01:23:16] Calma
+[01:23:18] Sobe um pouco aí
+[01:23:19] Tá vendo aí que tem o
+[01:23:22] o saldo na data
+[01:23:25] e depois ali
+[01:23:28] quanto que o cara tá pagando, que é 3.085
+[01:23:30] coloca esse valor
+[01:23:36] ela ficou 2.284
+[01:23:40] não, 2.284
+[01:23:52] Que é o mesmo valor que tava lá antes.
+[01:23:57] 2.234.
+[01:23:59] Isso.
+[01:24:04] Isso, esse é o valor.
+[01:24:06] Aí tá vendo que ele bloqueou tudo?
+[01:24:10] Ó, você tá mostrando que pode ser menor ou igual
+[01:24:12] em total
+[01:24:14] ou em pronunciada.
+[01:24:15] Ou seja, se você tá refinanciando,
+[01:24:17] certo? Esse valor sempre tem que ser superior
+[01:24:20] beleza?
+[01:24:21] ao que você
+[01:24:24] tinha antes do contrato.
+[01:24:27] Então, se o seu contrato
+[01:24:28] você acabou recebendo
+[01:24:29] dois mil,
+[01:24:32] certo? Então, você tem que pedir
+[01:24:34] mais do que isso pra poder estar
+[01:24:36] fazendo
+[01:24:38] refinançamento, senão ele não vai comprar
+[01:24:39] pra lá.
+[01:24:47] Enfim, é só que você
+[01:24:49] pegar a ideia
+[01:24:51] Beleza, então
+[01:24:53] Então você já sabe agora quais
+[01:24:55] Convênios você consegue fazer, certo?
+[01:24:58] Você consegue usar
+[01:24:58] Beleza, então agora
+[01:25:03] Vamos para a API então
+[01:25:05] Pode deixar aí
+[01:25:12] Então vamos preencher
+[01:25:14] Então agora o que eu falo pra você
+[01:25:18] Preenche e volta lá
+[01:25:20] Esse num aí
+[01:25:31] Você pode tirar
+[01:25:32] Você preencheu o campo
+[01:25:34] Tirar o checkbox dele
+[01:25:39] Ele já vai estar num
+[01:25:39] O que eu ia falar, não vou fazer.
+[01:25:47] Eu tenho que trabalhar.
+[01:25:49] Não, eu não tenho nada para fazer,
+[01:25:51] eu tenho que fazer a conta por cima,
+[01:25:52] e é mais barato do que você vai levar a lojinha certa.
+[01:25:55] É mais barato do que você vai levar a lojinha certa.
+[01:25:57] Você vai tentar fazer...
+[01:25:58] Você atenta nessa parte dos valores, das taxas.
+[01:26:02] E é principal, eu faço o que eu tenho que fazer.
+[01:26:06] Tá, eu vou fazer o que eu tenho que fazer.
+[01:26:08] Obrigado.
+[01:26:38] Obrigado.
+[01:27:08] Obrigado.
+[01:27:38] Obrigado.
+[01:28:08] Obrigado.
+[01:28:38] Obrigado.
+[01:29:08] O que é isso?
+[01:29:38] Obrigado.
+[01:30:08] Obrigado.
+[01:30:38] Obrigado.
+[01:31:08] Obrigado.
+[01:31:38] Você não precisa preencher com zero
+[01:31:43] Você pode deixar sem nada
+[01:32:08] Legenda Adriana Zanotto
+[01:32:38] Legenda Adriana Zanotto
+[01:33:08] Legenda Adriana Zanotto
+[01:33:38] O que é isso?
+[01:34:08] vamos ver se vai
+[01:34:10] preenche lá
+[01:34:13] a operação certinha
+[01:34:16] financiamento e tal
+[01:34:18] CPF, matrícula
+[01:34:20] se criticar, se coloca
+[01:34:38] Esse aí é um representante legal, você pode tirar também.
+[01:34:46] Olha só, foi, o que aconteceu?
+[01:34:48] Que hora foi?
+[01:34:55] Mas aí você não fez esse reprodutimento ainda, certo?
+[01:34:57] Foi reprodutido também, certo?
+[01:35:05] Aí?
+[01:35:08] Aí você não fez o aproveitamento ainda, certo?
+[01:35:21] Isso. Então, vamos fazer o aproveitamento. Como você faz o aproveitamento?
+[01:35:26] Ainda fazer aproveitamento
+[01:35:37] Que é o core do projeto
+[01:35:39] Até então, fazer
+[01:35:43] O financiamento
+[01:35:45] Você já sabia fazer
+[01:35:47] Você está com dificuldade em bater as informações
+[01:35:50] Então o reaproveitamento que é novidade
+[01:35:53] Vamos ver o teste aí, como é que faz
+[01:36:23] E a minha está atrasada também.
+[01:36:47] Olha isso aí.
+[01:36:48] Vamos ver se existe essa possibilidade, se não.
+[01:36:53] Lê aí o teste, certo?
+[01:37:08] Entende como é que tem que fazer
+[01:37:09] o reaproveitamento, beleza?
+[01:37:12] E depois você vai me explicar como é que faz.
+[01:37:15] Tá? E já tenta
+[01:37:16] fazer também. Isso tudo
+[01:37:18] até depois do almoço, tá bom?
+[01:37:19] você tem aí 40 minutos, mais uns quebraguinhos
+[01:37:24] depois eu deixo você
+[01:37:26] você me explica e faz
+[01:37:27] beleza, valeu

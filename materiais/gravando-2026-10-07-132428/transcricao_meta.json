@@ -1,0 +1,14 @@
+{
+  "arquivo": "Gravando 2026-10-07 132428.mp4",
+  "bytes": 3151497131,
+  "sha256": "38583e027ef6d6a2660b4c54d883e178f15fcd4bf9e35bf2ed88e4c8d19330e7",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 5858.05,
+  "segmentos": 1288,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 2298.8,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
