@@ -1,0 +1,13 @@
+{
+  "arquivo": "Gravando 2026-07-08 182343.mp4",
+  "bytes": 356602844,
+  "sha256": "07a7166a9dd98f7355d90cd0777a1e7b11b2b6ac732eed80227bdcb7ad0c9404",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 623.64,
+  "segmentos": 127,
+  "duracao_transcricao_s": 189.2,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

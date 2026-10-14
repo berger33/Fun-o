@@ -77,3 +77,10 @@ Após a fusão do PR #4 (lote `Jonas EPT explicação.mp4`), outra branch de ses
 - `bb31e7d7235ecbf2eb4146775a3862333ecdf276` — republicação da transcrição de `Jonas EPT explicação.mp4` (texto, mesmo conteúdo do `842507e4…` já registrado).
 
 O ramo de **partes** do jonas re-publicado pela sessão paralela (run 38480441190) também carrega bytes de vídeo; o SHA dele não pôde ser capturado nesta sessão (ramo apagado antes da observação). **Incluir todos no pedido de remoção ao GitHub Support** e redobrar a coordenação para não disparar a ponte do mesmo vídeo em sessões simultâneas.
+
+## 6. Registro — transcrição de `Gravando 2026-07-08 182343.mp4` (2026-10-14)
+
+- **Ação:** run do GitHub Actions `38491679930` executou somente o workflow de transcrição (o MP4 foi lido no runner pelo LFS; não houve nova publicação de partes binárias do vídeo). Tamanho e SHA-256 conferem com o manifesto/ponteiro: `356602844` bytes, `07a7166a9dd98f7355d90cd0777a1e7b11b2b6ac732eed80227bdcb7ad0c9404`. Foram gerados 127 segmentos em português com `faster-whisper` `large-v3`.
+- **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/gravando-2026-07-08-182343/`. O ramo temporário `entrega/transcricao-gravando-2026-07-08-182343` foi apagado após a coleta.
+- **Objeto provavelmente retido:** commit `114674378a63cee686b77091365b1007ff2a0510` (a API ainda o retorna após apagar o ramo). Esse commit contém texto da transcrição e arquivos de diagnóstico; não contém o MP4.
+- **Pendência:** incluir esse SHA e o SHA não registrado do run `38484199544` no pedido ao GitHub Support. Esse run anterior terminou com sucesso, mas o ramo de entrega foi apagado antes da coleta; a exclusão do ramo não garante a remoção dos commits órfãos.

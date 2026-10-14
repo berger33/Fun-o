@@ -1,6 +1,6 @@
 # Índice da biblioteca de materiais
 
-Atualizado em **2026-10-13**. Conecta as gravações extraídas aos respectivos guias, procedimentos, glossários, capturas e índices temáticos.
+Atualizado em **2026-10-14**. Conecta as gravações extraídas aos respectivos guias, procedimentos, glossários, capturas e índices temáticos.
 
 ## Situação
 
@@ -9,7 +9,7 @@ Atualizado em **2026-10-13**. Conecta as gravações extraídas aos respectivos 
 | Vídeos no manifesto | 24 (22 conteúdos distintos) |
 | Gravações concluídas e publicadas | **7** (`Apresentação projeto 19-18.mp4`, `Gravando 2026-07-07 155307.mp4`, `Gravando 2026-09-22 111258.mp4`, `Gravando 2026-10-07 152044.mp4`, `Jonas EPT explicação.mp4`, `Liberação padrão - Glauco.mp4`, `PROJETO 14-08.mp4`) |
 | Duplicatas cobertas por referência | `jonas2309.mp4` = `Jonas EPT explicação.mp4` (mesmo oid `f99bd795…` — ver [`../STATUS.md`](../STATUS.md)) |
-| Em análise no lote atual | **0** — próximo da fila (`Gravando 2026-07-08 182343.mp4`) disparado pela ponte no commit de encerramento deste lote |
+| Em análise no lote atual | **1** — `Gravando 2026-07-08 182343.mp4`: transcrição automática preliminar em [`transcricao_bruta.txt`](gravando-2026-07-08-182343/transcricao_bruta.txt) (detalhes em [`LEIA-ME.md`](gravando-2026-07-08-182343/LEIA-ME.md)); falta revisão manual, análise visual e os demais materiais |
 | Método de obtenção no Arena | Ponte seletiva por vídeo via CI (`git lfs pull --include`) + validação de bytes e SHA-256 — ver [`BLOQUEIO_LFS_ARENA.md`](BLOQUEIO_LFS_ARENA.md) e [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md) |
 
 ## Por categoria
