@@ -1,10 +1,10 @@
 {
-  "arquivo": "ClientSecret EWEN TREINAMENTO.mp4",
-  "slug": "clientsecret-ewen-treinamento",
+  "arquivo": "explicacao mesa c6.mp4",
+  "slug": "explicacao-mesa-c6",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-clientsecret-ewen-treinamento",
-  "lote": "próxima pendência por tamanho após projeto EPT.mp4",
+  "ramo_entrega_transcricao": "entrega/transcricao-explicacao-mesa-c6",
+  "lote": "próxima pendência por tamanho após ClientSecret EWEN TREINAMENTO.mp4",
   "sessao": "arena/17453ccc-fun-o",
   "usar_vad": false
 }
