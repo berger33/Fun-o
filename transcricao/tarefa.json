@@ -1,10 +1,10 @@
 {
-  "arquivo": "Gravando 2026-10-07 132428.mp4",
-  "slug": "gravando-2026-10-07-132428",
+  "arquivo": "AVERBACAO.mp4",
+  "slug": "averbacao",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_transcricao": "entrega/transcricao-gravando-2026-10-07-132428",
-  "lote": "próxima pendência por tamanho após dESAVERBAÇÃO.mp4",
+  "ramo_entrega_transcricao": "entrega/transcricao-averbacao",
+  "lote": "última pendência por tamanho após Gravando 2026-10-07 132428.mp4",
   "sessao": "arena/17453ccc-fun-o",
   "usar_vad": false
 }

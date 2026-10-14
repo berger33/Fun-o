@@ -7,7 +7,7 @@ Esta pasta contém a saída automática integral da gravação. O texto não foi
 - **SHA-256 do original reconstruído:** `38583e027ef6d6a2660b4c54d883e178f15fcd4bf9e35bf2ed88e4c8d19330e7`
 - **Duração de áudio informada pelo reconhecedor:** 5858,05 s (`01:37:38.05`)
 - **Transcrição automática:** `faster-whisper`, modelo `large-v3`, idioma declarado/detectado `pt` (probabilidade 1), 1288 segmentos; filtro VAD desativado (`filtro_vad: false`)
-- **Execução:** GitHub Actions run `38615030242` (concluído com sucesso); auditoria da configuração run `38615030273` concluída com sucesso
+- **Execução:** GitHub Actions run `38615030242` (concluído com sucesso); auditoria da configuração run `38615030273` e auditoria após integração run `38642848388` concluídas com sucesso
 - **Arquivos:** [`transcricao_bruta.txt`](transcricao_bruta.txt), [`transcricao.srt`](transcricao.srt), [`transcricao.vtt`](transcricao.vtt) e [`transcricao_meta.json`](transcricao_meta.json)
 - **Último segmento:** SRT/VTT `01:37:27.740–01:37:32.560`; termina dentro da duração de áudio informada.
 - **Estado:** em análise; revisão humana, análise visual e demais materiais pendentes.
