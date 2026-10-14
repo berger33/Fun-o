@@ -1,0 +1,20 @@
+{
+  "arquivo": "Gravando 2026-08-24 124650.mp4",
+  "bytes": 644238242,
+  "sha256": "1b9b6afd8564786180ac96df1582f64fc7be773b16a20a1df52e82c2234f256c",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 1125.82,
+  "segmentos": 352,
+  "duracao_transcricao_s": 650.2,
+  "ferramenta": "faster-whisper (CTranslate2)",
+  "segmentos_publicados": 352,
+  "elementos_anonimizados_versao_publica": [
+    {
+      "timestamp": "00:08:36",
+      "tipo": "nome próprio em exemplo de teste omitido"
+    }
+  ]
+}

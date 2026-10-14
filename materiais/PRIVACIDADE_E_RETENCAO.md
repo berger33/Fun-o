@@ -105,3 +105,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Minimização na cópia integrada:** os arquivos públicos em `materiais/primeiro-projeto/` omitem o trecho lateral `00:16:15.940–00:17:48.660` por privacidade; TXT, SRT e VTT contêm um marcador neutro, e o metadado distingue os 274 segmentos gerados dos 256 publicados.
 - **Retenção da entrega temporária:** o ramo `entrega/transcricao-primeiro-projeto` foi apagado após a coleta, mas o commit `687bd0dbdd4309881da958330f68b247f45ff22e` continua acessível pela API do GitHub por SHA. Ele contém a transcrição original, anterior à omissão (incluindo o intervalo removido na cópia pública), além dos diagnósticos; não contém o MP4.
 - **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A exclusão do ramo não revoga o acesso ao commit por SHA; tratar o material integrado, já sanitizado, separadamente do objeto temporário retido.
+
+## 10. Registro — transcrição de `Gravando 2026-08-24 124650.mp4` (2026-10-14)
+
+- **Ação:** run `38512446731` transcreveu 352 segmentos com `faster-whisper` `large-v3`; auditoria `38512446609` concluiu com sucesso. Tamanho e SHA-256 conferem com manifesto/ponteiro: `644238242` bytes, `1b9b6afd8564786180ac96df1582f64fc7be773b16a20a1df52e82c2234f256c`. É o mesmo objeto LFS de `Gravando 2026-08-24 161729.mp4`.
+- **Minimização na cópia integrada:** um nome próprio em exemplo de teste foi substituído por `[nome próprio omitido]` em TXT/SRT/VTT (`00:08:36`). A transcrição menciona CPF como dado de teste, mas não contém um número; a varredura automática não encontrou padrão de CPF/CNPJ, e-mail, telefone ou credencial.
+- **Retenção da entrega temporária:** o ramo `entrega/transcricao-gravando-2026-08-24-124650` foi apagado após a coleta. O commit `7421c127d9bdd81cc1767119e4ac81babf7a741f` continua acessível pela API do GitHub por SHA e contém o nome anterior à minimização e os diagnósticos; não contém o MP4.
+- **Pendência:** incluir esse SHA na solicitação ao GitHub Support para remoção dos objetos órfãos. A gravação duplicada fica coberta por referência à fonte única em análise.

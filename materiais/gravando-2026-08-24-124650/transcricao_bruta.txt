@@ -1,0 +1,357 @@
+# Transcrição automática — Gravando 2026-08-24 124650.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 352
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] a gente vai tá aqui beleza aqui tá tá tá bom a gente tá aqui ó ó essa parte de envio sabe
+[00:00:25] e etc aqui ela é opcional sabe tipo assim opcional sabe tipo importante mesmo é só verificar o
+[00:00:33] mesmo tá normal mesmo a gente já sabe é passei pelo sistema externo tá aí daí eu fiz o rodel
+[00:00:51] plugin né ele deu certo aqui eu peguei esse código né cadê cadê cadê cadê e joguei aqui
+[00:01:02] aqui ó beleza aí eu não sei não veio no caso né mas eu não achei esse campo aqui você printando
+[00:01:12] tipo essa parte aqui ó tipo isso aqui ó por exemplo você fez isso tipo o Jason né então
+[00:01:33] mas dá um print só nisso aqui também beleza para ficar redondinho porque uma vez eu abri
+[00:01:39] que o cara colocou aqui
+[00:01:40] a nova alteração e não colocou
+[00:01:43] no Jzão, entendeu?
+[00:01:45] E aqui tá o
+[00:01:47] Jzão, só pra bater o ponto
+[00:01:49] mesmo. Pronto.
+[00:01:51] Jzão. Sim.
+[00:01:54] É.
+[00:01:55] Só olhar
+[00:01:56] aqui se eu teste rapidinho de novo.
+[00:01:59] Cadê aqui?
+[00:02:01] Evidências. Tá.
+[00:02:05] Aqui é o seu? Não, mentira. Esse aqui não.
+[00:02:09] Deixa eu ver aqui.
+[00:02:10] Isso aqui né
+[00:02:12] Então agora isso aqui pode deixar
+[00:02:20] A gente não coloca assim
+[00:02:22] Essa parte aqui não, mas pode deixar, ficou legal
+[00:02:24] Não
+[00:02:30] Somente
+[00:02:33] A versão mesmo aqui
+[00:02:35] E a da ficha aqui
+[00:02:37] Isso, ficou legal
+[00:02:38] Ah, na verdade
+[00:02:42] Tira as proceduras
+[00:02:44] Porque vai que o pessoal
+[00:02:46] Não entende na hora lá
+[00:02:48] Pode deixar padrãozinho
+[00:02:49] Só dá um
+[00:02:50] É só duas mesmo
+[00:02:53] Dá só uma apagadinha aí
+[00:02:55] Tranquilo
+[00:02:55] Aqui, beleza
+[00:02:58] Certo
+[00:03:00] Certo
+[00:03:01] Certo
+[00:03:03] Estacionário de teste
+[00:03:05] Plugin
+[00:03:06] Pode deixar aqui mesmo
+[00:03:10] Agora é
+[00:03:12] Criar a proposta
+[00:03:13] Beleza
+[00:03:16] Convênio
+[00:03:19] Tal, tal, tal
+[00:03:20] aqui é seu ah ah peraí cadf vamos fazer assim essa parte do etapa 2 vamos fazer de novo
+[00:04:00] Ó, porque aqui, ó
+[00:04:02] Pelo print, tá, ó, tá a promotora 1
+[00:04:04] E aqui, ó
+[00:04:06] Você colocou a promotora 10, sabe
+[00:04:08] Aqui é o
+[00:04:10] É o correto
+[00:04:11] Mas a proposta, entendeu
+[00:04:15] A proposta, você fez ele
+[00:04:17] Sabe
+[00:04:19] Ah, mas
+[00:04:51] As
+[00:04:51] Hum, tá
+[00:04:54] Mas é que a gente tá fazendo do tipo
+[00:04:57] CPD, sabe, consignado privado, entendeu
+[00:04:59] Que é onde vem todo o retorno do Crivo
+[00:05:02] Entendeu?
+[00:05:03] É rapidinho, você faz isso aí
+[00:05:05] Tipo em 5 minutos no máximo
+[00:05:07] Estourando mesmo
+[00:05:08] Beleza, aí você faz
+[00:05:09] Ah, foi?
+[00:05:18] Tá olhando aqui minha tela?
+[00:05:25] Vamos fazer um por aqui
+[00:05:26] Eu vou tirar aqui o sprint e já te mando
+[00:05:28] Beleza?
+[00:05:40] Ah, tá
+[00:05:41] Eu acabei de fazer isso aqui
+[00:05:43] Ah, tá
+[00:05:45] Foi tranquilo
+[00:05:47] Eu só
+[00:05:48] Ah, tá, já sei o que é
+[00:05:52] É, vamos
+[00:05:54] Eu já, eu sei
+[00:05:55] Isso, acontece mesmo
+[00:06:01] Você tá usando qual CPF?
+[00:06:08] Me manda o CPF
+[00:06:09] Esse CPF seu que você tá passando aí
+[00:06:12] Tem uma liberaçãozinha aqui
+[00:06:14] Que apareceu aqui, entendeu?
+[00:06:20] Me manda aí
+[00:06:21] Ah, eu já te mostro
+[00:06:22] Já fica
+[00:06:23] Tá, mandou, né?
+[00:07:10] Beleza, ó, tem um comando aqui, ó
+[00:07:12] Que a gente vai liberar esse CPF
+[00:07:14] Cadê, cadê, cadê, cadê
+[00:07:19] Tá, esse aqui
+[00:07:20] Peraí, tá mandando mensagem
+[00:07:24] Vou te mandar esse select aqui
+[00:08:16] Porque ele é bem importante mesmo
+[00:08:17] Porque se você tentar usar um CPF que você gerar aí agora
+[00:08:20] Você não vai conseguir
+[00:08:21] Entendeu aí
+[00:08:24] É legal eu te mandar também
+[00:08:26] Ah, já salvei ele aí, tá
+[00:08:27] E agora vamos fazer aqui uma passa-passa
+[00:08:31] Pra
+[00:08:32] Ele já te manda os prints aqui, ó
+[00:08:35] Vou passar essa aqui
+[00:08:36] Teste [nome próprio omitido]
+[00:08:42] Ah, agora passou, tá vendo?
+[00:09:34] Alô?
+[00:09:35] Ah, tá
+[00:09:35] Aí depois, ó, só
+[00:09:39] Sei lá, põe um valor aqui de dois mil mesmo
+[00:09:42] Só pra
+[00:09:42] Pra passar, aí você adiciona
+[00:09:45] Um convênio aí
+[00:09:47] Esse aqui é o meu
+[00:09:49] Esse aqui tá disponível, qualquer um
+[00:09:51] Mas tanto faz também, sabe?
+[00:09:53] Só pra passar mesmo a proposta
+[00:09:55] Tá? Aí beleza
+[00:09:57] Aí você passa daqui, aí você vai pra aquelas rotinas lá, sabe?
+[00:10:01] De...
+[00:10:01] Enalhe de proposta
+[00:10:03] Sabe? É 80 lá
+[00:10:05] Estereo 80, você tá ligado já
+[00:10:07] Entendeu?
+[00:10:10] Agora vamos voltar aqui pro seu teste aqui, rapidinho
+[00:10:12] Tá? Aí beleza, você vai trocar
+[00:10:15] Essa parte aqui, esse item
+[00:10:17] Esse aqui é qual item mesmo?
+[00:10:22] Não, esse...
+[00:10:22] Essa etapa 2
+[00:10:26] No caso 3
+[00:10:27] Casa 3, etapa 2 no caso
+[00:10:29] Beleza
+[00:10:31] Aqui tu viu
+[00:10:33] Pera aí
+[00:10:35] Verificando
+[00:10:36] Tá, beleza
+[00:10:40] Puxou o plugin
+[00:10:41] Beleza, tá certo
+[00:10:45] Aqui você já pode colocar
+[00:10:46] Tipo essa parte aqui, ó
+[00:10:48] Entendeu?
+[00:10:53] Tipo
+[00:10:53] Cadê aqui?
+[00:10:57] Opa, cadê o
+[00:10:58] Essa parte aqui
+[00:11:03] Que você gravou aqui
+[00:11:05] Você pode colocar
+[00:11:06] Apontando isso aqui
+[00:11:08] E marcando isso aqui
+[00:11:10] Beleza?
+[00:11:15] Aqui, etapa 3, aprovação
+[00:11:17] É você avançar, gerar
+[00:11:19] Análise mesmo
+[00:11:21] Aprova
+[00:11:23] Essa etapa aqui
+[00:11:26] Na verdade
+[00:11:26] Deixa eu ver aqui
+[00:11:36] Aqui
+[00:11:41] Essa parte aqui, na verdade
+[00:11:45] É na etapa
+[00:11:47] Três, tá?
+[00:11:50] Essa aqui, você finaliza a etapa
+[00:11:51] Quando você cria a proposta
+[00:11:53] Entendeu? Proposta criada
+[00:11:57] Entendeu?
+[00:12:00] Aí você, beleza
+[00:12:01] Acaba a proposta aqui
+[00:12:02] Essa parte aqui
+[00:12:04] Na etapa três, no caso quatro
+[00:12:06] Aí você vai mexer com o plugin
+[00:12:08] Entendeu? Você vai na esteira
+[00:12:10] Aí você passa por aquela etapa lá
+[00:12:12] Aí você vai clicar em
+[00:12:14] e gerar mesmo aqui
+[00:12:16] aí você vai passar
+[00:12:17] do análise
+[00:12:18] do análise
+[00:12:19] você vai vir pro envio aqui
+[00:12:20] aí do envio
+[00:12:21] você verifica
+[00:12:22] sabe
+[00:12:22] e printa
+[00:12:23] com esse print aqui
+[00:12:24] entendeu
+[00:12:24] aquele print
+[00:12:27] que ele disse
+[00:12:27] eu mostrando
+[00:12:28] aí beleza
+[00:12:31] chega aqui
+[00:12:32] o plugin
+[00:12:33] você não precisa mais
+[00:12:34] colocar
+[00:12:34] que tá executando
+[00:12:36] tá
+[00:12:36] você já colocou lá
+[00:12:36] no início
+[00:12:37] no caso 1
+[00:12:37] tá tranquilo
+[00:12:39] beleza
+[00:12:39] você pode excluir
+[00:12:40] isso aqui
+[00:12:41] e você pode tipo
+[00:12:43] pintar aí
+[00:12:44] nesse aguarda mesmo
+[00:12:44] nesse aguarda
+[00:12:45] já pode parar por aqui, tá?
+[00:12:47] Pode deixar, tipo, esse aqui é o último print que você vai
+[00:12:49] que você vai tirar, tipo, dessa
+[00:12:51] parte aqui de aprovação e consulta, entendeu?
+[00:12:55] Aí, beleza.
+[00:12:57] Aí você vai verificar o ID mesmo agora.
+[00:13:00] Que é tirar aquele print
+[00:13:01] de novo, com esse
+[00:13:03] número aqui.
+[00:13:04] E
+[00:13:04] pegar o JSON
+[00:13:07] e fazer
+[00:13:10] uma, um filtrozinho,
+[00:13:12] sabe?
+[00:13:12] E printar isso aqui
+[00:13:14] Pode ser até um print assim mesmo, entendeu
+[00:13:16] Pronto
+[00:13:18] Entendeu
+[00:13:19] Então, assim, já tá meio
+[00:13:21] Oi?
+[00:13:25] É, não, sim
+[00:13:26] Rapidinho aqui, você faz, pô
+[00:13:28] Você faz
+[00:13:28] Você vai mostrar agora uma, né
+[00:13:30] As duas já acabou
+[00:13:33] Ó, deixa eu te ensinar também um jeito aqui
+[00:13:35] De deixar
+[00:13:37] Tá vendo que seus prints
+[00:13:39] Tá meio
+[00:13:40] Meio com qualidade ruim
+[00:13:41] Aqui, ó
+[00:13:42] Tá percebendo, tá percebendo, né? Ó, se você vier aqui, ó, deixa eu ver aqui, esse meu relatório incidente aqui mesmo, ah, tá na outra tela aqui, peraí, deixa eu puxar pra cá, opa, vem, vem, veio, tá, deixa eu ver aqui, outro com a outra tela, ah, tá, ó, se você vier aqui, ó, acho que você tá fazendo bem assim, né, pra virar o PDF, você vem salvar como, né?
+[00:14:15] Então, aí você faz assim
+[00:14:23] Pra aumentar a qualidade
+[00:14:24] Você vem aqui em arquivo mesmo
+[00:14:27] Exportar
+[00:14:28] Criar documento
+[00:14:30] Aí daí você gera
+[00:14:32] Entendeu?
+[00:14:34] Aí você vai até ver aqui
+[00:14:36] Ah não, peraí
+[00:14:38] Por exemplo
+[00:14:40] A diferença de
+[00:14:42] Peraí
+[00:14:47] A diferença de qualidade
+[00:14:49] Entendeu?
+[00:14:51] O número fica retinho, entendeu?
+[00:14:54] Aqui também, ó
+[00:14:56] Entendeu?
+[00:14:58] Fica melhor a imagem, tá?
+[00:15:00] E também o documento fica, pô
+[00:15:02] Já fiz documento assim que deu mais de 100 MB
+[00:15:05] E não deu pra postar no Atende
+[00:15:06] Mas, entendeu?
+[00:15:08] Aumenta o tamanho do documento
+[00:15:10] Mas fica melhor a qualidade, sabe?
+[00:15:13] Entendeu, né?
+[00:15:14] Você vem aqui mesmo e...
+[00:15:16] Então, beleza
+[00:15:17] Só isso mesmo de alteração, tá?
+[00:15:19] isso, tipo
+[00:15:23] isso
+[00:15:26] não, você me manda aqui rapidinho
+[00:15:29] tá, porque
+[00:15:30] é, criar uma proposta, sabe
+[00:15:33] aí na parte lá
+[00:15:34] que você, tipo, na etapa 2
+[00:15:36] ou na 3 lá, que é somente criar
+[00:15:38] proposta, você não coloca
+[00:15:40] a etapa de esteira, sabe, na de esteira
+[00:15:42] e na de baixo, outra etapa
+[00:15:44] só ler, ler tranquilo lá
+[00:15:46] que você vai na andamento
+[00:15:48] beleza
+[00:15:50] é, mais um
+[00:15:51] Beleza, mano
+[00:15:53] Mais uma dúvida
+[00:15:55] Eu acabei de esquecer
+[00:15:57] Mano, eu fiquei muito enrolado na sexta-feira
+[00:15:59] Você não tá entendendo a bagaceira que foi
+[00:16:01] Aí eu acabei esquecendo de te passar
+[00:16:03] O help no
+[00:16:04] Pra você, tipo, gerar seu documento
+[00:16:08] Sabe, a EPT
+[00:16:09] O Geradoc
+[00:16:10] Ah, mas deu certo, você conseguiu passar
+[00:16:17] Isso aí a gente passa
+[00:16:22] Não, é
+[00:16:27] Aí você
+[00:16:29] fez o que aqui? Você copiou e
+[00:16:31] copiou do
+[00:16:32] do bloco de notas
+[00:16:36] depois aqui mesmo?
+[00:16:39] Como é que você fez essa?
+[00:16:42] Isso. Sim.
+[00:16:50] Não, beleza.
+[00:16:51] Já dá que depois eu te ensino
+[00:16:53] a usar. Mais tarde se passa
+[00:16:54] se eu acabar o meu aqui também, porque
+[00:16:56] eu abri dois incidentes, tá?
+[00:16:59] Aí minha pergunta é tipo assim,
+[00:17:00] como você transformou esse documento aqui?
+[00:17:03] Você, tipo, colou?
+[00:17:04] Ctrl C, Ctrl V
+[00:17:05] Do bloco de notas
+[00:17:07] Ou daquele arquivo Excel pra cá
+[00:17:09] Ah, beleza
+[00:17:14] Tipo, geradoc, sabe, é pra facilitar a nossa vida
+[00:17:17] Sabe, que é o que
+[00:17:18] Você vai pegar aquele arquivo Excel, sabe, jogar no geradoc
+[00:17:21] Aí ele, tipo assim
+[00:17:23] Em dois segundos, transforma no documento completo
+[00:17:25] Entendeu
+[00:17:25] Aí, entendeu
+[00:17:29] Ah, tá
+[00:17:40] Ó
+[00:17:42] Não, sim
+[00:17:45] Acho que
+[00:17:48] Pô, eu vou dar um tempo pra você acabar
+[00:17:49] Esse seu projeto aí, você deve acabar
+[00:17:51] No máximo, acho que uma horinha ali, tranquilo
+[00:17:54] Aí quando acabar o meu aqui
+[00:17:56] Aí eu te passo, tá
+[00:17:58] A gente entra em carro rapidinho
+[00:17:59] É, ó, tá vendo que também tem
+[00:18:02] Vários cenários de teste
+[00:18:03] Ó, tipo aqui, ó, cenário de teste
+[00:18:07] Ó, deixa somente
+[00:18:09] É
+[00:18:09] O primeiro, entendeu
+[00:18:12] Aí o restante
+[00:18:17] Pode tirar, tipo isso aqui, sabe, o restante mesmo
+[00:18:20] Você pode dar uma mexidinha aí
+[00:18:23] Tranquilo, certo?
+[00:18:25] Mas depois você me manda aqui, beleza?
+[00:18:32] Beleza, mano
+[00:18:33] Beleza
+[00:18:35] Tá certo, então
+[00:18:36] Valeu, até mais
