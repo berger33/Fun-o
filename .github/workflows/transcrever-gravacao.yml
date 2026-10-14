@@ -7,22 +7,39 @@ name: Transcrever gravação (ponte temporária)
 # (pequeno) publicado em um ramo temporário `entrega/*`, que deve ser apagado logo após a
 # conferência no ambiente de destino.
 #
-# Configuração da tarefa: arquivo JSON opcional em `transferencia/tarefa.json`, por exemplo
-#   {"arquivo": "Apresentação projeto 19-18.mp4", "modelo": "large-v3", "idioma": "pt",
-#    "ramo_entrega": "entrega/transcricao-piloto-19-18"}
-# Sem esse arquivo, usa os padrões abaixo (piloto do lote atual).
+# Configuração: `transcricao/tarefa.json` (preferida para transcrever sem disparar a ponte de
+# partes) ou `transferencia/tarefa.json` (compatibilidade). A execução manual pode sobrescrever
+# os campos por inputs; sem tarefa usa os padrões abaixo.
 
 on:
-  # Permite reprocessar a tarefa atual sem alterar arquivos de configuração.
   workflow_dispatch:
+    inputs:
+      arquivo:
+        description: "Nome exato do arquivo em manifesto.csv"
+        required: false
+        type: string
+      modelo:
+        description: "Modelo faster-whisper (padrão: large-v3)"
+        required: false
+        default: "large-v3"
+        type: string
+      idioma:
+        description: "Idioma da gravação (padrão: pt)"
+        required: false
+        default: "pt"
+        type: string
+      ramo_entrega:
+        description: "Ramo temporário para o texto gerado"
+        required: false
+        type: string
   push:
     branches:
       - "transcricao/**"
       - "transferencia/**"
       - "arena/**"
     paths:
+      - "transcricao/tarefa.json"
       - "transferencia/tarefa.json"
-      - ".github/workflows/transcrever-gravacao.yml"
 
 permissions:
   contents: write
@@ -39,6 +56,11 @@ jobs:
 
       - name: Ler a tarefa
         id: tarefa
+        env:
+          ARQUIVO_INPUT: ${{ github.event.inputs.arquivo }}
+          MODELO_INPUT: ${{ github.event.inputs.modelo }}
+          IDIOMA_INPUT: ${{ github.event.inputs.idioma }}
+          RAMO_ENTREGA_INPUT: ${{ github.event.inputs.ramo_entrega }}
         run: |
           set -euo pipefail
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
@@ -49,13 +71,23 @@ jobs:
               "idioma": "pt",
               "ramo_entrega": "entrega/transcricao-piloto-19-18",
           }
-          caminho = "transferencia/tarefa.json"
-          if os.path.exists(caminho):
-              with open(caminho, encoding="utf-8") as fh:
-                  lido = json.load(fh)
-                  padrao.update(lido)
-                  if "ramo_entrega_transcricao" in lido:
-                      padrao["ramo_entrega"] = lido["ramo_entrega_transcricao"]
+          for caminho in ("transcricao/tarefa.json", "transferencia/tarefa.json"):
+              if os.path.exists(caminho):
+                  with open(caminho, encoding="utf-8") as fh:
+                      lido = json.load(fh)
+                      padrao.update(lido)
+                      if "ramo_entrega_transcricao" in lido:
+                          padrao["ramo_entrega"] = lido["ramo_entrega_transcricao"]
+                  break
+          for variavel, chave in (
+              ("ARQUIVO_INPUT", "arquivo"),
+              ("MODELO_INPUT", "modelo"),
+              ("IDIOMA_INPUT", "idioma"),
+              ("RAMO_ENTREGA_INPUT", "ramo_entrega"),
+          ):
+              valor = os.environ.get(variavel, "").strip()
+              if valor:
+                  padrao[chave] = valor
           for chave in ("arquivo", "modelo", "idioma", "ramo_entrega"):
               print(f"{chave}={padrao[chave]}")
           PY

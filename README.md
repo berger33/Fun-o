@@ -33,7 +33,7 @@ As duas verificações rodam automaticamente em cada push/PR pelo workflow `.git
 Workflows auxiliares para ambientes sem acesso ao host de conteúdo do LFS (uma gravação por vez, nunca a coleção):
 
 - `.github/workflows/transferir-gravacao.yml` — baixa **um** objeto do LFS no runner, confere tamanho/SHA-256 contra o manifesto e publica blocos < 100 MB em ramo temporário `entrega/*`, removido depois. **Atenção:** apagar o ramo não remove os objetos do servidor — ver [`materiais/PRIVACIDADE_E_RETENCAO.md`](materiais/PRIVACIDADE_E_RETENCAO.md).
-- `.github/workflows/transcrever-gravacao.yml` — transcreve **uma** gravação com timestamps e publica o texto no mesmo tipo de ramo temporário (os pesos do modelo são alcançáveis no runner).
+- `.github/workflows/transcrever-gravacao.yml` — transcreve **uma** gravação com timestamps e publica o texto no mesmo tipo de ramo temporário (os pesos do modelo são alcançáveis no runner). Para acionar **somente** a transcrição, configure `transcricao/tarefa.json`; sua alteração não dispara a ponte de partes do vídeo. Também aceita `workflow_dispatch` com campos opcionais. `transferencia/tarefa.json` continua compatível, mas alterações nele podem disparar tanto a transcrição quanto a transferência de partes.
 
 **Materiais restritos** (documentação interna, informação de cliente, nomes/imagens de pessoas) **não** devem ser publicados neste repositório: mantenha-os em área privada fora do Git e registre a pendência em `materiais/CONFLITOS_E_VALIDACAO.md` sem revelar o conteúdo.
 
