@@ -216,3 +216,7 @@ Fonte: [`recalculo/glossario.md`](recalculo/glossario.md); timestamps e ressalva
 - **WebTabelas / margem:** referência oral a limites de valor e operações; nenhuma política ou campo foi confirmado (`00:47:04–00:48:10`).
 
 Detalhes e limitações em [`desaverbacao/glossario.md`](desaverbacao/glossario.md), [`desaverbacao/incertezas.md`](desaverbacao/incertezas.md) e [`desaverbacao/metadados.md`](desaverbacao/metadados.md). A fonte primária não foi revisada visualmente nesta sessão.
+
+- `AVERBACAO.mp4` (`averbacao`): pacote preliminar em revisão; fonte (4 partes LFS, 5.033.624.752 bytes) não obtida; nenhuma análise de conteúdo confirmada. Ver [`materiais/averbacao/LEIA-ME.md`](materiais/averbacao/LEIA-ME.md).
+- `Gravando 2026-10-07 132428.mp4` (`gravando-2026-10-07-132428`): pacote preliminar em revisão; fonte (2 partes LFS, 3.151.497.131 bytes) não obtida. Ver [`materiais/gravando-2026-10-07-132428/LEIA-ME.md`](materiais/gravando-2026-10-07-132428/LEIA-ME.md).
+

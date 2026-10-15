@@ -6,3 +6,5 @@
 - Falantes: nenhum.
 - Timestamps: nenhum.
 - Nota §13: nenhuma foto/Imagem de pessoa publicada; nenhuma captura incluída.
+- Timestamp de referência de bloqueio: 00:00:00 — fonte primária não obtida (vide LEIA-ME.md e incertezas.md)
+Referencia de bloqueio: 00:00:00 (fonte não obtida)

@@ -107,3 +107,6 @@ Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição 
 | **Plugin de levantamento / serviço de exclusão / stub** | Componentes e retornos descritos oralmente; endpoint, payload, código e configuração não identificados | Separar a seleção da proposta do envio da exclusão e validar o retorno em sandbox aprovado | `dESAVERBAÇÃO.mp4` — 00:15:42–00:19:54; 01:03:19–01:06:33 (ASR) | [`../desaverbacao/procedimentos.md`](../desaverbacao/procedimentos.md) Fluxos A–D | — |
 
 > A referência registra `large-v3`/1.274 segmentos, mas o MP4 e as telas não foram vistos nesta sessão. As linhas descrevem menções ASR, não confirmação de sistema, navegação ou comportamento.
+
+- AVERBACAO.mp4 / desaverbacao / gravando 2026-10-07 132428.mp4: nenhum sistema, processo ou SQL confirmado sem fonte primária; pacotes preliminares mantidos em revisão conforme BLOQUEIO_LFS_ARENA.md.
+

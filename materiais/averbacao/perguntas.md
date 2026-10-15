@@ -12,3 +12,4 @@
 11. Há capturas/fotos de pessoas/dados sensíveis? (não verificado; nenhuma publicada)
 12. É duplicata de outro arquivo (mesmo oid)? (não verificável sem reconstrução)
 Respostas: todas `não confirmável`; fonte incompleta.
+- Timestamp de referência de bloqueio: 00:00:00 — fonte primária não obtida (vide LEIA-ME.md e incertezas.md)
