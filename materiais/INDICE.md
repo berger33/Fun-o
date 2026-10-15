@@ -7,6 +7,7 @@ Atualizado em **2026-10-15**. Conecta as gravações extraídas aos respectivos 
 | Item | Estado |
 |---|---|
 | Vídeos no manifesto | 24 (22 conteúdos distintos) |
+| Conversas de trabalho (fontes textuais) | **5 pacotes** analisados e publicados em 2026-10-15 — ver [`ANALISE_CONVERSAS_2026-10-15.md`](ANALISE_CONVERSAS_2026-10-15.md) e [`CONVENCOES_FONTES_TEXTUAIS.md`](CONVENCOES_FONTES_TEXTUAIS.md) |
 | Gravações concluídas e publicadas | **7** (`Apresentação projeto 19-18.mp4`, `Gravando 2026-07-07 155307.mp4`, `Gravando 2026-09-22 111258.mp4`, `Gravando 2026-10-07 152044.mp4`, `Jonas EPT explicação.mp4`, `Liberação padrão - Glauco.mp4`, `PROJETO 14-08.mp4`) |
 | Duplicatas cobertas por referência | `jonas2309.mp4` = `Jonas EPT explicação.mp4` (oid `f99bd795…`) e `Gravando 2026-08-24 161729.mp4` = `Gravando 2026-08-24 124650.mp4` (oid `1b9b6afd…`; ver [`../STATUS.md`](../STATUS.md)) |
 | Em análise no lote atual | **0** |
@@ -114,6 +115,25 @@ Atualizado em **2026-10-15**. Conecta as gravações extraídas aos respectivos 
   - Instruções operacionais de banco na planilha `Liberacao_Padrao_V30.xlsx`: `TPARWFIUTIL.PWALIAS` (`WFIUTIL`), criação de procedures `.NET` (`C` e `W`) e exclusão prévia em `TRTHB` antes de `FI.SQLResutil` (`Liberação padrão - Glauco.mp4` — [`guia_de_estudo.md`](liberacao-padrao-glauco/guia_de_estudo.md) §§4–5).
 
 - **`SQL`** — consultas demonstradas: veja [`SQL/INDICE_SQL.md`](SQL/INDICE_SQL.md). Não há SQL reproduzido em `Gravando 2026-09-22 111258.mp4`, `MICHELLE CTC PORTABILIDADE REFIN.mp4`, `MCB - QISTA.mp4`, `Primeiro projeto.mp4`, `Gravando 2026-08-24 124650.mp4`, `Gravando 2026-09-23 164626.mp4`, `Como fazer EPT.mp4`, `projeto EPT.mp4`, `ClientSecret EWEN TREINAMENTO.mp4`, `explicacao mesa c6.mp4`, `recalculo.mp4`, `Gravando 2026-10-06 110907.mp4` e `dESAVERBAÇÃO.mp4`. Em `dESAVERBAÇÃO.mp4`, há menção oral a uma query e a nomes reconhecidos como `Cprop`, `ppcodicomv` e `ppcodprd` (`00:24:47–00:25:44`), mas nenhum comando literal/esquema/dialeto aparece; não foi reconstruído nem executado. Em `projeto EPT.mp4`, o ASR não permite identificar conteúdo além da saída repetitiva; em `ClientSecret EWEN TREINAMENTO.mp4`, “SQL Result” é apenas menção sem consulta e, em `explicacao mesa c6.mp4`, há menção a tabela/base/C-Oper sem query. As gravações com menção a consulta/trecho de banco estão discriminadas no índice SQL.
+
+## Fontes textuais — conversas de trabalho (2026-10-15)
+
+Recortes de chat (sem carimbo de data/hora) analisados com **âncoras `[Mnn]`** em vez de timestamps —
+convenções em [`CONVENCOES_FONTES_TEXTUAIS.md`](CONVENCOES_FONTES_TEXTUAIS.md); síntese em
+[`ANALISE_CONVERSAS_2026-10-15.md`](ANALISE_CONVERSAS_2026-10-15.md).
+
+| Conversa | Pacote | Categorias | O que traz |
+|---|---|---|---|
+| **Matheus** (tester) | [`conversa-matheus-refin-api/`](conversa-matheus-refin-api/LEIA-ME.md) | SISTEMAS, PROCESSOS, NEGOCIO, DÚVIDA_OU_CONFLITO (menção a SQL) | Payload JSON completo de inclusão de proposta de **refinanciamento**; método de teste com o Autorizador; elegibilidade de contratos; triagem de erro de dado de teste |
+| **Jonas** (tester/futuro analista) | [`conversa-jonas-testa-api/`](conversa-jonas-testa-api/LEIA-ME.md) | SISTEMAS, PROCESSOS, INFRA_E_ACESSO, DÚVIDA_OU_CONFLITO | Erro de modelo da API (`SubTipoRefin`, `CODIGO 100000002`); método de isolamento de campo no Test API; critério de escalada; dois caminhos de publicação do endpoint |
+| **Cler** | [`conversa-cler-artefatos-acesso/`](conversa-cler-artefatos-acesso/LEIA-ME.md) | INFRA_E_ACESSO, PROCESSOS, SISTEMAS, DÚVIDA_OU_CONFLITO | Como se obtém artefato de ambientação; lacunas **UDL** e **SETHI/DIG** |
+| **Oscar** | [`conversa-oscar-automacao-testes/`](conversa-oscar-automacao-testes/LEIA-ME.md) | PROCESSOS, SISTEMAS, NEGOCIO, DÚVIDA_OU_CONFLITO | Proposta de PoC com **Cypress** para testes padrão/API; princípio regra-de-negócio-antes-de-ferramenta; lacuna **PSA/PEGEUT** |
+| **Gabriel** (analista) | [`conversa-gabriel-comunicacao-estudos/`](conversa-gabriel-comunicacao-estudos/LEIA-ME.md) | PROCESSOS, DÚVIDA_OU_CONFLITO (tema transversal: comunicação e desenvolvimento profissional) | Roteiro de **comunicação de perfil** a gestor (com resposta acionável do gestor); trilha de estudo declarada (IA/RAG/automação) e o princípio “processo antes de automação” |
+
+> **Estado:** os cinco pacotes estão **`em revisão`** — o material é método relatado, sem validação em
+> sistema. **Publicação reduzida** apenas no pacote do Gabriel (contexto pessoal privado fora do Git);
+> nos demais, houve **mascaramento de identificadores diretos** (CPF, CNPJ, RG, telefone, e-mail,
+> matrícula, endereço, hospedeiros internos).
 
 ## Por gravação
 

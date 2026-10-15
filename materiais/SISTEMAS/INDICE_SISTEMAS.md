@@ -110,3 +110,24 @@ Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição 
 
 - AVERBACAO.mp4 / desaverbacao / gravando 2026-10-07 132428.mp4: nenhum sistema, processo ou SQL confirmado sem fonte primária; pacotes preliminares mantidos em revisão conforme BLOQUEIO_LFS_ARENA.md.
 
+
+## Sistemas e artefatos das conversas de trabalho (2026-10-15)
+
+Fontes **textuais** (âncoras `[Mnn]`); ver [`../CONVENCOES_FONTES_TEXTUAIS.md`](../CONVENCOES_FONTES_TEXTUAIS.md).
+
+| Sistema / módulo / artefato | O que a fonte sustenta | Categoria | Fonte |
+|---|---|---|---|
+| **API de inclusão de proposta (`FIApiAutIncluirProposta`)** | Serviço de inclusão de proposta do Autorizador; recebe payload JSON com `TipoOperacao` = `"Refinanciamento"`. Erro de modelo observado quando `OperacoesRefin.SubTipoRefin` chega nulo. | SISTEMAS / NEGOCIO | [`../conversa-matheus-refin-api/guia_de_estudo.md`](../conversa-matheus-refin-api/guia_de_estudo.md) §3 · [`../conversa-jonas-testa-api/guia_de_estudo.md`](../conversa-jonas-testa-api/guia_de_estudo.md) §3 |
+| **Test API** | Ferramenta de envio do payload à API; tem **campos próprios** (o que motivou a pergunta de `[M07]` da conversa com Jonas). | SISTEMAS | [`../conversa-jonas-testa-api/glossario.md`](../conversa-jonas-testa-api/glossario.md) |
+| **Autorizador (tela de simulação de proposta)** | Origem do payload e **oráculo** do teste: mostra a condição esperada e quais contratos podem ser usados (vermelho = não utilizável). | SISTEMAS / PROCESSOS | [`../conversa-matheus-refin-api/guia_de_estudo.md`](../conversa-matheus-refin-api/guia_de_estudo.md) §§1–2 |
+| **Publicações do endpoint** (`…/Mesa C6/Regressivo <n>/FIApiAutIncluirProposta/` e `…/C6/Api/FIApiAutIncluirProposta/`) | Dois caminhos para o mesmo serviço; hospedeiros mascarados nos derivados. Qual é o vigente **não** foi confirmado. | INFRA_E_ACESSO / DÚVIDA_OU_CONFLITO | [`../conversa-jonas-testa-api/incertezas.md`](../conversa-jonas-testa-api/incertezas.md) item 4 |
+| **`COPER` (tabela referida como “coper”)** | Alvo do `select` por CPF para conferir as operações do cliente. Nome/colunas/ambiente **não confirmados**; nenhuma consulta executada. | SQL / DÚVIDA_OU_CONFLITO | [`../conversa-matheus-refin-api/incertezas.md`](../conversa-matheus-refin-api/incertezas.md) itens 1–2 |
+| **Web Empregador (pacote de ambientação)** | Módulo cujo pacote o operador pede para completar o ambiente; obtido com colega ou por download (caminho não informado). | SISTEMAS / INFRA_E_ACESSO | [`../conversa-cler-artefatos-acesso/guia_de_estudo.md`](../conversa-cler-artefatos-acesso/guia_de_estudo.md) §2.1 |
+| **SETHI** | Sistema para o qual se procurava a UDL; nenhum material do acervo o descreve. | SISTEMAS / DÚVIDA_OU_CONFLITO | [`../conversa-cler-artefatos-acesso/glossario.md`](../conversa-cler-artefatos-acesso/glossario.md) |
+| **DIG (“DIG A”)** | Caminho de ambientação apontado para o SETHI por **confirmação oral**; sigla e variante sem definição. Tratar como hipótese. | INFRA_E_ACESSO / DÚVIDA_OU_CONFLITO | idem — [`../conversa-cler-artefatos-acesso/incertezas.md`](../conversa-cler-artefatos-acesso/incertezas.md) item 3 |
+| **UDL** | Artefato/base de ambientação pedido a colegas; sigla **nunca expandida** em nenhuma fonte do acervo (aparece também como pasta `C6 UDL Base` em [`../gravando-2026-07-07-155307/`](../gravando-2026-07-07-155307/transcricao.md)). | INFRA_E_ACESSO / DÚVIDA_OU_CONFLITO | [`../conversa-cler-artefatos-acesso/incertezas.md`](../conversa-cler-artefatos-acesso/incertezas.md) item 1 |
+| **Cypress** | Ferramenta **proposta** (não aprovada, não testada) para automatizar “testes padrão — tipo api e etc”, com JavaScript. | SISTEMAS / PROCESSOS | [`../conversa-oscar-automacao-testes/guia_de_estudo.md`](../conversa-oscar-automacao-testes/guia_de_estudo.md) §2.2 |
+| **PSA / PEGEUT** | Citados como origem de dificuldade de **configuração**; nenhuma definição, tela ou parâmetro na fonte. | SISTEMAS / DÚVIDA_OU_CONFLITO | [`../conversa-oscar-automacao-testes/incertezas.md`](../conversa-oscar-automacao-testes/incertezas.md) item 3 |
+
+> **Regra de leitura:** nenhuma entrada desta seção foi validada em sistema. São **relatos de conversa**,
+> com o mesmo estado `em revisão` dos respectivos pacotes.

@@ -121,3 +121,23 @@ A saída ASR (sem VAD) é dominada por repetição e não sustenta um fluxo de n
 | **Conferir retorno e estado terminal** | Mock/stub e massa sintética aprovados; critério oficial de sucesso, idempotência e limpeza definidos | Resposta e estado final correspondem à EF, sem chamada real ou alteração fora do sandbox | “Concluído”/“desaverbado” são somente falas ASR, sem evidência visual/log revisado | `dESAVERBAÇÃO.mp4` — 01:00:58–01:08:35 | [`../desaverbacao/procedimentos.md`](../desaverbacao/procedimentos.md) Fluxos C–D |
 
 - AVERBACAO.mp4 / desaverbacao / gravando 2026-10-07 132428.mp4: nenhum procedimento operacional validado; pacotes em revisão.
+
+## Rotinas das conversas de trabalho (2026-10-15) — método relatado, não executado
+
+Fontes **textuais** (âncoras `[Mnn]`); ver [`../CONVENCOES_FONTES_TEXTUAIS.md`](../CONVENCOES_FONTES_TEXTUAIS.md).
+
+| Rotina | Pré-requisitos | Resultado esperado | Fonte |
+|---|---|---|---|
+| **Testar refinanciamento pela API usando o Autorizador como oráculo** | Simulação feita no Autorizador; payload salvo/guardado; acesso ao Test API | Payload enviado compatível com a condição simulada; divergência aponta payload desatualizado | [`../conversa-matheus-refin-api/procedimentos.md`](../conversa-matheus-refin-api/procedimentos.md) Fluxo A |
+| **Selecionar operações elegíveis para o refin** | Cliente com operações; simulação aberta; leitura da base (ambiente a confirmar) | `OperacoesRefin` com **apenas** operações marcáveis e não quitadas | idem — Fluxo B |
+| **Depurar crítica de modelo no Test API** | Payload de refin; retorno com `MENSAGEM`/`CODIGO` | Campo culpado identificado pelo `Path`/`position`; correção com valor válido (enum) | [`../conversa-jonas-testa-api/procedimentos.md`](../conversa-jonas-testa-api/procedimentos.md) Fluxo A |
+| **Classificar e escalar falha de API** | Payload mínimo que reproduz; endpoint anotado | Caso no grupo, com reprodução por outra pessoa e dono da API envolvido | idem — Fluxo C |
+| **Obter artefato de ambientação (ex.: pacote de módulo)** | Saber qual artefato falta e para quê | Artefato obtido por caminho autorizado ou responsável identificado | [`../conversa-cler-artefatos-acesso/procedimentos.md`](../conversa-cler-artefatos-acesso/procedimentos.md) Fluxo A |
+| **Descobrir a configuração de um sistema desconhecido (ex.: SETHI)** | Dúvida formulada de forma verificável (“tem UDL própria ou usa o DIG?”) | Resposta obtida **com a fonte** + pendência de validação registrada | idem — Fluxo B |
+| **Avaliar PoC de automação de testes (Cypress)** | Processo estável, aval do time, ambiente de teste, critério de sucesso | Decisão fundamentada: manter, ajustar escopo ou descartar | [`../conversa-oscar-automacao-testes/procedimentos.md`](../conversa-oscar-automacao-testes/procedimentos.md) Fluxo A |
+| **Transformar dor operacional em trilha de estudo (PSA/PEGEUT)** | Demanda real; quem já pegou o sistema | Pedido de ajuda qualificado + lacuna registrada no acervo | idem — Fluxo B |
+| **Explicar perfil de comunicação a um gestor** | Relação aberta; um fato concreto para contextualizar | Interlocutor converte o entendimento em ação combinada | [`../conversa-gabriel-comunicacao-estudos/procedimentos.md`](../conversa-gabriel-comunicacao-estudos/procedimentos.md) Fluxo A |
+| **Levar trilha de estudo (IA/automação) para o trabalho** | Domínio mínimo dos processos envolvidos | Trilha reconhecida pelo time, com prioridade processo → automação | idem — Fluxo C |
+
+> **Nenhuma dessas rotinas foi executada.** São o que as conversas ensinam como **método**, com as
+> lacunas registradas no `incertezas.md` de cada pacote. Não tratar como runbook até validação humana.

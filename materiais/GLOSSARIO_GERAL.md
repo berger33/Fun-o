@@ -220,3 +220,25 @@ Detalhes e limitações em [`desaverbacao/glossario.md`](desaverbacao/glossario.
 - `AVERBACAO.mp4` (`averbacao`): pacote preliminar em revisão; fonte (4 partes LFS, 5.033.624.752 bytes) não obtida; nenhuma análise de conteúdo confirmada. Ver [`materiais/averbacao/LEIA-ME.md`](materiais/averbacao/LEIA-ME.md).
 - `Gravando 2026-10-07 132428.mp4` (`gravando-2026-10-07-132428`): pacote preliminar em revisão; fonte (2 partes LFS, 3.151.497.131 bytes) não obtida. Ver [`materiais/gravando-2026-10-07-132428/LEIA-ME.md`](materiais/gravando-2026-10-07-132428/LEIA-ME.md).
 
+
+## Termos das conversas de trabalho (fontes textuais, 2026-10-15)
+
+Consolidação do vocabulário introduzido pelas cinco conversas analisadas. Definições completas, com
+todas as âncoras, no `glossario.md` de cada pacote.
+
+| Termo | Definição sustentada | Categoria | Fonte |
+|---|---|---|---|
+| **`FIApiAutIncluirProposta`** | Serviço/modelo da API de **inclusão de proposta** do Autorizador. | SISTEMAS | [`conversa-matheus-refin-api/glossario.md`](conversa-matheus-refin-api/glossario.md) · [`conversa-jonas-testa-api/glossario.md`](conversa-jonas-testa-api/glossario.md) |
+| **Test API** | Ferramenta de envio de payload à API, com campos próprios. | SISTEMAS | [`conversa-jonas-testa-api/glossario.md`](conversa-jonas-testa-api/glossario.md) |
+| **`OperacoesRefin` / `NumeroOperacao` / `SubTipoRefin`** | Bloco do payload de refin, a operação de origem e o subtipo que **não aceita `null`** (valor observado em envio que passou: `"NaoDefinido"` — hipótese a validar). | NEGOCIO / SISTEMAS | [`conversa-matheus-refin-api/guia_de_estudo.md`](conversa-matheus-refin-api/guia_de_estudo.md) §3.4 |
+| **Operação quitada** | Contrato liquidado que **não pode** ser origem de refin. | NEGOCIO | [`conversa-matheus-refin-api/glossario.md`](conversa-matheus-refin-api/glossario.md) |
+| **Contratos “em vermelhinho” × “que dão para marcar”** | Sinalização na simulação: vermelho não serve; só os marcáveis entram no cenário. | SISTEMAS / PROCESSOS | idem |
+| **`coper`** | Tabela referida para conferir operações por CPF — nome/ambiente não confirmados. | SQL / DÚVIDA_OU_CONFLITO | [`conversa-matheus-refin-api/incertezas.md`](conversa-matheus-refin-api/incertezas.md) item 1 |
+| **UDL** | Artefato/base de ambientação; sigla não expandida em nenhuma fonte. | INFRA_E_ACESSO / DÚVIDA_OU_CONFLITO | [`conversa-cler-artefatos-acesso/glossario.md`](conversa-cler-artefatos-acesso/glossario.md) |
+| **SETHI / DIG (“DIG A”)** | Sistema alvo e caminho de ambientação apontado como dele, por confirmação oral. | INFRA_E_ACESSO / DÚVIDA_OU_CONFLITO | idem |
+| **Cypress** | Ferramenta de automação **proposta** para testes padrão/API (não aprovada, não testada). | SISTEMAS / PROCESSOS | [`conversa-oscar-automacao-testes/glossario.md`](conversa-oscar-automacao-testes/glossario.md) |
+| **PSA / PEGEUT** | Citados como difícil **configuração**; sem definição na fonte. | SISTEMAS / DÚVIDA_OU_CONFLITO | idem |
+| **Regra de negócio (como competência)** | O que “vai ser cada vez mais necessário”; contraponto ao domínio de ferramenta. | NEGOCIO / PROCESSOS | [`conversa-oscar-automacao-testes/guia_de_estudo.md`](conversa-oscar-automacao-testes/guia_de_estudo.md) §2.1 |
+| **Literalidade / objetividade / feedback direto** | Preferências de comunicação declaradas ao gestor; pedidos operacionais. | comunicação | [`conversa-gabriel-comunicacao-estudos/glossario.md`](conversa-gabriel-comunicacao-estudos/glossario.md) |
+| **RAG** | Sigla citada no nome da certificação obtida; expansão não feita na fonte. | estudo | idem |
+| **Hiperfoco** | Termo usado pelo próprio autor para descrever a intensidade do interesse por IA. | estudo | idem |

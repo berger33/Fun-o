@@ -37,6 +37,19 @@ Workflows auxiliares para ambientes sem acesso ao host de conteúdo do LFS (uma 
 
 **Materiais restritos** (documentação interna, informação de cliente, nomes/imagens de pessoas) **não** devem ser publicados neste repositório: mantenha-os em área privada fora do Git e registre a pendência em `materiais/CONFLITOS_E_VALIDACAO.md` sem revelar o conteúdo.
 
+## Fontes textuais (conversas de trabalho)
+
+A biblioteca aceita um segundo tipo de fonte primária: **recortes de conversa de trabalho** (chat/Teams),
+analisados com **âncoras `[Mnn]`** (índice da mensagem) em vez de timestamps de mídia — conversa não tem
+`HH:MM:SS`. As regras estão em [`materiais/CONVENCOES_FONTES_TEXTUAIS.md`](materiais/CONVENCOES_FONTES_TEXTUAIS.md)
+e o auditor (`tools/validar_materiais.py`) reconhece o pacote que se declara `**Tipo de fonte:** conversa`
+em `metadados.md`.
+
+- **Síntese do lote de conversas:** [`materiais/ANALISE_CONVERSAS_2026-10-15.md`](materiais/ANALISE_CONVERSAS_2026-10-15.md).
+- **Trilhas de estudo derivadas:** [`materiais/TRILHAS_DE_ESTUDO.md`](materiais/TRILHAS_DE_ESTUDO.md).
+- **Material pessoal/restrito** (contexto privado que não deve ser publicado) fica em `restrito/`,
+  **ignorado pelo Git** — ver [`restrito/LEIA-ME.md`](restrito/LEIA-ME.md). Nunca usar `git add -f` nessa pasta.
+
 ## Integridade, privacidade e limites de publicação
 
 Não invente conteúdo ausente. Diferencie fala/observação, síntese e inferência. Minimize nomes, dados de clientes, credenciais e dados pessoais nos materiais derivados; mascare segredos de modo irreversível em qualquer print ou omita a captura se não puder sanitizar com confiança. Este repositório é público: antes de enviar novos derivados, verifique se o material pode ser compartilhado publicamente pela empresa. Não publique documentação interna restrita, informação de clientes ou fluxos confidenciais sem autorização do responsável pela divulgação.

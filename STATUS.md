@@ -1,6 +1,8 @@
 # Status da extração
 
 Atualizado em **2026-10-15** (Arena). Estados: `pendente`, `em análise`, `em revisão`, `concluído`.
+Nesta data o acervo passou a incluir **fontes textuais** (conversas de trabalho) além das gravações —
+ver §“Fontes textuais” e [`materiais/CONVENCOES_FONTES_TEXTUAIS.md`](materiais/CONVENCOES_FONTES_TEXTUAIS.md).
 
 **Fila de extração:** piloto `Apresentação projeto 19-18.mp4` **concluído**; os demais seguem do **menor para o maior** tamanho conforme `manifesto.csv`. A obtenção seletiva por CI e a validação de bytes/SHA-256 estão descritas em [`materiais/BLOQUEIO_LFS_ARENA.md`](materiais/BLOQUEIO_LFS_ARENA.md). `dESAVERBAÇÃO.mp4` foi movido para **em revisão** com ASR preexistente; o download direto LFS falhou neste sandbox, sem obtenção/revisão local do MP4 (ver [`materiais/desaverbacao/LEIA-ME.md`](materiais/desaverbacao/LEIA-ME.md)). Próximo pendente: nenhum (fila completa em início/revisão). Se só houver ASR de execução anterior, registrar procedência/limitação e manter em revisão; não declarar cobertura integral.
 
@@ -30,6 +32,30 @@ Atualizado em **2026-10-15** (Arena). Estados: `pendente`, `em análise`, `em re
 | PROJETO 14-08.mp4 | projeto-14-08 | 231977005 | **concluído** | Arena / 2026-10-13 | 00:09:25 (fim) | SISTEMAS, NEGOCIO, PROCESSOS, DÚVIDA_OU_CONFLITO | Fonte obtida e verificada (231977005 bytes; SHA-256 `5d5e9a2c…`). 8 documentos + 3 capturas publicados em [`materiais/projeto-14-08/`](materiais/projeto-14-08/LEIA-ME.md). Auditoria do roteiro: 0 falhas. |
 | projeto EPT.mp4 | projeto-ept | 1246682448 | **em revisão** | Arena / 2026-10-15 | Último cue SRT/VTT: 00:36:00–00:36:29.98 (áudio 00:36:16.70; cue excede em 00:00:13.28) | DÚVIDA_OU_CONFLITO | ASR `large-v3` sem VAD (73 segmentos; 69 repetem “Legenda Adriana Zanotto”), quatro artefatos conferidos byte a byte com a referência. Passe anterior com VAD reconheceu 1 segmento, segundo README upstream. Saída sem base para conteúdo técnico; transcrição integral preservada sob §13. MP4/telas não revisados; duração ASR `788.8 s` sem definição; sem testes/capturas. Retenção upstream registrada em [`materiais/PRIVACIDADE_E_RETENCAO.md`](materiais/PRIVACIDADE_E_RETENCAO.md) §15. |
 | recalculo.mp4 | recalculo | 2434086989 | **em revisão** | Arena / 2026-10-15 | Último cue SRT/VTT: 01:10:48.560–01:11:18.540 (áudio 01:10:50.82; cue excede em 00:00:27.72) | SISTEMAS, PROCESSOS, NEGOCIO, INFRA_E_ACESSO, DÚVIDA_OU_CONFLITO (sem SQL) | ASR `large-v3` sem VAD (1.043 segmentos); quatro artefatos copiados byte a byte da referência, hashes locais em [`materiais/recalculo/metadados.md`](materiais/recalculo/metadados.md). README upstream informa 2 partes reconstruídas/verificadas no runner, fonte 2434086989 bytes, SHA-256 `d8f2ed3d…`; MP4 não baixado/revisto nesta sessão. Guia preliminar sobre limites/tolerância, modos “somente recálculo”/“ambos” e discrepâncias de versão/ambiente; fórmula e resultados não confirmados. Transcrição integral conforme §13; há trechos não técnicos e cue final além da duração. Sem teste, alteração, API, SQL ou capturas. Retenção upstream registrada em [`materiais/PRIVACIDADE_E_RETENCAO.md`](materiais/PRIVACIDADE_E_RETENCAO.md) §18. |
+
+## Fontes textuais — conversas de trabalho (2026-10-15)
+
+Lote novo de fontes: **5 recortes de conversa de trabalho** (chat, sem carimbo de data/hora), analisados
+com **âncoras `[Mnn]`** em vez de timestamps — convenções em
+[`materiais/CONVENCOES_FONTES_TEXTUAIS.md`](materiais/CONVENCOES_FONTES_TEXTUAIS.md); síntese em
+[`materiais/ANALISE_CONVERSAS_2026-10-15.md`](materiais/ANALISE_CONVERSAS_2026-10-15.md); trilhas de
+estudo derivadas em [`materiais/TRILHAS_DE_ESTUDO.md`](materiais/TRILHAS_DE_ESTUDO.md).
+
+| Conversa | Slug | Estado | Categorias | Observações |
+|---|---|---|---|---|
+| Matheus (tester) | `conversa-matheus-refin-api` | **em revisão** | SISTEMAS, PROCESSOS, NEGOCIO, DÚVIDA_OU_CONFLITO (menção a SQL, sem texto) | Payload JSON completo de refin (campos preservados; identificadores mascarados), método do Autorizador como oráculo, elegibilidade de contratos, triagem de dado de teste × incidente. Nada executado; ambiente/versão/tabela `coper` pendentes. |
+| Jonas (tester/futuro analista) | `conversa-jonas-testa-api` | **em revisão** | SISTEMAS, PROCESSOS, INFRA_E_ACESSO, DÚVIDA_OU_CONFLITO | Erro de modelo colado literalmente (`SubTipoRefin`, `CODIGO 100000002`), método de isolamento de campo, critério de escalada, dois caminhos de endpoint (hospedeiros mascarados). Sem requisição e sem desfecho. |
+| Cler | `conversa-cler-artefatos-acesso` | **em revisão** | INFRA_E_ACESSO, PROCESSOS, SISTEMAS, DÚVIDA_OU_CONFLITO | Como obter artefato de ambientação; lacunas **UDL** e **SETHI/DIG A** registradas sem inventar expansão de sigla. Nenhum artefato obtido. |
+| Oscar | `conversa-oscar-automacao-testes` | **em revisão** | PROCESSOS, SISTEMAS, NEGOCIO, DÚVIDA_OU_CONFLITO | Proposta de PoC com **Cypress** (não aprovada), princípio regra-de-negócio-antes-de-ferramenta, lacuna **PSA/PEGEUT**. Autoria não determinável no recorte. |
+| Gabriel (analista) | `conversa-gabriel-comunicacao-estudos` | **em revisão** | PROCESSOS, DÚVIDA_OU_CONFLITO (+ tema transversal: comunicação e desenvolvimento profissional) | Roteiro de comunicação de perfil com gestor (resposta acionável na fonte) e trilha de estudo declarada (IA/RAG/automação). **Publicação reduzida:** contexto pessoal privado fora do Git (`restrito/`; ver [`materiais/PRIVACIDADE_E_RETENCAO.md`](materiais/PRIVACIDADE_E_RETENCAO.md) §20 e [`materiais/CONFLITOS_E_VALIDACAO.md`](materiais/CONFLITOS_E_VALIDACAO.md)). |
+
+- **Auditoria:** `tools/validar_materiais.py` passou a reconhecer fontes textuais (pacote que declara
+  `**Tipo de fonte:** conversa` em `metadados.md`); os cinco pacotes fecham **0 falhas e 0 achados de
+  privacidade**. Nenhum vídeo, API, SQL ou ambiente foi tocado neste lote.
+- **Pendências humanas:** 11 itens em [`materiais/CONFLITOS_E_VALIDACAO.md`](materiais/CONFLITOS_E_VALIDACAO.md)
+  §“Pendências das conversas de trabalho”, com destaque para a hipótese `SubTipoRefin` = `"NaoDefinido"`
+  (ligação entre as conversas do Matheus e do Jonas).
+- **Retenção:** apenas texto em Git; nenhuma ponte LFS usada nesta sessão.
 
 ## Resumo da coleção
 

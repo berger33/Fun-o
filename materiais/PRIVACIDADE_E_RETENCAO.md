@@ -192,3 +192,31 @@ Enquanto o repositório não for excluído, ele permanece público. Apagar um ra
 
 - Atualização (2026-10-15): todos os 24 vídeos do manifesto iniciados; 7 concluídos, 15 em revisão (dESAVERBAÇÃO, Gravando 2026-10-07 132428, AVERBACAO + 12 anteriores), 0 pendentes. Nenhum conteúdo inventado; ASR preservado quando existente; fonte indisponível documentada integralmente; §13 mantido; nenhum segredo, foto ou captura não revisada publicada.
 
+
+## 20. Registro — fontes textuais (conversas de trabalho) e a área `restrito/` (2026-10-15)
+
+- **Fonte:** cinco recortes de conversa de trabalho (Matheus, Jonas, Cler, Oscar e Gabriel) fornecidos
+  pelo responsável em **2026-10-15**; sem mídia, sem carimbo de data/hora. Convenções em
+  [`CONVENCOES_FONTES_TEXTUAIS.md`](CONVENCOES_FONTES_TEXTUAIS.md).
+- **Mascaramento aplicado:** identificadores diretos (CPF, CNPJ, RG/documento, telefone, e-mail,
+  matrícula, endereço/CEP, nomes de familiares e de terceiros) substituídos por `[DADO PESSOAL OMITIDO]`
+  — preservando **estrutura e semântica** dos payloads. Hospedeiros de rede interna substituídos por
+  `<servidor>`, com a **estrutura do caminho** mantida. A lista completa está no `incertezas.md` de cada
+  pacote (ex.: item 6 de `conversa-jonas-testa-api` e item 6 de `conversa-matheus-refin-api`).
+- **Conteúdo pessoal sensível:** a conversa com o analista contém um bloco de contexto privado
+  (condições de saúde, histórico pessoal e ajustes de trabalho). Esse bloco **não foi publicado**; a
+  íntegra foi preservada em **`restrito/`**, pasta **ignorada pelo Git** (`/restrito/` no `.gitignore`),
+  junto de um guia de autoadvocacia de uso pessoal do titular.
+  - Aplicou-se o §3 deste documento (não publicar; descrever apenas o tipo de risco; pedir decisão ao
+    responsável) e a diretriz do §13 (não descartar informação: a íntegra existe, apenas não está no
+    repositório público).
+  - **Estado da decisão:** pendente do titular. Publicar é possível, mas exige revisão própria — a
+    varredura automática **não** cobre `restrito/`.
+- **Nenhuma captura de tela** foi produzida neste lote: os recortes não trouxeram imagens e a única
+  imagem citada (contratos não utilizáveis) não foi fornecida.
+- **Nenhum teste, API, SQL, download, acesso ou alteração** de sistema/banco/ambiente foi executado nas
+  análises; nenhum artefato foi obtido.
+- **Retenção:** os pacotes publicados são texto (Markdown) versionado normalmente no Git; não houve uso
+  da ponte temporária de LFS, nem publicação de bytes de vídeo nesta sessão. Como o repositório é
+  público, o conteúdo dos pacotes permanece acessível até exclusão do repositório — o que reforça a razão
+  de o bloco pessoal ter ficado fora do Git.
