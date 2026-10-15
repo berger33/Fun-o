@@ -32,7 +32,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, diretorio: str = RAIZ, **kwargs):
         super().__init__(*args, directory=diretorio, **kwargs)
 
-    def do_GET(self) -> None:  # noqa: N802 (nome exigido pela biblioteca)
+    def _responder(self, com_corpo: bool = True) -> None:
+        """Atende as rotas do material; sem corpo no caso de HEAD (sondagem de link)."""
         caminho = urllib.parse.urlparse(self.path).path
 
         if caminho == "/health":
@@ -41,7 +42,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "application/json")
             self.send_header("Content-Length", str(len(corpo)))
             self.end_headers()
-            self.wfile.write(corpo)
+            if com_corpo:
+                self.wfile.write(corpo)
             return
 
         if caminho in ("/", "/index.html", "/download"):
@@ -54,15 +56,25 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(corpo)))
+            self.send_header("Accept-Ranges", "none")
             if caminho == "/download":
                 self.send_header("Content-Disposition", 'attachment; filename="%s"' % NOME_ARQUIVO)
             else:
                 self.send_header("Cache-Control", "no-store, must-revalidate")
             self.end_headers()
-            self.wfile.write(corpo)
+            if com_corpo:
+                self.wfile.write(corpo)
             return
 
-        return super().do_GET()
+        if com_corpo:
+            return super().do_GET()
+        return super().do_HEAD()
+
+    def do_GET(self) -> None:  # noqa: N802 (nome exigido pela biblioteca)
+        return self._responder(com_corpo=True)
+
+    def do_HEAD(self) -> None:  # noqa: N802 (nome exigido pela biblioteca)
+        return self._responder(com_corpo=False)
 
     def log_message(self, formato: str, *args) -> None:
         print("[material] %s - %s" % (self.address_string(), formato % args), flush=True)
