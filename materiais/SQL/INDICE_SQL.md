@@ -20,5 +20,6 @@ Consultas e comandos SQL identificados nas gravações analisadas:
 | `MICHELLE CTC PORTABILIDADE REFIN.mp4` | **não aplicável** | Nenhum SQL, comando ou consulta demonstrado; a conversa trata verbalmente de propostas e etapas de processo. |
 | `MCB - QISTA.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL demonstrado; `INSERT`/`UPDATE` são apenas mencionados como possibilidade, sem script ou execução (`00:02:54`–`00:03:09`). |
 | `Primeiro projeto.mp4` | **menção, sem texto** | A fala menciona um `SELECT` para localizar o número da operação (`00:02:35`–`00:02:57`), mas a consulta não é lida nem exibida; nenhuma query reproduzida ou executada. |
+| `Gravando 2026-08-24 124650.mp4` | **menção/trecho omitido; sem SQL público** | Um trecho sensível entre `00:06:01.19` e `00:09:31.31` foi omitido da cópia pública. Nenhum comando, tabela ou valor é reproduzido; nenhuma query foi executada nesta análise. Ver [`../gravando-2026-08-24-124650/incertezas.md`](../gravando-2026-08-24-124650/incertezas.md). |
 
 Cada entrada traz objetivo, gravação e timestamp (`HH:MM:SS`), dialeto, tabelas/colunas citadas, tipo (`somente leitura` / `altera dados`) e link para a análise detalhada no vídeo. Comandos que alteram dados (`INSERT`, `UPDATE`, `DELETE`, DDL) recebem sinalização explícita de efeito e de validação operacional; nenhum comando é executado.

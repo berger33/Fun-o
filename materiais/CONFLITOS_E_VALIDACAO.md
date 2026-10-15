@@ -102,3 +102,15 @@ Detalhes e timestamps em [`primeiro-projeto/incertezas.md`](primeiro-projeto/inc
 4. **Ambiente/evidência:** versões aprovadas e opções “N/W” não foram definidas; não transformar recomendação oral em procedimento de implantação.
 5. **SQL:** somente um `SELECT` é mencionado, sem texto/tabelas; nenhuma consulta é reproduzida ou autorizada por esta gravação.
 6. **Sanitização/cobertura:** identificador de cliente e nome de base foram substituídos por marcadores; segmento não técnico entre `00:16:15.94–00:17:48.66` foi omitido. Fonte, EF e telas não foram revisadas neste lote; manter **em revisão**.
+
+## Pendências de `Gravando 2026-08-24 124650.mp4` (2026-10-14)
+
+Detalhes e timestamps em [`gravando-2026-08-24-124650/incertezas.md`](gravando-2026-08-24-124650/incertezas.md).
+
+1. **Contrato do plugin/JSON:** a alteração e a propriedade esperada do retorno não são nomeadas; confirmar na EF/EPT aprovada.
+2. **Etapas da esteira:** o ASR oscila entre etapa 2, 3 e 4 (`00:10:12–00:12:23`); usar sequência autorizada, não inferência oral.
+3. **CPD/Crivo e ferramenta:** grafias/funções de CPD, Crivo, Geradoc e limite de envio precisam de confirmação; o limite citado não é política.
+4. **Dados de teste:** identificadores e valor exemplificativo foram substituídos por marcadores; não os reutilizar como valores nem requisitos.
+5. **Sanitização:** o intervalo `00:06:01.19–00:09:31.31` foi omitido por privacidade/segurança; nenhuma consulta SQL ou dado de identificador foi transferido para o derivado público.
+6. **Cobertura:** ASR `large-v3` com 352 segmentos, áudio declarado `00:18:45.82`; vídeo/telas não foram revisados neste lote. Não houve teste, execução SQL ou captura. Manter estado **em revisão**.
+7. **Duplicidade:** `Gravando 2026-08-24 161729.mp4` tem o mesmo OID LFS e fica coberto por referência; não criar uma segunda análise.

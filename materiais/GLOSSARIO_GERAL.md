@@ -108,3 +108,13 @@ Ver [`mcb-qista/glossario.md`](mcb-qista/glossario.md) e [`mcb-qista/incertezas.
 - **Opções “N”/“W” e `SELECT`:** menções sem efeito/consulta documentados; não são instrução operacional (`00:02:35`–`00:02:57; 00:13:12`–`00:16:02`).
 
 Ver [`primeiro-projeto/glossario.md`](primeiro-projeto/glossario.md) e [`primeiro-projeto/incertezas.md`](primeiro-projeto/incertezas.md). A transcrição pública substitui identificadores e omite o trecho não técnico fora do escopo.
+
+## Termos de `Gravando 2026-08-24 124650.mp4`
+
+- **Autorizador / esteira:** aplicação e fluxo mencionados para criar uma proposta sintética e avançar o cenário; sequência oficial depende da EPT (`00:03:10`–`00:03:20; 00:09:55`–`00:10:10`).
+- **Plugin / JSON:** componente e formato de retorno que a conversa recomenda verificar como evidência da alteração; propriedade/campo não identificado (`00:00:25`–`00:02:12; 00:12:57`–`00:13:18`). O ASR oscila nas grafias de JSON.
+- **CPD / Crivo:** CPD é expandido verbalmente como consignado privado; Crivo aparece como retorno associado ao cenário, sem regra ou campo confirmado (`00:04:54`–`00:05:02`).
+- **EPT / Geradoc:** artefatos/ferramenta mencionados na preparação do documento; fluxo e template não demonstrados (`00:16:01`–`00:17:25`).
+- **Etapas 2/3/4:** numeração corrigida/alternada na fala; não usar como sequência oficial (`00:10:12`–`00:12:23`).
+
+Ver [`gravando-2026-08-24-124650/glossario.md`](gravando-2026-08-24-124650/glossario.md) e [`gravando-2026-08-24-124650/incertezas.md`](gravando-2026-08-24-124650/incertezas.md). Identificadores/valores de teste estão mascarados e o trecho `00:06:01.19–00:09:31.31` foi omitido.
