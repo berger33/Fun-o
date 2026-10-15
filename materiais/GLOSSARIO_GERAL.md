@@ -129,3 +129,16 @@ Ver [`gravando-2026-08-24-124650/glossario.md`](gravando-2026-08-24-124650/gloss
 - **`DTN`, “PT fim”, “Gearlog”; `CECOMP`, `TRDSP`, `PDT`, “CDCM”; `SRL`, `RPT`, `SIG`:** grafias/siglas reconhecidas pelo ASR que exigem validação; não são nomes de parâmetro, campo ou rotina confirmados (`00:01:17–00:01:22; 00:06:00–00:06:29; 00:07:32–00:07:57; 00:12:34–00:12:58; 00:14:11–00:14:42`).
 
 Ver [`gravando-2026-10-06-110907/glossario.md`](gravando-2026-10-06-110907/glossario.md) e [`gravando-2026-10-06-110907/incertezas.md`](gravando-2026-10-06-110907/incertezas.md); sistema/projeto de referência foi mascarado e o trecho paralelo foi omitido.
+
+## Termos de `Gravando 2026-09-23 164626.mp4`
+
+- **GED / GEDOC / G-Doc / GDock:** grafias reconhecidas pelo ASR em contexto de consulta/anexação; relação e nomes oficiais precisam ser confirmados.
+- **Autorizador:** aplicação citada como local da rotina de anexar documento à proposta; tela/caminho não verificados.
+- **`document_type`, `document_name`, `user`:** três dados mencionados durante a discussão do JSON; nomes, tipos, obrigatoriedade e origem pendentes de confirmação na EF.
+- **“Attach documento”:** possível nome do objeto pai no payload, ouvido pelo ASR; não padronizar frente a `attachment_document`/`attached_document` de gravações relacionadas.
+- **`null`:** valor relatado para o caso sem documentos; contrato pode exigir outra representação.
+- **Perfil GED / chave:** configuração de acesso mencionada em mensagens de erro; os valores ouvidos não definem permissão correta nem recomendam alteração.
+- **Esteira / retorno / loop:** alternativas de fluxo ao reprocessar a proposta; regra de reentrada e idempotência pendentes.
+- **CPS / CCD:** siglas reconhecidas ao falar de um tipo de documento; grafia e significado incertos.
+
+Detalhes e timestamps em [`gravando-2026-09-23-164626/glossario.md`](gravando-2026-09-23-164626/glossario.md) e [`gravando-2026-09-23-164626/incertezas.md`](gravando-2026-09-23-164626/incertezas.md). A transcrição está integral conforme a diretriz de preservação registrada em [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md) §13.

@@ -1,0 +1,1189 @@
+WEBVTT
+
+00:00:00.940 --> 00:00:02.620
+Oi? Não entendi, cara.
+
+00:00:03.180 --> 00:00:04.760
+Já tava com o óleo quente aí.
+
+00:00:06.100 --> 00:00:08.200
+Ah, pode crer.
+
+00:00:11.060 --> 00:00:13.200
+O Zé me deu a ideia aqui, ele falou o seguinte,
+
+00:00:13.420 --> 00:00:16.340
+cara, faz o teste na base do CQ,
+
+00:00:17.340 --> 00:00:21.380
+que eu achei até que ele quisesse que compilasse a aplicação
+
+00:00:21.380 --> 00:00:25.240
+e disponibilizasse já pra vocês testarem em paralelo.
+
+00:00:25.240 --> 00:00:27.920
+Ele falou, não, faz o teste na base deles
+
+00:00:27.920 --> 00:00:30.080
+e pede pra eles acompanharem,
+
+00:00:30.080 --> 00:00:32.280
+que já acelera
+
+00:00:32.280 --> 00:00:34.060
+meio que o seu teste, o teste
+
+00:00:34.060 --> 00:00:36.240
+deles. Então, eu não compilei
+
+00:00:36.240 --> 00:00:37.920
+a aplicação ainda, entendeu?
+
+00:00:38.140 --> 00:00:39.220
+Eu tô fazendo o modo debug,
+
+00:00:39.940 --> 00:00:41.320
+mas já tô fazendo a base de vocês.
+
+00:00:42.360 --> 00:00:43.620
+Fechou? Isso aí vai ser só
+
+00:00:43.620 --> 00:00:45.700
+plugin, Gleison? Ou vai entrar autorizador também?
+
+00:00:46.200 --> 00:00:47.380
+Tem autorizador e plugin.
+
+00:00:48.760 --> 00:00:49.200
+Esse,
+
+00:00:49.200 --> 00:00:51.060
+eu peguei um documento aqui
+
+00:00:51.060 --> 00:00:53.220
+de evidência de vocês, que ele é
+
+00:00:53.220 --> 00:00:55.080
+similar ao que a gente fez aqui,
+
+00:00:55.220 --> 00:00:57.060
+que ele envolve um plugin de
+
+00:00:57.060 --> 00:00:58.900
+vídeo proposta ao sistema externo.
+
+00:00:58.900 --> 00:01:01.120
+Deixa eu minimizar aqui, vocês estão vendo minha tela, né?
+
+00:01:01.960 --> 00:01:02.200
+Sim
+
+00:01:02.200 --> 00:01:08.770
+E ó, implementando o módulo
+
+00:01:08.770 --> 00:01:11.010
+Serviconos, envio de propósito
+
+00:01:11.010 --> 00:01:12.150
+Sistema externo
+
+00:01:12.150 --> 00:01:14.390
+E não colocou demanda aqui
+
+00:01:14.390 --> 00:01:16.210
+É
+
+00:01:16.210 --> 00:01:19.250
+É que não tem descrição de demanda
+
+00:01:19.250 --> 00:01:21.290
+Mas eu sei que ela envolve um atributo
+
+00:01:21.290 --> 00:01:23.190
+Então tem autorizador, plugin aqui
+
+00:01:23.190 --> 00:01:30.480
+Aqui tem um plugin executado
+
+00:01:30.480 --> 00:01:32.680
+E eu vi que
+
+00:01:32.680 --> 00:01:34.020
+A série de vocês já está configurada
+
+00:01:34.020 --> 00:01:36.060
+Então eu já aproveitei e estou fazendo exatamente
+
+00:01:36.060 --> 00:01:37.960
+com os parâmetros que vocês já colocaram
+
+00:01:37.960 --> 00:01:40.060
+conforme nesse teste. E deu bom aqui.
+
+00:01:40.440 --> 00:01:42.040
+Já bateu lá no serviço.
+
+00:01:44.100 --> 00:01:45.180
+Só que aqui,
+
+00:01:45.300 --> 00:01:47.700
+vocês não colocaram a descrição do processo,
+
+00:01:47.820 --> 00:01:50.160
+mas não tem relevância não. Era só pra mostrar
+
+00:01:50.160 --> 00:01:51.920
+aqui, deixa eu ver, resultado inspirado
+
+00:01:51.920 --> 00:01:54.100
+no campo CNPJ. Ah, é o campo CNPJ
+
+00:01:54.100 --> 00:01:55.300
+que entrou aqui, tá vendo?
+
+00:01:56.300 --> 00:01:56.620
+Aham.
+
+00:01:57.060 --> 00:02:01.700
+Esses dois atributos aqui
+
+00:02:01.700 --> 00:02:02.460
+que entraram novos.
+
+00:02:02.620 --> 00:02:03.760
+No nosso caso aqui,
+
+00:02:03.980 --> 00:02:05.600
+a gente tá entrando com
+
+00:02:05.600 --> 00:02:07.860
+O documento em anexo
+
+00:02:07.860 --> 00:02:09.960
+Nesse caso aqui
+
+00:02:09.960 --> 00:02:12.340
+A taxa de document
+
+00:02:12.340 --> 00:02:14.240
+Beleza
+
+00:02:14.240 --> 00:02:16.540
+Aí eu fiz um primeiro teste aqui
+
+00:02:16.540 --> 00:02:18.300
+E cara
+
+00:02:18.300 --> 00:02:20.500
+Eu tava vendo aqui que eu acho que tem outra máquina
+
+00:02:20.500 --> 00:02:21.620
+Do CQ rodando aqui
+
+00:02:21.620 --> 00:02:24.400
+Essa aqui AKWK
+
+00:02:24.400 --> 00:02:26.500
+01232CQ
+
+00:02:27.100 --> 00:02:28.440
+É a minha
+
+00:02:28.440 --> 00:02:30.280
+Mas isso aí é outro plugin
+
+00:02:30.280 --> 00:02:32.880
+Esse aí é o plugin de esteira
+
+00:02:32.880 --> 00:02:34.400
+Ah
+
+00:02:34.400 --> 00:02:35.880
+Ah, pode criar o plugin de esteira, tá?
+
+00:02:36.480 --> 00:02:36.880
+Beleza.
+
+00:02:37.080 --> 00:02:39.420
+Eu coloquei o nome da proposta certa.
+
+00:02:39.440 --> 00:02:40.660
+O nome da proposta, é.
+
+00:02:41.380 --> 00:02:43.180
+É, eu coloquei a proposta e trouxe ele também.
+
+00:02:43.380 --> 00:02:44.200
+O sistema externo.
+
+00:02:45.540 --> 00:02:53.420
+E no caso, o sistema externo aqui seria o meu aqui, é da minha máquina essa aqui, 182710.
+
+00:02:53.420 --> 00:02:58.420
+Então, esse ID, 533...
+
+00:02:59.800 --> 00:03:01.860
+Não, é o outro, eu acho, não?
+
+00:03:04.680 --> 00:03:05.560
+Deixa eu mandar aqui pro seu.
+
+00:03:05.560 --> 00:03:06.420
+Esse cara aqui
+
+00:03:06.420 --> 00:03:10.770
+Mas é um outro ID que eu tenho
+
+00:03:10.770 --> 00:03:18.110
+Mas é pelo
+
+00:03:18.110 --> 00:03:22.690
+CSIDcons
+
+00:03:22.690 --> 00:03:36.880
+Mas esse é de um outro
+
+00:03:36.880 --> 00:03:38.040
+Do antigo ainda
+
+00:03:38.040 --> 00:03:39.800
+Pega do seu ali pra gente ver
+
+00:03:39.800 --> 00:03:40.580
+da sua proposta
+
+00:03:40.580 --> 00:03:43.960
+da minha proposta aqui
+
+00:03:43.960 --> 00:03:44.980
+peraí
+
+00:03:44.980 --> 00:03:48.600
+a gente tava até hesitando
+
+00:03:48.600 --> 00:03:49.380
+pra criar o IPT
+
+00:03:49.380 --> 00:03:52.260
+87 ali ó, segundo campo
+
+00:03:52.260 --> 00:03:54.320
+esse aqui, certo?
+
+00:03:54.980 --> 00:03:55.380
+é isso
+
+00:03:55.380 --> 00:04:13.530
+ele vai tá no JSON, né?
+
+00:04:14.090 --> 00:04:14.350
+ok
+
+00:04:14.350 --> 00:04:19.130
+e esse, por exemplo, esse teste aí
+
+00:04:19.130 --> 00:04:21.370
+Ele chegou a adicionar
+
+00:04:21.370 --> 00:04:23.810
+Uma nova linha
+
+00:04:23.810 --> 00:04:25.330
+Com essa informação
+
+00:04:25.330 --> 00:04:27.930
+Ele também vai adicionar linha com a informação ou não?
+
+00:04:28.650 --> 00:04:29.230
+Só no JSON
+
+00:04:29.230 --> 00:04:31.210
+O documento está achado aqui
+
+00:04:31.210 --> 00:04:33.050
+Mas a linha, eu entendi o que você falou
+
+00:04:33.050 --> 00:04:34.350
+A linha aqui no registro
+
+00:04:34.350 --> 00:04:37.670
+Eu acho que só no JSON
+
+00:04:37.670 --> 00:04:41.150
+Vou dar uma olhada aqui depois
+
+00:04:41.150 --> 00:04:43.430
+Mas eu também imaginei que seria só no JSON
+
+00:04:43.430 --> 00:04:47.050
+Só que o meu JSON aqui
+
+00:04:47.050 --> 00:04:47.910
+Ele está nulo
+
+00:04:47.910 --> 00:04:50.250
+Aí que tá
+
+00:04:50.250 --> 00:04:51.970
+Esse é o ponto
+
+00:04:51.970 --> 00:04:55.110
+Como que eu anexo
+
+00:04:55.110 --> 00:05:00.160
+Um documento nesse caso aqui
+
+00:05:00.160 --> 00:05:01.100
+Pra fazer esse teste
+
+00:05:01.100 --> 00:05:03.760
+Tem uma rotina
+
+00:05:03.760 --> 00:05:05.360
+Mas eu não faço ideia
+
+00:05:05.360 --> 00:05:07.900
+Se o documento necessita de formatação
+
+00:05:07.900 --> 00:05:09.660
+Eu nunca mexi com essa rotina antes
+
+00:05:09.660 --> 00:05:11.460
+Mas ela tem uma rotina
+
+00:05:11.460 --> 00:05:12.880
+No próprio autorizador
+
+00:05:12.880 --> 00:05:14.460
+Vai lá no autorizador pra você ver
+
+00:05:14.460 --> 00:05:20.310
+Consulta
+
+00:05:20.310 --> 00:05:24.970
+Mixar
+
+00:05:24.970 --> 00:05:26.670
+segunda rotina, anexar, consultar
+
+00:05:26.670 --> 00:05:27.430
+documentação.
+
+00:05:28.270 --> 00:05:31.290
+Você tem algum PDF
+
+00:05:31.290 --> 00:05:32.490
+de uma página aí ou não?
+
+00:05:33.670 --> 00:05:34.630
+A gente gera aqui.
+
+00:05:35.690 --> 00:05:36.030
+Se tiver.
+
+00:05:37.110 --> 00:05:38.670
+Ainda deve ter alguma coisa aqui.
+
+00:05:40.900 --> 00:05:42.080
+Então, URL
+
+00:05:42.080 --> 00:05:42.860
+válida.
+
+00:05:42.860 --> 00:05:46.190
+O GE
+
+00:05:46.190 --> 00:05:48.590
+não está configurado não. Você tem o
+
+00:05:49.650 --> 00:05:50.350
+URL aí?
+
+00:05:51.050 --> 00:05:51.330
+Tem.
+
+00:05:51.490 --> 00:05:54.150
+Aquele de configuração?
+
+00:05:55.150 --> 00:05:56.170
+Vou mandar aqui pra você.
+
+00:05:56.470 --> 00:05:57.350
+Tem algum aqui?
+
+00:05:58.010 --> 00:06:35.740
+Um, dois, três.
+
+00:06:35.740 --> 00:06:37.820
+iniciar o autorizador de novo, é bom, né?
+
+00:06:37.980 --> 00:06:39.060
+Vou insetar ele de novo.
+
+00:06:40.340 --> 00:06:41.440
+Vou tirar aqui o documento.
+
+00:07:05.040 --> 00:07:06.680
+Qual que é o número da proposta?
+
+00:07:06.880 --> 00:07:07.340
+Você tem ela aí?
+
+00:07:08.300 --> 00:07:08.620
+Tem.
+
+00:07:09.740 --> 00:07:11.600
+Apesar que eu não sei...
+
+00:07:11.600 --> 00:07:15.500
+É, não, não sei se era certo.
+
+00:07:16.700 --> 00:07:17.980
+Espera aí que eu vou te passar ela agora.
+
+00:07:18.840 --> 00:07:22.520
+É, não, eu tava pensando em adicionar aqui no meu autorizador.
+
+00:07:24.360 --> 00:07:26.460
+Pra ver como é que vai ser.
+
+00:07:28.040 --> 00:07:32.600
+Mas não sei se eu interfiri em alguma coisa com o ponto que saiu, que também é autorizador, né?
+
+00:07:33.600 --> 00:07:40.970
+Aqui já tá pro banco, pra base de banco texto, tá?
+
+00:07:45.340 --> 00:08:07.990
+Maravilhoso
+
+00:08:07.990 --> 00:08:17.660
+O login não tá nada relevante
+
+00:08:17.660 --> 00:08:19.860
+Beleza
+
+00:08:19.860 --> 00:08:32.510
+Vocês estão participando desse plantão que tá rolando?
+
+00:08:34.470 --> 00:08:36.710
+Esse aqui por enquanto não, cara
+
+00:08:36.710 --> 00:08:38.590
+Também
+
+00:08:38.590 --> 00:08:41.670
+Gente, eu tenho que entender essa porra, hein
+
+00:08:41.670 --> 00:08:43.170
+O que é pra testar
+
+00:08:43.170 --> 00:08:45.770
+Já basta a gente estar
+
+00:08:45.770 --> 00:08:47.030
+vindo no presencial, mano.
+
+00:08:48.030 --> 00:08:49.090
+Vocês estão trabalhando no presencial?
+
+00:08:50.310 --> 00:08:51.950
+Pô, estamos vindo uma vez na semana.
+
+00:08:52.790 --> 00:08:53.730
+Nunca foi nada.
+
+00:08:54.190 --> 00:08:55.070
+Mas por quê?
+
+00:08:55.710 --> 00:08:57.070
+Isso foi imposto agora?
+
+00:08:57.230 --> 00:08:58.490
+Ou vocês já faziam isso antes?
+
+00:08:59.330 --> 00:09:01.150
+Faz um mês. Um mês passado.
+
+00:09:02.230 --> 00:09:02.750
+Nunca fiz.
+
+00:09:03.430 --> 00:09:04.450
+Nunca fizeram?
+
+00:09:05.030 --> 00:09:05.810
+É novo, então.
+
+00:09:08.030 --> 00:09:09.370
+Eu não tenho como fazer isso
+
+00:09:09.370 --> 00:09:10.530
+porque eu estou no Espírito Santo.
+
+00:09:10.530 --> 00:09:14.440
+Eles podiam fazer pelo menos um convite
+
+00:09:14.440 --> 00:09:15.880
+Nessa galera aí, de vez em quando
+
+00:09:15.880 --> 00:09:18.400
+Pra conhecer a função, integrar mais com a empresa
+
+00:09:18.400 --> 00:09:21.880
+Pegar umas cabeças aí que estão mais tempo
+
+00:09:21.880 --> 00:09:24.040
+Será que é custo também pra função?
+
+00:09:24.360 --> 00:09:25.500
+É, mano
+
+00:09:25.500 --> 00:09:27.280
+Mas eu acho interessante, cara
+
+00:09:27.280 --> 00:09:28.400
+Porque, tipo assim
+
+00:09:28.400 --> 00:09:32.160
+Eu acho que você gera
+
+00:09:32.160 --> 00:09:33.120
+Um elo mais
+
+00:09:33.120 --> 00:09:36.220
+Mais forte com a empresa que você trabalha
+
+00:09:36.220 --> 00:09:38.200
+Tipo, eu sou a tua distância
+
+00:09:38.200 --> 00:09:39.400
+Eu nunca vi a cara, não sei
+
+00:09:39.400 --> 00:09:40.960
+Eu faço ideia nem do tamanho
+
+00:09:40.960 --> 00:09:42.660
+a galera que
+
+00:09:42.660 --> 00:09:45.900
+eu falo são você, mas assim
+
+00:09:45.900 --> 00:09:47.980
+é distância, nunca vi ninguém presencial
+
+00:09:47.980 --> 00:09:49.180
+então não sei nem o peso
+
+00:09:49.180 --> 00:09:51.700
+quando você aparece presencialmente
+
+00:09:51.700 --> 00:09:53.920
+é uma outra pegada
+
+00:09:53.920 --> 00:09:55.440
+é tipo
+
+00:09:55.440 --> 00:09:57.760
+o que o povo fala
+
+00:09:57.760 --> 00:09:59.600
+quando você assiste futebol
+
+00:09:59.600 --> 00:10:02.160
+pela televisão, quando você vai no estádio
+
+00:10:02.160 --> 00:10:03.680
+sua percepção muda
+
+00:10:03.680 --> 00:10:05.000
+todo mundo fala isso
+
+00:10:05.000 --> 00:10:07.380
+eu nunca fui, mas todo mundo comenta
+
+00:10:07.380 --> 00:10:10.020
+enfim, eu acho que seria um custo altíssimo
+
+00:10:10.020 --> 00:10:11.960
+Tem uma galera que trabalha
+
+00:10:11.960 --> 00:10:15.060
+Mas aqui é legal
+
+00:10:15.060 --> 00:10:15.960
+Aqui a região
+
+00:10:15.960 --> 00:10:18.580
+Perto da 25, centro de São Paulo
+
+00:10:18.580 --> 00:10:20.720
+Tem uma igreja aqui
+
+00:10:20.720 --> 00:10:22.180
+Mano, tem uma igreja aqui
+
+00:10:22.180 --> 00:10:23.080
+Eu nunca tinha entrado
+
+00:10:23.080 --> 00:10:24.140
+Hoje eu entrei lá
+
+00:10:24.140 --> 00:10:27.380
+O documento é o que eu gerei agora?
+
+00:10:28.560 --> 00:10:28.940
+Não, não
+
+00:10:28.940 --> 00:10:31.320
+O tipo do documento é por CPS
+
+00:10:31.320 --> 00:10:32.220
+Tem autorização
+
+00:10:32.220 --> 00:10:37.250
+Por CPS pra gente ver
+
+00:10:37.250 --> 00:10:38.650
+Ah, pode crer
+
+00:10:38.650 --> 00:11:17.350
+isso aqui então é o local onde a gente anexa o documento a proposta para poder enviar para o
+
+00:11:17.350 --> 00:11:19.790
+o plugin de envio de propósito
+
+00:11:19.790 --> 00:11:20.550
+do sistema CERN, certo?
+
+00:11:22.410 --> 00:11:23.690
+É aqui que a gente vê o Nexo.
+
+00:11:25.110 --> 00:11:25.770
+Eu vou abrir o
+
+00:11:25.770 --> 00:11:26.770
+GDock aqui pra ver.
+
+00:11:27.470 --> 00:11:29.370
+Mas, mano, eu nunca mexi nessa
+
+00:11:29.370 --> 00:11:30.210
+rotina, tá?
+
+00:11:31.270 --> 00:11:35.290
+Vou tentar
+
+00:11:35.290 --> 00:11:36.650
+caçar aqui no GDock.
+
+00:11:37.830 --> 00:11:38.910
+Beleza, dá uma olhada aí.
+
+00:11:56.300 --> 00:11:58.220
+Disponível de identificar a documentação anexa
+
+00:11:58.220 --> 00:12:00.220
+para compor informações do cliente.
+
+00:12:02.160 --> 00:12:03.680
+Hum, acho que eu entendi.
+
+00:12:04.380 --> 00:12:05.220
+Abre aí, deixa eu ver.
+
+00:12:05.220 --> 00:12:10.220
+Vai lá no autorizador rapidão
+
+00:12:10.220 --> 00:12:10.900
+Alguma coisa
+
+00:12:10.900 --> 00:12:18.650
+Tem um tipo de documento ali
+
+00:12:18.650 --> 00:12:20.230
+Vamos ver qual que tem ali
+
+00:12:20.230 --> 00:12:25.650
+VCCB assinado
+
+00:12:25.650 --> 00:12:28.210
+Tem esse perfil aqui desse cara
+
+00:12:28.210 --> 00:12:45.780
+O cadastro da chave 2
+
+00:12:45.780 --> 00:12:48.220
+Não é permitido de acordo com o perfil do GEDOC
+
+00:12:48.220 --> 00:12:49.080
+Tá
+
+00:12:49.080 --> 00:12:50.780
+Tá vendo aqui
+
+00:12:50.780 --> 00:12:52.880
+É permitido
+
+00:12:52.880 --> 00:13:35.980
+Não, não, não.
+
+00:13:36.000 --> 00:13:42.460
+Você consegue bater, Gleison, qual o perfil que tá sendo usado?
+
+00:13:43.040 --> 00:13:45.000
+Qualquer coisa também tira um profiler aqui.
+
+00:13:48.330 --> 00:13:50.250
+Qual o perfil que está sendo?
+
+00:13:51.250 --> 00:13:53.070
+Usado aí no GDock, divulgando.
+
+00:13:53.690 --> 00:13:55.270
+Na hora que ele bate esse erro pra mim.
+
+00:13:55.830 --> 00:13:57.950
+Se não, eu tiro um profiler aqui e vejo.
+
+00:14:01.140 --> 00:14:03.080
+Qual o perfil que tá sendo usado?
+
+00:14:03.080 --> 00:14:08.080
+Só se eu ver nos arquivos que você passou, nas configurações.
+
+00:14:11.020 --> 00:14:14.100
+Não tem aqui não?
+
+00:14:14.220 --> 00:14:15.340
+Perfil GEDOC 6
+
+00:14:15.340 --> 00:14:17.660
+6? Boa
+
+00:14:17.660 --> 00:14:23.050
+Tá apontando pra um perfil
+
+00:14:23.050 --> 00:14:24.770
+Que tem uma chave 2
+
+00:14:24.770 --> 00:14:26.910
+Que ou a gente
+
+00:14:26.910 --> 00:14:27.770
+Não manda
+
+00:14:27.770 --> 00:14:30.190
+Ou a gente tá mandando uma chave 2
+
+00:14:30.190 --> 00:14:31.290
+Que ele não tem
+
+00:14:31.290 --> 00:14:33.890
+É, o perfil 6 não tem a chave 2
+
+00:14:33.890 --> 00:14:35.470
+Eu vou configurar aqui ela
+
+00:14:35.470 --> 00:14:38.790
+Configurar ela
+
+00:14:38.790 --> 00:14:40.730
+E a gente faz o teste
+
+00:14:40.730 --> 00:15:21.600
+Então o kit não tem chave 2
+
+00:15:21.600 --> 00:15:22.640
+E a gente tá mandando
+
+00:15:22.640 --> 00:15:27.800
+Deixa eu ver se
+
+00:15:27.800 --> 00:15:32.060
+Alguma coisa pra
+
+00:15:32.060 --> 00:15:38.140
+Ver aí
+
+00:15:38.140 --> 00:15:39.120
+Agora tem chave 2
+
+00:15:39.120 --> 00:15:39.520
+Vamos ver
+
+00:15:39.520 --> 00:15:40.500
+E vai dar certo
+
+00:15:40.500 --> 00:15:42.660
+Muito contínuo
+
+00:15:42.660 --> 00:15:44.100
+Poxa, vou ver aqui
+
+00:15:44.100 --> 00:15:45.760
+Sim
+
+00:15:45.760 --> 00:15:48.340
+Tá aqui
+
+00:15:48.340 --> 00:15:51.080
+Tá na pendente
+
+00:15:51.080 --> 00:15:53.360
+Ó, já mudou o erro, pendente
+
+00:15:53.360 --> 00:15:55.460
+Não, não, ele tava pendente antes
+
+00:15:55.460 --> 00:15:57.060
+Agora quando você clica em anexar
+
+00:15:57.060 --> 00:15:58.340
+Ele explodiu
+
+00:15:58.340 --> 00:15:59.860
+Ah, pode gritar
+
+00:15:59.860 --> 00:16:04.320
+Cadastro da chave 4 não é permitido de acordo com o pedido do gestor
+
+00:16:04.320 --> 00:16:06.440
+Beleza, mudou
+
+00:16:06.440 --> 00:16:08.040
+Pelo menos já mudou
+
+00:16:08.040 --> 00:16:09.700
+Fechou, fechou
+
+00:16:09.700 --> 00:16:12.060
+Deixa eu ir adicionando a nossa chave aqui
+
+00:16:12.060 --> 00:16:51.250
+De novo, de novo
+
+00:16:51.250 --> 00:16:52.450
+Vamos ver se altera aí o erro
+
+00:16:52.450 --> 00:17:05.610
+Arquivo anexado com sucesso
+
+00:17:05.610 --> 00:17:06.230
+Boa
+
+00:17:06.230 --> 00:17:09.570
+Maravilhoso
+
+00:17:09.570 --> 00:17:12.470
+Voltamos pra esteira
+
+00:17:12.470 --> 00:17:14.890
+Cara, deixa eu só ir com a ventiladora aqui rapidinho
+
+00:17:14.890 --> 00:17:16.490
+Que tá quente pra cacete aqui, só um minutinho, tá bom
+
+00:17:16.490 --> 00:17:18.490
+Nossa, aqui tá um frio, fica em paz, né
+
+00:17:18.490 --> 00:17:20.330
+Peraí
+
+00:17:20.330 --> 00:18:08.340
+Eu volto, deixa eu ver
+
+00:18:08.340 --> 00:18:15.320
+Mostra
+
+00:18:15.320 --> 00:18:24.040
+Guardando
+
+00:18:24.040 --> 00:18:35.810
+Processor
+
+00:18:35.810 --> 00:18:45.550
+Pendente
+
+00:18:45.550 --> 00:18:46.830
+Pendente
+
+00:18:46.830 --> 00:19:08.020
+533, essa é de
+
+00:19:08.020 --> 00:19:09.300
+Processor, beleza
+
+00:19:46.550 --> 00:19:56.430
+Documento Type, CCD assinada, ok, documento Name, nome do documento, User, Supervisor.
+
+00:19:56.430 --> 00:20:00.730
+É esses três campos só?
+
+00:20:00.990 --> 00:20:04.870
+Ah, tá bom, cara, chega.
+
+00:20:09.330 --> 00:20:14.530
+Identificação do tipo de documento, ok, tipo de documento é identificado.
+
+00:20:15.130 --> 00:20:17.150
+Identificador do nome do documento é anexado.
+
+00:20:18.570 --> 00:20:21.730
+O usuário é responsável pela anexação do documento.
+
+00:20:22.950 --> 00:20:24.330
+São quatro, são quatro.
+
+00:20:24.830 --> 00:20:27.170
+Não, esse aqui é o pai.
+
+00:20:27.630 --> 00:20:28.830
+Attach documento.
+
+00:20:28.930 --> 00:20:29.510
+É esse aqui, ó.
+
+00:20:30.410 --> 00:20:32.290
+Não, mas vai no...
+
+00:20:32.290 --> 00:20:32.870
+Aqui, ó.
+
+00:20:32.870 --> 00:20:33.730
+Quer ver onde eu tô vendo?
+
+00:20:36.430 --> 00:20:37.150
+Ah, não.
+
+00:20:37.210 --> 00:20:37.550
+Esquece.
+
+00:20:37.590 --> 00:20:38.250
+Esse mesmo é três.
+
+00:20:38.870 --> 00:20:39.370
+É três?
+
+00:20:39.890 --> 00:20:41.370
+É três.
+
+00:20:42.270 --> 00:20:42.750
+Agora...
+
+00:20:42.750 --> 00:20:43.290
+Aqui.
+
+00:20:46.560 --> 00:20:47.120
+Certo?
+
+00:20:47.120 --> 00:20:53.280
+Você cede a sigla, o nome do documento em PDF e o usuário que você tá usando, os previsores.
+
+00:20:53.400 --> 00:20:55.120
+No doc, no G-Doc.
+
+00:20:58.990 --> 00:20:59.510
+Entendi.
+
+00:21:02.080 --> 00:21:04.120
+No G-Doc ele aparece pra você?
+
+00:21:07.370 --> 00:21:08.190
+Esse documento?
+
+00:21:08.650 --> 00:21:08.910
+É.
+
+00:21:10.130 --> 00:21:10.990
+Deixa eu ver, cara.
+
+00:21:12.750 --> 00:21:13.070
+Não.
+
+00:21:14.430 --> 00:21:18.020
+Olha, tá a tabela.
+
+00:21:22.300 --> 00:21:45.690
+Cara, no G-Doc eu não sei qual que é a rotina disso.
+
+00:21:45.690 --> 00:21:47.190
+Pode falar a verdade.
+
+00:21:47.190 --> 00:21:49.530
+Beleza, beleza
+
+00:21:49.530 --> 00:21:51.190
+Pelo menos no JSON ele foi
+
+00:21:51.190 --> 00:21:53.170
+Ele subiu pro plugin
+
+00:21:53.170 --> 00:21:55.230
+Foi enviado pro plugin, é isso que importa
+
+00:21:55.230 --> 00:21:56.610
+Deixa eu pegar aqui
+
+00:21:56.610 --> 00:21:58.290
+Deixa eu pegar essa informação aqui
+
+00:21:58.290 --> 00:22:04.840
+Proposta, CPF cliente
+
+00:22:04.840 --> 00:22:05.300
+Toma aí
+
+00:22:05.300 --> 00:22:07.000
+Pode ser alguma coisa
+
+00:22:07.000 --> 00:22:33.860
+Aí inventou, beleza
+
+00:22:33.860 --> 00:22:34.800
+Menos mal
+
+00:22:34.800 --> 00:22:49.490
+O Tete é bem tranquilinho também, né?
+
+00:22:50.430 --> 00:22:50.590
+Oi?
+
+00:22:51.670 --> 00:22:53.510
+O Tete é bem tranquilo esse cara aí
+
+00:22:53.510 --> 00:22:54.930
+É
+
+00:22:54.930 --> 00:23:07.100
+Vou fazer um teste aqui agora
+
+00:23:07.100 --> 00:23:09.020
+Voltar de novo
+
+00:23:09.020 --> 00:23:12.940
+E vou anexar outro documento
+
+00:23:12.940 --> 00:23:36.940
+Opa, peraí, tô viajando
+
+00:23:36.940 --> 00:23:38.440
+Anexar
+
+00:23:38.440 --> 00:23:43.180
+Seber assinada
+
+00:23:43.180 --> 00:23:44.800
+Qual que foi mesmo que eu anexei?
+
+00:23:45.460 --> 00:23:46.540
+Seber assinada, é, foi
+
+00:23:46.540 --> 00:23:48.580
+Opa, CPF
+
+00:23:48.580 --> 00:23:53.620
+Anexar
+
+00:23:53.620 --> 00:23:56.060
+Anexada com sucesso, beleza
+
+00:23:56.060 --> 00:24:38.660
+Esteira, proposta, plugin, tá aqui ainda, aqui tá nulo, nulo, não processou, tá, agora processou, complete, beleza, 88095, 88095,
+
+00:24:38.660 --> 00:25:03.640
+Login, JSON, format
+
+00:25:03.640 --> 00:25:07.300
+Estava aqui
+
+00:25:07.300 --> 00:25:09.680
+Os dois, receber assinado
+
+00:25:09.680 --> 00:25:11.380
+CPF, perfeito
+
+00:25:11.380 --> 00:25:14.650
+Está no top
+
+00:25:14.650 --> 00:25:17.450
+Quando está nulo a gente já fez o teste
+
+00:25:17.450 --> 00:25:19.450
+Que não tinha documento nenhum, ele retornou nulo
+
+00:25:19.450 --> 00:25:21.470
+Exatamente, tem mais de um documento
+
+00:25:21.470 --> 00:25:22.790
+Ele já mostrou os dois
+
+00:25:22.790 --> 00:25:23.630
+Está levando os dois
+
+00:25:23.630 --> 00:25:28.580
+Você fez o loop ou você retornou?
+
+00:25:29.820 --> 00:25:30.780
+Eu retornei
+
+00:25:30.780 --> 00:25:32.200
+e enviei de novo, sacou?
+
+00:25:32.440 --> 00:25:34.680
+Aí ele já pegou o que já estava anexado
+
+00:25:34.680 --> 00:25:36.840
+primeiro e anexou o segundo.
+
+00:25:36.840 --> 00:25:38.320
+Anexou o segundo.
+
+00:25:38.420 --> 00:25:39.580
+Anexou o segundo.
+
+00:25:42.350 --> 00:25:43.130
+Vou mandar compilar.
+
+00:25:44.250 --> 00:25:44.650
+Objeções?
+
+00:25:47.170 --> 00:25:48.870
+Não, só um teste
+
+00:25:48.870 --> 00:25:50.150
+que a gente vai fazer diferente, tá?
+
+00:25:50.450 --> 00:25:52.430
+Não sei se a gente vai retornar o fluxo ou
+
+00:25:52.430 --> 00:25:54.570
+deixar o loop, que a gente falou, isso passa pelo
+
+00:25:54.570 --> 00:25:55.790
+processo aí de envia.
+
+00:25:56.230 --> 00:25:58.450
+Ah, não. O correto é
+
+00:25:58.450 --> 00:26:00.330
+seguir a esteira
+
+00:26:00.330 --> 00:26:02.450
+normal. É porque aqui
+
+00:26:02.450 --> 00:26:03.850
+E a gente vai numa retada mesmo
+
+00:26:03.850 --> 00:26:06.650
+Fechou, então acho que é isso mesmo
+
+00:26:06.650 --> 00:26:07.690
+Por enquanto tudo certo
+
+00:26:07.690 --> 00:26:09.270
+Demorou, fechou
+
+00:26:09.270 --> 00:26:11.690
+Falou galera, valeu
+
+00:26:11.690 --> 00:26:14.390
+Falou

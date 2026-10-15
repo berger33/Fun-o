@@ -127,3 +127,16 @@ Detalhes e timestamps em [`gravando-2026-10-06-110907/incertezas.md`](gravando-2
 6. **Relatório:** resolver campos, filtros, formato (fala oscila entre `RPT`/`SIG`) e padrão de emissão.
 7. **Estado da entrega:** comitê, horas, urgência e release descritos são históricos e não representam aprovação/prazo atual.
 8. **Privacidade/cobertura:** sistema/projeto de referência em `00:18:23.90–00:18:27.28` foi substituído; conversa paralela sobre incidente em `00:23:04.06–00:23:47.48` foi omitida. ASR 683 segmentos; MP4/EF/telas não foram revisados, e não houve teste/SQL. Manter **em revisão**.
+
+## Pendências de `Gravando 2026-09-23 164626.mp4` (2026-10-15)
+
+Detalhes em [`gravando-2026-09-23-164626/incertezas.md`](gravando-2026-09-23-164626/incertezas.md).
+
+1. **Nomenclatura do objeto JSON:** “Attach documento” no ASR × `attachment_document` × `attached_document` em gravações relacionadas. Confirmar a EF/schema vigente; não escolher por inferência.
+2. **Campos e contrato:** tipo, nome e usuário são citados, mas grafia, tipo de dado, origem, obrigatoriedade, nulabilidade e multiplicidade não foram validados.
+3. **Sem anexos:** relato de saída `null`; confirmar se o contrato exige `null`, lista vazia ou ausência do campo.
+4. **Múltiplos anexos:** fala relata dois itens no JSON após retornar/reexecutar. Confirmar persistência, ordem, duplicação e aceite em teste autorizado.
+5. **Perfil GED:** mensagens envolvendo perfil/chaves e um ajuste subsequente foram reconhecidas pelo ASR, sem revisão visual; não converter números ou mudanças relatadas em configuração operacional.
+6. **Retorno versus loop:** conversa não fecha o fluxo de reentrada, retry ou idempotência.
+7. **Cobertura:** 396 segmentos; último cue `00:26:14.39`, áudio `00:33:59.98`, com aproximadamente `00:07:45.59` sem transcrição no final e outros intervalos sem segmentos. Revisão humana integral pendente; manter **em revisão**.
+8. **Fonte primária:** o MP4 não foi baixado nem inspecionado visualmente neste lote; relatos de anexação e sucesso não foram confirmados contra tela/JSON.

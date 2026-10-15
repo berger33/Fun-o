@@ -1,0 +1,407 @@
+# Transcrição com timestamps — Gravando 2026-09-23 164626.mp4
+
+> Reprodução integral do arquivo ASR `transcricao_bruta.txt`, sem cortes nem mascaramento, conforme a instrução expressa do responsável registrada em 2026-10-14. A saída é automática (`faster-whisper large-v3`), não foi revisada contra o áudio ou as imagens neste lote e não deve ser tratada como transcrição humana validada. O último cue termina em 00:26:14.39, enquanto a duração declarada do áudio é 00:33:59.98; o período não coberto permanece uma pendência.
+
+---
+
+# Transcrição automática — Gravando 2026-09-23 164626.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 396
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] Oi? Não entendi, cara.
+[00:00:03] Já tava com o óleo quente aí.
+[00:00:06] Ah, pode crer.
+[00:00:11] O Zé me deu a ideia aqui, ele falou o seguinte,
+[00:00:13] cara, faz o teste na base do CQ,
+[00:00:17] que eu achei até que ele quisesse que compilasse a aplicação
+[00:00:21] e disponibilizasse já pra vocês testarem em paralelo.
+[00:00:25] Ele falou, não, faz o teste na base deles
+[00:00:27] e pede pra eles acompanharem,
+[00:00:30] que já acelera
+[00:00:32] meio que o seu teste, o teste
+[00:00:34] deles. Então, eu não compilei
+[00:00:36] a aplicação ainda, entendeu?
+[00:00:38] Eu tô fazendo o modo debug,
+[00:00:39] mas já tô fazendo a base de vocês.
+[00:00:42] Fechou? Isso aí vai ser só
+[00:00:43] plugin, Gleison? Ou vai entrar autorizador também?
+[00:00:46] Tem autorizador e plugin.
+[00:00:48] Esse,
+[00:00:49] eu peguei um documento aqui
+[00:00:51] de evidência de vocês, que ele é
+[00:00:53] similar ao que a gente fez aqui,
+[00:00:55] que ele envolve um plugin de
+[00:00:57] vídeo proposta ao sistema externo.
+[00:00:58] Deixa eu minimizar aqui, vocês estão vendo minha tela, né?
+[00:01:01] Sim
+[00:01:02] E ó, implementando o módulo
+[00:01:08] Serviconos, envio de propósito
+[00:01:11] Sistema externo
+[00:01:12] E não colocou demanda aqui
+[00:01:14] É
+[00:01:16] É que não tem descrição de demanda
+[00:01:19] Mas eu sei que ela envolve um atributo
+[00:01:21] Então tem autorizador, plugin aqui
+[00:01:23] Aqui tem um plugin executado
+[00:01:30] E eu vi que
+[00:01:32] A série de vocês já está configurada
+[00:01:34] Então eu já aproveitei e estou fazendo exatamente
+[00:01:36] com os parâmetros que vocês já colocaram
+[00:01:37] conforme nesse teste. E deu bom aqui.
+[00:01:40] Já bateu lá no serviço.
+[00:01:44] Só que aqui,
+[00:01:45] vocês não colocaram a descrição do processo,
+[00:01:47] mas não tem relevância não. Era só pra mostrar
+[00:01:50] aqui, deixa eu ver, resultado inspirado
+[00:01:51] no campo CNPJ. Ah, é o campo CNPJ
+[00:01:54] que entrou aqui, tá vendo?
+[00:01:56] Aham.
+[00:01:57] Esses dois atributos aqui
+[00:02:01] que entraram novos.
+[00:02:02] No nosso caso aqui,
+[00:02:03] a gente tá entrando com
+[00:02:05] O documento em anexo
+[00:02:07] Nesse caso aqui
+[00:02:09] A taxa de document
+[00:02:12] Beleza
+[00:02:14] Aí eu fiz um primeiro teste aqui
+[00:02:16] E cara
+[00:02:18] Eu tava vendo aqui que eu acho que tem outra máquina
+[00:02:20] Do CQ rodando aqui
+[00:02:21] Essa aqui AKWK
+[00:02:24] 01232CQ
+[00:02:27] É a minha
+[00:02:28] Mas isso aí é outro plugin
+[00:02:30] Esse aí é o plugin de esteira
+[00:02:32] Ah
+[00:02:34] Ah, pode criar o plugin de esteira, tá?
+[00:02:36] Beleza.
+[00:02:37] Eu coloquei o nome da proposta certa.
+[00:02:39] O nome da proposta, é.
+[00:02:41] É, eu coloquei a proposta e trouxe ele também.
+[00:02:43] O sistema externo.
+[00:02:45] E no caso, o sistema externo aqui seria o meu aqui, é da minha máquina essa aqui, 182710.
+[00:02:53] Então, esse ID, 533...
+[00:02:59] Não, é o outro, eu acho, não?
+[00:03:04] Deixa eu mandar aqui pro seu.
+[00:03:05] Esse cara aqui
+[00:03:06] Mas é um outro ID que eu tenho
+[00:03:10] Mas é pelo
+[00:03:18] CSIDcons
+[00:03:22] Mas esse é de um outro
+[00:03:36] Do antigo ainda
+[00:03:38] Pega do seu ali pra gente ver
+[00:03:39] da sua proposta
+[00:03:40] da minha proposta aqui
+[00:03:43] peraí
+[00:03:44] a gente tava até hesitando
+[00:03:48] pra criar o IPT
+[00:03:49] 87 ali ó, segundo campo
+[00:03:52] esse aqui, certo?
+[00:03:54] é isso
+[00:03:55] ele vai tá no JSON, né?
+[00:04:14] ok
+[00:04:14] e esse, por exemplo, esse teste aí
+[00:04:19] Ele chegou a adicionar
+[00:04:21] Uma nova linha
+[00:04:23] Com essa informação
+[00:04:25] Ele também vai adicionar linha com a informação ou não?
+[00:04:28] Só no JSON
+[00:04:29] O documento está achado aqui
+[00:04:31] Mas a linha, eu entendi o que você falou
+[00:04:33] A linha aqui no registro
+[00:04:34] Eu acho que só no JSON
+[00:04:37] Vou dar uma olhada aqui depois
+[00:04:41] Mas eu também imaginei que seria só no JSON
+[00:04:43] Só que o meu JSON aqui
+[00:04:47] Ele está nulo
+[00:04:47] Aí que tá
+[00:04:50] Esse é o ponto
+[00:04:51] Como que eu anexo
+[00:04:55] Um documento nesse caso aqui
+[00:05:00] Pra fazer esse teste
+[00:05:01] Tem uma rotina
+[00:05:03] Mas eu não faço ideia
+[00:05:05] Se o documento necessita de formatação
+[00:05:07] Eu nunca mexi com essa rotina antes
+[00:05:09] Mas ela tem uma rotina
+[00:05:11] No próprio autorizador
+[00:05:12] Vai lá no autorizador pra você ver
+[00:05:14] Consulta
+[00:05:20] Mixar
+[00:05:24] segunda rotina, anexar, consultar
+[00:05:26] documentação.
+[00:05:28] Você tem algum PDF
+[00:05:31] de uma página aí ou não?
+[00:05:33] A gente gera aqui.
+[00:05:35] Se tiver.
+[00:05:37] Ainda deve ter alguma coisa aqui.
+[00:05:40] Então, URL
+[00:05:42] válida.
+[00:05:42] O GE
+[00:05:46] não está configurado não. Você tem o
+[00:05:49] URL aí?
+[00:05:51] Tem.
+[00:05:51] Aquele de configuração?
+[00:05:55] Vou mandar aqui pra você.
+[00:05:56] Tem algum aqui?
+[00:05:58] Um, dois, três.
+[00:06:35] iniciar o autorizador de novo, é bom, né?
+[00:06:37] Vou insetar ele de novo.
+[00:06:40] Vou tirar aqui o documento.
+[00:07:05] Qual que é o número da proposta?
+[00:07:06] Você tem ela aí?
+[00:07:08] Tem.
+[00:07:09] Apesar que eu não sei...
+[00:07:11] É, não, não sei se era certo.
+[00:07:16] Espera aí que eu vou te passar ela agora.
+[00:07:18] É, não, eu tava pensando em adicionar aqui no meu autorizador.
+[00:07:24] Pra ver como é que vai ser.
+[00:07:28] Mas não sei se eu interfiri em alguma coisa com o ponto que saiu, que também é autorizador, né?
+[00:07:33] Aqui já tá pro banco, pra base de banco texto, tá?
+[00:07:45] Maravilhoso
+[00:08:07] O login não tá nada relevante
+[00:08:17] Beleza
+[00:08:19] Vocês estão participando desse plantão que tá rolando?
+[00:08:34] Esse aqui por enquanto não, cara
+[00:08:36] Também
+[00:08:38] Gente, eu tenho que entender essa porra, hein
+[00:08:41] O que é pra testar
+[00:08:43] Já basta a gente estar
+[00:08:45] vindo no presencial, mano.
+[00:08:48] Vocês estão trabalhando no presencial?
+[00:08:50] Pô, estamos vindo uma vez na semana.
+[00:08:52] Nunca foi nada.
+[00:08:54] Mas por quê?
+[00:08:55] Isso foi imposto agora?
+[00:08:57] Ou vocês já faziam isso antes?
+[00:08:59] Faz um mês. Um mês passado.
+[00:09:02] Nunca fiz.
+[00:09:03] Nunca fizeram?
+[00:09:05] É novo, então.
+[00:09:08] Eu não tenho como fazer isso
+[00:09:09] porque eu estou no Espírito Santo.
+[00:09:10] Eles podiam fazer pelo menos um convite
+[00:09:14] Nessa galera aí, de vez em quando
+[00:09:15] Pra conhecer a função, integrar mais com a empresa
+[00:09:18] Pegar umas cabeças aí que estão mais tempo
+[00:09:21] Será que é custo também pra função?
+[00:09:24] É, mano
+[00:09:25] Mas eu acho interessante, cara
+[00:09:27] Porque, tipo assim
+[00:09:28] Eu acho que você gera
+[00:09:32] Um elo mais
+[00:09:33] Mais forte com a empresa que você trabalha
+[00:09:36] Tipo, eu sou a tua distância
+[00:09:38] Eu nunca vi a cara, não sei
+[00:09:39] Eu faço ideia nem do tamanho
+[00:09:40] a galera que
+[00:09:42] eu falo são você, mas assim
+[00:09:45] é distância, nunca vi ninguém presencial
+[00:09:47] então não sei nem o peso
+[00:09:49] quando você aparece presencialmente
+[00:09:51] é uma outra pegada
+[00:09:53] é tipo
+[00:09:55] o que o povo fala
+[00:09:57] quando você assiste futebol
+[00:09:59] pela televisão, quando você vai no estádio
+[00:10:02] sua percepção muda
+[00:10:03] todo mundo fala isso
+[00:10:05] eu nunca fui, mas todo mundo comenta
+[00:10:07] enfim, eu acho que seria um custo altíssimo
+[00:10:10] Tem uma galera que trabalha
+[00:10:11] Mas aqui é legal
+[00:10:15] Aqui a região
+[00:10:15] Perto da 25, centro de São Paulo
+[00:10:18] Tem uma igreja aqui
+[00:10:20] Mano, tem uma igreja aqui
+[00:10:22] Eu nunca tinha entrado
+[00:10:23] Hoje eu entrei lá
+[00:10:24] O documento é o que eu gerei agora?
+[00:10:28] Não, não
+[00:10:28] O tipo do documento é por CPS
+[00:10:31] Tem autorização
+[00:10:32] Por CPS pra gente ver
+[00:10:37] Ah, pode crer
+[00:10:38] isso aqui então é o local onde a gente anexa o documento a proposta para poder enviar para o
+[00:11:17] o plugin de envio de propósito
+[00:11:19] do sistema CERN, certo?
+[00:11:22] É aqui que a gente vê o Nexo.
+[00:11:25] Eu vou abrir o
+[00:11:25] GDock aqui pra ver.
+[00:11:27] Mas, mano, eu nunca mexi nessa
+[00:11:29] rotina, tá?
+[00:11:31] Vou tentar
+[00:11:35] caçar aqui no GDock.
+[00:11:37] Beleza, dá uma olhada aí.
+[00:11:56] Disponível de identificar a documentação anexa
+[00:11:58] para compor informações do cliente.
+[00:12:02] Hum, acho que eu entendi.
+[00:12:04] Abre aí, deixa eu ver.
+[00:12:05] Vai lá no autorizador rapidão
+[00:12:10] Alguma coisa
+[00:12:10] Tem um tipo de documento ali
+[00:12:18] Vamos ver qual que tem ali
+[00:12:20] VCCB assinado
+[00:12:25] Tem esse perfil aqui desse cara
+[00:12:28] O cadastro da chave 2
+[00:12:45] Não é permitido de acordo com o perfil do GEDOC
+[00:12:48] Tá
+[00:12:49] Tá vendo aqui
+[00:12:50] É permitido
+[00:12:52] Não, não, não.
+[00:13:36] Você consegue bater, Gleison, qual o perfil que tá sendo usado?
+[00:13:43] Qualquer coisa também tira um profiler aqui.
+[00:13:48] Qual o perfil que está sendo?
+[00:13:51] Usado aí no GDock, divulgando.
+[00:13:53] Na hora que ele bate esse erro pra mim.
+[00:13:55] Se não, eu tiro um profiler aqui e vejo.
+[00:14:01] Qual o perfil que tá sendo usado?
+[00:14:03] Só se eu ver nos arquivos que você passou, nas configurações.
+[00:14:11] Não tem aqui não?
+[00:14:14] Perfil GEDOC 6
+[00:14:15] 6? Boa
+[00:14:17] Tá apontando pra um perfil
+[00:14:23] Que tem uma chave 2
+[00:14:24] Que ou a gente
+[00:14:26] Não manda
+[00:14:27] Ou a gente tá mandando uma chave 2
+[00:14:30] Que ele não tem
+[00:14:31] É, o perfil 6 não tem a chave 2
+[00:14:33] Eu vou configurar aqui ela
+[00:14:35] Configurar ela
+[00:14:38] E a gente faz o teste
+[00:14:40] Então o kit não tem chave 2
+[00:15:21] E a gente tá mandando
+[00:15:22] Deixa eu ver se
+[00:15:27] Alguma coisa pra
+[00:15:32] Ver aí
+[00:15:38] Agora tem chave 2
+[00:15:39] Vamos ver
+[00:15:39] E vai dar certo
+[00:15:40] Muito contínuo
+[00:15:42] Poxa, vou ver aqui
+[00:15:44] Sim
+[00:15:45] Tá aqui
+[00:15:48] Tá na pendente
+[00:15:51] Ó, já mudou o erro, pendente
+[00:15:53] Não, não, ele tava pendente antes
+[00:15:55] Agora quando você clica em anexar
+[00:15:57] Ele explodiu
+[00:15:58] Ah, pode gritar
+[00:15:59] Cadastro da chave 4 não é permitido de acordo com o pedido do gestor
+[00:16:04] Beleza, mudou
+[00:16:06] Pelo menos já mudou
+[00:16:08] Fechou, fechou
+[00:16:09] Deixa eu ir adicionando a nossa chave aqui
+[00:16:12] De novo, de novo
+[00:16:51] Vamos ver se altera aí o erro
+[00:16:52] Arquivo anexado com sucesso
+[00:17:05] Boa
+[00:17:06] Maravilhoso
+[00:17:09] Voltamos pra esteira
+[00:17:12] Cara, deixa eu só ir com a ventiladora aqui rapidinho
+[00:17:14] Que tá quente pra cacete aqui, só um minutinho, tá bom
+[00:17:16] Nossa, aqui tá um frio, fica em paz, né
+[00:17:18] Peraí
+[00:17:20] Eu volto, deixa eu ver
+[00:18:08] Mostra
+[00:18:15] Guardando
+[00:18:24] Processor
+[00:18:35] Pendente
+[00:18:45] Pendente
+[00:18:46] 533, essa é de
+[00:19:08] Processor, beleza
+[00:19:46] Documento Type, CCD assinada, ok, documento Name, nome do documento, User, Supervisor.
+[00:19:56] É esses três campos só?
+[00:20:00] Ah, tá bom, cara, chega.
+[00:20:09] Identificação do tipo de documento, ok, tipo de documento é identificado.
+[00:20:15] Identificador do nome do documento é anexado.
+[00:20:18] O usuário é responsável pela anexação do documento.
+[00:20:22] São quatro, são quatro.
+[00:20:24] Não, esse aqui é o pai.
+[00:20:27] Attach documento.
+[00:20:28] É esse aqui, ó.
+[00:20:30] Não, mas vai no...
+[00:20:32] Aqui, ó.
+[00:20:32] Quer ver onde eu tô vendo?
+[00:20:36] Ah, não.
+[00:20:37] Esquece.
+[00:20:37] Esse mesmo é três.
+[00:20:38] É três?
+[00:20:39] É três.
+[00:20:42] Agora...
+[00:20:42] Aqui.
+[00:20:46] Certo?
+[00:20:47] Você cede a sigla, o nome do documento em PDF e o usuário que você tá usando, os previsores.
+[00:20:53] No doc, no G-Doc.
+[00:20:58] Entendi.
+[00:21:02] No G-Doc ele aparece pra você?
+[00:21:07] Esse documento?
+[00:21:08] É.
+[00:21:10] Deixa eu ver, cara.
+[00:21:12] Não.
+[00:21:14] Olha, tá a tabela.
+[00:21:22] Cara, no G-Doc eu não sei qual que é a rotina disso.
+[00:21:45] Pode falar a verdade.
+[00:21:47] Beleza, beleza
+[00:21:49] Pelo menos no JSON ele foi
+[00:21:51] Ele subiu pro plugin
+[00:21:53] Foi enviado pro plugin, é isso que importa
+[00:21:55] Deixa eu pegar aqui
+[00:21:56] Deixa eu pegar essa informação aqui
+[00:21:58] Proposta, CPF cliente
+[00:22:04] Toma aí
+[00:22:05] Pode ser alguma coisa
+[00:22:07] Aí inventou, beleza
+[00:22:33] Menos mal
+[00:22:34] O Tete é bem tranquilinho também, né?
+[00:22:50] Oi?
+[00:22:51] O Tete é bem tranquilo esse cara aí
+[00:22:53] É
+[00:22:54] Vou fazer um teste aqui agora
+[00:23:07] Voltar de novo
+[00:23:09] E vou anexar outro documento
+[00:23:12] Opa, peraí, tô viajando
+[00:23:36] Anexar
+[00:23:38] Seber assinada
+[00:23:43] Qual que foi mesmo que eu anexei?
+[00:23:45] Seber assinada, é, foi
+[00:23:46] Opa, CPF
+[00:23:48] Anexar
+[00:23:53] Anexada com sucesso, beleza
+[00:23:56] Esteira, proposta, plugin, tá aqui ainda, aqui tá nulo, nulo, não processou, tá, agora processou, complete, beleza, 88095, 88095,
+[00:24:38] Login, JSON, format
+[00:25:03] Estava aqui
+[00:25:07] Os dois, receber assinado
+[00:25:09] CPF, perfeito
+[00:25:11] Está no top
+[00:25:14] Quando está nulo a gente já fez o teste
+[00:25:17] Que não tinha documento nenhum, ele retornou nulo
+[00:25:19] Exatamente, tem mais de um documento
+[00:25:21] Ele já mostrou os dois
+[00:25:22] Está levando os dois
+[00:25:23] Você fez o loop ou você retornou?
+[00:25:29] Eu retornei
+[00:25:30] e enviei de novo, sacou?
+[00:25:32] Aí ele já pegou o que já estava anexado
+[00:25:34] primeiro e anexou o segundo.
+[00:25:36] Anexou o segundo.
+[00:25:38] Anexou o segundo.
+[00:25:42] Vou mandar compilar.
+[00:25:44] Objeções?
+[00:25:47] Não, só um teste
+[00:25:48] que a gente vai fazer diferente, tá?
+[00:25:50] Não sei se a gente vai retornar o fluxo ou
+[00:25:52] deixar o loop, que a gente falou, isso passa pelo
+[00:25:54] processo aí de envia.
+[00:25:56] Ah, não. O correto é
+[00:25:58] seguir a esteira
+[00:26:00] normal. É porque aqui
+[00:26:02] E a gente vai numa retada mesmo
+[00:26:03] Fechou, então acho que é isso mesmo
+[00:26:06] Por enquanto tudo certo
+[00:26:07] Demorou, fechou
+[00:26:09] Falou galera, valeu
+[00:26:11] Falou
