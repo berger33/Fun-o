@@ -353,7 +353,7 @@ automação frágil e material bonito que não encontra defeito.</p>
 # ----------------------------------------------------------------------------- comunicação
 
 SINTESES["comunicacao"] = """
-<h3>Comunicação e trabalho em equipe</h3>
+<h3>Trabalhar bem em time técnico</h3>
 <p>Trabalhar em time técnico envolve combinar expectativas de forma explícita. Duas frentes aparecem
 com força no material: <b>como pedir o que precisa</b> para trabalhar bem e <b>como conduzir uma
 dúvida técnica</b> até alguém resolver.</p>

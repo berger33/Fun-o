@@ -27,7 +27,7 @@ Os índices transversais em `materiais/` conectam gravações, consultas SQL, si
 | `python3 tools/validar_materiais.py` | Auditoria do §6 do plano: arquivos obrigatórios, metadados, timestamps, perguntas, links e varredura de privacidade (CPF/CNPJ, e-mail, telefone, segredos). Nunca imprime o valor sensível encontrado. Saída: 0 ok, 1 falhas, 2 achado de privacidade. |
 | `python3 tools/transcrever.py --video "ARQUIVO.mp4"` | Transcreve com timestamps (`faster-whisper`), gerando `transcricao_bruta.txt`, `.srt`, `.vtt` e `transcricao_meta.json`. Precisa dos pesos do modelo — rode no runner do CI. |
 | `python3 tools/reconstruir_videos.py` | Reconstrói os quatro vídeos divididos (exige todas as partes). |
-| `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`): cada capítulo temático abre com a **explicação do assunto** (síntese autoral) e segue com o detalhamento por origem — guias, procedimentos, glossários, perguntas, pendências, índices e trilhas. O texto **explica** o conhecimento: não há marcas de tempo, trechos citados de fala nem nomes de arquivo, ligação interna ou jargão de controle do acervo. A limpeza acontece **antes** de escrever a saída e o gerador **falha** se algum resquício passar. |
+| `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`) como **base de consulta**: capítulos temáticos (negócio, sistemas e telas, banco e consultas, API, procedimentos, testes, infraestrutura, automação, comunicação) escritos por assunto, com glossário único A–Z, perguntas de revisão e pontos a validar consolidados. Não há inventário de reuniões nem bloco por origem. O texto **explica** o conhecimento: não há marcas de tempo, trechos citados de fala nem nomes de arquivo, ligação interna ou jargão de controle do acervo. A limpeza acontece **antes** de escrever a saída e o gerador **falha** se algum resquício passar. |
 | `python3 tools/servir_material.py` | Serve o material gerado em `0.0.0.0:8000` (rota `/download` para baixar o arquivo). Não expõe nada além da pasta de saída; listagem de diretório desativada. |
 
 As duas verificações rodam automaticamente em cada push/PR pelo workflow `.github/workflows/auditar-materiais.yml`, que faz checkout **sem** baixar LFS.
@@ -51,8 +51,8 @@ python3 tools/servir_material.py                  # serve em http://localhost:80
 
 O documento é **autocontido** (CSS e busca embutidos, sem dependência de rede), tem índice lateral,
 busca instantânea, blocos recolhíveis e estilo de impressão. Ele não cita nomes de arquivos nem
-ligações internas: as fontes aparecem por rótulo descritivo com selos de categoria e de
-confiabilidade.
+ligações internas e não relata reuniões: cada assunto aparece uma única vez, reunido de todas as
+fontes, e o que ainda depende de confirmação fica separado em **Pontos a validar**.
 
 A mesma execução grava **duas** cópias do documento:
 
@@ -71,12 +71,14 @@ https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/ba
 A cópia versionada é **escrita pelo gerador** a cada execução (use `--sem-distribuivel` para pular):
 não edite o arquivo à mão nem o versione separadamente do gerador, senão ele divergirá do acervo.
 
-**Como o material foi escrito.** O objetivo é aprender o assunto, não acompanhar o registro: cada
-capítulo temático começa com uma explicação autoral do domínio (regras, fluxo, nomenclatura) e só
-depois desce ao detalhe por origem. Nada no texto aponta *quando* algo foi dito — os carimbos de
-tempo, as âncoras de mensagem, as datas de análise e a narrativa de captura (ASR, transcrição,
-amostragem de tela) foram removidos na limpeza, e as falas citadas saem inteiras em vez de saírem
-apenas as aspas. Quando a fonte indicava horário como **dado** de negócio — um `SELECT` com coluna de
+**Como o material foi escrito.** O objetivo é aprender o assunto, não acompanhar o registro. Cada
+capítulo temático começa com uma explicação autoral do domínio (regras, fluxo, nomenclatura) e
+segue com as fichas de consulta do mesmo assunto; as seções equivalentes de todas as fontes são
+fundidas em um único texto, sem repetição. Nada no texto aponta *quando* algo foi dito nem *quem*
+disse: os carimbos de tempo, as âncoras de mensagem, as datas de análise, a narrativa de captura
+(ASR, transcrição, amostragem de tela) e até o vocabulário de registro ("nesta gravação", "a
+conversa mostra") foram removidos na limpeza — a informação fica, o relato de reunião sai. As falas
+citadas saem inteiras em vez de saírem apenas as aspas. Quando a fonte indicava horário como **dado** de negócio — um `SELECT` com coluna de
 data, um payload com timestamp — o valor permanece, porque ali ele é conteúdo técnico e não
 referência de vídeo.
 

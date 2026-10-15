@@ -23,6 +23,7 @@ import os
 import re
 import datetime
 import zipfile
+import unicodedata
 
 import markdown
 
@@ -309,7 +310,19 @@ def limpar(texto: str) -> str:
     for i, parte in enumerate(partes):
         if parte.startswith("```"):
             continue
-        partes[i] = _limpar_segmento(parte)
+        # a limpeza e a rede de segurança agem bloco a bloco: um parágrafo muito narrativo
+        # não arrasta consigo o resto do documento
+        trechos = []
+        for bloco in re.split(r"\n\s*\n", parte):
+            if not bloco.strip():
+                trechos.append(bloco)
+                continue
+            limpo = _limpar_segmento(bloco)
+            tamanho = len(bloco.strip())
+            if tamanho > 220 and len(limpo) < 0.5 * tamanho:
+                limpo = _limpar_segmento(bloco, narrativa="frases")
+            trechos.append(limpo)
+        partes[i] = "\n\n".join(t for t in trechos if t.strip())
     return "\n".join(p for p in partes if p.strip())
 
 
@@ -339,7 +352,7 @@ def remover_metadados(texto: str) -> str:
     return "\n".join(saida)
 
 
-def _limpar_segmento(t: str) -> str:
+def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     # subseções de controle do acervo e de narrativa de captura saem antes do filtro por linha,
     # para que o título ainda esteja presente quando a subseção for reconhecida
     t = remover_subsecoes_internas(t)
@@ -415,6 +428,13 @@ def _limpar_segmento(t: str) -> str:
     t = fora_de_codigo_inline(t, remover_citacoes)   # primeiro, falas que vieram marcadas como código
     t = com_codigo_protegido(t, remover_citacoes)    # depois, citações que atravessam campos
 
+    # ---- fora a narrativa sobre as fontes: o material fala do trabalho, não de quem falou
+    t = sem_metarreferencia(sem_referencia_ao_meio(t))
+    if narrativa:
+        if narrativa is True:
+            t = sem_narrativa_de_fonte(t)
+        t = limpar_narrativa_por_frase(t)
+
     # sobras de referência cruzada
     t = re.sub(r"(?i)\(\s*(?:ver|vide|conferir|cf\.)\s[^)]{0,140}\)", "", t)
     t = re.sub(r"(?i)[—–-]\s*(?:ver|vide|conferir)\s+(?:o\s+|a\s+)?se[çc][ãa]o\s+[\d\.]+[^.\n]*", "", t)
@@ -455,6 +475,8 @@ def _limpar_segmento(t: str) -> str:
     t = re.sub(r"(?i)\b(?:de|do|da|em|com|para|e)\s+(?=[,.;:])", "", t)
     t = re.sub(r"\s+([,.;:!?])", r"\1", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
+    # última passada: sobrou referência ao registro depois de uma remoção mais acima
+    t = sem_metarreferencia(t)
     t = remover_titulos_vazios(t)
     t = equilibrar_crases(t)
     t = re.sub(r"[ \t]{2,}", " ", t)
@@ -729,6 +751,278 @@ def ajustar_pontuacao(html_txt: str) -> str:
     return "".join(partes)
 
 
+NARRATIVA_NOMES = (r"interlocutor\w*|orientador\w*|apresentador\w*|operador\w*|analista\w*|tester|"
+                 r"participantes|gestor\w*|colega\w*|usu\w*rios?|autor\w*|instrutor\w*|pessoas?|"
+                 r"respons[áa]vel pela grava[çc][ãa]o")
+NARRATIVA_MIDIA = (r"grava[çc][ãa]o|conversa|reuni[ãa]o|chamada|v[íi]deo|demonstra[çc][ãa]o|fonte do acervo|"
+                 r"chat|falas?|aula|treinamento|transcri[çc][ãa]o|amostragem|pacote de an[áa]lise|"
+                 r"documento do acervo|material do acervo")
+# o que fala do meio (tela, print, captura) só sai quando a frase é sobre não mostrar/não confirmar
+NARRATIVA_MEIO = r"tela|print|captura|imagem|figura|planilha|documento|pacote|v[íi]deo|pdf"
+
+# frase que só relata a captura, sem regra nem procedimento: sai inteira
+FRASE_SEM_CONTEUDO = re.compile(
+    r"(?i)^(?:"
+    r"(?:n[ãa]o\s+)?(?:foi|foram|é|são|est[áa]|est[ãa]o)\s+"
+    r"(?:mencionad|citad|relatad|dito|comentad|discutid|descrit|indicad|registrad|vist|visto|observad|"
+    r"demonstrad|confirmad|valid|executad|reproduzid)\w*"
+    r"|(?:a|o|os|as)\s+(?:" + NARRATIVA_MIDIA + r")\b"
+    r"|(?:a|o|os|as)\s+(?:" + NARRATIVA_MEIO + r")\b[^.]{0,60}?\b(?:n[ãa]o|nenhum\w*|sem)\b[^.]{0,60}?\b"
+    r"(?:mostra|exibe|confirma|traz|apresenta|aparece|aparecem|consta|demonstra|registra)\b"
+    r"|(?:a|o|os|as)\s+(?:" + NARRATIVA_NOMES + r")\b[^.]{0,40}?\b(?:navega|comenta|descreve|questiona|"
+    r"responde|pergunta|observa|relata|conclui|recomenda|decide|tenta|abre|segue|entra|percorre|come[çc]a|"
+    r"admite|alega|aponta|nota|ressalta|refor[çc]a|complementa|completa|acrescenta|lembra|recorda|"
+    r"entende|acredita|espera|indica|mostra|detalha|repassa|sinaliza|confirma|esclarece)\b"
+    r"|(?:segundo|conforme|de acordo com|para)\s+(?:o|a|os|as)\s+(?:" + NARRATIVA_NOMES + r"|" + NARRATIVA_MIDIA + r")\b"
+    r"|(?:nada|nenhum\w*)\s+(?:foi|é)\s+"
+    r"|vale (?:registrar|notar|destacar)"
+    r"|(?:a|o)\s+(?:" + NARRATIVA_NOMES + r")\s+(?:navega|comenta|descreve|apresenta|questiona|responde|"
+    r"pergunta|afirma|diz|relata|discute|mostra|ensina|explica|sugere|prop[õo]e|cita|menciona|informa|"
+    r"confirma|esclarece|pontua|destaca|abre|segue|entra|percorre|come[çc]a|tenta|tenta novamente|decide|"
+    r"conclui|recomenda|observa|analisa|estuda|testa|executa)\b"
+    r"|n[ãa]o h[áa] (?:evid[êe]ncia|captura|registro|confirma[çc][ãa]o|prova|demonstra[çc][ãa]o)"
+    r"|n[ãa]o (?:confirma|demonstra|mostra|deixa claro|esclarece|registra|indica|permite|consta|aparece)"
+    r"|(?:a|o|os|as)\s+(?:tela|captura|print|imagem|figura|compartilhamento de tela|amostragem)\s+"
+    r"(?:amostrad\w+|mostrad\w+|compartilhad\w+|exibid\w+|revisad\w+|citad\w+)"
+    r"|sem (?:evid[êe]ncia|captura|confirma[çc][ãa]o|execu[çc][ãa]o)"
+    r"|(?:o|a)\s+leitura\s+(?:de tela|do quadro)"
+    r"|a (?:leitura|interpreta[çc][ãa]o)\b[^.]{0,40}(?:é|fica)\b"
+    r"|(?:posteriormente|depois|em seguida|por fim|ao final|no encerramento|no in[íi]cio)\s*,?\s*(?:o|a|os|as)\s"
+    r")"
+)
+
+# "o interlocutor comenta que, em geral, X" → "X"
+FRASE_COM_CONTEUDO = re.compile(
+    r"(?i)^(?:o|a|os|as)\s+(?:" + NARRATIVA_NOMES + r"|" + NARRATIVA_MIDIA + r")\s+"
+    r"[^.]{0,80}?\b(?:que|se)\s+(.{{10,}})$"
+)
+# "É mencionado X" / "Foi citado X" → "X"
+FRASE_PASSIVA = re.compile(
+    r"(?i)^(?:é|s[ãa]o|foi|foram)\s+(?:mencionad|citad|relatad|comentad|descrit|indicad)\w*\s+(.{{10,}})$")
+
+
+FRASE_QUEBRADA = re.compile(
+    r"(?i)"
+    r"\b(?:em|de|do|da|no|na|com|para|por|como|que|e|ou|o|a|os|as|é|são|foi|foram|est[áa]|est[ãa]o)\s*[,;]"
+    r"|\s+,\s|\s+/\s*[,.;]|\betc\.,?\s*$|\bcomo\s*\."
+    r"|\(\s*\)|\b(?:o|a)\s+(?:é|são)\s+associad|\bexpandid[oa] como\s*[,.e]"
+)
+# frase sobre a captura: "não foi demonstrado", "não são confirmadas"
+FRASE_NAO_CONFIRMA = re.compile(
+    r"(?i)\bn[ãa]o\s+(?:s[ãa]o|foi|foram|é|est[áa]|est[ãa]o)?\s*"
+    r"(?:demonstrad|confirmad|mostrad|registrad|vist[oa]?|valid|executad|reproduzid|documentad|esclarecid)\w*"
+)
+
+
+def _texto_util(frase: str) -> str:
+    """Decide o destino de uma frase: fica como está, perde o enquadramento ou sai."""
+    limpa = frase.strip()
+    if not limpa:
+        return ""
+    # linha curta (termo, título, item de lista, rótulo) nunca é narrativa: fica como está,
+    # salvo se a remoção de uma citação a deixou sem sentido
+    if len(limpa.split()) < 6:
+        return "" if FRASE_QUEBRADA.search(limpa) else limpa
+    if FRASE_SEM_CONTEUDO.match(limpa) or FRASE_NAO_CONFIRMA.search(limpa):
+        return ""
+    if FRASE_QUEBRADA.search(limpa):
+        return ""
+    # resquícios de quem falou
+    limpa = re.sub(r"(?i)\b(?:verbalmente|pela fala|por fala|na fala|da fala|a fala|em fala)\b", "", limpa)
+    limpa = re.sub(r"\s{2,}", " ", limpa).strip(" ,;")
+    if len(limpa.split()) < 4:
+        return ""
+    return limpa
+
+
+def sem_referencia_ao_meio(t: str) -> str:
+    """Tira a menção ao meio de origem, onde quer que ela apareça na frase."""
+    t = re.sub(r"(?i)\s*\b(?:nesta|neste|nessa|nesse|desta|deste|dessa|desse|esta|este|essa|esse)\s+"
+               r"(?:grava[çc][ãa]o|material|conversa|v[íi]deo|reuni[ãa]o|chamada|fonte|pacote|an[áa]lise|acervo)\b",
+               "", t)
+    t = re.sub(r"(?i)\s*\b(?:com base|segundo|conforme|de acordo com)\s+(?:em\s+)?"
+               r"(?:esta|esse|essa|o|a)?\s*"
+               r"(?:grava[çc][ãa]o|reuni[ãa]o|conversa|chamada|v[íi]deo|fonte|material|pacote|an[áa]lise|falas?)\b"
+               r"[^.;\n]*", "", t)
+    # quem executou deixa de ser assunto: a frase passa a descrever a prática
+    t = re.sub(r"(?i)\b(?:A |a )pessoa\s+(?:explicitamente\s+)?(?:n[ãa]o\s+)?"
+               r"(?:diz|disse|relata|relatou|informa|informou|explica|explicou|comenta|comentou|"
+               r"lembra|menciona|mencionou|pede|pediu|admite|aponta|conta|fala|recomenda|sugere)\s+que\s+",
+               "", t)
+    t = re.sub(r"(?i)\b(?:A |a )pessoa\s+(?:explicitamente\s+)?n[ãa]o lembra\b[^.;]*",
+               "não há lista completa dos casos", t)
+    t = re.sub(r"(?i)\bA pessoa procura\b", "Procurar", t)
+    t = re.sub(r"(?i)\bA pessoa (?:tenta|tentou)\b", "Tentar", t)
+    t = re.sub(r"(?i)\bNa parte final, a pessoa pede que o analista\b", "No encaminhamento, o analista deve", t)
+    t = re.sub(r"(?i)\bse a pessoa teria permiss[ãa]o\b", "se haveria permissão", t)
+    t = re.sub(r"(?i)\ba outra parte da chamada\b", "a outra parte", t)
+    t = re.sub(r"(?i)\bdemonstra[çc][ãa]o de para\b", "demonstração para", t)
+    t = re.sub(r"(?i)\bN[ãa]o ter testado suficientemente o fluxo e que prepararia uma "
+               r"demonstra[çc][ãa]o posterior\.", "O fluxo não foi testado de forma suficiente.", t)
+    t = re.sub(r"(?i)\bDados de teste e nomes \(resolvido\):\s*o respons[áa]vel confirmou que todos "
+               r"os dados exibidos[^.]*\.", "Dados de teste e nomes: confirmado que os dados exibidos "
+               "são fictícios/de teste e que a publicação dos materiais derivados está autorizada, "
+               "preservando o nome Função Sistemas e os nomes dos operadores, com omissão de fotos e "
+               "câmeras de pessoas.", t)
+    t = re.sub(r"(?i)\b(?:ao longo d[aeo]|durante a|no decorrer d[aeo])\s+conversa\b", "", t)
+    t = re.sub(r"(?i)\b(?:a|outra|da|de|na|com|à)\s+conversa\b(?:\s+(?:com|de|do|da)\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ][\wçãõáéíóúâêô]+)?", "", t)
+    t = re.sub(r"(?i)\b(?:a|o)\s+interlocutor(?:a)?\b", "a outra parte", t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"\s+([,.;:])", r"\1", t)
+    return t
+
+
+META_REFERENCIAS: list[tuple[str, str]] = [
+    (r"(?i)\bcom base n[ao]s? (?:grava[çc][ãa]o|grava[çc][õo]es|falas?|chamadas?|reuni[ãa]o|conversas?)\b", ""),
+    (r"(?i)\b(?:nesta|nessa|na|da|uma|outra|as|essa|esta|à)\s+grava[çc][ãa]o\b(?!\s+de\s+)[^.;,\n]*", ""),
+    (r"(?i)\bgrava[çc][ãa]o\s+(tamb[ée]m\s+)?(mostra|registrou|alterna|n[ãa]o fornece|n[ãa]o confirma|sugere)\b", r"o material \1\2"),
+    (r"(?i)\b(?:entre|de|em|com|por|para|das|nas|outras)\s+grava[çc][õo]es\b", "de registros"),
+    (r"(?i)\buma das grava[çc][õo]es\b", "um dos registros"),
+    (r"(?i)\bas grava[çc][õo]es\b", "os registros"),
+    (r"(?i)\ba grava[çc][ãa]o\b", "o registro"),
+    (r"(?i)\bEsses detalhes n[ãa]o est[ãa]o resolvidos n[ao] (?:registro|material)\b", "Esses detalhes não estão resolvidos"),
+    (r"(?i)\bdocumenta[çc][ãa]o/grava[çc][ãa]o\b", "documentação"),
+    (r"(?i)\brotina detalhada n[ao] (?:registro|material)\b", "rotina indicada"),
+    (r"(?i)\bregistrado por\s*\*{0,2}fala\*{0,2}\b", "registrado por relato"),
+    (r"(?i)\b(?:Irm[ãa]|irm[ãa]) mostra\b", "Outro registro mostra"),
+    (r"(?i)\bA fonte diz apenas\b", "Não se sabe ao certo:"),
+    (r"(?i)\bfala em\b", "menciona"),
+    (r"(?i)\(fala:\s*\)", "(informado)"),
+    (r"(?i)\(fala\)", "(informado)"),
+    (r"(?i)\bA fala confirma\b\s*[:.,;]?", ""),
+    (r"(?i)\ba pr[óo]pria fala indica consulta\b", "a informação não foi conferida na base"),
+    (r"(?i)\bafirma[çc][ãa]o falada sem confer[êe]ncia\b", "afirmação sem conferência na base"),
+    (r"(?i)\bPrimeiro fala em\b", "Primeiro menciona"),
+    (r"(?i)\bvariam na pr[óo]pria conversa\b", "variam"),
+    (r"(?i)\bconhecido pela conversa irm[ãa]\b", "conhecido de outro registro"),
+    (r"(?i)\bconversa n[ãa]o fecha o fluxo\b", "o fluxo de reentrada não está fechado"),
+    (r"(?i)\bUma conversa sobre\b", "O assunto é"),
+    (r"(?i)\bconversa oral\b", "relato oral"),
+    (r"(?i)\bouvidos em conversa\b", "citados"),
+    (r"(?i)\bcitados em conversa\b", "citados internamente"),
+    (r"(?i)\bo que existe [ée] uma conversa com um analista\b", "o que existe é o relato de um analista"),
+    (r"(?i)\bque a pr[óo]pria conversa destaca\b", "destacado no material"),
+    (r"(?i)\bA pessoa que orienta menciona\b", "Mencionar"),
+    (r"(?i)\ba atribui[çc][ãa]o de quem disse [ée] incerta\b", "a atribuição é incerta"),
+    (r"(?i)\bnunca reprocessar produ[çc][ãa]o com base nesta fala\b", "nunca reprocessar produção sem validação"),
+    (r"(?i)\b(?:grava[çc][ãa]o|fala)\s+oscila\b", "a definição oscila"),
+    (r"(?i)\bfala relata\b", "há menção a"),
+    (r"(?i)\bfala sugere\b", "há indício de"),
+    (r"(?i)\bA pr[óo]pria fala corrige n[úu]meros\b", "Há correção de números ao longo do registro"),
+    (r"(?i)\b(?:uma|outra) fala (?:diz|manda|lembra)\b", "outra orientação diz"),
+    (r"(?i)\(fala:\s*\)", "(informado)"),
+    (r"(?i)\(fala\)", "(informado)"),
+    (r"(?i)\bInterpreta[çc][ãa]o preliminar da fala\b", "Interpretação preliminar"),
+    (r"(?i)\bn[úu]mero ouvido n[ae]ssa fala\b", "número citado"),
+    (r"(?i)\bpor que se fala em\b", "por que há menção a"),
+    (r"(?i)\b[ée] uma fala contextual\b", "é um registro contextual"),
+    (r"(?i)\bApenas como fala\b", "Apenas como menção"),
+    (r"(?i)\bFala sobreposta\b", "Sobreposição de registros"),
+    (r"(?i)\bessa fala\b", "essa menção"),
+    (r"(?i)\bnessa fala\b", "nessa menção"),
+    (r"(?i)\bessas falas\b", "essas menções"),
+    (r"(?i)\btratar fala de como valida[çc][ãa]o\b", "tratar informação não validada como validação"),
+    (r"(?i)\bConversa cita\b", "Há menção a"),
+    (r"(?i)\bA conversa cita\b", "Há menção a"),
+    (r"(?i)\bconversa cita\b", "há menção a"),
+    (r"(?i)\(conversa com [^)]*\)", ""),
+    (r"(?i)\bcontexto individual da chamada\b", "contexto de um caso individual"),
+    (r"(?i)\(no caso, a outra parte da chamada\)", ""),
+    (r"(?i)\bO recorte n[ãa]o indica quem falou cada linha\.", ""),
+    (r"(?i)\bo respons[áa]vel pela divulga[çc][ãa]o declarou que todos os dados d[ao] (?:registro|material|grava[çc][ãa]o)s? s[ãa]o Fict[íi]cios/de teste e autorizou a publica[çc][ãa]o dos materiais derivados[^.]*\.",
+     "Dados de teste e nomes: confirmado que os dados exibidos são fictícios/de teste e que a publicação dos materiais derivados está autorizada"),
+    (r"(?i)\bDados de teste e nomes \(resolvido\)\s*:\s*", "Dados de teste e nomes: "),
+    (r"(?i)\bA abertura parece uma chamada de voz\b", "A abertura é um diálogo"),
+    (r"(?i)\bO operador primeiro\b", "Primeiro"),
+    (r"(?i)\bO analista que vai montar/executar a EPT do item\b", "Quem vai montar/executar a EPT do item"),
+    (r"(?i)\be n[ãa]o deve ser usad[ao]\b", "e não deve ser usado"),
+]
+
+
+def sem_metarreferencia(t: str) -> str:
+    """Tira o vocabulário de registro (gravação, fala, conversa) do texto final."""
+    for padrao, troca in META_REFERENCIAS:
+        t = re.sub(padrao, troca, t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"\s+([,.;:])", r"\1", t)
+    t = re.sub(r"\(\s*\)", "", t)
+    return t
+
+
+def limpar_narrativa_por_frase(t: str) -> str:
+    """Aplica o filtro de narrativa frase a frase, preservando tabelas e itens de lista."""
+    linhas = []
+    for linha in t.splitlines():
+        if linha.lstrip().startswith("|"):
+            # célula de tabela: o filtro roda por célula, sem mexer nas barras
+            if DELIMITADOR_TABELA.match(linha.strip()):
+                linhas.append(linha)
+                continue
+            celulas = linha.split("|")
+            for k, celula in enumerate(celulas):
+                if not celula.strip():
+                    continue
+                partes = re.split(r"(?<=[.!?])\s+", celula.strip())
+                restantes = [_texto_util(p) for p in partes]
+                celulas[k] = " " + " ".join(r for r in restantes if r.strip()).strip() + " "
+            linhas.append("|".join(celulas).rstrip())
+            continue
+        marcador = re.match(r"^(\s*(?:[-*+]|\d+[.)])\s+)", linha)
+        prefixo = marcador.group(1) if marcador else ""
+        corpo = linha[len(prefixo):]
+        partes = re.split(r"(?<=[.!?])\s+", corpo)
+        restantes = [p for p in (_texto_util(p) for p in partes) if p.strip()]
+        if restantes:
+            linhas.append(prefixo + " ".join(restantes))
+    return "\n".join(linhas)
+
+
+def sem_narrativa_de_fonte(t: str) -> str:
+    """Converte frases sobre a fonte em afirmações sobre o assunto.
+
+    Numa base de consulta, o leitor quer a regra e o procedimento — não quem mostrou, para
+    quem mostrou ou em que conversa aquilo apareceu. A frase que só relata a fonte sai; a que
+    carrega conhecimento fica, sem o enquadramento ("a conversa ensina que X" vira "X").
+    """
+    # quem fala deixa de ser sujeito: "a conversa ensina que X" → "X"
+    t = re.sub(
+        r"(?i)\b(?:a|o|as|os)\s+(?:grava[çc][ãa]o|reuni[ãa]o|conversa|chamada|v[íi]deo|demonstra[çc][ãa]o|"
+        r"treinamento|aula|fonte|interlocutor[a]?|interlocutores|orientador[a]?|apresentador[a]?|tester|"
+        r"chat|mensagens?|falas?|di[aá]logo|transcri[çc][ãa]o)\s+"
+        r"(?:mostra[m]?|demonstra[m]?|ensina[m]?|detalha[m]?|descreve[m]?|explica[m]?|relata[m]?|"
+        r"diz(?:em)?|afirma[m]?|cita[m]?|comenta[m]?|menciona[m]?|apresenta[m]?|percorre[m]?|"
+        r"documenta[m]?|evidencia[m]?|sustenta[m]?|traz(?:em)?)\s+(?:que\s+)?",
+        "", t)
+    # "o próprio interlocutor diz que" / "segundo o orientador," etc.
+    t = re.sub(
+        r"(?i)\b(?:o\s+pr[óo]prio\s+|a\s+pr[óo]pria\s+)?(?:interlocutor[a]?|orientador[a]?|apresentador[a]?|"
+        r"tester|operador[a]?|analista|gestor[a]?|colega)\s+"
+        r"(?:diz|disse|afirma|relata|comenta|menciona|cita|conta|explica|confirma|responde)\s+(?:que\s+)?",
+        "", t)
+    t = re.sub(
+        r"(?i)\b(?:segundo|conforme|de acordo com)\s+(?:o|a|as|os)\s+(?:interlocutor[a]?|orientador[a]?|"
+        r"apresentador[a]?|tester|grav\w+|fonte|conversa|reuni[ãa]o|chamada|v[íi]deo|chat)\s*,\s*", "", t)
+    t = re.sub(r"(?i)\b(?:a|o)\s+(?:grava[çc][ãa]o|reuni[ãa]o|conversa|chamada|v[íi]deo|fonte)\s*,?\s+"
+               r"(?:por[ée]m|mas|por outro lado)\s*,?\s*", "", t)
+    # "na fonte", "na gravação", "na conversa" como lugar onde algo aparece
+    t = re.sub(r"(?i)\b(?:na|nas|no|nos|nessa|nesta|nesse|neste)\s+"
+               r"(?:grava[çc][ãa]o|reuni[ãa]o|conversa|chamada|v[íi]deo|fonte|aula|treinamento|demonstra[çc][ãa]o|"
+               r"material|pacote|an[áa]lise)\b\s*,?\s*", "", t)
+
+    t = re.sub(r"(?i)\b(?:a|o)\s+(?:grava[çc][ãa]o|reuni[ãa]o|conversa|chamada|v[íi]deo|fonte)\s+"
+               r"(?:n[ãa]o\s+)?(?:confirma|demonstra|mostra|deixa claro|esclarece|permit\w+|"
+               r"registra|comprova|sustenta|explica)\b[^.\n]*\.", " ", t)
+    # marcadores editoriais de método
+    t = re.sub(r"\*{0,2}\[\s*(?:infer[êe]ncia|hip[óo]tese|conclus[ãa]o do material|derivado)\s*\]"
+               r"\*{0,2}\s*", "", t, flags=re.I)
+    t = re.sub(r"(?i)\*\*(?:infer[êe]ncia|hip[óo]tese)\*\*\s*", "", t)
+    # sobras de sujeito removido
+    t = re.sub(r"(?i)(?:^|(?<=[.!?]\s))(?:\s*),\s*", "", t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"\s+([,.;:])", r"\1", t)
+    return t
+
+
 # ---------------------------------------------------------------- leitura do acervo
 
 def ler(caminho: str) -> str:
@@ -786,32 +1080,48 @@ def detalhes(titulo: str, conteudo: str, aberto: bool = False) -> str:
 # ---------------------------------------------------------------- montagem
 
 TEXTO_COMO_USAR = """
-<p>Este é o material de estudo consolidado do acervo de treinamentos e conversas de trabalho da
-<b>Função Sistemas</b>. Ele foi escrito para ser <b>lido e entendido</b>: cada capítulo abre com a
-explicação do assunto e, em seguida, traz o detalhamento do que foi aprendido. Não há transcrição de
-falas nem indicação de em que momento de um vídeo algo foi dito — o que existe aqui é o
-conhecimento, organizado por tema.</p>
+<p>Esta é a <b>base de consulta do trabalho</b> da <b>Função Sistemas</b>: o que o negócio faz, onde
+ficam as telas e os sistemas, o que o banco responde, como a API conversa, quais procedimentos
+existem, quais termos significam o quê e o que ainda precisa ser confirmado.</p>
 
 <div class="destaque">
-  <h3>Como ler</h3>
+  <h3>Por onde começar</h3>
   <ul>
-    <li><b>Comece pelos capítulos temáticos.</b> Cada um tem duas partes: a <i>explicação</i> inicial
-    (conceitos, regras e o porquê) e o <i>detalhamento por origem</i> (o que foi aprendido em cada
-    treinamento, reunião ou conversa sobre aquele tema).</li>
-    <li><b>Os capítulos se cruzam.</b> Um mesmo assunto aparece sob ângulos diferentes — negócio,
-    integração, teste e ambiente — e é essa combinação que forma o entendimento completo.</li>
-    <li><b>Cada bloco traz selos</b> de categorias de conhecimento e de <b>confiança da extração</b>,
-    para você saber o quanto aquela informação pode ser tratada como consolidada.</li>
-    <li><b>Antes de executar qualquer coisa, leia o capítulo de pontos a validar.</b> Ele reúne o que
-    não foi confirmado, o que pode ter mudado de versão e o que depende de decisão de alguém.</li>
-    <li>Use a <b>busca</b> no topo para encontrar um termo, uma sigla, uma tela ou uma regra, e os
-    botões <i>expandir</i>/<i>recolher</i> para abrir o material inteiro de uma vez.</li>
+    <li><b>Procurando um procedimento?</b> Vá em <i>Procedimentos</i>: os fluxos estão reunidos por
+    assunto (EPT, API, banco, tela, ambiente, documentos), em passos, com o que conferir antes e
+    depois.</li>
+    <li><b>Precisa entender o negócio?</b> <i>Negócio</i> explica consignado, convênio, produto,
+    despesas, esteira, refinanciamento e cálculo.</li>
+    <li><b>Vai mexer em sistema?</b> <i>Sistemas, telas e rotinas</i> diz onde cada coisa fica e o que
+    a rotina exige; <i>Banco de dados e consultas</i> traz as consultas de apoio com campos e tabelas.</li>
+    <li><b>Vai chamar a API?</b> <i>API, integrações e payloads</i> descreve endpoints, blocos do
+    payload, erros conhecidos e como rastrear a execução.</li>
+    <li><b>Vai testar?</b> <i>Testes, qualidade e evidências</i> cobre da especificação ao fechamento do
+    pacote; <i>Ambientes e infraestrutura</i> cobre versão, acesso e configuração.</li>
+    <li><b>Esbarrou num termo?</b> O <i>Glossário</i> reúne siglas, telas, campos e jargão do dia a dia
+    em uma lista única, em ordem alfabética.</li>
+    <li><b>Antes de executar qualquer coisa, leia <i>Pontos a validar</i>.</b> É onde está o que não foi
+    confirmado, o que depende de decisão de alguém e o que pode ter mudado de versão.</li>
+  </ul>
+</div>
+
+<div class="destaque">
+  <h3>Como o material está organizado</h3>
+  <ul>
+    <li>Cada capítulo começa com uma <b>explicação do assunto</b> — conceitos, regras e o porquê — e
+    depois traz o <b>conhecimento detalhado por assunto</b>, já consolidado: as informações
+    equivalentes de origens diferentes aparecem uma única vez.</li>
+    <li>As <b>fichas</b> (procedimentos, sistemas, rotinas, perguntas) abrem ao clique; a busca no topo
+    filtra tudo por termo, sigla, tela ou campo, e os botões <i>expandir</i>/<i>recolher</i> abrem ou
+    fecham o material inteiro.</li>
+    <li>Não há transcrição de falas nem referência a quando algo foi dito: o que existe aqui é o
+    conhecimento, organizado para consulta.</li>
   </ul>
 </div>
 
 <div class="aviso">
   <h3>Aviso importante</h3>
-  <p>Este material é <b>apoio de estudo e memória de trabalho</b>. Ele não substitui a especificação
+  <p>Este material é <b>apoio de consulta e memória de trabalho</b>. Ele não substitui a especificação
   vigente, o runbook nem a validação com o responsável de cada frente: regras, telas e versões mudam.
   Nenhum procedimento aqui foi executado durante a produção deste material — o que existe é o que foi
   ensinado, demonstrado ou relatado, mais as ressalvas correspondentes. Onde a informação não foi
@@ -841,116 +1151,674 @@ e o conflito deve ser registrado para correção do próprio acervo.</p>
 """
 
 
+# ---------------------------------------------------------------- consolidação por assunto
+#
+# O material é uma base de consulta: o conhecimento aparece por assunto (procedimento, regra,
+# campo, tela), não por reunião. Cada seção dos documentos de origem é classificada por tema,
+# agrupada com as seções equivalentes das outras origens e apresentada uma única vez.
+
+SECAO_DESCARTE = re.compile(
+    r"(?i)^(?:contexto(?: e escopo.*)?|participantes.*|natureza e limites.*|mascaramento.*|"
+    r"m[ée]todo de an[áa]lise.*|varredura de privacidade.*|confian[çc]a da extra[çc][ãa]o.*|"
+    r"publica[çc][ãa]o.*|privacidade.*|objetivo (?:e p[úu]blico|pedag[óo]gico)|"
+    r"o que (?:a|o) (?:conversa|reuni[ãa]o|chamada|grava[çc][ãa]o|v[íi]deo) ensina.*|"
+    r"resumo(?: em uma frase| de uma linha| final)?|o que n[ãa]o foi demonstrado.*|"
+    r"limites e seguran[çc]a|escopo (?:desta|deste).*|como aplicar sem transformar.*)"
+)
+
+SECAO_CAUTELA = re.compile(
+    r"(?i)^(?:erros?,? ?(?:riscos| cuidados| ressalvas)?(?: e ressalvas)?|riscos e cuidados|"
+    r"ressalvas.*|crit[ée]rios de parada|limites de uso|cuidados.*|"
+    r"o que (?:a|o) font\w+ n[ãa]o confirma.*)"
+)
+
+RENOMEAR_SECAO = [
+    (re.compile(r"(?i)^(?:linha de racioc[ií]nio|racioc[ií]nio) da conversa.*"), "Raciocínio de diagnóstico"),
+    (re.compile(r"(?i)^(?:linha de racioc[ií]nio|racioc[ií]nio).*"), "Raciocínio de diagnóstico"),
+    (re.compile(r"(?i)^m[ée]todo de isolamento.*"), "Método de diagnóstico"),
+    (re.compile(r"(?i)^anatomia do erro.*"), "Anatomia do erro"),
+    (re.compile(r"(?i)^anatomia do payload.*"), "Anatomia do payload"),
+    (re.compile(r"(?i)^conceitos que o material consolida.*"), "Conceitos consolidados"),
+    (re.compile(r"(?i)^demonstra[çc][ãa]o:?\s*"), ""),
+]
+
+TITULO_SEM_CONTEUDO = re.compile(
+    r"(?i)\b(?:fala|falas|apresentador|interlocutor|orientador|participante|chat|mensagem|"
+    r"transcri[çc][ãa]o|grava[çc][ãa]o|reuni[ãa]o|conversa|chamada|v[íi]deo)\b"
+)
+
+
+def dividir_secoes(md: str) -> list[tuple[str, str]]:
+    """Separa o markdown em (título, corpo), por seções de nível 2 a 4."""
+    secoes: list[tuple[str, str]] = []
+    titulo: str | None = None
+    corpo: list[str] = []
+    for linha in md.splitlines():
+        m = re.match(r"^(#{2,4})\s+(.*)$", linha)
+        if m:
+            if titulo is not None and "\n".join(corpo).strip():
+                secoes.append((titulo, "\n".join(corpo).strip()))
+            titulo = m.group(2).strip()
+            corpo = []
+        elif titulo is not None:
+            corpo.append(linha)
+    if titulo is not None and "\n".join(corpo).strip():
+        secoes.append((titulo, "\n".join(corpo).strip()))
+    return secoes
+
+
+def limpar_titulo_secao(titulo: str) -> str:
+    """Tira numeração, parênteses de contexto e caudas de método do título da seção."""
+    t = re.sub(r"^\s*(?:\d+\.?\d*[\.\)]?|[-*])\s*", "", titulo)
+    t = re.sub(r"\s*\([^()]*\)", "", t)
+    t = re.sub(r"`([^`]*)`", r"\1", t)
+    t = re.sub(r"\*\*?", "", t)
+    t = re.sub(r"(?i)\s*[—–-]\s*(?:relato\b.*|leitura de tela.*|ver .*|n[ãa]o .*aprovad\w*.*)$", "", t)
+    for padrao, novo in RENOMEAR_SECAO:
+        if padrao.match(t):
+            t = padrao.sub(novo, t)
+    t = limpar(t)
+    return re.sub(r"\s{2,}", " ", t).strip(" .;:-—")
+
+
+def normalizar(chave: str) -> str:
+    """Chave de comparação para deduplicar texto repetido entre origens."""
+    t = chave.lower()
+    t = re.sub(r"[^a-z0-9áéíóúâêôãõçà ]+", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def bloco_texto(md: str) -> list[str]:
+    """Quebra o corpo em unidades comparáveis (parágrafos, itens, tabelas)."""
+    unidades: list[str] = []
+    atual: list[str] = []
+    for linha in md.splitlines():
+        if linha.strip():
+            atual.append(linha.rstrip())
+            continue
+        if atual:
+            unidades.append("\n".join(atual))
+            atual = []
+    if atual:
+        unidades.append("\n".join(atual))
+    return unidades
+
+
+def juntar_sem_repetir(destino: list[tuple[str, str]], chave: str, texto: str,
+                       vistas: set[str]) -> None:
+    """Acrescenta o texto à chave indicada, pulando o que já apareceu nesta seção."""
+    limpo = texto.strip()
+    if not limpo:
+        return
+    marca = normalizar(limpo)[:180]
+    if marca in vistas:
+        return
+    vistas.add(marca)
+    for i, (existente, acumulado) in enumerate(destino):
+        if existente == chave:
+            destino[i] = (existente, acumulado + "\n\n" + limpo)
+            return
+    destino.append((chave, limpo))
+
+
+BUCKETS: dict[str, list[tuple[str, str]]] = {
+    "negocio": [
+        ("Como o consignado funciona", r"consignad|margem|folha|empregador|conv[êe]nio|produto|p[úu]blico|convenente"),
+        ("Documento da operação: CCB e contratos", r"ccb|contrato|credor|saldo devedor|opera[çc][õo]es originais|documento da opera"),
+        ("Esteira, averbação e formalização", r"esteira|averba|formaliza|jornada de contrata|etapa|autorizador"),
+        ("Despesas, tarifas e seguro", r"despesa|tarifa|seguro|iof|reaproveitamento"),
+        ("Crédito, parcelas e cálculo", r"parcela|taxa|cet|vencimento|valor|c[áa]lculo|toler[âa]ncia|refinanciamento|portabilidade"),
+        ("Cancelamento, desaverbação e exceções", r"cancel|desaverb|estorno|liquida|quita"),
+    ],
+    "api": [
+        ("Endpoints e contratos de integração", r"endpoint|rota|url|servi[çc]o|contrato|integra[çc][ãa]o|api|swagger"),
+        ("Blocos e campos do payload", r"payload|json|campo|objeto|bloco|cole[çc][ãa]o|schema|layout"),
+        ("Erros, mensagens e diagnóstico", r"erro|exce[çc][ãa]o|mensagem|falha|badrequest|conflito|diagn[óo]stico|cr[íi]tica|modelo de entrada"),
+        ("Monitoramento, logs e rastreio", r"monitor|log|rastre|econsult|execu[çc][ãa]o|status|plugin|job|servi[çc]o de envio"),
+        ("Regras de integração e cuidados", r"regra|idempot|reprocess|segredo|credencial|retentativa|reenvio|autoriza[çc][ãa]o"),
+    ],
+    "testes": [
+        ("Especificação e plano de teste (EPT)", r"ept|especifica[çc][ãa]o|plano de teste|caso|cen[áa]rio|pr[ée]-condi[çc][ãa]o|premissa|passo"),
+        ("Execução, evidência e revisão", r"execu[çc][ãa]o|evid[êe]ncia|revis[ãa]o|registro|disponibiliza[çc][ãa]o|confer[êe]ncia|homologa|documento de teste"),
+        ("Boas práticas e critérios de qualidade", r"boa pr[áa]tica|padr[ãa]o|reprodut|escopo|risco|cobertura|prioridade"),
+    ],
+    "infra": [
+        ("Ambientes e versões", r"ambiente|vers[ãa]o|publica|deploy|homolog|produ[çc][ãa]o|build|componente"),
+        ("Acesso, perfis e credenciais", r"acesso|perfil|permiss|credencial|segredo|licen[çc]a|token|certificado|client secret|senha|privil[ée]gio"),
+        ("Configuração e artefatos", r"config|artefato|planilha|utilit[áa]rio|par[âa]metro|alias|rotina de cadastro|importa[çc][ãa]o"),
+    ],
+    "automacao": [
+        ("Automação de testes", r"automa|cypress|script|poc|regress"),
+        ("Inteligência artificial aplicada", r"ia\b|intelig[êe]ncia artificial|prompt|rag|llm|gerar ept"),
+    ],
+    "comunicacao": [
+        ("Combinar expectativas e pedir o que precisa", r"comunic|perfil|acordo|combinar|expectativa|pedir|mensagem|escrita|forma de trabalhar"),
+        ("Conduzir dúvidas, escalar e registrar", r"d[úu]vida|escal|registr|prioriz|acompanh|reuni[ãa]o|feedback"),
+    ],
+}
+
+
+def classificar(chave: str, titulo: str, corpo: str) -> str:
+    """Encontra o assunto (bucket) da seção dentro do tema."""
+    regras = BUCKETS.get(chave, [])
+    alvo = " %s %s " % (titulo.lower(), corpo.lower())
+    for nome, padrao in regras:
+        if re.search(padrao, alvo):
+            return nome
+    return "Outros pontos"
+
+
+def detalhe_por_assunto(chave: str, cautelas: list[tuple[str, str]]) -> str:
+    """Percorre as fontes do tema, agrupa as seções por assunto e devolve o HTML consolidado."""
+    agrupado: list[tuple[str, str]] = []
+    vistas: set[str] = set()
+    for slug, (_rotulo, _tipo, tema) in FONTES.items():
+        if tema != chave:
+            continue
+        caminho = os.path.join(MATERIAIS, slug, "guia_de_estudo.md")
+        if not os.path.exists(caminho):
+            continue
+        for titulo_bruto, corpo_md in dividir_secoes(ler(caminho)):
+            titulo = limpar_titulo_secao(titulo_bruto)
+            if SECAO_DESCARTE.match(titulo):
+                continue
+            corpo = limpar(corpo_md)
+            if len(corpo) < 80:
+                continue
+            if SECAO_CAUTELA.match(titulo):
+                cautelas.append((titulo_secao_para_pendencia(titulo), corpo))
+                continue
+            if TITULO_SEM_CONTEUDO.search(titulo) or not titulo:
+                titulo = "Pontos de atenção do dia a dia"
+            cabeca = classificar(chave, titulo, corpo)
+            for unidade in bloco_texto(corpo):
+                juntar_sem_repetir(agrupado, cabeca, unidade, vistas)
+    partes = []
+    for cabeca, corpo in agrupado:
+        corpo_html = md_para_html(corpo)
+        if len(re.sub(r"<[^>]+>", "", corpo_html).strip()) < 60:
+            continue
+        partes.append('<h4 class="assunto">%s</h4>\n%s' % (html.escape(cabeca), corpo_html))
+    return "".join(partes)
+
+
+TITULO_PENDENCIA = [
+    (re.compile(r"(?i)^erros?,? riscos.*|^riscos e cuidados.*|^cuidados.*"), "Cuidados e limites de uso"),
+    (re.compile(r"(?i)^ressalvas.*"), "Ressalvas"),
+    (re.compile(r"(?i)^crit[ée]rios de parada.*"), "Critérios de parada"),
+    (re.compile(r"(?i).*"), "Pontos de atenção"),
+]
+
+
+def titulo_secao_para_pendencia(titulo: str) -> str:
+    for padrao, novo in TITULO_PENDENCIA:
+        if padrao.match(titulo):
+            return novo
+    return "Pontos de atenção"
+
+
+def ler_tabelas(caminho: str) -> list[tuple[list[str], list[list[str]]]]:
+    """Lê as tabelas markdown de um documento: (cabeçalho, linhas)."""
+    if not os.path.exists(caminho):
+        return []
+    tabelas: list[tuple[list[str], list[list[str]]]] = []
+    cabecalho: list[str] | None = None
+    linhas: list[list[str]] = []
+    for linha in ler(caminho).splitlines():
+        if linha.strip().startswith("|"):
+            if DELIMITADOR_TABELA.match(linha.strip()):
+                continue
+            celulas = [c.strip() for c in _celulas(linha)]
+            if cabecalho is None:
+                cabecalho = celulas
+            else:
+                linhas.append(celulas)
+        elif cabecalho is not None:
+            tabelas.append((cabecalho, linhas))
+            cabecalho, linhas = None, []
+    if cabecalho is not None:
+        tabelas.append((cabecalho, linhas))
+    return tabelas
+
+
+def celula_limpa(valor: str) -> str:
+    """Limpa uma célula de tabela: sem tempo, sem citação, sem nome de arquivo, sem 'idem'."""
+    t = limpar(valor)
+    t = re.sub(r"(?i)\bidem\b|\bver acima\b", "", t)
+    t = re.sub(r"\s*[—–-]\s*$", "", t)
+    return re.sub(r"\s{2,}", " ", t).strip(" .;:—–-")
+
+
+def texto_plano(valor: str) -> str:
+    """Deixa o texto próprio para título de ficha: sem marcação, sem crase, sem sobra."""
+    t = re.sub(r"\*+", "", valor)
+    t = t.replace("`", "")
+    t = re.sub(r"\s{2,}", " ", t)
+    return t.strip(" .;:—–-")
+
+
+def cartao(titulo: str, corpo_html: str, classe: str = "ficha") -> str:
+    return ('<details class="bloco dobra %s"><summary>%s</summary>'
+            '<div class="bloco-corpo">%s</div></details>' % (classe, html.escape(titulo), corpo_html))
+
+
+def cap_sistemas() -> tuple[str, int]:
+    """Monta a referência de sistemas/telas e de rotinas, agrupada por sistema."""
+    partes: list[str] = []
+    quantidade = 0
+
+    sistemas: dict[str, list[tuple[str, str]]] = {}
+    for cabecalho, linhas in ler_tabelas(os.path.join(MATERIAIS, "SISTEMAS/INDICE_SISTEMAS.md")):
+        if len(cabecalho) < 3:
+            continue
+        for linha in linhas:
+            if len(linha) < 3:
+                continue
+            nome, tela, objetivo = (texto_plano(celula_limpa(linha[0])),
+                                    texto_plano(celula_limpa(linha[1])),
+                                    celula_limpa(linha[2]))
+            if not nome:
+                continue
+            sistemas.setdefault(nome, []).append((tela, objetivo))
+    if sistemas:
+        partes.append('<h4 class="assunto">Sistemas, módulos e telas</h4>')
+        for nome, linhas in sistemas.items():
+            itens = []
+            for tela, objetivo in linhas:
+                if tela and objetivo:
+                    itens.append("<li><b>%s</b> — %s</li>" % (html.escape(tela), md_para_html(objetivo)))
+                elif objetivo or tela:
+                    itens.append("<li>%s</li>" % md_para_html(objetivo or tela))
+            if not itens:
+                continue
+            quantidade += 1
+            partes.append(cartao(nome, "<ul>%s</ul>" % "".join(itens)))
+
+    rotinas: list[tuple[str, str, str, str]] = []
+    for cabecalho, linhas in ler_tabelas(os.path.join(MATERIAIS, "PROCESSOS/INDICE_PROCESSOS.md")):
+        if len(cabecalho) < 4 or "rotina" not in cabecalho[0].lower():
+            continue
+        for linha in linhas:
+            if len(linha) < 4:
+                continue
+            valores = [celula_limpa(c) for c in linha[:4]]
+            valores[0] = texto_plano(valores[0])
+            rotinas.append(tuple(valores))  # type: ignore[arg-type]
+    if rotinas:
+        partes.append('<h4 class="assunto">Rotinas e processos</h4>')
+        vistas: set[str] = set()
+        for nome, pre, resultado, excecoes in rotinas:
+            if not nome or normalizar(nome)[:80] in vistas:
+                continue
+            vistas.add(normalizar(nome)[:80])
+            itens = []
+            for rotulo, valor in (("Pré-requisitos", pre), ("Resultado", resultado), ("Exceções", excecoes)):
+                if valor:
+                    itens.append("<li><b>%s:</b> %s</li>" % (rotulo, md_para_html(valor)))
+            if not itens:
+                continue
+            quantidade += 1
+            partes.append(cartao(nome, "<ul>%s</ul>" % "".join(itens), "ficha rotina"))
+    return "".join(partes), quantidade
+
+
+def cap_banco() -> tuple[str, int]:
+    """Monta a referência de consultas: objetivo, banco/tabelas envolvidas e o SQL de apoio."""
+    consultas: list[tuple[str, str, str, str]] = []
+    for cabecalho, linhas in ler_tabelas(os.path.join(MATERIAIS, "SQL/INDICE_SQL.md")):
+        if not cabecalho or "objetivo" not in cabecalho[0].lower():
+            continue
+        for linha in linhas:
+            if len(linha) < 5:
+                continue
+            consultas.append((celula_limpa(linha[0]), celula_limpa(linha[2]),
+                              celula_limpa(linha[3]), celula_limpa(linha[4])))
+
+    blocos: list[tuple[str, str]] = []
+    vistos: set[str] = set()
+    for slug in FONTES:
+        for arquivo in ("guia_de_estudo.md", "procedimentos.md"):
+            caminho = os.path.join(MATERIAIS, slug, arquivo)
+            if not os.path.exists(caminho):
+                continue
+            texto = ler(caminho)
+            for m in re.finditer(r"```sql\s*\n(.*?)```", texto, flags=re.S):
+                codigo = m.group(1).strip()
+                if len(codigo) < 25:
+                    continue
+                titulos = re.findall(r"(?m)^#{2,4}\s+(.*)$", texto[:m.start()])
+                legenda = texto_plano(limpar_titulo_secao(titulos[-1])) if titulos else "Consulta de diagnóstico"
+                if not legenda or len(legenda) < 6:
+                    legenda = "Consulta de diagnóstico"
+                marca = normalizar(codigo)[:200]
+                if marca in vistos:
+                    continue
+                vistos.add(marca)
+                blocos.append((legenda, codigo))
+
+    partes: list[str] = []
+    if consultas:
+        linhas_html = []
+        vistas: set[str] = set()
+        for objetivo, dialeto, tabelas, tipo in consultas:
+            if not objetivo or normalizar(objetivo)[:90] in vistas:
+                continue
+            vistas.add(normalizar(objetivo)[:90])
+            linhas_html.append(
+                "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"
+                % (md_para_html(objetivo), md_para_html(dialeto or "—"),
+                   md_para_html(tabelas or "—"), md_para_html(tipo or "—")))
+        partes.append('<h4 class="assunto">Para que serve cada consulta</h4>')
+        partes.append('<table class="tabela"><thead><tr><th>Objetivo</th><th>Dialeto</th>'
+                      "<th>Bancos, tabelas e colunas</th><th>Tipo de acesso</th></tr></thead><tbody>%s</tbody></table>"
+                      % "".join(linhas_html))
+    if blocos:
+        partes.append('<h4 class="assunto">Consultas de apoio</h4>')
+        for legenda, codigo in blocos:
+            partes.append('<h5>%s</h5>\n<pre>%s</pre>' % (html.escape(legenda), html.escape(codigo)))
+    quantidade = len(consultas) + len(blocos)
+    return "".join(partes), quantidade
+
+
+PENDENCIA_BUCKETS = [
+    ("Projeto, escopo e arquitetura", r"projeto|arquitetura|escopo|fronteira|m[óo]dulo"),
+    ("Regras de negócio a confirmar", r"regra|cancel|desaverb|esteira|conv[êe]nio|produto|elegib|seguro|despesa|margem"),
+    ("Dados, campos e identificadores", r"dado|campo|identificador|cpf|mascar|payload|valor"),
+    ("API, integração e mensagens de erro", r"api|endpoint|integra|erro|payload|plugin|json|servi[çc]o"),
+    ("Ambiente, acesso e configuração", r"ambiente|acesso|perfil|permiss|vers[ãa]o|licen[çc]a|credencial|configura|artefato|rede|udl"),
+    ("Telas, documentos e vocabulário", r"tela|documento|anexo|ged|gloss|sigla|vocabul|nome"),
+    ("Prazos, prioridade e combinados", r"prazo|prioridade|hora|comit[êe]|release|agenda|esfor[çc]o|estimativa"),
+]
+
+
+def assunto_de_pendencia(titulo: str, corpo: str) -> str:
+    alvo = " %s %s " % (titulo.lower(), corpo.lower())
+    for nome, padrao in PENDENCIA_BUCKETS:
+        if re.search(padrao, alvo):
+            return nome
+    return "Outros pontos a confirmar"
+
+
+TITULO_SUBSECAO = re.compile(
+    r"(?i)^(relat[óo]rio|refer[êe]ncia cruzada|pr[ée]-condi[çc][õo]es( obrigat[óo]rias)?|exce[çc][õo]es|"
+    r"resultado(s)?( esperado(s)?)?|bloqueios?|riscos?( e cuidados)?|cuidados|observa[çc][õo]es|"
+    r"detalhes|passo a passo|pr[ée]-requisitos|entradas|sa[íi]das|evid[êe]ncias|crit[ée]rios de aceite)$")
+
+
+def _ajustar_para_negocio(itens: list[tuple[str, str]], i: int) -> None:
+    """Mantém o bloco no mesmo assunto do fluxo ao qual foi anexado."""
+    return None
+
+
+def procedimentos_consolidados() -> tuple[str, int]:
+    """Reúne os fluxos de todas as origens em uma lista única por assunto."""
+    por_assunto: list[tuple[str, str]] = []
+    vistas: set[str] = set()
+    ultimo: dict[str, int] = {}
+    pendente: dict[str, bool] = {}
+    pendente_rotulo: dict[str, str] = {}
+    chaves_de_tema = {chave for chave, _t, _d in TEMAS}
+    for slug, (_rotulo, _tipo, tema) in FONTES.items():
+        caminho = os.path.join(MATERIAIS, slug, "procedimentos.md")
+        if not os.path.exists(caminho):
+            continue
+        for titulo_bruto, corpo_md in dividir_secoes(ler(caminho)):
+            titulo = limpar_titulo_secao(titulo_bruto)
+            titulo = re.sub(r"(?i)^fluxo\s*[a-z]\s*", "", titulo).strip(" —–-:.")
+            if SECAO_DESCARTE.match(titulo) or len(titulo) < 8:
+                continue
+            corpo = limpar(corpo_md)
+            if len(corpo) < 120:
+                continue
+            assunto = classificar(tema if tema in chaves_de_tema else "negocio", titulo, corpo)
+            if TITULO_SUBSECAO.match(titulo) and ultimo.get(slug) is None:
+                # vem antes do primeiro fluxo da origem: entra no fluxo seguinte
+                pendente[slug] = True
+                pendente_rotulo[slug] = titulo
+                continue
+            if TITULO_SUBSECAO.match(titulo) and ultimo.get(slug) is not None:
+                # subseção de um fluxo (Pré-condições, Exceções…): entra no fluxo anterior
+                i = ultimo[slug]
+                t_ant, _, c_ant = por_assunto[i][1].partition("\n\n")
+                por_assunto[i] = (por_assunto[i][0],
+                                  "%s\n\n**%s**\n\n%s" % (t_ant, titulo, corpo))
+                continue
+            titulo = titulo[0].upper() + titulo[1:]
+            marca = normalizar(titulo)
+            if marca in vistas:
+                continue
+            vistas.add(marca)
+            prefixo = ""
+            if pendente.pop(slug, None):
+                prefixo = "**%s**\n\n" % pendente_rotulo[slug]
+            por_assunto.append((assunto, titulo + "\n\n" + prefixo + corpo))
+            ultimo[slug] = len(por_assunto) - 1
+    if not por_assunto:
+        return "", 0
+    agrupado: list[tuple[str, list[tuple[str, str]]]] = []
+    for assunto, conteudo in por_assunto:
+        titulo, _, corpo = conteudo.partition("\n\n")
+        for i, (existente, itens) in enumerate(agrupado):
+            if existente == assunto:
+                agrupado[i] = (existente, itens + [(titulo, corpo)])
+                break
+        else:
+            agrupado.append((assunto, [(titulo, corpo)]))
+    partes = []
+    quantidade = 0
+    for assunto, itens in agrupado:
+        partes.append('<h4 class="assunto">%s</h4>' % html.escape(assunto))
+        for titulo, corpo in itens:
+            quantidade += 1
+            partes.append(cartao(titulo, md_para_html(corpo), "procedimento"))
+    return "".join(partes), quantidade
+
+
+def glossario_consolidado() -> str:
+    """Funde todos os glossários em uma lista única, ordenada e sem repetição de termo."""
+    termos: dict[str, tuple[str, str]] = {}
+    for slug in list(FONTES) + [""]:
+        caminho = os.path.join(MATERIAIS, slug, "glossario.md") if slug else os.path.join(MATERIAIS, "GLOSSARIO_GERAL.md")
+        if not os.path.exists(caminho):
+            continue
+        for linha in ler(caminho).splitlines():
+            if not linha.strip().startswith("|"):
+                continue
+            celulas = [c.strip() for c in _celulas(linha)]
+            if len(celulas) < 2 or DELIMITADOR_TABELA.match(linha.strip()):
+                continue
+            termo, definicao = celulas[0], celulas[1]
+            if re.match(r"(?i)^termo|^---", termo.replace("*", "").strip()):
+                continue
+            termo = limpar(re.sub(r"^\*\*|\*\*$", "", termo).strip())
+            definicao = limpar(definicao)
+            definicao = re.sub(r"^\*\*|\*\*$", "", definicao).strip()
+            if not termo or not definicao:
+                continue
+            marca = normalizar(termo)
+            # fora o que é anotação de leitura e o que é frase inteira, não termo
+            if len(termo) > 90 or marca.startswith("termo"):
+                continue
+            if re.search(r"(?i)\bgrafia|\basr\b|ouvido|ileg[íi]vel|reconhecid[ao] pel", termo):
+                continue
+            # termo é termo: frase inteira, verbo no início ou rótulo vazio não entram
+            if len(termo.split()) > 4 and termo[:1].islower():
+                continue
+            if re.search(r"[()\[\]]\s*$|\|\s*$|^\s*[/–—-]", termo):
+                continue
+            if len(definicao.strip()) < 25:
+                continue
+            anterior = termos.get(marca)
+            if anterior is None or len(definicao) > len(anterior[1]):
+                termos[marca] = (termo, definicao)
+    if not termos:
+        return ""
+    def chave_ordem(item: tuple[str, tuple[str, str]]) -> str:
+        termo = item[1][0]
+        return re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", termo.lower()).encode("ascii", "ignore").decode())
+    linhas = []
+    for _marca, (termo, definicao) in sorted(termos.items(), key=chave_ordem):
+        linhas.append("<tr><td><b>%s</b></td><td>%s</td></tr>" % (html.escape(termo), md_para_html(definicao)))
+    return ('<table class="tabela glossario"><thead><tr><th>Termo ou sigla</th><th>O que significa</th></tr></thead>'
+            "<tbody>%s</tbody></table>" % "".join(linhas))
+
+
+def perguntas_consolidadas() -> tuple[str, int]:
+    """Reúne as perguntas de revisão de todas as origens, agrupadas por tema."""
+    por_tema: dict[str, list[tuple[str, str]]] = {}
+    vistas: set[str] = set()
+    for slug, (_rotulo, _tipo, tema) in FONTES.items():
+        caminho = os.path.join(MATERIAIS, slug, "perguntas.md")
+        if not os.path.exists(caminho):
+            continue
+        texto = limpar(ler(caminho))
+        itens = re.split(r"(?m)^\s*(?=\d+[.)]\s)", texto)
+        for item in itens:
+            m = re.match(r"(?s)\s*\d+[.)]\s*(.*)", item)
+            if not m:
+                continue
+            corpo = m.group(1).strip()
+            pergunta, _, resposta = corpo.partition("\n")
+            pergunta = re.sub(r"\s*\([^()]*\)\s*", " ", pergunta)
+            pergunta = re.sub(r"\*\*", "", pergunta).strip(" .?") + "?"
+            pergunta = re.sub(r"\s{2,}", " ", pergunta)
+            resposta = resposta.strip()
+            if len(pergunta) < 12 or len(resposta) < 40:
+                continue
+            # pergunta sobre a fonte, não sobre o trabalho: sai
+            if re.search(r"(?i)\b(?:conversa|reuni[ãa]o|grava[çc][ãa]o|chamada|v[íi]deo|aula|transcri[çc][ãa]o|"
+                         r"leitura de tela|evid[êe]ncia visual|o que n[ãa]o ficou claro|finalidade geral|"
+                         r"objetivo geral descrito|segundo o documento|deste pacote|nesta an[áa]lise)\b", pergunta):
+                continue
+            marca = normalizar(pergunta)[:120]
+            if marca in vistas:
+                continue
+            vistas.add(marca)
+            por_tema.setdefault(tema, []).append((pergunta, resposta))
+    if not por_tema:
+        return "", 0
+    partes = []
+    quantidade = 0
+    for chave, titulo, _d in TEMAS:
+        itens = por_tema.get(chave)
+        if not itens:
+            continue
+        partes.append('<h4 class="assunto">%s</h4>' % html.escape(titulo))
+        for pergunta, resposta in itens:
+            quantidade += 1
+            partes.append(cartao(pergunta, md_para_html(resposta), "pergunta"))
+    return "".join(partes), quantidade
+
+
+def pendencias_consolidadas(cautelas: list[tuple[str, str]]) -> str:
+    """Consolida o que ainda não está confirmado: conflitos, lacunas e cuidados por assunto."""
+    agrupado: list[tuple[str, str]] = []
+    vistas: set[str] = set()
+    for slug, (_r, _t, _tema) in FONTES.items():
+        caminho = os.path.join(MATERIAIS, slug, "incertezas.md")
+        if not os.path.exists(caminho):
+            continue
+        for titulo_bruto, corpo_md in dividir_secoes(ler(caminho)):
+            titulo = limpar_titulo_secao(titulo_bruto)
+            corpo = limpar(corpo_md)
+            if len(corpo) < 60:
+                continue
+            if SECAO_DESCARTE.match(titulo) or len(titulo) < 5:
+                titulo = "Outros pontos a confirmar"
+            cabeca = assunto_de_pendencia(titulo, corpo)
+            for unidade in bloco_texto(corpo):
+                juntar_sem_repetir(agrupado, cabeca, unidade, vistas)
+    for titulo, corpo in cautelas:
+        for unidade in bloco_texto(corpo):
+            juntar_sem_repetir(agrupado, titulo, unidade, vistas)
+    partes = []
+    for cabeca, corpo in agrupado:
+        corpo_html = md_para_html(corpo)
+        if len(re.sub(r"<[^>]+>", "", corpo_html).strip()) < 50:
+            continue
+        partes.append('<h4 class="assunto">%s</h4>\n%s' % (html.escape(cabeca), corpo_html))
+    return "".join(partes)
+
+
 def montar_corpo() -> tuple[str, str, int]:
-    """Retorna (html dos capítulos, html do índice lateral, número de blocos)."""
+    """Monta o material como base de consulta: conhecimento e procedimento por assunto.
+
+    Não há inventário de reuniões nem bloco por origem: as seções equivalentes de todas as
+    origens são fundidas em um único texto, na ordem dos assuntos, e o que ainda não está
+    confirmado vai para o capítulo de pontos a validar.
+    """
     total = 0
 
     def conta(html_bloco: str) -> str:
         nonlocal total
-        total += html_bloco.count('class="bloco"')
+        total += len(re.findall(r'class="bloco(?![\w-])', html_bloco))
         return html_bloco
 
-    # -- mapa das fontes
-    linhas = []
-    for slug, (rotulo, tipo, _tema) in FONTES.items():
-        bruto = ler(os.path.join(MATERIAIS, slug, "guia_de_estudo.md"))
-        _cat, conf = extrair_titulo_metadados(bruto)
-        resumo = selo_confianca(conf) or "—"
-        linhas.append(
-            '<tr><td><b>%s</b></td><td>%s</td><td>%s</td></tr>'
-            % (html.escape(rotulo), html.escape(tipo), html.escape(resumo))
-        )
-    for slug, descricao in SEM_CONTEUDO.items():
-        linhas.append(
-            '<tr class="linha-vazia"><td><b>%s</b></td><td>—</td><td>sem conteúdo instrutivo extraível</td></tr>'
-            % html.escape(descricao)
-        )
-    mapa = (
-        '<table class="tabela"><thead><tr><th>Fonte</th><th>Tipo</th><th>Confiança da extração</th></tr></thead>'
-        "<tbody>%s</tbody></table>" % "".join(linhas)
-    )
-
-    capitulos: list[tuple[str, str, str]] = []  # (id, título, html)
+    capitulos: list[tuple[str, str, str, str]] = []  # (id, título, descrição, html)
+    cautelas: list[tuple[str, str]] = []
 
     capitulos.append(("como-usar", "Como usar este material", "", TEXTO_COMO_USAR))
-    capitulos.append(("mapa", "Mapa das fontes", "O que compõe este material, por tipo de fonte e confiabilidade da extração.", mapa))
 
-    # -- visão geral do negócio e do sistema (índices temáticos)
-    conteudo = ""
-    conteudo += cap_bloco_indice("Sistemas, módulos e telas", "sistemas/INDICE_SISTEMAS.md", "sistemas")
-    conteudo += cap_bloco_indice("Consultas e bancos de dados", "SQL/INDICE_SQL.md", "sqldb")
-    conteudo += cap_bloco_indice("Rotinas e processos", "PROCESSOS/INDICE_PROCESSOS.md", "processos")
-    conteudo += md_para_html(limpar(ler(os.path.join(MATERIAIS, "GLOSSARIO_GERAL.md"))))
-    capitulos.append(("panorama", "Panorama: sistemas, consultas, rotinas e vocabulário", "Catálogo consolidado de sistemas, de consultas a banco, de rotinas operacionais e do vocabulário do domínio.", conteudo))
-
-    # -- capítulos temáticos: abrem com a explicação do assunto e seguem com o detalhamento
-    numero_capitulo = 0
+    # -- conhecimento por tema: a explicação do assunto abre, o detalhe por assunto segue
     for chave, titulo, descricao in TEMAS:
-        numero_capitulo += 1
         corpo = []
         if SINTESES.get(chave):
             corpo.append('<article class="sintese">%s</article>\n' % SINTESES[chave])
-        detalhes = []
-        n = 0
-        for slug, (rotulo, tipo, tema) in FONTES.items():
-            if tema != chave:
-                continue
-            n += 1
-            detalhes.append(bloco_fonte(slug, rotulo, tipo, "guia_de_estudo.md", "Guia", "%d.%d" % (numero_capitulo, n)))
-        if detalhes:
-            corpo.append('<h3 class="subtitulo">Detalhamento por origem</h3>')
-            corpo.extend(detalhes)
-        if corpo:
-            capitulos.append((chave, titulo, descricao, conta("".join(corpo))))
+        corpo.append(detalhe_por_assunto(chave, cautelas))
+        html_cap = conta("".join(corpo))
+        if html_cap.strip():
+            capitulos.append((chave, titulo, descricao, html_cap))
 
-    # -- glossário por fonte
-    corpo = []
-    for i, (slug, (rotulo, tipo, _t)) in enumerate(FONTES.items(), start=1):
-        b = bloco_fonte(slug, rotulo, tipo, "glossario.md", "Glossário", "G.%02d" % i)
-        if b:
-            corpo.append(b)
-    if corpo:
-        capitulos.append(("glossario", "Glossário por fonte", "Termos, siglas e campos com o significado sustentado por cada fonte.", conta("".join(corpo))))
+    # -- procedimentos: uma lista única, por assunto
+    proc_html, proc_total = procedimentos_consolidados()
+    if proc_html:
+        capitulos.append((
+            "procedimentos", "Procedimentos", "%d fluxos de trabalho agrupados por assunto — pré-requisitos, "
+            "sequência, pontos de conferência e o que dá errado. Fluxo demonstrado não é runbook aprovado."
+            % proc_total, conta(proc_html)))
 
-    # -- procedimentos passo a passo
-    corpo = []
-    for i, (slug, (rotulo, tipo, _t)) in enumerate(FONTES.items(), start=1):
-        b = bloco_fonte(slug, rotulo, tipo, "procedimentos.md", "Procedimentos", "P.%02d" % i)
-        if b:
-            corpo.append(b)
-    if corpo:
-        capitulos.append(("passos", "Procedimentos passo a passo", "Fluxos completos — pré-condições, sequência, validações, resultado e exceções — como foram ensinados, sem substituir o runbook oficial.", conta("".join(corpo))))
+    # -- referência: sistemas, telas e rotinas
+    ref, ref_total = cap_sistemas()
+    if ref.strip():
+        capitulos.append(("referencia", "Sistemas, telas e rotinas",
+                          "%d fichas: onde cada coisa fica, para que serve, o que a rotina exige e o que dá errado."
+                          % ref_total, conta(ref)))
 
-    # -- perguntas e respostas
-    corpo = []
-    for i, (slug, (rotulo, tipo, _t)) in enumerate(FONTES.items(), start=1):
-        b = bloco_fonte(slug, rotulo, tipo, "perguntas.md", "Perguntas", "Q.%02d" % i, aberto=False)
-        if b:
-            corpo.append(b)
-    if corpo:
-        perguntas_total = 0
-        for slug in FONTES:
-            txt = ler(os.path.join(MATERIAIS, slug, "perguntas.md"))
-            perguntas_total += len(re.findall(r"(?m)^\s*(?:\d+[.)]|[-*])\s+.*\?", txt))
-        capitulos.append(("faq", "Perguntas e respostas", "%d perguntas de revisão, com resposta e justificativa apoiadas na fonte, agrupadas por origem." % perguntas_total, conta("".join(corpo))))
+    # -- referência: banco de dados e consultas
+    bd, bd_total = cap_banco()
+    if bd.strip():
+        capitulos.append(("banco", "Banco de dados e consultas",
+                          "Para que serve cada consulta, quais bancos, tabelas e colunas ela usa, se é leitura ou "
+                          "alteração e o SQL completo das consultas de apoio.", conta(bd)))
 
-    # -- pendências
-    conteudo = md_para_html(limpar(ler(os.path.join(MATERIAIS, "CONFLITOS_E_VALIDACAO.md"))))
-    corpo = []
-    for i, (slug, (rotulo, tipo, _t)) in enumerate(FONTES.items(), start=1):
-        b = bloco_fonte(slug, rotulo, tipo, "incertezas.md", "Lacunas e validações", "V.%02d" % i)
-        if b:
-            corpo.append(b)
-    capitulos.append(("pendencias", "Pontos a validar", "Tudo que a fonte não confirmou, que depende de decisão humana ou que pode ter mudado de versão. É o capítulo mais importante antes de agir: leia-o junto do procedimento que pretende executar.", conta(conteudo + "".join(corpo))))
+    # -- glossário único
+    gloss = glossario_consolidado()
+    if gloss:
+        capitulos.append(("glossario", "Glossário",
+                          "Siglas, termos de negócio, telas e campos — o vocabulário usado no dia a dia e no material.",
+                          conta(gloss)))
 
-    # -- trilhas de estudo
-    conteudo = md_para_html(limpar(ler(os.path.join(MATERIAIS, "TRILHAS_DE_ESTUDO.md"))))
-    capitulos.append(("trilhas", "Trilhas de estudo", "O que estudar, em que ordem e com qual caso prático, a partir do que o próprio time apontou como necessário.", conteudo))
+    # -- perguntas de revisão
+    perg_html, perg_total = perguntas_consolidadas()
+    if perg_html:
+        capitulos.append(("perguntas", "Perguntas para revisar",
+                          "%d perguntas de revisão com resposta apoiada no material, agrupadas por tema."
+                          % perg_total, conta(perg_html)))
+
+    # -- pendências: o que ainda não está confirmado
+    pendencias = md_para_html(limpar(ler(os.path.join(MATERIAIS, "CONFLITOS_E_VALIDACAO.md"))))
+    pendencias += pendencias_consolidadas(cautelas)
+    capitulos.append(("pendencias", "Pontos a validar",
+                      "O que não está confirmado, o que pode ter mudado de versão e o que depende de decisão "
+                      "de alguém. Leia antes de executar qualquer procedimento.", conta(pendencias)))
 
     # -- limites
-    capitulos.append(("limites", "Limites, privacidade e uso responsável", "", TEXTO_LIMITES))
+    capitulos.append(("limites", "Limites e privacidade", "", TEXTO_LIMITES))
 
-    # montagem final
+    ordem = ["como-usar", "negocio", "referencia", "banco", "api", "procedimentos", "testes",
+             "infra", "automacao", "comunicacao", "glossario", "perguntas", "pendencias", "limites"]
+    capitulos.sort(key=lambda c: ordem.index(c[0]) if c[0] in ordem else len(ordem))
+
     corpo_html = []
     indice = []
     for chave, titulo, descricao, html_cap in capitulos:
@@ -1063,6 +1931,19 @@ details.dobra[open]>summary{margin-bottom:10px}
 .sintese b{color:#0b2b4a}
 h3.subtitulo{margin:22px 0 10px;font-size:15.5px;text-transform:uppercase;letter-spacing:.05em;
   color:var(--texto-suave);border-bottom:1px solid var(--borda);padding-bottom:6px}
+h4.assunto{margin:26px 0 10px;font-size:17px;color:var(--azul);border-bottom:1px solid var(--borda);
+  padding-bottom:6px}
+details.bloco{border:1px solid var(--borda);border-radius:12px;background:#fdfefe;padding:0;
+  margin:0 0 10px;overflow:hidden}
+details.bloco>summary{cursor:pointer;padding:12px 16px;font-weight:600;color:#0b2b4a;font-size:15.5px;
+  background:#f8fafc;list-style:none}
+details.bloco>summary::-webkit-details-marker{display:none}
+details.bloco>summary::before{content:"▸";color:var(--teal);margin-right:8px;font-weight:700}
+details.bloco[open]>summary::before{content:"▾"}
+details.bloco[open]>summary{border-bottom:1px solid var(--borda)}
+details.bloco>.bloco-corpo{padding:14px 18px 4px}
+details.ficha{background:#fcfdff}
+details.pergunta>summary{font-weight:600;color:var(--azul-claro)}
 
 footer.rodape{background:#0b2b4a;color:#cbd5e1;padding:22px 28px;font-size:14px}
 footer.rodape .envolt{max-width:1180px}
@@ -1160,23 +2041,22 @@ def montar_documento() -> str:
     carregar_nomes_de_midia()
     corpo, indice, total_blocos = montar_corpo()
     hoje = datetime.date.today().strftime("%d/%m/%Y")
-    fontes_total = len(FONTES) + len(SEM_CONTEUDO)
 
     cabecalho = (
         "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
         "<title>Base de conhecimento — Função Sistemas</title>\n"
-        "<meta name=\"description\" content=\"Material de estudo consolidado: sistemas, negócio, API, testes, ambientes, automação e comunicação.\">\n"
+        "<meta name=\"description\" content=\"Base de consulta: negócio, sistemas e telas, banco de dados, API, procedimentos, testes, ambientes, automação e comunicação.\">\n"
         "<style>\n" + CSS + "\n</style>\n</head>\n<body>\n"
     )
 
     topo = (
         "<header class=\"topo\"><div class=\"envolt\">\n"
         "<h1>Base de conhecimento — Função Sistemas</h1>\n"
-        "<p class=\"sub\">Material de estudo consolidado a partir dos treinamentos, demonstrações, reuniões e conversas de trabalho analisados. Organizado por tema, com as ressalvas e os pontos que ainda dependem de validação.</p>\n"
+        "<p class=\"sub\">Base de consulta do trabalho: como o negócio funciona, onde ficam as telas e os sistemas, quais consultas o banco responde, como a API conversa, quais procedimentos existem e o que ainda precisa ser confirmado antes de executar.</p>\n"
         "<div class=\"chips\">\n"
-        + '<span class="chip">' + str(fontes_total) + " fontes analisadas</span>\n"
-        + '<span class="chip">' + str(total_blocos) + " blocos de conhecimento</span>\n"
+        + '<span class="chip">' + str(total_blocos) + " fichas de consulta</span>\n"
+        + '<span class="chip">conhecimento consolidado por assunto</span>\n' 
         + "<span class=\"chip\">uso interno</span>\n"
         + '<span class="chip">atualizado em ' + hoje + "</span>\n"
         "</div>\n"
@@ -1191,7 +2071,7 @@ def montar_documento() -> str:
     miolo = (
         "<div class=\"envolt\"><div class=\"layout\">\n"
         "<nav class=\"lateral\"><h2>Índice</h2>" + indice
-        + '<span class="conta">' + str(total_blocos) + " blocos · navegue ou busque</span></nav>\n"
+        + '<span class="conta">' + str(total_blocos) + " fichas · navegue ou busque</span></nav>\n"
         "<main><div id=\"vazio\">Nenhum bloco corresponde à busca. Tente outro termo.</div>" + corpo + "</main>\n"
         "</div></div>\n"
         "<button id=\"topo\" title=\"Voltar ao topo\">&#8593;</button>\n"
@@ -1283,7 +2163,7 @@ def main() -> int:
             fh.write(doc)
         escrever_zip(doc, os.path.splitext(destino)[0] + ".zip")
 
-    blocos = doc.count('class="bloco"')
+    blocos = len(re.findall(r'class="bloco(?![\w-])', doc))
     capitulos = doc.count('class="capitulo"')
     print(
         "gerado: %s (%.1f KB, %d capítulos, %d blocos) — sem nomes de arquivo ou referências internas"
