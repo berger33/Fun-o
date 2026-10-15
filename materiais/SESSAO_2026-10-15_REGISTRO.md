@@ -28,3 +28,9 @@
 
 ## Próximo passo humano necessário para conclusão de conteúdo
 Obter as partes LFS dos vídeos ainda em revisão (especialmente `dESAVERBAÇÃO.mp4` e `AVERBACAO.mp4`; `Gravando 2026-10-07 132428.mp4`) via ponte de transferência/CI com acesso aos hosts de conteúdo, reconstruir, confirmar tamanho + SHA-256, executar ASR (`faster-whisper large-v3`), revisar integralmente o MP4 (telas, campos, mensagens), produzir capturas sanitizadas se úteis, atualizar todos os documentos para `concluído` e revalidar com `validar_materiais.py`.
+
+--- Verificação final de fonte (2026-10-15) ---
+- API GitHub (api.github.com, permitido): retornou metadata com size=1610612736, mas content=183 chars (ponteiro LFS base64); não o arquivo de vídeo.
+- download_url: https://media.githubusercontent.com/media/berger33/Fun-o/main/dESAVERBA%C3%87%C3%83O.mp4.part001 (host bloq./não permitido; curl retornou 000).
+- Nenhum outro host permitido (codeload, registry, pypi, files.pythonhosted) fornece objetos LFS.
+- Conclusão definitiva: reconstrução/visualização/revisão completa só é possível com acesso externo aos hosts de conteúdo LFS (CI, ponte de transferência, ou máquina com git-lfs + egress liberado para objects.githubusercontent.com).
