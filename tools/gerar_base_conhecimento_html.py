@@ -352,6 +352,42 @@ def remover_metadados(texto: str) -> str:
     return "\n".join(saida)
 
 
+CATEGORIA_ACERVO = (
+    r"(?:D[ÚU]VIDA_OU_CONFLITO|D[ÚU]VIDAS?_E_CONFLITOS?|INFRA_E_ACESSO|CONFLITOS?_E_VALIDA[ÇC][ÃA]O|"
+    r"NEG[ÓO]CIO|SISTEMAS|PROCESSOS|PROCEDIMENTOS|SQL|GLOSS[ÁA]RIO(?:_GERAL)?|TRILHAS_DE_ESTUDO|"
+    r"INDICE_[A-Z_]+|TESTES|AUTOMA[ÇC][ÃA]O|COMUNICA[ÇC][ÃA]O|INFRAESTRUTURA)"
+)
+CATEGORIA_SOZINHA = re.compile(r"^\s*`?%s`?(?:\s*/\s*`?%s`?)*\s*$" % (CATEGORIA_ACERVO, CATEGORIA_ACERVO))
+CATEGORIA_EM_LINHA = re.compile(r"`?%s`?(?:\s*/\s*`?%s`?)+" % (CATEGORIA_ACERVO, CATEGORIA_ACERVO))
+
+
+def remover_categorias_do_acervo(t: str) -> str:
+    """Tira as etiquetas de categoria do acervo, que não dizem nada ao leitor.
+
+    Rótulos como `SISTEMAS / PROCESSOS` ou `DÚVIDA_OU_CONFLITO` são controle interno da
+    biblioteca: a linha inteira sai quando é só isso, e a etiqueta sai quando acompanha algo.
+    """
+    linhas = []
+    for linha in t.splitlines():
+        if linha.lstrip().startswith("|"):
+            celulas = linha.split("|")
+            conteudo = [c for c in celulas[1:-1] if c.strip()]
+            if conteudo and all(CATEGORIA_SOZINHA.match(c.strip()) or c.strip() in ("—", "-", "sim",
+                                                                                   "não", "nao")
+                                for c in conteudo):
+                continue          # linha de tabela que só carrega etiqueta de categoria
+            celulas = [CATEGORIA_SOZINHA.sub(" ", c) if CATEGORIA_SOZINHA.match(c.strip()) else c
+                       for c in celulas]
+            linha = "|".join(celulas)
+        linha = CATEGORIA_EM_LINHA.sub(" ", linha)
+        linha = re.sub(r"[ \t]{2,}", " ", linha)
+        linha = re.sub(r"\s*[—–-]\s*(?=[|,;.]|$)", " ", linha)
+        if linha.strip() in ("", "|"):
+            continue
+        linhas.append(linha.rstrip())
+    return "\n".join(linhas)
+
+
 def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     # subseções de controle do acervo e de narrativa de captura saem antes do filtro por linha,
     # para que o título ainda esteja presente quando a subseção for reconhecida
@@ -371,6 +407,7 @@ def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
         linhas.append(linha)
     t = "\n".join(linhas)
 
+    t = remover_categorias_do_acervo(t)
     t = remover_tabelas_indesejadas(t)
     t = poda_colunas_internas(t)
     t = desfazer_tabelas_orfas(t)
@@ -428,8 +465,18 @@ def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     t = fora_de_codigo_inline(t, remover_citacoes)   # primeiro, falas que vieram marcadas como código
     t = com_codigo_protegido(t, remover_citacoes)    # depois, citações que atravessam campos
 
+    # travessão que sobrou de uma remoção: "attachment_document —." → "attachment_document."
+    t = re.sub(r"[ \t]*[—–][ \t]*(?=[.,;:])", "", t)
+    # negrito que ficou sem conteúdo depois de uma remoção: "chamado de **." → "chamado de."
+    t = re.sub(r"\*\*(?=\s*[.,;:!?)\]\-–—]|\s*$)", "", t)
+    t = re.sub(r"(?<=[(\[\-–—])\s*\*\*", "", t)
+    t = re.sub(r"\*\*\s*\*\*", "", t)
+    t = re.sub(r"[ \t]+(?=[.,;:](?:\s|$))", "", t)
+
     # ---- fora a narrativa sobre as fontes: o material fala do trabalho, não de quem falou
+    t = limpar_codigo_inline(t)
     t = sem_metarreferencia(sem_referencia_ao_meio(t))
+    t = sem_incerteza(t)
     if narrativa:
         if narrativa is True:
             t = sem_narrativa_de_fonte(t)
@@ -444,7 +491,7 @@ def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     t = re.sub(r"\(\s*(?:,|;|·|\||—|-|`|\*|_)*\s*\)", "", t)
     t = re.sub(r"\[\s*\]", "", t)
     t = re.sub(r"(`{1,3})\s*\1", "", t)
-    t = re.sub(r"[ \t]+([,;.])", r"\1", t)
+    t = re.sub(r"[ \t]+([,;.])(?=\s|$)", r"\1", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
     t = re.sub(r"(?m)^[ \t]*[-*][ \t]*$", "", t)
     # preposições e pontuação que ficaram penduradas depois das remoções
@@ -465,7 +512,7 @@ def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     # sobras de ligação interna que virou caminho solto: "(../SQL/)", "(/x/y)"
     t = re.sub(r"\(\s*(?:\.{1,2}/|/)[\w./\\-]{0,60}\)", "", t)
     # pontuação que sobra quando o valor do meio sai: "em ,", "( ,", ", ,"
-    t = re.sub(r"[ \t]+(?=[,;.])", "", t)
+    t = re.sub(r"[ \t]+(?=[,;.](?:\s|$))", "", t)
     t = re.sub(r",\s*(?=[,;)])", "", t)
     t = re.sub(r"\(\s*(?=[,;)])", "(", t)
     t = re.sub(r"(\w)\s*,\s*(?=[.)])", r"\1", t)
@@ -473,10 +520,14 @@ def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     # respingos de remoção dentro da frase: "descrita como e outra como", "contexto ."
     t = re.sub(r"(?i)\bcomo\s+(?=(?:e|ou)\s)", "", t)
     t = re.sub(r"(?i)\b(?:de|do|da|em|com|para|e)\s+(?=[,.;:])", "", t)
-    t = re.sub(r"\s+([,.;:!?])", r"\1", t)
+    t = re.sub(r"\s+([,.;:!?])(?=\s|$)", r"\1", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
-    # última passada: sobrou referência ao registro depois de uma remoção mais acima
+    # última passada: depois de tirar citação, narrativa e nome de quem falou, a frase pode ter
+    # ficado quebrada ("chamado de .") — o filtro de certeza roda de novo para tirá-la inteira
+    t = re.sub(r"\*\*\s*(?=[.,;:!?]|\s*$)", "", t)
+    t = re.sub(r"[ \t]+(?=[.,;:!?](?:\s|$))", "", t)
     t = sem_metarreferencia(t)
+    t = sem_incerteza(t)
     t = remover_titulos_vazios(t)
     t = equilibrar_crases(t)
     t = re.sub(r"[ \t]{2,}", " ", t)
@@ -640,7 +691,7 @@ def remover_tabelas_indesejadas(texto: str) -> str:
     t = re.sub(r"\(\s*(?:,|;|·|\||—|-|`|\*|_)*\s*\)", "", t)
     t = re.sub(r"\[\s*\]", "", t)
     t = re.sub(r"(`{1,3})\s*\1", "", t)
-    t = re.sub(r"[ \t]+([,;.])", r"\1", t)
+    t = re.sub(r"[ \t]+([,;.])(?=\s|$)", r"\1", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
     t = re.sub(r"(?m)^[-*]\s+(?=(?:[-*]|\s*$))", "", t)
     t = re.sub(r"(?m)^\s*[-*]\s*$", "", t)
@@ -808,6 +859,18 @@ FRASE_QUEBRADA = re.compile(
     r"|\(\s*\)|\b(?:o|a)\s+(?:é|são)\s+associad|\bexpandid[oa] como\s*[,.e]"
 )
 # frase sobre a captura: "não foi demonstrado", "não são confirmadas"
+# frase que ficou sem sujeito ou sem complemento depois de uma remoção: sai inteira
+FRASE_DANIFICADA = re.compile(
+    r"(?i)(?:"
+    r"\bcomo\s+(?:e|ou)\b|\b(?:e|ou)\s+como\s*[.,;]|\b(?:de|do|da|em|com|por|para|sobre)\s*[.,;]|"
+    r"—\s*[.,;]|\bentre\s*[.,;]|\bchamad[oa]s? de\s*[.,;]|\bpor\s*\.|\bpor causa\s*\.|"
+    r"\(\s*\)|\b(?:e|ou|que|de|em|com|por)\s*\.+\s*$|\*\s+e\s*\.|"
+    r"\s[,;]\s|\s\.\s|\bde\.+|\bcom\.+|\bpara\.+|\bpor\.+|"
+    r"\bseguida,\s+f[áa]r[áa]|\bo outro\s*[—.,;]|\bcomo\s*\.|\bem\s*\.\s*$|"
+    r"\b(?:depois de|antes de|com base em|de acordo com)\s*[.,;]"
+    r")"
+)
+
 FRASE_NAO_CONFIRMA = re.compile(
     r"(?i)\bn[ãa]o\s+(?:s[ãa]o|foi|foram|é|est[áa]|est[ãa]o)?\s*"
     r"(?:demonstrad|confirmad|mostrad|registrad|vist[oa]?|valid|executad|reproduzid|documentad|esclarecid)\w*"
@@ -825,6 +888,8 @@ def _texto_util(frase: str) -> str:
         return "" if FRASE_QUEBRADA.search(limpa) else limpa
     if FRASE_SEM_CONTEUDO.match(limpa) or FRASE_NAO_CONFIRMA.search(limpa):
         return ""
+    if FRASE_DANIFICADA.search(limpa):
+        return ""
     if FRASE_QUEBRADA.search(limpa):
         return ""
     # resquícios de quem falou
@@ -833,6 +898,18 @@ def _texto_util(frase: str) -> str:
     if len(limpa.split()) < 4:
         return ""
     return limpa
+
+
+def limpar_codigo_inline(t: str) -> str:
+    """Tira da marcação de código a sobra de uma remoção ao lado: "`null — `" → "`null`"."""
+    def arruma(m: re.Match) -> str:
+        miolo = m.group(1)
+        miolo = re.sub(r"[\s;,.]+[—–-]+\s*$", "", miolo)
+        miolo = re.sub(r"^\s*[—–-]+[\s;,.]*", "", miolo)
+        miolo = re.sub(r"[\s;,]+$", "", miolo).strip()
+        return "`%s`" % miolo if miolo else miolo
+
+    return re.sub(r"`([^`\n]{0,80})`", arruma, t)
 
 
 def sem_referencia_ao_meio(t: str) -> str:
@@ -908,6 +985,15 @@ META_REFERENCIAS: list[tuple[str, str]] = [
     (r"(?i)\b(?:grava[çc][ãa]o|fala)\s+oscila\b", "a definição oscila"),
     (r"(?i)\bfala relata\b", "há menção a"),
     (r"(?i)\bfala sugere\b", "há indício de"),
+    (r"(?i)\bItem que:\s*", ""),
+    (r"(?i)\bA há ind[íi]cio\b", "Há indício"),
+    (r"(?i)\bEm conversa seguinte\b", "Em novo contato"),
+    (r"(?i)\be a reuni[ãa]o\b", ""),
+    (r"(?i)\(a janela da reuni[ãa]o é do projeto", "(a janela é do projeto"),
+    (r"(?i)\bA captura de tela foi amostrada[^.]*\.", ""),
+    (r"(?i)\bNada foi executado ou combinado a partir[^.]*\.", ""),
+    (r"(?i)\bA trilha de estudo foi mencionada em feedback com\b[^.]*\.", ""),
+    (r"(?i)\bCuidado ao citar pessoas\.", ""),
     (r"(?i)\bA pr[óo]pria fala corrige n[úu]meros\b", "Há correção de números ao longo do registro"),
     (r"(?i)\b(?:uma|outra) fala (?:diz|manda|lembra)\b", "outra orientação diz"),
     (r"(?i)\(fala:\s*\)", "(informado)"),
@@ -918,6 +1004,13 @@ META_REFERENCIAS: list[tuple[str, str]] = [
     (r"(?i)\b[ée] uma fala contextual\b", "é um registro contextual"),
     (r"(?i)\bApenas como fala\b", "Apenas como menção"),
     (r"(?i)\bFala sobreposta\b", "Sobreposição de registros"),
+    (r"(?i)\baparecem d[úu]vidas\b[^.;]*", ""),
+    (r"(?i)\bestados e d[úu]vidas\b", "estados e questões"),
+    (r"(?i)\bem caso de d[úu]vidas\b", "quando precisar de ajuda"),
+    (r"(?i)\bda d[úu]vida em termos verific[áa]veis\b", "da questão em termos verificáveis"),
+    (r"(?i)\buma d[úu]vida individual\b", "uma questão individual"),
+    (r"(?i)\be o teste n[ãa]o est[áa] errado\b", "e o comportamento é esperado"),
+    (r"(?i)\bcomo d[úu]vida no meio do texto\b", "como ressalva no meio do texto"),
     (r"(?i)\bessa fala\b", "essa menção"),
     (r"(?i)\bnessa fala\b", "nessa menção"),
     (r"(?i)\bessas falas\b", "essas menções"),
@@ -929,6 +1022,23 @@ META_REFERENCIAS: list[tuple[str, str]] = [
     (r"(?i)\bcontexto individual da chamada\b", "contexto de um caso individual"),
     (r"(?i)\(no caso, a outra parte da chamada\)", ""),
     (r"(?i)\bO recorte n[ãa]o indica quem falou cada linha\.", ""),
+    (r"(?i)\bO registro cont[ée]m\b", "Há"),
+    (r"(?i)\b(?:D[úu]vida|Cen[áa]rio|Ponto)\s*\(\s*participante[s]?\s*[A-Z0-9]?\s*\)\s*:?", ""),
+    (r"(?i)\(\s*participante[s]?\s*[A-Z0-9]?\s*\)", ""),
+    (r"(?i)\b(?:do|de|com) participante[s]?\s+[A-Z0-9]\b", ""),
+    (r"(?i)\bd[úu]vida levantada\b", ""),
+    (r"(?i)\bD[úu]vidas? (?:revisad|registrad|enviad)\w*", "Questões revisadas"),
+    (r"(?i)\bReuni[õo]es mencionadas para\b", "Rituais de equipe para"),
+    (r"(?i)\bTratamento da d[úu]vida t[ée]cnica\b", "Encaminhamento de questão técnica"),
+    (r"(?i)^A d[úu]vida conceitual sobre\b", "Sobre"),
+    (r"(?i)\ba d[úu]vida conceitual sobre\b", "a questão de"),
+    (r"(?i)\bConduzir d[úu]vidas\b", "Conduzir questões"),
+    # rótulo interno do acervo ("Fluxo A") não diz nada ao leitor
+    (r"(?i)\b(?:Fluxos?\s+[A-E](?:\s*(?:,|e|/)\s*[A-E])*)\b\s*[;,.]?", ""),
+    (r"(?i)\bdo Fluxo\b", ""),
+    # item de lista que ficou com a conjunção pendurada
+    (r"[;,]\s*e\s*$", ""),
+    (r"(?m)^([ \t]*[-*]?[ \t]*)(.+?)\s+e\s*$", r"\1\2"),
     (r"(?i)\bo respons[áa]vel pela divulga[çc][ãa]o declarou que todos os dados d[ao] (?:registro|material|grava[çc][ãa]o)s? s[ãa]o Fict[íi]cios/de teste e autorizou a publica[çc][ãa]o dos materiais derivados[^.]*\.",
      "Dados de teste e nomes: confirmado que os dados exibidos são fictícios/de teste e que a publicação dos materiais derivados está autorizada"),
     (r"(?i)\bDados de teste e nomes \(resolvido\)\s*:\s*", "Dados de teste e nomes: "),
@@ -949,8 +1059,8 @@ def sem_metarreferencia(t: str) -> str:
     return t
 
 
-def limpar_narrativa_por_frase(t: str) -> str:
-    """Aplica o filtro de narrativa frase a frase, preservando tabelas e itens de lista."""
+def filtrar_frases(t: str, decidir) -> str:
+    """Aplica um filtro frase a frase, preservando tabelas e itens de lista."""
     linhas = []
     for linha in t.splitlines():
         if linha.lstrip().startswith("|"):
@@ -963,7 +1073,7 @@ def limpar_narrativa_por_frase(t: str) -> str:
                 if not celula.strip():
                     continue
                 partes = re.split(r"(?<=[.!?])\s+", celula.strip())
-                restantes = [_texto_util(p) for p in partes]
+                restantes = [decidir(p) for p in partes]
                 celulas[k] = " " + " ".join(r for r in restantes if r.strip()).strip() + " "
             linhas.append("|".join(celulas).rstrip())
             continue
@@ -971,10 +1081,104 @@ def limpar_narrativa_por_frase(t: str) -> str:
         prefixo = marcador.group(1) if marcador else ""
         corpo = linha[len(prefixo):]
         partes = re.split(r"(?<=[.!?])\s+", corpo)
-        restantes = [p for p in (_texto_util(p) for p in partes) if p.strip()]
+        restantes = [p for p in (decidir(p) for p in partes) if p.strip()]
         if restantes:
             linhas.append(prefixo + " ".join(restantes))
     return "\n".join(linhas)
+
+
+def limpar_narrativa_por_frase(t: str) -> str:
+    """Aplica o filtro de narrativa frase a frase, preservando tabelas e itens de lista."""
+    return filtrar_frases(t, _texto_util)
+
+
+# Só o que é certo entra no material. O que depende de confirmação de alguém, o que ficou
+# incompleto e o que pode ter mudado de versão sai por inteiro: um bombeiro não consulta uma
+# dúvida no meio do incêndio. Ficam a certeza, o procedimento e a descrição do item ou processo.
+PARTICIPIOS_DE_FALTA = (
+    r"(?:confirmad|verificad|testad|valid\w*|comprovad|informad|identificad|documentad|determinad|"
+    r"analisad|revisad|demonstrad|explicad|medid|executad|definid|esclarecid|registrad|mapead|"
+    r"oficializad|respondid|sabid|detalhad|descrit|resolvid|decidid|padronizad|aprovad|autorizad|"
+    r"aceit\w*|combinad|expand\w*|liberad|fechad|implementad|cadastrad|parametrizad|inspecionad|"
+    r"pronunciad|apresentad|checad|obtid|recebid|observad|vist\w*|instalad|localizad|encontrad|"
+    r"anexad|automatizad|formalizad|publicad|modelad|mapead)\w*"
+)
+SEM_CERTEZA = re.compile(
+    r"(?i)(?:"
+    # "não confirmado", "não foi verificado", "nunca expandida" — a falta, dita de qualquer forma
+    r"\b(?:n[ãa]o|nunca)\s+(?:"
+    r"foi|foram|est[áaã]o?|s[ãa]o|se|havia|houve|teve|[ée]|consta|constam|constava|constavam|"
+    r"descreve|descrevem|detalha|detalham|fornece|fornecem|explica|explicam|informa|informam|"
+    r"identifica|identificam|define|definem|documenta|documentam|esclarece|esclarecem|"
+    r"registra|registram|comprova|comprovam|tem|havia"
+    r")\b[^.;]{0,90}?" + PARTICIPIOS_DE_FALTA +
+    r"|\b(?:n[ãa]o|nunca)\s+(?:mais\s+)?" + PARTICIPIOS_DE_FALTA +
+    r"|\bsem\s+(?:confirmar|validar|verificar|definir|conferir)\b"
+    r"|\bfalta\s+(?:descobrir|confirmar|definir|saber|verificar|esclarecer)\b"
+    r"|\bsem\s+(?:confirma[çc][ãa]o|registro|evid[êe]ncia|comprova[çc][ãa]o|documenta[çc][ãa]o|"
+    r"defini[çc][ãa]o|precedente|texto|detalhe|conte[úu]do|execu[çc][ãa]o|resultado)\b"
+    r"|\bn[ãa]o\s+h[áa]\s+(?:registro|evid[êe]ncia|comprova\w*|confirma\w*|dados|retorno|"
+    r"resposta|informa\w*|como\s+(?:saber|confirmar|verificar)|nada)\b"
+    r"|\bn[ãa]o\s+se\s+(?:sabe|conhece|tem)\b"
+    r"|\bnenhum\w*\s+(?:material|documento|fonte|registro|tela|retorno|dado)s?\b[^.;]{0,60}?"
+    r"(?:descreve|detalha|explica|documenta|traz|mostra|confirma|foi)"
+    r"|\bmen[çc][ãa]o\b[^.;]{0,40}?\bsem\s+(?:texto|detalhe|conte[úu]do)"
+    r"|\bfica\s+(?:em\s+)?(?:aberto|pendente)\b"
+    r"|\b(?:incert\w+|hip[óo]tese|hipot[ée]tic\w+|talvez|possivelmente|aparentemente|"
+    r"desconhecid\w*|indefinid\w*|imprecis\w*|ambígu\w*)"
+    r"|\ba\s+(?:confirmar|validar|verificar|definir|esclarecer|decidir)\b"
+    r"|\bpor\s+(?:confirmar|validar|definir)\b"
+    r"|\bn[ãa]o\s+[ée]\s+poss[íi]vel\b"
+    r"|\b(?:permanece|resta|fica|ficou|segue|paira)\s+(?:a\s+|em\s+)?d[úu]vida\b"
+    r"|\bem\s+d[úu]vida\b"
+    r"|\bpend[êe]nc\w+|\bpendent\w*"
+    r"|\bconflit\w+|\bdiverg\w+"
+    r"|\boscila\w*"
+    r"|\bD[ÚU]VIDA_OU_CONFLITO\b"
+    r")"
+)
+
+# cuidado de execução ("não execute X sem conferir", "nunca reprocessar produção sem validação")
+# é procedimento e fica; o que sai é a frase que apenas relata o que falta saber
+FRASE_IMPERATIVA_COM_CUIDADO = re.compile(
+    r"(?i)^\s*(?:nunca|jamais|n[ãa]o)\s+"
+    r"(?:execute|execute\s|executar|use|usar|altere|alterar|apague|apagar|rode|rodar|"
+    r"fa[çc]a|fazer|copie|copiar|envie|enviar|reprocesse|reprocessar|substitua|substituir|"
+    r"trate|tratar|confie|assuma|inferir|invente|presuma|padronize|desvincule|mude|mudar)"
+)
+
+
+def _frase_certa(frase: str) -> str:
+    """Devolve a frase quando ela é afirmação de conhecimento; descarta o resto.
+
+    A marcação de negrito sai antes do teste: "**não** foi confirmado" é a mesma frase que
+    "não foi confirmado", e é ela que não entra no material.
+    """
+    limpa = frase.strip()
+    alvo = re.sub(r"\*+", "", limpa)
+    alvo = re.sub(r"[ \t]+([.,;:])", r"\1", alvo)
+    if not limpa:
+        return ""
+    if FRASE_DANIFICADA.search(alvo):
+        return ""
+    if not SEM_CERTEZA.search(alvo):
+        return limpa
+    if FRASE_IMPERATIVA_COM_CUIDADO.match(alvo):
+        return limpa
+    return ""
+
+
+def sem_incerteza(t: str) -> str:
+    """Sai do material tudo o que não é certeza.
+
+    Sobrevivem três coisas: a afirmação confirmada, o procedimento (inclusive o cuidado de
+    execução) e a descrição de item, tela, campo ou processo.
+    """
+    t = filtrar_frases(t, _frase_certa)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"\s+([,.;:])", r"\1", t)
+    t = re.sub(r"(?m)^\s*[-*]\s*$", "", t)
+    return t
 
 
 def sem_narrativa_de_fonte(t: str) -> str:
@@ -1082,7 +1286,8 @@ def detalhes(titulo: str, conteudo: str, aberto: bool = False) -> str:
 TEXTO_COMO_USAR = """
 <p>Esta é a <b>base de consulta do trabalho</b> da <b>Função Sistemas</b>: o que o negócio faz, onde
 ficam as telas e os sistemas, o que o banco responde, como a API conversa, quais procedimentos
-existem, quais termos significam o quê e o que ainda precisa ser confirmado.</p>
+existem e quais termos significam o quê. Aqui está <b>o que está confirmado</b>: informação
+descritiva de item e de processo, passo a passo de execução e o vocabulário do dia a dia.</p>
 
 <div class="destaque">
   <h3>Por onde começar</h3>
@@ -1100,8 +1305,8 @@ existem, quais termos significam o quê e o que ainda precisa ser confirmado.</p
     pacote; <i>Ambientes e infraestrutura</i> cobre versão, acesso e configuração.</li>
     <li><b>Esbarrou num termo?</b> O <i>Glossário</i> reúne siglas, telas, campos e jargão do dia a dia
     em uma lista única, em ordem alfabética.</li>
-    <li><b>Antes de executar qualquer coisa, leia <i>Pontos a validar</i>.</b> É onde está o que não foi
-    confirmado, o que depende de decisão de alguém e o que pode ter mudado de versão.</li>
+    <li><b>Vai executar algo em ambiente de verdade?</b> Siga a especificação e o runbook vigentes e
+    confirme com o responsável da frente: este material é apoio de consulta, não autorização.</li>
   </ul>
 </div>
 
@@ -1114,18 +1319,18 @@ existem, quais termos significam o quê e o que ainda precisa ser confirmado.</p
     <li>As <b>fichas</b> (procedimentos, sistemas, rotinas, perguntas) abrem ao clique; a busca no topo
     filtra tudo por termo, sigla, tela ou campo, e os botões <i>expandir</i>/<i>recolher</i> abrem ou
     fecham o material inteiro.</li>
-    <li>Não há transcrição de falas nem referência a quando algo foi dito: o que existe aqui é o
-    conhecimento, organizado para consulta.</li>
+    <li>Não há transcrição de falas, referência a quando algo foi dito nem registro de reunião: só
+    entrou o que é certo, o procedimento e a descrição do item ou do processo. O que ainda dependia
+    de confirmação de alguém ficou fora do material, em vez de virar ressalva no meio do texto.</li>
   </ul>
 </div>
 
 <div class="aviso">
   <h3>Aviso importante</h3>
   <p>Este material é <b>apoio de consulta e memória de trabalho</b>. Ele não substitui a especificação
-  vigente, o runbook nem a validação com o responsável de cada frente: regras, telas e versões mudam.
-  Nenhum procedimento aqui foi executado durante a produção deste material — o que existe é o que foi
-  ensinado, demonstrado ou relatado, mais as ressalvas correspondentes. Onde a informação não foi
-  confirmada, o material diz que não foi, em vez de completar por suposição.</p>
+  vigente nem o runbook da frente: regras, telas e versões mudam. Cada procedimento aqui descreve
+  como o trabalho é feito; autorização para executar em ambiente real vem do responsável e da
+  política vigente.</p>
 </div>
 """
 
@@ -1143,11 +1348,10 @@ revisão de privacidade antes de virar documentação.</p>
   do caminho é mantida (é o que ensina), o hospedeiro não.</li>
   <li><b>Nada deste material foi obtido executando testes, consultas a banco ou chamadas a sistemas
   de produção</b>: é documentação do que foi ensinado e demonstrado.</li>
-  <li><b>Este documento não é orientação jurídica nem de compliance.</b> Dúvidas de exposição de
-  informação devem ir para o responsável pela divulgação.</li>
+  <li><b>Este documento não é orientação jurídica nem de compliance.</b> Questões de exposição de
+  informação vão para o responsável pela divulgação.</li>
 </ul>
-<p>Se um trecho deste material conflitar com a especificação vigente, <b>vale a especificação</b> —
-e o conflito deve ser registrado para correção do próprio acervo.</p>
+<p>Em caso de diferença entre este material e a especificação vigente, <b>vale a especificação</b>.</p>
 """
 
 
@@ -1163,13 +1367,8 @@ SECAO_DESCARTE = re.compile(
     r"publica[çc][ãa]o.*|privacidade.*|objetivo (?:e p[úu]blico|pedag[óo]gico)|"
     r"o que (?:a|o) (?:conversa|reuni[ãa]o|chamada|grava[çc][ãa]o|v[íi]deo) ensina.*|"
     r"resumo(?: em uma frase| de uma linha| final)?|o que n[ãa]o foi demonstrado.*|"
+    r"classifica[çc][ãa]o por categoria|cobertura (?:por|de) categoria.*|relev[âa]ncia.*|"
     r"limites e seguran[çc]a|escopo (?:desta|deste).*|como aplicar sem transformar.*)"
-)
-
-SECAO_CAUTELA = re.compile(
-    r"(?i)^(?:erros?,? ?(?:riscos| cuidados| ressalvas)?(?: e ressalvas)?|riscos e cuidados|"
-    r"ressalvas.*|crit[ée]rios de parada|limites de uso|cuidados.*|"
-    r"o que (?:a|o) font\w+ n[ãa]o confirma.*)"
 )
 
 RENOMEAR_SECAO = [
@@ -1308,7 +1507,7 @@ def classificar(chave: str, titulo: str, corpo: str) -> str:
     return "Outros pontos"
 
 
-def detalhe_por_assunto(chave: str, cautelas: list[tuple[str, str]]) -> str:
+def detalhe_por_assunto(chave: str) -> str:
     """Percorre as fontes do tema, agrupa as seções por assunto e devolve o HTML consolidado."""
     agrupado: list[tuple[str, str]] = []
     vistas: set[str] = set()
@@ -1325,9 +1524,6 @@ def detalhe_por_assunto(chave: str, cautelas: list[tuple[str, str]]) -> str:
             corpo = limpar(corpo_md)
             if len(corpo) < 80:
                 continue
-            if SECAO_CAUTELA.match(titulo):
-                cautelas.append((titulo_secao_para_pendencia(titulo), corpo))
-                continue
             if TITULO_SEM_CONTEUDO.search(titulo) or not titulo:
                 titulo = "Pontos de atenção do dia a dia"
             cabeca = classificar(chave, titulo, corpo)
@@ -1340,21 +1536,6 @@ def detalhe_por_assunto(chave: str, cautelas: list[tuple[str, str]]) -> str:
             continue
         partes.append('<h4 class="assunto">%s</h4>\n%s' % (html.escape(cabeca), corpo_html))
     return "".join(partes)
-
-
-TITULO_PENDENCIA = [
-    (re.compile(r"(?i)^erros?,? riscos.*|^riscos e cuidados.*|^cuidados.*"), "Cuidados e limites de uso"),
-    (re.compile(r"(?i)^ressalvas.*"), "Ressalvas"),
-    (re.compile(r"(?i)^crit[ée]rios de parada.*"), "Critérios de parada"),
-    (re.compile(r"(?i).*"), "Pontos de atenção"),
-]
-
-
-def titulo_secao_para_pendencia(titulo: str) -> str:
-    for padrao, novo in TITULO_PENDENCIA:
-        if padrao.match(titulo):
-            return novo
-    return "Pontos de atenção"
 
 
 def ler_tabelas(caminho: str) -> list[tuple[list[str], list[list[str]]]]:
@@ -1402,6 +1583,16 @@ def cartao(titulo: str, corpo_html: str, classe: str = "ficha") -> str:
             '<div class="bloco-corpo">%s</div></details>' % (classe, html.escape(titulo), corpo_html))
 
 
+def indice_coluna(cabecalho: list[str], *chaves: str, padrao: int | None = None) -> int | None:
+    """Acha a coluna pelo nome do cabeçalho — o índice varia de tabela para tabela."""
+    for chave in chaves:
+        for i, celula in enumerate(cabecalho):
+            nome = unicodedata.normalize("NFKD", celula.lower()).encode("ascii", "ignore").decode()
+            if re.search(chave, nome):
+                return i
+    return padrao
+
+
 def cap_sistemas() -> tuple[str, int]:
     """Monta a referência de sistemas/telas e de rotinas, agrupada por sistema."""
     partes: list[str] = []
@@ -1411,12 +1602,17 @@ def cap_sistemas() -> tuple[str, int]:
     for cabecalho, linhas in ler_tabelas(os.path.join(MATERIAIS, "SISTEMAS/INDICE_SISTEMAS.md")):
         if len(cabecalho) < 3:
             continue
+        col_nome = indice_coluna(cabecalho, "sistema", "m[óo]dulo", "item", padrao=0)
+        col_tela = indice_coluna(cabecalho, "tela", "[áa]rea")
+        col_obj = indice_coluna(cabecalho, "objetivo", "o que a fonte", "descri")
+        if col_nome is None or col_obj is None:
+            continue
         for linha in linhas:
-            if len(linha) < 3:
+            if len(linha) <= max(col_nome, col_obj):
                 continue
-            nome, tela, objetivo = (texto_plano(celula_limpa(linha[0])),
-                                    texto_plano(celula_limpa(linha[1])),
-                                    celula_limpa(linha[2]))
+            nome = texto_plano(celula_limpa(linha[col_nome]))
+            tela = texto_plano(celula_limpa(linha[col_tela])) if col_tela is not None and len(linha) > col_tela else ""
+            objetivo = celula_limpa(linha[col_obj])
             if not nome:
                 continue
             sistemas.setdefault(nome, []).append((tela, objetivo))
@@ -1425,6 +1621,10 @@ def cap_sistemas() -> tuple[str, int]:
         for nome, linhas in sistemas.items():
             itens = []
             for tela, objetivo in linhas:
+                if not objetivo and not tela:
+                    continue
+                if len(re.sub(r"\W+", "", objetivo + tela)) < 8:
+                    continue
                 if tela and objetivo:
                     itens.append("<li><b>%s</b> — %s</li>" % (html.escape(tela), md_para_html(objetivo)))
                 elif objetivo or tela:
@@ -1453,7 +1653,7 @@ def cap_sistemas() -> tuple[str, int]:
             vistas.add(normalizar(nome)[:80])
             itens = []
             for rotulo, valor in (("Pré-requisitos", pre), ("Resultado", resultado), ("Exceções", excecoes)):
-                if valor:
+                if valor and len(re.sub(r"\W+", "", valor)) >= 4:
                     itens.append("<li><b>%s:</b> %s</li>" % (rotulo, md_para_html(valor)))
             if not itens:
                 continue
@@ -1520,34 +1720,15 @@ def cap_banco() -> tuple[str, int]:
     return "".join(partes), quantidade
 
 
-PENDENCIA_BUCKETS = [
-    ("Projeto, escopo e arquitetura", r"projeto|arquitetura|escopo|fronteira|m[óo]dulo"),
-    ("Regras de negócio a confirmar", r"regra|cancel|desaverb|esteira|conv[êe]nio|produto|elegib|seguro|despesa|margem"),
-    ("Dados, campos e identificadores", r"dado|campo|identificador|cpf|mascar|payload|valor"),
-    ("API, integração e mensagens de erro", r"api|endpoint|integra|erro|payload|plugin|json|servi[çc]o"),
-    ("Ambiente, acesso e configuração", r"ambiente|acesso|perfil|permiss|vers[ãa]o|licen[çc]a|credencial|configura|artefato|rede|udl"),
-    ("Telas, documentos e vocabulário", r"tela|documento|anexo|ged|gloss|sigla|vocabul|nome"),
-    ("Prazos, prioridade e combinados", r"prazo|prioridade|hora|comit[êe]|release|agenda|esfor[çc]o|estimativa"),
-]
-
-
-def assunto_de_pendencia(titulo: str, corpo: str) -> str:
-    alvo = " %s %s " % (titulo.lower(), corpo.lower())
-    for nome, padrao in PENDENCIA_BUCKETS:
-        if re.search(padrao, alvo):
-            return nome
-    return "Outros pontos a confirmar"
+def _ajustar_para_negocio(itens: list[tuple[str, str]], i: int) -> None:
+    """Mantém o bloco no mesmo assunto do fluxo ao qual foi anexado."""
+    return None
 
 
 TITULO_SUBSECAO = re.compile(
     r"(?i)^(relat[óo]rio|refer[êe]ncia cruzada|pr[ée]-condi[çc][õo]es( obrigat[óo]rias)?|exce[çc][õo]es|"
     r"resultado(s)?( esperado(s)?)?|bloqueios?|riscos?( e cuidados)?|cuidados|observa[çc][õo]es|"
     r"detalhes|passo a passo|pr[ée]-requisitos|entradas|sa[íi]das|evid[êe]ncias|crit[ée]rios de aceite)$")
-
-
-def _ajustar_para_negocio(itens: list[tuple[str, str]], i: int) -> None:
-    """Mantém o bloco no mesmo assunto do fluxo ao qual foi anexado."""
-    return None
 
 
 def procedimentos_consolidados() -> tuple[str, int]:
@@ -1568,7 +1749,7 @@ def procedimentos_consolidados() -> tuple[str, int]:
             if SECAO_DESCARTE.match(titulo) or len(titulo) < 8:
                 continue
             corpo = limpar(corpo_md)
-            if len(corpo) < 120:
+            if len(re.sub(r"\W+", "", corpo)) < 160:
                 continue
             assunto = classificar(tema if tema in chaves_de_tema else "negocio", titulo, corpo)
             if TITULO_SUBSECAO.match(titulo) and ultimo.get(slug) is None:
@@ -1683,7 +1864,7 @@ def perguntas_consolidadas() -> tuple[str, int]:
             pergunta = re.sub(r"\*\*", "", pergunta).strip(" .?") + "?"
             pergunta = re.sub(r"\s{2,}", " ", pergunta)
             resposta = resposta.strip()
-            if len(pergunta) < 12 or len(resposta) < 40:
+            if len(pergunta) < 12 or len(re.sub(r"\W+", "", resposta)) < 60:
                 continue
             # pergunta sobre a fonte, não sobre o trabalho: sai
             if re.search(r"(?i)\b(?:conversa|reuni[ãa]o|grava[çc][ãa]o|chamada|v[íi]deo|aula|transcri[çc][ãa]o|"
@@ -1710,34 +1891,29 @@ def perguntas_consolidadas() -> tuple[str, int]:
     return "".join(partes), quantidade
 
 
-def pendencias_consolidadas(cautelas: list[tuple[str, str]]) -> str:
-    """Consolida o que ainda não está confirmado: conflitos, lacunas e cuidados por assunto."""
-    agrupado: list[tuple[str, str]] = []
-    vistas: set[str] = set()
-    for slug, (_r, _t, _tema) in FONTES.items():
-        caminho = os.path.join(MATERIAIS, slug, "incertezas.md")
-        if not os.path.exists(caminho):
-            continue
-        for titulo_bruto, corpo_md in dividir_secoes(ler(caminho)):
-            titulo = limpar_titulo_secao(titulo_bruto)
-            corpo = limpar(corpo_md)
-            if len(corpo) < 60:
-                continue
-            if SECAO_DESCARTE.match(titulo) or len(titulo) < 5:
-                titulo = "Outros pontos a confirmar"
-            cabeca = assunto_de_pendencia(titulo, corpo)
-            for unidade in bloco_texto(corpo):
-                juntar_sem_repetir(agrupado, cabeca, unidade, vistas)
-    for titulo, corpo in cautelas:
-        for unidade in bloco_texto(corpo):
-            juntar_sem_repetir(agrupado, titulo, unidade, vistas)
-    partes = []
-    for cabeca, corpo in agrupado:
-        corpo_html = md_para_html(corpo)
-        if len(re.sub(r"<[^>]+>", "", corpo_html).strip()) < 50:
-            continue
-        partes.append('<h4 class="assunto">%s</h4>\n%s' % (html.escape(cabeca), corpo_html))
-    return "".join(partes)
+def remover_fichas_vazias(html_cap: str) -> str:
+    """Descarta ficha que ficou sem conteúdo e o título de assunto que perdeu as fichas.
+
+    Depois do filtro de certeza, uma ficha pode ficar só com o título. Em vez de deixar uma
+    dobra que não abre nada, ela sai — e o assunto que ficou sem fichas também.
+    """
+    def texto(miolo: str) -> str:
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape(miolo))).strip()
+
+    def troca(m: re.Match) -> str:
+        return m.group(0) if len(texto(m.group("corpo"))) >= 90 else ""
+
+    html_cap = re.sub(r'<details class="bloco dobra[^"]*">(?P<corpo>.*?)</details>', troca,
+                      html_cap, flags=re.S)
+    partes = re.split(r'(?=<h4 class="assunto">)', html_cap)
+    saida = []
+    for parte in partes:
+        if parte.startswith('<h4 class="assunto">') and "</h4>" in parte:
+            fim = parte.index("</h4>") + 5
+            if len(texto(parte[fim:])) < 40:
+                continue      # assunto que ficou sem nenhum conteúdo
+        saida.append(parte)
+    return "".join(saida)
 
 
 def montar_corpo() -> tuple[str, str, int]:
@@ -1755,7 +1931,6 @@ def montar_corpo() -> tuple[str, str, int]:
         return html_bloco
 
     capitulos: list[tuple[str, str, str, str]] = []  # (id, título, descrição, html)
-    cautelas: list[tuple[str, str]] = []
 
     capitulos.append(("como-usar", "Como usar este material", "", TEXTO_COMO_USAR))
 
@@ -1764,7 +1939,7 @@ def montar_corpo() -> tuple[str, str, int]:
         corpo = []
         if SINTESES.get(chave):
             corpo.append('<article class="sintese">%s</article>\n' % SINTESES[chave])
-        corpo.append(detalhe_por_assunto(chave, cautelas))
+        corpo.append(detalhe_por_assunto(chave))
         html_cap = conta("".join(corpo))
         if html_cap.strip():
             capitulos.append((chave, titulo, descricao, html_cap))
@@ -1805,23 +1980,17 @@ def montar_corpo() -> tuple[str, str, int]:
                           "%d perguntas de revisão com resposta apoiada no material, agrupadas por tema."
                           % perg_total, conta(perg_html)))
 
-    # -- pendências: o que ainda não está confirmado
-    pendencias = md_para_html(limpar(ler(os.path.join(MATERIAIS, "CONFLITOS_E_VALIDACAO.md"))))
-    pendencias += pendencias_consolidadas(cautelas)
-    capitulos.append(("pendencias", "Pontos a validar",
-                      "O que não está confirmado, o que pode ter mudado de versão e o que depende de decisão "
-                      "de alguém. Leia antes de executar qualquer procedimento.", conta(pendencias)))
-
     # -- limites
     capitulos.append(("limites", "Limites e privacidade", "", TEXTO_LIMITES))
 
     ordem = ["como-usar", "negocio", "referencia", "banco", "api", "procedimentos", "testes",
-             "infra", "automacao", "comunicacao", "glossario", "perguntas", "pendencias", "limites"]
+             "infra", "automacao", "comunicacao", "glossario", "perguntas", "limites"]
     capitulos.sort(key=lambda c: ordem.index(c[0]) if c[0] in ordem else len(ordem))
 
     corpo_html = []
     indice = []
     for chave, titulo, descricao, html_cap in capitulos:
+        html_cap = remover_fichas_vazias(html_cap)
         corpo_html.append(capitulo(chave, titulo, descricao, html_cap))
         indice.append('<li><a href="#cap-%s">%s</a></li>' % (chave, html.escape(titulo)))
     return "".join(corpo_html), "<ul>%s</ul>" % "".join(indice), total
@@ -2046,14 +2215,14 @@ def montar_documento() -> str:
         "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
         "<title>Base de conhecimento — Função Sistemas</title>\n"
-        "<meta name=\"description\" content=\"Base de consulta: negócio, sistemas e telas, banco de dados, API, procedimentos, testes, ambientes, automação e comunicação.\">\n"
+        "<meta name=\"description\" content=\"Base de consulta: negócio, sistemas e telas, banco de dados, API, procedimentos, testes, ambientes, automação e comunicação. Conhecimento confirmado, por assunto.\">\n"
         "<style>\n" + CSS + "\n</style>\n</head>\n<body>\n"
     )
 
     topo = (
         "<header class=\"topo\"><div class=\"envolt\">\n"
         "<h1>Base de conhecimento — Função Sistemas</h1>\n"
-        "<p class=\"sub\">Base de consulta do trabalho: como o negócio funciona, onde ficam as telas e os sistemas, quais consultas o banco responde, como a API conversa, quais procedimentos existem e o que ainda precisa ser confirmado antes de executar.</p>\n"
+        "<p class=\"sub\">Base de consulta do trabalho: como o negócio funciona, onde ficam as telas e os sistemas, quais consultas o banco responde, como a API conversa e quais procedimentos existem — só o que está confirmado.</p>\n"
         "<div class=\"chips\">\n"
         + '<span class="chip">' + str(total_blocos) + " fichas de consulta</span>\n"
         + '<span class="chip">conhecimento consolidado por assunto</span>\n' 
@@ -2100,6 +2269,13 @@ VAZAMENTOS = {
     "marcação de negrito solta": re.compile(r"\*\*"),
     "âncora de mensagem": re.compile(r"\[[MP]\d+\]|\[[MP]nn\]"),
     "nome de arquivo de mídia": re.compile(r"\.(?:mp4|md|json|srt|vtt|png|jpe?g|xlsx)\b"),
+    # o material só leva o que está confirmado: se um ponto em aberto passar, a geração falha
+    "ponto em aberto": re.compile(
+        r"(?i)\b(?:n[ãa]o confirmad\w*|a confirmar\b|sem confirma[çc][ãa]o|n[ãa]o se sabe\b|"
+        r"incert\w+|hip[óo]tese|desconhecid\w+|pend[êe]nc\w+|D[ÚU]VIDA_OU_CONFLITO|"
+        r"diverg\w+|conflit\w+|n[ãa]o h[áa] (?:registro|evid[êe]ncia|comprova\w+)|"
+        r"n[ãa]o foi (?:confirmad|verificad|testad|identificad|informad|documentad|executad|"
+        r"inspecionad|pronunciad|valid\w+|demonstrad)\w*)"),
 }
 
 
@@ -2110,7 +2286,7 @@ def verificar_saida(doc: str) -> list[str]:
     achados = []
     for nome, padrao in VAZAMENTOS.items():
         alvo = conteudo
-        if nome in ("marca de tempo", "aspas de citação", "marcação de negrito solta"):
+        if nome in ("marca de tempo", "aspas de citação", "marcação de negrito solta", "ponto em aberto"):
             # conteúdo técnico (SQL, payloads, exemplos de dados) pode conter horário como dado
             alvo = re.sub(r"<pre>.*?</pre>", "", alvo, flags=re.S)
             alvo = re.sub(r"<code>.*?</code>", "", alvo, flags=re.S)

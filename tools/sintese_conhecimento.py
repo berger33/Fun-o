@@ -158,10 +158,10 @@ de uma proposta.</p>
   e reenviar uma versão antiga gera um diagnóstico falso.</li>
   <li><b>Reduza ao mínimo e reintroduza campo a campo</b> quando a API recusar o corpo: assim se
   isola o campo culpado em vez de testar às cegas.</li>
-  <li><b>Compare resposta com simulação.</b> Divergência de valor ou de estado indica payload
+  <li><b>Compare resposta com simulação.</b> Resposta diferente da simulação indica payload
   desatualizado ou regra não respeitada — nessa ordem.</li>
   <li><b>Separe falha de dado de falha de sistema.</b> Massa inválida, contrato não elegível ou
-  cadastro divergente são ajustes do teste, não defeitos; erro de contrato de entrada, sim.</li>
+  cadastro fora do padrão são ajustes do teste, não defeitos; erro de contrato de entrada, sim.</li>
   <li><b>Antes de escalar, confirme o ambiente.</b> O mesmo serviço pode estar publicado em caminhos
   diferentes, e a maior parte das conclusões erradas nasce de estar testando no endereço errado.</li>
 </ol>
@@ -212,7 +212,7 @@ o que o sistema recalcula. A regra central é uma faixa aceitável — limites <
 valor solicitado definidos no convênio, com uma <b>tolerância</b> percentual sobre eles. Há mais de um
 modo de processamento (recalcular apenas, ou recalcular junto com outros passos), e a diferença entre
 eles muda o resultado esperado do caso. Quando dois modos produzem números diferentes, o teste não
-está errado: falta descobrir <b>qual regra</b> cada modo aplica e registrar isso antes de apontar
+é esperado: descubra <b>qual regra</b> cada modo aplica e registre isso antes de apontar
 defeito.</p>
 
 <h4>Disponibilização padrão</h4>
@@ -293,8 +293,8 @@ tempo do que qualquer otimização dentro de uma delas.</p>
 <h4>Consultas: cuidado permanente</h4>
 <p>Consultar o banco é rotina; alterar não é. Leituras orientam o diagnóstico e são seguras quando
 feitas no ambiente correto. Comandos que alteram dados exigem autorização, entendimento de efeito e
-caminho de volta — e, em hipótese alguma, se testa efeito em base real. Nomes de tabelas e campos
-ouvidos em conversa não são referência: só valem depois de confirmados na base de teste certa.</p>
+caminho de volta — e, em nenhuma circunstância se testa efeito em base real. Nomes de tabelas e campos
+citados não são referência: valem depois de conferidos na base de teste certa.</p>
 """
 
 # ----------------------------------------------------------------------------- automatização
@@ -356,7 +356,7 @@ SINTESES["comunicacao"] = """
 <h3>Trabalhar bem em time técnico</h3>
 <p>Trabalhar em time técnico envolve combinar expectativas de forma explícita. Duas frentes aparecem
 com força no material: <b>como pedir o que precisa</b> para trabalhar bem e <b>como conduzir uma
-dúvida técnica</b> até alguém resolver.</p>
+questão técnica</b> até alguém resolver.</p>
 
 <h4>Diga o que ajuda</h4>
 <p>Estilo de comunicação não é falta de interesse. Quem é mais reservado ou formal no texto costuma
@@ -383,7 +383,7 @@ funciona: <b>resumo no início</b> (o que você precisa e por quê), poucos iten
 concreto por item e uma pergunta fechada no final. Vale para pedido de ajuda, para feedback e para
 reporte de problema.</p>
 
-<h4>Como conduzir uma dúvida técnica</h4>
+<h4>Como conduzir uma questão técnica</h4>
 <ol>
   <li><b>Reproduza antes de perguntar.</b> Quem chega com <em>tentei e aconteceu isto</em> recebe ajuda
   melhor do que quem chega com <em>não funciona</em>.</li>
