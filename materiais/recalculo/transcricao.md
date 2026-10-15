@@ -1,0 +1,1054 @@
+# Transcrição organizada — recalculo.mp4
+
+> **Fonte:** saída automática `faster-whisper large-v3`, sem VAD. O vídeo/áudio não foi revisado nesta sessão; este documento preserva o TXT ASR completo, inclusive trechos não técnicos e a anomalia de timestamp. Consulte os originais SRT/VTT e `metadados.md`.
+
+---
+
+# Transcrição automática — recalculo.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 1043
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:00] A 2.
+[00:00:01] Deixa eu ver aqui.
+[00:00:08] 1.
+[00:00:11] Sim, sim.
+[00:00:15] Ó, tipo assim, ó.
+[00:00:18] Sim, sim.
+[00:00:20] Imagino.
+[00:00:21] Tá, isso aqui, mano, é praticamente, sabe,
+[00:00:23] uma proposta normal que você vai fazer, sabe?
+[00:00:25] Então, isso aqui, eu não vou fazer.
+[00:00:27] Vou fazer só o cenário 2.1.
+[00:00:29] Não, é 3.2, sabe
+[00:00:31] Caso 3
+[00:00:33] Eu vou fazer aqui passo a passo
+[00:00:35] Pra te mostrar assim mais ou menos
+[00:00:37] Aí você tem uma noçãozinha, entendeu
+[00:00:39] Porque, pô, você nunca viu assim
+[00:00:42] É chato também, até pra você, tipo
+[00:00:43] Pô, sabe, fica um pouquinho perdido
+[00:00:46] Tá, beleza
+[00:00:48] Ah, boa
+[00:00:50] Aí eu vou soltar isso aí
+[00:00:52] Aí você faz o resto, beleza
+[00:00:53] Tomar meu café aqui
+[00:00:56] Tá, é, é, é, beleza
+[00:00:58] via web autorizador
+[00:01:01] configurar, convênio tal, tal, tal
+[00:01:04] beleza, a gente faz assim
+[00:01:06] convênio
+[00:01:15] tá, a gente vem aqui
+[00:01:19] mas também até legal
+[00:01:21] eu te mostrar aqui
+[00:01:22] é também a parte de recálculo
+[00:01:25] porque são duas esteiras, sabe
+[00:01:27] Aí, não, são duas atividades
+[00:01:31] No caso
+[00:01:31] Aí você passa pelas duas, entendeu?
+[00:01:34] Só pra você dar noção também
+[00:01:37] Deixa eu carregar aqui esse negócio
+[00:01:40] Ah, tá
+[00:01:52] Peraí que eu
+[00:01:57] e o mateus tá mandando mensagem aqui pera aí e como eu preencho aqui
+[00:02:17] e a maida que eu tô aqui na outra tela respondendo outro cara tá bom deixa nossa mano
+[00:02:24] Tchau.
+[00:02:54] Tá, bom, vamos voltar pra cá agora
+[00:03:08] Beleza
+[00:03:10] Tá
+[00:03:15] Convênio
+[00:03:18] Qual seu convênio mesmo?
+[00:03:24] Beleza
+[00:03:31] Condições de crédito
+[00:03:33] Tá, o primeiro caso aqui
+[00:03:36] O caso 2 na verdade é o que?
+[00:03:38] Mínimo 1.000
+[00:03:39] 3.000%
+[00:03:41] 1.000, 3.000%
+[00:03:43] Calma aí que deve ter faltado aqui
+[00:03:48] Alguma coisinha
+[00:03:49] Somente recalque
+[00:03:51] Calma aí, mas estourou aqui ou não?
+[00:03:54] Não, foi de 3 mil
+[00:03:57] Não estourou
+[00:03:59] Tá
+[00:04:10] Beleza
+[00:04:13] A gente vem aqui, ó
+[00:04:14] Agora vão aqui bonitinho
+[00:04:17] Não, também
+[00:04:22] Ai, caramba
+[00:04:23] Isso
+[00:04:26] É, não tem problema
+[00:04:28] Mas vamos seguir aqui
+[00:04:29] Depois a gente faz até mais um cenário
+[00:04:31] Só pra validar esse de ambos também
+[00:04:33] Tá
+[00:04:34] Só pra você entender aqui como funciona
+[00:04:37] Beleza
+[00:04:38] A gente já validou essa parte aqui toda praticamente
+[00:04:41] É
+[00:04:43] Mano
+[00:04:45] Você sabe usar API?
+[00:04:53] Tá certo
+[00:04:59] Tá
+[00:05:05] Eu vou te mandar meu JSON aqui
+[00:05:07] Porque assim, mano
+[00:05:12] O notoriador tem que passar por plugin
+[00:05:15] E tal, tá mal demorado
+[00:05:16] Aqui é sacanagem
+[00:05:19] Você vem aqui praticamente
+[00:05:20] aqui ó é 009999 né o seu produto qual é
+[00:05:29] 9999 a tá 009999 beleza vai pedir alguma coisa do ios aqui quer ver
+[00:05:42] e se pá já vai cadastrar normal
+[00:05:43] Assim, quando você fica sem usar ele, sabe?
+[00:05:51] Aí ele demora um pouquinho
+[00:05:52] Pô, mas tipo, criar uma proposta agora
+[00:05:54] Pra criar, tipo, outro daqui a 5 minutos
+[00:05:56] Aí, tipo, meio segundo
+[00:05:58] E lá você passa pro plugin
+[00:06:00] E tal, e tal, sabe?
+[00:06:04] Como você já validou aquela parte
+[00:06:06] Do 1.3, que é de criar a proposta por lá mesmo
+[00:06:09] Vamos fazer as propostas por aqui
+[00:06:11] A gente só vai mudar o valor
+[00:06:12] Que coloca
+[00:06:13] Valor solicitado
+[00:06:17] Valor preenchido
+[00:06:18] Não pode ser
+[00:06:19] Ah tá
+[00:06:32] Qual tá o limite do seu
+[00:06:38] Ah tá 3 mil né
+[00:06:41] Beleza, pô, vamos salvar isso aqui rapidinho.
+[00:06:55] Ah, deixa eu ver de novo aqui qual foi o erro, que eu não lembro mais.
+[00:07:00] Valor solicitado não pode ser maior que o valor máximo cadastrado por convênio.
+[00:07:03] 3 mil, ah tá, a gente colocou 3 mil e 20.
+[00:07:06] E tá pra somente
+[00:07:10] Não, não
+[00:07:16] Tá pra somente recálculo
+[00:07:18] Entendeu?
+[00:07:20] Beleza, mas a gente não vai validar isso
+[00:07:22] A gente, tipo, quer uma proposta de 3 mil, né?
+[00:07:26] Beleza
+[00:07:26] Valor solicitado e valor
+[00:07:31] Parcelado não pode ser preenchido simultaneamente
+[00:07:34] Solicitado
+[00:07:35] Olha
+[00:07:38] Não, mas vai dar erro, quer ver?
+[00:07:46] Não, deve ver
+[00:07:47] Poxa, esse dia é de
+[00:07:48] É de ontem
+[00:07:51] Como é que ele tá dando problema assim?
+[00:07:54] Calma aí
+[00:08:05] aqui
+[00:08:07] deve ser seu convênio
+[00:08:14] 5 do 8 de 26
+[00:08:23] ah tá
+[00:08:31] beleza
+[00:08:32] aí vai pedir o IOF
+[00:08:33] aqui a gente altera
+[00:08:34] 119
+[00:08:38] tá
+[00:08:45] 3 mil
+[00:08:47] beleza
+[00:08:50] tá achando de 2
+[00:08:54] tá fora do parâmetro
+[00:08:55] calma aí
+[00:09:04] 7,23
+[00:09:14] 8,9
+[00:09:15] Ah, mano, vamos usar meu convênio mesmo
+[00:09:35] Deve ter que fuçar aqui
+[00:09:37] Pra ver o que tá acontecendo
+[00:09:39] Deixa eu dar uma olhadinha aqui por fora
+[00:09:41] Ah, tá
+[00:09:43] Opa.
+[00:10:13] Deixa eu só dispensar isso aqui, que eu não preciso.
+[00:10:23] 1, 9, 8.
+[00:10:33] É, então é de 24 ou 22.
+[00:10:37] 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30.
+[00:11:07] Tira um print disso aqui, isso, com sucesso, aí você bota também ó, tira um print
+[00:11:34] assim ó, pra mostrar o valor.
+[00:11:40] Aqui a gente quebrou a página pra ficar mais interessante.
+[00:11:46] Beleza, agora a gente vai alterar o parâmetro.
+[00:11:58] Vai, vai.
+[00:12:04] condição
+[00:12:09] a gente vai colocar 490, né?
+[00:12:17] 2.000
+[00:12:19] na realidade
+[00:12:22] esse valor de 2.990
+[00:12:24] ele já seria considerado como você colocando 3.000, não?
+[00:12:28] porque tem a tolerância ali
+[00:12:29] a tolerância mínimo, ela puxa 1%
+[00:12:31] que vai ser 10 reais
+[00:12:33] Isso
+[00:12:36] Mas tipo assim, por exemplo
+[00:12:38] A tolerância aqui, o máximo dá 3 mil
+[00:12:42] Eu fiz a sua pós de 3 mil, sabe?
+[00:12:44] Então é...
+[00:12:45] Não, calma aí, está certo
+[00:12:46] Ah não, sim, mas não tem como a gente alterar o valor da proposta
+[00:12:52] Para alterar o valor do convênio para menor
+[00:12:54] Entendeu?
+[00:12:59] Calma aí
+[00:12:59] Não, é isso mesmo
+[00:13:03] Valor máximo agora vai ser R$2,90 e a tolerância vai dar 1%, esse 1% vai chegar aos R$3.000, entendeu?
+[00:13:15] Então, tipo assim, é tá fora dos limites, mas passa pela tolerância, entendeu?
+[00:13:22] Tá, calma aí.
+[00:13:26] Tira um pretzinho aqui também.
+[00:13:33] Tá, sempre que você alterar algum convênio,
+[00:13:53] você já sabe o que é provável, né?
+[00:13:54] Sim, sim, sim.
+[00:13:57] Já apanhei um pouquinho já pra isso.
+[00:13:58] calma aí que agora
+[00:14:03] aqui começou a
+[00:14:05] tá doido
+[00:14:06] quando tá achando
+[00:14:28] Bom, então é isso
+[00:14:54] Só pra ver se eu entendi certinho
+[00:14:56] Pra conseguir fazer os outros
+[00:14:57] No caso, você cadastrou a proposta nesse exemplo aí
+[00:15:01] Que era para fazer com o valor de 3 mil e depois abaixar
+[00:15:04] Então, em vez de abaixar na proposta, você abaixou lá no convênio
+[00:15:09] Isso
+[00:15:10] Certo
+[00:15:11] Caramba
+[00:15:23] Tenta fazer outra alteração
+[00:15:24] Solteira de novo e salva
+[00:15:27] Pra ver se ele aparece
+[00:15:28] Calma aí, então
+[00:15:31] É porque eu não tava assistindo nenhum
+[00:15:35] Ah, é verdade
+[00:15:36] Agora foi
+[00:15:38] Tá
+[00:15:39] Tá, beleza
+[00:15:44] Agora a gente vem aqui, ó
+[00:15:47] Calma aí, só pra ver se eu tô
+[00:15:50] Mostrando o que eu tô pensando
+[00:15:52] Tá
+[00:15:54] Passando
+[00:15:58] Calma, deixa eu pegar o nome disso aqui certinho
+[00:16:24] Com a coluna dela.
+[00:16:27] Tá.
+[00:16:27] Tá.
+[00:16:38] Prova.
+[00:16:41] Tem uns 40 aqui.
+[00:16:43] A gente tira mais um
+[00:16:45] em frente assim, ó.
+[00:16:47] No recalque, ok.
+[00:16:54] E aí E aí E aí E aí E aí E aí
+[00:17:06] E aí Oi Ana porque pede senhor precioso
+[00:17:10] quando mais não está com tolerância
+[00:17:18] Calma aí.
+[00:17:31] Será que eu não coloquei ambos?
+[00:17:34] Não enxergaram?
+[00:17:36] Ah, não.
+[00:17:39] Animal sonho.
+[00:17:40] Nossa.
+[00:17:44] Faltou cem números.
+[00:17:47] Calma aí.
+[00:17:48] Estou quase deixando uma terceira aba
+[00:18:01] Só para provar com o velho
+[00:18:02] O pior é que quando você está usando uma
+[00:18:09] Você copia para outra
+[00:18:11] Do lado atualiza e vai para a outra
+[00:18:13] Acontece direto
+[00:18:16] aí, mas
+[00:18:17] tá, a gente coloca aqui, vamos
+[00:18:20] colocar de novo pra essa aqui
+[00:18:37] tá
+[00:18:38] beleza
+[00:18:38] talvez se o prêmio está batendo
+[00:18:41] aqui, tá, passando
+[00:18:42] Outra conta que foi a outra
+[00:18:47] Deixa eu ver aqui de novo
+[00:18:52] O que é que deu
+[00:18:52] Próximo recolo máximo do contêiner
+[00:19:00] Esse aqui
+[00:19:11] Eu acho que, não sei
+[00:19:16] Posso estar errado, mas vou dar um chute
+[00:19:18] Ali, se tiver com 3 mil
+[00:19:21] Em vez de 2.990
+[00:19:23] Com 1% de tolerância
+[00:19:25] Já é considerado 2.990
+[00:19:27] Certo?
+[00:19:29] Então, tecnicamente, não precisaria alterar
+[00:19:31] Para esse exemplo aí
+[00:19:32] Que é 2.990, que é abaixo
+[00:19:34] Não está usando
+[00:19:35] tá, vamos apanhar tudo de novo
+[00:19:43] explica aí
+[00:19:47] como é que tá lá mesmo
+[00:19:48] na EF, na que você fez
+[00:19:51] não quero achar nada
+[00:19:55] vamos dar uma coisa ou outra
+[00:20:05] Tá, tá, aqui tá 2.290.
+[00:20:28] é então com a tolerância ele vai considerar 10% em cima de 2.990
+[00:20:36] não de 3.000
+[00:20:39] que seria
+[00:20:41] 3.000 né
+[00:20:43] então tipo assim
+[00:20:45] era pra passar proposta
+[00:20:46] não era pra descer
+[00:20:47] entendeu
+[00:20:52] calma aí
+[00:20:55] Esse cartel é legal
+[00:20:59] Vamos virar outro aqui
+[00:21:00] Tá, mas não tá pegando
+[00:21:09] Cara, isso pode ser incidente
+[00:21:11] Não, peraí
+[00:21:25] Calma aí pessoal, vou fazer do jeito que eu tava pensando, caso não dê certo aí eu vou analisar melhor.
+[00:21:43] Beleza.
+[00:21:47] Calma aí.
+[00:21:49] Vai me dar um pouquinho, é 111,98.
+[00:21:55] Tá vendo?
+[00:22:07] O cara, o cara, peraí, peraí.
+[00:22:17] Tá, vamos falar aqui.
+[00:22:20] Aqui.
+[00:22:23] A gente vai desligar agora.
+[00:22:25] Alex, para
+[00:22:43] Ah, nossa, que chato
+[00:23:11] Meu Deus
+[00:23:12] Meu Deus do céu.
+[00:23:26] Isso de novo.
+[00:23:28] Nossa.
+[00:23:30] É um negócio chato.
+[00:23:32] Vai até menor aqui, ó.
+[00:23:34] Vai até menor aqui, ó.
+[00:23:36] Olha...
+[00:23:42] Tá beleza. Deixa eu só ver se meu acessinho tava certo. Mas eu acho que tá certo. Se não ir, mano, eu acho que é caso de incidente ou nossa versão que tá bem antiga.
+[00:24:05] Peguei aqui, eu acho que eu pus isso aqui na máquina do Gabriel naquela hora que eu tava te mostrando e foi tranquilo.
+[00:24:10] Então, não está considerando a tolerância
+[00:24:31] Ele está considerando só o valor máximo
+[00:24:34] Mas não está considerando só a tolerância
+[00:24:36] Deixa eu só fazer outro teste aqui
+[00:24:41] Você colocou 2.990, não foi?
+[00:24:45] 1.950
+[00:24:46] Ah, você colocou 1.950
+[00:24:48] Isso
+[00:24:50] Agora vamos tentar em ambos aqui, só para ver se
+[00:24:56] Se o problema é aqui
+[00:25:06] É, eu acho que aí ele vai aprovar
+[00:25:10] Porque aí vai considerar o cadastro
+[00:25:11] Não só o recalque
+[00:25:12] Não, mas ali é a parte de recalque
+[00:25:18] Ali é a parte de recalque, sabe?
+[00:25:21] Tipo, não tem coligação não
+[00:25:26] Só retomar aqui
+[00:25:29] Tchau.
+[00:25:55] Tchau.
+[00:25:57] Diário que mudou, né?
+[00:25:59] Não, ele...
+[00:26:02] Mudou?
+[00:26:04] Mudou.
+[00:26:07] Cadê o consulta?
+[00:26:09] Análise.
+[00:26:13] Tá, eu vou fazer o teste aqui agora, sabe?
+[00:26:18] No 1.8.1.
+[00:26:19] A gente testou 40, vamos testar agora o 1.8.1.
+[00:26:22] Deixa eu ver.
+[00:26:22] Tá, mas antes...
+[00:26:26] Vamos verificar aqui, ó.
+[00:26:29] A gente passou, tranquilo
+[00:26:38] Aqui foi aquele erro que deu
+[00:26:41] Então, cara, eu acho que tá tendo algum problema
+[00:26:43] No parâmetro
+[00:26:47] De
+[00:26:50] Somente
+[00:26:52] Somente
+[00:26:57] Recálculo
+[00:26:59] o príncipe também vai
+[00:27:02] vai também
+[00:27:06] vai muito
+[00:27:29] É.
+[00:27:33] É.
+[00:27:50] Pambos tá indo.
+[00:27:52] Aí tipo assim, ah, pambos é
+[00:27:54] pega o cadastro de oração, não,
+[00:27:56] ali é só recalque, sabe, o cadastro
+[00:27:58] é só cadastrar em tela mesmo, quando você
+[00:28:00] põe o valor, sabe, tal
+[00:28:02] certo, entendeu
+[00:28:04] tipo
+[00:28:07] tipo aqui, ó, na API
+[00:28:11] na API tá pra ambos
+[00:28:14] aí aqui esse valor rolaria
+[00:28:16] se eu colocar somente pra recalco
+[00:28:18] vai dar erro mesmo, porque
+[00:28:20] tá passando o valor, entendeu
+[00:28:22] certo
+[00:28:23] aí tipo, somente
+[00:28:26] recalco, não, tá
+[00:28:27] Eu ainda não entendi 100%
+[00:28:33] Como funciona o processo de recálculo
+[00:28:35] Porque ele não funcionou até agora
+[00:28:37] É isso que está acontecendo
+[00:28:39] Então basicamente o que está acontecendo
+[00:28:41] É que não somente recálculo
+[00:28:43] Ele não está considerando
+[00:28:45] A tolerância
+[00:28:46] É isso?
+[00:28:50] É
+[00:28:50] Mas cara
+[00:28:52] Você está passando por um processo de risteira
+[00:28:57] de recalque.
+[00:29:00] Não é por
+[00:29:01] apelido, é só de inclusão,
+[00:29:03] não tem recalque, não faz sentido dar problema.
+[00:29:16] É estranho,
+[00:29:17] estranho, estranho, estranho.
+[00:29:23] Eu fiquei um pouquinho perdido na hora de fazer,
+[00:29:25] E aí o Gabriel falou, é processo de esteira
+[00:29:27] Só que a esteira que eu peguei não tinha
+[00:29:30] Você que colocou
+[00:29:31] Sim
+[00:29:32] A gente está chegando ao incidente mesmo
+[00:29:37] Só fazer outro aqui, rapidinho
+[00:29:39] Só para ver se está certo
+[00:29:44] Tá, a gente vai agora
+[00:29:47] Mudar aqui
+[00:29:55] tá, agora a gente vai somente recalcar
+[00:30:05] ó, pra você ter ideia
+[00:30:10] eu criei aqui a proposta, sabe, rolou de 3 mil
+[00:30:13] mas como tá 1%, validou
+[00:30:15] então, tipo assim, tá funcionando o parâmetro
+[00:30:17] mas beleza, somente o recalque
+[00:30:20] não trava
+[00:30:23] Está tendenciando.
+[00:30:52] Qual seria a próxima etapa
+[00:30:58] Se ele não pendenciasse
+[00:31:00] A verbação
+[00:31:01] Ele ia abrir
+[00:31:04] Ia abrir tipo
+[00:31:05] A tela
+[00:31:08] Para a gente avançar a atividade
+[00:31:10] Sabe por exemplo
+[00:31:12] Vou tirar a opção
+[00:31:13] Para você mandar
+[00:31:15] Para o Debo
+[00:31:17] Que é o 2.2
+[00:31:19] 6.5
+[00:31:20] Beleza, mas deve ser espacial
+[00:31:25] Vamos pôr aqui só
+[00:31:27] Pra você ter uma noção
+[00:31:28] Ah
+[00:31:50] Ah não, mistério é assim mesmo, mistério é chato, recalco na verdade, tá, a gente
+[00:32:03] Só retornar aqui um pouco, só rapidinho.
+[00:32:11] Pode ser isso aqui.
+[00:32:22] Tá, ele tá em ambos agora, tá?
+[00:32:25] Tá beleza.
+[00:32:26] Ela precisa estar aqui, ó.
+[00:32:28] Tipo de análise de crédito.
+[00:32:30] Porque, assim, saindo do recalque,
+[00:32:33] para analisar o crédito de novo, sabe?
+[00:32:36] Aí, em tese, a gente vai aprovar
+[00:32:38] e
+[00:32:41] a gente pode colocar
+[00:32:43] sei lá, já na próxima etapa aqui,
+[00:32:46] que vai ser oito recalcos.
+[00:32:48] Entendeu?
+[00:32:49] Aí, aqui, a gente vai calcular de novo.
+[00:32:53] Calcular não, é filtrar aqui
+[00:32:54] e verificar aqui, ó.
+[00:32:56] Ó, aqui não mostrou nada,
+[00:32:58] mas, assim, é
+[00:32:59] não é mensagem de erro, porque
+[00:33:01] ele
+[00:33:04] tá dentro da tolerância, entendeu?
+[00:33:07] Aí, por exemplo, o valor que eu alterei
+[00:33:09] do convênio
+[00:33:10] tava 3 mil, aí eu altero
+[00:33:13] pra, sei lá, 2.800
+[00:33:15] aí dá fora da tolerância, tá?
+[00:33:17] Aí era pra aparecer aquele íon e verificar, sabe?
+[00:33:20] Certo.
+[00:33:20] Então, pra ser certamente isso aqui, ó
+[00:33:22] falou que ele tá em uma posição maior
+[00:33:24] e tal, aí
+[00:33:25] iria ser iniciar automaticamente, entendeu?
+[00:33:28] Só que
+[00:33:29] No somente recalque, eu não passo a ter cena
+[00:33:32] Eu vou te mandar o
+[00:33:37] Você abre o incidente e fala com o Fábio
+[00:33:42] Não, mas calma aí
+[00:33:43] Vamos esperar o
+[00:33:47] Matheus terminou
+[00:33:49] Espera aí, deixa eu botar a tela aqui
+[00:33:50] Beleza.
+[00:33:53] E oito.
+[00:34:20] E aí
+[00:34:50] E aí
+[00:35:20] E aí
+[00:35:50] Obrigada.
+[00:36:20] E tu já está há bastante tempo na função, já?
+[00:36:30] Mano, eu entrei em 24
+[00:36:33] No mês de setembro
+[00:36:35] Então, tem quase dois anos
+[00:36:38] Há bastante tempo
+[00:36:41] Já foi da 2S da função, na realidade
+[00:36:46] A última festa
+[00:36:51] Eu dei uma sofrida do caramba
+[00:36:53] Da minha Playstation 5 Pro
+[00:36:55] Caraca, sério?
+[00:36:57] Foi louco
+[00:36:59] Tipo assim, mano
+[00:37:02] Essa intérprete
+[00:37:04] Tipo assim, no final do ano
+[00:37:05] Vai ser a primeira festa, né?
+[00:37:06] Vai
+[00:37:07] Então aí
+[00:37:09] Ah, tá
+[00:37:10] Aí tem sempre essa ideia de TV
+[00:37:13] Playstation, dinheiro, tudo, sabe?
+[00:37:16] Caraca, que legal
+[00:37:17] Pô, o Store ganhou por 5, mano
+[00:37:21] Pô, tá que pariu
+[00:37:22] Aí sim, pô, botei
+[00:37:24] Foi da hora, foi da hora
+[00:37:27] Bom, você não perde nenhuma, tenho certeza
+[00:37:30] Depois dessa, né?
+[00:37:33] Pô, não, agora eu tô tranquilo
+[00:37:35] Pô
+[00:37:37] Pô
+[00:37:37] Pô, mano, eu vou baixar essa versão aqui
+[00:37:41] Que é a última
+[00:37:42] Eu vou subir aqui rapidinho
+[00:37:44] Se continuar dando esse erro
+[00:37:46] porque eu acho que a minha versão é bem antiga, é 5.5, deixa eu ver aqui, é do dia 7, só para ter, para apontar o tempo e falar que está errado, a gente pega essa versão mais nova.
+[00:38:00] mas acho estranho
+[00:38:13] porque na minha cabeça eu fiz esse mesmo teste
+[00:38:15] naquela hora da vaca do Gabriel
+[00:38:16] e deu certo
+[00:38:19] por isso que eu
+[00:38:20] tava nessa paranoia
+[00:38:22] mas agora eu vou passar isso aqui
+[00:38:29] é
+[00:38:30] aqui
+[00:38:32] parceiro, eu estou na minha mágica agora
+[00:38:42] porque o Matheus está usando outra versão
+[00:38:44] do Gabriel, entendeu?
+[00:38:47] entendi
+[00:38:47] a prioridade é sempre lá
+[00:38:49] é, eu estou usando tudo pela dele
+[00:38:53] então quando eu preciso fazer qualquer coisa
+[00:38:55] eu pego o arquivo e passo para a minha
+[00:38:57] e faço aqui, eu já tenho o config configurado
+[00:38:59] O OPP Settings
+[00:39:00] Então eu vou fazendo dessa forma
+[00:39:03] É porque a gente tinha dois servidores
+[00:39:09] Tinha um servidor da fábrica
+[00:39:11] Que a gente usava lá uma base
+[00:39:13] E esse aqui
+[00:39:16] Só que lá deu um erro tão chato
+[00:39:19] Que dá uma preguiça de resolver
+[00:39:20] Que a gente tem que perder o dia todo
+[00:39:22] Pra tentar resolver o live
+[00:39:23] A gente tá só usando esse
+[00:39:26] Mas, tipo assim, em tese, você meio que, ó...
+[00:39:48] Ah, caramba.
+[00:39:52] Deixa eu responder um leve aqui.
+[00:39:56] Tchau.
+[00:40:26] Oi, você, faz fácil ou não?
+[00:40:47] Tô fazendo a DS, segundo semestre.
+[00:40:51] Ah, legal.
+[00:40:52] Tamo aí na luta.
+[00:40:53] E aí agora eu tô fazendo um cursinho da Oracle.
+[00:40:56] tem um projeto lá Oracle One
+[00:40:58] e aí eu tô aprendendo um pouquinho de IA
+[00:41:01] eu na realidade já tinha feito dois semestres de IA
+[00:41:03] aí eu resolvi
+[00:41:05] mudar pra DS
+[00:41:06] ah, legal
+[00:41:09] aí tô tentando aprender a mexer um pouquinho melhor com o Ntn
+[00:41:15] fazer umas automação aqui
+[00:41:16] vamos ver
+[00:41:19] bom, legal
+[00:41:20] mas é o primeiro trabalho na área
+[00:41:24] Eu cheguei aqui, cara, assim
+[00:41:25] Não vou falar 100% perdido, porque eu tinha uma noção
+[00:41:28] Eu sabia o que era SQL, pelo menos
+[00:41:30] Alguma coisa, né
+[00:41:31] Mas eu nunca tinha trabalhado com nada disso
+[00:41:34] Então no começo pareceu um pouquinho
+[00:41:36] Um pouquinho perdido
+[00:41:37] Mas aí vai aprendendo, vai aprendendo
+[00:41:39] Ainda tô perdido em muita coisa, né, que realmente é bastante informação
+[00:41:42] Os sistemas, são vários sistemas também
+[00:41:44] Então tem empregador
+[00:41:46] Tem bastante coisa pra eu ver ainda
+[00:41:47] Mas...
+[00:41:49] Eu cheguei exatamente igual você
+[00:41:51] Meu primeiro trabalho também é aqui
+[00:41:53] Ah, legal
+[00:41:55] Nossa, o primeiro mês foi terrível
+[00:41:59] É, eu apanhei
+[00:42:01] Mano, não quero ficar me acessando
+[00:42:03] Nossa, não vou fazer nada
+[00:42:04] Nossa
+[00:42:05] Pô
+[00:42:07] A gente vai trabalhando
+[00:42:10] Pegando um vídeo e depois
+[00:42:12] Já era
+[00:42:13] Ah, eu estou bem feliz com isso
+[00:42:19] Com a evolução
+[00:42:20] Eu tenho muito a aprender ainda
+[00:42:22] Mas só de ter evoluído o tanto que tá acontecendo
+[00:42:24] Já tô feliz
+[00:42:25] Boa
+[00:42:28] Que nem é mais aprendizado
+[00:42:29] Sim
+[00:42:33] Tô respondendo você
+[00:42:38] Tô respondendo um moleque aqui
+[00:42:39] Nossa
+[00:42:41] Responde lá
+[00:42:42] Quando eu calcular
+[00:42:46] Peraí
+[00:42:52] Obrigado.
+[00:43:22] É isso aí.
+[00:43:52] Obrigada.
+[00:44:22] Obrigado.
+[00:44:52] Parado pra essa, pra que os torcedores da Argentina fizeram o ato.
+[00:44:57] O speed hoje do jogo, com o nome de Pedreiro Mil, gravou o vídeo e foi direto.
+[00:45:02] A tropa se respira aí, sofrendo racismo aí.
+[00:45:06] Bora, filho, cadê?
+[00:45:07] Vem com esse vagabundo aí, esse safado aí.
+[00:45:10] Se esses caras fazem as paradas aí na frente das câmeras, fora das câmeras,
+[00:45:13] esses vagabundos não fazem.
+[00:45:15] Vem com esses caras aí, batendo em castanho, batendo em pobreza,
+[00:45:18] e a culpa é dos caras aí.
+[00:45:19] Se não, quem vai?
+[00:45:20] O cara fez esse comentário
+[00:45:25] Admita, você não esperava o Luba de Pedreiro
+[00:45:27] Com mais posicionamento do que o Messi
+[00:45:29] O outro respondeu
+[00:45:30] Na verdade sim, o anão nunca se posicionou sobre nada
+[00:45:33] E o outro comentou assim
+[00:45:34] A primeira vez que o Luba se posiciona
+[00:45:35] Fala bem sobre alguma coisa
+[00:45:37] É pra defender o speed, amizade fora
+[00:45:39] O Luba de Pedreiro ali ameaçou
+[00:45:40] Pegar uns argentinos aí
+[00:45:42] Isso não foi resolvido
+[00:45:43] Mas pelo chassi aí, Luba
+[00:45:46] É melhor deixar pra lá
+[00:45:47] As autoridades resolveram
+[00:45:49] E aí, rapaziada, qual a opinião de vocês sobre isso?
+[00:45:53] E deixando nos comentários, segue aqui para não perder os próximos vídeos, é nóis.
+[00:45:56] O vovô de pedreiro foi para cima da FIFA pelo rastro com o Speed,
+[00:46:00] mas o aviso que ele soltou no final, ele estava preparado para essa.
+[00:46:04] É...
+[00:46:05] Quatro, quatro.
+[00:46:08] Ah, não.
+[00:46:19] E aí
+[00:46:49] Sai de cima de mim, sai de cima de mim
+[00:46:51] Machista é o que? É o que machista?
+[00:46:55] Machista é quando o homem, ele, se acha superior à mulher
+[00:46:58] Pois o queimado é a mulher, pô
+[00:47:01] Meu parceiro, se liga nas jaquetas mais brutas do mundo
+[00:47:04] São duas jaquetas por menos de um milhão
+[00:47:19] É 22, não é 44.
+[00:47:34] Não, é 44.
+[00:47:35] É, não.
+[00:47:35] Ah, não.
+[00:47:37] Ai, ai.
+[00:47:42] Não, agora.
+[00:47:43] Vamos lá, vovózinha, acelera aí, tem gente na fila
+[00:47:49] Isso aí, vamos lá
+[00:47:52] 22 e 35, por favor
+[00:47:54] Quanto você disse que ficou?
+[00:47:58] 22 e 35, olha
+[00:47:59] A sua fila tá grande
+[00:48:00] Ah, 1,50
+[00:48:01] 32
+[00:48:04] Ah, esqueci, eu tenho cupom
+[00:48:08] Eu tenho cupom pra ravioli, pulmão e peixadão
+[00:48:13] Tá aí ainda?
+[00:48:30] Tô, tô aqui
+[00:48:32] Tá, vamos só ver o que tá aqui agora
+[00:48:37] Tá com algum problema
+[00:48:38] Senão você já abre esse incidente, sabe?
+[00:48:40] E a gente faz os outros casos
+[00:48:44] Entendeu?
+[00:48:44] Certo
+[00:48:45] Aí eu faço o caso diminuindo
+[00:48:48] Eu acho que
+[00:48:51] Pode diminuir
+[00:48:52] Eu acho que
+[00:48:56] Todos esses do 1.2
+[00:48:58] Eu não tenho certeza
+[00:48:59] Eles passam por recálculo, não?
+[00:49:02] Que é justamente o 1.2
+[00:49:04] Eu acho que se o incidente for esse
+[00:49:05] Vai travar tudo, mas bora lá
+[00:49:07] É verdade
+[00:49:10] Eu acho que só não vai travar
+[00:49:14] Eu acho que sim
+[00:49:15] Só se for algum caso
+[00:49:20] Que estiver dentro da margem, dentro do limite
+[00:49:22] Ele vai autorizar mesmo
+[00:49:23] Mas fora isso ele não vai autorizar
+[00:49:25] É
+[00:49:28] Acho que sim
+[00:49:30] Ao longo de sexta-feira
+[00:49:37] Eu acho que eu dei uma olhada na IPT dele
+[00:50:02] Não, não, foi do Crivo com ele
+[00:50:04] não, tá, fiquei tipo assim
+[00:50:07] fiz só minhas apelizinhas lá
+[00:50:09] abri vários incidentes
+[00:50:10] fiz minha parte e no outro dia saí de férias
+[00:50:13] sabe, eu nem sei nem quem foi que terminou isso
+[00:50:15] entendi
+[00:50:15] tá, vamos ver se tá certo agora
+[00:50:19] né, logo que você saiu de férias
+[00:50:21] que eu comecei aqui
+[00:50:23] o Gabriel me passou um teste
+[00:50:25] com algumas coisas pra fazer, que eu não tinha feito esteira ainda
+[00:50:27] algumas coisas, então eu fui fazer
+[00:50:29] tudo pela primeira vez
+[00:50:30] então eu fiquei acho que uma semana nisso aí, pelo menos
+[00:50:32] A segunda semana eu fiquei nas EPTs
+[00:50:34] Ah, boa
+[00:50:36] Aí você estava com a equipe lá na fábrica?
+[00:50:43] Estava com o Guilherme
+[00:50:44] Guilherme Giraldi
+[00:50:46] O analista, a equipe do Glauco
+[00:50:50] Ah, Glauco
+[00:50:52] Glauco foi meu professor
+[00:50:54] Quando eu entrei
+[00:50:56] O primeiro assílio
+[00:50:58] É, quando eu entrei
+[00:51:00] O Glauco estava bem aperreado
+[00:51:01] Então eu não consegui falar muito com ele
+[00:51:03] Foi bem pouco, situações bem pontuais
+[00:51:05] Então foi mais o Guilherme Geraldi que me ajudou mesmo
+[00:51:08] Ele e a equipe toda
+[00:51:14] Bastante coisa ali
+[00:51:15] Ele estava também aperreado
+[00:51:16] Aí ele falava, pergunta pra esse aqui que ele sabe
+[00:51:19] Aí eu fui conhecendo todo mundo já
+[00:51:22] A equipe era grande também
+[00:51:23] E o que é o restante da equipe?
+[00:51:26] Como?
+[00:51:27] O restante da equipe
+[00:51:29] Quem são as pessoas?
+[00:51:29] A Clare, o Rian
+[00:51:33] A Clare é mais antiga
+[00:51:35] Tem o Oscar
+[00:51:36] Que é do Paraná
+[00:51:39] Só desconto ninguém
+[00:51:42] Ninguém, era as que eu mais falava
+[00:51:45] A Sassá é gigante
+[00:51:48] Muita gente
+[00:51:49] Sim, sim
+[00:51:59] Mas lá onde eu tava também, pelo que eu entendi, tinha bastante gente nova, cara.
+[00:52:04] A Claire mesmo, que era uma das mais antigas ali, tinha oito meses.
+[00:52:08] Ah.
+[00:52:12] Ah, sim.
+[00:52:12] Acho que a pessoa que eu conversei que tinha mais tempo na função foi a Luzia.
+[00:52:21] Ela é a líder, sei que é.
+[00:52:24] Ela é a minha líder.
+[00:52:26] Ela é a sua líder? Bacana.
+[00:52:27] Era, antes de eu vir pra mesa
+[00:52:30] É isso
+[00:52:31] Muito gente boa, cara
+[00:52:33] Muito legal
+[00:52:35] Ó, agora funcionou
+[00:52:38] Tá, então
+[00:52:39] Antes de
+[00:52:40] Antes de
+[00:52:42] Antes de
+[00:52:44] É, que bom, né
+[00:52:50] É, nossa
+[00:52:52] Fico mó feliz quando não tem incidente
+[00:52:55] Mó travada
+[00:52:56] mas calma aí, vamos ver direitinho
+[00:53:00] pra ver se eu, por exemplo, não
+[00:53:02] tá
+[00:53:02] hum, tá
+[00:53:04] e se aqui tiver em ambos?
+[00:53:07] aí é fácil, né?
+[00:53:08] aí é pra rodar mesmo, entendeu?
+[00:53:12] tem essa possibilidade
+[00:53:13] só mais uma de mercado
+[00:53:21] faz a boa pra gente
+[00:53:23] ah, caramba
+[00:53:25] Deu ruim
+[00:53:27] É, vamos lá
+[00:53:29] Tá, mas
+[00:53:30] Bora fazer de novo aqui
+[00:53:35] Quem quer se levantar
+[00:53:38] Não só no recalque, né
+[00:53:39] Que tem que se
+[00:53:40] Ah, pendentes
+[00:53:44] Tá
+[00:53:46] Agora se deu problema
+[00:53:54] Não deu
+[00:53:57] Então é isso mesmo
+[00:54:01] Então agora ele passou pelo recalco
+[00:54:05] E está no seu momento de recalco
+[00:54:08] Entendeu?
+[00:54:09] Então vamos seguir o teste aqui
+[00:54:12] Agora como é que está tudo certo
+[00:54:15] Vou só verificar de som
+[00:54:16] Deixa eu ver se salvou
+[00:54:18] Beleza
+[00:54:21] Eu vou responder aqui uma testa
+[00:54:23] A gente já conseguiu o da cliente parou, tá?
+[00:54:25] A proposta é 9,58.
+[00:54:30] A gente faz isso aqui, ó.
+[00:54:49] Isso.
+[00:54:51] Já foi respondendo a pergunta, viu?
+[00:54:53] Beleza.
+[00:55:23] Tá, beleza
+[00:55:41] Tá, a gente passa agora a plantar
+[00:55:45] A rotina
+[00:55:46] O que é agora que você iniciou?
+[00:55:53] Ó, vamos fazer assim, vamos criar outra proposta bonitinha, ó, pra não ter...
+[00:56:02] Nossa, que estranho, cara.
+[00:56:06] Pô, tem acabado de ir esse negócio.
+[00:56:14] Vou fazer um vídeo aqui.
+[00:56:20] Nossa.
+[00:56:20] Tá, pode ser que, tipo assim, essa proposta é antiga, sabe?
+[00:56:24] E até caiu no meio e tal.
+[00:56:27] Se for, vamos...
+[00:56:31] Porque na 61 foi.
+[00:56:34] Como é que você não fez cagada?
+[00:56:45] Não, não. Também não vou lançar isso nesse ano.
+[00:56:50] E aí e como é o seu valor aqui tá tá 3.000 e é que dá para somente recalcos vamos nós de novo
+[00:57:03] O amos é que abdiquem
+[00:57:17] Amos é que abdiquem
+[00:57:26] Amos é que abdiquem
+[00:57:27] tá beleza como que ele aqui e aí e aí e aí e aí e aí e aí e aí é só tá beleza vamos para fazer
+[00:57:56] Estava me confundindo aqui.
+[00:58:26] Então, bora mudar isso aqui.
+[00:58:56] Você precisa perceber também que tem um bugado.
+[00:59:01] Nossa.
+[00:59:04] Vai, vai, vai.
+[00:59:20] Tá, tá, beleza. Vamos ver agora.
+[00:59:26] e aí e aí
+[00:59:36] o canal 40 aqui a gente apertar vamos conseguir só mais um aqui na vida do
+[00:59:46] vamos só ver só mais uma vez
+[00:59:48] para ver se faz sentido
+[00:59:49] para entender o grande ponto
+[00:59:51] então, R$10,95
+[00:59:55] é o valor máximo
+[00:59:56] com a tolerância
+[00:59:57] a proposta de R$3.000 então em tese
+[01:00:00] é para atender
+[01:00:02] o recalco
+[01:00:03] uma coisa que eu entendi, até pelos outros testes
+[01:00:06] que eu fiz
+[01:00:07] nessas condições de crédito, esse R$1.995
+[01:00:11] não é o valor com a tolerância
+[01:00:13] ele é sem a tolerância
+[01:00:14] A tolerância é aplicada sobre esse valor
+[01:00:16] Então é 2.995 mais 1%
+[01:00:19] De 2.995
+[01:00:20] Vamos supor que ele tenta
+[01:00:28] Fazer um empréstimo de
+[01:00:29] Só para ficar mais fácil o cálculo
+[01:00:32] Aqui para explicar, vamos botar 3.000 ali
+[01:00:34] 1.000 e 3.000, o valor mínimo
+[01:00:35] 1.000, o valor mínimo máximo 3.000
+[01:00:38] Ele tenta fazer um empréstimo
+[01:00:40] E está habilitada essa função
+[01:00:41] No cadastro
+[01:00:43] Quando ele tenta fazer
+[01:00:44] O valor mínimo que ele vai conseguir fazer
+[01:00:46] É de mil
+[01:00:47] Se você colocar aí, vamos supor, 10%
+[01:00:50] Então são 100 reais a menos
+[01:00:52] Então ele consegue fazer um empréstimo de 900 reais pra cima
+[01:00:54] Se ele tentar fazer um de 899
+[01:00:56] É bloqueado, por causa da tolerância
+[01:00:58] É isso mesmo
+[01:00:59] Então aí ele vai considerar os 2.995
+[01:01:03] Mais 1% de 2.995
+[01:01:05] Seria isso?
+[01:01:08] Isso
+[01:01:08] Então o teste, sabe
+[01:01:10] É pra considerar a mesma tolerância
+[01:01:12] Certo
+[01:01:13] É pra considerar a tolerância
+[01:01:16] E a gente conseguir seguir
+[01:01:17] Calma aí, vou salvar não
+[01:01:19] Que a gente não fez alteração
+[01:01:20] É isso
+[01:01:21] Que tipo assim
+[01:01:24] Por exemplo
+[01:01:27] Se tiver 0%
+[01:01:29] Vai dar erro mesmo
+[01:01:30] Com a tolerância
+[01:01:33] Até ele seguir
+[01:01:34] É isso
+[01:01:36] E foi
+[01:01:40] Então, tá funcionando normalmente
+[01:01:42] Eu acho que aquela ponta a gente passou
+[01:01:44] Meio que
+[01:01:45] Não trocação, sabe?
+[01:01:48] Deve ter quebrado alguma coisa
+[01:01:49] Ah, aí apareceu o sucesso
+[01:01:54] Bacana
+[01:01:55] Não tinha visto até agora o sucesso
+[01:01:58] Aí, cadastraram o sucesso
+[01:02:06] Não seria essa a confirmação?
+[01:02:08] Ah, não, não
+[01:02:09] A gente só precisa olhar aqui em observações quando, por exemplo, o lugar estava sendo agora, sabe?
+[01:02:17] A gente colocou aqui 2.995, né?
+[01:02:22] Se a gente colocasse tipo 2.100, entendeu?
+[01:02:24] Aí ele ia apontar, pô, sabe? Ele ia apontar o E, e tal, e tal, e tal, entendeu?
+[01:02:30] Certo.
+[01:02:32] Igual o apontamento está no...
+[01:02:35] Por aqui, por aqui, por aqui, por aqui, por aqui, por aqui, por aqui, por aqui, por aqui.
+[01:02:39] isso, vamos seguir o trecho
+[01:02:41] a gente parou aqui
+[01:02:44] para pegar essa proposta
+[01:02:46] vamos jogar ela aqui
+[01:02:51] colocar aqui no 40
+[01:02:56] tá
+[01:03:01] passando pelo portal
+[01:03:07] A gente vai deixar ela aí, deixa eu ver, fica mais legal
+[01:03:21] Bom, assim que você passar pela 40
+[01:03:26] Sabe, deixa já no 181, entendeu?
+[01:03:33] Aí beleza, você fica aqui, ó
+[01:03:37] E liberado
+[01:03:38] E a gente tiver a atividade executada
+[01:03:40] Entendeu?
+[01:03:41] Certo
+[01:03:41] Vai demorar um pouquinho mais pra aparecer
+[01:03:46] Ah, legal
+[01:03:48] Que aí mostra ali que ele passou pelo recálculo aprovado
+[01:03:53] Isso, a gente faz assim, ó
+[01:03:55] Ó, faço aqui
+[01:03:58] Tá
+[01:04:07] Beleza, a gente passou por um
+[01:04:16] Agora vamos matar esse aqui também
+[01:04:34] Tira o fritizinho
+[01:04:36] Ah, essa mesma mensagem
+[01:04:47] Deixa eu provar
+[01:04:55] Pode voltar com o 40 de novo
+[01:04:59] Só pra deixar aqui
+[01:05:02] A gente não vai enfrentar mais isso
+[01:05:03] vai só aqui
+[01:05:04] em liberação, atividade executada
+[01:05:07] dá o print aqui de novo
+[01:05:10] tá
+[01:05:16] então ó, aqui foi o primeiro cenário
+[01:05:20] entendeu?
+[01:05:21] o segundo na verdade, né?
+[01:05:23] o primeiro
+[01:05:23] você vai saber fazer sozinho, tranquilo
+[01:05:27] mas aqui é o que pediu, ó
+[01:05:29] deu, ó, executar recalco
+[01:05:31] as duas operações lá
+[01:05:32] Valor fora do limite
+[01:05:34] A proposta é de 3.000
+[01:05:39] E o valor é de 2.900
+[01:05:44] Por exemplo
+[01:05:44] A gente botou 2.900, né?
+[01:05:47] Sim
+[01:05:48] Calma aí, eu salguei aqui pra não ficar
+[01:05:50] Ah, 2.900 mesmo
+[01:05:52] Mas enfim, 10% vai do mesmo jeito
+[01:05:55] Tá, valor fora do limite, mas dentro da tolerância
+[01:05:59] Sistema deve...
+[01:06:01] Sistema de Recalque Reserva de Sucesso
+[01:06:04] É isso mesmo
+[01:06:06] Aí ó, pode fazer nesse estilo aqui ó
+[01:06:10] Tá, bota o padrão aqui
+[01:06:12] Bota um textinho sabe
+[01:06:14] E tal, aí beleza
+[01:06:16] Aí você começa aqui na primeira sabe
+[01:06:18] Tem mais cenário
+[01:06:20] Começa mais esse documento de novo aqui
+[01:06:22] Aí o que tiver aqui de texto você apaga
+[01:06:25] Só deixa só o seu caso 2.1, 1.2
+[01:06:28] Caso 3
+[01:06:30] Primeiro você vai configurar o código no mínimo de mil,
+[01:06:34] e o valor máximo de 3 mil,
+[01:06:36] a tolerância de 1% dos dois.
+[01:06:39] Esse acho que até já fiz.
+[01:06:41] Só faltou fazer o recalque.
+[01:06:44] Mas já tem a proposta, né?
+[01:06:46] Tá, tá.
+[01:06:47] Pô, é isso.
+[01:06:48] Aí você vai aqui, grava a configuração,
+[01:06:51] cria uma proposta de 2.500,
+[01:06:53] depois passa pelo recalque e é para passar de boa,
+[01:06:55] porque tá dentro do, tanto do valor mínimo, ou, é, do valor mínimo
+[01:06:59] quanto do máximo, entendeu? Certo. Então, tipo aqui, isso aqui meio que você já
+[01:07:03] avaliou no 1.3, mas faz de novo aí.
+[01:07:08] Tá bom? Tranquilo, tranquilo. Você quer fazer o estilo que eu fiz aqui
+[01:07:11] na API aqui rapidinho, que você só clica aí e já vai, ou você quer fazer em tela?
+[01:07:17] Cara, manda pra mim o Jason.
+[01:07:19] Por favor.
+[01:07:22] Deixa eu fazer aqui.
+[01:07:25] Você sabe qual é a API, né?
+[01:07:43] Sim, sim, sei
+[01:07:44] A API sim
+[01:07:48] A API também
+[01:07:48] Deixa eu matar logo o...
+[01:07:50] Acho que é esse aqui
+[01:07:57] 1 do 7
+[01:07:59] Isso
+[01:08:03] Tá, só pode seguir aí
+[01:08:07] Aí é assim, cara, cada proposta que você quiser
+[01:08:10] Vai só pedir pra mudar
+[01:08:11] Deixa eu ver aqui
+[01:08:13] Melhor que melhor, pra mudar o IOS
+[01:08:16] Certo
+[01:08:18] e aqui ó e não vai sair isso aqui é que eu uso muito para tipo para ficar com a corretora tipo
+[01:08:29] assim tô com um projeto sabe aí por exemplo uma hora e meio cliente entendeu aí tem que
+[01:08:35] vai ficar pela proposta aí você só troca o CPF e o IOF ali. Pô, é só seguir esse aqui, ó. Só seguir essa parte do teste todo aqui, sabe, do...
+[01:08:44] da etapa 2 mesmo, tudo que tiver aqui você aplica pra tudo aqui. Sabe, qualquer coisa você vai avisando aí.
+[01:08:51] Eu meio que ia sair já já, 5 horas mais. Dá pra você dar uma almoçada boa aí.
+[01:08:57] E também, tipo assim, em tese
+[01:09:00] É pra você estar parado
+[01:09:01] Porque o Matheus tá atuando
+[01:09:03] No servidor do Gabriel, entendeu?
+[01:09:06] Mas, tipo assim, a gente não tá parado
+[01:09:07] A gente tá meio que fazendo pela sombra
+[01:09:10] Entendeu?
+[01:09:11] Então, assim, sem pressão, tá?
+[01:09:13] Tranquilo, a gente tá sem urgência
+[01:09:15] Beleza?
+[01:09:17] É, de repente eu achava que dava até pra terminar
+[01:09:19] Hoje, até no máximo a dele de segunda
+[01:09:22] Mas eu vou fazendo aqui, eu te aviso
+[01:09:23] Qualquer coisa, se der algum problema
+[01:09:25] Não, tranquilo, até a segunda
+[01:09:28] Não, mas eu entendi bem, você explicou muito bem
+[01:09:30] Obrigado
+[01:09:31] De nada
+[01:09:33] Você não vai achar nenhum incidente não, tá?
+[01:09:35] Eu acho que é difícil
+[01:09:36] Eu acho que se deu algum probleminha
+[01:09:38] Aí já viu antes, sabe? Já subiu aquela versão, entendeu?
+[01:09:42] Certo
+[01:09:42] Deixa eu só te mandar aqui
+[01:09:46] Deixa eu só te mandar aqui
+[01:09:50] Isso aqui mesmo.
+[01:09:59] Pega só a do item lá, tá?
+[01:10:02] Maravilha.
+[01:10:02] Tá cheio de texto aí.
+[01:10:05] É bom, a minha relatória já tá pronta
+[01:10:07] 1.3, só vou copiar esse trecho da 1.2
+[01:10:09] e jogo no meu.
+[01:10:11] Isso.
+[01:10:12] Aí a gente pode sentar esses aqui, ó.
+[01:10:14] Esse cenário que eu fiz, sabe?
+[01:10:17] Desse tipo assim, de
+[01:10:18] De recado e tal
+[01:10:20] Vai até o caso 7
+[01:10:22] 7, 6, 7
+[01:10:26] É isso mesmo
+[01:10:27] Tá mesmo
+[01:10:29] É tudo a mesma coisa, sabe?
+[01:10:31] Vai mudar ali, vai ficar ali, vai ficar ali
+[01:10:33] Entendeu?
+[01:10:34] Beleza
+[01:10:34] Então é isso, mano
+[01:10:38] Pode seguir aí, tá?
+[01:10:39] Mais uma vez, brigadão
+[01:10:40] E se a gente não se falar, um bom final de semana
+[01:10:42] Você também
+[01:10:44] Valeu
+[01:10:48] Legenda Adriana Zanotto

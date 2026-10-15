@@ -1,0 +1,1023 @@
+1
+00:00:00,000 --> 00:00:01,960
+B, sem o número de proposta.
+
+2
+00:00:02,100 --> 00:00:03,560
+E antes era só com o número de proposta.
+
+3
+00:00:03,700 --> 00:00:06,100
+Aí essa vai ser a mudança que você vai testar.
+
+4
+00:00:06,540 --> 00:00:08,040
+Aí o que eu indico você a fazer?
+
+5
+00:00:08,860 --> 00:00:12,340
+Você abaixar um autorizador, fora a aplicação que está na ficha, né?
+
+6
+00:00:12,640 --> 00:00:16,060
+Um autorizador, você baixa um subsite consignado, por exemplo.
+
+7
+00:00:16,940 --> 00:00:21,000
+Faz a digitação, testa e digita uma proposta.
+
+8
+00:00:21,140 --> 00:00:27,900
+Digitando com o número da proposta e uma requisição da API sem o número da proposta.
+
+9
+00:00:27,900 --> 00:00:32,640
+para ver como está funcionando e se não quebrou nada do código.
+
+10
+00:00:33,840 --> 00:00:36,660
+Aí está descrito aqui no objetivo,
+
+11
+00:00:36,880 --> 00:00:40,340
+possibilitar a consulta e download dos documentos anexados no GED
+
+12
+00:00:40,340 --> 00:00:43,740
+para operações com ou sem proposta vinculada.
+
+13
+00:00:44,740 --> 00:00:49,600
+Aí aqui ele vai buscar o documento para as operações com ou sem proposta.
+
+14
+00:00:52,740 --> 00:00:55,360
+Aí atualmente a Web API documentos anexados
+
+15
+00:00:55,360 --> 00:00:59,080
+permite a consulta e download de documentos no GED
+
+16
+00:00:59,080 --> 00:01:02,380
+utilizando somente o número da proposta, que é o que já tem.
+
+17
+00:01:02,860 --> 00:01:05,120
+Essas aqui são as implementações, eu acabo não lendo.
+
+18
+00:01:05,700 --> 00:01:10,400
+Vamos ler só os objetivos, mas se você quiser, você pode ler tudo da EF,
+
+19
+00:01:10,520 --> 00:01:13,640
+porque a tela não é muito grande, só tem oito páginas.
+
+20
+00:01:15,120 --> 00:01:16,260
+Deixa eu ver, necessidade.
+
+21
+00:01:17,260 --> 00:01:21,000
+Implementar mecanismo que permita consultar e anexar documentos
+
+22
+00:01:21,000 --> 00:01:25,440
+diretamente à operação, sem exigir que exista uma proposta vinculada.
+
+23
+00:01:25,960 --> 00:01:30,860
+Implementar mecanismo que permita constar e anexar documentos direto à operação.
+
+24
+00:01:31,780 --> 00:01:36,480
+Ah, é direto na operação que vai anexar um documento. Interessante.
+
+25
+00:01:37,380 --> 00:01:43,900
+Implementar na plataforma de serviços, no módulo autorizador, na web API de documentos anexados, um novo endpoint.
+
+26
+00:01:44,440 --> 00:01:47,300
+O novo endpoint seria esse método aqui, olha.
+
+27
+00:01:48,940 --> 00:01:50,560
+Aqui são os métodos.
+
+28
+00:01:50,560 --> 00:01:56,320
+Esses são os endpoints disponíveis, tipo do meu teste de exemplo
+
+29
+00:01:56,320 --> 00:02:00,200
+E aqui ele vai estar descrito o endpoint que você vai usar
+
+30
+00:02:00,200 --> 00:02:06,180
+Incluir na web API documentos anexados o novo endpoint denominado
+
+31
+00:02:06,180 --> 00:02:08,040
+Documentos anexados simplificado
+
+32
+00:02:08,040 --> 00:02:09,900
+Então você vai testar nesse endpoint aqui
+
+33
+00:02:09,900 --> 00:02:12,540
+Documentos anexados simplificado
+
+34
+00:02:12,540 --> 00:02:14,160
+Aí ele vai estar descrito aqui
+
+35
+00:02:14,160 --> 00:02:25,280
+get, a fim de permitir a listagem dos documentos anexados na operação ou proposta.
+
+36
+00:02:25,420 --> 00:02:27,940
+Estarão presentes no novo endpoint os seguintes parâmetros.
+
+37
+00:02:28,700 --> 00:02:31,760
+Número de proposta, responsável por receber o número da proposta,
+
+38
+00:02:32,260 --> 00:02:34,520
+responsável por receber o número da operação.
+
+39
+00:02:35,520 --> 00:02:38,720
+Aqui, se não tiver constando no autorizador, por exemplo,
+
+40
+00:02:38,720 --> 00:02:40,980
+se não tiver constando só o número da proposta,
+
+41
+00:02:41,080 --> 00:02:47,520
+você vai ter que dar um select aqui na base para achar o número de operação
+
+42
+00:02:47,520 --> 00:02:53,240
+e jogar direto aqui dentro, aqui na requisição.
+
+43
+00:02:53,620 --> 00:02:57,260
+Eu te mandei o select, mas qualquer coisa, se você não achar no meio das coisas que eu te mandei,
+
+44
+00:02:57,600 --> 00:02:58,780
+eu te mando de novo, tá bom?
+
+45
+00:03:00,580 --> 00:03:05,500
+Ó, um funcionamento dos objetos listados acima serão obrigatórios condicionais,
+
+46
+00:03:05,600 --> 00:03:09,640
+ou seja, caso seja informada uma das opções, a outra torna-se opcional.
+
+47
+00:03:10,200 --> 00:03:13,960
+Aí, isso são coisas que você precisa ter em mente para testar.
+
+48
+00:03:14,700 --> 00:03:18,040
+Como um dos dois é obrigatório, o outro tem que ser opcional.
+
+49
+00:03:18,540 --> 00:03:22,100
+Se você colocar o número da proposta e o número da operação,
+
+50
+00:03:22,560 --> 00:03:27,140
+você não conseguir dar requisição e dar erro, por exemplo,
+
+51
+00:03:27,300 --> 00:03:30,680
+ah, está faltando o número da operação, já pode ser um incidente,
+
+52
+00:03:30,720 --> 00:03:32,680
+porque um dos dois tem que ser opcional.
+
+53
+00:03:33,640 --> 00:03:36,660
+E também não pode subir sem nenhum dos dois, por exemplo,
+
+54
+00:03:37,260 --> 00:03:39,500
+sem o número da proposta, sem o número da operação.
+
+55
+00:03:39,500 --> 00:03:42,780
+Se ele der com uma requisição de sucesso, também está errado.
+
+56
+00:03:42,780 --> 00:03:48,820
+Aí você testa, tipo, vários cenários assim que ele não cita, mas que meio que fica implícito, sabe?
+
+57
+00:03:50,020 --> 00:03:51,100
+Pra você ter uma ideia.
+
+58
+00:03:52,300 --> 00:03:57,340
+Ó, em seu retorno será informada uma lista de objetos contendo as informações dos documentos
+
+59
+00:03:57,340 --> 00:04:02,860
+anexados no GED referente à informação do número de proposta ou operação informando anteriormente.
+
+60
+00:04:03,440 --> 00:04:05,960
+Em seu retorno serão retornados os seguintes objetos,
+
+61
+00:04:05,960 --> 00:04:12,760
+ID armazenamento, identificador de armazenamento de arquivo, ID único, nome do arquivo, nome do arquivo e sua extensão.
+
+62
+00:04:12,780 --> 00:04:19,820
+Então, no retorno da requisição, tem que retornar esses três, esses seguintes objetos aqui.
+
+63
+00:04:20,540 --> 00:04:22,240
+Tem que confirmar que eles estão lá.
+
+64
+00:04:23,820 --> 00:04:25,660
+Detalhamento, encontrou-se no anexo 1.
+
+65
+00:04:27,380 --> 00:04:31,820
+Aqui são mais algumas considerações, então você tem que ler isso aqui bem bonitinho,
+
+66
+00:04:32,100 --> 00:04:41,280
+porque essas considerações geralmente citam coisas que precisam estar constando nesse retorno de requisição também.
+
+67
+00:04:41,280 --> 00:04:52,800
+O atual endpoint de documentos anexados realiza a apresentação dos arquivos baseados impreterivelmente no checklist relacionado à proposta.
+
+68
+00:04:53,460 --> 00:05:00,620
+Sendo assim, este novo endpoint de documentos anexos simplificados visa retornar somente as informações dos arquivos anexados no GED,
+
+69
+00:05:01,320 --> 00:05:04,360
+vinculados ao número de proposta ou número da operação.
+
+70
+00:05:04,980 --> 00:05:09,580
+Não será retornado nesse novo endpoint as informações referentes ao checklist da proposta.
+
+71
+00:05:09,580 --> 00:05:19,580
+Aí esse checklist da proposta é outro ponto, mas qualquer coisa eu vou te mostrar agora, que o meu já tá aberto,
+
+72
+00:05:20,460 --> 00:05:28,240
+só pra você ter uma ideia, caso você precise, quando você for ler a EF de novo, caso você precise alterar alguma coisa.
+
+73
+00:05:28,340 --> 00:05:35,460
+Se você tiver que fazer um novo produto, a esteira provavelmente você não vai precisar fazer um novo produto,
+
+74
+00:05:35,460 --> 00:05:39,620
+um novo convênio, ou então quiser só alterar o checklist do seu produto.
+
+75
+00:05:40,320 --> 00:05:48,320
+Você vem aqui em alterar, novos produtos, pega qualquer produto,
+
+76
+00:05:51,890 --> 00:05:55,610
+e aqui está constando o checklist, esse é o checklist que ele cita.
+
+77
+00:05:57,010 --> 00:06:00,650
+É o checklist de cadastro, o de análise e o de pagamento.
+
+78
+00:06:00,810 --> 00:06:06,590
+Aí, por exemplo, eu coloco o mesmo checklist nos três, de exemplo, para não ter erro.
+
+79
+00:06:06,590 --> 00:06:17,790
+E se você quiser editar o checklist, caso precise, você vem aqui em tabelas, checklist, aqui tem os grupos de checklist, mas geralmente você vai usar os que já tem.
+
+80
+00:06:18,390 --> 00:06:29,910
+E aqui são os tipos de checklist, que é o de análise, cadastro e formalização, que eu acabo usando o mesmo para os três, ou colocando só um checklist no cadastro e um na análise, e o de formalização eu deixo para lá, tipo isso.
+
+81
+00:06:29,910 --> 00:06:32,650
+aí ele aparece assim
+
+82
+00:06:32,650 --> 00:06:35,570
+aí você consegue incluir um novo ou utilizar um que já tem
+
+83
+00:06:35,570 --> 00:06:37,710
+eu geralmente utilizo um que já tem
+
+84
+00:06:37,710 --> 00:06:38,690
+porque é menos trabalho
+
+85
+00:06:38,690 --> 00:06:46,000
+e aí quando você digita a proposta
+
+86
+00:06:46,000 --> 00:06:46,680
+ele puxa
+
+87
+00:06:46,680 --> 00:06:50,260
+por exemplo, esse daqui você faz o cadastro do checklist
+
+88
+00:06:50,260 --> 00:06:52,200
+e só seleciona
+
+89
+00:06:52,200 --> 00:06:54,680
+se ele é de análise ou se ele é de formalização
+
+90
+00:06:54,680 --> 00:06:56,960
+deixa eu botar aqui
+
+91
+00:06:56,960 --> 00:07:01,350
+somente as informações
+
+92
+00:07:01,350 --> 00:07:02,750
+dos arquivos anexados
+
+93
+00:07:02,750 --> 00:07:05,050
+não será retornado nesse novo endpoint
+
+94
+00:07:05,050 --> 00:07:07,630
+as informações referentes ao checklist da proposta.
+
+95
+00:07:07,910 --> 00:07:10,390
+As informações do checklist da proposta são
+
+96
+00:07:10,390 --> 00:07:13,070
+análise, cadastro e formalização.
+
+97
+00:07:14,570 --> 00:07:18,530
+Você tem que ver quando a requisição da Web API,
+
+98
+00:07:18,870 --> 00:07:21,170
+você vai retornar alguma coisa referente ao checklist.
+
+99
+00:07:22,710 --> 00:07:25,870
+Por exemplo, algo relacionado à formalização.
+
+100
+00:07:26,130 --> 00:07:27,730
+Se voltar algo relacionado à formalização,
+
+101
+00:07:28,190 --> 00:07:29,610
+pode ser que seja algum erro também,
+
+102
+00:07:29,730 --> 00:07:32,450
+porque está retornando algo do checklist.
+
+103
+00:07:32,450 --> 00:07:35,670
+que não deveria, é isso mesmo.
+
+104
+00:07:37,780 --> 00:07:41,420
+Assim como o funcionamento atual do endpoint e documentos anexados,
+
+105
+00:07:41,520 --> 00:07:44,500
+o código do perfil do GED a ser utilizado para a consulta
+
+106
+00:07:44,500 --> 00:07:49,260
+será o mesmo indicado no app settings config, através da tag perfil gdoc.
+
+107
+00:07:50,000 --> 00:07:53,360
+Ou seja, o perfil do GED será o mesmo utilizado no autorizador.
+
+108
+00:07:54,520 --> 00:07:59,580
+Embora quando uma operação não possua uma proposta vinculada na base da proposta,
+
+109
+00:07:59,580 --> 00:08:02,460
+é imprescindível que exista na base do back-office
+
+110
+00:08:02,460 --> 00:08:11,800
+um número de proposta preenchido. Isso ocorre porque o perfil GED utiliza nesse endpoint é o mesmo do autorizador, cujo identificador principal é o número da proposta.
+
+111
+00:08:12,620 --> 00:08:16,660
+Exemplo, operações de aquisição não possuem proposta cadastrada na função.
+
+112
+00:08:17,420 --> 00:08:21,660
+Não é necessário informar o número da proposta na entrada dos endpoints junto ao número da operação,
+
+113
+00:08:21,820 --> 00:08:28,860
+pois ao receber o número da operação, o sistema fará internamente a busca pelo número da proposta correspondente cadastrada no back-office.
+
+114
+00:08:29,300 --> 00:08:32,000
+Então, esse basicamente é aquele primeiro ponto lá.
+
+115
+00:08:32,140 --> 00:08:35,620
+Ou você faz com o número da proposta, ou você faz com o número da operação.
+
+116
+00:08:36,000 --> 00:08:39,160
+Mas você tem que testar com os dois, para ver se não quebrou nada.
+
+117
+00:08:42,020 --> 00:08:46,080
+Implementar na plataforma o serviço do módulo autorizador, anexo.
+
+118
+00:08:46,200 --> 00:08:49,420
+Ah, aqui são mais um endpoint, que você vai ter que dar mais uma litinha.
+
+119
+00:08:51,000 --> 00:08:55,040
+O novo parâmetro denominado, número operação, a fim de possibilitar o download.
+
+120
+00:08:55,040 --> 00:08:59,740
+Ou será requisitado pela API as seguintes informações?
+
+121
+00:09:00,000 --> 00:09:01,200
+Essas são os adendos aqui.
+
+122
+00:09:01,820 --> 00:09:05,880
+Aqui é como vai ficar a Web API.
+
+123
+00:09:06,720 --> 00:09:07,980
+É como se fosse um exemplo.
+
+124
+00:09:09,780 --> 00:09:12,760
+Aí você consegue ter uma ideia visual de como ele fica também.
+
+125
+00:09:16,460 --> 00:09:17,800
+Mas de modo geral é isso.
+
+126
+00:09:18,000 --> 00:09:20,140
+Aí o que você vai precisar baixar nesse teste?
+
+127
+00:09:20,900 --> 00:09:24,320
+Um autorizador da função, um subsite,
+
+128
+00:09:24,480 --> 00:09:26,700
+provavelmente você vai baixar o subsite consignado,
+
+129
+00:09:26,700 --> 00:09:29,220
+É um subsite
+
+130
+00:09:29,220 --> 00:09:31,300
+E você vai ter que baixar um Gdoc
+
+131
+00:09:31,300 --> 00:09:34,260
+Então eu vou te mandar aqui
+
+132
+00:09:34,260 --> 00:09:36,880
+Uma listinha das coisas que você precisa baixar
+
+133
+00:09:36,880 --> 00:09:42,420
+Fala só uma aplicação
+
+134
+00:09:42,420 --> 00:09:44,180
+Que você vai ter que baixar
+
+135
+00:09:44,180 --> 00:09:46,280
+Que vai ser a única que vai ter alteração
+
+136
+00:09:46,280 --> 00:09:47,960
+Assim que vai ser a do teste
+
+137
+00:09:47,960 --> 00:09:49,320
+Que é a da Web API
+
+138
+00:09:49,320 --> 00:09:51,860
+A de resto
+
+139
+00:09:51,860 --> 00:09:54,000
+É aquele negócio que eu te expliquei
+
+140
+00:09:54,000 --> 00:09:55,840
+Que a gente tem que lembrar
+
+141
+00:09:55,840 --> 00:09:58,180
+Como a gente vai fazer o caminho do teste
+
+142
+00:09:58,180 --> 00:10:00,180
+Então a gente monta o nosso ambiente
+
+143
+00:10:00,180 --> 00:10:02,300
+do teste, por assim dizer
+
+144
+00:10:02,300 --> 00:10:04,120
+eles só mandam
+
+145
+00:10:04,120 --> 00:10:05,940
+aquilo que vai ser alterado, aí de resto
+
+146
+00:10:05,940 --> 00:10:07,800
+a gente tem que montar na nossa cabeça
+
+147
+00:10:07,800 --> 00:10:10,100
+o que a gente vai precisar usar pra isso
+
+148
+00:10:10,100 --> 00:10:14,110
+aí o que você vai baixar aqui
+
+149
+00:10:14,110 --> 00:10:15,470
+vai ser um autorizador
+
+150
+00:10:15,470 --> 00:10:17,330
+um subsite por hora
+
+151
+00:10:17,330 --> 00:10:19,270
+e...
+
+152
+00:10:19,270 --> 00:10:20,870
+siga provavelmente
+
+153
+00:10:20,870 --> 00:10:22,790
+e um gdoc
+
+154
+00:10:22,790 --> 00:10:27,450
+você pode tentar pesquisar assim no .net
+
+155
+00:10:27,450 --> 00:10:29,510
+e aí o que você faz? Você pega
+
+156
+00:10:29,510 --> 00:10:31,610
+pode pegar geralmente as versões
+
+157
+00:10:31,610 --> 00:10:33,530
+mais atualizadas que estiverem
+
+158
+00:10:33,530 --> 00:10:35,390
+aprovadas. Ou se não tiver nenhuma
+
+159
+00:10:35,390 --> 00:10:37,450
+versão aprovada, pode pegar as mais recentes
+
+160
+00:10:37,450 --> 00:10:38,970
+mesmo, pra fazer o teste.
+
+161
+00:10:42,050 --> 00:10:42,830
+E se o cliente
+
+162
+00:10:42,830 --> 00:10:44,950
+funcionou, porque aqui na ficha tá o cliente
+
+163
+00:10:44,950 --> 00:10:46,810
+[IDENTIFICADOR DE CLIENTE OMITIDO], aí você pode usar como
+
+164
+00:10:46,810 --> 00:10:47,690
+base ele mesmo.
+
+165
+00:10:49,370 --> 00:10:50,310
+Aí o que você vai fazer?
+
+166
+00:10:50,650 --> 00:10:52,850
+Você vai fazer aquele esquema. Pegar o número
+
+167
+00:10:52,850 --> 00:10:54,030
+do seu projeto,
+
+168
+00:10:55,670 --> 00:10:56,370
+esse aqui,
+
+169
+00:10:59,360 --> 00:11:01,240
+vir em relatórios, gerenciais,
+
+170
+00:11:01,240 --> 00:11:02,440
+e jogar na ficha
+
+171
+00:11:02,440 --> 00:11:04,200
+consolidada,
+
+172
+00:11:04,200 --> 00:11:13,840
+e baixar a ficha consolidada e ver a aplicação que você precisa baixar, que é a aplicação do teste.
+
+173
+00:11:15,440 --> 00:11:22,600
+Aí você monta uma pastinha aqui nos seus documentos, monta uma pastinha referente ao seu projeto
+
+174
+00:11:22,600 --> 00:11:26,700
+e você coloca todas as aplicações que você precisa para montar seu ambiente.
+
+175
+00:11:26,700 --> 00:11:35,640
+Sobe tudo no IES e você pode tentar digitar uma proposta, umas duas propostas, pelo menos para testes, no autorizador.
+
+176
+00:11:36,340 --> 00:11:42,320
+Aí você vê se você vai precisar criar um produto ou talvez precise criar uma esteira.
+
+177
+00:11:42,820 --> 00:11:47,780
+E a base que você pode usar nesse projeto, você pode usar a do [BASE DE TESTE OMITIDA].
+
+178
+00:11:47,940 --> 00:11:49,500
+Eu acho que ela está boa para a função.
+
+179
+00:11:50,400 --> 00:11:52,420
+Você consegue utilizar ela, aquela que eu te mandei.
+
+180
+00:11:53,320 --> 00:11:54,800
+Mas de resumo é isso.
+
+181
+00:11:54,800 --> 00:11:58,960
+Você tem alguma dúvida referente ao seu projeto em si?
+
+182
+00:12:03,870 --> 00:12:05,030
+Só no meio do caminho, né?
+
+183
+00:12:07,750 --> 00:12:08,190
+Sim
+
+184
+00:12:08,190 --> 00:12:19,310
+Perfeito, perfeito
+
+185
+00:12:19,310 --> 00:12:21,710
+Aí qualquer dúvida que você tiver, pode mandar
+
+186
+00:12:21,710 --> 00:12:22,770
+Não tem problema não, tá?
+
+187
+00:12:22,870 --> 00:12:25,090
+Porque é muita coisa pra lembrar e é muito vídeo
+
+188
+00:12:25,090 --> 00:12:27,890
+Se você ficar caçando em um por um
+
+189
+00:12:27,890 --> 00:12:29,370
+É até difícil de achar, né?
+
+190
+00:12:30,070 --> 00:12:31,590
+Qualquer coisa você pode ir mandando sim
+
+191
+00:12:31,590 --> 00:12:35,450
+Aí você pode dar mais uma lidinha na F
+
+192
+00:12:35,450 --> 00:12:38,070
+que aí vai ficar mais explicado
+
+193
+00:12:38,070 --> 00:12:39,930
+aí você vai me avisando
+
+194
+00:12:39,930 --> 00:12:41,210
+aí no final do dia você me avisa
+
+195
+00:12:41,210 --> 00:12:44,250
+se você não tiver dúvida, você só me avisa como é que tá o andamento
+
+196
+00:12:44,250 --> 00:12:46,090
+que aí qualquer coisa amanhã
+
+197
+00:12:46,090 --> 00:12:47,770
+eu vejo com você certinho, tá bom?
+
+198
+00:12:55,920 --> 00:12:56,360
+sim
+
+199
+00:12:56,360 --> 00:13:12,940
+ah, beleza
+
+200
+00:13:12,940 --> 00:13:14,640
+a parte de evidenciar
+
+201
+00:13:14,640 --> 00:13:16,520
+eu vou te mandar um
+
+202
+00:13:16,520 --> 00:13:18,320
+arquivinho meu
+
+203
+00:13:18,320 --> 00:13:20,140
+como eu faço os meus
+
+204
+00:13:20,140 --> 00:13:22,720
+só pra você ter uma ideia
+
+205
+00:13:22,720 --> 00:13:24,240
+porque eu sempre coloco
+
+206
+00:13:24,240 --> 00:13:26,940
+gerando a PROC com N
+
+207
+00:13:26,940 --> 00:13:29,260
+a PROC com W, ah, você vai testar
+
+208
+00:13:29,260 --> 00:13:30,940
+o único com W
+
+209
+00:13:30,940 --> 00:13:32,120
+que você vai rodar
+
+210
+00:13:32,120 --> 00:13:34,320
+vai ser a aplicação da ficha, tá?
+
+211
+00:13:34,400 --> 00:13:36,180
+aí você roda com N, com W
+
+212
+00:13:36,180 --> 00:13:38,280
+a aplicação da ficha somente
+
+213
+00:13:38,280 --> 00:13:40,200
+de resto você roda só com N
+
+214
+00:13:40,200 --> 00:13:43,100
+e aí eu vou te mandar um documento
+
+215
+00:13:43,100 --> 00:13:45,120
+de como eu faço só pra você ter uma ideia
+
+216
+00:13:45,120 --> 00:13:47,040
+aí se você ficar com dúvida de como
+
+217
+00:13:47,040 --> 00:13:48,960
+montar, depois você me chama
+
+218
+00:13:48,960 --> 00:13:50,560
+que eu mando um explicadinho pra você
+
+219
+00:13:50,560 --> 00:13:53,100
+porque eu coloco
+
+220
+00:13:53,100 --> 00:14:00,560
+Coloco o tipo de versão, coloco rodando com N, rodando com W, assim, ó, tipo aqui.
+
+221
+00:14:01,400 --> 00:14:03,740
+Regularização com W e coloco versão.
+
+222
+00:14:04,520 --> 00:14:05,320
+Aqui tá até errado.
+
+223
+00:14:06,920 --> 00:14:07,800
+Tem que tá aqui.
+
+224
+00:14:08,240 --> 00:14:16,570
+Ah não, perfeito, aí eu vou te ajudando.
+
+225
+00:14:16,650 --> 00:14:19,770
+O que você vai precisar de mais tirar print vai ser o quê?
+
+226
+00:14:20,290 --> 00:14:23,010
+Rodar com N, rodar com W, que é obrigatório,
+
+227
+00:14:23,590 --> 00:14:29,050
+printar a versão que você tá utilizando e o caminho que você percorreu pra chegar nessa situação.
+
+228
+00:14:29,050 --> 00:14:35,190
+Por exemplo, fiz um cadastro de uma proposta no autorizador para fazer esse teste da API.
+
+229
+00:14:35,630 --> 00:14:41,330
+Você não vai precisar printar todo o processo da proposta, mas você pode printar a proposta já criada.
+
+230
+00:14:41,930 --> 00:14:47,750
+Então, assim, foi criada essa proposta para ser realizado o teste de requisição da API,
+
+231
+00:14:48,010 --> 00:14:56,510
+aí printa, tipo assim que nem eu fiz, a proposta mãe criada, e aí mostra a proposta jogada aqui.
+
+232
+00:14:56,510 --> 00:15:00,230
+e aí você grifa bonitinho para mostrar que a mesma proposta que você criou
+
+233
+00:15:00,230 --> 00:15:02,250
+é a mesma proposta da requisição da API,
+
+234
+00:15:02,850 --> 00:15:06,630
+mostra os cenários que a API está retornando,
+
+235
+00:15:06,750 --> 00:15:09,090
+e printa essa parte, por exemplo, aqui inteira,
+
+236
+00:15:09,670 --> 00:15:14,070
+porque mostra o site que você está usando,
+
+237
+00:15:14,070 --> 00:15:17,770
+que foi disponibilizado, e mostra os métodos também que você está utilizando.
+
+238
+00:15:18,230 --> 00:15:19,270
+É basicamente isso.
+
+239
+00:15:20,010 --> 00:15:22,070
+Mas eu vou te ajudando a montar,
+
+240
+00:15:22,890 --> 00:15:26,070
+mas por enquanto monta só o ambiente e dá uma lida na app
+
+241
+00:15:26,070 --> 00:15:29,050
+para você se ambientar, como é que você consegue fazer.
+
+242
+00:15:29,690 --> 00:15:32,090
+Aí, se você tiver dúvida, é só ir me mandando, tá legal?
+
+243
+00:15:39,720 --> 00:15:40,400
+Isso, isso.
+
+244
+00:15:40,500 --> 00:15:41,720
+Aí, você pode deixar reservado,
+
+245
+00:15:41,800 --> 00:15:44,300
+que vai ser só de uma aplicação que tem na sua ficha.
+
+246
+00:15:44,400 --> 00:15:46,600
+De resto, roda só com N e está de boa.
+
+247
+00:15:47,160 --> 00:15:48,080
+Ah, outra coisa.
+
+248
+00:15:48,240 --> 00:15:50,180
+Esse com W que você vai gerar,
+
+249
+00:15:50,560 --> 00:15:51,900
+me fala se deu certo,
+
+250
+00:15:51,900 --> 00:15:55,180
+porque lembra que toda vez que você estava rodando com W,
+
+251
+00:15:55,280 --> 00:15:56,520
+estava dando um erro estranho?
+
+252
+00:15:58,020 --> 00:16:00,080
+Me fala se deu esse erro de novo,
+
+253
+00:16:00,200 --> 00:16:01,540
+porque se deu, aí eu te chamo de novo
+
+254
+00:16:01,540 --> 00:16:02,740
+para a gente ver o que está acontecendo,
+
+255
+00:16:02,740 --> 00:16:13,440
+Porque tá estranho, mas se for direto, pode ser as versões antigas que eu tava te mandando e tava dando erro mesmo, mas é isso, aí qualquer dúvida você me fala, tá legal?
+
+256
+00:16:15,940 --> 00:17:48,660
+[TRECHO NÃO TÉCNICO FORA DO ESCOPO OMITIDO]

@@ -61,3 +61,145 @@ Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo
 - **Estruturas a preservar sem regressão:** `corbanData`, `Credor associatedProposals`, `last_ConsultINSS`, `Insurance_reuse` (`00:09:20`).
 - **Planilha EPT (`EPT_586780`):** documento de casos de teste do CQ (colunas `CT`, `Ref.`, `Etapa`, `Resultado esperado`, `Status`, `Observações`; seções de prê-missas e validações básicas) — aqui vista **preenchida**, complementando a visão de `Gravando 2026-07-07 155307.mp4` (`00:05:50`–`00:08:10`).
 - **Relatório de Testes (`Relatorio_de_Testes_586780`):** documento Word padrão "CQ - Controle de Qualidade / Evidências de Testes" com cenários prontos a reaproveitar na EPT (`00:08:27`–`00:09:30`).
+
+## Termos de `Gravando 2026-07-08 182343.mp4`
+
+- **WebAutorizador / WS / API:** componentes citados numa conversa sobre versões e atualização em ambiente de teste; a relação técnica e a matriz de implantação não foram confirmadas (`00:00:23`–`00:04:27`).
+- **SIC / GDOK:** identificadores citados como parte da configuração, sem expansão nem valores expostos (`00:02:58`–`00:03:04`).
+- **Pasta de configuração (`config`):** área descrita verbalmente como contendo parâmetros de SIC, GDOK e API; instruções conflitantes sobre preservá-la ou apagá-la permanecem em validação (`00:00:33`, `00:02:34`–`00:03:24`).
+- **Esteira:** objeto que o interlocutor tenta importar; sistema, formato e significado não identificados (`00:05:48`–`00:07:20`).
+- **Teste de tolerância:** nome falado para uma tentativa de teste, sem campo, valor, critério de sucesso ou regra de negócio verificáveis (`00:05:26`, `00:07:31`–`00:08:03`).
+
+Ver a análise completa e as ambiguidades em [`gravando-2026-07-08-182343/glossario.md`](gravando-2026-07-08-182343/glossario.md) e [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
+
+## Termos de `MICHELLE CTC PORTABILIDADE REFIN.mp4`
+
+- **Portabilidade / refim:** propostas/fluxos tratados como distintos e relacionados; regras de associação e sincronização não foram fechadas (`00:00:24`–`00:01:22`).
+- **CTC:** sigla usada para acionamento/retorno de etapa, sem expansão ou semântica técnica confirmada (`00:00:36`–`00:01:22`).
+- **“CTC aciona refim”:** nome aproximado de processo falado como acionador; confirmar nome e efeito na configuração real (`00:01:07`–`00:01:22`).
+- **Tela unificada / “aguarda alteração unificada”:** descrição verbal de tela e etapa de coordenação; não inspecionadas visualmente (`00:02:40`–`00:03:15`).
+- **“Aguarda análise de refim de portabilidade”:** etapa alternativa citada, sem resolução quanto ao nome/uso correto (`00:07:25`–`00:07:47`).
+- **CCB:** documento cuja emissão/avanço é citado como dependente da conferência dos valores do refim; campos/critério não especificados (`00:03:36`–`00:04:59`).
+- **MEI:** sigla ASR sem definição na conversa (`00:15:17`–`00:15:28`).
+
+Ver [`michelle-ctc-portabilidade-refin/glossario.md`](michelle-ctc-portabilidade-refin/glossario.md) e [`incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md); não tratar os nomes de etapa/processo como rótulos confirmados.
+
+## Termos de `MCB - QISTA.mp4`
+
+- **MCB:** módulo separado que, segundo a fala, armazena/consulta situação e pontuação de agentes; expansão não definida (`00:00:49`–`00:01:13`).
+- **Núclea / pontuação de agente:** referência verbal à certificação e a um indicador de situação; limite `20` e suspensão não confirmados (`00:00:00`–`00:01:13`).
+- **Atividade de esteira / API de consulta de pontuação:** atividade que acionaria a consulta Autorizador–MCB, com associação de esteira/atividade descrita sem configuração validada (`00:01:13`–`00:02:52`).
+- **Promotora interna/externa:** classificação usada para propor cenários de validação; regra de negócio pendente (`00:07:27`–`00:09:01`).
+- **WebTabelas / origem:** local e representação mencionados para consulta de promotora; nomes podem variar por ambiente e não foram vistos na tela (`00:04:22`–`00:06:46`).
+- **“T-Lib”/“Telib”, QISTA, UDL:** termos reconhecidos pelo ASR sem confirmação de grafia, expansão ou função técnica (`00:03:54`–`00:04:20; 00:09:09`–`00:12:08`).
+- **“Produto não encontrado”:** erro investigado sem identificação da causa ou das três tabelas correlacionadas citadas (`00:14:29`–`00:15:24`).
+
+Ver [`mcb-qista/glossario.md`](mcb-qista/glossario.md) e [`mcb-qista/incertezas.md`](mcb-qista/incertezas.md); `190`/`061` permanecem códigos candidatos do ASR e não são valores de configuração.
+
+## Termos de `Primeiro projeto.mp4`
+
+- **GED / Web API de documentos anexados:** sistema e API citados para listar/baixar arquivos associados a uma proposta ou operação (`00:00:33`–`00:01:02`).
+- **“Documentos anexados simplificado”:** nome verbal do novo endpoint `GET`; rota e propriedades dependem da EF aprovada (`00:01:37`–`00:02:25`).
+- **Número de proposta / número de operação:** identificadores alternativos de consulta; a fala lê a regra como obrigatoriedade condicional (`00:02:25`–`00:03:42`).
+- **Checklist:** informações de cadastro/análise/formalização, descritas como distintas dos arquivos GED e ausentes do retorno simplificado (`00:04:41`–`00:05:09; 00:06:56`–`00:07:37`).
+- **Perfil GED / `perfil gdoc`:** configuração referenciada pelo Autorizador; grafia da chave e regra de associação precisam de confirmação (`00:07:37`–`00:08:29`).
+- **Back-office:** origem da busca interna proposta para relacionar número de operação e número de proposta (`00:07:54`–`00:08:29`).
+- **IDs de armazenamento / ID único / nome e extensão:** categorias de dados que a fala espera no retorno, sem confirmar os nomes de campo (`00:03:52`–`00:04:23`).
+- **Opções “N”/“W” e `SELECT`:** menções sem efeito/consulta documentados; não são instrução operacional (`00:02:35`–`00:02:57; 00:13:12`–`00:16:02`).
+
+Ver [`primeiro-projeto/glossario.md`](primeiro-projeto/glossario.md) e [`primeiro-projeto/incertezas.md`](primeiro-projeto/incertezas.md). A transcrição pública substitui identificadores e omite o trecho não técnico fora do escopo.
+
+## Termos de `Gravando 2026-08-24 124650.mp4`
+
+- **Autorizador / esteira:** aplicação e fluxo mencionados para criar uma proposta sintética e avançar o cenário; sequência oficial depende da EPT (`00:03:10`–`00:03:20; 00:09:55`–`00:10:10`).
+- **Plugin / JSON:** componente e formato de retorno que a conversa recomenda verificar como evidência da alteração; propriedade/campo não identificado (`00:00:25`–`00:02:12; 00:12:57`–`00:13:18`). O ASR oscila nas grafias de JSON.
+- **CPD / Crivo:** CPD é expandido verbalmente como consignado privado; Crivo aparece como retorno associado ao cenário, sem regra ou campo confirmado (`00:04:54`–`00:05:02`).
+- **EPT / Geradoc:** artefatos/ferramenta mencionados na preparação do documento; fluxo e template não demonstrados (`00:16:01`–`00:17:25`).
+- **Etapas 2/3/4:** numeração corrigida/alternada na fala; não usar como sequência oficial (`00:10:12`–`00:12:23`).
+
+Ver [`gravando-2026-08-24-124650/glossario.md`](gravando-2026-08-24-124650/glossario.md) e [`gravando-2026-08-24-124650/incertezas.md`](gravando-2026-08-24-124650/incertezas.md). Identificadores/valores de teste estão mascarados e o trecho `00:06:01.19–00:09:31.31` foi omitido.
+
+## Termos de `Gravando 2026-10-06 110907.mp4`
+
+- **CDC / CQ:** siglas das áreas/sistemas citados na reunião; expansão e fronteira técnica não confirmadas (`00:00:08–00:00:11; 00:09:57–00:10:16`).
+- **SIC jobs / linha de comando:** mecanismo descrito para agendar o plugin/remessa com parâmetros de data; tela e sintaxe não demonstradas (`00:02:47–00:03:23; 00:05:26–00:06:29`).
+- **Itens 1.1 / 1.2 / 1.3:** numeração falada para configuração, remessa e consulta/relatório; validar na EF vigente (`00:01:34–00:03:34`).
+- **Histórico financeiro / liquidação:** critérios citados para selecionar operações com seguro, sem definição completa de eventos (`00:10:47–00:12:15`).
+- **Reenvio/reprocessamento:** repetir uma solicitação com erro, isolada ou em lote; controles, autorização e idempotência não descritos (`00:04:06–00:04:17; 00:16:29–00:17:25`).
+- **`DTN`, “PT fim”, “Gearlog”; `CECOMP`, `TRDSP`, `PDT`, “CDCM”; `SRL`, `RPT`, `SIG`:** grafias/siglas reconhecidas pelo ASR que exigem validação; não são nomes de parâmetro, campo ou rotina confirmados (`00:01:17–00:01:22; 00:06:00–00:06:29; 00:07:32–00:07:57; 00:12:34–00:12:58; 00:14:11–00:14:42`).
+
+Ver [`gravando-2026-10-06-110907/glossario.md`](gravando-2026-10-06-110907/glossario.md) e [`gravando-2026-10-06-110907/incertezas.md`](gravando-2026-10-06-110907/incertezas.md); sistema/projeto de referência foi mascarado e o trecho paralelo foi omitido.
+
+## Termos de `Gravando 2026-09-23 164626.mp4`
+
+- **GED / GEDOC / G-Doc / GDock:** grafias reconhecidas pelo ASR em contexto de consulta/anexação; relação e nomes oficiais precisam ser confirmados.
+- **Autorizador:** aplicação citada como local da rotina de anexar documento à proposta; tela/caminho não verificados.
+- **`document_type`, `document_name`, `user`:** três dados mencionados durante a discussão do JSON; nomes, tipos, obrigatoriedade e origem pendentes de confirmação na EF.
+- **“Attach documento”:** possível nome do objeto pai no payload, ouvido pelo ASR; não padronizar frente a `attachment_document`/`attached_document` de gravações relacionadas.
+- **`null`:** valor relatado para o caso sem documentos; contrato pode exigir outra representação.
+- **Perfil GED / chave:** configuração de acesso mencionada em mensagens de erro; os valores ouvidos não definem permissão correta nem recomendam alteração.
+- **Esteira / retorno / loop:** alternativas de fluxo ao reprocessar a proposta; regra de reentrada e idempotência pendentes.
+- **CPS / CCD:** siglas reconhecidas ao falar de um tipo de documento; grafia e significado incertos.
+
+Detalhes e timestamps em [`gravando-2026-09-23-164626/glossario.md`](gravando-2026-09-23-164626/glossario.md) e [`gravando-2026-09-23-164626/incertezas.md`](gravando-2026-09-23-164626/incertezas.md). A transcrição está integral conforme a diretriz de preservação registrada em [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md) §13.
+
+## Termos de `Como fazer EPT.mp4`
+
+- **EPT / “IPT”:** plano/artefato de teste que descreve cenários, pré-condições, passos e resultados esperados; “IPT” pode ser erro ASR (`00:02:19`, `00:07:08`, `00:31:16`).
+- **EF:** especificação funcional; fonte para objetivo, comportamento atual, requisitos, premissas e dependências (`00:02:19–00:02:48`, `00:27:40–00:30:21`).
+- **Web API Consulta de Propostas detalhada:** endpoint verbalmente descrito com número de proposta/usuário como entradas e novos objetos na saída; rota e schema não conferidos (`00:02:48–00:06:18`).
+- **Objeto `Despesa`:** objeto de retorno citado na EF/exemplo; campos não enumerados com clareza no ASR.
+- **Objeto `Reaproveitamento`:** objeto relacionado ao reaproveitamento de seguro em refinanciamento; campos/regra devem vir da EF, não dos valores da aula.
+- **Margem de tolerância:** exercício de recálculo com limites de valor solicitado no convênio e tolerância percentual; fórmula e limites não confirmados (`00:28:03–00:29:36`).
+- **Caso / etapa:** organização da EPT em um caso com passos, com novo bloco ao iniciar caso distinto; convenção atual depende do template (`00:09:36–00:12:47`).
+- **Pré-condição / premissa / resultado esperado:** itens do modelo de teste usados para descrever o estado necessário, suposições e resultado conforme a EF (`00:09:17–00:10:05`, `00:13:05–00:15:06`).
+- **`Nexo`, `UTE`, `UTPT`:** grafias ASR sem definição; não as tratar como ferramentas/repositórios confirmados.
+
+Detalhes em [`como-fazer-ept/glossario.md`](como-fazer-ept/glossario.md) e [`como-fazer-ept/incertezas.md`](como-fazer-ept/incertezas.md). Nenhum campo ou procedimento da gravação foi verificado visualmente.
+
+
+## Termos de extração — `projeto EPT.mp4` (não validados)
+
+- **ASR:** reconhecimento automático de fala; este passe `large-v3` sem VAD gerou 73 segmentos, mas a saída tem confiança insuficiente.
+- **VAD:** detecção de atividade de voz; o README de origem diz que o passe com VAD reconheceu apenas um segmento.
+- **“Legenda Adriana Zanotto”:** sequência repetida pelo ASR 69 vezes; não confirma nome, fala, crédito, legenda visível ou conteúdo do vídeo.
+- **Cue SRT/VTT:** bloco temporizado; o cue final termina `13.28 s` depois da duração de áudio declarada.
+
+Fonte: [`projeto-ept/glossario.md`](projeto-ept/glossario.md) e [`projeto-ept/metadados.md`](projeto-ept/metadados.md); pendente de revisão audiovisual.
+
+
+## Termos de `ClientSecret EWEN TREINAMENTO.mp4` (ASR não validado)
+
+- **Client Secret / “CloudSecret”:** credencial de aplicação/serviço mencionada ao configurar uma API; nomenclatura, escopo, expiração e rotação não foram confirmados. Não inserir segredo em Git, chat ou evidência.
+- **Client ID:** identificador usado no exemplo do Test API; ASR reconhece números diferentes em `00:15:09` e `00:21:12`; nenhum está validado.
+- **Test API / `WPWebService`:** ferramenta e serviço citados para simular proposta; grafia, endpoint, ambiente e contrato não conferidos.
+- **Arquivo de licença / “contrassenha”:** licença de métodos/API e código/autorização de instalação, conforme relato; origem e fluxo oficiais pendentes.
+- **Direitos por rotina / opções `A` e `M`:** áreas/opções citadas para conceder acesso e registrar métodos; uso depende da versão e da matriz de privilégios aprovada.
+- **CTC / CIP:** integração de portabilidade descrita verbalmente por troca de arquivos; interlocutor relata pouca experiência/teste, sem fluxo validado.
+
+Ver [`clientsecret-ewen-treinamento/glossario.md`](clientsecret-ewen-treinamento/glossario.md), [`clientsecret-ewen-treinamento/incertezas.md`](clientsecret-ewen-treinamento/incertezas.md) e a nota de privacidade §§13, 16. A transcrição integral preserva conversa pessoal conforme instrução do responsável.
+
+
+## Termos de `explicacao mesa c6.mp4` (ASR não validado)
+
+- **CQ:** equipe de controle de qualidade referida na conversa; funções e fluxo atuais não confirmados.
+- **EF / EPT / “IPT”:** especificação funcional e plano de testes discutidos; grafia/estrutura do artefato variam no ASR e devem seguir o template oficial.
+- **Planner / Gantt / sprint / planning / daily:** ferramentas/reuniões citadas para organizar projetos, tarefas e alinhamento; cadência e processo não validados.
+- **Autorizador / Empregador:** módulos que o interlocutor descreve como relacionados; configuração e arquitetura não conferidas.
+- **Esteira / averbação:** fluxo de proposta mencionado no treinamento; sequência depende da EF vigente.
+- **`config` / UDL / base local ou servidor:** nomes/termos do relato de pastas e ambientes; há instruções conflitantes e nenhum acesso foi verificado.
+- **Geradoc / Test API / C-Oper:** ferramentas/rotinas referidas verbalmente; versão, função e grafia não confirmadas, nenhuma chamada/query executada.
+- **“Legenda Adriana Zanotto”:** frase reconhecida pelo ASR em quatro cues; origem não confirmada.
+
+Fonte: [`explicacao-mesa-c6/glossario.md`](explicacao-mesa-c6/glossario.md); uso operacional bloqueado até revisão da fonte e runbook.
+
+## Termos de `recalculo.mp4` (ASR não validado)
+
+- **Recálculo / “recalque”:** atividade cujo comportamento com limites/tolerância é investigado; grafia reconhecida pelo ASR pode estar errada.
+- **Tolerância / margem de tolerância:** percentual discutido em relação aos limites de valor; base, direção e arredondamento não definidos.
+- **Convênio / condições de crédito:** cadastro/área verbalmente associado a mínimo, máximo e percentual; tela/campo não verificados.
+- **Somente recálculo / ambos:** modos citados para comparar o processamento; significados formais e rotas ainda incertos.
+- **Esteira:** sequência de atividades da proposta, incluindo recálculo e possível etapa posterior; estados não confirmados.
+- **API / plugin / JSON:** integração mencionada sem endpoint, payload ou contrato conferido.
+
+Fonte: [`recalculo/glossario.md`](recalculo/glossario.md); timestamps e ressalvas em [`recalculo/incertezas.md`](recalculo/incertezas.md).

@@ -1,0 +1,14 @@
+{
+  "arquivo": "recalculo.mp4",
+  "bytes": 2434086989,
+  "sha256": "d8f2ed3de2a8b79512df333327a3d03c5c88c6ab4f2a626156561be75fb27bda",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 4250.82,
+  "segmentos": 1043,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 2527.5,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

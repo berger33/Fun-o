@@ -1,0 +1,675 @@
+# Transcrição — Gravando 2026-10-06 110907.mp4
+
+> **Transcrição automática preliminar, sanitizada.** Fonte ASR `faster-whisper large-v3`, português; não houve conferência auditiva integral nem inspeção visual do MP4 neste lote. Os nomes de telas, campos, parâmetros e módulos são ASR, não especificação validada.
+
+- **Fonte:** `Gravando 2026-10-06 110907.mp4` — 770228772 bytes; SHA-256 `66e36717be17ba97597a75eb1cf057a4b34a33f843d528ea90f1c3a42f90deb3` (ponteiro/manifesto conferem; o MP4 não foi baixado neste lote).
+- **Cobertura ASR de origem:** 683 segmentos; áudio declarado `00:23:52.43`; último cue original termina em `00:23:47.48`.
+- **Sanitização:** nome de sistema/projeto de referência substituído em `00:18:23–00:18:27`; fala de exemplo de data ininteligível marcada em `00:13:42`; conversa paralela fora do escopo omitida em `00:23:04.06–00:23:47.48`.
+- **Escopo:** explicação preliminar de integração para cancelamento de seguro, configuração, remessa manual/agendada, monitoramento/reenvio e relatório. Nenhum procedimento ou regra foi validado.
+- **SQL:** apenas menção verbal a `SELECT` e a nomes de tabela/campo incertos; não há consulta reproduzida nem executada.
+- **Falantes:** não identificados; falas não atribuídas.
+
+## Fala reconhecida (ASR, sanitizada; trechos marcados não foram completados por inferência)
+
+[00:00:00] Entrou não, né? O pessoal pediu
+[00:00:02] pra gente avaliar a possibilidade de fazer
+[00:00:04] esse trabalho aqui pela mesa, esse projeto
+[00:00:05] que eu mandei. E é...
+[00:00:08] Vai ser a parte de desenvolvimento
+[00:00:09] do CQ, tá? É o íntimo
+[00:00:11] CDC, esse cara aqui.
+[00:00:14] Aí, deixa eu só...
+[00:00:15] Eu acho que eu não baixei a...
+[00:00:17] Basicamente, é o quê?
+[00:00:22] É uma rotina
+[00:00:24] que integra com o sistema externo,
+[00:00:26] beleza?
+[00:00:27] Tá vendo a minha tela, né? Sim.
+[00:00:30] Vai ser uma...
+[00:00:32] Ah tá, eu fiz a
+[00:00:35] Fiz a autenticação, não, não fiz
+[00:00:37] Vai ser uma
+[00:00:40] Uma
+[00:00:41] Integração com um serviço externo
+[00:00:43] Para fazer o cancelamento seguro
+[00:00:45] Certo?
+[00:00:48] E vai ser basicamente o que?
+[00:00:49] Uma rotina de configuração, que é esse cara aqui
+[00:00:51] Você vai incluir aqui as informações
+[00:00:53] Da URL do cara
+[00:00:54] A gente indica o índice secret aqui, as configurações
+[00:00:57] Desse cara, esse botão aqui do
+[00:00:59] Incluir parâmetros aqui em cima, abre essa telinha
+[00:01:01] Você grava esse cara e aí aqui embaixo
+[00:01:04] Você consegue incluir regra aqui
+[00:01:06] Ele abre essa telinha de baixo
+[00:01:07] Pra você definir qual vai ser a regra
+[00:01:09] Que você vai utilizar pra esse
+[00:01:11] Tipo de produto aqui
+[00:01:14] Que você vai fazer
+[00:01:14] Vai fazer o envio do cancelamento de seguro
+[00:01:17] Baseado no histórico financeiro do cara
+[00:01:19] E aí você vai chamar a SRL aqui
+[00:01:21] Passando essa razão aqui do cancelamento
+[00:01:22] Entendeu?
+[00:01:24] Certo
+[00:01:25] A essência é isso daí
+[00:01:26] Essa aqui é a tela de configuração, tá?
+[00:01:28] Aí, deixa eu ver
+[00:01:29] Tem o detalhamento dos campos aqui
+[00:01:31] A configuração de proxy
+[00:01:33] Essas coisas
+[00:01:34] E aí cadê o item 1.2
+[00:01:36] Aí tem um item aqui
+[00:01:41] Que é a remessa, certo
+[00:01:43] Aí esse cara aqui é uma telinha que o cara vai poder
+[00:01:45] Comandar o envio
+[00:01:47] Dessas informações, certo
+[00:01:49] Você coloca aqui o período que você vai
+[00:01:50] Mandar, esse cara
+[00:01:52] Confirma aqui, ele vai chamar o plugin e vai escrever
+[00:01:55] O log aqui nessa tela, não sei se vocês já conhecem
+[00:01:56] Essa telinha aqui, esse template aqui
+[00:01:58] Execução de plugin
+[00:02:00] Putz, é
+[00:02:03] Eu acho que eu já cheguei a ver isso aí
+[00:02:05] Mas faz muito tempo
+[00:02:06] Esse botão de exportar log aqui, ele vai preenchendo aqui
+[00:02:09] Quando você chama esse cara, ele vai chamar um plugin de serve.com
+[00:02:11] Basicamente, e aqui ele vai atualizando
+[00:02:13] Com os logs da execução desse plugin
+[00:02:14] Entendeu? Ele vai atualizando lá
+[00:02:16] Os passos que tá no plugin lá, processamento dele
+[00:02:19] Beleza? Então esse cara, essa rotina aqui
+[00:02:20] Vai ser uma rotina no site, né, do CDC
+[00:02:23] Com um plugin que vai
+[00:02:25] Fazer daí todo o processamento desse cara
+[00:02:26] Entendeu? E aqui ele tá exemplificando, né, como é que isso vai fazer
+[00:02:29] o levantamento, vai fazer
+[00:02:31] o levantamento desses caras.
+[00:02:33] Esse basicamente vai ser o quê? Você vai levantar um monte de informação
+[00:02:35] e vai mandar pro serviço externo lá
+[00:02:37] o cancelamento desses caras. Vai falar, ó,
+[00:02:39] esse contrato aqui cancelou essa razão.
+[00:02:41] Esse contrato aqui cancelou essa razão. Vai ser baseado
+[00:02:43] na configuração que você mandou, que você configurou lá em cima.
+[00:02:46] Perfeito.
+[00:02:47] O plugin, ele vai fazer, vai ter
+[00:02:49] linha de comando também, ele vai fazer a mesma coisa que
+[00:02:51] o plugin de remessa vai fazer.
+[00:02:53] Isso, isso. Vai ter, além de você ter aqui
+[00:02:55] o plugin desse cara que você vai comandar,
+[00:02:57] Você vai ter um cara separado que é uma linha de comando
+[00:02:59] Que vai fazer exatamente o que o plugin faz
+[00:03:01] Para o cara, por exemplo, executar dia a dia
+[00:03:03] Entendeu? Ele vem mais e executa
+[00:03:05] O negócio por dia
+[00:03:06] Deixa eu ver aqui
+[00:03:10] Tem mais
+[00:03:12] A descrição da linha de comando
+[00:03:16] Está junto com o item 1.2
+[00:03:17] Que está tudo
+[00:03:20] Num lugar só
+[00:03:20] O plugin e a linha de comando vai ser entregue no item 1.2
+[00:03:23] Aí 1.3 vai ser uma rotina nova
+[00:03:26] Também no site
+[00:03:28] Do CDC
+[00:03:28] que é pra basicamente consultar
+[00:03:30] o status do envio
+[00:03:32] de todas as solicitações de cancelamento
+[00:03:34] seguro. Beleza?
+[00:03:36] Certo. Vai ter um grid aqui
+[00:03:38] paginado, né? Você vai poder ver aqui as operações
+[00:03:40] e os caras que estão com erro
+[00:03:42] você vai poder selecionar e clicar pra enviar novamente
+[00:03:44] todo mundo.
+[00:03:46] Entendeu? Certo.
+[00:03:48] Tá? E assim, na essência
+[00:03:50] é só isso daqui. Vai ter daí
+[00:03:51] as informações aqui do cara e qual é o status
+[00:03:54] aqui da requisição e a observação aqui que deu dele.
+[00:03:57] Beleza?
+[00:03:57] Não é pra ser muito
+[00:04:01] Quer dizer, tem o detalhamento aqui desse cara
+[00:04:03] Que é um pouquinho mais complicado do que o normal
+[00:04:05] Não é só uma telinha
+[00:04:06] Esse cara, você vai mandar pra ele fazer o reprocessamento
+[00:04:09] A partir dessa tela
+[00:04:09] Se deu algum erro aqui, você vai clicar nesse cara aqui
+[00:04:12] E mandar enviar novamente
+[00:04:13] Que ele vai reprocessar
+[00:04:14] Ou você pode mandar um ou vários, entendeu?
+[00:04:17] Então tem que pensar isso daí também no teste
+[00:04:19] E aí tem o último aqui
+[00:04:21] Vai ser um relatório
+[00:04:22] Que vai ser basicamente o filtro da tela
+[00:04:24] Entendeu?
+[00:04:25] Você vai poder levantar aqui
+[00:04:27] Você vai poder colocar quais são os produtos aqui
+[00:04:29] que você vai colocar, o período de emissão,
+[00:04:31] os lotes aqui que foram emitidos por operação
+[00:04:33] também, mas ele vai fazer basicamente o filtro
+[00:04:34] que tá na tela. Entendeu? Da tela eu digo
+[00:04:37] essa daqui, essa tela
+[00:04:39] aqui, entendeu? Vai puxar da mesma tabela.
+[00:04:41] Esse cara.
+[00:04:42] Que aí no relatório ele vai
+[00:04:45] mostrar, tipo, ó, qual que é o lote,
+[00:04:47] ele vai mostrar qual que é a regra aqui,
+[00:04:49] né, qual que é o coisa, qual que é o status aqui,
+[00:04:51] né, e a observação desse cara.
+[00:04:53] Entendeu? E aí
+[00:04:58] depois disso é
+[00:05:00] só
+[00:05:01] Não tem 0.5, eu acho
+[00:05:03] É, não tem 0.5
+[00:05:06] É, aqui tem o detalhamento aqui dos caras, né
+[00:05:08] Quais são os parâmetros aqui da gente comando
+[00:05:09] Que ele vai usar, quais são as variáveis
+[00:05:11] Que ele tem que dar suporte e tal, isso daqui vocês vão ter que considerar
+[00:05:14] No teste, isso daqui são as variáveis
+[00:05:16] De gente comando, não sei se vocês já mexeram
+[00:05:17] Com a variável de gente comando
+[00:05:18] Ou não
+[00:05:21] É, não me recordo não, Zé
+[00:05:26] Esse cara aqui, a variável de gente comando
+[00:05:29] É assim, imagina
+[00:05:31] Que o cara tá lá, ele coloca um job
+[00:05:33] e no SIC para executar, beleza?
+[00:05:35] É assim que eles rodam a linha de comando lá.
+[00:05:36] Eles vão no SIC, cadastram um job lá e falam,
+[00:05:38] executa essa linha de comando aqui,
+[00:05:40] quero que você executa esse cara todo dia,
+[00:05:42] seis horas da tarde, por exemplo, certo?
+[00:05:45] Se a gente tem um parâmetro de data,
+[00:05:47] que é aqui, por exemplo, a data inicial e a data final,
+[00:05:50] se eu tenho um parâmetro de data
+[00:05:51] e você coloca lá no SIC jobs,
+[00:05:55] você coloca, é da mesma forma que a gente
+[00:05:57] executa a linha de comando, você coloca a rotina
+[00:05:58] e os parâmetros, certo?
+[00:06:00] Que é o, coloca lá o nome da rotina,
+[00:06:02] Aí você tem DTN igual, tem a data.
+[00:06:04] PT fim, tem a data.
+[00:06:06] Gearlog igual, tem a data.
+[00:06:07] Mesma coisa que a gente faz para executar linha de comando normal.
+[00:06:10] Entendeu?
+[00:06:11] Só que por a gente estar cadastrando no job
+[00:06:13] e o pessoal não ter que ficar mudando todo o tempo lá,
+[00:06:15] eles colocaram essas variáveis aqui, que é o quê?
+[00:06:17] Ao invés de você colocar DTN uma data,
+[00:06:20] você coloca DTN é igual a variável.
+[00:06:23] Que aí internamente na linha de comando ele vai falar,
+[00:06:25] beleza, o cara me mandou uma variável,
+[00:06:27] eu vou substituir essa informação por essa daqui
+[00:06:29] que é a data correspondente ao que ele me mandou.
+[00:06:32] Entendi, não entendi sim
+[00:06:35] Entendeu? Então aí, quando você tem
+[00:06:37] Uma listinha aqui assim, de linha de comando
+[00:06:38] Falando, eu quero que você dê suporte pra essas variáveis
+[00:06:41] Aqui, é um teste que a gente vai ter
+[00:06:43] Que fazer com todas essas variáveis
+[00:06:44] Tem que garantir que todas essas variáveis aqui
+[00:06:46] Tem que estar funcionando, aí cada uma tem
+[00:06:48] Tipo, algumas delas vão estar com a mesma data
+[00:06:51] Você entendeu? Mas algumas
+[00:06:53] Delas, vamos supor, você coloca aqui a data do sistema
+[00:06:55] Beleza, a data útil anterior
+[00:06:57] A data atual do sistema é um dia pra trás
+[00:06:58] O próximo dia útil é um dia pra frente
+[00:07:00] Próxima data do sistema é um dia pra frente também
+[00:07:02] Entendeu? Então é tipo
+[00:07:03] Tem data que gera igual pra nós aqui
+[00:07:06] Pra gente testar, mas o importante é o que?
+[00:07:08] Se você coloca essa data
+[00:07:10] Ele pega uma data X
+[00:07:12] Ele consegue identificar que é uma data
+[00:07:13] Se você coloca esse cara aqui, ele também pega uma data
+[00:07:16] É isso que é importante, entendeu?
+[00:07:18] Pra esse teste aqui
+[00:07:19] Beleza?
+[00:07:22] Deixa eu ver aqui
+[00:07:23] Aqui tem a definição aqui do layout
+[00:07:26] De cancelamento, né? Que a gente vai mandar pra eles lá
+[00:07:28] Que isso aqui é normal
+[00:07:29] vai ter que daí fazer um stamp também pra esse cara
+[00:07:32] entendeu? E aí tem o relatório
+[00:07:34] aqui deles com as informações que a gente
+[00:07:35] tá colocando aqui
+[00:07:37] mas o relatório vai ser em RPT
+[00:07:39] quer dizer, vai ser em
+[00:07:41] esqueci qual que é o layout do relatório
+[00:07:44] vai ser um relatório normal
+[00:07:45] do SIG esse cara, a gente não vai ter previsão
+[00:07:47] de não ter previsto fazer
+[00:07:49] coisa de CSV
+[00:07:51] essas coisas de Excel, é só esse
+[00:07:53] essa telinha aqui com as
+[00:07:55] informações ali e a listinha dos
+[00:07:57] totais ali embaixo
+[00:07:58] Alô? Oi? Alô?
+[00:08:00] Cheguei, cheguei. Desculpa aí, gente.
+[00:08:02] É assim, é um negócio que é...
+[00:08:06] Não é nada que a gente não saiba fazer, tá?
+[00:08:09] É uma rotina no site, você entendeu?
+[00:08:11] Vamos pegar aqui, ó.
+[00:08:12] 1.1. Cadê? Cadê?
+[00:08:17] Opa.
+[00:08:19] Ih, Jesus. Cadê? 1.1. 1.1.
+[00:08:23] 1.1 é uma rotina no site, uma rotina de configuração, mano.
+[00:08:26] Isso daí eu entendo que a gente já mexeu com rotina de configuração, certo?
+[00:08:29] É normal, você entra lá, faz os testes para cadastrar,
+[00:08:32] coloca as URL, entendeu?
+[00:08:33] É o normal desse cara.
+[00:08:35] O outro cara aqui é uma rotina que dispara um plugin,
+[00:08:40] que a gente já mexeu com o plugin, né?
+[00:08:42] Então, eu entendo que é normal fazer validação dessa tela aqui.
+[00:08:48] Tem um...
+[00:08:48] Aí, no caso, a questão da linha de comando,
+[00:08:50] a gente já trabalhou com linha de comando, né?
+[00:08:52] Vocês já executaram linha de comando,
+[00:08:53] então eu entendo que está tranquilo aí desse cara.
+[00:08:55] Não é nada que a gente, tipo, não conheça, sabe?
+[00:08:57] A gente pode não conhecer o CDC
+[00:08:59] A gente pode não conhecer, por exemplo
+[00:09:00] O que isso daqui impacta no CDC
+[00:09:03] Por exemplo, mas eu entendo que
+[00:09:05] O
+[00:09:06] O que a gente vai mexer
+[00:09:09] Que é pra ser tranquilo
+[00:09:11] Isso é uma coisa que a gente já fez
+[00:09:12] Então assim
+[00:09:15] O que tá pendente agora é o que?
+[00:09:16] O pessoal da fábrica vai fazer um comitê
+[00:09:18] Pra eles definirem quais são as horas
+[00:09:21] Que eles vão levar pra fazer lá
+[00:09:22] A gente vai colocar uma gordura pra nós
+[00:09:25] aqui porque a gente não tem domínio do CDC,
+[00:09:27] então aí quando eles passarem as horas, a gente
+[00:09:29] aumenta um pouquinho mais as horas deles lá e
+[00:09:31] assume pra cá esse cara. Só que aí tem uma
+[00:09:33] segunda etapa lá
+[00:09:35] que é basicamente o quê? A gente vai falar com os analistas
+[00:09:37] lá do CDC, né, pra ver se
+[00:09:39] eles também estão de acordo em a gente fazer
+[00:09:41] aqui esse cara. E a gente vai alinhar,
+[00:09:43] tipo, se vai precisar fazer em release,
+[00:09:45] se pode a gente entregar direto na última esse
+[00:09:47] cara, coisa do tipo, entendeu?
+[00:09:51] Beleza?
+[00:09:52] Eu não sei se você já falou, tá?
+[00:09:54] Cheguei depois, mas...
+[00:09:57] projeto ele vai integrar alguma coisa do
+[00:09:58] autorizador? Não. Porque eu tô vendo que
+[00:10:00] ele vai fazer coisa de segura
+[00:10:03] ali, não é? Integração de segura, então...
+[00:10:04] É totalmente separado desse cara.
+[00:10:08] É que ele já vai mexer com a operação e já tá
+[00:10:10] integrado, então. É, que já tá integrado
+[00:10:12] esse cara, entendeu? Aí tem que ir lá, acho que
+[00:10:14] na... não sei se é a SECOM
+[00:10:16] que é lá no CDC também, mas deixa eu ver aqui.
+[00:10:19] Ela é...
+[00:10:20] Mas as
+[00:10:22] operações tem que estar com seguro, né?
+[00:10:24] Isso, as operações tem que estar com seguro
+[00:10:27] São as operações somente
+[00:10:28] Regra de cancelamento
+[00:10:30] Operações liquidadas com seguro
+[00:10:31] O pacote de benefícios liquidado no sistema
+[00:10:33] É só a gente pegar basicamente todas as operações
+[00:10:36] Que estão liquidadas
+[00:10:36] Que tem o seguro lá na despesa delas
+[00:10:40] Entendeu?
+[00:10:41] Que se enquadra na regra que eles colocaram
+[00:10:43] Aqui em cima nessa tela de configuração
+[00:10:45] Tem uma configuração, acho que você perdeu essa parte
+[00:10:47] Mas tem um primeiro item aqui, é uma tela de configuração
+[00:10:50] Que você vai definir qual que é a regra pra você levantar
+[00:10:52] Então vamos supor, tem essa telinha aqui
+[00:10:54] essa tela aqui é a principal, aí você tem
+[00:10:56] qual que é o grupo aqui, do consignado
+[00:10:58] qual que é o tipo de produto, tipo de operação aqui
+[00:11:00] quais são os históricos financeiros que a gente
+[00:11:02] vai olhar, e o reason vai ser
+[00:11:04] um campo de texto que a gente vai enviar pra eles
+[00:11:06] lá falando qual que foi
+[00:11:07] o motivo pra essa chamada aqui
+[00:11:10] entendeu, mas aí a gente vai colocar
+[00:11:12] falando ó, pra todo mundo aqui
+[00:11:14] eu vou levantar todos os caras
+[00:11:16] que estão liquidados nesse histórico
+[00:11:18] financeiro, você entendeu
+[00:11:20] desse produto aqui que seria esse tipo de operação
+[00:11:22] Pra essa, essa é a primeira regra
+[00:11:24] Entendeu?
+[00:11:26] E aí pra essa segunda regra eu vou fazer a mesma coisa
+[00:11:28] Isso vai funcionar tanto pra
+[00:11:30] Nova, refinanciamento
+[00:11:32] Isso, de acordo com o que
+[00:11:34] De acordo com o que você segura
+[00:11:35] Você setar o tipo de operação, né?
+[00:11:37] Isso, entendi
+[00:11:38] Aí dependendo de, porque aqui vamos supor
+[00:11:41] Aqui é cancelamento de seguro
+[00:11:43] Mas às vezes pode ser porque o cara
+[00:11:45] Sei lá, fez um estorno
+[00:11:46] Ou até mesmo
+[00:11:49] Liquidou o contrato por qualquer motivo
+[00:11:51] no caso, mas aí vamos supor
+[00:11:53] o histórico financeiro é o motivo da liquidação
+[00:11:55] do contrato, entendeu? Você coloca lá qual foi
+[00:11:57] a movimentação que você fez no contrato, aí entra no formato
+[00:11:59] de histórico financeiro, entendeu?
+[00:12:01] Então aí nessa
+[00:12:02] você consegue o pessoal lá no banco, por exemplo
+[00:12:05] eles conseguem saber se foi porque
+[00:12:07] aconteceu alguma coisa com o contrato
+[00:12:09] ou o cara só terminou de pagar, por exemplo
+[00:12:11] quando o cara só termina de pagar, ele
+[00:12:13] cancela também o seguro, entendeu?
+[00:12:15] Então é só pra eles lançarem lá
+[00:12:17] do lado deles. E aí muda lá na
+[00:12:19] você compre o status da
+[00:12:21] da proposta, da operação
+[00:12:23] não, não, da operação, aqui é tudo operação
+[00:12:25] não vai ter mais proposta
+[00:12:27] isso, aí muda lá o status de alguma coisa
+[00:12:29] então tipo assim, se eu cancelar
+[00:12:31] na mão ele, ele vai me mostrar
+[00:12:33] lá sem nada, o valor
+[00:12:34] é assim, você tem que ver aqui
+[00:12:36] nessa cdcm
+[00:12:38] se eu fizer um select
+[00:12:40] na co
+[00:12:42] só um select, a gente tem um campo
+[00:12:45] aqui que se chama pdt
+[00:12:47] em data de liquidação
+[00:12:49] da operação. Essa data aqui
+[00:12:51] quer dizer que é basicamente
+[00:12:53] a data onde a operação foi quitada,
+[00:12:55] certo? Quer dizer que não tem nenhuma mais,
+[00:12:57] nenhuma parcela em aberto pra esse cara mais,
+[00:12:58] o cara ou pagou tudo ou foi refinanciado,
+[00:13:01] o que importa é que essa operação
+[00:13:03] está quitada a partir dessa data,
+[00:13:05] entendeu? Então o que eu vou fazer é o quê?
+[00:13:07] O cara vai colocar lá, fala, meu,
+[00:13:09] vou levantar as operações que
+[00:13:10] foram, que estão quitadas
+[00:13:12] entre essas datas aqui,
+[00:13:14] Aí entra nessa rotina aqui de baixo
+[00:13:17] Que é essa daqui
+[00:13:19] Quando o cara for comandar a execução
+[00:13:21] Do envio
+[00:13:23] Ele tem essa tela
+[00:13:24] Que você coloca a data inicial e a data final
+[00:13:27] Entendeu?
+[00:13:29] E aí você vai colocar
+[00:13:30] Eu quero que você levanta do dia 1
+[00:13:33] Até o dia 5
+[00:13:34] As operações que foram liquidadas do dia 1 até o dia 5
+[00:13:37] Então a gente coloca o error
+[00:13:38] Pega o technique
+[00:13:39] A gente coloca daí a data do dia 1
+[00:13:42] [EXEMPLO DE FORMATO DE DATA ININTELIGÍVEL NO ASR]
+[00:13:51] entro entendeu? Aí cê faz faz
+[00:13:55] basicamente algo desse tipo aqui tá? Algo assim só pra
+[00:13:58] abstrair aqui a a coisa mas só que aí cê vai olhar o que? Tem
+[00:14:02] que ver os caras que estão com o seguro que aí é um lá na
+[00:14:06] tabela de despesa da operação que eu não lembro agora que eu
+[00:14:11] Não é CECOMP, né, mano?
+[00:14:19] Não é CECOMP.
+[00:14:22] Isso aqui é comissão.
+[00:14:23] CECOMP.
+[00:14:25] Você sabe,
+[00:14:27] Felipe, qual que é a tabela de despesa,
+[00:14:29] mano?
+[00:14:31] Despesa?
+[00:14:35] TRDSP, né?
+[00:14:37] Não, o TRDSP
+[00:14:39] é a proposta,
+[00:14:40] mas é da política. Eu quero saber qual que é
+[00:14:42] a despesa da operação.
+[00:14:44] Então eu vou ter que entrar no CDC
+[00:14:46] Mas essa é a parte que a gente não domina
+[00:14:48] Que a gente vai tirar dúvida lá com o pessoal
+[00:14:50] Falando, ó, quais tabelas
+[00:14:52] Que a gente vai usar pra levantar, entendeu?
+[00:14:53] Então eu entendo que vai ser o quê? A gente tem que definir
+[00:14:56] Onde que tá
+[00:14:58] A despesa de seguro do cara
+[00:14:59] E falar, ó, vai puxar esse nervião em todos os caras
+[00:15:02] Que tem despesa de seguro, e aí vamos fazer
+[00:15:04] Um
+[00:15:04] Comparado com o
+[00:15:07] Tá, não, tá bom, eu entendi, Zé
+[00:15:11] Aí beleza, a gente colocou lá
+[00:15:13] Filtrou, puxou lá alguma
+[00:15:16] Certo? Aí a gente vai ver em base
+[00:15:18] Qual dessas tem uma
+[00:15:20] Uma despesa
+[00:15:21] Certo? E aí beleza
+[00:15:24] Aí depois que eu peguei a despesa
+[00:15:26] Eu vou
+[00:15:27] Naquela outra telinha
+[00:15:29] Falando se ele tem um estorno
+[00:15:31] Se ele cancelou, é isso
+[00:15:34] Isso, aí
+[00:15:35] Deixa eu só ver aqui
+[00:15:37] Basicamente ele vai levantar
+[00:15:39] Operações de seguro
+[00:15:41] Que sofreram ou liquidação
+[00:15:44] Ou estorno
+[00:15:45] Ou cancelamento
+[00:15:46] Eu não lembro agora
+[00:15:51] Se tem escala financeira na operação
+[00:15:54] É porque eu não li o projeto ainda
+[00:15:55] Mas então basicamente o projeto é só
+[00:15:57] É uma integração externa
+[00:15:59] Não, é uma integração externa
+[00:16:01] Você entendeu?
+[00:16:02] Mas as rotinas você vai puxar
+[00:16:05] O que aconteceu com a proposta
+[00:16:07] Com a operação, sim
+[00:16:09] É, com a operação isso
+[00:16:11] Eu não vou consultar a rotina
+[00:16:13] e ela vai fazer alguma alteração em algum lugar
+[00:16:15] e eu vou ter que consultar isso na base
+[00:16:17] em algum lugar. Não. Ela só vai puxar a informação.
+[00:16:19] Esses caras aqui, é que
+[00:16:21] puxar a informação, tem que tomar cuidado, porque
+[00:16:23] a gente precisa registrar o que está acontecendo
+[00:16:26] por causa dessa rotina
+[00:16:27] aqui embaixo. E essa daqui, ó.
+[00:16:29] Essa rotina aqui no ponto 3,
+[00:16:31] ela é uma rotina em que você consulta
+[00:16:34] a situação
+[00:16:35] da integração do seguro.
+[00:16:37] Você entendeu? Então, se eu estou mandando,
+[00:16:40] porque esse cara aqui vai ser o quê? Eu vou levantar
+[00:16:41] todos os contratos que estão liquidados,
+[00:16:43] falando pra ele cancelar o seguro, beleza?
+[00:16:45] Vou levantar lá. Tenho 10 contratos pra enviar
+[00:16:47] falando aqui pra cancelar o seguro, beleza?
+[00:16:49] Vou mandar. Quantos deles deu certo?
+[00:16:52] Quantos deles deu erro?
+[00:16:53] É essa tela aqui que me mostra. Então, eu tenho que
+[00:16:55] gravar numa segunda tabela falando, ó,
+[00:16:57] essas informações aqui,
+[00:16:59] status da requisição, se deu alguma
+[00:17:01] observação, se deu algum erro lá na hora de chamar
+[00:17:03] o serviço, entendeu?
+[00:17:05] Então, a gente diz que, pô, teoricamente
+[00:17:07] é uma consulta. A gente só vai levantar as operações
+[00:17:09] e mandar pra frente. Mas a gente tem uma estrutura
+[00:17:11] desse projeto aqui, vai ter uma estrutura
+[00:17:13] pra gente acompanhar esses caras.
+[00:17:16] E esse daqui, você também vai poder enviar
+[00:17:17] ele novamente, só ele. Você vai poder
+[00:17:19] marcar aqui assim, clicando em enviar novamente.
+[00:17:22] Não, agora
+[00:17:23] Deus tá atingindo. Vai poder fazer o
+[00:17:25] reenvio da... Isso, isso. Aí,
+[00:17:27] isso daqui também, por causa da gente ter
+[00:17:29] essa gravação aqui, a gente vai ter
+[00:17:31] um relatório pra esse cara,
+[00:17:33] que é praticamente a mesma coisa, só que
+[00:17:35] você vai ter um pouquinho mais de filtro aqui. Vai ter a
+[00:17:37] data de emissão, qual tipo de operação,
+[00:17:39] que é da referência e você vai trazer basicamente
+[00:17:41] as mesmas informações que tem lá na tela
+[00:17:43] que é o contrato
+[00:17:45] o lote aqui, qual foi o tipo de operação
+[00:17:47] qual foi o valor do seguro
+[00:17:49] e qual foi o status do envio lá do seguro
+[00:17:51] entendeu?
+[00:17:53] vai ser basicamente isso aí
+[00:17:55] é basicamente
+[00:17:56] lá na telinha das
+[00:17:59] regras vai ter uma ou duas tabelas
+[00:18:01] aí tem que ver como
+[00:18:03] que vai fazer a estrutura
+[00:18:04] tem alguma coisa já nessa
+[00:18:07] parecida que dá pra fazer
+[00:18:09] no CDC pra gente poder testar pra ver se tá funcionando
+[00:18:11] todo esse negócio, a parte do relatório
+[00:18:13] tem uma tela parecida que
+[00:18:15] eu fiz na outra mesa
+[00:18:16] lá no CDC, a gente fez
+[00:18:19] um projeto no CDC também que é bem parecido
+[00:18:21] se você for lá no CDC
+[00:18:23] tem a do [SISTEMA/PROJETO DE REFERÊNCIA OMITIDO]
+[00:18:25] baixa uma versão do [SISTEMA/PROJETO DE REFERÊNCIA OMITIDO]
+[00:18:27] lá tem uma
+[00:18:28] na parte de estornos, tem o menu estornos lá
+[00:18:31] aí vai ter uma rotina chamada aprovação
+[00:18:33] estorno de operação
+[00:18:34] de operações, alguma coisa assim
+[00:18:37] Ela é uma tela muito parecida
+[00:18:39] Com essa tela de consulta aí
+[00:18:41] E aí você tem as regras
+[00:18:43] A tela de regras, eu posso pegar aqui
+[00:18:45] Pra vocês aí, dá pra dar uma olhada
+[00:18:47] Mano, é bem parecido
+[00:18:49] Eu tô a ponto
+[00:18:51] Não é isso, porque eu queria ver
+[00:18:52] O que mais, de repente, que eu tenho que configurar
+[00:18:55] Que eu não tenho, entendeu?
+[00:18:57] Por exemplo, eu tenho que gerar um relatório
+[00:18:59] Eu consigo gerar um relatório no autorizador
+[00:19:01] Agora no CDC, não sei se é diferente
+[00:19:02] Se eu tenho que fazer alguma coisa
+[00:19:04] Geralmente é pra seguir o padrão
+[00:19:06] Segue o padrão, vai importar no SIC
+[00:19:10] E emitir pelo SIC
+[00:19:11] Essa rotina de remessa
+[00:19:17] Basicamente ela vai fazer
+[00:19:19] Ela vai pegar todos os dados das operações
+[00:19:21] E cuidar com o seguro
+[00:19:23] E vai fazer a integração externa
+[00:19:25] E enviar esses contratos para o sistema externo
+[00:19:27] E o sistema externo vai retornar
+[00:19:30] Vai retornar o status
+[00:19:34] lá da parada e a gente vai ter que
+[00:19:37] armazenar em algum lugar também.
+[00:19:40] Beleza.
+[00:19:42] Mas aí, assim, o projeto
+[00:19:43] tem bastante página aqui, tá?
+[00:19:44] Então eu passei por cima aqui desse cara
+[00:19:46] só pra dar uma
+[00:19:49] um overview mesmo dele.
+[00:19:51] Esse cara aqui a gente ainda não iniciou,
+[00:19:53] a gente tá com pendência lá deles,
+[00:19:54] porque o pessoal vai fazer comitê hoje,
+[00:19:57] certo? E depois que
+[00:19:58] fizer comitê a gente vai falar com
+[00:20:00] os responsáveis lá do lado
+[00:20:02] do CDC, os analistas, pra ver se eles também
+[00:20:04] estão de acordo pra gente iniciar
+[00:20:06] o desenvolvimento desse cara. E a gente vai pegar o apoio
+[00:20:08] deles lá também, né, pra ver como é que vai
+[00:20:09] ficar a questão de estrutura.
+[00:20:12] Tá. Eu vou dar uma olhada nele aqui,
+[00:20:14] uma coisa eu pergunto pra vocês
+[00:20:15] sobre alguma coisa. Mas eu acho
+[00:20:18] que é só
+[00:20:22] seguir o projeto.
+[00:20:24] A EF não deve ter mais
+[00:20:25] muito segredo por fora, né?
+[00:20:32] Era o que eu tava fazendo na selfie. É, esse
+[00:20:34] cara, assim, é coisas que a gente já mexeu
+[00:20:36] no autorizador, entendeu? Sim.
+[00:20:38] A parte do detalhe ali pra gente
+[00:20:39] entender como que o CDC funciona,
+[00:20:42] a parte de negócio do CDC, porque o resto
+[00:20:43] eu entendo que é normal, é um teste lá de tela,
+[00:20:46] é um teste de chamada de plugin, é um teste
+[00:20:48] de gente comando, entendeu? Então é pra ser
+[00:20:49] tranquilo, a gente só precisa
+[00:20:51] entender como é que
+[00:20:53] isso interage
+[00:20:56] com o CDC, entendeu?
+[00:20:59] E qual
+[00:21:00] que é o prazo que eles estão querendo, se é
+[00:21:01] pra iniciar? Bem, é que é assim,
+[00:21:03] veio pra cá, veio pra cá
+[00:21:05] porque o CDC tá com pauta
+[00:21:07] só em dezembro, ele só tem pauta
+[00:21:09] livre em dezembro, tá?
+[00:21:11] Eu até onde eu sei, até onde eu falei com a
+[00:21:13] Jéssica aqui, os caras não estão
+[00:21:15] com urgência
+[00:21:17] nesse cara, você entendeu?
+[00:21:21] Não vai ter
+[00:21:21] hora extra nem nada, é só a gente adiantar
+[00:21:23] o lado deles, você entendeu?
+[00:21:25] Pra gente fazer, se tem aqui, sair.
+[00:21:28] Tá? Mas eu entendo que
+[00:21:29] vamos supor, qualquer data, teoricamente, nossa,
+[00:21:31] é melhor que a data do CDC, entendeu?
+[00:21:34] Porque os caras só vão começar
+[00:21:35] em dezembro, esse cara.
+[00:21:37] CQ também? É a mesma história?
+[00:21:38] o CQ dele também só tem essa
+[00:21:41] eu entendo que sim, porque é o CQ da fábrica
+[00:21:43] não é o CQ do CBC
+[00:21:44] é o CQ da fábrica
+[00:21:46] eles não querem
+[00:21:49] entrar na agenda da fábrica
+[00:21:51] eles querem furar a fila
+[00:21:52] tacar lá na mesa e que a mesa faça
+[00:21:54] já até falei pro FP lá
+[00:21:57] não fala pro Luciano cobrar mais caras
+[00:21:58] porque a gente tá pegando os portas de trabalho do CBC
+[00:22:01] aqui, bicho
+[00:22:01] ok, entendeu
+[00:22:04] o pau tá quente
+[00:22:06] mas isso aí a gente
+[00:22:08] Eu entendi que tá de boa
+[00:22:11] Entendi que tá tranquilo
+[00:22:13] Beleza
+[00:22:14] Vamos ver até quando
+[00:22:16] Os caras não aprovaram
+[00:22:20] Nada ainda do pacote 5
+[00:22:21] Beleza
+[00:22:24] Então fechou
+[00:22:24] Esse daqui
+[00:22:27] Vai ser assim
+[00:22:28] A gente não sabe ainda se vai implementar em último
+[00:22:31] Ou se vai implementar em release
+[00:22:32] Então esse daí quem vai definir vai ser o pessoal do CDC lá
+[00:22:35] Mas eu entendo que
+[00:22:37] Como vai ser tudo CDC
+[00:22:39] Então não vai ser para autorizador
+[00:22:41] Não tem pacote do autorizador
+[00:22:42] Se for alguma coisa vai ser do CDC
+[00:22:44] Entendi
+[00:22:45] Beleza, então
+[00:22:48] Qualquer dúvida
+[00:22:50] A gente vai falar
+[00:22:52] Se surgir a gente traz aqui
+[00:22:57] Beleza, então
+[00:22:58] Valeu
+[00:22:59] Até que ele
+[00:23:04] [CONVERSA FORA DO ESCOPO OMITIDA ATÉ 00:23:47]

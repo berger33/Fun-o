@@ -1,0 +1,13 @@
+{
+  "arquivo": "Gravando 2026-09-23 164626.mp4",
+  "bytes": 1087239062,
+  "sha256": "e533f6e54565688b09519b83ccf32b121494ebf33d211245d261ccb769e9d8b8",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 2039.98,
+  "segmentos": 396,
+  "duracao_transcricao_s": 891.9,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

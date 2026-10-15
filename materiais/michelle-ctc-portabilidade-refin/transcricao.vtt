@@ -1,0 +1,1165 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.820
+Estão vendo a minha tela?
+
+00:00:02.160 --> 00:00:02.400
+Sim.
+
+00:00:05.400 --> 00:00:09.620
+Isso daqui é um desenho de uma esteira que foi eu que fiz, tá?
+
+00:00:09.980 --> 00:00:15.000
+Não é exatamente do C6, é um outro cliente que eu trabalhava na fábrica,
+
+00:00:15.120 --> 00:00:18.460
+a gente fez um desenho aqui pra, é uma jornada de contratação,
+
+00:00:18.460 --> 00:00:22.180
+a gente fez um desenho pra explicar como que é a portabilidade e o refim da portabilidade.
+
+00:00:24.020 --> 00:00:28.320
+Eu não vou explicar tudo pra vocês, porque eu acho que vocês já sabem como funciona a portabilidade,
+
+00:00:28.320 --> 00:00:35.560
+mas as duas esteiras são paralelas, o refim e a portabilidade têm que andar em conjunto.
+
+00:00:36.300 --> 00:00:42.320
+O que acontece? A proposta é cadastrada, beleza, ela passa todo aquele processo
+
+00:00:42.940 --> 00:00:50.520
+que a gente estava falando aqui do vai lá para o CTC, verifica saldo, volta, faz todo aquele trâmite.
+
+00:00:51.420 --> 00:00:56.020
+E aí depois quando a proposta de portabilidade retorna aqui do CTC,
+
+00:00:56.020 --> 00:00:57.660
+Isso aqui é uma esteira padrão, tá?
+
+00:00:58.860 --> 00:01:00.220
+Alguns clientes usam, outros não.
+
+00:01:00.580 --> 00:01:07.060
+Mas quando ela retorna, ela faz a pergunta na esteira se tem refinanciamento junto dela, né?
+
+00:01:07.080 --> 00:01:10.340
+A proposta de portabilidade, ela tem refim vinculado a ela.
+
+00:01:11.180 --> 00:01:15.220
+E aí, esse processo aqui que eu tô falando pra vocês, CTC aciona refinanciamento.
+
+00:01:15.740 --> 00:01:19.040
+Ele, na esteira de portabilidade, ele tem que começar a andar o refim.
+
+00:01:19.260 --> 00:01:22.200
+E pra ele andar o refim, ele tem que ter esse processo aqui na esteira.
+
+00:01:22.200 --> 00:01:32.860
+Então, quando eu acionar esse processo aí, no Portabilidade, ele vai passar a andar sozinho a esteira do refim?
+
+00:01:33.380 --> 00:01:35.360
+Isso. O que esse processo tem?
+
+00:01:35.420 --> 00:01:40.760
+Ele tem uma configuração de processo que ele tem alguns status, por exemplo, assim.
+
+00:01:41.340 --> 00:01:47.740
+Ele só anda o refinanciamento se ele estiver com um tipo de status determinado na proposta.
+
+00:01:48.220 --> 00:01:51.160
+Então, ele tem alguma configuração.
+
+00:01:51.160 --> 00:01:55.840
+Eu acho que a Siona que tem a configuração é a guarda, não, desculpa, acho que é o aguarda.
+
+00:01:56.180 --> 00:01:59.840
+Esse processo aqui, deixa eu, eu vou voltar aqui que tá escrito no processo.
+
+00:02:00.420 --> 00:02:06.000
+Ó, ele faz o que, né? Ele, às vezes, tem várias portabilidades pra um refinanciamento.
+
+00:02:06.120 --> 00:02:11.520
+Então, todas as portabilidades tem que ter passado nele aqui pra ele poder andar o refim.
+
+00:02:11.860 --> 00:02:16.340
+Então, esse processo, o que que ele faz? Ele vê se tem várias portabilidades à proposta.
+
+00:02:16.340 --> 00:02:18.240
+se tiver várias portabilidades
+
+00:02:18.240 --> 00:02:20.380
+todos eles tem que passar por esse processo
+
+00:02:20.380 --> 00:02:22.020
+pra depois o refinha dar
+
+00:02:22.020 --> 00:02:24.220
+ele também tem um comportamento dele
+
+00:02:24.220 --> 00:02:25.200
+que ele também não pode estar
+
+00:02:25.200 --> 00:02:27.380
+verbada também
+
+00:02:27.380 --> 00:02:30.080
+ele faz essa
+
+00:02:30.080 --> 00:02:30.940
+validação
+
+00:02:30.940 --> 00:02:34.080
+então assim, esse processo
+
+00:02:34.080 --> 00:02:36.160
+ele faz tudo isso
+
+00:02:36.160 --> 00:02:38.100
+só que eu não quero
+
+00:02:38.100 --> 00:02:40.240
+analisar tudo isso que ele faz, o que eu quero
+
+00:02:40.240 --> 00:02:42.060
+analisar? Hoje o C6
+
+00:02:42.060 --> 00:02:44.660
+eles tem um problema, porque eles tem uma tela unificada
+
+00:02:44.660 --> 00:02:46.140
+que a tela unificada
+
+00:02:46.140 --> 00:02:48.480
+ela faz o refim e a portabilidade juntos
+
+00:02:48.480 --> 00:02:49.280
+sim
+
+00:02:49.280 --> 00:02:52.160
+e ele tem, isso aqui é
+
+00:02:52.160 --> 00:02:54.560
+o fluxo normal de uma proposta de portabilidade
+
+00:02:54.560 --> 00:02:56.380
+tendo pela tela de cadastro normal
+
+00:02:56.380 --> 00:02:58.060
+e aí ele tem essa
+
+00:02:58.060 --> 00:02:59.940
+proposta vindo pela normal
+
+00:02:59.940 --> 00:03:02.180
+e tem essa pela tela unificada
+
+00:03:02.180 --> 00:03:04.160
+a tela unificada, ela tem que ter
+
+00:03:04.160 --> 00:03:06.080
+parado nesse, aguarda
+
+00:03:06.080 --> 00:03:08.140
+alteração unificada, pras duas
+
+00:03:08.140 --> 00:03:10.160
+propostas, a de refim e de portabilidade
+
+00:03:10.160 --> 00:03:12.180
+entrarem juntos
+
+00:03:12.180 --> 00:03:12.700
+nessa
+
+00:03:12.700 --> 00:03:15.900
+atividade da esteira aqui
+
+00:03:15.900 --> 00:03:36.980
+Agora, de refim normal, de proposta cadastrada lá pela normal, ela fica parada nesse processo, aguarda a análise do refim. Ele aciona, ele joga para lá, ele vai andar o refim e ele para a proposta aqui, até que todas as propostas de refinanciamento estejam, por exemplo, com status de integrada.
+
+00:03:36.980 --> 00:03:49.680
+Isso acontece porque, como são esteiras que andam junto, ele quer que a proposta, por exemplo, de refinanciamento esteja com status, por exemplo, de integrada.
+
+00:03:49.980 --> 00:04:01.060
+Só lá no final eu vou poder andar agora a portabilidade, para que não ocorra, por exemplo, lá a CCB, ele fez o cadastro da CCB, a CCB saiu com valores diferentes.
+
+00:04:01.060 --> 00:04:28.700
+ele não quer que a esteira de portabilidade ande antes que o refim ande, porque o que acontece aqui, quando aciona o refinanciamento, o refinanciamento a esteira começa a andar aqui, então o que acontece, passa pela análise de crédito, ele faz várias coisas, ele vai lá para o CTC, aí ele vai para esse processo aqui, que vai verificar lá no retorno da CIP os valores, se o saldo devedor está certo, ele faz várias validações,
+
+00:04:28.700 --> 00:04:36.020
+Ele faz também, às vezes, tem cliente que faz, faz lá a CCB, gera, gera bonitão,
+
+00:04:36.120 --> 00:04:37.980
+porque ela já sabe a portabilidade que ela tem.
+
+00:04:38.080 --> 00:04:43.160
+Agora ele sabe que o retorno do saldo do refim está certo também, então ele consegue gerar documento.
+
+00:04:43.520 --> 00:04:47.500
+E depois que ele fez tudo, aí ele começa a andar essa portabilidade,
+
+00:04:47.620 --> 00:04:51.940
+que aí ele vai verificar a portabilidade, ele vai fazer várias validações.
+
+00:04:52.100 --> 00:04:56.940
+Ah, vai passar pelos recálculos para ver se a data está certa do recálculo
+
+00:04:56.940 --> 00:04:59.120
+e vai finalizar lá mandando para a remessa.
+
+00:04:59.480 --> 00:05:01.020
+A portabilidade, ela fica parada.
+
+00:05:02.000 --> 00:05:04.340
+Eu não sei se eu estou explicando, desculpa, mais para vocês,
+
+00:05:04.900 --> 00:05:09.340
+mas o meu teste era simples, era só para ver se...
+
+00:05:09.340 --> 00:05:11.080
+Porque o banco, ele está tentando fazer o quê?
+
+00:05:11.420 --> 00:05:14.240
+Ele está tentando mandar esse CTC aciona refim
+
+00:05:14.240 --> 00:05:16.820
+para esse, não esse processo de aguarda,
+
+00:05:16.900 --> 00:05:19.940
+para aquele processo que eu falei, aguarda alteração unificada,
+
+00:05:19.940 --> 00:05:22.380
+porque ele quer deixar tanto a esteira que ele fez
+
+00:05:22.380 --> 00:05:24.880
+pela tela unificada, quanto a tela de cadastro,
+
+00:05:24.880 --> 00:05:29.400
+todos caindo no mesmo processo de esteira, entendeu?
+
+00:05:29.740 --> 00:05:31.080
+Eles querem que todos caiam lá.
+
+00:05:31.400 --> 00:05:32.860
+Aí eu conversei com o Zé e ele falou assim,
+
+00:05:32.920 --> 00:05:34.920
+meu, esse processo aqui, ele só aciona,
+
+00:05:35.000 --> 00:05:36.820
+ele não tem nada que ele faz validação
+
+00:05:36.820 --> 00:05:38.220
+para que fique parado aqui.
+
+00:05:39.540 --> 00:05:41.940
+Então, ele consegue fazer, só configurar a esteira.
+
+00:05:42.680 --> 00:05:45.600
+É só ele configurar a próxima etapa aqui
+
+00:05:45.600 --> 00:05:48.660
+como verdadeira, se aguarda a alteração unificada,
+
+00:05:49.140 --> 00:05:51.900
+e ele fica parado ali, até que eles movimentem.
+
+00:05:52.080 --> 00:05:53.980
+E se eles quiserem movimentar também a proposta,
+
+00:05:53.980 --> 00:05:55.200
+ele consegue movimentar
+
+00:05:55.200 --> 00:05:58.300
+esse processo aqui, ele só faz o acionamento
+
+00:05:58.300 --> 00:05:59.640
+do refim, mas ele não
+
+00:05:59.640 --> 00:06:00.900
+valida nada não
+
+00:06:00.900 --> 00:06:03.960
+aí os caras falaram que testaram lá
+
+00:06:03.960 --> 00:06:04.660
+mas aí eu falei
+
+00:06:04.660 --> 00:06:07.580
+falou que não deu certo, aí eu falei
+
+00:06:07.580 --> 00:06:09.880
+mas o que que tá dando, aí eles não sabem o que que é, entendeu
+
+00:06:09.880 --> 00:06:11.780
+falei, mas qual que é o problema
+
+00:06:11.780 --> 00:06:14.220
+que vocês não tão conseguindo colocar o próximo processo
+
+00:06:14.220 --> 00:06:15.880
+na esteira, o que que tá dando de problema aqui
+
+00:06:15.880 --> 00:06:17.920
+então calma, você falou muita coisa
+
+00:06:17.920 --> 00:06:18.780
+desculpa
+
+00:06:18.780 --> 00:06:22.040
+muitas coisas, então no fim das contas
+
+00:06:22.040 --> 00:06:23.780
+o que que a gente precisa fazer, a gente precisa cadastrar
+
+00:06:23.780 --> 00:06:24.840
+uma proposta,
+
+00:06:25.600 --> 00:06:27.680
+um poste de refim, certo?
+
+00:06:27.800 --> 00:06:29.960
+Então, uma portabilidade refinanciada, certo?
+
+00:06:30.080 --> 00:06:31.820
+Isso. E aí ela vai criar duas. Então, não é
+
+00:06:31.820 --> 00:06:33.520
+só uma portabilidade, porque tem que cadastrar
+
+00:06:33.520 --> 00:06:35.940
+só uma portabilidade sem refinanciar, certo?
+
+00:06:36.520 --> 00:06:36.920
+Certo.
+
+00:06:37.800 --> 00:06:39.560
+Então, eu tenho que cadastrar, é, certo.
+
+00:06:39.700 --> 00:06:41.740
+Aí, beleza. Aí eu vou andar com ela na esteira, não vou
+
+00:06:41.740 --> 00:06:44.060
+verbar nem nada. Eu vou pular o CTC,
+
+00:06:44.220 --> 00:06:45.700
+porque eu não consigo fazer CTC hoje.
+
+00:06:45.700 --> 00:06:46.960
+Sim. Certo? Isso.
+
+00:06:47.200 --> 00:06:49.620
+E vou colocar esse CTC aciona esteira de
+
+00:06:49.620 --> 00:06:51.140
+financiamento, é isso? Isso.
+
+00:06:51.720 --> 00:06:53.620
+E aí, quando eu clicar nele,
+
+00:06:53.780 --> 00:07:02.320
+ele vai passar a andar na esteira o meu processo de refim, certo?
+
+00:07:02.820 --> 00:07:07.260
+E nesse refim, ele tem que estar parado em alguma específica para poder andar?
+
+00:07:08.300 --> 00:07:09.740
+Então, ele tem que estar...
+
+00:07:09.740 --> 00:07:11.060
+Deixa eu ver.
+
+00:07:13.570 --> 00:07:15.690
+Não, ele pode estar na análise de crédito.
+
+00:07:15.870 --> 00:07:17.190
+Ele pode estar na análise de crédito.
+
+00:07:17.290 --> 00:07:18.550
+Ele não precisa estar nenhum...
+
+00:07:18.550 --> 00:07:20.510
+O refim, ele pode ficar parado na análise.
+
+00:07:20.990 --> 00:07:22.210
+Você deixa o refim na análise.
+
+00:07:22.210 --> 00:07:25.250
+E a portabilidade fica nesse aciona.
+
+00:07:25.410 --> 00:07:30.270
+Você clica no aciona, e aí o próximo opção aqui do verdadeiro é aquele processo que eu falei.
+
+00:07:30.270 --> 00:07:33.710
+É o aguarda análise, não, aí vai ser o aguarda tela unificada.
+
+00:07:34.170 --> 00:07:40.230
+Isso, o certo que seria, seria esse aguarda análise de refim de portabilidade, que é pra parar aqui.
+
+00:07:40.690 --> 00:07:46.770
+Mas, como eles não querem, vocês colocariam aquele aguarda alteração unificada aqui.
+
+00:07:47.010 --> 00:07:47.850
+É só esse o teste.
+
+00:07:47.870 --> 00:07:49.950
+E aí vai acontecer o quê? O que tem que acontecer?
+
+00:07:50.590 --> 00:07:53.270
+Então, o que o banco espera?
+
+00:07:53.450 --> 00:07:55.970
+Ele espera que ele consiga andar a portabilidade,
+
+00:07:56.070 --> 00:07:59.250
+por exemplo, depois da alteração unificada,
+
+00:07:59.570 --> 00:08:02.290
+eu consiga andar ele sem problema nenhum.
+
+00:08:02.710 --> 00:08:04.050
+Eu não tenho que ter dependência,
+
+00:08:04.170 --> 00:08:06.870
+porque hoje esses processos têm dependência
+
+00:08:06.870 --> 00:08:08.530
+do refém como da portabilidade,
+
+00:08:08.610 --> 00:08:09.430
+eles têm que estar juntos,
+
+00:08:09.610 --> 00:08:11.410
+eles têm que estar em processos específicos.
+
+00:08:11.870 --> 00:08:12.430
+Ele não quer,
+
+00:08:12.430 --> 00:08:14.930
+ele quer continuar andando a esteira de portabilidade,
+
+00:08:15.350 --> 00:08:19.510
+você dando o próximo processo
+
+00:08:19.510 --> 00:08:20.830
+E não pode parar
+
+00:08:20.830 --> 00:08:23.610
+Ou a portabilidade não tem que estar parada em algum lugar
+
+00:08:23.610 --> 00:08:24.630
+Ou ela tem que estar no trabalho
+
+00:08:24.630 --> 00:08:27.770
+Então aí colocando a guarda
+
+00:08:27.770 --> 00:08:29.090
+Até o unificado
+
+00:08:29.090 --> 00:08:30.830
+Eu consigo passar pra próxima etapa
+
+00:08:30.830 --> 00:08:33.110
+Isso, o objetivo deles é
+
+00:08:33.110 --> 00:08:35.190
+Mandar a portabilidade
+
+00:08:35.190 --> 00:08:35.590
+Isso
+
+00:08:35.590 --> 00:08:36.830
+Entendi
+
+00:08:36.830 --> 00:08:38.830
+Eu acho que
+
+00:08:38.830 --> 00:08:41.530
+Você vai ter que colocar a mão na massa
+
+00:08:41.530 --> 00:08:45.550
+Não vai ter a desenvoltura tão rápido
+
+00:08:45.550 --> 00:08:46.510
+Pra isso não
+
+00:08:46.510 --> 00:08:47.990
+o
+
+00:08:47.990 --> 00:08:50.270
+Michel, o William
+
+00:08:50.270 --> 00:08:52.330
+ele é nosso menino novo aí, tá
+
+00:08:52.330 --> 00:08:54.250
+nosso novato, tá aprendendo
+
+00:08:54.250 --> 00:08:56.530
+algumas coisas, eu pensei que era mais simples
+
+00:08:56.530 --> 00:08:58.510
+que tava querendo, tá, mas como
+
+00:08:58.510 --> 00:09:00.530
+eu vi que
+
+00:09:00.530 --> 00:09:02.290
+não é, então acho melhor
+
+00:09:02.290 --> 00:09:04.250
+o Santana tá tocando
+
+00:09:04.250 --> 00:09:05.690
+tá Santana, aí
+
+00:09:05.690 --> 00:09:08.030
+se você puder fazer, Santana
+
+00:09:08.030 --> 00:09:09.970
+e fazer junto com o William pra ele poder pegar
+
+00:09:09.970 --> 00:09:12.150
+se você quiser já fazer isso agora
+
+00:09:12.150 --> 00:09:14.190
+pra todo mundo aí ficar e ficar vendo
+
+00:09:14.190 --> 00:09:16.250
+né, aí já vai
+
+00:09:16.250 --> 00:09:18.030
+bater no martelo com a Michelle, se tá certo
+
+00:09:18.030 --> 00:09:20.390
+a configuração da esteira, como tem
+
+00:09:20.390 --> 00:09:21.110
+que ser feito e tal.
+
+00:09:23.190 --> 00:09:24.450
+Eu acho que, tipo assim, não tem
+
+00:09:24.450 --> 00:09:26.450
+nada configurado assim ainda, tá?
+
+00:09:26.610 --> 00:09:28.530
+Do CTC, essas coisas, entendeu?
+
+00:09:28.790 --> 00:09:30.370
+Então, por exemplo, o CTC, você não vai usar
+
+00:09:30.370 --> 00:09:32.030
+nada. É, você vai pular.
+
+00:09:32.610 --> 00:09:34.290
+Você vai andar com a proposta
+
+00:09:34.290 --> 00:09:36.490
+até a análise de crédito, beleza?
+
+00:09:37.250 --> 00:09:38.250
+E na análise de crédito, você vai
+
+00:09:38.250 --> 00:09:40.290
+colocar aquele processo que ela falou
+
+00:09:40.290 --> 00:09:42.550
+ali, que é a do... É, você vai pular todos esses processos
+
+00:09:42.550 --> 00:09:44.490
+aqui, ó, CTC atualiza,
+
+00:09:44.490 --> 00:09:46.410
+envio, tudo isso aqui você pula
+
+00:09:46.410 --> 00:09:48.290
+você só vai colocar isso aqui, aciona
+
+00:09:48.290 --> 00:09:50.530
+aciona esteira de referenciamento, exatamente
+
+00:09:50.530 --> 00:09:52.590
+então você vai caçar uma proposta
+
+00:09:52.590 --> 00:09:54.070
+integrar, certo, aí você vai
+
+00:09:54.070 --> 00:09:56.730
+fazer a portabilidade mais refim dela
+
+00:09:56.730 --> 00:09:58.530
+refim mais portabilidade, certo
+
+00:09:58.530 --> 00:10:00.650
+aí você vai andar com as duas
+
+00:10:00.650 --> 00:10:02.570
+propostas, porque quando você faz um Porsche
+
+00:10:02.570 --> 00:10:04.950
+mais refim, ele gera duas propostas
+
+00:10:04.950 --> 00:10:06.030
+na esteira, certo
+
+00:10:06.030 --> 00:10:09.430
+aí você vai
+
+00:10:09.430 --> 00:10:11.390
+você vai ver que ele vai perguntar
+
+00:10:11.390 --> 00:10:14.130
+você quer fazer um refim
+
+00:10:14.130 --> 00:10:15.130
+Agora, você fala assim
+
+00:10:15.130 --> 00:10:18.090
+Aí ele vai, depois no final, quando você terminar de fazer
+
+00:10:18.090 --> 00:10:20.530
+Ele vai te dar dois números de proposta
+
+00:10:20.530 --> 00:10:22.410
+Um de portabilidade e outro de refino
+
+00:10:22.410 --> 00:10:23.990
+Aí você vai andar com as duas
+
+00:10:23.990 --> 00:10:25.770
+Até análise de crédito, certo?
+
+00:10:25.830 --> 00:10:28.370
+Com as duas propostas, até análise de crédito
+
+00:10:28.370 --> 00:10:29.930
+Aí é de refinanciamento
+
+00:10:29.930 --> 00:10:32.310
+Você vai colocar esse processo aí
+
+00:10:32.310 --> 00:10:33.030
+Certo?
+
+00:10:33.630 --> 00:10:34.550
+De refinanciamento
+
+00:10:34.550 --> 00:10:37.050
+Só que agora que eu tô pensando
+
+00:10:37.050 --> 00:10:41.150
+Como que a gente vai colocar
+
+00:10:41.150 --> 00:10:42.750
+Em uma esteira diferente?
+
+00:10:42.750 --> 00:10:46.480
+Como assim, uma esteira diferente?
+
+00:10:48.260 --> 00:10:49.720
+Porque se eu tô cadastrando
+
+00:10:49.720 --> 00:10:51.460
+Um refim e uma exportabilidade junto
+
+00:10:51.460 --> 00:10:52.420
+Certo?
+
+00:10:53.220 --> 00:10:54.980
+Não, assim, você vai cadastrar
+
+00:10:54.980 --> 00:10:57.060
+A proposta de portabilidade
+
+00:10:57.060 --> 00:10:59.220
+E aí
+
+00:10:59.220 --> 00:11:00.860
+Depois você vai cadastrar o refim
+
+00:11:00.860 --> 00:11:02.520
+Ah, é, é só mudar o convênio
+
+00:11:02.520 --> 00:11:04.920
+Vai ter que ser dois convênios diferentes
+
+00:11:04.920 --> 00:11:05.600
+Então, Santana
+
+00:11:05.600 --> 00:11:09.120
+Porque vai ter que ser esteiras diferentes
+
+00:11:09.120 --> 00:11:10.640
+São duas esteiras, isso
+
+00:11:10.640 --> 00:11:12.780
+São duas esteiras, uma só de refim
+
+00:11:12.780 --> 00:11:14.180
+Outra só de portabilidade
+
+00:11:14.180 --> 00:11:16.220
+É que não sei, é, acho que vocês nunca fizeram esse teste, né?
+
+00:11:16.260 --> 00:11:17.840
+Vocês não tem duas esteiras já, assim?
+
+00:11:18.180 --> 00:11:20.180
+Não, a gente tem várias esteiras, só que a gente costuma usar
+
+00:11:20.180 --> 00:11:22.220
+uma pra todos os tipos de propostas,
+
+00:11:22.280 --> 00:11:24.100
+entendeu? A gente não tem uma esteira pra
+
+00:11:24.100 --> 00:11:26.080
+proposta nova, uma esteira pra
+
+00:11:26.080 --> 00:11:27.880
+portabilidade, uma esteira pra refim.
+
+00:11:28.100 --> 00:11:29.060
+A gente geralmente
+
+00:11:29.060 --> 00:11:32.360
+vai usando a esteira e vai adaptando pra o que a gente precisa.
+
+00:11:32.800 --> 00:11:33.960
+Entendi. Então,
+
+00:11:34.040 --> 00:11:35.840
+Santana, então, tipo assim, você vai cadastrar
+
+00:11:35.840 --> 00:11:38.360
+uma refim com um convênio,
+
+00:11:38.520 --> 00:11:40.400
+certo? E com uma esteira, com um produto.
+
+00:11:40.860 --> 00:11:42.580
+Beleza? Aí a de refim,
+
+00:11:42.580 --> 00:11:44.460
+Você vai cadastrar com outro convênio
+
+00:11:44.460 --> 00:11:45.760
+Outro produto e outra esteira
+
+00:11:45.760 --> 00:11:48.100
+Mas aí
+
+00:11:48.100 --> 00:11:49.940
+Você vai andar com as duas
+
+00:11:49.940 --> 00:11:51.000
+Na análise de crédito
+
+00:11:51.000 --> 00:11:53.160
+E aí na refim vai ter que ter esse CTC
+
+00:11:53.160 --> 00:11:55.080
+Aciona esteira externa
+
+00:11:55.080 --> 00:11:57.240
+E depois dele vai ter que ter a guarda
+
+00:11:57.240 --> 00:11:59.500
+A guarda
+
+00:11:59.500 --> 00:12:00.520
+Tela unificada
+
+00:12:00.520 --> 00:12:03.040
+E aí a de
+
+00:12:03.040 --> 00:12:05.720
+De refim você já pode jogar
+
+00:12:05.720 --> 00:12:07.460
+Pra remessa online
+
+00:12:07.460 --> 00:12:08.360
+Ou algo do tipo assim
+
+00:12:08.360 --> 00:12:11.180
+Não precisa passar por eles
+
+00:12:11.180 --> 00:12:14.210
+Entendeu?
+
+00:12:14.310 --> 00:12:15.710
+Eu vou tentar aqui, tá?
+
+00:12:16.010 --> 00:12:17.670
+Porque, tipo, nunca fiz isso também.
+
+00:12:20.070 --> 00:12:22.330
+Então, vou começar a tentar fazer aqui.
+
+00:12:23.350 --> 00:12:25.150
+Tentar ajeitar a esteira aqui, etc.
+
+00:12:26.210 --> 00:12:28.570
+Mas, assim, nunca fiz isso, tá?
+
+00:12:28.810 --> 00:12:33.070
+Tipo, tô cheio de dúvida aqui, praticamente, como é que eu vou passar em taus e taus.
+
+00:12:34.570 --> 00:12:38.790
+Tá, eu nunca fiz uma proposta nesse aí que você falou, que você criou a proposta.
+
+00:12:38.790 --> 00:12:39.890
+aí é, pergunta
+
+00:12:39.890 --> 00:12:42.730
+é, você quer cadastrar uma proposta
+
+00:12:42.730 --> 00:12:44.470
+com portabilidade, que você falou aí
+
+00:12:44.470 --> 00:12:46.350
+quando a proposta já tem
+
+00:12:46.350 --> 00:12:48.610
+quando tem refim, sabe
+
+00:12:48.610 --> 00:12:50.490
+não tem segredo
+
+00:12:50.490 --> 00:12:52.270
+é na tela de cadastro mesmo
+
+00:12:52.270 --> 00:12:53.390
+é na tela de cadastro normal
+
+00:12:53.390 --> 00:12:55.150
+só que quando você fizer
+
+00:12:55.150 --> 00:12:58.590
+a portabilidade dela e gravar
+
+00:12:58.590 --> 00:13:00.330
+aí vai aparecer um pop-up
+
+00:13:00.330 --> 00:13:02.630
+na tela, falando, você quer fazer um refinanciamento
+
+00:13:02.630 --> 00:13:04.350
+dessa proposta, aí você vai falar
+
+00:13:04.350 --> 00:13:06.510
+sim, aí vai abrir a tela de cadastro
+
+00:13:06.510 --> 00:13:08.270
+de novo, só que pra parte de
+
+00:13:08.270 --> 00:13:09.130
+de financiamento, entendeu?
+
+00:13:09.870 --> 00:13:11.790
+Aí você vai gravar e beleza, aí quando você terminar
+
+00:13:11.790 --> 00:13:12.930
+ela vai mostrar
+
+00:13:12.930 --> 00:13:15.790
+as duas propostas, tipo,
+
+00:13:15.990 --> 00:13:17.810
+ela vai mostrar os dois números de propostas, entendeu?
+
+00:13:18.790 --> 00:13:20.650
+Só isso, não tem diferença nenhuma.
+
+00:13:22.110 --> 00:13:23.950
+Então tá, então tipo, é...
+
+00:13:23.950 --> 00:13:26.110
+Vai aparecer isso quando eu criar a proposta de refim,
+
+00:13:26.170 --> 00:13:28.310
+no caso. É, a última proposta
+
+00:13:28.310 --> 00:13:30.030
+que você criar, vai ser de refim.
+
+00:13:32.890 --> 00:13:33.110
+Tá.
+
+00:13:34.170 --> 00:13:35.510
+Vou tentar aqui, então.
+
+00:13:36.510 --> 00:13:38.190
+Tá, faz o seguinte, faz aí
+
+00:13:38.190 --> 00:13:39.910
+vocês dois, você e o William,
+
+00:13:39.910 --> 00:13:41.690
+E vai mandando mensagem aqui pra gente
+
+00:13:41.690 --> 00:13:42.230
+Qualquer coisa
+
+00:13:42.230 --> 00:13:45.490
+É, tá bom
+
+00:13:45.490 --> 00:13:47.330
+Pra que você, Michelle, aí
+
+00:13:47.330 --> 00:13:49.150
+Você precisa seguir isso pra quando?
+
+00:13:49.230 --> 00:13:51.170
+Não tem pressa não, tá?
+
+00:13:52.310 --> 00:13:54.150
+Não tem, não é nada urgente
+
+00:13:54.150 --> 00:13:55.990
+Não, é só em relação
+
+00:13:55.990 --> 00:13:58.070
+O cliente tá fazendo o teste de novo
+
+00:13:58.070 --> 00:13:59.810
+Mas é porque ele falou pra mim que
+
+00:13:59.810 --> 00:14:01.690
+Ele não tava conseguindo quando
+
+00:14:01.690 --> 00:14:03.950
+Acionava o refim e ele colocasse
+
+00:14:03.950 --> 00:14:06.190
+Esse processo, ele não tava conseguindo fazer
+
+00:14:06.190 --> 00:14:07.170
+Então eu falei
+
+00:14:07.170 --> 00:14:09.830
+Mas é como eu falei com o Zé, e o Zé falou que não tem
+
+00:14:09.830 --> 00:14:11.630
+nada no font
+
+00:14:11.630 --> 00:14:13.470
+que impeça fazer isso,
+
+00:14:13.930 --> 00:14:15.910
+que é só ele configurar, alguma coisa
+
+00:14:15.910 --> 00:14:16.890
+ele tá configurando errado.
+
+00:14:18.590 --> 00:14:19.390
+Ah, entendi.
+
+00:14:19.390 --> 00:14:21.830
+Mas provavelmente
+
+00:14:21.830 --> 00:14:23.570
+eu acho que você, como vocês têm
+
+00:14:23.570 --> 00:14:25.430
+vocês não têm esteiras
+
+00:14:25.430 --> 00:14:27.490
+separadas, você vai ter que
+
+00:14:27.490 --> 00:14:29.490
+fazer uma esteirinha bem pequenininha
+
+00:14:29.490 --> 00:14:31.390
+assim, só com os
+
+00:14:31.390 --> 00:14:33.590
+processos de, por exemplo,
+
+00:14:33.670 --> 00:14:34.950
+de refim, por exemplo,
+
+00:14:35.830 --> 00:14:37.490
+e aí a portabilidade vai
+
+00:14:37.490 --> 00:14:39.570
+vir em uma e a de refim vai vir em outra.
+
+00:14:39.830 --> 00:14:44.290
+Aí você faz uma esteirinha pequenininha com análise de crédito.
+
+00:14:45.470 --> 00:14:48.870
+Se você quiser, eu mando esse desenho para você.
+
+00:14:49.430 --> 00:14:52.150
+Mas não precisa colocar esses processos do CTC não,
+
+00:14:52.230 --> 00:14:54.650
+porque se você ficar colocando esses processos, vai dar problema, né?
+
+00:14:55.510 --> 00:14:56.730
+É só...
+
+00:14:56.730 --> 00:14:58.910
+Porque a esteira é bem pequena.
+
+00:14:59.070 --> 00:15:02.350
+Seria só, por exemplo, a esteira análise de crédito.
+
+00:15:02.850 --> 00:15:04.530
+Aí você coloca, por exemplo,
+
+00:15:05.610 --> 00:15:08.210
+esse CTC aciona a portabilidade, dá para colocar.
+
+00:15:08.210 --> 00:15:10.430
+dá pra colocar esse CTC permite
+
+00:15:10.430 --> 00:15:12.490
+acionar, dá pra colocar também
+
+00:15:12.490 --> 00:15:14.630
+esses processinhos dá pra
+
+00:15:14.630 --> 00:15:16.250
+colocar, o de remessa
+
+00:15:16.250 --> 00:15:17.770
+e de liberação dá pra colocar
+
+00:15:17.770 --> 00:15:20.250
+agora só esses aqui do MEI
+
+00:15:20.250 --> 00:15:22.390
+que é do CTC pra acionar mesmo
+
+00:15:22.390 --> 00:15:24.250
+que valida, aí não
+
+00:15:24.250 --> 00:15:28.210
+não dá pra colocar porque vocês não
+
+00:15:28.210 --> 00:15:29.430
+vão conseguir bater lá
+
+00:15:29.430 --> 00:15:32.330
+tá certo, vou querer sim esse desenho
+
+00:15:32.330 --> 00:15:34.270
+tá bom, eu mando pra vocês
+
+00:15:34.270 --> 00:15:35.370
+no MEI
+
+00:15:35.370 --> 00:15:37.810
+esse desenho aqui não é
+
+00:15:37.810 --> 00:15:40.290
+uma esteira básica
+
+00:15:40.290 --> 00:15:42.090
+como se fosse
+
+00:15:42.090 --> 00:15:43.950
+uma jornada de contratação aqui do banco
+
+00:15:43.950 --> 00:15:45.970
+ele aciona as APIs e tudo
+
+00:15:45.970 --> 00:15:47.630
+mas não é
+
+00:15:47.630 --> 00:15:49.610
+exatamente do C6
+
+00:15:49.610 --> 00:15:52.250
+é só um exemplo de como funciona
+
+00:15:52.250 --> 00:15:54.630
+cada processo de portabilidade
+
+00:15:54.630 --> 00:15:56.190
+e como que ele faz
+
+00:15:56.190 --> 00:15:57.430
+para jogar lá para cima
+
+00:15:57.430 --> 00:16:00.630
+como ele vai lá para o CTC, o que o CTC faz
+
+00:16:00.630 --> 00:16:02.090
+só é um exemplo
+
+00:16:02.090 --> 00:16:05.520
+mais alguma coisa para vocês
+
+00:16:05.520 --> 00:16:07.280
+não precisa se prender a isso não
+
+00:16:07.280 --> 00:16:08.880
+só precisa de
+
+00:16:08.880 --> 00:16:11.020
+obrigatoriamente dos processos que ela falou
+
+00:16:11.020 --> 00:16:12.380
+é, o CTC
+
+00:16:12.380 --> 00:16:14.460
+aciona o refim lá
+
+00:16:14.460 --> 00:16:16.420
+e depois o aguarda
+
+00:16:16.420 --> 00:16:18.500
+tela unificada, só isso
+
+00:16:18.500 --> 00:16:21.140
+só no refim, o restante pode ser padrão
+
+00:16:21.140 --> 00:16:22.240
+pode ser lá
+
+00:16:22.240 --> 00:16:24.940
+quando você inicia
+
+00:16:24.940 --> 00:16:27.120
+a proposta que mostra
+
+00:16:27.120 --> 00:16:29.580
+o pop-upzinho da proposta
+
+00:16:29.580 --> 00:16:31.620
+o tela de confirmação
+
+00:16:31.620 --> 00:16:33.340
+análise de crédito, já joga isso direto
+
+00:16:33.340 --> 00:16:33.780
+isso
+
+00:16:33.780 --> 00:16:36.920
+tem várias listeiras aí que já estão
+
+00:16:36.920 --> 00:16:39.100
+desse esquema, é só você ver lá e incluir
+
+00:16:39.100 --> 00:16:40.700
+o processo que precisa, só isso
+
+00:16:40.700 --> 00:16:41.900
+tá
+
+00:16:41.900 --> 00:16:44.120
+tá bom
+
+00:16:44.120 --> 00:16:46.520
+então beleza, é isso
+
+00:16:46.520 --> 00:16:48.560
+qualquer coisa é só chamar
+
+00:16:48.560 --> 00:16:50.260
+obrigada

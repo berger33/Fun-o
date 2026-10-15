@@ -1,0 +1,132 @@
+# Transcrição automática — Gravando 2026-07-08 182343.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 127
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+
+[00:00:01] Nossa, onzinha só.
+[00:00:11] Tá, beleza.
+[00:00:13] Ó, a gente tem que vir na pasta do Gabriel.
+[00:00:17] Sabe, a minha já tá aqui salva, tipo, o caminho aqui dele.
+[00:00:21] Beleza.
+[00:00:23] A gente vai vir em C6.
+[00:00:27] É, websites.
+[00:00:32] Web autorizador.
+[00:00:33] A gente vai dar um CTRL A, apagar tudo, menos a config.
+[00:00:54] Isso.
+[00:00:54] É, porque, tipo assim
+[00:00:57] Eu, às vezes, baixo pra minha máquina, sabe?
+[00:01:00] Aponto pra máquina dele, sabe?
+[00:01:01] Eu acho mais prático
+[00:01:02] E, tipo, cada quem tem
+[00:01:04] Isso, cada quem tem sua versão ali e tal, sabe?
+[00:01:08] Só que, tipo assim, é meio que um padrão nosso
+[00:01:10] A não ser que, tipo assim, é
+[00:01:11] Você esteja usando uma versão tal
+[00:01:15] E eu esteja usando outra versão, sabe?
+[00:01:17] Aí eu subo pra minha máquina e aponto pra dele
+[00:01:18] Entendeu?
+[00:01:21] Mas, tipo assim, se tiver só você testando
+[00:01:23] Atualizando alguma dele pra deixar a versão mais recente
+[00:01:26] Aí, beleza
+[00:01:28] Acabei de baixar aqui a nova versão
+[00:01:30] A gente faz o mesmo processo aqui
+[00:01:38] Beleza
+[00:01:48] Sim
+[00:01:53] Ah, sim
+[00:01:58] Calma aí
+[00:02:04] Ah, ele também liberou um WS aqui
+[00:02:08] Deixa eu baixar também pra ficar certinho
+[00:02:11] Aí, beleza
+[00:02:25] Aqui é o WebAutorizador
+[00:02:27] Aí, o WS também sempre vem junto, sabe?
+[00:02:30] Atualizou um, tem que atualizar o outro
+[00:02:32] aí faz o mesmo processo também
+[00:02:34] apaga config
+[00:02:36] tipo, a gente faz isso, sabe, porque tipo
+[00:02:58] na config, tá tudo configurado já
+[00:03:00] sabe, SIC, GDOK
+[00:03:02] API, sabe
+[00:03:04] aí, tipo assim, eu até
+[00:03:09] recomendo você, tipo
+[00:03:10] sei lá, depois copiar
+[00:03:13] essa pasta config, sabe, tipo do autorizador
+[00:03:15] tipo, pra sua máquina, só pra deixar
+[00:03:17] de backup, entendeu
+[00:03:18] vai que dá uma
+[00:03:21] travadinha na máquina, dá um
+[00:03:22] deleta tudo, entendeu
+[00:03:24] É, nossa, quase aconteceu comigo isso aí
+[00:03:31] Tipo, que eu usava a máquina, tipo, era muito fraquinha
+[00:03:35] Aí tava travando e eu só apertando Enter
+[00:03:39] Quase que apago tudo
+[00:03:41] A gente roda sempre com N aqui, tá?
+[00:04:00] Beleza, agora vamos no autorizador aqui
+[00:04:03] Agora assim, tipo, API, sabe API?
+[00:04:11] Você só atualiza API mesmo, sabe?
+[00:04:14] O autorizador é sempre esses dois
+[00:04:17] Tipo, só não é esses dois
+[00:04:20] Quando é caso do SIC
+[00:04:22] Tipo uma variável
+[00:04:24] Aí é só o autorizado mesmo
+[00:04:26] O AWS não atualiza
+[00:04:27] Depende das vezes também
+[00:04:29] Ah, correu um erro aqui
+[00:04:33] Mas isso aqui não interfere em nada
+[00:04:36] É um erro genérico
+[00:04:39] Aí você pode fazer tipo assim, sabe
+[00:04:49] Esses casos aí do item fundon de criar proposta
+[00:04:51] Você pode apagar, sabe
+[00:04:52] Deixar mais só de validação da tela mesmo
+[00:04:55] Isso
+[00:05:06] Aí você vai
+[00:05:09] Tipo qualquer coisa você me fala
+[00:05:11] sabe, tipo, quiser alguma ajuda aí, algum suporte
+[00:05:13] aí tu me dá
+[00:05:15] um toque aí, mas tipo
+[00:05:17] é, bate o olho na F mesmo assim
+[00:05:19] se tiver faltando alguma coisa, você também coloca
+[00:05:21] sabe, se tiver dúvida, pergunta
+[00:05:23] e é isso
+[00:05:26] a parte de tolerância, né
+[00:05:37] ah, e você, tipo assim
+[00:05:48] tem como copiar a esteira
+[00:05:50] não? copiar a esteira
+[00:05:53] calma aí
+[00:05:55] eu tô
+[00:05:57] falando merda aqui, deixa eu dar uma olhada
+[00:05:59] aqui, é
+[00:06:00] importar
+[00:06:03] e acho que é isso mesmo
+[00:06:10] vou fazer um testezinho aqui
+[00:06:11] não lembro o nome
+[00:06:18] sei lá, deixa eu ver aqui
+[00:06:21] ah tá, deixa eu voltar aqui
+[00:06:27] 11
+[00:06:34] exportou
+[00:06:46] vamos ver se vai dar certo
+[00:06:47] deixa eu ver se vai dar certo
+[00:06:56] Certo.
+[00:07:03] Ah, tem como sim.
+[00:07:14] Posso importar ela pra você, então?
+[00:07:19] Qual?
+[00:07:20] Esse teste mesmo aqui?
+[00:07:29] Sim, sim.
+[00:07:31] Tolerância, 999.
+[00:07:33] Tá, 49.
+[00:07:38] Curtiu?
+[00:07:39] Seu vencedor tá aqui mesmo.
+[00:07:46] Ó.
+[00:07:47] Tá aqui, ó.
+[00:07:51] Não.
+[00:07:52] Calma aí.
+[00:07:53] Teste de tolerância.
+[00:07:54] Parece que eu criei mesmo, não foi?
+[00:07:59] Teste
+[00:07:59] Ah, isso mesmo, é isso mesmo
+[00:08:02] É
+[00:08:03] Então é isso
+[00:08:05] Então
+[00:08:10] É
+[00:08:11] Então beleza, mano
+[00:08:14] Qualquer coisa me dá um toque aí, tá?
+[00:08:19] Valeu, você também

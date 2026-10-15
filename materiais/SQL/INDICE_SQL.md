@@ -14,7 +14,20 @@ Consultas e comandos SQL identificados nas gravações analisadas:
 |---|---|---|
 | `Apresentação projeto 19-18.mp4` | **não aplicável** | Houve apenas a menção verbal a verificar "no fonte/query" (`00:06:12`) como encaminhamento — nenhuma consulta foi escrita ou executada. |
 | `Gravando 2026-07-07 155307.mp4` | **não aplicável** | Nenhuma consulta SQL exibida ou ditada. |
+| `Gravando 2026-07-08 182343.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL reconhecível; a fala se concentra em componentes de aplicação, configuração e importação de teste. |
 | `PROJETO 14-08.mp4` | **menção, sem texto** | Apenas a fala "é só a gente colocar lá no select" (`00:01:36`) como encaminhamento para identificar o campo `ETRACPD.*` do CNPJ — nenhuma consulta escrita, exibida ou executada. |
 | `Gravando 2026-09-22 111258.mp4` | **não aplicável** | Nenhuma consulta SQL exibida ou ditada. A tela mostra o PDF da especificação (OS 586780) e a fala trata de campos "na base" (`00:03:10`–`00:03:29`) sem consulta. |
+| `MICHELLE CTC PORTABILIDADE REFIN.mp4` | **não aplicável** | Nenhum SQL, comando ou consulta demonstrado; a conversa trata verbalmente de propostas e etapas de processo. |
+| `MCB - QISTA.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL demonstrado; `INSERT`/`UPDATE` são apenas mencionados como possibilidade, sem script ou execução (`00:02:54`–`00:03:09`). |
+| `Primeiro projeto.mp4` | **menção, sem texto** | A fala menciona um `SELECT` para localizar o número da operação (`00:02:35`–`00:02:57`), mas a consulta não é lida nem exibida; nenhuma query reproduzida ou executada. |
+| `Gravando 2026-08-24 124650.mp4` | **menção/trecho omitido; sem SQL público** | Um trecho sensível entre `00:06:01.19` e `00:09:31.31` foi omitido da cópia pública. Nenhum comando, tabela ou valor é reproduzido; nenhuma query foi executada nesta análise. Ver [`../gravando-2026-08-24-124650/incertezas.md`](../gravando-2026-08-24-124650/incertezas.md). |
+| `Gravando 2026-10-06 110907.mp4` | **menção, sem query** | A fala menciona `SELECT` e nomes de tabela/campo possíveis ao discutir data de liquidação e despesa de seguro (`00:12:34–00:12:58; 00:14:02–00:15:21`); não há comando reproduzido, nem consulta executada. Nomes ASR não confirmados; ver [`../gravando-2026-10-06-110907/incertezas.md`](../gravando-2026-10-06-110907/incertezas.md). |
+| `Gravando 2026-09-23 164626.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL é reproduzido ou demonstrado; a fala discute anexação GED, permissões e JSON do plugin. Nenhum SQL foi executado nesta análise. |
+
+| `Como fazer EPT.mp4` | **não aplicável** | Nenhuma query ou comando SQL é reproduzido ou demonstrado; a conversa trata de elaboração de EPT, API, proposta e recálculo. Nenhum SQL foi executado nesta análise. |
+| `projeto EPT.mp4` | **não determinável** | A saída ASR não sustenta conteúdo técnico; nenhuma query/comando é reconhecível ou foi executado nesta análise. Reavaliar após revisar a fonte. |
+| `ClientSecret EWEN TREINAMENTO.mp4` | **não aplicável** | “SQL Result” é mencionado como ferramenta/área, mas nenhuma consulta/comando é reproduzido. Nenhum SQL foi executado; revisar após inspeção da fonte. |
+| `explicacao mesa c6.mp4` | **menção, sem texto** | Há menção a consultar tabela/base e C-Oper para comprovar integração (`00:50:26–00:50:47`, `00:52:11–00:52:30`), mas nenhuma query ou comando foi reproduzido/executado. |
 
 Cada entrada traz objetivo, gravação e timestamp (`HH:MM:SS`), dialeto, tabelas/colunas citadas, tipo (`somente leitura` / `altera dados`) e link para a análise detalhada no vídeo. Comandos que alteram dados (`INSERT`, `UPDATE`, `DELETE`, DDL) recebem sinalização explícita de efeito e de validação operacional; nenhum comando é executado.
+| `recalculo.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL é reproduzido ou demonstrado; o ASR menciona API/plugin e testes de recálculo, sem query. Nenhum SQL foi executado nesta análise. |
