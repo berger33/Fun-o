@@ -56,3 +56,8 @@ Quando houver entradas, cada linha deve trazer: nome visível do sistema/módulo
 | **Excel / EPT, EF e documentação de API** | Modelo de EPT, documento funcional e referência de teste | Orientação para descrever cenários, pré-condições, passos e resultados esperados; o número/nome das colunas e modelo oficial não foram conferidos | `Como fazer EPT.mp4` — 00:08:57–00:15:06, 00:23:14–00:27:16, 00:27:40–00:31:13 (sem inspeção visual) | [`../como-fazer-ept/procedimentos.md`](../como-fazer-ept/procedimentos.md) Fluxos A–B e D | — |
 
 > A gravação é aula e exemplo verbal. Não confirma a EF, schema, planilha, valores de configuração nem implementação; ver [`../como-fazer-ept/incertezas.md`](../como-fazer-ept/incertezas.md).
+
+
+## Fonte sem sistema/tela identificável — `projeto EPT.mp4`
+
+Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição disponível. A frase repetida pelo ASR não confirma legenda nem conteúdo visual; o vídeo não foi revisado. Ver [`../projeto-ept/guia_de_estudo.md`](../projeto-ept/guia_de_estudo.md) e [`../projeto-ept/capturas.md`](../projeto-ept/capturas.md).

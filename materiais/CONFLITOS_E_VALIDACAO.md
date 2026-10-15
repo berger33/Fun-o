@@ -1,6 +1,6 @@
 # Conflitos e validações pendentes
 
-Atualizado em **2026-10-14**.
+Atualizado em **2026-10-15**.
 
 ## Conflitos entre gravações
 
@@ -153,3 +153,15 @@ Detalhes em [`como-fazer-ept/incertezas.md`](como-fazer-ept/incertezas.md).
 6. **Dependência/identificador:** implementação anterior é descrita como requisito; ID ouvido pelo ASR precisa de validação antes de ser usado para localizar projeto.
 7. **Demonstração da EPT:** o próprio interlocutor critica o exemplo mostrado. Não copiar seus passos sem confronto com o template e a EF atuais.
 8. **Cobertura:** áudio `00:35:47.18`, último cue `00:35:43.14`, duração ASR declarada `1651.5 s`; existem intervalos sem segmentos. MP4/telas não revistos; manter **em revisão**.
+
+
+## Pendências de `projeto EPT.mp4` (2026-10-15)
+
+Detalhes em [`projeto-ept/incertezas.md`](projeto-ept/incertezas.md).
+
+1. **Validade do ASR:** 69 dos 73 segmentos repetem “Legenda Adriana Zanotto”; revisar contra áudio antes de tratar qualquer trecho como fala ou legenda.
+2. **Passes divergentes:** a referência diz que a passagem com VAD reconheceu 1 segmento e a passagem sem VAD 73. Recuperar/comparar o primeiro artefato e confirmar qual configuração, se alguma, representa a fonte.
+3. **Cobertura:** MP4 não foi ouvido/visto; não declarar que o vídeo está silencioso nem que seu tema é EPT.
+4. **Temporização:** duração `00:36:16.70`, cue final `00:36:29.98` (13.28 s além); `duracao_transcricao_s: 788.8` não está definido.
+5. **Identidade/legenda:** nome e frase retornados pelo ASR não estão confirmados; não inferir crédito visual ou identidade pessoal.
+6. **Conteúdo técnico:** nenhum sistema, processo, requisito, SQL ou procedimento pode ser extraído com segurança desta saída; não concluir até revisão humana/audiovisual.

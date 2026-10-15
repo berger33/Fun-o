@@ -156,3 +156,13 @@ Detalhes e timestamps em [`gravando-2026-09-23-164626/glossario.md`](gravando-20
 - **`Nexo`, `UTE`, `UTPT`:** grafias ASR sem definição; não as tratar como ferramentas/repositórios confirmados.
 
 Detalhes em [`como-fazer-ept/glossario.md`](como-fazer-ept/glossario.md) e [`como-fazer-ept/incertezas.md`](como-fazer-ept/incertezas.md). Nenhum campo ou procedimento da gravação foi verificado visualmente.
+
+
+## Termos de extração — `projeto EPT.mp4` (não validados)
+
+- **ASR:** reconhecimento automático de fala; este passe `large-v3` sem VAD gerou 73 segmentos, mas a saída tem confiança insuficiente.
+- **VAD:** detecção de atividade de voz; o README de origem diz que o passe com VAD reconheceu apenas um segmento.
+- **“Legenda Adriana Zanotto”:** sequência repetida pelo ASR 69 vezes; não confirma nome, fala, crédito, legenda visível ou conteúdo do vídeo.
+- **Cue SRT/VTT:** bloco temporizado; o cue final termina `13.28 s` depois da duração de áudio declarada.
+
+Fonte: [`projeto-ept/glossario.md`](projeto-ept/glossario.md) e [`projeto-ept/metadados.md`](projeto-ept/metadados.md); pendente de revisão audiovisual.

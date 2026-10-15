@@ -1,0 +1,14 @@
+{
+  "arquivo": "projeto EPT.mp4",
+  "bytes": 1246682448,
+  "sha256": "57f4232365d3ef9291aa2773793d812dcade581b71c273da0a61a0bec97c0a52",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 2176.7,
+  "segmentos": 73,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 788.8,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
