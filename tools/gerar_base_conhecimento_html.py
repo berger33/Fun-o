@@ -22,13 +22,15 @@ import html
 import os
 import re
 import datetime
+import zipfile
 
 import markdown
 
 from sintese_conhecimento import SINTESES
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NOME_DISTRIBUIDO = os.path.join("material-de-estudo", "base-de-conhecimento-funcao-sistemas.html")
+NOME_ARQUIVO = "base-de-conhecimento-funcao-sistemas.html"
+NOME_DISTRIBUIDO = os.path.join("material-de-estudo", NOME_ARQUIVO)
 MATERIAIS = os.path.join(RAIZ, "materiais")
 
 # ---------------------------------------------------------------- catálogo de fontes
@@ -1239,6 +1241,21 @@ def verificar_saida(doc: str) -> list[str]:
     return achados
 
 
+def escrever_zip(doc: str, caminho: str) -> None:
+    """Empacota o material em .zip — é o formato que o navegador baixa direto ao clicar.
+
+    O GitHub serve arquivos `.html` como texto simples (para não executar página de terceiro);
+    o `.zip` chega como arquivo. O pacote é escrito de forma reproduzível: mesma data fixa e sem
+    metadados do sistema, para que gerar duas vezes produza o mesmo byte a byte.
+    """
+    dados = doc.encode("utf-8")
+    info = zipfile.ZipInfo(NOME_ARQUIVO, date_time=(2026, 1, 1, 0, 0, 0))
+    info.compress_type = zipfile.ZIP_DEFLATED
+    info.external_attr = 0o644 << 16
+    with zipfile.ZipFile(caminho, "w") as pacote:
+        pacote.writestr(info, dados)
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--saida", default=os.path.join(RAIZ, "saida", "index.html"))
@@ -1264,6 +1281,7 @@ def main() -> int:
         os.makedirs(os.path.dirname(destino), exist_ok=True)
         with open(destino, "w", encoding="utf-8") as fh:
             fh.write(doc)
+        escrever_zip(doc, os.path.splitext(destino)[0] + ".zip")
 
     blocos = doc.count('class="bloco"')
     capitulos = doc.count('class="capitulo"')

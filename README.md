@@ -59,12 +59,13 @@ A mesma execução grava **duas** cópias do documento:
 | Caminho | Papel |
 |---|---|
 | `saida/index.html` | build local, servido por `tools/servir_material.py`. Fora do Git (artefato). |
-| `material-de-estudo/base-de-conhecimento-funcao-sistemas.html` | **arquivo que circula** — versionado, para leitura e download direto pelo GitHub. |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.html` | **arquivo que circula** — versionado, para leitura e download. |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.zip` | mesmo documento empacotado — é o link que **baixa com um clique** (o GitHub serve `.html` como texto simples). |
 
 Link de download (ramo de trabalho; troque por `main` depois do merge):
 
 ```
-https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.html
+https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.zip
 ```
 
 A cópia versionada é **escrita pelo gerador** a cada execução (use `--sem-distribuivel` para pular):
