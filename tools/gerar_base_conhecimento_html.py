@@ -7,9 +7,11 @@ Regras do material gerado:
 - **não** menciona nomes de arquivo, pastas, ligações internas nem identificadores de mídia:
   as fontes aparecem por rótulo descritivo neutro ("Conversa técnica — ...", "Treinamento — ...");
 - não lê a área restrita (material pessoal, fora do Git);
-- saída autocontida (CSS/JS embutidos, sem dependência de rede) em `saida/index.html`.
+- saída autocontida (CSS/JS embutidos, sem dependência de rede) em `saida/index.html` (build) e
+  cópia versionada em `material-de-estudo/base-de-conhecimento-funcao-sistemas.html` (o arquivo que
+  circula, para leitura e download).
 
-Uso: python3 tools/gerar_base_conhecimento_html.py [--saida saida/index.html]
+Uso: python3 tools/gerar_base_conhecimento_html.py [--saida saida/index.html] [--sem-distribuivel]
 """
 
 from __future__ import annotations
@@ -26,6 +28,7 @@ import markdown
 from sintese_conhecimento import SINTESES
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NOME_DISTRIBUIDO = os.path.join("material-de-estudo", "base-de-conhecimento-funcao-sistemas.html")
 MATERIAIS = os.path.join(RAIZ, "materiais")
 
 # ---------------------------------------------------------------- catálogo de fontes
@@ -1239,6 +1242,8 @@ def verificar_saida(doc: str) -> list[str]:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--saida", default=os.path.join(RAIZ, "saida", "index.html"))
+    p.add_argument("--sem-distribuivel", action="store_true",
+                   help="não escreve a cópia publicada em material-de-estudo/")
     args = p.parse_args()
     doc = montar_documento()
 
@@ -1251,6 +1256,15 @@ def main() -> int:
     os.makedirs(os.path.dirname(os.path.abspath(args.saida)), exist_ok=True)
     with open(args.saida, "w", encoding="utf-8") as fh:
         fh.write(doc)
+
+    # cópia versionada: é o arquivo que circula (leitura e download). Sai do mesmo documento,
+    # na mesma execução, para não divergir do que o gerador produz.
+    if not args.sem_distribuivel:
+        destino = os.path.abspath(os.path.join(RAIZ, NOME_DISTRIBUIDO))
+        os.makedirs(os.path.dirname(destino), exist_ok=True)
+        with open(destino, "w", encoding="utf-8") as fh:
+            fh.write(doc)
+
     blocos = doc.count('class="bloco"')
     capitulos = doc.count('class="capitulo"')
     print(

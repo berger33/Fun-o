@@ -52,7 +52,23 @@ python3 tools/servir_material.py                  # serve em http://localhost:80
 O documento é **autocontido** (CSS e busca embutidos, sem dependência de rede), tem índice lateral,
 busca instantânea, blocos recolhíveis e estilo de impressão. Ele não cita nomes de arquivos nem
 ligações internas: as fontes aparecem por rótulo descritivo com selos de categoria e de
-confiabilidade. A pasta `saida/` é artefato de build e **não** entra no Git.
+confiabilidade.
+
+A mesma execução grava **duas** cópias do documento:
+
+| Caminho | Papel |
+|---|---|
+| `saida/index.html` | build local, servido por `tools/servir_material.py`. Fora do Git (artefato). |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.html` | **arquivo que circula** — versionado, para leitura e download direto pelo GitHub. |
+
+Link de download (ramo de trabalho; troque por `main` depois do merge):
+
+```
+https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.html
+```
+
+A cópia versionada é **escrita pelo gerador** a cada execução (use `--sem-distribuivel` para pular):
+não edite o arquivo à mão nem o versione separadamente do gerador, senão ele divergirá do acervo.
 
 **Como o material foi escrito.** O objetivo é aprender o assunto, não acompanhar o registro: cada
 capítulo temático começa com uma explicação autoral do domínio (regras, fluxo, nomenclatura) e só
