@@ -205,3 +205,15 @@ Detalhes e timestamps em [`recalculo/incertezas.md`](recalculo/incertezas.md).
 4. **Versão/ambiente:** versões antigas/novas, máquinas/servidores e bases são citados sem identificação confirmada. Não trocar versão, arquivo, servidor, configuração ou base sem runbook, autorização e rollback.
 5. **Cobertura:** 1.043 segmentos ASR sem VAD; trechos não técnicos/aparente áudio de fundo e último cue `01:11:18.540`, 27,72 s além do áudio declarado `01:10:50.82`. Rever MP4/áudio integralmente.
 6. **Escopo da análise:** vídeo/telas não inspecionados; nenhuma API, SQL, configuração, massa, proposta ou ambiente foi testado/alterado.
+
+## Pendências de `dESAVERBAÇÃO.mp4` (2026-10-15)
+
+Detalhes e timestamps em [`desaverbacao/incertezas.md`](desaverbacao/incertezas.md).
+
+1. **Fonte primária:** objeto LFS reconhecido, mas `git-lfs` ausente e sondas ao host de conteúdo falharam; não houve download, reconstrução ou revisão audiovisual nesta sessão. O registro de execução anterior informa que o runner validou as duas partes e o original; não foi refeito aqui.
+2. **Cobertura ASR:** 1.274 segmentos `large-v3`, sem VAD, sem revisão humana; último cue `01:13:37.080–01:14:07.060` excede o áudio declarado `01:13:40.67` em 26,39 s. `duracao_transcricao_s: 2678.2` não está definido.
+3. **Estados e causa:** confirmar relação entre proposta averbada, cancelamento, exclusão de averbação e estado “desaverbado”; a falha inicial de elegibilidade e a descrição dos plugins não demonstram causa (`00:00:34–00:00:45`; `00:15:05–00:17:18`).
+4. **Configuração/esteira:** modo manual/automático, stub, vínculo de empregador, tipos `A/N/F/P` (sem significado definido para `N`), processo `99`, alçada/fase e relação modelo/produto dependem de EF/runbook e versão; não copiar nem alterar (`00:01:36–00:05:10`; `00:29:20–00:44:01`).
+5. **Consulta e retorno:** menção a SQL sem query literal (`00:24:47–00:25:44`); código “BF”/“competência”, versão e resultado final não verificados (`00:18:06–00:23:39`; `01:05:15–01:06:33`). Nenhum SQL foi executado.
+6. **Ambiente e margem:** mock, massa sintética, limites de WebTabelas e qualquer integração externa precisam de validação; a fala não autoriza Dataprev/cliente/produção (`00:44:32–00:48:10`).
+7. **Evidência visual:** ASR menciona um print, mas nenhuma captura foi obtida ou revisada nesta sessão. Manter **em revisão** até revisão humana/audiovisual, validação do fluxo e resolução das incertezas.
