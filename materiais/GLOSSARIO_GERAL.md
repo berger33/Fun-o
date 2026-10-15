@@ -192,3 +192,14 @@ Ver [`clientsecret-ewen-treinamento/glossario.md`](clientsecret-ewen-treinamento
 - **“Legenda Adriana Zanotto”:** frase reconhecida pelo ASR em quatro cues; origem não confirmada.
 
 Fonte: [`explicacao-mesa-c6/glossario.md`](explicacao-mesa-c6/glossario.md); uso operacional bloqueado até revisão da fonte e runbook.
+
+## Termos de `recalculo.mp4` (ASR não validado)
+
+- **Recálculo / “recalque”:** atividade cujo comportamento com limites/tolerância é investigado; grafia reconhecida pelo ASR pode estar errada.
+- **Tolerância / margem de tolerância:** percentual discutido em relação aos limites de valor; base, direção e arredondamento não definidos.
+- **Convênio / condições de crédito:** cadastro/área verbalmente associado a mínimo, máximo e percentual; tela/campo não verificados.
+- **Somente recálculo / ambos:** modos citados para comparar o processamento; significados formais e rotas ainda incertos.
+- **Esteira:** sequência de atividades da proposta, incluindo recálculo e possível etapa posterior; estados não confirmados.
+- **API / plugin / JSON:** integração mencionada sem endpoint, payload ou contrato conferido.
+
+Fonte: [`recalculo/glossario.md`](recalculo/glossario.md); timestamps e ressalvas em [`recalculo/incertezas.md`](recalculo/incertezas.md).

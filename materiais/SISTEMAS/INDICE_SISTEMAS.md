@@ -86,3 +86,13 @@ Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição 
 | **Bases/servidores, sites e pastas (`config`, UDL)** | Ambientes local/compartilhado/servidor descritos verbalmente | Orientar atualização de versão e escolha de base | `explicacao mesa c6.mp4` — 00:33:11–00:45:04 (rótulos ASR, sem inspeção) | [`../explicacao-mesa-c6/procedimentos.md`](../explicacao-mesa-c6/procedimentos.md) Fluxo C (bloqueado) | — |
 
 > ASR sem VAD; há nomes/rótulos internos e instruções conflitantes de ambiente. Nenhuma tela, configuração, host ou credencial foi validada ou alterada. Não usar como runbook.
+
+## Sistemas citados em `recalculo.mp4` — somente ASR, sem inspeção visual
+
+| Sistema / módulo | Área citada verbalmente | Objetivo relatado | Gravação e timestamps | Procedimento | Capturas |
+|---|---|---|---|---|---|
+| **Autorizador / Web Autorizador** | Convênio, condições de crédito, proposta e atividade de recálculo | Investigar limites de valor/tolerância e comportamento nos modos “somente recálculo” e “ambos”; tela/campo não confirmados | `recalculo.mp4` — 00:03:15–00:15:10, 00:21:00–00:33:32, 00:59:49–01:07:03 (ASR) | [`../recalculo/procedimentos.md`](../recalculo/procedimentos.md) Fluxos A–D | — |
+| **API / plugin / JSON (referências verbais)** | Proposta e dados enviados; endpoint, schema e payload não identificados | Conversa cita uso de API/plugin ao criar proposta; nenhuma chamada ou resposta foi verificada | `recalculo.mp4` — 00:04:45–00:06:22, 01:07:11–01:08:44 (ASR) | [`../recalculo/incertezas.md`](../recalculo/incertezas.md) item 11 | — |
+| **Ambiente / versão / base** | Máquinas/servidores e duas bases referidas sem nome confirmado | Versão e ambiente são aventados como possível causa de resultados diferentes | `recalculo.mp4` — 00:37:37–00:39:28 (ASR) | [`../recalculo/procedimentos.md`](../recalculo/procedimentos.md) Fluxo C | — |
+
+> Nenhuma tela, configuração, versão, API, payload ou ambiente foi verificado. A transcrição é insumo e não deve ser usada como runbook.

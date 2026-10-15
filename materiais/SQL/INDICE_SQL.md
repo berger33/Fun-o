@@ -30,3 +30,4 @@ Consultas e comandos SQL identificados nas gravações analisadas:
 | `explicacao mesa c6.mp4` | **menção, sem texto** | Há menção a consultar tabela/base e C-Oper para comprovar integração (`00:50:26–00:50:47`, `00:52:11–00:52:30`), mas nenhuma query ou comando foi reproduzido/executado. |
 
 Cada entrada traz objetivo, gravação e timestamp (`HH:MM:SS`), dialeto, tabelas/colunas citadas, tipo (`somente leitura` / `altera dados`) e link para a análise detalhada no vídeo. Comandos que alteram dados (`INSERT`, `UPDATE`, `DELETE`, DDL) recebem sinalização explícita de efeito e de validação operacional; nenhum comando é executado.
+| `recalculo.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL é reproduzido ou demonstrado; o ASR menciona API/plugin e testes de recálculo, sem query. Nenhum SQL foi executado nesta análise. |

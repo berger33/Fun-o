@@ -194,3 +194,14 @@ Detalhes em [`explicacao-mesa-c6/incertezas.md`](explicacao-mesa-c6/incertezas.m
 7. **Cobertura:** áudio `00:57:41.57`, último cue `00:57:29.58`; outros intervalos não reconhecidos e `duracao_transcricao_s: 2802.8` sem definição. Não inferir silêncio.
 8. **Privacidade e acesso:** há nomes internos, rótulos de máquina/pasta e menção genérica a login/senha; nenhum valor literal de credencial foi reconhecido no ASR. Como vídeo/telas não foram revisados, informação visual adicional continua desconhecida. Transcrição mantida conforme §13.
 9. **SQL:** não há consulta literal reconhecida; menção a tabela/C-Oper não basta para criar ou executar query.
+
+## Pendências de `recalculo.mp4` (2026-10-15)
+
+Detalhes e timestamps em [`recalculo/incertezas.md`](recalculo/incertezas.md).
+
+1. **Fórmula de tolerância:** exemplos com limites 1.000/3.000, valores 2.990/2.995 e percentuais 1%/10% não definem uma única regra. Confirmar base, direção, simetria, inclusividade e arredondamento na EF.
+2. **Modo de atividade:** “somente recálculo” e “ambos” são comparados, mas o comportamento esperado e a diferença entre rotas não estão definidos.
+3. **Resultados incompatíveis:** o ASR registra tentativas descritas como falha e, mais tarde, uma como bem-sucedida; entradas, configuração, versão e estado final não podem ser reconciliados sem fonte/evidência.
+4. **Versão/ambiente:** versões antigas/novas, máquinas/servidores e bases são citados sem identificação confirmada. Não trocar versão, arquivo, servidor, configuração ou base sem runbook, autorização e rollback.
+5. **Cobertura:** 1.043 segmentos ASR sem VAD; trechos não técnicos/aparente áudio de fundo e último cue `01:11:18.540`, 27,72 s além do áudio declarado `01:10:50.82`. Rever MP4/áudio integralmente.
+6. **Escopo da análise:** vídeo/telas não inspecionados; nenhuma API, SQL, configuração, massa, proposta ou ambiente foi testado/alterado.
