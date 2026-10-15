@@ -23,6 +23,8 @@ import datetime
 
 import markdown
 
+from sintese_conhecimento import SINTESES
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MATERIAIS = os.path.join(RAIZ, "materiais")
 
@@ -92,8 +94,138 @@ def carregar_nomes_de_midia() -> None:
 
 ARQUIVO_RE = re.compile(r"[A-Za-zÀ-ÿ0-9_\-\.]*(?:\.(?:md|mp4|png|jpe?g|json|txt|srt|vtt|csv|ya?ml|xlsx|docx|pdf))\b", re.I)
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]*)\)")
-ANCORA_RE = re.compile(r"\[M(\d{2,})\]")
+ANCORA_RE = re.compile(r"\[[MP]\d+\]")
 SECAO_RE = re.compile(r"§+\s*([\d\.]+)")
+
+# tudo o que aponta "quando" algo foi dito sai do material: intervalos, carimbos e referências
+INTERVALO_TEMPO = re.compile(
+    r"\d{1,2}:\d{2}(?::\d{2})?(?:[.,]\d+)?\s*(?:[–—-]|a|até)\s*\d{1,2}:\d{2}(?::\d{2})?(?:[.,]\d+)?"
+)
+CARIMBO_TEMPO = re.compile(r"\b\d{1,2}:\d{2}(?::\d{2})?(?:[.,]\d+)?\b")
+REF_ANCORA = re.compile(r"\(\s*msg\.?\s*\d+\s*\)")
+DATA_ISO_PARENTESE = re.compile(r"\(\s*\d{4}-\d{2}-\d{2}\s*\)")
+
+# trechos que falam do processo de captura (não são conhecimento sobre o trabalho)
+RUIDO_DE_FONTE = re.compile(
+    r"(?i)\b(?:asr|transcri\w*|transcrit\w*|inaud[íi]vel|ileg[íi]vel|"
+    r"\bcues?\b|segmentos?|escuta humana|áudio|falantes?|ocr|silêncio|decib|análise quadro)\b"
+)
+RUIDO_DE_PROCESSO = re.compile(
+    r"(?i)(?:nesta an[áa]lise|neste lote|nesta sess[ãa]o de an[áa]lise|deste lote|deste pacote|"
+    r"quadro a quadro|extra[çc][ãa]o|confian[çc]a da extra|"
+    r"\btriagem\b|pacotes? (?:de triagem|preliminares?|em revis[ãa]o)|"
+    r"ponte tempor[áa]ria|bytes da grava[çc][ãa]o|github support)"
+)
+
+LIGACOES_TEMPO = re.compile(r"(?i)\b(?:às|as)\s+\d{1,2}:\d{2}\b")
+
+# crases que envolvem só datas de registro da análise
+CRASE_EM_DATA = re.compile(r"`{1,3}(\s*\d{4}-\d{2}-\d{2}\s*)`{1,3}")
+
+# negrito/itálico que envolvem só tempos, âncoras de mensagem ou pontuação de separação
+ESTILO_EM_TEMPO = re.compile(
+    r"(\*\*|__|\*|_)((?:[^\n]*?(?:\d{1,2}:\d{2}(?::\d{2})?(?:[.,]\d+)?|\[[MP]\d+\])[^\n]*?)|"
+    r"(?:[;:,·|.\-–—\s]+))\1"
+)
+
+# crases que envolvem só tempos, âncoras de mensagem ou pontuação de separação
+CRASE_EM_TEMPO = re.compile(
+    r"`{1,3}((?:[^`\n]*?(?:\d{1,2}:\d{2}(?::\d{2})?(?:[.,]\d+)?|\[[MP]\d+\])[^`\n]*?)|"
+    r"(?:[;:,.\-–—\s]+))`{1,3}"
+)
+
+
+def remover_codigo(texto: str) -> str:
+    """Devolve o texto sem blocos de código (para limpeza e verificação seletivas)."""
+    return re.sub(r"```.*?```", "", texto, flags=re.S)
+
+
+PALAVRAS_TECNICAS = re.compile(r"^[\w\.\-/\\:\[\]\(\)#%=<>+*&|,;'\"]{1,40}$")
+
+
+def _e_codigo(entre_crases: str, com_crase: str) -> bool:
+    """Diz se o trecho entre crases é mesmo código/campo (e não uma fala que veio marcada).
+
+    Campo, consulta e payload continuam preservados. O que sai é fala ou trecho de documento
+    citado entre aspas, que veio marcado com crase na origem.
+    """
+    interno = entre_crases.strip()
+    if '"' in interno or "“" in interno:
+        # só é considerado citação quando parece frase, não estrutura de dados
+        if not re.search(r"[{}()\[\]=]|\w\s*:\s*[\"'{]", interno) and len(interno.split()) >= 5:
+            return False
+    return bool(PALAVRAS_TECNICAS.match(interno)) or len(interno.split()) < 12
+
+
+PLACEHOLDER_CODIGO = "\x01"
+
+
+def com_codigo_protegido(texto: str, tratamento) -> str:
+    """Aplica o tratamento ao texto inteiro, preservando os trechos de código por marcador.
+
+    Assim uma citação que atravessa trechos de código (ou de campo) continua sendo reconhecida
+    como uma citação só, em vez de sair fragmentada.
+    """
+    guardados: list[str] = []
+
+    def guarda(m: re.Match[str]) -> str:
+        guardados.append(m.group(0))
+        return "%s%d%s" % (PLACEHOLDER_CODIGO, len(guardados) - 1, PLACEHOLDER_CODIGO)
+
+    protegido = re.sub(r"`[^`\n]{1,240}`", guarda, texto)
+    resultado = tratamento(protegido)
+    for indice, valor in enumerate(guardados):
+        resultado = resultado.replace("%s%d%s" % (PLACEHOLDER_CODIGO, indice, PLACEHOLDER_CODIGO), valor)
+    return resultado
+
+
+def fora_de_codigo_inline(texto: str, tratamento) -> str:
+    """Aplica um tratamento só ao que está fora de trechos entre crases (código, campos).
+
+    Trecho entre crases só é preservado quando de fato parece código; falas que vieram
+    marcadas entre crases entram no tratamento, para não sobrar transcrição no material.
+    """
+    partes = re.split(r"(`[^`\n]*`)", texto)
+    for i, parte in enumerate(partes):
+        if parte.startswith("`") and parte.endswith("`") and len(parte) > 2:
+            if _e_codigo(parte[1:-1], parte):
+                continue
+            partes[i] = tratamento(parte[1:-1])
+        else:
+            partes[i] = tratamento(parte)
+    return "".join(partes)
+
+
+CITACAO_CURVA = re.compile(r"[“][^“”]{0,900}[”]", re.S)
+CITACAO_ANGULAR = re.compile(r"«[^«»]{0,900}»", re.S)
+CITACAO_RETA = re.compile(r'"[^"]{0,900}"', re.S)
+CITACAO_SIMPLES = re.compile(r"(?<=\s)'[^']{0,200}'|'[^']{0,140}'(?=[\s.,;:])")
+ANOTACAO_DE_ORIGEM = re.compile(
+    r"(?i)\[\s*[^\[\]]{0,140}?\b(?:leitura|item|fala|trecho|documento|tela|planilha|anexo|"
+    r"ver|conferir|captura|encerramento|in[íi]cio|retomada|continua[çc][ãa]o|momento|cena|"
+    r"grava[çc][ãa]o|revis[ãa]o)\b[^\[\]]{0,140}?\]"
+)
+
+
+def _parece_citacao(conteudo: str) -> bool:
+    """Uma sequência entre aspas só é tratada como citação quando parece fala/documento."""
+    return len(conteudo.split()) >= 3 or len(conteudo) <= 60
+
+
+def remover_citacoes(t: str) -> str:
+    """Retira as falas e os trechos citados — a explicação fica, o literal da fonte sai.
+
+    O material não transcreve o que foi dito: quando a origem trazia uma fala entre aspas,
+    o trecho sai inteiro (não basta tirar as aspas, o conteúdo continuaria sendo transcrição).
+    """
+    for padrao in (CITACAO_CURVA, CITACAO_ANGULAR):
+        t = padrao.sub(lambda m: " " if _parece_citacao(m.group(0)[1:-1]) else m.group(0), t)
+    t = CITACAO_RETA.sub(lambda m: " " if _parece_citacao(m.group(0)[1:-1]) else m.group(0), t)
+    t = CITACAO_SIMPLES.sub(" ", t)
+    t = ANOTACAO_DE_ORIGEM.sub(" ", t)
+    t = re.sub(r"\[\s*[;:,.·|—–\-\s]*\s*\]", " ", t)
+    t = re.sub(r"[“”«»]", "", t)
+    return t
 
 
 def equilibrar_crases(texto: str) -> str:
@@ -124,12 +256,14 @@ RUIDO_INTERNO = re.compile(
 
 SUBSECAO_INTERNA = re.compile(
     r"(?im)^(#{2,4})\s+([^\n]*(?:manifesto|oid|lfs|ponteiro|integridade|duplicidade|"
-    r"reten[çc][ãa]o|objeto|versionamento|commit|arquivo)[^\n]*)$"
+    r"reten[çc][ãa]o|objeto|versionamento|commit|arquivo|linha do tempo|leitura de tela|"
+    r"cronologia|cobertura|observa[çc][õo]es de qualidade|transcri[çc][ãa]o|"
+    r"sem sql demonstrado|grava[çc][õo]es sem|o que cada grava[çc][ãa]o)[^\n]*)$"
 )
 
 
 def remover_subsecoes_internas(texto: str) -> str:
-    """Remove subseções cujo título trate de controle interno do acervo, não do trabalho."""
+    """Remove subseções de controle do acervo e de narrativa de captura (não são conhecimento)."""
     linhas = texto.splitlines()
     saida: list[str] = []
     cortando_em = None
@@ -160,45 +294,78 @@ METADADOS_STRIP = re.compile(
 
 
 def limpar(texto: str) -> str:
-    """Remove avisos de publicação, ligações, nomes de arquivo e referências internas."""
+    """Remove tudo o que aponta *quando* algo foi dito e o que é narrativa de captura.
+
+    O material explica o conhecimento; não reproduz falas nem indica em que momento da fonte
+    cada informação apareceu. Blocos de código (SQL, payloads) ficam intactos — ali os valores
+    são conteúdo.
+    """
+    partes = re.split(r"(```.*?```)", texto, flags=re.S)
+    for i, parte in enumerate(partes):
+        if parte.startswith("```"):
+            continue
+        partes[i] = _limpar_segmento(parte)
+    return "\n".join(p for p in partes if p.strip())
+
+
+def remover_metadados(texto: str) -> str:
+    """Remove os selos de metadados e as linhas de continuação deles.
+
+    O selo aparece como item de lista e a descrição continua nas linhas indentadas seguintes.
+    Se essas linhas ficassem, sobraria texto solto de procedência no meio do conteúdo
+    ("fornecido pelo responsável", "é integralmente legível)").
+    """
+    linhas = texto.splitlines()
+    saida: list[str] = []
+    cortando = False
+    for linha in linhas:
+        if not linha.strip():
+            saida.append(linha)
+            cortando = False
+            continue
+        m = re.match(r"^[ \t]*(?:[-*][ \t]+)?\*\*[\w/çãõáéíóúâêô ]{3,40}:\*\*", linha)
+        if m or METADADOS_STRIP.match(linha):
+            cortando = True
+            continue
+        if cortando and re.match(r"^[ \t]{2,}\S", linha):
+            continue  # continuação indentada do metadado
+        cortando = False
+        saida.append(linha)
+    return "\n".join(saida)
+
+
+def _limpar_segmento(t: str) -> str:
+    # subseções de controle do acervo e de narrativa de captura saem antes do filtro por linha,
+    # para que o título ainda esteja presente quando a subseção for reconhecida
+    t = remover_subsecoes_internas(t)
+
     linhas: list[str] = []
-    for linha in texto.splitlines():
-        if linha.lstrip().startswith(">"):
-            continue  # avisos de publicação / fonte no topo dos documentos
+    for linha in t.splitlines():
+        s = linha.strip()
+        if s.startswith(">"):
+            continue  # avisos de publicação / de fonte
+        if re.match(r"(?i)^atualizado em\b", s):
+            continue
+        if RUIDO_DE_FONTE.search(linha) or RUIDO_DE_PROCESSO.search(linha):
+            continue
+        if RUIDO_INTERNO.search(linha) and not linha.lstrip().startswith("|") and len(linha) < 500:
+            continue
         linhas.append(linha)
     t = "\n".join(linhas)
 
-    t = remover_subsecoes_internas(t)
-
-    # linhas de controle do acervo (e as tabelas inteiras que elas encabeçam) saem do material
-    resultado: list[str] = []
-    pulando_tabela = False
-    for linha in t.splitlines():
-        em_tabela = linha.lstrip().startswith("|")
-        if em_tabela and pulando_tabela:
-            continue
-        if RUIDO_INTERNO.search(linha):
-            if em_tabela:
-                pulando_tabela = True
-                continue
-            if len(linha) < 500:
-                continue
-        pulando_tabela = False
-        resultado.append(linha)
-    t = "\n".join(resultado)
-
-    t = equilibrar_crases(t)
+    t = remover_tabelas_indesejadas(t)
+    t = poda_colunas_internas(t)
+    t = desfazer_tabelas_orfas(t)
 
     # títulos de primeiro nível: o material monta a hierarquia
     t = re.sub(r"(?m)^#\s+.*$", "", t)
-    # metadados do topo já são renderizados como selos
-    t = re.sub(r"(?m)^[ \t]*(?:[-*][ \t]+)?\*\*Confiança da extração:\*\*[^\n]*$", "", t)
-    t = METADADOS_STRIP.sub("", t)
+    # metadados do topo já são renderizados como selos (com as linhas de continuação)
+    t = remover_metadados(t)
 
-    # nomes de mídia explícitos do manifesto
+    # nomes de mídia explícitos do manifesto (com as crases que os envolvem)
     for nome in NOMES_DE_MIDIA:
         if nome and nome in t:
-            t = t.replace(nome, "a fonte")
+            t = re.sub(r"`?\s*" + re.escape(nome) + r"\s*`?", "", t)
     t = re.sub(r"(?i)grava[çc][ãa]o de tela", "a fonte", t)
 
     # ligações: mantém o texto quando ele é descritivo; descarta quando é caminho/arquivo
@@ -214,8 +381,227 @@ def limpar(texto: str) -> str:
     t = re.sub(r"\b(?:materiais|restrito|tools|saida)/", "", t)
     # marcadores de anonimização digitados entre sinais de menor/maior viram texto literal
     t = re.sub(r"<([a-zà-ÿ][a-zà-ÿ0-9_\- ]{1,30})>", r"`\1`", t, flags=re.I)
-    t = ANCORA_RE.sub(lambda m: "(msg. %s)" % m.group(1), t)
-    t = SECAO_RE.sub(lambda m: "seção " + m.group(1), t)
+
+    # ---- fora marcas de tempo e ponteiros de origem
+    # crases que envolvem apenas tempos, âncoras ou pontuação não protegem conteúdo: saem antes,
+    # para que as remoções alcancem os valores (ex.: `00:04:41`–`00:05:09`)
+    t = CRASE_EM_TEMPO.sub(r"\1", t)
+    t = CRASE_EM_DATA.sub(r"\1", t)
+    t = ESTILO_EM_TEMPO.sub(r"\2", t)
+    t = re.sub(r"(\*\*|__)(\s*[,;:·|—–.\-]\s*)\1", r"\2", t)
+    # restos do aparato de registro: âncoras de mensagem, datas de análise e capturas
+    t = re.sub(r"(?i)[;,(]?\s*(?:as\s+|com\s+)?(?:âncoras?|ancoras?)\b[^;.)\n]{0,200}[;.)]?", " ", t)
+    t = re.sub(r"\[[MP]nn\]", "", t)
+    t = re.sub(r"(?i)\(?\s*fontes?\s+textuais?[^)\n]{0,60}\)?", "", t)
+    t = re.sub(r"(?i)\bgravando\s+\d{4}-\d{2}-\d{2}(?:\s+\d{6})?", "", t)
+    t = re.sub(r"(?i)\b(grava[çc][ãa]o|sess[ãa]o|chamada|demonstra[çc][ãa]o|reuni[ãa]o|treinamento|conversa)"
+               r"\s+(?:d[ea]o?\s+|em\s+)?\d{4}-\d{2}-\d{2}\b", r"\1", t)
+    t = re.sub(r"(?i)\bem\s+\*{0,2}\s*\d{4}-\d{2}-\d{2}\s*\*{0,2}", "", t)
+    t = re.sub(r"(?i)\bcaptura\s*\d+\b", "", t)
+    t = INTERVALO_TEMPO.sub("", t)
+    t = LIGACOES_TEMPO.sub("", t)
+    t = CARIMBO_TEMPO.sub("", t)
+    t = REF_ANCORA.sub("", t)
+    t = DATA_ISO_PARENTESE.sub("", t)
+    t = ANCORA_RE.sub("", t)
+    t = SECAO_RE.sub("", t)
+
+    # ---- fora citações: o material explica, não reproduz falas
+    t = fora_de_codigo_inline(t, remover_citacoes)   # primeiro, falas que vieram marcadas como código
+    t = com_codigo_protegido(t, remover_citacoes)    # depois, citações que atravessam campos
+
+    # sobras de referência cruzada
+    t = re.sub(r"(?i)\(\s*(?:ver|vide|conferir|cf\.)\s[^)]{0,140}\)", "", t)
+    t = re.sub(r"(?i)[—–-]\s*(?:ver|vide|conferir)\s+(?:o\s+|a\s+)?se[çc][ãa]o\s+[\d\.]+[^.\n]*", "", t)
+    t = re.sub(r"(?i),\s*ver\s+se[çc][ãa]o\s+[^.\n]*", "", t)
+    t = re.sub(r'(?i)\bse[çc][ãa]o\s+"[^"]{0,80}"(?:\s*,?\s*item\s*\d+)?', "", t)
+    t = re.sub(r"(?i)\b(ver|conferir|vide)\s*(,|;|\.|$)", r"\2", t, flags=re.M)
+    t = re.sub(r"\(\s*(?:,|;|·|\||—|-|`|\*|_)*\s*\)", "", t)
+    t = re.sub(r"\[\s*\]", "", t)
+    t = re.sub(r"(`{1,3})\s*\1", "", t)
+    t = re.sub(r"[ \t]+([,;.])", r"\1", t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"(?m)^[ \t]*[-*][ \t]*$", "", t)
+    # preposições e pontuação que ficaram penduradas depois das remoções
+    # ("a reunião foi mascarada em;", ", a reunião detalha…")
+    t = re.sub(r"(?i)\b(?:em|de|do|da|no|na|com|sobre|para|entre|as|às)\s*(?=[,;.:!?)\]]|\s*$)", "", t)
+    t = re.sub(r"(?m)^(\s*[-*]?\s*)[,;:]\s*", r"\1", t)
+    t = re.sub(r"(?m)^\s*[,;]\s*", "", t)
+    # travessões e hífens que sobraram de remoções: "— —", "web service —."
+    t = re.sub(r"(?:\s*[—–]\s*){2,}", " ", t)
+    t = re.sub(r"[—–]\s*([.;,])", r"\1", t)
+    t = re.sub(r"(?i)\btimestamps?\b", "", t)
+    # frase que ficou sem predicado depois da remoção ("e a regra final é.")
+    t = re.sub(r"(?i)(?:,\s*)?(?:e\s+)?(?:a|o|as|os)\s+[\w\sçãõáéíóúâêô]{1,40}\s+(?:é|são|era|eram|foi|foram)\s*\.", ".", t)
+    # parêntese que ficou só com palavras de ligação ("(o, citado em)")
+    t = re.sub(r"\([^()]{0,40}\)", lambda m: "" if re.fullmatch(
+        r"(?i)[\s,;:·|—–\-]*(?:o|a|os|as|e|em|de|do|da|no|na|com|citado|citada|ver|item|fonte)?"
+        r"[\s,;:·|—–\-]*", m.group(0)[1:-1]) and len(m.group(0)[1:-1].split()) <= 3 else m.group(0), t)
+    # sobras de ligação interna que virou caminho solto: "(../SQL/)", "(/x/y)"
+    t = re.sub(r"\(\s*(?:\.{1,2}/|/)[\w./\\-]{0,60}\)", "", t)
+    # pontuação que sobra quando o valor do meio sai: "em ,", "( ,", ", ,"
+    t = re.sub(r"[ \t]+(?=[,;.])", "", t)
+    t = re.sub(r",\s*(?=[,;)])", "", t)
+    t = re.sub(r"\(\s*(?=[,;)])", "(", t)
+    t = re.sub(r"(\w)\s*,\s*(?=[.)])", r"\1", t)
+    t = com_codigo_protegido(t, capitalizar_inicios)
+    # respingos de remoção dentro da frase: "descrita como e outra como", "contexto ."
+    t = re.sub(r"(?i)\bcomo\s+(?=(?:e|ou)\s)", "", t)
+    t = re.sub(r"(?i)\b(?:de|do|da|em|com|para|e)\s+(?=[,.;:])", "", t)
+    t = re.sub(r"\s+([,.;:!?])", r"\1", t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = remover_titulos_vazios(t)
+    t = equilibrar_crases(t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"\n{3,}", "\n\n", t)
+    return t.strip()
+
+
+def capitalizar_inicios(texto: str) -> str:
+    """Devolve maiúscula ao início de linha e de frase depois das remoções."""
+    texto = re.sub(r"(?m)^([ \t]*[-*]?[ \t]*)([a-záéíóúâêôãõç])",
+                   lambda m: m.group(1) + m.group(2).upper(), texto)
+    return re.sub(r"(?<=[.!?]\s)([a-záéíóúâêôãõç])", lambda m: m.group(1).upper(), texto)
+
+
+def remover_titulos_vazios(texto: str) -> str:
+    """Descarta títulos que ficaram sem conteúdo depois da limpeza.
+
+    Quando o trecho de um título era só citação ou metadado, ele sai junto: um título órfão no
+    material ("Fala do apresentador…") não explica nada.
+    """
+    linhas = texto.splitlines()
+    saida: list[str] = []
+    for i, linha in enumerate(linhas):
+        titulo = re.match(r"^(#{2,4})\s+\S", linha)
+        if titulo:
+            seguinte = next((l for l in linhas[i + 1:] if l.strip()), "")
+            outro = re.match(r"^(#{1,4})\s+\S", seguinte) if seguinte else None
+            if not seguinte or (outro and len(outro.group(1)) <= len(titulo.group(1))):
+                continue
+        saida.append(linha)
+    return "\n".join(saida)
+
+
+COLUNA_INTERNA = re.compile(
+    r"(?i)^\s*(?:grava[çc][ãa]o(?:\s*e\s*timestamps?)?|timestamps?|intervalo|carimbo|"
+    r"âncora|ancora|hora|momento|an[áa]lise detalhada e captura|captura|ocorr[êe]ncias)\s*$"
+)
+
+
+def _celulas(linha: str) -> list[str]:
+    return re.split(r"(?<!\\)\|", linha.strip().strip("|"))
+
+
+def poda_colunas_internas(texto: str) -> str:
+    """Descarta colunas que só indicavam *onde/em que momento* algo foi mostrado.
+
+    O conhecimento continua: as rotinas, os resultados e as exceções permanecem; sai apenas
+    a coluna que apontava para a gravação ou o carimbo de tempo. Quando a tabela inteira é um
+    inventário de captura (sobra menos de duas colunas de conteúdo), ela sai por completo.
+    """
+    linhas = texto.splitlines()
+    saida: list[str] = []
+    i = 0
+    while i < len(linhas):
+        if not linhas[i].lstrip().startswith("|"):
+            saida.append(linhas[i])
+            i += 1
+            continue
+        bloco: list[str] = []
+        j = i
+        while j < len(linhas) and linhas[j].lstrip().startswith("|"):
+            bloco.append(linhas[j])
+            j += 1
+        cabecalho = _celulas(bloco[0])
+        fora = {k for k, c in enumerate(cabecalho) if COLUNA_INTERNA.match(c)}
+        if not fora or len(fora) >= len(cabecalho):
+            saida.extend(bloco)
+            i = j
+            continue
+        linhas_novas: list[str] = []
+        for linha in bloco:
+            celulas = _celulas(linha)
+            if len(celulas) <= max(fora):
+                linhas_novas.append(linha)
+                continue
+            restantes = [c for k, c in enumerate(celulas) if k not in fora]
+            if not any(re.sub(r"[\s\-–—:.]", "", c) for c in restantes):
+                continue  # linha que só continha o ponteiro de origem
+            linhas_novas.append("|" + "|".join(restantes) + "|")
+        if linhas_novas and len(_celulas(linhas_novas[0])) >= 2:
+            saida.extend(linhas_novas)
+        i = j
+    return "\n".join(saida)
+
+
+DELIMITADOR_TABELA = re.compile(r"^\|[\s\-:|]+\|$")
+
+
+def desfazer_tabelas_orfas(texto: str) -> str:
+    """Converte linhas de tabela sem cabeçalho em texto corrido.
+
+    Na origem, alguns quadros aparecem sem a linha de cabeçalho (a tabela continua depois de um
+    espaço em branco). Sem isto, as barras verticais vazariam para o meio da explicação.
+    """
+    linhas = texto.splitlines()
+    saida: list[str] = []
+    i = 0
+    while i < len(linhas):
+        if not linhas[i].lstrip().startswith("|"):
+            saida.append(linhas[i])
+            i += 1
+            continue
+        bloco: list[str] = []
+        j = i
+        while j < len(linhas) and linhas[j].lstrip().startswith("|"):
+            bloco.append(linhas[j])
+            j += 1
+        if len(bloco) >= 2 and DELIMITADOR_TABELA.match(bloco[1].strip()):
+            saida.extend(bloco)  # tabela íntegra: cabeçalho, delimitador e corpo
+        else:
+            for linha in bloco:
+                celulas = [c.strip(" *") for c in _celulas(linha)]
+                celulas = [c for c in celulas if re.sub(r"[\s\-–—:.]", "", c)]
+                if celulas:
+                    saida.append("- " + " — ".join(celulas).rstrip(" —") + ".")
+        i = j
+    return "\n".join(saida)
+
+
+def remover_tabelas_indesejadas(texto: str) -> str:
+    """Descarta quadros de tempo e de controle interno e linhas que eram só um momento."""
+    linhas = texto.splitlines()
+    saida: list[str] = []
+    i = 0
+    while i < len(linhas):
+        linha = linhas[i]
+        if linha.lstrip().startswith("|"):
+            bloco: list[str] = []
+            j = i
+            while j < len(linhas) and linhas[j].lstrip().startswith("|"):
+                bloco.append(linhas[j])
+                j += 1
+            cabecalho = bloco[0].strip("|") if bloco else ""
+            if re.search(r"(?i)\b(?:intervalo|timestamps?|carimbo|hora|âncora|ancora)\b", cabecalho) \
+                    or RUIDO_INTERNO.search(cabecalho):
+                i = j  # quadro de tempos ou de controle do acervo: sai inteiro
+                continue
+            for indice, linha_tabela in enumerate(bloco):
+                if indice == 1 and re.match(r"^\|[\s\-:|]+\|$", linha_tabela.strip()):
+                    saida.append(linha_tabela)
+                    continue
+                celulas = linha_tabela.strip().strip("|").split("|")
+                if celulas:
+                    primeira = CARIMBO_TEMPO.sub("", INTERVALO_TEMPO.sub("", celulas[0]))
+                    if not re.sub(r"[`\s\-–—.]", "", primeira):
+                        continue  # linha cuja primeira coluna era só o momento
+                saida.append(linha_tabela)
+            i = j
+            continue
+        saida.append(linha)
+        i += 1
+    return "\n".join(saida)
 
     # sobras de referência cruzada
     t = re.sub(r"(?i)\(\s*(?:ver|vide|conferir|cf\.)\s[^)]{0,140}\)", "", t)
@@ -224,8 +610,9 @@ def limpar(texto: str) -> str:
     t = re.sub(r'(?i)\bse[çc][ãa]o\s+"[^"]{0,80}"(?:\s*,?\s*item\s*\d+)?', "", t)
     t = t.replace("§", "seção ")
     t = re.sub(r"(?i)\b(ver|conferir|vide)\s*(,|;|\.|$)", r"\2", t, flags=re.M)
-    t = re.sub(r"\(\s*(?:,|;|·|\||—|-)*\s*\)", "", t)
+    t = re.sub(r"\(\s*(?:,|;|·|\||—|-|`|\*|_)*\s*\)", "", t)
     t = re.sub(r"\[\s*\]", "", t)
+    t = re.sub(r"(`{1,3})\s*\1", "", t)
     t = re.sub(r"[ \t]+([,;.])", r"\1", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
     t = re.sub(r"(?m)^[-*]\s+(?=(?:[-*]|\s*$))", "", t)
@@ -253,15 +640,25 @@ def selo_confianca(valor: str) -> str:
     return v
 
 
+def _limpar_selo(valor: str, limite: int = 140) -> str:
+    """Reduz a linha de metadados a um selo curto e legível."""
+    texto = valor.replace("`", "").replace("*", "").strip()
+    texto = re.split(r"\s+[—–]\s+|\s*;\s*|\s+\(\s*", texto)[0].strip(" .,;:")
+    if len(texto) > limite:
+        corte = texto[:limite].rsplit(" ", 1)[0]
+        texto = corte.rstrip(" ,;.") + "…"
+    return texto
+
+
 def extrair_titulo_metadados(texto: str) -> tuple[str, str]:
     """Lê os selos de categoria e de confiança declarados no próprio documento."""
     categoria = confianca = ""
     mc = re.search(r"(?im)^[ \t]*(?:[-*][ \t]+)?\*\*Categoria:\*\*[ \t]*(.+?)[ \t]*$", texto)
     if mc:
-        categoria = mc.group(1)
+        categoria = _limpar_selo(mc.group(1), 120)
     mf = re.search(r"(?im)^[ \t]*(?:[-*][ \t]+)?\*\*Confiança da extração:\*\*[ \t]*(.+?)[ \t]*$", texto)
     if mf:
-        confianca = mf.group(1)
+        confianca = _limpar_selo(mf.group(1), 120)
     return categoria, confianca
 
 
@@ -281,7 +678,26 @@ def md_para_html(texto: str, nivel: int = 3) -> str:
     # resíduos de negrito que a conversão não fechou (crases fragmentadas na origem)
     convertido = re.sub(r"\*\*([^*<>]{1,200}?)\*\*", r"<strong>\1</strong>", convertido)
     convertido = convertido.replace("**", "")
-    return ajustar_pontuacao(convertido)
+    return ajustar_pontuacao(equilibrar_estilo(convertido))
+
+
+def equilibrar_estilo(html_txt: str) -> str:
+    """Remove marcas de negrito/itálico que a origem deixou desemparelhadas.
+
+    Alguns documentos têm ênfase mal fechada (sobra de marcação na fonte). Sem isto, o trecho
+    realçado vazaria até o fim do parágrafo. A marca solta sai; o texto permanece.
+    """
+    for tag in ("strong", "em"):
+        abrir, fechar = "<%s>" % tag, "</%s>" % tag
+        while html_txt.count(abrir) != html_txt.count(fechar):
+            if html_txt.count(abrir) > html_txt.count(fechar):
+                posicao = html_txt.rfind(abrir)
+            else:
+                posicao = html_txt.rfind(fechar)
+            if posicao < 0:
+                break
+            html_txt = html_txt[:posicao] + html_txt[posicao + len(abrir):]
+    return html_txt
 
 
 def ajustar_pontuacao(html_txt: str) -> str:
@@ -295,6 +711,9 @@ def ajustar_pontuacao(html_txt: str) -> str:
         if parte.startswith("<pre>") or parte.startswith("<code>"):
             continue
         parte = re.sub(r"`{2,}", "", parte)
+        parte = re.sub(r"<(strong|em)>\s*</\1>", "", parte)
+        parte = re.sub(r"<(strong|em)>\s*([,;:·|—–\-]*)\s*</\1>", r"\2", parte)
+        parte = re.sub(r"\(\s*[,;·|—–-]*\s*\)", "", parte)
         parte = re.sub(r"\.{2,}(?=\s|<|$)", ".", parte)
         parte = re.sub(r",{2,}", ",", parte)
         parte = re.sub(r";{2,}", ";", parte)
@@ -363,33 +782,35 @@ def detalhes(titulo: str, conteudo: str, aberto: bool = False) -> str:
 
 TEXTO_COMO_USAR = """
 <p>Este é o material de estudo consolidado do acervo de treinamentos e conversas de trabalho da
-<b>Função Sistemas</b>. Ele reúne, em um único documento navegável, o conhecimento extraído de
-todas as fontes analisadas — e nada além disso: as transcrições integrais (fala bruta) e os
-documentos de processo ficaram de fora, porque o que interessa aqui é o conteúdo, não o registro.</p>
+<b>Função Sistemas</b>. Ele foi escrito para ser <b>lido e entendido</b>: cada capítulo abre com a
+explicação do assunto e, em seguida, traz o detalhamento do que foi aprendido. Não há transcrição de
+falas nem indicação de em que momento de um vídeo algo foi dito — o que existe aqui é o
+conhecimento, organizado por tema.</p>
 
 <div class="destaque">
   <h3>Como ler</h3>
   <ul>
-    <li><b>Os capítulos são temáticos.</b> Um mesmo assunto pode aparecer em mais de um capítulo, sob
-    ângulos diferentes (negócio, API, teste, ambiente).</li>
-    <li><b>Cada bloco traz a origem como selo</b> — tipo de fonte (treinamento, reunião, conversa…),
-    categorias de conhecimento e <b>confiança da extração</b>.</li>
-    <li><b>Referências de tempo</b> (por exemplo <code>00:04:20</code>) apontam para o trecho da fonte
-    que sustenta a informação, quando a fonte é uma gravação.</li>
-    <li><b>O que não está confirmado está marcado como tal.</b> O capítulo
-    <a href="#cap-pendencias">Pontos a validar</a> reúne tudo que depende de confirmação humana.</li>
-    <li>Use a <b>busca</b> no topo para filtrar por termo, sigla, tela ou regra, e os botões
-    <i>expandir</i>/<i>recolher</i> para abrir tudo de uma vez.</li>
+    <li><b>Comece pelos capítulos temáticos.</b> Cada um tem duas partes: a <i>explicação</i> inicial
+    (conceitos, regras e o porquê) e o <i>detalhamento por origem</i> (o que foi aprendido em cada
+    treinamento, reunião ou conversa sobre aquele tema).</li>
+    <li><b>Os capítulos se cruzam.</b> Um mesmo assunto aparece sob ângulos diferentes — negócio,
+    integração, teste e ambiente — e é essa combinação que forma o entendimento completo.</li>
+    <li><b>Cada bloco traz selos</b> de categorias de conhecimento e de <b>confiança da extração</b>,
+    para você saber o quanto aquela informação pode ser tratada como consolidada.</li>
+    <li><b>Antes de executar qualquer coisa, leia o capítulo de pontos a validar.</b> Ele reúne o que
+    não foi confirmado, o que pode ter mudado de versão e o que depende de decisão de alguém.</li>
+    <li>Use a <b>busca</b> no topo para encontrar um termo, uma sigla, uma tela ou uma regra, e os
+    botões <i>expandir</i>/<i>recolher</i> para abrir o material inteiro de uma vez.</li>
   </ul>
 </div>
 
 <div class="aviso">
   <h3>Aviso importante</h3>
   <p>Este material é <b>apoio de estudo e memória de trabalho</b>. Ele não substitui a especificação
-  vigente, o runbook nem a validação com o responsável de cada frente: regras, telas e versões
-  mudam. Nenhum procedimento aqui foi executado durante a extração — o que existe é o que foi
-  demonstrado, ensinado ou relatado, mais as ressalvas correspondentes. Onde a fonte não confirmou,
-  o material diz que não confirmou, em vez de completar por suposição.</p>
+  vigente, o runbook nem a validação com o responsável de cada frente: regras, telas e versões mudam.
+  Nenhum procedimento aqui foi executado durante a produção deste material — o que existe é o que foi
+  ensinado, demonstrado ou relatado, mais as ressalvas correspondentes. Onde a informação não foi
+  confirmada, o material diz que não foi, em vez de completar por suposição.</p>
 </div>
 """
 
@@ -457,17 +878,23 @@ def montar_corpo() -> tuple[str, str, int]:
     conteudo += md_para_html(limpar(ler(os.path.join(MATERIAIS, "GLOSSARIO_GERAL.md"))))
     capitulos.append(("panorama", "Panorama: sistemas, consultas, rotinas e vocabulário", "Catálogo consolidado de sistemas, de consultas a banco, de rotinas operacionais e do vocabulário do domínio.", conteudo))
 
-    # -- guias por tema
+    # -- capítulos temáticos: abrem com a explicação do assunto e seguem com o detalhamento
     numero_capitulo = 0
     for chave, titulo, descricao in TEMAS:
         numero_capitulo += 1
         corpo = []
+        if SINTESES.get(chave):
+            corpo.append('<article class="sintese">%s</article>\n' % SINTESES[chave])
+        detalhes = []
         n = 0
         for slug, (rotulo, tipo, tema) in FONTES.items():
             if tema != chave:
                 continue
             n += 1
-            corpo.append(bloco_fonte(slug, rotulo, tipo, "guia_de_estudo.md", "Guia", "%d.%d" % (numero_capitulo, n)))
+            detalhes.append(bloco_fonte(slug, rotulo, tipo, "guia_de_estudo.md", "Guia", "%d.%d" % (numero_capitulo, n)))
+        if detalhes:
+            corpo.append('<h3 class="subtitulo">Detalhamento por origem</h3>')
+            corpo.extend(detalhes)
         if corpo:
             capitulos.append((chave, titulo, descricao, conta("".join(corpo))))
 
@@ -621,6 +1048,17 @@ details.dobra[open]>summary{margin-bottom:10px}
 .aviso{background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:16px 18px;margin:16px 0}
 .aviso h3{margin:0 0 8px;color:var(--ambar);font-size:17px}
 
+.sintese{background:linear-gradient(180deg,#f8fbff 0%,#ffffff 55%);border:1px solid #cfe0f3;
+  border-left:6px solid var(--teal);border-radius:12px;padding:18px 22px;margin:0 0 20px}
+.sintese h3{margin:0 0 10px;font-size:20px;color:var(--azul)}
+.sintese h4{margin:18px 0 8px;font-size:16.5px;color:var(--teal)}
+.sintese p{margin:0 0 10px}
+.sintese ul,.sintese ol{margin:0 0 12px 22px;padding:0}
+.sintese li{margin:5px 0}
+.sintese b{color:#0b2b4a}
+h3.subtitulo{margin:22px 0 10px;font-size:15.5px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--texto-suave);border-bottom:1px solid var(--borda);padding-bottom:6px}
+
 footer.rodape{background:#0b2b4a;color:#cbd5e1;padding:22px 28px;font-size:14px}
 footer.rodape .envolt{max-width:1180px}
 #vazio{display:none;background:#fff;border:1px dashed var(--borda);border-radius:12px;padding:18px;
@@ -772,17 +1210,26 @@ VAZAMENTOS = {
         r"GLOSSARIO_GERAL|INDICE_SISTEMAS|INDICE_PROCESSOS)\b", re.I),
     "jargão de controle interno do acervo": re.compile(
         r"(?i)\b(?:manifesto|oid|\blfs\b|ponteiro|checksum|sha-?256|branch|commit)\b"),
-    "âncora de mensagem não convertida": re.compile(r"\[M\d+\]"),
+    "marca de tempo": re.compile(r"\b\d{1,2}:\d{2}(?::\d{2})?\b"),
+    "aspas de citação": re.compile(r"[“”«»]"),
+    "marcação de negrito solta": re.compile(r"\*\*"),
+    "âncora de mensagem": re.compile(r"\[[MP]\d+\]|\[[MP]nn\]"),
+    "nome de arquivo de mídia": re.compile(r"\.(?:mp4|md|json|srt|vtt|png|jpe?g|xlsx)\b"),
 }
 
 
 def verificar_saida(doc: str) -> list[str]:
-    """Confere que o material não expõe nomes de arquivo nem referências internas."""
+    """Confere que o material não expõe nomes de arquivo, marcas de tempo nem refs internas."""
     conteudo = re.sub(r"<script>.*?</script>", "", doc, flags=re.S)
     conteudo = re.sub(r"<style>.*?</style>", "", conteudo, flags=re.S)
     achados = []
     for nome, padrao in VAZAMENTOS.items():
-        encontrados = padrao.findall(conteudo)
+        alvo = conteudo
+        if nome in ("marca de tempo", "aspas de citação", "marcação de negrito solta"):
+            # conteúdo técnico (SQL, payloads, exemplos de dados) pode conter horário como dado
+            alvo = re.sub(r"<pre>.*?</pre>", "", alvo, flags=re.S)
+            alvo = re.sub(r"<code>.*?</code>", "", alvo, flags=re.S)
+        encontrados = padrao.findall(alvo)
         if encontrados:
             exemplos = ", ".join(sorted(set(encontrados))[:3])
             achados.append("%s (%d): %s" % (nome, len(encontrados), exemplos))

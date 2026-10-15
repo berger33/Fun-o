@@ -27,7 +27,7 @@ Os índices transversais em `materiais/` conectam gravações, consultas SQL, si
 | `python3 tools/validar_materiais.py` | Auditoria do §6 do plano: arquivos obrigatórios, metadados, timestamps, perguntas, links e varredura de privacidade (CPF/CNPJ, e-mail, telefone, segredos). Nunca imprime o valor sensível encontrado. Saída: 0 ok, 1 falhas, 2 achado de privacidade. |
 | `python3 tools/transcrever.py --video "ARQUIVO.mp4"` | Transcreve com timestamps (`faster-whisper`), gerando `transcricao_bruta.txt`, `.srt`, `.vtt` e `transcricao_meta.json`. Precisa dos pesos do modelo — rode no runner do CI. |
 | `python3 tools/reconstruir_videos.py` | Reconstrói os quatro vídeos divididos (exige todas as partes). |
-| `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`): reúne guias, procedimentos, glossários, perguntas, pendências, índices e trilhas, com busca, navegação e impressão. Remove nomes de arquivo, ligações internas e jargão de controle do acervo **antes** de escrever a saída — e falha se algum resquício passar. |
+| `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`): cada capítulo temático abre com a **explicação do assunto** (síntese autoral) e segue com o detalhamento por origem — guias, procedimentos, glossários, perguntas, pendências, índices e trilhas. O texto **explica** o conhecimento: não há marcas de tempo, trechos citados de fala nem nomes de arquivo, ligação interna ou jargão de controle do acervo. A limpeza acontece **antes** de escrever a saída e o gerador **falha** se algum resquício passar. |
 | `python3 tools/servir_material.py` | Serve o material gerado em `0.0.0.0:8000` (rota `/download` para baixar o arquivo). Não expõe nada além da pasta de saída; listagem de diretório desativada. |
 
 As duas verificações rodam automaticamente em cada push/PR pelo workflow `.github/workflows/auditar-materiais.yml`, que faz checkout **sem** baixar LFS.
@@ -53,6 +53,20 @@ O documento é **autocontido** (CSS e busca embutidos, sem dependência de rede)
 busca instantânea, blocos recolhíveis e estilo de impressão. Ele não cita nomes de arquivos nem
 ligações internas: as fontes aparecem por rótulo descritivo com selos de categoria e de
 confiabilidade. A pasta `saida/` é artefato de build e **não** entra no Git.
+
+**Como o material foi escrito.** O objetivo é aprender o assunto, não acompanhar o registro: cada
+capítulo temático começa com uma explicação autoral do domínio (regras, fluxo, nomenclatura) e só
+depois desce ao detalhe por origem. Nada no texto aponta *quando* algo foi dito — os carimbos de
+tempo, as âncoras de mensagem, as datas de análise e a narrativa de captura (ASR, transcrição,
+amostragem de tela) foram removidos na limpeza, e as falas citadas saem inteiras em vez de saírem
+apenas as aspas. Quando a fonte indicava horário como **dado** de negócio — um `SELECT` com coluna de
+data, um payload com timestamp — o valor permanece, porque ali ele é conteúdo técnico e não
+referência de vídeo.
+
+A verificação é parte do gerador: ele recusa a saída se encontrar marca de tempo, aspas de citação,
+âncora de mensagem, nome de arquivo de mídia, caminho de pasta do acervo ou jargão interno (LFS,
+manifesto, ponteiro, checksum, commit). Basta rodar `python3 tools/gerar_base_conhecimento_html.py` e
+conferir a linha de resumo.
 
 ## Fontes textuais (conversas de trabalho)
 
