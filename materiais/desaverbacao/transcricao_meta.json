@@ -1,0 +1,14 @@
+{
+  "arquivo": "dESAVERBAÇÃO.mp4",
+  "bytes": 2531378142,
+  "sha256": "7d40df158d1aa66ae718ef4e2a45fd24332d923a44441dfee277d862ec0a9ce2",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 4420.67,
+  "segmentos": 1274,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 2678.2,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

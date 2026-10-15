@@ -96,3 +96,17 @@ Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição 
 | **Ambiente / versão / base** | Máquinas/servidores e duas bases referidas sem nome confirmado | Versão e ambiente são aventados como possível causa de resultados diferentes | `recalculo.mp4` — 00:37:37–00:39:28 (ASR) | [`../recalculo/procedimentos.md`](../recalculo/procedimentos.md) Fluxo C | — |
 
 > Nenhuma tela, configuração, versão, API, payload ou ambiente foi verificado. A transcrição é insumo e não deve ser usada como runbook.
+
+## Sistemas citados em `dESAVERBAÇÃO.mp4` — ASR somente, sem inspeção visual
+
+| Sistema / módulo | Tela ou área citada verbalmente | Objetivo relatado | Gravação e timestamp | Procedimento | Capturas |
+|---|---|---|---|---|---|
+| **Web Empregador / Consignado Privado** | Cadastro de parâmetros chamado informalmente de “modelo de averbação”; stub e vínculo de empregador | Configuração relacionada à solicitação de exclusão; nome/caminho oficiais não confirmados | `dESAVERBAÇÃO.mp4` — 00:01:36–00:05:10 (ASR) | [`../desaverbacao/procedimentos.md`](../desaverbacao/procedimentos.md) Fluxo B | — |
+| **Autorizador** | Rotinas de convênio/produto e forma de recebimento; a fala cita “Tabelas” e “Produtos” | Conferir convênio/produto e relação com a esteira | `dESAVERBAÇÃO.mp4` — 00:24:47–00:29:35 (ASR; sem revisão visual) | [`../desaverbacao/procedimentos.md`](../desaverbacao/procedimentos.md) Fluxos B–C | — |
+| **Serviços / Decisão / esteira** | Rotina chamada “Relacionamento modelo versus produto” e tabela de decisão | ASR menciona `A`, `N`, `F`, `P`; explica oralmente `A/P/F`, sem definir `N`; não é configuração aprovada | `dESAVERBAÇÃO.mp4` — 00:29:20–00:44:01 (ASR) | [`../desaverbacao/procedimentos.md`](../desaverbacao/procedimentos.md) Fluxos B–D | — |
+| **Plugin de levantamento / serviço de exclusão / stub** | Componentes e retornos descritos oralmente; endpoint, payload, código e configuração não identificados | Separar a seleção da proposta do envio da exclusão e validar o retorno em sandbox aprovado | `dESAVERBAÇÃO.mp4` — 00:15:42–00:19:54; 01:03:19–01:06:33 (ASR) | [`../desaverbacao/procedimentos.md`](../desaverbacao/procedimentos.md) Fluxos A–D | — |
+
+> A referência registra `large-v3`/1.274 segmentos, mas o MP4 e as telas não foram vistos nesta sessão. As linhas descrevem menções ASR, não confirmação de sistema, navegação ou comportamento.
+
+- AVERBACAO.mp4 / desaverbacao / gravando 2026-10-07 132428.mp4: nenhum sistema, processo ou SQL confirmado sem fonte primária; pacotes preliminares mantidos em revisão conforme BLOQUEIO_LFS_ARENA.md.
+

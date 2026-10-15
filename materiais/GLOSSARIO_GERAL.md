@@ -203,3 +203,20 @@ Fonte: [`explicacao-mesa-c6/glossario.md`](explicacao-mesa-c6/glossario.md); uso
 - **API / plugin / JSON:** integração mencionada sem endpoint, payload ou contrato conferido.
 
 Fonte: [`recalculo/glossario.md`](recalculo/glossario.md); timestamps e ressalvas em [`recalculo/incertezas.md`](recalculo/incertezas.md).
+
+## Termos de `dESAVERBAÇÃO.mp4` (ASR não validado)
+
+- **Desaverbação / exclusão de averbação:** termos usados no relato de cancelar uma proposta e conferir o estado da movimentação; se representam a mesma operação ou etapas diferentes, confirmar na EF (`00:00:34–00:00:45`; `01:05:36–01:06:33`).
+- **Modelo de averbação / cadastro de parâmetros:** rótulo oral para uma rotina associada ao Consignado Privado e ao stub; nome/caminho da tela não confirmado (`00:01:36–00:05:10`).
+- **Plugin de levantamento / serviço de exclusão:** dois componentes descritos como seleção de proposta elegível e envio da exclusão; contrato e estados pendentes (`00:15:42–00:16:11`).
+- **Esteira / árvore de decisão; tipos `A`, `N`, `P`, `F`:** a fala associa árvore e esteira; explica oralmente `A/P/F`, enquanto `N` aparece na lista sem significado definido. Confirmar semântica na versão vigente (`00:29:20–00:40:44`).
+- **Alçada / fase:** conceitos relacionados oralmente a quem pode acionar processos; não inferir permissões ou elevar perfil (`00:36:04–00:36:58`).
+- **`Cprop`, `ppcodicomv`, `ppcodprd`:** grafias reconhecidas ao mencionar uma consulta SQL; não há query literal, tabela confirmada, dialeto ou resultado (`00:24:47–00:25:44`).
+- **“Mocado” / stub:** descrição de teste simulado; o isolamento em relação a serviços reais não foi verificado (`00:03:00–00:03:44`; `00:44:32–00:46:47`).
+- **WebTabelas / margem:** referência oral a limites de valor e operações; nenhuma política ou campo foi confirmado (`00:47:04–00:48:10`).
+
+Detalhes e limitações em [`desaverbacao/glossario.md`](desaverbacao/glossario.md), [`desaverbacao/incertezas.md`](desaverbacao/incertezas.md) e [`desaverbacao/metadados.md`](desaverbacao/metadados.md). A fonte primária não foi revisada visualmente nesta sessão.
+
+- `AVERBACAO.mp4` (`averbacao`): pacote preliminar em revisão; fonte (4 partes LFS, 5.033.624.752 bytes) não obtida; nenhuma análise de conteúdo confirmada. Ver [`materiais/averbacao/LEIA-ME.md`](materiais/averbacao/LEIA-ME.md).
+- `Gravando 2026-10-07 132428.mp4` (`gravando-2026-10-07-132428`): pacote preliminar em revisão; fonte (2 partes LFS, 3.151.497.131 bytes) não obtida. Ver [`materiais/gravando-2026-10-07-132428/LEIA-ME.md`](materiais/gravando-2026-10-07-132428/LEIA-ME.md).
+
