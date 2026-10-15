@@ -7,7 +7,9 @@ Confere, para cada vídeo extraído em `materiais/<slug>/`, os critérios que o 
 1. todos os arquivos obrigatórios existem (`ROTEIRO_ARENA.md` — estrutura por vídeo);
 2. a linha de metadados aparece no início dos guias (`Categoria`, `Sistema`, `Assunto`,
    `Fonte`, `Confiança da extração`);
-3. há timestamps `HH:MM:SS` nos documentos que precisam citar origem;
+3. há timestamps `HH:MM:SS` nos documentos que precisam citar origem — ou, quando o pacote
+   declarar `**Tipo de fonte:** conversa` em `metadados.md` (fonte textual, sem mídia), âncoras
+   `[Mnn]` de mensagem no lugar dos timestamps (ver `materiais/CONVENCOES_FONTES_TEXTUAIS.md`);
 4. `perguntas.md` tem pelo menos 10 perguntas (ou uma por conceito/etapa, se menos);
 5. `capturas.md` cita arquivos existentes em `capturas/`, cada um com timestamp e nota de revisão;
 6. nenhum link relativo quebrado dentro de `materiais/`;
@@ -21,6 +23,17 @@ Uso:
     python3 tools/validar_materiais.py                       # audita tudo em materiais/
     python3 tools/validar_materiais.py --video <slug>        # exige o diretório do vídeo
     python3 tools/validar_materiais.py --so-privacidade      # só a varredura sensível
+
+Fontes textuais: se `metadados.md` declarar `**Tipo de fonte:** conversa`, o auditor troca a
+exigência de timestamps por âncoras `[Mnn]` (índice da mensagem na transcrição). O material bruto
+sem mascaramento, quando preservado, fica em `restrito/` — fora do Git, portanto fora desta
+varredura. Convenções completas em `materiais/CONVENCOES_FONTES_TEXTUAIS.md`.
+
+Fontes não obtidas: se `metadados.md` declarar `**Fonte obtida:** não`, o pacote é registrado como
+“bloqueio declarado” e a exigência de timestamp/âncora deixa de ser falha (vira aviso). Isso evita
+que um pacote honestamente vazio seja reprovado — e evita a tentação de inventar timestamp para
+“passar no teste”. Os demais critérios (arquivos obrigatórios, metadados, perguntas, links e
+privacidade) continuam valendo.
 
 Saída: relatório legível; código de saída 0 = passou, 1 = falhas, 2 = achado de privacidade.
 Não altera nenhum arquivo.
@@ -61,6 +74,12 @@ TIMESTAMPS_MINIMOS = {
 }
 
 TIMESTAMP = re.compile(r"\b\d{2}:\d{2}:\d{2}\b")
+# fontes textuais (conversas/chat): a origem é ancorada pelo índice de mensagem `[Mnn]`
+ANCORA_MENSAGEM = re.compile(r"\[M\d{2,}\]")
+TIPO_FONTE = re.compile(r"(?im)^\s*[-*>]*\s*\**Tipo de fonte:\**\s*(?P<tipo>.+?)\s*$")
+# pacote que declara, em `metadados.md`, que a fonte primária não foi obtida: por definição não pode
+# haver timestamp/âncora — o plano manda registrar o bloqueio, não inventar origem.
+FONTE_NAO_OBTIDA = re.compile(r"(?im)^\s*[-*>\s]*\**Fonte obtida:\**\s*(?:n[ãa]o|no|false)\b")
 PERGUNTA = re.compile(r"^\s*(?:\d+[.)]|[-*])\s+.*\?", re.MULTILINE)
 LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 CAPTURA_LINHA = re.compile(r"(?<![\w-])(?P<arq>[A-Za-z0-9][A-Za-z0-9._/-]*\.(?:png|jpg|jpeg))\b")
@@ -181,10 +200,45 @@ def auditar_links(dir_video: str, rel: Relatorio) -> None:
                 rel.erro(f"link quebrado em {caminho}: {destino}")
 
 
+def tipo_de_fonte(dir_video: str) -> str:
+    """Classifica o pacote como fonte de `video` (padrão) ou fonte textual (`texto`).
+
+    O pacote se declara em `metadados.md` com uma linha `**Tipo de fonte:** conversa`. Fontes
+    textuais não têm `HH:MM:SS` de mídia; a rastreabilidade é feita por âncoras `[Mnn]`.
+    """
+    caminho = os.path.join(dir_video, "metadados.md")
+    if not os.path.exists(caminho):
+        return "video"
+    for encontrado in TIPO_FONTE.finditer(ler(caminho)):
+        valor = encontrado.group("tipo").strip().strip("`*_ ").lower()
+        if valor.startswith(("conversa", "chat", "mensagem", "texto", "e-mail", "email")):
+            return "texto"
+    return "video"
+
+
+def fonte_nao_obtida(dir_video: str) -> bool:
+    """Pacote declara `**Fonte obtida:** não` em `metadados.md` (fonte primária indisponível)."""
+    caminho = os.path.join(dir_video, "metadados.md")
+    return os.path.exists(caminho) and bool(FONTE_NAO_OBTIDA.search(ler(caminho)))
+
+
 def auditar_video(dir_video: str) -> Relatorio:
     rel = Relatorio()
     nome = os.path.basename(dir_video.rstrip("/"))
-    print(f"\n=== {MATERIAIS}/{nome} ===")
+    tipo = tipo_de_fonte(dir_video)
+    sem_fonte = fonte_nao_obtida(dir_video)
+    if tipo == "texto":
+        rotulo = "fonte textual (âncoras `[Mnn]`)"
+    elif sem_fonte:
+        rotulo = "gravação sem fonte obtida (bloqueio declarado)"
+    else:
+        rotulo = "gravação (timestamps `HH:MM:SS`)"
+    print(f"\n=== {MATERIAIS}/{nome} — {rotulo} ===")
+    if sem_fonte:
+        rel.aviso(
+            "pacote declara `Fonte obtida: não` — exigência de timestamp/âncora não se aplica; "
+            "a rastreabilidade ficará pendente enquanto a fonte não for obtida"
+        )
 
     for arquivo in ARQUIVOS_OBRIGATORIOS:
         caminho = os.path.join(dir_video, arquivo)
@@ -209,6 +263,19 @@ def auditar_video(dir_video: str) -> Relatorio:
 
     for arquivo, minimo in TIMESTAMPS_MINIMOS.items():
         if arquivo not in conteudos:
+            continue
+        if sem_fonte:
+            # não há mídia analisada: cobrar timestamp/âncora seria exigir o que a fonte não tem
+            continue
+        if tipo == "texto":
+            ancoras = len(ANCORA_MENSAGEM.findall(conteudos[arquivo]))
+            if ancoras < minimo:
+                rel.erro(
+                    f"{arquivo}: nenhuma âncora [Mnn] de mensagem encontrada "
+                    f"(fonte textual declarada em metadados.md; esperado ≥ {minimo})"
+                )
+            else:
+                rel.ok(f"{arquivo}: {ancoras} âncoras [Mnn] de mensagem")
             continue
         achados = len(TIMESTAMP.findall(conteudos[arquivo]))
         if achados < minimo:
