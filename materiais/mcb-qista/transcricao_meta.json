@@ -1,0 +1,13 @@
+{
+  "arquivo": "MCB - QISTA.mp4",
+  "bytes": 543851523,
+  "sha256": "5e9d76d88342fd82a697eaf4f65f52a9e50bd22aa2416b63ac40e889c8fa11a0",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 946.97,
+  "segmentos": 199,
+  "duracao_transcricao_s": 556.8,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

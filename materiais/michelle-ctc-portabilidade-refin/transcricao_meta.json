@@ -1,0 +1,13 @@
+{
+  "arquivo": "MICHELLE CTC PORTABILIDADE REFIN.mp4",
+  "bytes": 473540507,
+  "sha256": "621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 1016.62,
+  "segmentos": 388,
+  "duracao_transcricao_s": 958.0,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}

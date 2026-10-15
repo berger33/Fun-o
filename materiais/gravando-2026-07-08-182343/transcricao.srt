@@ -1,0 +1,507 @@
+1
+00:00:01,390 --> 00:00:02,650
+Nossa, onzinha só.
+
+2
+00:00:11,280 --> 00:00:12,560
+Tá, beleza.
+
+3
+00:00:13,760 --> 00:00:16,640
+Ó, a gente tem que vir na pasta do Gabriel.
+
+4
+00:00:17,260 --> 00:00:20,300
+Sabe, a minha já tá aqui salva, tipo, o caminho aqui dele.
+
+5
+00:00:21,220 --> 00:00:21,760
+Beleza.
+
+6
+00:00:23,520 --> 00:00:25,600
+A gente vai vir em C6.
+
+7
+00:00:27,400 --> 00:00:29,160
+É, websites.
+
+8
+00:00:32,000 --> 00:00:32,920
+Web autorizador.
+
+9
+00:00:33,920 --> 00:00:37,220
+A gente vai dar um CTRL A, apagar tudo, menos a config.
+
+10
+00:00:54,370 --> 00:00:54,890
+Isso.
+
+11
+00:00:54,890 --> 00:00:57,070
+É, porque, tipo assim
+
+12
+00:00:57,070 --> 00:01:00,110
+Eu, às vezes, baixo pra minha máquina, sabe?
+
+13
+00:01:00,150 --> 00:01:01,770
+Aponto pra máquina dele, sabe?
+
+14
+00:01:01,810 --> 00:01:02,850
+Eu acho mais prático
+
+15
+00:01:02,850 --> 00:01:04,230
+E, tipo, cada quem tem
+
+16
+00:01:04,230 --> 00:01:07,290
+Isso, cada quem tem sua versão ali e tal, sabe?
+
+17
+00:01:08,130 --> 00:01:10,210
+Só que, tipo assim, é meio que um padrão nosso
+
+18
+00:01:10,210 --> 00:01:11,610
+A não ser que, tipo assim, é
+
+19
+00:01:11,610 --> 00:01:15,390
+Você esteja usando uma versão tal
+
+20
+00:01:15,390 --> 00:01:17,450
+E eu esteja usando outra versão, sabe?
+
+21
+00:01:17,470 --> 00:01:18,990
+Aí eu subo pra minha máquina e aponto pra dele
+
+22
+00:01:18,990 --> 00:01:19,870
+Entendeu?
+
+23
+00:01:21,710 --> 00:01:23,610
+Mas, tipo assim, se tiver só você testando
+
+24
+00:01:23,610 --> 00:01:26,470
+Atualizando alguma dele pra deixar a versão mais recente
+
+25
+00:01:26,470 --> 00:01:28,590
+Aí, beleza
+
+26
+00:01:28,590 --> 00:01:30,070
+Acabei de baixar aqui a nova versão
+
+27
+00:01:30,070 --> 00:01:38,220
+A gente faz o mesmo processo aqui
+
+28
+00:01:38,220 --> 00:01:48,540
+Beleza
+
+29
+00:01:48,540 --> 00:01:53,140
+Sim
+
+30
+00:01:53,140 --> 00:01:58,610
+Ah, sim
+
+31
+00:01:58,610 --> 00:02:04,740
+Calma aí
+
+32
+00:02:04,740 --> 00:02:08,260
+Ah, ele também liberou um WS aqui
+
+33
+00:02:08,260 --> 00:02:11,400
+Deixa eu baixar também pra ficar certinho
+
+34
+00:02:11,400 --> 00:02:25,520
+Aí, beleza
+
+35
+00:02:25,520 --> 00:02:27,620
+Aqui é o WebAutorizador
+
+36
+00:02:27,620 --> 00:02:30,400
+Aí, o WS também sempre vem junto, sabe?
+
+37
+00:02:30,780 --> 00:02:32,160
+Atualizou um, tem que atualizar o outro
+
+38
+00:02:32,160 --> 00:02:34,660
+aí faz o mesmo processo também
+
+39
+00:02:34,660 --> 00:02:36,240
+apaga config
+
+40
+00:02:36,240 --> 00:02:58,620
+tipo, a gente faz isso, sabe, porque tipo
+
+41
+00:02:58,620 --> 00:03:00,760
+na config, tá tudo configurado já
+
+42
+00:03:00,760 --> 00:03:02,880
+sabe, SIC, GDOK
+
+43
+00:03:02,880 --> 00:03:04,440
+API, sabe
+
+44
+00:03:04,440 --> 00:03:09,290
+aí, tipo assim, eu até
+
+45
+00:03:09,290 --> 00:03:10,730
+recomendo você, tipo
+
+46
+00:03:10,730 --> 00:03:13,230
+sei lá, depois copiar
+
+47
+00:03:13,230 --> 00:03:15,570
+essa pasta config, sabe, tipo do autorizador
+
+48
+00:03:15,570 --> 00:03:17,450
+tipo, pra sua máquina, só pra deixar
+
+49
+00:03:17,450 --> 00:03:18,730
+de backup, entendeu
+
+50
+00:03:18,730 --> 00:03:21,270
+vai que dá uma
+
+51
+00:03:21,270 --> 00:03:22,830
+travadinha na máquina, dá um
+
+52
+00:03:22,830 --> 00:03:24,070
+deleta tudo, entendeu
+
+53
+00:03:24,070 --> 00:03:31,940
+É, nossa, quase aconteceu comigo isso aí
+
+54
+00:03:31,940 --> 00:03:35,420
+Tipo, que eu usava a máquina, tipo, era muito fraquinha
+
+55
+00:03:35,420 --> 00:03:39,260
+Aí tava travando e eu só apertando Enter
+
+56
+00:03:39,260 --> 00:03:41,080
+Quase que apago tudo
+
+57
+00:03:41,080 --> 00:03:56,150
+A gente roda sempre com N aqui, tá?
+
+58
+00:04:00,040 --> 00:04:03,200
+Beleza, agora vamos no autorizador aqui
+
+59
+00:04:03,200 --> 00:04:11,760
+Agora assim, tipo, API, sabe API?
+
+60
+00:04:11,840 --> 00:04:13,300
+Você só atualiza API mesmo, sabe?
+
+61
+00:04:14,000 --> 00:04:15,660
+O autorizador é sempre esses dois
+
+62
+00:04:17,840 --> 00:04:20,080
+Tipo, só não é esses dois
+
+63
+00:04:20,080 --> 00:04:22,120
+Quando é caso do SIC
+
+64
+00:04:22,120 --> 00:04:24,020
+Tipo uma variável
+
+65
+00:04:24,020 --> 00:04:26,240
+Aí é só o autorizado mesmo
+
+66
+00:04:26,240 --> 00:04:27,320
+O AWS não atualiza
+
+67
+00:04:27,320 --> 00:04:29,440
+Depende das vezes também
+
+68
+00:04:29,440 --> 00:04:33,290
+Ah, correu um erro aqui
+
+69
+00:04:33,290 --> 00:04:36,230
+Mas isso aqui não interfere em nada
+
+70
+00:04:36,230 --> 00:04:39,350
+É um erro genérico
+
+71
+00:04:39,350 --> 00:04:49,060
+Aí você pode fazer tipo assim, sabe
+
+72
+00:04:49,060 --> 00:04:51,120
+Esses casos aí do item fundon de criar proposta
+
+73
+00:04:51,120 --> 00:04:52,860
+Você pode apagar, sabe
+
+74
+00:04:52,860 --> 00:04:55,300
+Deixar mais só de validação da tela mesmo
+
+75
+00:04:55,300 --> 00:05:06,640
+Isso
+
+76
+00:05:06,640 --> 00:05:09,640
+Aí você vai
+
+77
+00:05:09,640 --> 00:05:11,180
+Tipo qualquer coisa você me fala
+
+78
+00:05:11,180 --> 00:05:13,400
+sabe, tipo, quiser alguma ajuda aí, algum suporte
+
+79
+00:05:13,400 --> 00:05:15,340
+aí tu me dá
+
+80
+00:05:15,340 --> 00:05:17,320
+um toque aí, mas tipo
+
+81
+00:05:17,320 --> 00:05:19,060
+é, bate o olho na F mesmo assim
+
+82
+00:05:19,060 --> 00:05:21,120
+se tiver faltando alguma coisa, você também coloca
+
+83
+00:05:21,120 --> 00:05:23,440
+sabe, se tiver dúvida, pergunta
+
+84
+00:05:23,440 --> 00:05:26,300
+e é isso
+
+85
+00:05:26,300 --> 00:05:37,770
+a parte de tolerância, né
+
+86
+00:05:37,770 --> 00:05:48,120
+ah, e você, tipo assim
+
+87
+00:05:48,120 --> 00:05:50,460
+tem como copiar a esteira
+
+88
+00:05:50,460 --> 00:05:53,860
+não? copiar a esteira
+
+89
+00:05:53,860 --> 00:05:55,540
+calma aí
+
+90
+00:05:55,540 --> 00:05:57,520
+eu tô
+
+91
+00:05:57,520 --> 00:05:59,540
+falando merda aqui, deixa eu dar uma olhada
+
+92
+00:05:59,540 --> 00:06:00,560
+aqui, é
+
+93
+00:06:00,560 --> 00:06:03,740
+importar
+
+94
+00:06:03,740 --> 00:06:10,080
+e acho que é isso mesmo
+
+95
+00:06:10,080 --> 00:06:11,460
+vou fazer um testezinho aqui
+
+96
+00:06:11,460 --> 00:06:18,630
+não lembro o nome
+
+97
+00:06:18,630 --> 00:06:21,790
+sei lá, deixa eu ver aqui
+
+98
+00:06:21,790 --> 00:06:27,260
+ah tá, deixa eu voltar aqui
+
+99
+00:06:27,260 --> 00:06:34,110
+11
+
+100
+00:06:34,110 --> 00:06:46,070
+exportou
+
+101
+00:06:46,070 --> 00:06:47,470
+vamos ver se vai dar certo
+
+102
+00:06:47,470 --> 00:06:56,100
+deixa eu ver se vai dar certo
+
+103
+00:06:56,100 --> 00:06:56,780
+Certo.
+
+104
+00:07:03,300 --> 00:07:11,480
+Ah, tem como sim.
+
+105
+00:07:14,900 --> 00:07:16,580
+Posso importar ela pra você, então?
+
+106
+00:07:19,050 --> 00:07:19,250
+Qual?
+
+107
+00:07:20,590 --> 00:07:22,030
+Esse teste mesmo aqui?
+
+108
+00:07:29,300 --> 00:07:30,040
+Sim, sim.
+
+109
+00:07:31,860 --> 00:07:33,060
+Tolerância, 999.
+
+110
+00:07:33,660 --> 00:07:34,920
+Tá, 49.
+
+111
+00:07:38,570 --> 00:07:39,010
+Curtiu?
+
+112
+00:07:39,910 --> 00:07:41,170
+Seu vencedor tá aqui mesmo.
+
+113
+00:07:46,980 --> 00:07:47,180
+Ó.
+
+114
+00:07:47,180 --> 00:07:49,720
+Tá aqui, ó.
+
+115
+00:07:51,670 --> 00:07:51,890
+Não.
+
+116
+00:07:52,650 --> 00:07:53,070
+Calma aí.
+
+117
+00:07:53,250 --> 00:07:54,170
+Teste de tolerância.
+
+118
+00:07:54,450 --> 00:07:58,810
+Parece que eu criei mesmo, não foi?
+
+119
+00:07:59,270 --> 00:07:59,710
+Teste
+
+120
+00:07:59,710 --> 00:08:02,370
+Ah, isso mesmo, é isso mesmo
+
+121
+00:08:02,370 --> 00:08:03,470
+É
+
+122
+00:08:03,470 --> 00:08:05,310
+Então é isso
+
+123
+00:08:05,310 --> 00:08:10,790
+Então
+
+124
+00:08:10,790 --> 00:08:11,770
+É
+
+125
+00:08:11,770 --> 00:08:14,610
+Então beleza, mano
+
+126
+00:08:14,610 --> 00:08:16,050
+Qualquer coisa me dá um toque aí, tá?
+
+127
+00:08:19,570 --> 00:08:20,290
+Valeu, você também

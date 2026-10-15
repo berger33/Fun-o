@@ -14,7 +14,11 @@ Consultas e comandos SQL identificados nas gravações analisadas:
 |---|---|---|
 | `Apresentação projeto 19-18.mp4` | **não aplicável** | Houve apenas a menção verbal a verificar "no fonte/query" (`00:06:12`) como encaminhamento — nenhuma consulta foi escrita ou executada. |
 | `Gravando 2026-07-07 155307.mp4` | **não aplicável** | Nenhuma consulta SQL exibida ou ditada. |
+| `Gravando 2026-07-08 182343.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL reconhecível; a fala se concentra em componentes de aplicação, configuração e importação de teste. |
 | `PROJETO 14-08.mp4` | **menção, sem texto** | Apenas a fala "é só a gente colocar lá no select" (`00:01:36`) como encaminhamento para identificar o campo `ETRACPD.*` do CNPJ — nenhuma consulta escrita, exibida ou executada. |
 | `Gravando 2026-09-22 111258.mp4` | **não aplicável** | Nenhuma consulta SQL exibida ou ditada. A tela mostra o PDF da especificação (OS 586780) e a fala trata de campos "na base" (`00:03:10`–`00:03:29`) sem consulta. |
+| `MICHELLE CTC PORTABILIDADE REFIN.mp4` | **não aplicável** | Nenhum SQL, comando ou consulta demonstrado; a conversa trata verbalmente de propostas e etapas de processo. |
+| `MCB - QISTA.mp4` | **não aplicável** | Nenhuma consulta ou comando SQL demonstrado; `INSERT`/`UPDATE` são apenas mencionados como possibilidade, sem script ou execução (`00:02:54`–`00:03:09`). |
+| `Primeiro projeto.mp4` | **menção, sem texto** | A fala menciona um `SELECT` para localizar o número da operação (`00:02:35`–`00:02:57`), mas a consulta não é lida nem exibida; nenhuma query reproduzida ou executada. |
 
 Cada entrada traz objetivo, gravação e timestamp (`HH:MM:SS`), dialeto, tabelas/colunas citadas, tipo (`somente leitura` / `altera dados`) e link para a análise detalhada no vídeo. Comandos que alteram dados (`INSERT`, `UPDATE`, `DELETE`, DDL) recebem sinalização explícita de efeito e de validação operacional; nenhum comando é executado.

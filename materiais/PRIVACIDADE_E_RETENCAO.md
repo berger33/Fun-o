@@ -77,3 +77,30 @@ Após a fusão do PR #4 (lote `Jonas EPT explicação.mp4`), outra branch de ses
 - `bb31e7d7235ecbf2eb4146775a3862333ecdf276` — republicação da transcrição de `Jonas EPT explicação.mp4` (texto, mesmo conteúdo do `842507e4…` já registrado).
 
 O ramo de **partes** do jonas re-publicado pela sessão paralela (run 38480441190) também carrega bytes de vídeo; o SHA dele não pôde ser capturado nesta sessão (ramo apagado antes da observação). **Incluir todos no pedido de remoção ao GitHub Support** e redobrar a coordenação para não disparar a ponte do mesmo vídeo em sessões simultâneas.
+
+## 6. Registro — transcrição de `Gravando 2026-07-08 182343.mp4` (2026-10-14)
+
+- **Ação:** a transcrição automática foi coletada do run do GitHub Actions `38491679930`; o vídeo não foi republicado por essa execução como partes binárias. Tamanho e SHA-256 conferidos: `356602844` bytes; `07a7166a9dd98f7355d90cd0777a1e7b11b2b6ac732eed80227bdcb7ad0c9404`. Foram gerados 127 segmentos em português com `faster-whisper` `large-v3`.
+- **Coleta:** os quatro arquivos de transcrição foram copiados para `materiais/gravando-2026-07-08-182343/`. O ramo temporário `entrega/transcricao-gravando-2026-07-08-182343` não consta mais nos heads remotos.
+- **Objeto provavelmente retido:** commit `114674378a63cee686b77091365b1007ff2a0510`; a API do GitHub ainda o retorna em 2026-10-14. O commit contém texto de transcrição e diagnósticos, não o MP4.
+- **Recomendação:** incluir esse SHA na solicitação ao GitHub Support. Apagar o ramo de entrega não remove o commit órfão; não reutilizar pontes para material que não possa permanecer acessível por SHA.
+
+## 7. Registro — transcrição de `MICHELLE CTC PORTABILIDADE REFIN.mp4` (2026-10-14)
+
+- **Ação:** run do GitHub Actions `38504260909` gerou a transcrição automática; tamanho e SHA-256 constam como conferidos na execução anterior (473540507 bytes; `621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493`). Foram gerados 388 segmentos em português com `faster-whisper` `large-v3`.
+- **Coleta:** os arquivos de transcrição foram recuperados para `materiais/michelle-ctc-portabilidade-refin/`. O ramo temporário `entrega/transcricao-michelle-ctc-portabilidade-refin` não consta nos heads remotos.
+- **Objeto provavelmente retido:** commit `7b319cc4cb3af8e12971c2be2d96109b7a76bc79`; a API do GitHub ainda o retorna em 2026-10-14. O commit corresponde à ponte temporária de transcrição (texto/diagnósticos; sem confirmação de conteúdo além do registro da execução).
+- **Recomendação:** incluir esse SHA na solicitação ao GitHub Support; excluir o ramo temporário não remove o objeto do commit órfão.
+
+## 8. Registro — transcrição de `MCB - QISTA.mp4` (2026-10-14)
+
+- **Coleta:** os quatro arquivos automáticos de transcrição e o `LEIA-ME.md` foram copiados da referência de sessão `origin/arena/17453ccc-fun-o` para `materiais/mcb-qista/`. Os metadados/README dessa execução registram `large-v3`, 199 segmentos e conferência prévia da fonte (`543851523` bytes; SHA-256 `5e9d76d88342fd82a697eaf4f65f52a9e50bd22aa2416b63ac40e889c8fa11a0`). O MP4 não foi baixado nem re-hasheado nesta etapa.
+- **Objeto provavelmente retido:** commit `d8d18b64d7800e55591fed2617d28ef52a7b7af8`, mensagem “Salva transcricao preliminar do video MCB QISTA”; a API do GitHub ainda o retorna em 2026-10-14. O tree contém os artefatos de transcrição e o ponteiro LFS do vídeo, não os bytes do MP4. A branch temporária `entrega/transcricao-mcb-qista` não foi encontrada nos heads remotos observados.
+- **Recomendação:** incluir o SHA na solicitação ao GitHub Support. O objeto pode continuar acessível mesmo sem branch apontando para ele.
+
+## 9. Registro — transcrição de `Primeiro projeto.mp4` (2026-10-14)
+
+- **Coleta:** quatro artefatos ASR e `LEIA-ME.md` foram copiados de `origin/arena/17453ccc-fun-o` para `materiais/primeiro-projeto/`. O registro da execução informa `large-v3`, 274 segmentos, 616715835 bytes e SHA-256 `3f761d2a7a1dadeae053910a2a3940d081bcd1e0afd90a96cb826c46d8bd1ac0`; os bytes não foram baixados/re-hasheados neste lote.
+- **Sanitização do derivado local:** a cópia pública substitui identificador de cliente e nome de base/ambiente por marcadores e omite um trecho não técnico fora do escopo entre `00:16:15.94` e `00:17:48.66`. Nenhum valor omitido é repetido neste registro.
+- **Objeto possivelmente retido:** commit `b26af329e7c0524a4f5151aa864c6dce4d82e1ba`, mensagem “Restaura transcrições integrais autorizadas”; a API do GitHub confirmou o commit em 2026-10-14. O commit inclui a transcrição integral de origem, além de outros arquivos e ponteiros LFS. A cópia sanitizada deste lote não remove nem altera o objeto upstream.
+- **Recomendação:** incluir o SHA no pedido ao GitHub Support se a política exigir a remoção dos derivados integrais acessíveis por SHA; exclusão de refs não garante remoção do objeto.

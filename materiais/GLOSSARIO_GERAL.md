@@ -61,3 +61,50 @@ Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo
 - **Estruturas a preservar sem regressão:** `corbanData`, `Credor associatedProposals`, `last_ConsultINSS`, `Insurance_reuse` (`00:09:20`).
 - **Planilha EPT (`EPT_586780`):** documento de casos de teste do CQ (colunas `CT`, `Ref.`, `Etapa`, `Resultado esperado`, `Status`, `Observações`; seções de prê-missas e validações básicas) — aqui vista **preenchida**, complementando a visão de `Gravando 2026-07-07 155307.mp4` (`00:05:50`–`00:08:10`).
 - **Relatório de Testes (`Relatorio_de_Testes_586780`):** documento Word padrão "CQ - Controle de Qualidade / Evidências de Testes" com cenários prontos a reaproveitar na EPT (`00:08:27`–`00:09:30`).
+
+## Termos de `Gravando 2026-07-08 182343.mp4`
+
+- **WebAutorizador / WS / API:** componentes citados numa conversa sobre versões e atualização em ambiente de teste; a relação técnica e a matriz de implantação não foram confirmadas (`00:00:23`–`00:04:27`).
+- **SIC / GDOK:** identificadores citados como parte da configuração, sem expansão nem valores expostos (`00:02:58`–`00:03:04`).
+- **Pasta de configuração (`config`):** área descrita verbalmente como contendo parâmetros de SIC, GDOK e API; instruções conflitantes sobre preservá-la ou apagá-la permanecem em validação (`00:00:33`, `00:02:34`–`00:03:24`).
+- **Esteira:** objeto que o interlocutor tenta importar; sistema, formato e significado não identificados (`00:05:48`–`00:07:20`).
+- **Teste de tolerância:** nome falado para uma tentativa de teste, sem campo, valor, critério de sucesso ou regra de negócio verificáveis (`00:05:26`, `00:07:31`–`00:08:03`).
+
+Ver a análise completa e as ambiguidades em [`gravando-2026-07-08-182343/glossario.md`](gravando-2026-07-08-182343/glossario.md) e [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
+
+## Termos de `MICHELLE CTC PORTABILIDADE REFIN.mp4`
+
+- **Portabilidade / refim:** propostas/fluxos tratados como distintos e relacionados; regras de associação e sincronização não foram fechadas (`00:00:24`–`00:01:22`).
+- **CTC:** sigla usada para acionamento/retorno de etapa, sem expansão ou semântica técnica confirmada (`00:00:36`–`00:01:22`).
+- **“CTC aciona refim”:** nome aproximado de processo falado como acionador; confirmar nome e efeito na configuração real (`00:01:07`–`00:01:22`).
+- **Tela unificada / “aguarda alteração unificada”:** descrição verbal de tela e etapa de coordenação; não inspecionadas visualmente (`00:02:40`–`00:03:15`).
+- **“Aguarda análise de refim de portabilidade”:** etapa alternativa citada, sem resolução quanto ao nome/uso correto (`00:07:25`–`00:07:47`).
+- **CCB:** documento cuja emissão/avanço é citado como dependente da conferência dos valores do refim; campos/critério não especificados (`00:03:36`–`00:04:59`).
+- **MEI:** sigla ASR sem definição na conversa (`00:15:17`–`00:15:28`).
+
+Ver [`michelle-ctc-portabilidade-refin/glossario.md`](michelle-ctc-portabilidade-refin/glossario.md) e [`incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md); não tratar os nomes de etapa/processo como rótulos confirmados.
+
+## Termos de `MCB - QISTA.mp4`
+
+- **MCB:** módulo separado que, segundo a fala, armazena/consulta situação e pontuação de agentes; expansão não definida (`00:00:49`–`00:01:13`).
+- **Núclea / pontuação de agente:** referência verbal à certificação e a um indicador de situação; limite `20` e suspensão não confirmados (`00:00:00`–`00:01:13`).
+- **Atividade de esteira / API de consulta de pontuação:** atividade que acionaria a consulta Autorizador–MCB, com associação de esteira/atividade descrita sem configuração validada (`00:01:13`–`00:02:52`).
+- **Promotora interna/externa:** classificação usada para propor cenários de validação; regra de negócio pendente (`00:07:27`–`00:09:01`).
+- **WebTabelas / origem:** local e representação mencionados para consulta de promotora; nomes podem variar por ambiente e não foram vistos na tela (`00:04:22`–`00:06:46`).
+- **“T-Lib”/“Telib”, QISTA, UDL:** termos reconhecidos pelo ASR sem confirmação de grafia, expansão ou função técnica (`00:03:54`–`00:04:20; 00:09:09`–`00:12:08`).
+- **“Produto não encontrado”:** erro investigado sem identificação da causa ou das três tabelas correlacionadas citadas (`00:14:29`–`00:15:24`).
+
+Ver [`mcb-qista/glossario.md`](mcb-qista/glossario.md) e [`mcb-qista/incertezas.md`](mcb-qista/incertezas.md); `190`/`061` permanecem códigos candidatos do ASR e não são valores de configuração.
+
+## Termos de `Primeiro projeto.mp4`
+
+- **GED / Web API de documentos anexados:** sistema e API citados para listar/baixar arquivos associados a uma proposta ou operação (`00:00:33`–`00:01:02`).
+- **“Documentos anexados simplificado”:** nome verbal do novo endpoint `GET`; rota e propriedades dependem da EF aprovada (`00:01:37`–`00:02:25`).
+- **Número de proposta / número de operação:** identificadores alternativos de consulta; a fala lê a regra como obrigatoriedade condicional (`00:02:25`–`00:03:42`).
+- **Checklist:** informações de cadastro/análise/formalização, descritas como distintas dos arquivos GED e ausentes do retorno simplificado (`00:04:41`–`00:05:09; 00:06:56`–`00:07:37`).
+- **Perfil GED / `perfil gdoc`:** configuração referenciada pelo Autorizador; grafia da chave e regra de associação precisam de confirmação (`00:07:37`–`00:08:29`).
+- **Back-office:** origem da busca interna proposta para relacionar número de operação e número de proposta (`00:07:54`–`00:08:29`).
+- **IDs de armazenamento / ID único / nome e extensão:** categorias de dados que a fala espera no retorno, sem confirmar os nomes de campo (`00:03:52`–`00:04:23`).
+- **Opções “N”/“W” e `SELECT`:** menções sem efeito/consulta documentados; não são instrução operacional (`00:02:35`–`00:02:57; 00:13:12`–`00:16:02`).
+
+Ver [`primeiro-projeto/glossario.md`](primeiro-projeto/glossario.md) e [`primeiro-projeto/incertezas.md`](primeiro-projeto/incertezas.md). A transcrição pública substitui identificadores e omite o trecho não técnico fora do escopo.

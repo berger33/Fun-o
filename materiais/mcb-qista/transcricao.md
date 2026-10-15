@@ -1,0 +1,210 @@
+# Transcrição — MCB - QISTA.mp4
+
+> **Transcrição automática preliminar.** Texto copiado da execução `faster-whisper large-v3` em português; não houve conferência lexical humana nem revisão visual da mídia nesta etapa. Mantive as palavras reconhecidas, sem corrigir termos por inferência. Não use este arquivo isoladamente como instrução operacional.
+
+- **Fonte:** `MCB - QISTA.mp4` — 543851523 bytes; SHA-256 `5e9d76d88342fd82a697eaf4f65f52a9e50bd22aa2416b63ac40e889c8fa11a0` (verificação registrada na execução anterior; bytes não baixados/re-hashados neste lote).
+- **Cobertura ASR:** 199 segmentos; primeiro em `00:00:00`; último em `00:15:41.94–00:15:45.12`; áudio declarado de `00:15:46.97`.
+- **Falantes:** não identificados; falas não atribuídas. Comentários laterais também aparecem na transcrição automática.
+- **Limite:** a fonte de áudio/vídeo não foi conferida nesta etapa. Nomes de telas, siglas e códigos são transcrições candidatas; ver [`incertezas.md`](incertezas.md).
+
+## Fala reconhecida (ASR, sem correções inferidas)
+
+[00:00:00] São os agentes.
+[00:00:01] Esses agentes, eles precisam estarem certificados lá na Núclea.
+[00:00:07] E hoje, eles têm meio que uma pontuação, mais ou menos funciona como se fosse a pontuação da CNH, sabe?
+[00:00:16] Então, o limite máximo para eles ali é 20, né?
+[00:00:21] Alguns casos, ele pode ter sido suspendido temporariamente e outros definitivamente.
+[00:00:28] O que a nossa aplicação vai fazer ali no autorizador?
+[00:00:33] Quando a gente vai boletar uma proposta,
+[00:00:36] é isso assim que você é o usuário final lá do banco, tá?
+[00:00:39] Você está ali boletando uma proposta
+[00:00:42] e aí vem ali, você coloca o número do CPF do agente.
+[00:00:48] O que o sistema vai fazer?
+[00:00:49] Quando você colocar o CPF do agente,
+[00:00:51] ele vai consultar um outro módulo, que é o MCB,
+[00:00:55] que é quem cuida dessa parte de agentes, tá?
+[00:00:58] Ele vai lá consultar e vai falar, olha, eu posso dar continuidade nessa proposta para esse agente?
+[00:01:05] Posso. Por quê? Aí vai retornar o status dele.
+[00:01:08] Se a pontuação dele está boa, se não está boa, se está suspensa ou não.
+[00:01:13] Tudo isso é feito através ali da atividade que a gente coloca na esteira.
+[00:01:19] Né? Que é aquele processo que você estava procurando ali, da configuração de processo.
+[00:01:24] Para você acionar essa esteira, você também vai precisar configurar o MCB, né?
+[00:01:34] Por quê? Eu te passei ali a esteira 24, 24, 24.
+[00:01:38] Lá no módulo do MCB, você precisa linkar, né?
+[00:01:42] Porque essas informações, elas precisam casar.
+[00:01:47] Eu falando assim, parece que é um montão de coisa, né?
+[00:01:51] É um monstro.
+[00:01:52] São várias configuraçõezinhas.
+[00:02:04] Isso, ele é um módulo separado.
+[00:02:07] Ele é um...
+[00:02:08] Ah, então.
+[00:02:12] Aí você tem que baixar a API,
+[00:02:14] porque essa comunicação é feita através da API, tá?
+[00:02:19] E do MCB.
+[00:02:22] Luzia, o que eu preciso fazer no MCB?
+[00:02:24] Lá no MCB tem uma configuração de pontuação do agente
+[00:02:29] onde você vai dizer qual é a sua esteira
+[00:02:32] e qual é a sua atividade.
+[00:02:35] Para quê?
+[00:02:35] Para quando você passar no autorizador
+[00:02:38] que acionar a esteira
+[00:02:40] e a atividade correspondente,
+[00:02:43] ele vai lá no MCB,
+[00:02:46] consulte o que você tem na base
+[00:02:48] e traga para o seu autorizador.
+[00:02:52] Entendeu?
+[00:02:54] É claro que a gente pode fazer isso via base também.
+[00:02:57] Você pode, não sei se você tem permissão aí
+[00:02:59] Para fazer alteração na base, tipo insert, update e afins.
+[00:03:06] Mas o contexto todo é esse, tá?
+[00:03:09] Então, vamos pegar ali do primeiro ponto que você falou assim, ó.
+[00:03:14] Entendi que precisa gerar uma proposta, aí você teve problemas para criar cadastro, para simular proposta.
+[00:03:40] Ótimo.
+[00:03:54] Ah, esse é um erro que está na base, tá? Não é aplicação.
+[00:04:00] Esse é um erro que tá lá na Telib, eu tô falando isso porque como eu tinha pego um backup, eu acabei ajustando aqui no meu ambiente.
+[00:04:09] Esse é um erro que tá na base.
+[00:04:13] Aí ele não vai liberar nenhum meio de liberação pra você, beleza?
+[00:04:20] Na Telib.
+[00:04:22] Ah, e você falou, vi também, não consegui consulta de promotora.
+[00:04:26] Ah, essa consulta de promotora
+[00:04:36] Pra dizer se ela é interna ou externa
+[00:04:38] Que tem muita relação com isso
+[00:04:41] É no WebTabelas, tá bom?
+[00:04:46] O WebTabelas
+[00:04:47] Deixa eu ver se eu tenho algum publicado aqui
+[00:04:49] Porque o meu IES tinha
+[00:04:52] Deixa eu ver
+[00:04:54] Eu tive que reinstalar meu IES
+[00:04:59] Porque ele tinha morrido aqui
+[00:05:01] Enquanto ele sobe ali
+[00:05:25] Deixa eu ver aqui
+[00:05:26] Então esse de consulta promotora
+[00:05:29] eu vou até colocar aqui, consulta promotoras, é no web tabelas,
+[00:05:37] vocês sabem que a promotora é uma origem, né?
+[00:05:44] A promotora no sistema, a gente não vai achar uma tabela de promotora,
+[00:05:48] ela é uma das origens, as origens elas são todas separadas pelas teorgs, né?
+[00:05:54] Teorgs é 3O, teorg 1, 2, 3 e 4 e afins.
+[00:05:59] Deixa eu ver aqui, deixa eu mostrar aqui.
+[00:06:03] Ele é um erro que está lá na tabela de liberações.
+[00:06:19] A tabela é a T-Lib.
+[00:06:21] Depois eu vou dar uma olhada aqui para você.
+[00:06:25] Ó, deixa eu compartilhar minha tela aqui com você.
+[00:06:29] É que essa é a minha base local, que eu estou tentando arrumar ela aqui.
+[00:06:35] Então, você vai vir aqui em promotora.
+[00:06:36] Eu acho que aí vai ser a origem 3, tá?
+[00:06:40] Caso não esteja aqui como promotora, ela pode estar como origem 3 aí.
+[00:06:46] Aí, você vem aqui em cadastro de promotora, busca o seu código de promotora, né?
+[00:06:54] Deixa eu ver se eu tô aqui.
+[00:07:18] Ah, é esse aqui que você tá procurando, né?
+[00:07:27] Pra ver se ela é interna ou externa.
+[00:07:35] Tô compartilhando.
+[00:07:42] Isso, aí você vem aqui, ó.
+[00:07:44] Ó, no meu está como promotora, mas pode ser que aí no seu esteja como origem 3, tá?
+[00:07:56] Aí você vem em cadastro de promotora e altera.
+[00:07:59] Eu vou...
+[00:08:01] Vou printar aqui para você.
+[00:08:04] Que aí você já deixa aí como registro.
+[00:08:10] Então, você sabe que ali tem uma validação.
+[00:08:12] Quando ela é interna, o sistema vai ter um comportamento.
+[00:08:16] Quando ela é externa, o sistema tem outro, né?
+[00:08:18] E acho que isso está lá na F, certinho?
+[00:08:22] Tá.
+[00:08:23] Então, beleza.
+[00:08:24] Então, a primeira coisa que você tem que fazer é...
+[00:08:26] É, qual promotora você vai trabalhar?
+[00:08:29] Ah, eu vou trabalhar com a promotora 1.
+[00:08:30] Ela é interna ou ela é externa?
+[00:08:33] Ah, ela é interna.
+[00:08:34] Qual o comportamento que eu espero?
+[00:08:36] Ah, não vai validar a gente?
+[00:08:38] Então, beleza.
+[00:08:40] Você faz ali os cenários.
+[00:08:43] Aí você vai lá e muda, ela é externa.
+[00:08:46] Ok, ela é externa, ela vai validar a gente.
+[00:08:48] Quando ela valida a gente, o que eu espero que ela faça?
+[00:08:52] vai olhar lá o agente
+[00:08:54] o certificado vai trazer a pontuação
+[00:08:56] em tempo de esteira
+[00:08:58] aí você precisa configurar as outras
+[00:09:00] coisas que eu passei
+[00:09:01] tá
+[00:09:03] então
+[00:09:09] é porque esse do quista aí
+[00:09:11] eles liberaram em última né
+[00:09:13] do quista você pode
+[00:09:19] pegar ali ó deixa eu ver se eu
+[00:09:21] o do quista você
+[00:09:23] pode pegar o a nível
+[00:09:25] de teste para fazer essa configuração
+[00:09:27] o que tiver em última do módulo
+[00:09:29] Tá? Pode pegar lá do WebTabelas, pode pegar o do MCB, tá?
+[00:09:39] O do MCB, vamos ver aqui, o Atende está com erro, que lindo.
+[00:09:51] Eu não lembro qual que é o código do Quista, eu pego aqui.
+[00:10:02] Ah, é o 190.
+[00:10:05] Ó, o código de sistema é 061.
+[00:10:08] Aí você vai ter que baixar essa API aqui de consulta de pontuação.
+[00:10:18] A URL dela vai lá no app settings do autorizador, tá?
+[00:10:22] Depois que você publicar ela.
+[00:10:30] Vai lá no app settings do autorizador.
+[00:10:42] E esse é o módulo do MCB, que é onde você vai configurar ali as informações da esteira.
+[00:10:51] Vamos ver se o meu MCB...
+[00:10:53] B, se ele está ativo.
+[00:10:57] Deixa eu ver para onde que eu estou apontando.
+[00:11:06] Porque a minha versão...
+[00:11:08] Ixi, essa daqui, eu nem lembro de quem que é esse daqui.
+[00:11:13] A minha versão não tinha configuração, porque ela era antiga.
+[00:11:17] Vamos ver.
+[00:11:21] Vamos ver se ele vai pegar assim mesmo.
+[00:11:32] O que a...
+[00:11:33] Para direcionar?
+[00:11:41] Ah, eu só troquei a UDL aqui para ele pegar de outro lugar.
+[00:11:44] É que eu já tinha ele publicado aqui
+[00:11:54] Na minha outra versão do IES
+[00:11:57] Só que o meu IES deu pau
+[00:11:58] Eu tive que reinstalar ele
+[00:12:00] Aí agora eu tô publicando um por um
+[00:12:02] Assim, conforme eu vou usando
+[00:12:04] Não sei se o meu MCB vai subir
+[00:12:08] Enquanto isso, deixa eu ver aqui
+[00:12:19] Não sei se é na qual
+[00:12:26] AVR
+[00:12:27] Código de origem
+[00:12:47] Deixa eu ver
+[00:12:52] Vou precisar saber qual é a origem
+[00:12:57] as origens que você tá usando ali.
+[00:13:25] Ai, a minha...
+[00:13:27] Eu tô na função, vai fazer
+[00:13:29] sete anos.
+[00:13:34] Vai fazer sete
+[00:13:36] anos já. Eu fiquei
+[00:13:37] cinco anos em
+[00:13:40] projetos, né?
+[00:13:43] E aí tem um ano
+[00:13:44] e pouquinho que eu vim prosseguir.
+[00:13:49] Ó, essa é a minha versão.
+[00:13:52] Ai,
+[00:13:53] nossa!
+[00:13:55] E já tiveram o MCB?
+[00:13:57] Quem tá te apoiando aí?
+[00:14:05] Legal.
+[00:14:07] A minha versão, essa aqui que eu tenho,
+[00:14:10] ele não tem, mas ele vai estar aqui em cadastro.
+[00:14:16] Mas aí, quando você subir, se você quiser,
+[00:14:17] você me manda o link, eu dou uma olhada pra você
+[00:14:19] e eu vou te instruindo.
+[00:14:23] E aí, isso.
+[00:14:29] Vai me mandando que a gente vai fazendo junto
+[00:14:31] e ajustando ponto a ponto.
+[00:14:33] Aí, sobe aí o MCB, a API, tá?
+[00:14:37] E me manda aqui no chat depois quais as origens que você está passando, sabe?
+[00:14:43] A promotora, o órgão, o empregador, tudo certinho?
+[00:14:48] Para eu dar uma olhada aqui para ver se a gente consegue ajustar esse erro do produto não encontrado.
+[00:15:04] Todo mundo um?
+[00:15:16] Tá, me manda que eu vou dar uma olhada, porque são três tabelas que elas têm correlação
+[00:15:22] e alguma coisa está quebrando aí.
+[00:15:27] Aí eu dou uma olhada aqui.
+[00:15:29] Beleza?
+[00:15:30] imagina, qualquer coisa você chama
+[00:15:34] aí me manda, tá?
+[00:15:40] tá jóia, então
+[00:15:41] nada, até mais, tchau, tchau

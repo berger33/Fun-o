@@ -1,0 +1,263 @@
+# Transcrição automática — Primeiro projeto.mp4
+# modelo: large-v3 | idioma: pt | segmentos: 274
+# ATENÇÃO: transcrição automática é insumo, não verdade. Revise termos técnicos,
+# nomes, números e jargões antes de publicar qualquer derivado.
+# Cópia sanitizada: identificadores de cliente/ambiente minimizados; fala fora do escopo omitida.
+# Ver materiais/primeiro-projeto/incertezas.md para timestamps e escopo da omissão.
+
+[00:00:00] B, sem o número de proposta.
+[00:00:02] E antes era só com o número de proposta.
+[00:00:03] Aí essa vai ser a mudança que você vai testar.
+[00:00:06] Aí o que eu indico você a fazer?
+[00:00:08] Você abaixar um autorizador, fora a aplicação que está na ficha, né?
+[00:00:12] Um autorizador, você baixa um subsite consignado, por exemplo.
+[00:00:16] Faz a digitação, testa e digita uma proposta.
+[00:00:21] Digitando com o número da proposta e uma requisição da API sem o número da proposta.
+[00:00:27] para ver como está funcionando e se não quebrou nada do código.
+[00:00:33] Aí está descrito aqui no objetivo,
+[00:00:36] possibilitar a consulta e download dos documentos anexados no GED
+[00:00:40] para operações com ou sem proposta vinculada.
+[00:00:44] Aí aqui ele vai buscar o documento para as operações com ou sem proposta.
+[00:00:52] Aí atualmente a Web API documentos anexados
+[00:00:55] permite a consulta e download de documentos no GED
+[00:00:59] utilizando somente o número da proposta, que é o que já tem.
+[00:01:02] Essas aqui são as implementações, eu acabo não lendo.
+[00:01:05] Vamos ler só os objetivos, mas se você quiser, você pode ler tudo da EF,
+[00:01:10] porque a tela não é muito grande, só tem oito páginas.
+[00:01:15] Deixa eu ver, necessidade.
+[00:01:17] Implementar mecanismo que permita consultar e anexar documentos
+[00:01:21] diretamente à operação, sem exigir que exista uma proposta vinculada.
+[00:01:25] Implementar mecanismo que permita constar e anexar documentos direto à operação.
+[00:01:31] Ah, é direto na operação que vai anexar um documento. Interessante.
+[00:01:37] Implementar na plataforma de serviços, no módulo autorizador, na web API de documentos anexados, um novo endpoint.
+[00:01:44] O novo endpoint seria esse método aqui, olha.
+[00:01:48] Aqui são os métodos.
+[00:01:50] Esses são os endpoints disponíveis, tipo do meu teste de exemplo
+[00:01:56] E aqui ele vai estar descrito o endpoint que você vai usar
+[00:02:00] Incluir na web API documentos anexados o novo endpoint denominado
+[00:02:06] Documentos anexados simplificado
+[00:02:08] Então você vai testar nesse endpoint aqui
+[00:02:09] Documentos anexados simplificado
+[00:02:12] Aí ele vai estar descrito aqui
+[00:02:14] get, a fim de permitir a listagem dos documentos anexados na operação ou proposta.
+[00:02:25] Estarão presentes no novo endpoint os seguintes parâmetros.
+[00:02:28] Número de proposta, responsável por receber o número da proposta,
+[00:02:32] responsável por receber o número da operação.
+[00:02:35] Aqui, se não tiver constando no autorizador, por exemplo,
+[00:02:38] se não tiver constando só o número da proposta,
+[00:02:41] você vai ter que dar um select aqui na base para achar o número de operação
+[00:02:47] e jogar direto aqui dentro, aqui na requisição.
+[00:02:53] Eu te mandei o select, mas qualquer coisa, se você não achar no meio das coisas que eu te mandei,
+[00:02:57] eu te mando de novo, tá bom?
+[00:03:00] Ó, um funcionamento dos objetos listados acima serão obrigatórios condicionais,
+[00:03:05] ou seja, caso seja informada uma das opções, a outra torna-se opcional.
+[00:03:10] Aí, isso são coisas que você precisa ter em mente para testar.
+[00:03:14] Como um dos dois é obrigatório, o outro tem que ser opcional.
+[00:03:18] Se você colocar o número da proposta e o número da operação,
+[00:03:22] você não conseguir dar requisição e dar erro, por exemplo,
+[00:03:27] ah, está faltando o número da operação, já pode ser um incidente,
+[00:03:30] porque um dos dois tem que ser opcional.
+[00:03:33] E também não pode subir sem nenhum dos dois, por exemplo,
+[00:03:37] sem o número da proposta, sem o número da operação.
+[00:03:39] Se ele der com uma requisição de sucesso, também está errado.
+[00:03:42] Aí você testa, tipo, vários cenários assim que ele não cita, mas que meio que fica implícito, sabe?
+[00:03:50] Pra você ter uma ideia.
+[00:03:52] Ó, em seu retorno será informada uma lista de objetos contendo as informações dos documentos
+[00:03:57] anexados no GED referente à informação do número de proposta ou operação informando anteriormente.
+[00:04:03] Em seu retorno serão retornados os seguintes objetos,
+[00:04:05] ID armazenamento, identificador de armazenamento de arquivo, ID único, nome do arquivo, nome do arquivo e sua extensão.
+[00:04:12] Então, no retorno da requisição, tem que retornar esses três, esses seguintes objetos aqui.
+[00:04:20] Tem que confirmar que eles estão lá.
+[00:04:23] Detalhamento, encontrou-se no anexo 1.
+[00:04:27] Aqui são mais algumas considerações, então você tem que ler isso aqui bem bonitinho,
+[00:04:32] porque essas considerações geralmente citam coisas que precisam estar constando nesse retorno de requisição também.
+[00:04:41] O atual endpoint de documentos anexados realiza a apresentação dos arquivos baseados impreterivelmente no checklist relacionado à proposta.
+[00:04:53] Sendo assim, este novo endpoint de documentos anexos simplificados visa retornar somente as informações dos arquivos anexados no GED,
+[00:05:01] vinculados ao número de proposta ou número da operação.
+[00:05:04] Não será retornado nesse novo endpoint as informações referentes ao checklist da proposta.
+[00:05:09] Aí esse checklist da proposta é outro ponto, mas qualquer coisa eu vou te mostrar agora, que o meu já tá aberto,
+[00:05:20] só pra você ter uma ideia, caso você precise, quando você for ler a EF de novo, caso você precise alterar alguma coisa.
+[00:05:28] Se você tiver que fazer um novo produto, a esteira provavelmente você não vai precisar fazer um novo produto,
+[00:05:35] um novo convênio, ou então quiser só alterar o checklist do seu produto.
+[00:05:40] Você vem aqui em alterar, novos produtos, pega qualquer produto,
+[00:05:51] e aqui está constando o checklist, esse é o checklist que ele cita.
+[00:05:57] É o checklist de cadastro, o de análise e o de pagamento.
+[00:06:00] Aí, por exemplo, eu coloco o mesmo checklist nos três, de exemplo, para não ter erro.
+[00:06:06] E se você quiser editar o checklist, caso precise, você vem aqui em tabelas, checklist, aqui tem os grupos de checklist, mas geralmente você vai usar os que já tem.
+[00:06:18] E aqui são os tipos de checklist, que é o de análise, cadastro e formalização, que eu acabo usando o mesmo para os três, ou colocando só um checklist no cadastro e um na análise, e o de formalização eu deixo para lá, tipo isso.
+[00:06:29] aí ele aparece assim
+[00:06:32] aí você consegue incluir um novo ou utilizar um que já tem
+[00:06:35] eu geralmente utilizo um que já tem
+[00:06:37] porque é menos trabalho
+[00:06:38] e aí quando você digita a proposta
+[00:06:46] ele puxa
+[00:06:46] por exemplo, esse daqui você faz o cadastro do checklist
+[00:06:50] e só seleciona
+[00:06:52] se ele é de análise ou se ele é de formalização
+[00:06:54] deixa eu botar aqui
+[00:06:56] somente as informações
+[00:07:01] dos arquivos anexados
+[00:07:02] não será retornado nesse novo endpoint
+[00:07:05] as informações referentes ao checklist da proposta.
+[00:07:07] As informações do checklist da proposta são
+[00:07:10] análise, cadastro e formalização.
+[00:07:14] Você tem que ver quando a requisição da Web API,
+[00:07:18] você vai retornar alguma coisa referente ao checklist.
+[00:07:22] Por exemplo, algo relacionado à formalização.
+[00:07:26] Se voltar algo relacionado à formalização,
+[00:07:28] pode ser que seja algum erro também,
+[00:07:29] porque está retornando algo do checklist.
+[00:07:32] que não deveria, é isso mesmo.
+[00:07:37] Assim como o funcionamento atual do endpoint e documentos anexados,
+[00:07:41] o código do perfil do GED a ser utilizado para a consulta
+[00:07:44] será o mesmo indicado no app settings config, através da tag perfil gdoc.
+[00:07:50] Ou seja, o perfil do GED será o mesmo utilizado no autorizador.
+[00:07:54] Embora quando uma operação não possua uma proposta vinculada na base da proposta,
+[00:07:59] é imprescindível que exista na base do back-office
+[00:08:02] um número de proposta preenchido. Isso ocorre porque o perfil GED utiliza nesse endpoint é o mesmo do autorizador, cujo identificador principal é o número da proposta.
+[00:08:12] Exemplo, operações de aquisição não possuem proposta cadastrada na função.
+[00:08:17] Não é necessário informar o número da proposta na entrada dos endpoints junto ao número da operação,
+[00:08:21] pois ao receber o número da operação, o sistema fará internamente a busca pelo número da proposta correspondente cadastrada no back-office.
+[00:08:29] Então, esse basicamente é aquele primeiro ponto lá.
+[00:08:32] Ou você faz com o número da proposta, ou você faz com o número da operação.
+[00:08:36] Mas você tem que testar com os dois, para ver se não quebrou nada.
+[00:08:42] Implementar na plataforma o serviço do módulo autorizador, anexo.
+[00:08:46] Ah, aqui são mais um endpoint, que você vai ter que dar mais uma litinha.
+[00:08:51] O novo parâmetro denominado, número operação, a fim de possibilitar o download.
+[00:08:55] Ou será requisitado pela API as seguintes informações?
+[00:09:00] Essas são os adendos aqui.
+[00:09:01] Aqui é como vai ficar a Web API.
+[00:09:06] É como se fosse um exemplo.
+[00:09:09] Aí você consegue ter uma ideia visual de como ele fica também.
+[00:09:16] Mas de modo geral é isso.
+[00:09:18] Aí o que você vai precisar baixar nesse teste?
+[00:09:20] Um autorizador da função, um subsite,
+[00:09:24] provavelmente você vai baixar o subsite consignado,
+[00:09:26] É um subsite
+[00:09:29] E você vai ter que baixar um Gdoc
+[00:09:31] Então eu vou te mandar aqui
+[00:09:34] Uma listinha das coisas que você precisa baixar
+[00:09:36] Fala só uma aplicação
+[00:09:42] Que você vai ter que baixar
+[00:09:44] Que vai ser a única que vai ter alteração
+[00:09:46] Assim que vai ser a do teste
+[00:09:47] Que é a da Web API
+[00:09:49] A de resto
+[00:09:51] É aquele negócio que eu te expliquei
+[00:09:54] Que a gente tem que lembrar
+[00:09:55] Como a gente vai fazer o caminho do teste
+[00:09:58] Então a gente monta o nosso ambiente
+[00:10:00] do teste, por assim dizer
+[00:10:02] eles só mandam
+[00:10:04] aquilo que vai ser alterado, aí de resto
+[00:10:05] a gente tem que montar na nossa cabeça
+[00:10:07] o que a gente vai precisar usar pra isso
+[00:10:10] aí o que você vai baixar aqui
+[00:10:14] vai ser um autorizador
+[00:10:15] um subsite por hora
+[00:10:17] e...
+[00:10:19] siga provavelmente
+[00:10:20] e um gdoc
+[00:10:22] você pode tentar pesquisar assim no .net
+[00:10:27] e aí o que você faz? Você pega
+[00:10:29] pode pegar geralmente as versões
+[00:10:31] mais atualizadas que estiverem
+[00:10:33] aprovadas. Ou se não tiver nenhuma
+[00:10:35] versão aprovada, pode pegar as mais recentes
+[00:10:37] mesmo, pra fazer o teste.
+[00:10:42] E se o cliente
+[00:10:42] funcionou, porque aqui na ficha tá o cliente
+[00:10:44] [IDENTIFICADOR DE CLIENTE OMITIDO], aí você pode usar como
+[00:10:46] base ele mesmo.
+[00:10:49] Aí o que você vai fazer?
+[00:10:50] Você vai fazer aquele esquema. Pegar o número
+[00:10:52] do seu projeto,
+[00:10:55] esse aqui,
+[00:10:59] vir em relatórios, gerenciais,
+[00:11:01] e jogar na ficha
+[00:11:02] consolidada,
+[00:11:04] e baixar a ficha consolidada e ver a aplicação que você precisa baixar, que é a aplicação do teste.
+[00:11:15] Aí você monta uma pastinha aqui nos seus documentos, monta uma pastinha referente ao seu projeto
+[00:11:22] e você coloca todas as aplicações que você precisa para montar seu ambiente.
+[00:11:26] Sobe tudo no IES e você pode tentar digitar uma proposta, umas duas propostas, pelo menos para testes, no autorizador.
+[00:11:36] Aí você vê se você vai precisar criar um produto ou talvez precise criar uma esteira.
+[00:11:42] E a base que você pode usar nesse projeto, você pode usar a do [BASE DE TESTE OMITIDA].
+[00:11:47] Eu acho que ela está boa para a função.
+[00:11:50] Você consegue utilizar ela, aquela que eu te mandei.
+[00:11:53] Mas de resumo é isso.
+[00:11:54] Você tem alguma dúvida referente ao seu projeto em si?
+[00:12:03] Só no meio do caminho, né?
+[00:12:07] Sim
+[00:12:08] Perfeito, perfeito
+[00:12:19] Aí qualquer dúvida que você tiver, pode mandar
+[00:12:21] Não tem problema não, tá?
+[00:12:22] Porque é muita coisa pra lembrar e é muito vídeo
+[00:12:25] Se você ficar caçando em um por um
+[00:12:27] É até difícil de achar, né?
+[00:12:30] Qualquer coisa você pode ir mandando sim
+[00:12:31] Aí você pode dar mais uma lidinha na F
+[00:12:35] que aí vai ficar mais explicado
+[00:12:38] aí você vai me avisando
+[00:12:39] aí no final do dia você me avisa
+[00:12:41] se você não tiver dúvida, você só me avisa como é que tá o andamento
+[00:12:44] que aí qualquer coisa amanhã
+[00:12:46] eu vejo com você certinho, tá bom?
+[00:12:55] sim
+[00:12:56] ah, beleza
+[00:13:12] a parte de evidenciar
+[00:13:14] eu vou te mandar um
+[00:13:16] arquivinho meu
+[00:13:18] como eu faço os meus
+[00:13:20] só pra você ter uma ideia
+[00:13:22] porque eu sempre coloco
+[00:13:24] gerando a PROC com N
+[00:13:26] a PROC com W, ah, você vai testar
+[00:13:29] o único com W
+[00:13:30] que você vai rodar
+[00:13:32] vai ser a aplicação da ficha, tá?
+[00:13:34] aí você roda com N, com W
+[00:13:36] a aplicação da ficha somente
+[00:13:38] de resto você roda só com N
+[00:13:40] e aí eu vou te mandar um documento
+[00:13:43] de como eu faço só pra você ter uma ideia
+[00:13:45] aí se você ficar com dúvida de como
+[00:13:47] montar, depois você me chama
+[00:13:48] que eu mando um explicadinho pra você
+[00:13:50] porque eu coloco
+[00:13:53] Coloco o tipo de versão, coloco rodando com N, rodando com W, assim, ó, tipo aqui.
+[00:14:01] Regularização com W e coloco versão.
+[00:14:04] Aqui tá até errado.
+[00:14:06] Tem que tá aqui.
+[00:14:08] Ah não, perfeito, aí eu vou te ajudando.
+[00:14:16] O que você vai precisar de mais tirar print vai ser o quê?
+[00:14:20] Rodar com N, rodar com W, que é obrigatório,
+[00:14:23] printar a versão que você tá utilizando e o caminho que você percorreu pra chegar nessa situação.
+[00:14:29] Por exemplo, fiz um cadastro de uma proposta no autorizador para fazer esse teste da API.
+[00:14:35] Você não vai precisar printar todo o processo da proposta, mas você pode printar a proposta já criada.
+[00:14:41] Então, assim, foi criada essa proposta para ser realizado o teste de requisição da API,
+[00:14:48] aí printa, tipo assim que nem eu fiz, a proposta mãe criada, e aí mostra a proposta jogada aqui.
+[00:14:56] e aí você grifa bonitinho para mostrar que a mesma proposta que você criou
+[00:15:00] é a mesma proposta da requisição da API,
+[00:15:02] mostra os cenários que a API está retornando,
+[00:15:06] e printa essa parte, por exemplo, aqui inteira,
+[00:15:09] porque mostra o site que você está usando,
+[00:15:14] que foi disponibilizado, e mostra os métodos também que você está utilizando.
+[00:15:18] É basicamente isso.
+[00:15:20] Mas eu vou te ajudando a montar,
+[00:15:22] mas por enquanto monta só o ambiente e dá uma lida na app
+[00:15:26] para você se ambientar, como é que você consegue fazer.
+[00:15:29] Aí, se você tiver dúvida, é só ir me mandando, tá legal?
+[00:15:39] Isso, isso.
+[00:15:40] Aí, você pode deixar reservado,
+[00:15:41] que vai ser só de uma aplicação que tem na sua ficha.
+[00:15:44] De resto, roda só com N e está de boa.
+[00:15:47] Ah, outra coisa.
+[00:15:48] Esse com W que você vai gerar,
+[00:15:50] me fala se deu certo,
+[00:15:51] porque lembra que toda vez que você estava rodando com W,
+[00:15:55] estava dando um erro estranho?
+[00:15:58] Me fala se deu esse erro de novo,
+[00:16:00] porque se deu, aí eu te chamo de novo
+[00:16:01] para a gente ver o que está acontecendo,
+[00:16:02] Porque tá estranho, mas se for direto, pode ser as versões antigas que eu tava te mandando e tava dando erro mesmo, mas é isso, aí qualquer dúvida você me fala, tá legal?
+[00:16:15] [TRECHO NÃO TÉCNICO FORA DO ESCOPO OMITIDO]

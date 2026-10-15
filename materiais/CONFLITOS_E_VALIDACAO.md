@@ -1,6 +1,6 @@
 # Conflitos e validações pendentes
 
-Atualizado em **2026-10-13**.
+Atualizado em **2026-10-14**.
 
 ## Conflitos entre gravações
 
@@ -59,3 +59,46 @@ Detalhes e evidências em [`jonas-ept-explicacao/incertezas.md`](jonas-ept-expli
 2. **Literais de número de proposta ilegíveis:** `CSNRPROP` na grade (`000033264` aproximado; leituras alternativas `000003264`/`800033264`) e filtros `8??83216?`/`8??8321??`/`8??83288?` no editor — não confirmados quadro a quadro; **não usar como referência numérica**.
 3. **Finalidade das tabelas `CLOGREFIN`, `CLOGREFIND`, `EREAPSEG`, `CCOMP` (`FCSPROPEMPR`):** consultas preparadas no editor, sem execução ou explicação na gravação.
 4. **Ajuste do número da proposta no envio ao sistema externo (`00:09:31`–`00:09:39`):** citado como "a única coisa que a gente tem que ajustar", sem detalhamento (EPT, relatório ou payload).
+
+## Pendências de `Gravando 2026-07-08 182343.mp4` (2026-10-14)
+
+Detalhes em [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
+
+1. **Exclusão de arquivos/configuração (`00:00:33` × `00:02:34`):** falas incompatíveis sobre preservar ou apagar `config`; mais adiante, o interlocutor recomenda backup (`00:03:09`–`00:03:24`). **Não executar exclusão** até confirmação por responsável técnico e runbook vigente.
+2. **Matriz WebAutorizador/WS/API/SIC (`00:02:04`–`00:04:27`):** relação entre componentes e exceção de atualização não foram demonstradas; “AWS” pode ser reconhecimento incorreto. Confirmar nomes, dependências e versões.
+3. **Opção “N” e erro genérico (`00:03:41`, `00:04:29`–`00:04:39`):** contexto e efeito não comprovados; não tratar como padrão seguro.
+4. **Importação da esteira/teste de tolerância (`00:05:48`–`00:08:03`):** sistema, arquivo, destino, campos e critério de sucesso ausentes; números falados não devem ser reutilizados como regras.
+5. **Cobertura:** o ASR termina em `00:08:20.29`; detector de silêncio a `-42 dB` aponta silêncio a partir de aproximadamente `00:08:28`, mas não houve escuta humana integral nem inspeção visual quadro a quadro. Manter estado `em revisão`.
+
+## Pendências de `MICHELLE CTC PORTABILIDADE REFIN.mp4` (2026-10-14)
+
+Detalhes e timestamps em [`michelle-ctc-portabilidade-refin/incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md).
+
+1. **Diagrama de outro cliente:** não é especificação do alvo C6; obter e validar a configuração vigente antes de reutilizar qualquer etapa.
+2. **Esteiras dependentes ou independentes:** a conversa oscila entre avanço coordenado/aguarda validação do refim e avanço independente; definir com negócio os status e condições de bloqueio/liberação.
+3. **Nomes e sequência das etapas:** “CTC aciona refim”, “aguarda alteração unificada” e “aguarda análise de refim de portabilidade” são rótulos aproximados/alternativos, sem confirmação em tela.
+4. **Criação e vínculo de propostas:** esclarecer se o cenário gera automaticamente duas propostas, como tratar múltiplas portabilidades e quais produtos/convênios/esteiras são aplicáveis.
+5. **Limite do teste CTC:** sugestão de pular CTC decorre de indisponibilidade durante aquela discussão; não é autorização para contornar integração/controles em produção.
+6. **Cobertura da fonte:** 388 segmentos ASR; mídia, tela e desenho não foram revisados visualmente nesta etapa. Manter estado **em revisão** até conferência humana e validação técnica.
+
+## Pendências de `MCB - QISTA.mp4` (2026-10-14)
+
+Detalhes e timestamps em [`mcb-qista/incertezas.md`](mcb-qista/incertezas.md).
+
+1. **Pontuação/certificação:** escala, limite, estados e suspensão são falas ASR, não regra técnica ou de negócio verificada.
+2. **Consulta MCB:** confirmar atividade de esteira, vínculo de configuração, versão/contrato da API, resposta e efeito na proposta. URL/segredos ausentes e não devem ser inferidos.
+3. **Promotora interna/externa:** comportamento de validação apenas sugerido; obter critério oficial e resultados esperados.
+4. **Nomes e códigos:** “T-Lib”/“Telib”, “TEORGS”, “Origem 3”, QISTA e códigos `190`/`061` precisam de conferência; não usar como parâmetro.
+5. **Erro “produto não encontrado”:** menção a três tabelas correlacionadas sem identificação, causa ou consulta. Não realizar alteração de base.
+6. **Cobertura:** transcrição `large-v3` com 199 segmentos; vídeo/telas não foram revisados visualmente nem escutados nesta etapa. Manter estado **em revisão**.
+
+## Pendências de `Primeiro projeto.mp4` (2026-10-14)
+
+Detalhes e timestamps em [`primeiro-projeto/incertezas.md`](primeiro-projeto/incertezas.md).
+
+1. **Parâmetros proposta/operação:** confirmar se basta um, se ambos são aceitos, precedência para vínculos divergentes e erro quando nenhum é informado.
+2. **GED/back-office:** validar a resolução interna operação→proposta e comportamento quando o vínculo não existir; confirmar perfil/chave GED.
+3. **Retorno/checklist/download:** confirmar nomes dos campos e se o endpoint simplificado exclui todo o checklist; identificar se o download usa outro endpoint ou parâmetro.
+4. **Ambiente/evidência:** versões aprovadas e opções “N/W” não foram definidas; não transformar recomendação oral em procedimento de implantação.
+5. **SQL:** somente um `SELECT` é mencionado, sem texto/tabelas; nenhuma consulta é reproduzida ou autorizada por esta gravação.
+6. **Sanitização/cobertura:** identificador de cliente e nome de base foram substituídos por marcadores; segmento não técnico entre `00:16:15.94–00:17:48.66` foi omitido. Fonte, EF e telas não foram revisadas neste lote; manter **em revisão**.
