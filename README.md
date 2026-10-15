@@ -27,6 +27,8 @@ Os índices transversais em `materiais/` conectam gravações, consultas SQL, si
 | `python3 tools/validar_materiais.py` | Auditoria do §6 do plano: arquivos obrigatórios, metadados, timestamps, perguntas, links e varredura de privacidade (CPF/CNPJ, e-mail, telefone, segredos). Nunca imprime o valor sensível encontrado. Saída: 0 ok, 1 falhas, 2 achado de privacidade. |
 | `python3 tools/transcrever.py --video "ARQUIVO.mp4"` | Transcreve com timestamps (`faster-whisper`), gerando `transcricao_bruta.txt`, `.srt`, `.vtt` e `transcricao_meta.json`. Precisa dos pesos do modelo — rode no runner do CI. |
 | `python3 tools/reconstruir_videos.py` | Reconstrói os quatro vídeos divididos (exige todas as partes). |
+| `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`): reúne guias, procedimentos, glossários, perguntas, pendências, índices e trilhas, com busca, navegação e impressão. Remove nomes de arquivo, ligações internas e jargão de controle do acervo **antes** de escrever a saída — e falha se algum resquício passar. |
+| `python3 tools/servir_material.py` | Serve o material gerado em `0.0.0.0:8000` (rota `/download` para baixar o arquivo). Não expõe nada além da pasta de saída; listagem de diretório desativada. |
 
 As duas verificações rodam automaticamente em cada push/PR pelo workflow `.github/workflows/auditar-materiais.yml`, que faz checkout **sem** baixar LFS.
 
@@ -36,6 +38,21 @@ Workflows auxiliares para ambientes sem acesso ao host de conteúdo do LFS (uma 
 - `.github/workflows/transcrever-gravacao.yml` — transcreve **uma** gravação com timestamps e publica o texto no mesmo tipo de ramo temporário (os pesos do modelo são alcançáveis no runner).
 
 **Materiais restritos** (documentação interna, informação de cliente, nomes/imagens de pessoas) **não** devem ser publicados neste repositório: mantenha-os em área privada fora do Git e registre a pendência em `materiais/CONFLITOS_E_VALIDACAO.md` sem revelar o conteúdo.
+
+## Material de estudo em HTML (leitura e download)
+
+Para ler o acervo inteiro como um só documento — e não como dezenas de arquivos — gere a base de
+conhecimento:
+
+```bash
+python3 tools/gerar_base_conhecimento_html.py     # cria saida/index.html
+python3 tools/servir_material.py                  # serve em http://localhost:8000
+```
+
+O documento é **autocontido** (CSS e busca embutidos, sem dependência de rede), tem índice lateral,
+busca instantânea, blocos recolhíveis e estilo de impressão. Ele não cita nomes de arquivos nem
+ligações internas: as fontes aparecem por rótulo descritivo com selos de categoria e de
+confiabilidade. A pasta `saida/` é artefato de build e **não** entra no Git.
 
 ## Fontes textuais (conversas de trabalho)
 

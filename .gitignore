@@ -16,3 +16,6 @@ __pycache__/
 
 # Conversas brutas de trabalho com identificadores diretos
 /conversas-brutas/
+
+# Material de estudo gerado (HTML autocontido) — artefato de build
+/saida/
