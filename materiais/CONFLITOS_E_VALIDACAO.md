@@ -179,3 +179,18 @@ Detalhes em [`clientsecret-ewen-treinamento/incertezas.md`](clientsecret-ewen-tr
 6. **Direitos por rotina:** sequência e opções `A`/`M` dependem da versão; validar com a matriz e o runbook atual. Nenhuma mudança foi executada.
 7. **CTC/CIP:** menção é introdutória; o interlocutor diz que testou pouco. Obter EF/fluxo oficial antes de elaborar cenários.
 8. **Cobertura/privacidade:** ASR sem VAD (649 segmentos), sem revisão audiovisual. TXT/SRT/VTT não incluem valor literal reconhecível de segredo, mas não permitem afirmar o que aparece nas telas. A transcrição integral preserva conversa pessoal, inclusive autodeclaração de saúde, conforme instrução registrada na nota de privacidade §13.
+
+
+## Pendências de `explicacao mesa c6.mp4` (2026-10-15)
+
+Detalhes em [`explicacao-mesa-c6/incertezas.md`](explicacao-mesa-c6/incertezas.md).
+
+1. **Configuração de pastas:** a fala diz apagar tudo exceto `config`, depois preservar a pasta, e alterna entre alterar/excluir; bloquear qualquer implantação sem runbook versionado, inventário do ambiente, backup e rollback.
+2. **Máquina/base/UDL:** há bases local e de servidor com caminhos/login distintos e mais de um teste concorrente. Host, proprietário, UDL, credenciais e destino não foram confirmados; não utilizar os rótulos ASR como conexão.
+3. **EPT/EF:** validar o exemplo de recálculo, os processos citados, o parâmetro, fórmula/limites, template e critérios de aceite na EF vigente. Não presumir que o exemplo descrito seja regra atual.
+4. **Treinamento/fluxo de teste:** sequência de produto, convênio, esteira, proposta, API e ordem simulação/inclusão precisa ser conferida com material oficial; nenhum teste ocorreu.
+5. **Evidências:** esclarecer política de prints, timestamp, armazenamento/compartilhamento, dados permitidos e aprovação antes de qualquer publicação.
+6. **ASR:** saída sem VAD contém quatro cues “Legenda Adriana Zanotto” (`00:13:10–00:14:40`) e grafias incertas; verificar na fonte, ainda não revisada.
+7. **Cobertura:** áudio `00:57:41.57`, último cue `00:57:29.58`; outros intervalos não reconhecidos e `duracao_transcricao_s: 2802.8` sem definição. Não inferir silêncio.
+8. **Privacidade e acesso:** há nomes internos, rótulos de máquina/pasta e menção genérica a login/senha; nenhum valor literal de credencial foi reconhecido no ASR. Como vídeo/telas não foram revisados, informação visual adicional continua desconhecida. Transcrição mantida conforme §13.
+9. **SQL:** não há consulta literal reconhecida; menção a tabela/C-Oper não basta para criar ou executar query.

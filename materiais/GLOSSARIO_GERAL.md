@@ -178,3 +178,17 @@ Fonte: [`projeto-ept/glossario.md`](projeto-ept/glossario.md) e [`projeto-ept/me
 - **CTC / CIP:** integração de portabilidade descrita verbalmente por troca de arquivos; interlocutor relata pouca experiência/teste, sem fluxo validado.
 
 Ver [`clientsecret-ewen-treinamento/glossario.md`](clientsecret-ewen-treinamento/glossario.md), [`clientsecret-ewen-treinamento/incertezas.md`](clientsecret-ewen-treinamento/incertezas.md) e a nota de privacidade §§13, 16. A transcrição integral preserva conversa pessoal conforme instrução do responsável.
+
+
+## Termos de `explicacao mesa c6.mp4` (ASR não validado)
+
+- **CQ:** equipe de controle de qualidade referida na conversa; funções e fluxo atuais não confirmados.
+- **EF / EPT / “IPT”:** especificação funcional e plano de testes discutidos; grafia/estrutura do artefato variam no ASR e devem seguir o template oficial.
+- **Planner / Gantt / sprint / planning / daily:** ferramentas/reuniões citadas para organizar projetos, tarefas e alinhamento; cadência e processo não validados.
+- **Autorizador / Empregador:** módulos que o interlocutor descreve como relacionados; configuração e arquitetura não conferidas.
+- **Esteira / averbação:** fluxo de proposta mencionado no treinamento; sequência depende da EF vigente.
+- **`config` / UDL / base local ou servidor:** nomes/termos do relato de pastas e ambientes; há instruções conflitantes e nenhum acesso foi verificado.
+- **Geradoc / Test API / C-Oper:** ferramentas/rotinas referidas verbalmente; versão, função e grafia não confirmadas, nenhuma chamada/query executada.
+- **“Legenda Adriana Zanotto”:** frase reconhecida pelo ASR em quatro cues; origem não confirmada.
+
+Fonte: [`explicacao-mesa-c6/glossario.md`](explicacao-mesa-c6/glossario.md); uso operacional bloqueado até revisão da fonte e runbook.

@@ -1,0 +1,4183 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.340
+Às vezes tem alguma implementação que ela implementa em vários módulos, não só no autorizador.
+
+00:00:07.060 --> 00:00:14.000
+E para aquilo funcionar, a gente precisa também estar configurando nesses outros módulos para a gente fazer a nossa parte.
+
+00:00:14.600 --> 00:00:20.620
+Então, a gente não precisa necessariamente testar aquele outro módulo, mas a gente precisa saber configurar eles.
+
+00:00:21.620 --> 00:00:27.640
+Então, por exemplo, quando chegou o empréstimo privado, que é o do trabalhador,
+
+00:00:27.640 --> 00:00:30.500
+Ter implementação no autorizador
+
+00:00:30.500 --> 00:00:32.140
+No empregador, várias coisas
+
+00:00:32.140 --> 00:00:34.140
+E se você não tivesse
+
+00:00:34.140 --> 00:00:36.500
+Configurado
+
+00:00:36.500 --> 00:00:37.600
+No empregador
+
+00:00:37.600 --> 00:00:39.820
+Você não conseguia usar as coisas
+
+00:00:39.820 --> 00:00:41.740
+Da maneira correta no autorizador
+
+00:00:41.740 --> 00:00:42.680
+Entendeu? Porque
+
+00:00:42.680 --> 00:00:45.540
+O empregador e o autorizador
+
+00:00:45.540 --> 00:00:47.020
+Eles se conversam muito, sabe?
+
+00:00:49.280 --> 00:00:50.680
+Então, me fala
+
+00:00:50.680 --> 00:00:52.520
+Da parte de averbação, né?
+
+00:00:52.520 --> 00:00:55.000
+Que eles te ensinaram lá no empregador
+
+00:00:55.000 --> 00:00:56.720
+O que seria
+
+00:00:56.720 --> 00:00:59.500
+Essa parte aqui é a verbação que os estimulantes te falaram
+
+00:00:59.500 --> 00:01:17.920
+Entendi, legal
+
+00:01:17.920 --> 00:01:24.100
+Entendi
+
+00:01:26.720 --> 00:01:42.560
+Então essa parte você sabe fazer
+
+00:01:42.560 --> 00:01:45.120
+Tá
+
+00:01:45.120 --> 00:01:53.120
+Entende?
+
+00:01:53.120 --> 00:01:55.120
+Aqui por exemplo
+
+00:01:55.120 --> 00:01:55.900
+Aqui na
+
+00:01:55.900 --> 00:01:57.520
+no C6
+
+00:01:57.520 --> 00:02:00.300
+eu nunca tive que desaverbar
+
+00:02:00.300 --> 00:02:00.980
+uma proposta
+
+00:02:00.980 --> 00:02:03.520
+eu nem sabia que dava pra fazer isso
+
+00:02:03.520 --> 00:02:05.460
+mas já que você tá falando, eu acredito
+
+00:02:05.460 --> 00:02:08.600
+mas, por exemplo, quando a gente vai
+
+00:02:08.600 --> 00:02:10.360
+vai averbar
+
+00:02:10.360 --> 00:02:12.200
+a proposta, a gente tem que
+
+00:02:12.200 --> 00:02:14.560
+ter o plugin rodando na base
+
+00:02:14.560 --> 00:02:16.540
+e aí passa pelo processo de esteira
+
+00:02:16.540 --> 00:02:18.660
+de averbação, espera rodar
+
+00:02:18.660 --> 00:02:19.920
+e pronto
+
+00:02:19.920 --> 00:02:21.660
+segue o barco
+
+00:02:21.660 --> 00:02:24.460
+eu nunca tive esse processo
+
+00:02:24.460 --> 00:02:26.020
+e eu não sei
+
+00:02:26.020 --> 00:02:28.420
+nem pra que que a pessoa precisaria
+
+00:02:28.420 --> 00:02:30.400
+fazer isso, mas enfim
+
+00:02:30.400 --> 00:02:31.720
+é
+
+00:02:31.720 --> 00:02:34.200
+tô falando porque, tipo assim, eu
+
+00:02:34.200 --> 00:02:35.900
+da experiência que eu tenho, também
+
+00:02:35.900 --> 00:02:38.560
+não sei tudo disso, entendeu, o que eu conheço
+
+00:02:38.560 --> 00:02:40.240
+mesmo é o truncador, porque é o que a gente vê
+
+00:02:40.240 --> 00:02:42.060
+mais aqui, né
+
+00:02:42.060 --> 00:02:44.380
+mas só pra reforçar então
+
+00:02:44.380 --> 00:02:46.340
+que a gente precisa saber configurar algumas
+
+00:02:46.340 --> 00:02:48.400
+coisas, entendeu, mas
+
+00:02:48.400 --> 00:02:50.200
+não que a gente tenha que
+
+00:02:50.200 --> 00:02:52.520
+testar aquilo ou saber muito
+
+00:02:52.520 --> 00:02:54.340
+profundo, sabe, sobre
+
+00:02:54.340 --> 00:02:56.340
+esses outros módulos, que são só coisas
+
+00:02:56.340 --> 00:02:58.640
+que vai implementar
+
+00:02:58.640 --> 00:02:59.860
+né, vai tá
+
+00:02:59.860 --> 00:03:02.380
+vai tá integrando aí com o
+
+00:03:02.380 --> 00:03:04.240
+autorizador, mas enfim
+
+00:03:04.240 --> 00:03:05.600
+é
+
+00:03:05.600 --> 00:03:08.540
+e você chegou a fazer algum
+
+00:03:08.540 --> 00:03:09.460
+treinamento no
+
+00:03:09.460 --> 00:03:12.540
+na equipe do autorizador, quando você tava lá?
+
+00:03:17.780 --> 00:03:18.340
+é
+
+00:03:18.340 --> 00:03:18.820
+é
+
+00:03:24.340 --> 00:03:34.020
+pra Claire, no caso
+
+00:03:34.020 --> 00:03:36.480
+o treinamento do primeiro mês
+
+00:03:36.480 --> 00:03:37.640
+quando você acaba de estar na função
+
+00:03:37.640 --> 00:03:40.640
+não, eu tô falando na equipe do Guilherme
+
+00:03:40.640 --> 00:03:42.440
+você teve algum treinamento de autorizador?
+
+00:03:54.340 --> 00:04:08.140
+tá
+
+00:04:08.140 --> 00:04:10.560
+eu tenho
+
+00:04:10.560 --> 00:04:12.540
+eu vou te passar um treinamento então
+
+00:04:12.540 --> 00:04:14.300
+eu tenho um treinamento aqui bem
+
+00:04:14.300 --> 00:04:16.160
+bem completinho de
+
+00:04:16.160 --> 00:04:18.020
+como cadastrar
+
+00:04:18.020 --> 00:04:20.180
+como criar uma esteira, como criar um produto
+
+00:04:20.180 --> 00:04:21.640
+criar um convênio
+
+00:04:21.640 --> 00:04:23.640
+atelar eles todos
+
+00:04:23.640 --> 00:04:27.180
+e aí você vai dar essas informações
+
+00:04:27.180 --> 00:04:28.580
+pra poder criar uma proposta
+
+00:04:28.580 --> 00:04:31.080
+e aí você vai bater
+
+00:04:31.080 --> 00:04:32.460
+na base essas informações
+
+00:04:32.460 --> 00:04:34.500
+vai passar por plugin e tal
+
+00:04:34.500 --> 00:04:36.700
+são várias coisinhas que você vai criar, vai criar esteira
+
+00:04:36.700 --> 00:04:38.580
+vai incluir um processo na esteira
+
+00:04:38.580 --> 00:04:40.800
+que aí você vai entender
+
+00:04:40.800 --> 00:04:42.980
+o fluxo do que é um autorizador
+
+00:04:42.980 --> 00:04:44.060
+tá, tipo assim
+
+00:04:44.060 --> 00:04:46.500
+do que você precisa pra poder fazer aquilo
+
+00:04:46.500 --> 00:04:48.700
+porque aqui a gente
+
+00:04:48.700 --> 00:04:50.720
+já tem tudo pronto, né
+
+00:04:50.720 --> 00:04:52.980
+porque a gente, a base
+
+00:04:52.980 --> 00:04:54.680
+A base é nossa, só a gente usa
+
+00:04:54.680 --> 00:04:55.900
+Entende? Então
+
+00:04:55.900 --> 00:04:59.120
+Você não tem aquele problema de, pô, você criou um negócio ontem
+
+00:04:59.120 --> 00:05:00.880
+Ou você mexeu o negócio
+
+00:05:00.880 --> 00:05:03.180
+E aí você fica com aquele receio
+
+00:05:03.180 --> 00:05:04.760
+De que amanhã não vai estar mais funcionando
+
+00:05:04.760 --> 00:05:06.080
+Porque alguém mexeu, sabe?
+
+00:05:07.220 --> 00:05:07.620
+Aqui
+
+00:05:07.620 --> 00:05:10.280
+Só tem a gente que usa
+
+00:05:10.280 --> 00:05:12.560
+Então se alguém mexeu, vai ser
+
+00:05:12.560 --> 00:05:14.520
+Alguém de nós, então é mais fácil também
+
+00:05:14.520 --> 00:05:16.320
+Que você saiba que o cara mexeu, porque que mexeu
+
+00:05:16.320 --> 00:05:17.540
+E tudo mais, entendeu?
+
+00:05:21.180 --> 00:05:21.540
+É
+
+00:05:21.540 --> 00:05:27.740
+Mas antes de eu te passar, eu vou te falar um pouco sobre o nosso fluxo de trabalho aqui da mesa.
+
+00:05:29.040 --> 00:05:33.320
+Pra você entender que a gente não é como é a fábrica, né?
+
+00:05:33.640 --> 00:05:38.040
+A gente tem um contato com o pessoal de dev e o pessoal de negócios.
+
+00:05:38.140 --> 00:05:40.920
+Você sabe o que cada um faz? Qual que é a diferença de um pra outro?
+
+00:05:41.920 --> 00:05:42.940
+De dev e negócios?
+
+00:05:45.600 --> 00:05:47.300
+Dev é o cara que programa, né? Obviamente.
+
+00:05:47.300 --> 00:05:50.140
+O cara vai programar o software e tudo mais.
+
+00:05:50.140 --> 00:05:53.040
+e a galera de negócios
+
+00:05:53.040 --> 00:05:54.600
+é o cara que escreve
+
+00:05:54.600 --> 00:05:56.620
+a especificação, que escreve a EF
+
+00:05:56.620 --> 00:05:58.260
+certo? então aquilo
+
+00:05:58.260 --> 00:05:59.640
+aquele documento que você lê
+
+00:05:59.640 --> 00:06:02.020
+ah, noturizador, não sei o que lá
+
+00:06:02.020 --> 00:06:04.620
+alguém escreveu aquilo
+
+00:06:04.620 --> 00:06:06.680
+certo? alguém pensou
+
+00:06:06.680 --> 00:06:08.260
+naquela solução, naquele problema
+
+00:06:08.260 --> 00:06:10.700
+do cliente, certo?
+
+00:06:11.200 --> 00:06:12.540
+e quem pensou nisso
+
+00:06:12.540 --> 00:06:14.020
+foi a galera de negócios
+
+00:06:14.020 --> 00:06:16.600
+entendeu? então por vezes acontece
+
+00:06:16.600 --> 00:06:18.640
+a gente pega um projeto
+
+00:06:18.640 --> 00:06:21.100
+longo, talvez nem precisa
+
+00:06:21.100 --> 00:06:22.920
+ser longo, né, mas a gente
+
+00:06:22.920 --> 00:06:24.920
+não entendeu bem como
+
+00:06:24.920 --> 00:06:26.960
+que tem que funcionar tal parte, sabe
+
+00:06:26.960 --> 00:06:28.400
+ou por exemplo
+
+00:06:28.400 --> 00:06:30.500
+entendemos, né
+
+00:06:30.500 --> 00:06:32.380
+mas tá diferente
+
+00:06:32.380 --> 00:06:35.100
+e aí a gente manda pro dev
+
+00:06:35.100 --> 00:06:37.060
+falando que tá errado e o dev fala
+
+00:06:37.060 --> 00:06:38.880
+meu, mas tá diferente
+
+00:06:38.880 --> 00:06:40.180
+de não sei da onde
+
+00:06:40.180 --> 00:06:42.980
+aí a gente faz a reunião, negócios
+
+00:06:42.980 --> 00:06:44.740
+a gente e dev
+
+00:06:44.740 --> 00:06:46.900
+pra poder saber qual
+
+00:06:46.900 --> 00:06:48.060
+realmente é a parte certa
+
+00:06:48.060 --> 00:06:51.160
+porque a gente tem que levar a F
+
+00:06:51.160 --> 00:06:53.020
+como a bíblia, tem que ser a lei ali
+
+00:06:53.020 --> 00:06:53.840
+o negócio certo
+
+00:06:53.840 --> 00:06:56.740
+então se
+
+00:06:56.740 --> 00:06:58.520
+está diferente da F
+
+00:06:58.520 --> 00:07:01.360
+logo é incidente, porém tem casos que não
+
+00:07:01.360 --> 00:07:02.140
+tem casos que
+
+00:07:02.140 --> 00:07:04.840
+a F está errada, sabe, porque
+
+00:07:04.840 --> 00:07:07.360
+tem que ser de tal ou de outra
+
+00:07:07.360 --> 00:07:09.200
+maneira, porque a maneira que está
+
+00:07:09.200 --> 00:07:10.760
+escrito lá é inviável, por exemplo
+
+00:07:10.760 --> 00:07:13.360
+enfim, então a gente tem
+
+00:07:13.360 --> 00:07:15.160
+um contato muito maior com essas
+
+00:07:15.160 --> 00:07:17.260
+pessoas, a gente pode mandar mensagem
+
+00:07:17.260 --> 00:07:18.260
+diretamente pra elas
+
+00:07:18.260 --> 00:07:21.200
+a gente consegue fazer reuniões
+
+00:07:21.200 --> 00:07:22.960
+com elas pra poder alinhar
+
+00:07:22.960 --> 00:07:25.440
+pontos de projeto
+
+00:07:25.440 --> 00:07:26.100
+e tudo mais
+
+00:07:26.100 --> 00:07:28.240
+e
+
+00:07:28.240 --> 00:07:32.120
+enfim
+
+00:07:32.120 --> 00:07:34.800
+por exemplo, deixa eu
+
+00:07:34.800 --> 00:07:36.640
+compartilhar pra você
+
+00:07:36.640 --> 00:07:40.960
+vou te mostrar algumas coisas
+
+00:07:47.260 --> 00:07:48.620
+Está vendo a minha tela?
+
+00:07:56.920 --> 00:08:00.720
+A gente trabalha aqui com o Planner.
+
+00:08:01.560 --> 00:08:01.840
+Certo?
+
+00:08:03.320 --> 00:08:05.400
+E também trabalhamos com o Gantt.
+
+00:08:06.740 --> 00:08:09.060
+Esse aqui, por exemplo, você não vai ter acesso.
+
+00:08:09.060 --> 00:08:10.380
+Só quem vai ter acesso vai ser eu.
+
+00:08:10.460 --> 00:08:14.300
+Mas eu só vou te mostrar para você entender o fluxo inteiro.
+
+00:08:14.720 --> 00:08:16.760
+Tipo assim, como que chega para a gente.
+
+00:08:17.260 --> 00:08:19.280
+E aí, como que vai sendo, né?
+
+00:08:20.640 --> 00:08:22.120
+Então, a gente trabalha com...
+
+00:08:22.120 --> 00:08:24.440
+Antes de mais nada, a gente trabalha com sprints, né?
+
+00:08:24.520 --> 00:08:26.640
+Você sabe o que é uma sprint?
+
+00:08:28.820 --> 00:08:30.440
+É um método de trabalho
+
+00:08:30.440 --> 00:08:33.040
+do ramo da tecnologia, né?
+
+00:08:33.040 --> 00:08:34.100
+Que é pra poder a galera
+
+00:08:34.100 --> 00:08:38.440
+separar entre tempos, né?
+
+00:08:38.560 --> 00:08:39.480
+Então, por exemplo,
+
+00:08:39.700 --> 00:08:41.920
+você conhece sobre programação?
+
+00:08:42.200 --> 00:08:42.940
+Alguma coisa ou não?
+
+00:08:45.320 --> 00:08:46.140
+Então, por exemplo,
+
+00:08:46.140 --> 00:08:48.480
+Se você programa uma coisa, certo?
+
+00:08:48.640 --> 00:08:50.300
+E você manda para o cliente,
+
+00:08:50.880 --> 00:08:52.280
+aí depois tem uma implementação,
+
+00:08:52.400 --> 00:08:54.040
+você vai fazer uma nova implementação
+
+00:08:54.040 --> 00:08:55.960
+em cima daquilo que já existe, certo?
+
+00:08:57.880 --> 00:08:59.560
+Só que para você separar isso,
+
+00:08:59.680 --> 00:09:01.820
+você faz, você cria releases, né?
+
+00:09:02.240 --> 00:09:03.100
+São as versões.
+
+00:09:03.640 --> 00:09:05.620
+Então, você cria uma versão,
+
+00:09:05.840 --> 00:09:07.480
+de uma mesma versão, né?
+
+00:09:08.040 --> 00:09:10.360
+E as sprints é meio que para controlar isso.
+
+00:09:10.580 --> 00:09:12.080
+Isso, para ajudar a controlar isso.
+
+00:09:12.600 --> 00:09:14.080
+Então, por exemplo, dentro de uma sprint,
+
+00:09:14.080 --> 00:09:16.420
+eu vou ter alguns projetos
+
+00:09:16.420 --> 00:09:18.020
+tá vendo? eu tive tudo isso aqui
+
+00:09:18.020 --> 00:09:19.940
+de projetos dentro dessa sprint 1
+
+00:09:19.940 --> 00:09:21.640
+2026, certo?
+
+00:09:22.840 --> 00:09:23.020
+então
+
+00:09:23.020 --> 00:09:28.220
+não
+
+00:09:28.220 --> 00:09:29.580
+não, seria
+
+00:09:29.580 --> 00:09:31.740
+é um método que trabalha, é só pra
+
+00:09:31.740 --> 00:09:33.180
+se organizar
+
+00:09:33.180 --> 00:09:35.760
+quando eu falar assim, ah, o projeto
+
+00:09:35.760 --> 00:09:36.980
+é da sprint tal
+
+00:09:36.980 --> 00:09:39.700
+tá entendendo? aí eu venho na sprint tal
+
+00:09:39.700 --> 00:09:41.740
+vejo qual foi o projeto
+
+00:09:41.740 --> 00:09:43.460
+mas o dev lá
+
+00:09:43.460 --> 00:09:44.900
+Ele vai saber que
+
+00:09:44.900 --> 00:09:46.260
+Como é da Sprint e tal
+
+00:09:46.260 --> 00:09:48.640
+Vai tá mais ou menos na versão X
+
+00:09:48.640 --> 00:09:49.600
+Sabe?
+
+00:09:51.060 --> 00:09:53.300
+Enfim, mas não precisa entrar
+
+00:09:53.300 --> 00:09:54.020
+Tão
+
+00:09:54.020 --> 00:09:56.420
+Nessa parte do Dev, tá?
+
+00:09:56.880 --> 00:09:57.840
+Mas pra gente aqui
+
+00:09:57.840 --> 00:09:59.860
+Então aqui a gente separa dessa maneira
+
+00:09:59.860 --> 00:10:02.700
+De tempos em tempos é aberta
+
+00:10:02.700 --> 00:10:04.260
+Uma Sprint nova
+
+00:10:04.260 --> 00:10:07.360
+Então geralmente 3 meses é uma Sprint nova
+
+00:10:07.360 --> 00:10:09.260
+E ela vai ter os projetos
+
+00:10:09.260 --> 00:10:10.940
+Já dela, certo?
+
+00:10:11.840 --> 00:10:13.260
+E aí quando você
+
+00:10:13.260 --> 00:10:16.040
+recebe essa
+
+00:10:16.040 --> 00:10:18.660
+quando fala
+
+00:10:18.660 --> 00:10:20.820
+que vai abrir, né? Aí a gente já
+
+00:10:20.820 --> 00:10:24.480
+orça as horas, né?
+
+00:10:24.840 --> 00:10:26.420
+Então tem as horas do dev aqui
+
+00:10:26.420 --> 00:10:28.660
+e as minhas horas de CQ,
+
+00:10:28.980 --> 00:10:30.420
+certo? Do projeto.
+
+00:10:30.540 --> 00:10:31.620
+Então do projeto X,
+
+00:10:32.680 --> 00:10:34.260
+esse projeto aqui, por exemplo, compor retorno
+
+00:10:34.260 --> 00:10:36.840
+da API autopropósito
+
+00:10:36.840 --> 00:10:38.020
+com o agrupamento de despesa,
+
+00:10:38.660 --> 00:10:40.820
+certo? Então o dev falou, ó, vou demorar 24 horas pra fazer.
+
+00:10:41.460 --> 00:10:42.680
+Então vamos imaginar
+
+00:10:42.680 --> 00:10:45.300
+Que a Spring X surgiu aqui no dia 1
+
+00:10:45.300 --> 00:10:46.100
+Certo?
+
+00:10:46.640 --> 00:10:47.860
+Aí vem aqui no dia 2
+
+00:10:47.860 --> 00:10:50.440
+Ele já criou e colocou aqui
+
+00:10:50.440 --> 00:10:52.360
+Gustavo deve, certo?
+
+00:10:52.480 --> 00:10:54.140
+Porque senão o meu aqui é CQ só
+
+00:10:54.140 --> 00:10:56.800
+Então o Gustavo vai trabalhar
+
+00:10:56.800 --> 00:10:58.580
+No dia 2 e no dia 3
+
+00:10:58.580 --> 00:11:00.080
+E já vai finalizar
+
+00:11:00.080 --> 00:11:02.300
+Então eu consigo iniciar aqui
+
+00:11:02.300 --> 00:11:04.800
+E aqui, então eu tenho que usar
+
+00:11:04.800 --> 00:11:06.320
+As minhas horas aqui, certo?
+
+00:11:07.080 --> 00:11:08.180
+Aí beleza, finalizei
+
+00:11:08.180 --> 00:11:10.860
+Então o Fábio vai fazer essa e essa
+
+00:11:10.860 --> 00:11:14.080
+Certo? Então tem todos os itenzinhos certinhos separados
+
+00:11:14.080 --> 00:11:16.100
+Então esses itens aqui
+
+00:11:16.100 --> 00:11:17.400
+É de uma sprint
+
+00:11:17.400 --> 00:11:19.220
+Entendeu? Tá vendo aqui ó
+
+00:11:19.220 --> 00:11:20.660
+Pacote 3.26
+
+00:11:20.660 --> 00:11:23.380
+É da 3.26 aqui
+
+00:11:23.380 --> 00:11:25.060
+Cadê? 3.26
+
+00:11:25.060 --> 00:11:28.020
+Tá vendo? Então todos estão aqui e tá lá
+
+00:11:28.020 --> 00:11:31.360
+Certo? Só pra você entender
+
+00:11:31.360 --> 00:11:33.760
+A ideia da mesa
+
+00:11:33.760 --> 00:11:35.900
+Né? Então sempre quando você
+
+00:11:35.900 --> 00:11:37.800
+Que tiver um projeto novo, vai ter um orçamento
+
+00:11:37.800 --> 00:11:40.140
+De horas, os dias que os devs
+
+00:11:40.140 --> 00:11:41.560
+vão estar trabalhando, né?
+
+00:11:42.000 --> 00:11:44.080
+E qual é a previsão que a gente vai estar iniciando?
+
+00:11:44.240 --> 00:11:46.020
+Pode ser que a gente consiga iniciar antes, porque
+
+00:11:46.020 --> 00:11:48.160
+deve ser mais rápido. Pode ser que a gente
+
+00:11:48.160 --> 00:11:49.400
+inicie um pouco depois, porque
+
+00:11:49.400 --> 00:11:52.320
+teve alguma alteração na F
+
+00:11:52.320 --> 00:11:53.900
+e o banco, porque o banco pediu.
+
+00:11:54.460 --> 00:11:55.560
+Alguma coisa assim, né?
+
+00:11:56.260 --> 00:11:58.060
+E aqui no Gantt, no
+
+00:11:58.060 --> 00:12:00.240
+Planner, a gente separa
+
+00:12:00.240 --> 00:12:01.280
+os itens, né?
+
+00:12:02.160 --> 00:12:04.360
+Então, por exemplo, cada itenzinho
+
+00:12:04.360 --> 00:12:06.300
+vira um card, certo?
+
+00:12:07.000 --> 00:12:08.200
+Então, até aqui, ó, 1.1
+
+00:12:08.200 --> 00:12:09.560
+do projeto X.
+
+00:12:10.140 --> 00:12:11.940
+1.2 do projeto Y,
+
+00:12:12.500 --> 00:12:14.580
+certo? Então, aí a gente coloca o responsável
+
+00:12:14.580 --> 00:12:15.200
+aqui dentro.
+
+00:12:16.280 --> 00:12:17.060
+Opa, peraí.
+
+00:12:17.720 --> 00:12:18.580
+Meu bem tá me ligando.
+
+00:12:32.500 --> 00:12:34.500
+...
+
+00:12:40.140 --> 00:12:53.920
+Parabéns, perdão.
+
+00:13:10.140 --> 00:13:40.120
+Legenda Adriana Zanotto
+
+00:13:40.140 --> 00:14:10.120
+Legenda Adriana Zanotto
+
+00:14:10.140 --> 00:14:40.120
+Legenda Adriana Zanotto
+
+00:14:40.140 --> 00:15:10.120
+Legenda Adriana Zanotto
+
+00:15:10.140 --> 00:15:28.180
+Pronto
+
+00:15:28.180 --> 00:15:30.540
+Tá aí?
+
+00:15:30.540 --> 00:15:32.680
+Tá, então
+
+00:15:32.680 --> 00:15:34.300
+Só voltando, né
+
+00:15:34.300 --> 00:15:36.280
+É, então
+
+00:15:36.280 --> 00:15:38.780
+Aqui, a gente separa nesses carguezinhos
+
+00:15:38.780 --> 00:15:40.360
+os itens, né?
+
+00:15:41.100 --> 00:15:42.940
+E aí, o Zé
+
+00:15:42.940 --> 00:15:44.040
+é o responsável do
+
+00:15:44.040 --> 00:15:45.900
+dos
+
+00:15:45.900 --> 00:15:49.100
+dev, tá? Então, o José Marcial
+
+00:15:49.100 --> 00:15:50.780
+é ele. Que aí ele coloca
+
+00:15:50.780 --> 00:15:52.220
+o dev que tá fazendo.
+
+00:15:53.000 --> 00:15:55.060
+Entendeu? O projeto.
+
+00:15:55.560 --> 00:15:57.000
+Então, por exemplo, se você tá, quando você estiver
+
+00:15:57.000 --> 00:15:59.080
+atuando em algum item, e você
+
+00:15:59.080 --> 00:16:01.180
+viu que, ah, foi o Edivano
+
+00:16:01.180 --> 00:16:03.240
+que fez, você pode vir no Teams
+
+00:16:03.240 --> 00:16:04.960
+e se você tem alguma dúvida sobre
+
+00:16:04.960 --> 00:16:07.480
+o funcionamento, ou pegou algum incidente,
+
+00:16:07.480 --> 00:16:08.960
+alguma coisa assim, você pode mandar
+
+00:16:08.960 --> 00:16:10.860
+mensagem direto pro Edivane, ó,
+
+00:16:11.560 --> 00:16:13.280
+peguei o erro assim, assim, assado,
+
+00:16:13.380 --> 00:16:15.340
+tal, e aí ele vai
+
+00:16:15.340 --> 00:16:17.340
+questionar você, vai lá, mas o que
+
+00:16:17.340 --> 00:16:18.600
+que você fez? Como que você fez?
+
+00:16:19.680 --> 00:16:21.400
+Não é pra acontecer isso, tá estranho,
+
+00:16:21.480 --> 00:16:23.100
+tal, não sei o que lá, eu testei e
+
+00:16:23.100 --> 00:16:25.080
+deu certo na minha máquina, entendeu?
+
+00:16:25.160 --> 00:16:27.140
+Sempre tem dessa, e aí você vai conversar com o cara
+
+00:16:27.140 --> 00:16:29.460
+pra poder, aí você fala, não, eu te mostro
+
+00:16:29.460 --> 00:16:31.060
+aqui, eu te ligo, tal, eu te compartilho
+
+00:16:31.060 --> 00:16:33.120
+a tela, eu te mostro o que que eu fiz, tal,
+
+00:16:33.700 --> 00:16:35.180
+aí ele vai ver, fala, pô, você tá
+
+00:16:35.180 --> 00:16:36.740
+fazendo errado, você fez isso?
+
+00:16:36.740 --> 00:16:38.960
+Você fez aquilo, aí você fala, puxa, não fiz
+
+00:16:38.960 --> 00:16:40.480
+Então tem que fazer aquilo, tal
+
+00:16:40.480 --> 00:16:43.420
+Enfim, então sempre antes de a gente abrir um incidente
+
+00:16:43.420 --> 00:16:44.100
+A gente costuma
+
+00:16:44.100 --> 00:16:46.460
+Chamar o dev
+
+00:16:46.460 --> 00:16:48.320
+Com isso
+
+00:16:48.320 --> 00:16:50.800
+Pra poder conversar, né
+
+00:16:50.800 --> 00:16:52.960
+Tipo, mostrar, ó, tá acontecendo isso, isso e isso
+
+00:16:52.960 --> 00:16:55.400
+Aí o cara fala, puxa, pode abrir o incidente
+
+00:16:55.400 --> 00:16:56.660
+Que eu vou dar uma olhada, tá ligado?
+
+00:16:57.060 --> 00:16:58.540
+Ou o cara fala, não, deixa eu ver aí
+
+00:16:58.540 --> 00:16:59.880
+Pra ver se não tá fazendo nada de errado
+
+00:16:59.880 --> 00:17:01.260
+Pode acontecer, entendeu?
+
+00:17:02.680 --> 00:17:05.420
+Então, aqui é a área do dev, né
+
+00:17:05.420 --> 00:17:07.160
+Então tem aqui os afazeres
+
+00:17:07.160 --> 00:17:08.820
+E quando ele tá programando, tá aqui
+
+00:17:08.820 --> 00:17:11.080
+E aí quando eles passam, quando eles terminam
+
+00:17:11.080 --> 00:17:12.840
+Eles passam pra cá pro CQ, entendeu?
+
+00:17:13.840 --> 00:17:14.940
+Então, por exemplo
+
+00:17:14.940 --> 00:17:17.620
+Aqui, ó, tem um itemzinho aqui
+
+00:17:17.620 --> 00:17:18.680
+2.1 tal
+
+00:17:18.680 --> 00:17:19.980
+Esse aqui é o Santana
+
+00:17:19.980 --> 00:17:21.700
+Um do nosso
+
+00:17:21.700 --> 00:17:24.460
+Nosso colega aí
+
+00:17:24.460 --> 00:17:25.000
+Do
+
+00:17:25.000 --> 00:17:27.200
+Do CQ, é isso
+
+00:17:27.200 --> 00:17:29.860
+E aí a gente tem o Fábio, certo?
+
+00:17:29.920 --> 00:17:30.800
+Que também é dev
+
+00:17:30.800 --> 00:17:33.860
+Então, também aqui, dev, Fábio, CQ, Santana
+
+00:17:33.860 --> 00:17:35.700
+A gente coloca as tagzinhas dos nomes deles
+
+00:17:35.700 --> 00:17:38.740
+Então quando tiver o seu nomezinho aqui
+
+00:17:38.740 --> 00:17:40.460
+E você quiser tirar alguma dúvida
+
+00:17:40.460 --> 00:17:41.620
+Alguma coisa, você vai falar com o cara
+
+00:17:41.620 --> 00:17:42.880
+E você vai ver que tá aqui nessa área, entendeu?
+
+00:17:44.120 --> 00:17:46.300
+Mas as vezes eles esquecem de passar pra cá
+
+00:17:46.300 --> 00:17:47.880
+Então você também tem que ficar monitorando
+
+00:17:47.880 --> 00:17:50.160
+O projeto pra poder ver se o item
+
+00:17:50.160 --> 00:17:51.640
+Tá em teste sequer e tudo mais
+
+00:17:51.640 --> 00:17:54.120
+Mas só pra você entender que a gente tem
+
+00:17:54.120 --> 00:17:56.540
+Essa organizaçãozinha aqui
+
+00:17:56.540 --> 00:17:58.320
+Por que a gente faz tudo isso?
+
+00:17:59.140 --> 00:18:00.240
+A gente faz
+
+00:18:00.240 --> 00:18:02.400
+As dailies, você sabe o que é a daily?
+
+00:18:03.860 --> 00:18:05.560
+tá, a gente faz as deles com o banco
+
+00:18:05.560 --> 00:18:07.440
+tá, então o banco
+
+00:18:07.440 --> 00:18:09.260
+participa das deles, nossa
+
+00:18:09.260 --> 00:18:11.500
+e eles questionam, perguntam
+
+00:18:11.500 --> 00:18:13.520
+tal, então na nossa
+
+00:18:13.520 --> 00:18:15.460
+dele tá os devs
+
+00:18:15.460 --> 00:18:17.300
+tá a gente, tá o pessoal
+
+00:18:17.300 --> 00:18:19.240
+de negócios, e tá a equipe
+
+00:18:19.240 --> 00:18:21.040
+de implantação também, né
+
+00:18:21.040 --> 00:18:22.260
+e aí
+
+00:18:22.260 --> 00:18:25.320
+o Zé fala, né
+
+00:18:25.320 --> 00:18:27.440
+geralmente quem fala é os
+
+00:18:27.440 --> 00:18:29.740
+analistas, então fala eu e o Zé
+
+00:18:29.740 --> 00:18:31.480
+então o Zé fala primeiro
+
+00:18:31.480 --> 00:18:32.640
+geralmente, ele fala
+
+00:18:32.640 --> 00:18:35.280
+os projetos dele aqui e tal, o que tá acontecendo
+
+00:18:35.280 --> 00:18:36.840
+aí cada um deles
+
+00:18:36.840 --> 00:18:38.960
+que tá fazendo o item
+
+00:18:38.960 --> 00:18:41.140
+fala um pouquinho, tá, tô aqui
+
+00:18:41.140 --> 00:18:43.380
+programando e tal, não sei o que, tá sem impedimento
+
+00:18:43.380 --> 00:18:45.220
+beleza, aí a gente faz
+
+00:18:45.220 --> 00:18:47.020
+a mesma coisa, a gente, ah, tô testando
+
+00:18:47.020 --> 00:18:49.360
+x projeto, tá indo tudo bem
+
+00:18:49.360 --> 00:18:50.440
+sabe, tipo assim
+
+00:18:50.440 --> 00:18:53.000
+ou se não, ah, peguei uma situação aqui
+
+00:18:53.000 --> 00:18:54.780
+meio estranha e tal, aconteceu isso e isso
+
+00:18:54.780 --> 00:18:57.280
+aí às vezes o dev já fala
+
+00:18:57.280 --> 00:18:58.840
+alguma coisa na dele sobre
+
+00:18:58.840 --> 00:19:01.200
+a situação, entendeu, a gente só fala
+
+00:19:01.200 --> 00:19:03.420
+Ah, tô aqui, vou abrir um incidente disso, disso e disso.
+
+00:19:03.860 --> 00:19:04.100
+Entendeu?
+
+00:19:05.100 --> 00:19:07.100
+Só pra poder reportar o que a gente tá fazendo e tal.
+
+00:19:07.180 --> 00:19:08.360
+E o banco tá ciente, entendeu?
+
+00:19:10.280 --> 00:19:13.560
+Mas geralmente na nossa parte eles não falam nada, tá?
+
+00:19:13.700 --> 00:19:14.500
+Eles só escutam.
+
+00:19:15.300 --> 00:19:18.480
+Porque não chegou pra eles isso aqui ainda, pra eles, né?
+
+00:19:19.060 --> 00:19:25.380
+Aí quando chega na parte de plantação, que é a parte que é mais interessante pra eles, né?
+
+00:19:25.380 --> 00:19:28.280
+Porque além da gente testar, o banco também testa, né?
+
+00:19:28.280 --> 00:19:30.360
+E por vezes acontece de eles pegarem erros
+
+00:19:30.360 --> 00:19:32.400
+Que a gente não pegou, entendeu
+
+00:19:32.400 --> 00:19:35.260
+E aí eles questionam
+
+00:19:35.260 --> 00:19:36.540
+Aí sim eles cobram
+
+00:19:36.540 --> 00:19:39.340
+Ah, eu preciso desse item aqui pra tal dia
+
+00:19:39.340 --> 00:19:40.560
+Ou pra ontem, já tá atrasado
+
+00:19:40.560 --> 00:19:42.500
+Tô muito tempo com vocês aí, tá, não sei o que
+
+00:19:42.500 --> 00:19:44.900
+Só que geralmente a cobrança é mais em cima deles
+
+00:19:44.900 --> 00:19:45.880
+Tá
+
+00:19:45.880 --> 00:19:48.320
+Mas enfim, mas acontece também
+
+00:19:48.320 --> 00:19:51.160
+A gente sempre tá falando com eles
+
+00:19:51.160 --> 00:19:52.380
+E aí as reuniões
+
+00:19:52.380 --> 00:19:54.460
+As deles, né
+
+00:19:54.460 --> 00:19:56.020
+É de terça a sexta
+
+00:19:56.020 --> 00:19:58.400
+geralmente 10h30 da manhã
+
+00:19:58.400 --> 00:20:00.860
+aí a orientação
+
+00:20:00.860 --> 00:20:02.360
+é tudo muito tarde de câmera ligada
+
+00:20:02.360 --> 00:20:04.380
+tá, e
+
+00:20:04.380 --> 00:20:06.660
+aí você, normalmente não vai falar
+
+00:20:06.660 --> 00:20:08.460
+nada, só quando eu pedir pra você falar, entendeu
+
+00:20:08.460 --> 00:20:10.260
+quando você estiver testando alguma coisa, eu vou falar
+
+00:20:10.260 --> 00:20:12.580
+e aí William, como tá indo o seu projeto, você pode
+
+00:20:12.580 --> 00:20:14.560
+falar alguma coisinha, aí você fala
+
+00:20:14.560 --> 00:20:15.840
+então, tô aqui
+
+00:20:15.840 --> 00:20:18.420
+no projeto tal, tô criando
+
+00:20:18.420 --> 00:20:20.560
+tô fazendo tal cenário, aí você explica
+
+00:20:20.560 --> 00:20:22.540
+um pouco do cenário, e tá indo
+
+00:20:22.540 --> 00:20:24.560
+tudo bem, por enquanto eu não tô em nenhum impedimento
+
+00:20:24.560 --> 00:20:26.720
+se eu precisar, aí eu aciono o dev
+
+00:20:26.720 --> 00:20:28.000
+e tal, entendeu? Geralmente
+
+00:20:28.000 --> 00:20:30.280
+o discurso é meio que o mesmo, tá?
+
+00:20:32.120 --> 00:20:32.780
+É, beleza.
+
+00:20:33.900 --> 00:20:34.620
+Então, a
+
+00:20:34.620 --> 00:20:35.800
+ideia da mesa é essa, tá?
+
+00:20:36.520 --> 00:20:38.600
+E aí, uma coisa que eu esqueci de
+
+00:20:38.600 --> 00:20:40.360
+falar, a gente tem as planings,
+
+00:20:40.980 --> 00:20:42.620
+certo? O que é uma planing?
+
+00:20:43.060 --> 00:20:44.020
+Vocês sabem o que é uma planing?
+
+00:20:47.280 --> 00:20:47.720
+Isso.
+
+00:20:48.240 --> 00:20:49.940
+A planing é quando
+
+00:20:49.940 --> 00:20:52.960
+o pessoal de negócios, eles apresentam
+
+00:20:52.960 --> 00:20:54.580
+A F pra gente
+
+00:20:54.580 --> 00:20:55.900
+Certo?
+
+00:20:56.300 --> 00:20:57.880
+Então, antes da gente começar a fazer
+
+00:20:57.880 --> 00:20:59.400
+Tem a planning
+
+00:20:59.400 --> 00:21:01.940
+Antes do Zé começar a desenvolver
+
+00:21:01.940 --> 00:21:04.220
+Então, por exemplo, antes disso aqui
+
+00:21:04.220 --> 00:21:06.400
+Antes disso aqui
+
+00:21:06.400 --> 00:21:08.740
+Teve a planning de todos esses projetos
+
+00:21:08.740 --> 00:21:10.000
+Entendeu?
+
+00:21:10.080 --> 00:21:11.820
+Então se foi no dia 1 que abriu
+
+00:21:11.820 --> 00:21:14.140
+Vamos supor que no dia
+
+00:21:14.140 --> 00:21:16.020
+Sei lá
+
+00:21:16.020 --> 00:21:20.840
+Isso, porque eles que criaram
+
+00:21:20.840 --> 00:21:22.260
+Entendeu?
+
+00:21:22.960 --> 00:21:25.000
+Então, eles vão apresentar
+
+00:21:25.000 --> 00:21:26.540
+o que que eles fizeram, né?
+
+00:21:29.400 --> 00:21:30.120
+E aí eles vão
+
+00:21:30.120 --> 00:21:32.680
+basicamente eles vão ler a EF
+
+00:21:32.680 --> 00:21:34.940
+explicar qual que é a necessidade do cliente
+
+00:21:34.940 --> 00:21:36.900
+e tal, porque que surgiu. E ali
+
+00:21:36.900 --> 00:21:38.700
+muitas vezes a gente bate boca e fala, não, mas
+
+00:21:38.700 --> 00:21:40.940
+esse ponto aí não faz sentido, ou
+
+00:21:40.940 --> 00:21:42.820
+dá pra fazer diferente, ou
+
+00:21:42.820 --> 00:21:44.700
+isso aí é impossível fazer desse jeito, sabe?
+
+00:21:45.540 --> 00:21:47.120
+Geralmente a gente tem um diálogo
+
+00:21:47.120 --> 00:21:48.700
+sobre isso, entendeu?
+
+00:21:49.280 --> 00:21:49.680
+E aí,
+
+00:21:50.260 --> 00:21:52.900
+eu costumo ler as EF
+
+00:21:52.900 --> 00:21:54.320
+antes, porque eles
+
+00:21:54.320 --> 00:21:56.580
+mostram, eles marcam
+
+00:21:56.580 --> 00:21:58.920
+então por exemplo, hoje segunda-feira
+
+00:21:58.920 --> 00:22:00.920
+eles vão marcar que vai ter uma
+
+00:22:00.920 --> 00:22:02.980
+planning na quinta
+
+00:22:02.980 --> 00:22:04.280
+por exemplo, e aí
+
+00:22:04.280 --> 00:22:06.660
+eles já colocam os projetos que vai ser
+
+00:22:06.660 --> 00:22:08.960
+então você já pega um projeto
+
+00:22:08.960 --> 00:22:10.220
+já lê antes
+
+00:22:10.220 --> 00:22:12.780
+pra poder na planning
+
+00:22:12.780 --> 00:22:14.200
+você tirar dúvida com todo mundo lá
+
+00:22:14.200 --> 00:22:15.660
+entendeu?
+
+00:22:16.780 --> 00:22:18.680
+mas geralmente eu
+
+00:22:18.680 --> 00:22:20.560
+quando é muitos projetos assim
+
+00:22:20.560 --> 00:22:21.660
+quando é início de sprint
+
+00:22:21.660 --> 00:22:23.160
+E tem esse tempo
+
+00:22:23.160 --> 00:22:25.280
+Eu já pego, ó, esse projeto vai ficar com você
+
+00:22:25.280 --> 00:22:26.340
+Esse vai ficar com fulano
+
+00:22:26.340 --> 00:22:27.620
+E aquele vai ficar com ciclano
+
+00:22:27.620 --> 00:22:29.180
+E aí cada um já lê
+
+00:22:29.180 --> 00:22:31.220
+E aí no dia já vai
+
+00:22:31.220 --> 00:22:33.780
+Já tira as dúvidas
+
+00:22:33.780 --> 00:22:35.460
+E já começa a escrever a IPT
+
+00:22:35.460 --> 00:22:36.700
+Entendeu
+
+00:22:36.700 --> 00:22:38.820
+É
+
+00:22:38.820 --> 00:22:41.140
+Beleza
+
+00:22:41.140 --> 00:22:44.260
+Aqui a gente tem um
+
+00:22:44.260 --> 00:22:45.740
+Um esquema diferente
+
+00:22:45.740 --> 00:22:47.140
+Então finalizamos essa parte, tá
+
+00:22:47.140 --> 00:22:49.620
+Do fluxo, de como chega pra gente e tal
+
+00:22:49.620 --> 00:22:51.020
+Então
+
+00:22:51.020 --> 00:22:53.280
+Vamos aos nossos afazeres
+
+00:22:53.280 --> 00:22:56.400
+A gente tem o costume
+
+00:22:56.400 --> 00:22:57.880
+De escrever a E.P.T
+
+00:22:57.880 --> 00:22:58.980
+Certo?
+
+00:22:59.080 --> 00:23:00.220
+Você sabe o que é a E.P.T
+
+00:23:00.220 --> 00:23:05.700
+Então aqui a gente escreve ela
+
+00:23:05.700 --> 00:23:06.760
+Do zero
+
+00:23:06.760 --> 00:23:09.880
+Então por exemplo
+
+00:23:09.880 --> 00:23:11.400
+Você tem um
+
+00:23:11.400 --> 00:23:15.140
+Deixa eu pegar aqui um por exemplo
+
+00:23:15.140 --> 00:23:16.600
+Vamos ver se há três nisso
+
+00:23:16.600 --> 00:23:18.820
+Mudou-se no recalque
+
+00:23:18.820 --> 00:23:20.180
+Vamos ver se tem uma E.P.T aqui
+
+00:23:20.180 --> 00:23:22.620
+Só pra eu te mostrar
+
+00:23:22.620 --> 00:23:24.920
+Vou te mostrar no bloco de notas antes
+
+00:23:24.920 --> 00:23:26.960
+Então, ó, aqui
+
+00:23:26.960 --> 00:23:28.740
+Foi algum dos meninos que escreveu
+
+00:23:28.740 --> 00:23:30.200
+Eu não lembro agora de cabeça quem foi
+
+00:23:30.200 --> 00:23:32.360
+Vamos pegar a
+
+00:23:32.360 --> 00:23:34.040
+A F
+
+00:23:34.040 --> 00:23:36.360
+Vamos ler a F rapidamente aqui pra gente ver
+
+00:23:36.360 --> 00:23:39.320
+Então vamos ver, só pra você entender o que é IPT, tá?
+
+00:23:40.260 --> 00:23:41.320
+Então, implementar uma nova
+
+00:23:41.320 --> 00:23:43.020
+Configuração, ó, qual o objetivo?
+
+00:23:43.020 --> 00:23:45.040
+Implementar uma nova configuração no processo de recalque
+
+00:23:45.040 --> 00:23:46.960
+Para permitir que o sistema preserve
+
+00:23:46.960 --> 00:23:48.680
+Explicitamente o valor líquido
+
+00:23:48.680 --> 00:23:50.900
+originalmente contratado pelo cliente
+
+00:23:50.900 --> 00:23:52.760
+quando o valor recalculado ficar inferior
+
+00:23:52.760 --> 00:23:54.140
+ao acordado inicialmente
+
+00:23:54.140 --> 00:23:56.820
+beleza, então quando eu passar pelo processo
+
+00:23:56.820 --> 00:23:58.500
+de recálculo, certo
+
+00:23:58.500 --> 00:24:00.680
+e o meu valor
+
+00:24:00.680 --> 00:24:01.600
+líquido
+
+00:24:01.600 --> 00:24:04.840
+por acaso ficar inferior
+
+00:24:04.840 --> 00:24:07.080
+ao acordado inicialmente, ele vai manter
+
+00:24:07.080 --> 00:24:08.280
+o
+
+00:24:08.280 --> 00:24:09.660
+o acordado
+
+00:24:09.660 --> 00:24:12.120
+certo, esse é o
+
+00:24:12.120 --> 00:24:14.040
+objetivo dele, e a situação
+
+00:24:14.040 --> 00:24:15.640
+qual que é a situação atual
+
+00:24:15.640 --> 00:24:18.020
+atualmente alguns processos de recálculo
+
+00:24:18.020 --> 00:24:20.000
+ao revisarem certas propostas
+
+00:24:20.000 --> 00:24:22.300
+e identificarem mudanças na margem inicial
+
+00:24:22.300 --> 00:24:24.140
+do cliente, mantém a taxa
+
+00:24:24.140 --> 00:24:25.720
+que o banco aplicou na proposta original,
+
+00:24:26.140 --> 00:24:27.700
+mas ajustam o valor líquido.
+
+00:24:28.240 --> 00:24:30.240
+Isso pode gerar uma diferença entre o valor acordado
+
+00:24:30.240 --> 00:24:31.220
+com o cliente e o valor
+
+00:24:31.220 --> 00:24:33.620
+geralmente líquido.
+
+00:24:34.620 --> 00:24:36.060
+Entendeu? Dá pra entender? Então, o que
+
+00:24:36.060 --> 00:24:37.840
+acontece e o que eles querem?
+
+00:24:42.700 --> 00:24:43.140
+Isso.
+
+00:24:43.140 --> 00:24:47.460
+Não, na real
+
+00:24:47.460 --> 00:24:50.140
+O recálculo é num processo de listeira mesmo
+
+00:24:50.140 --> 00:24:53.280
+Tá, beleza
+
+00:24:53.280 --> 00:24:54.240
+Mas a gente tem aqui
+
+00:24:54.240 --> 00:24:55.020
+Então a gente vai ter
+
+00:24:55.020 --> 00:24:57.280
+Implementar no modo do autorizador
+
+00:24:57.280 --> 00:25:00.300
+No menu serviço da rotina configuração de processos
+
+00:25:00.300 --> 00:25:03.080
+O novo tratamento responsável por incluir uma configuração
+
+00:25:03.080 --> 00:25:05.900
+Para validar se o valor líquido do clique está alterado
+
+00:25:05.900 --> 00:25:07.460
+Aplicando nova regra
+
+00:25:07.460 --> 00:25:08.800
+Comparando o valor líquido
+
+00:25:08.800 --> 00:25:11.780
+Então eu tenho um processo
+
+00:25:11.780 --> 00:25:12.220
+Certo?
+
+00:25:12.220 --> 00:25:13.800
+Então eu vou lá no processo
+
+00:25:13.800 --> 00:25:15.900
+E vai ter esse parâmetro novo
+
+00:25:15.900 --> 00:25:17.880
+Recalcular a proposta com o valor
+
+00:25:17.880 --> 00:25:19.840
+Do valor liberado original
+
+00:25:19.840 --> 00:25:22.200
+Quando o valor recalculado for inferior ao contratado
+
+00:25:22.200 --> 00:25:23.580
+Certo?
+
+00:25:23.940 --> 00:25:25.140
+E aí eu vou ter outro processo
+
+00:25:25.140 --> 00:25:28.100
+O processo recalque de financiamento
+
+00:25:28.100 --> 00:25:29.040
+E o outro aqui
+
+00:25:29.040 --> 00:25:30.820
+Processo recalque de despesa
+
+00:25:30.820 --> 00:25:33.320
+Então ele também vai colocar esse mesmo
+
+00:25:33.320 --> 00:25:34.760
+Esse mesmo cara aqui
+
+00:25:34.760 --> 00:25:36.100
+Nesse outro processo
+
+00:25:36.100 --> 00:25:38.620
+Então são dois processos diferentes que vai ter esse novo
+
+00:25:38.620 --> 00:25:40.160
+Parâmetro
+
+00:25:40.160 --> 00:25:44.600
+Enfim, tem um bocado de coisa aqui
+
+00:25:44.600 --> 00:25:45.160
+Certo?
+
+00:25:46.120 --> 00:25:47.920
+Beleza, então a EPT
+
+00:25:47.920 --> 00:25:49.880
+O que é a EPT? Você vai escrever
+
+00:25:49.880 --> 00:25:51.760
+Quais são os cenários de teste
+
+00:25:51.760 --> 00:25:54.000
+Então vamos ver qual é o primeiro cenário de teste que está aqui
+
+00:25:54.000 --> 00:25:55.760
+Então, o que escreveram
+
+00:25:55.760 --> 00:25:57.840
+No outro usador, menu
+
+00:25:57.840 --> 00:25:59.700
+Serviço, configuração da rotina
+
+00:25:59.700 --> 00:26:01.320
+De processo, acessar a rotina
+
+00:26:01.320 --> 00:26:03.660
+O sistema deverá apresentar novo parâmetro
+
+00:26:03.660 --> 00:26:05.560
+Implementado conforme escrito na EF
+
+00:26:05.560 --> 00:26:07.200
+Perfeito?
+
+00:26:07.600 --> 00:26:09.880
+Está vendo aqui? Então, esse primeiro EPT
+
+00:26:09.880 --> 00:26:11.240
+É pra validar isso aqui
+
+00:26:11.240 --> 00:26:13.600
+Que existe esse novo parâmetro
+
+00:26:13.600 --> 00:26:14.600
+Nesse processo
+
+00:26:14.600 --> 00:26:16.260
+Certo?
+
+00:26:16.820 --> 00:26:18.400
+Vamos ver qual que é a segunda etapa
+
+00:26:18.400 --> 00:26:21.140
+No autorizador, menos serviços
+
+00:26:21.140 --> 00:26:23.500
+Configuração de processo, acessar rotina
+
+00:26:23.500 --> 00:26:25.820
+Verificar descrição, posicionamento
+
+00:26:25.820 --> 00:26:27.440
+E comportamento do novo parâmetro
+
+00:26:27.440 --> 00:26:29.660
+O novo parâmetro deveria estar disponível
+
+00:26:29.660 --> 00:26:31.760
+Conforme a especificação especificada na EF
+
+00:26:31.760 --> 00:26:33.080
+Então a mesma coisa
+
+00:26:33.080 --> 00:26:36.160
+Então aqui é pra poder ver se o layout está igual
+
+00:26:36.160 --> 00:26:38.520
+E se está funcionando
+
+00:26:38.520 --> 00:26:41.120
+O sim não e na hora de gravar
+
+00:26:41.120 --> 00:26:42.540
+Certo?
+
+00:26:43.360 --> 00:26:44.340
+Aí aqui ele fala
+
+00:26:44.340 --> 00:26:46.780
+Ele vai entrar de novo no processo
+
+00:26:46.780 --> 00:26:48.460
+Vai alterar o parâmetro pra sim
+
+00:26:48.460 --> 00:26:50.800
+Gravado com sucesso, beleza
+
+00:26:50.800 --> 00:26:53.040
+Aí o outro
+
+00:26:53.040 --> 00:26:54.520
+Grava como não, beleza
+
+00:26:54.520 --> 00:26:56.460
+Aí vamos ver o 5
+
+00:26:56.460 --> 00:26:57.600
+Ele vai gravar como sim
+
+00:26:57.600 --> 00:26:59.900
+E vai, ó, o sistema vai manter
+
+00:26:59.900 --> 00:27:03.340
+O parâmetro gravado conforme a configuração realizada
+
+00:27:03.340 --> 00:27:04.580
+Beleza
+
+00:27:04.580 --> 00:27:07.220
+Aí ele vai no outro processo
+
+00:27:07.220 --> 00:27:10.760
+Selecionar a proposta de cadastrar
+
+00:27:10.760 --> 00:27:12.460
+E executar o recálculo gerando um valor líquido
+
+00:27:12.460 --> 00:27:14.740
+Recalculado maior que o valor líquido atual
+
+00:27:14.740 --> 00:27:15.360
+Da operação
+
+00:27:15.360 --> 00:27:17.520
+Então aqui ele tem que
+
+00:27:17.520 --> 00:27:20.320
+Gerar o valor líquido recalculado
+
+00:27:20.320 --> 00:27:21.020
+Maior
+
+00:27:21.020 --> 00:27:24.160
+Que o valor líquido atual da operação
+
+00:27:24.160 --> 00:27:26.020
+Certo?
+
+00:27:26.160 --> 00:27:28.420
+Então aqui na F vai ter
+
+00:27:28.420 --> 00:27:31.860
+Como que isso vai acontecer
+
+00:27:31.860 --> 00:27:34.160
+O que tem que acontecer pra poder
+
+00:27:34.160 --> 00:27:35.120
+Ele ficar maior
+
+00:27:35.120 --> 00:27:36.360
+Entendeu?
+
+00:27:36.860 --> 00:27:39.200
+Mas enfim, eu só tô te mostrando pra você ter a noção
+
+00:27:39.200 --> 00:27:40.800
+Tipo assim, você vai lendo
+
+00:27:40.800 --> 00:27:43.160
+A EF vai escrevendo, como que você vai testar isso?
+
+00:27:43.760 --> 00:27:44.060
+Então
+
+00:27:44.060 --> 00:27:46.240
+Como que eu vou validar
+
+00:27:46.240 --> 00:27:49.340
+Tal ponto, né? Então você vai escrever ele
+
+00:27:49.340 --> 00:27:50.680
+Né? E é beleza
+
+00:27:50.680 --> 00:27:52.400
+Depois que você escreve, você vai passar pra
+
+00:27:52.400 --> 00:27:53.860
+Pro Excel
+
+00:27:53.860 --> 00:27:56.560
+Beleza
+
+00:27:56.560 --> 00:27:58.200
+Vai passar pro Excel
+
+00:27:58.200 --> 00:28:00.920
+Que geralmente é o que você recebe
+
+00:28:00.920 --> 00:28:01.980
+Aí, né?
+
+00:28:02.500 --> 00:28:03.800
+Desse formatinho aqui, certo?
+
+00:28:05.120 --> 00:28:07.980
+Ou não
+
+00:28:07.980 --> 00:28:12.560
+Tá
+
+00:28:12.560 --> 00:28:14.380
+Mas a gente tem esse formato
+
+00:28:14.380 --> 00:28:20.480
+Sim
+
+00:28:27.200 --> 00:28:28.880
+Ah é, já viu como dá o X direto?
+
+00:28:34.000 --> 00:28:34.440
+Entendi
+
+00:28:34.440 --> 00:28:37.640
+isso, você vai fazer
+
+00:28:37.640 --> 00:28:39.180
+a IPT também, e aí
+
+00:28:39.180 --> 00:28:41.500
+você vai ter um tempo pra isso
+
+00:28:41.500 --> 00:28:43.500
+né, que geralmente
+
+00:28:43.500 --> 00:28:45.700
+é o tempo em que os devs estão programando
+
+00:28:45.700 --> 00:28:46.320
+e você
+
+00:28:46.320 --> 00:28:49.520
+vai estar escrevendo a IPT, entendeu
+
+00:28:49.520 --> 00:28:53.020
+enfim, aí você vai passar
+
+00:28:53.020 --> 00:28:55.000
+pra esse formato aqui de Excel
+
+00:28:55.000 --> 00:28:56.840
+tá, então
+
+00:28:56.840 --> 00:28:59.080
+aqui geralmente o que a gente faz, a gente sempre pega
+
+00:28:59.080 --> 00:29:00.640
+um projeto que já existe
+
+00:29:00.640 --> 00:29:03.260
+que a gente já fez, e só vai
+
+00:29:03.260 --> 00:29:04.880
+Alterando as informações que tá aqui
+
+00:29:04.880 --> 00:29:06.880
+Entendeu? Aí você salva como novo
+
+00:29:06.880 --> 00:29:08.740
+E muda o nome do
+
+00:29:08.740 --> 00:29:10.720
+Número do projeto aqui, entendeu?
+
+00:29:11.620 --> 00:29:13.380
+E aí você vai pegar esse aqui e vai jogar
+
+00:29:13.380 --> 00:29:14.380
+No
+
+00:29:14.380 --> 00:29:17.060
+No geradoc, você já viu?
+
+00:29:17.420 --> 00:29:17.920
+O geradoc
+
+00:29:17.920 --> 00:29:21.200
+O geradoc ele vai
+
+00:29:21.200 --> 00:29:22.720
+Gerar o docx
+
+00:29:22.720 --> 00:29:24.040
+Entendeu?
+
+00:29:25.500 --> 00:29:26.000
+Por que que a gente
+
+00:29:26.000 --> 00:29:27.900
+Isso, com base nessa planilha
+
+00:29:27.900 --> 00:29:31.120
+Por que que a gente faz desse jeito? Porque a gente manda pro banco isso, entendeu?
+
+00:29:31.120 --> 00:29:33.840
+então a gente vai mandar pro banco
+
+00:29:33.840 --> 00:29:35.280
+esse Excel
+
+00:29:35.280 --> 00:29:37.700
+então sempre quando, no final do projeto
+
+00:29:37.700 --> 00:29:39.840
+quando você terminar, você pode
+
+00:29:39.840 --> 00:29:40.460
+ter que alterar
+
+00:29:40.460 --> 00:29:45.120
+uma etapa
+
+00:29:45.120 --> 00:29:48.040
+ou retirar alguma coisa, ou acrescentar mais coisa
+
+00:29:48.040 --> 00:29:49.480
+entendeu, durante que você vai testando
+
+00:29:49.480 --> 00:29:50.820
+pode acontecer
+
+00:29:50.820 --> 00:29:53.420
+mas aí você vem e atualiza aqui
+
+00:29:53.420 --> 00:29:55.560
+porque depois eu vou mandar isso aqui pro banco
+
+00:29:55.560 --> 00:29:56.540
+entendeu
+
+00:29:56.540 --> 00:29:59.180
+beleza
+
+00:29:59.180 --> 00:30:02.180
+Enfim, mas isso aqui
+
+00:30:02.180 --> 00:30:03.000
+Você vai
+
+00:30:03.000 --> 00:30:05.420
+Pegar a manhã que eu vou fazer
+
+00:30:05.420 --> 00:30:08.020
+Você vai quebrar a cabeça um pouco, mas você vai ver depois
+
+00:30:08.020 --> 00:30:09.140
+É tranquilo, tá
+
+00:30:09.140 --> 00:30:13.140
+É, é só pra você saber o que
+
+00:30:13.140 --> 00:30:20.920
+Entendi
+
+00:30:20.920 --> 00:30:27.580
+Isso
+
+00:30:27.580 --> 00:30:30.240
+Tipo assim, eu gosto da EPT
+
+00:30:30.240 --> 00:30:32.020
+Porque você
+
+00:30:32.020 --> 00:30:34.140
+É obrigado a ler a EF
+
+00:30:34.140 --> 00:30:36.200
+E você vai escrever o que você vai fazer
+
+00:30:36.200 --> 00:30:37.080
+Sabe?
+
+00:30:37.480 --> 00:30:39.600
+Então você realmente vai entender o que tem que ser feito
+
+00:30:39.600 --> 00:30:42.120
+Sabe? Então é diferente de você pegar
+
+00:30:42.120 --> 00:30:44.580
+A EPT já pronta
+
+00:30:44.580 --> 00:30:46.180
+E só fazer o que tá lá
+
+00:30:46.180 --> 00:30:47.060
+Entendeu?
+
+00:30:47.540 --> 00:30:49.840
+Porque nessa você não lê
+
+00:30:49.840 --> 00:30:52.300
+Com tanto afim com a EF
+
+00:30:52.300 --> 00:30:52.980
+Sabe?
+
+00:30:54.840 --> 00:30:55.400
+Beleza
+
+00:30:55.400 --> 00:30:57.780
+Enfim, então o fluxo vai ser esse
+
+00:30:57.780 --> 00:30:59.780
+Então a gente vai ter a planning
+
+00:30:59.780 --> 00:31:01.660
+Certo? Eu vou passar pra vocês
+
+00:31:01.660 --> 00:31:02.660
+Quais serão os projetos
+
+00:31:02.660 --> 00:31:04.580
+Ou você pode falar, eu quero fazer tal projeto
+
+00:31:04.580 --> 00:31:05.940
+Também é de boa
+
+00:31:05.940 --> 00:31:07.520
+Tá ligado?
+
+00:31:08.240 --> 00:31:10.860
+E aí você vai ter o tempo pra poder fazer
+
+00:31:10.860 --> 00:31:13.720
+Então geralmente quando o projeto é mais curto
+
+00:31:13.720 --> 00:31:15.260
+Os devs vão
+
+00:31:15.260 --> 00:31:17.720
+Fazer mais rápido
+
+00:31:17.720 --> 00:31:19.440
+Só que também vai ser um projeto mais simples
+
+00:31:19.440 --> 00:31:20.900
+Entendeu? Então tipo assim
+
+00:31:20.900 --> 00:31:23.200
+Você vai ter menos tempo pra poder escrever uma IPT
+
+00:31:23.200 --> 00:31:25.060
+Só que você vai
+
+00:31:25.060 --> 00:31:27.400
+Só que ele vai ser mais rápido também, ele é menor
+
+00:31:27.400 --> 00:31:29.220
+Sabe? Então
+
+00:31:29.220 --> 00:31:31.620
+Quando você pegar amanhã, você vai ver que em duas horinhas
+
+00:31:31.620 --> 00:31:33.080
+Três horinhas você já fez uma EPT
+
+00:31:33.080 --> 00:31:34.340
+Entendeu?
+
+00:31:36.720 --> 00:31:37.040
+É...
+
+00:31:37.040 --> 00:31:39.260
+Enfim, então, beleza, então tivemos a planning
+
+00:31:39.260 --> 00:31:40.780
+Você vai escrever a EPT
+
+00:31:40.780 --> 00:31:43.460
+Aí beleza, vai cair o projeto pra você, aí você vai iniciar
+
+00:31:43.460 --> 00:31:44.740
+O teste, normal
+
+00:31:44.740 --> 00:31:46.820
+Certo? E aí
+
+00:31:46.820 --> 00:31:49.400
+Aqui a gente tem que tirar os prints
+
+00:31:49.400 --> 00:31:50.820
+Com data e hora
+
+00:31:50.820 --> 00:31:53.480
+Tá? Então sempre que você for tirar
+
+00:31:53.480 --> 00:31:55.140
+um print, você puxa
+
+00:31:55.140 --> 00:31:57.180
+o free pick até aqui
+
+00:31:57.180 --> 00:31:59.540
+né, não precisa ser
+
+00:31:59.540 --> 00:32:01.420
+todos os prints, mas
+
+00:32:01.420 --> 00:32:03.580
+todos eles
+
+00:32:03.580 --> 00:32:05.240
+tem que ter, mas não precisa ser exatamente todos
+
+00:32:05.240 --> 00:32:06.720
+cada etapa
+
+00:32:06.720 --> 00:32:09.540
+tenta ter pelo menos alguns
+
+00:32:09.540 --> 00:32:10.940
+ali, sabe
+
+00:32:10.940 --> 00:32:13.180
+então por exemplo
+
+00:32:13.180 --> 00:32:15.220
+se for uma telinha muito pequena, ou tipo assim
+
+00:32:15.220 --> 00:32:16.720
+uma telinha só de ok
+
+00:32:16.720 --> 00:32:19.380
+sabe, que você vai, sei lá, se alterou
+
+00:32:19.380 --> 00:32:21.080
+alguma coisa, tem que dar um okzinho
+
+00:32:21.080 --> 00:32:23.020
+não precisa tirar
+
+00:32:23.020 --> 00:32:25.160
+até aqui embaixo, você pode colocar só ela
+
+00:32:25.160 --> 00:32:27.900
+mas nas partes principais do projeto
+
+00:32:27.900 --> 00:32:29.660
+por exemplo, na parte do parâmetro
+
+00:32:29.660 --> 00:32:31.860
+ali, que você vai ter que identificar o parâmetro
+
+00:32:31.860 --> 00:32:33.560
+né, é bom você
+
+00:32:33.560 --> 00:32:35.600
+puxar até a tela, até aqui embaixo
+
+00:32:35.600 --> 00:32:37.420
+aí você pode pegar a telinha aqui
+
+00:32:37.420 --> 00:32:39.040
+e trazer até aqui embaixo, pra poder ficar menos
+
+00:32:39.040 --> 00:32:40.440
+pra ficar menor, né
+
+00:32:40.440 --> 00:32:42.520
+a tela e tudo mais
+
+00:32:53.020 --> 00:32:55.260
+Isso
+
+00:32:55.260 --> 00:32:58.920
+Isso, exatamente
+
+00:32:58.920 --> 00:33:00.480
+Isso, exatamente
+
+00:33:00.480 --> 00:33:02.540
+É, beleza
+
+00:33:02.540 --> 00:33:05.260
+Isso você entendeu
+
+00:33:05.260 --> 00:33:07.180
+É
+
+00:33:07.180 --> 00:33:08.240
+Deixa eu pensar
+
+00:33:08.240 --> 00:33:11.440
+E aí, outra coisa
+
+00:33:11.440 --> 00:33:14.020
+Eu vou te mostrar sobre as pastas, tá
+
+00:33:14.020 --> 00:33:16.160
+A gente usa a minha máquina
+
+00:33:16.160 --> 00:33:17.600
+Como servidor, tá
+
+00:33:17.600 --> 00:33:20.020
+Então, eu tenho uma base na minha máquina
+
+00:33:20.020 --> 00:33:21.880
+E a gente tem uma base
+
+00:33:21.880 --> 00:33:23.660
+do CQ
+
+00:33:23.660 --> 00:33:25.640
+que é só nosso também, que é do C6
+
+00:33:25.640 --> 00:33:27.680
+então a gente tem duas bases
+
+00:33:27.680 --> 00:33:29.740
+porque por vezes
+
+00:33:29.740 --> 00:33:31.740
+a equipe são
+
+00:33:31.740 --> 00:33:33.420
+três testes, você está entrando agora
+
+00:33:33.420 --> 00:33:35.140
+para entrar no lugar do menino
+
+00:33:35.140 --> 00:33:36.460
+que vai estar saindo de férias
+
+00:33:36.460 --> 00:33:39.480
+então a gente vai ficar com quatro em alguns
+
+00:33:39.480 --> 00:33:41.520
+períodos, mas acontece
+
+00:33:41.520 --> 00:33:43.420
+de todo mundo ter testes
+
+00:33:43.420 --> 00:33:44.980
+e um teste impactar o outro
+
+00:33:44.980 --> 00:33:47.620
+pode acontecer, entendeu? Então a gente usa
+
+00:33:47.620 --> 00:33:49.240
+bases diferentes nesses casos
+
+00:33:49.240 --> 00:33:51.400
+então você vai usar
+
+00:33:51.400 --> 00:33:53.500
+um servidor e outro no
+
+00:33:53.500 --> 00:33:55.920
+na minha máquina
+
+00:33:55.920 --> 00:33:57.340
+e aí aqui
+
+00:33:57.340 --> 00:33:59.260
+eu tenho os links, né, então aqui
+
+00:33:59.260 --> 00:34:01.580
+essa WK1058
+
+00:34:01.580 --> 00:34:02.520
+é minha máquina
+
+00:34:02.520 --> 00:34:05.880
+nossa, tá pequeno, deixa eu tirar o zoom
+
+00:34:05.880 --> 00:34:06.600
+aqui
+
+00:34:06.600 --> 00:34:09.540
+então aqui
+
+00:34:09.540 --> 00:34:11.940
+a gente tem, você já viu esse formatinho
+
+00:34:11.940 --> 00:34:13.120
+de pastas ou não?
+
+00:34:17.580 --> 00:34:18.680
+certo, então por exemplo
+
+00:34:18.680 --> 00:34:23.900
+Você vai entrar aqui no website
+
+00:34:23.900 --> 00:34:25.720
+Certo? E vai ter todos os sites
+
+00:34:25.720 --> 00:34:28.120
+Então tem o autorizador, tem o monitor
+
+00:34:28.120 --> 00:34:29.680
+Tem o SIC, tem o tabelas
+
+00:34:29.680 --> 00:34:32.200
+Tem o empregador, tem o duplo, tem várias coisinhas aqui
+
+00:34:32.200 --> 00:34:34.280
+Certo? E aí você vai clicar aqui
+
+00:34:34.280 --> 00:34:35.240
+Nele e ele vai abrir
+
+00:34:35.240 --> 00:34:39.820
+Tá vendo? Ele abriu, certo?
+
+00:34:40.540 --> 00:34:41.940
+Mas como que aconteceu isso?
+
+00:34:42.280 --> 00:34:44.020
+Né? Então essa estrutura
+
+00:34:44.020 --> 00:34:45.760
+É a minha máquina, então aqui
+
+00:34:45.760 --> 00:34:47.060
+Tá vendo que eu tenho que ser 6
+
+00:34:47.060 --> 00:34:48.580
+Que é a mesma que tá aqui, ó
+
+00:34:48.580 --> 00:34:51.080
+WK, C6, Website
+
+00:34:51.080 --> 00:34:52.480
+Web Autorizador, tá vendo isso aqui?
+
+00:34:53.440 --> 00:34:54.720
+Isso aqui é a estrutura da minha máquina
+
+00:34:54.720 --> 00:34:55.760
+Então, ó
+
+00:34:55.760 --> 00:34:58.460
+A minha máquina aqui pra trás, certo?
+
+00:34:58.560 --> 00:35:00.360
+Disque local, C6
+
+00:35:00.360 --> 00:35:02.360
+Aqui, ó, Website
+
+00:35:02.360 --> 00:35:04.120
+Autorizador
+
+00:35:04.120 --> 00:35:07.380
+Você percebe que é a mesma estrutura?
+
+00:35:08.800 --> 00:35:10.580
+Então, sempre quando você for subir um site
+
+00:35:10.580 --> 00:35:12.480
+Você for pegar uma implementação
+
+00:35:12.480 --> 00:35:14.500
+Você vai entrar
+
+00:35:14.500 --> 00:35:15.680
+Então, é Autorizador
+
+00:35:15.680 --> 00:35:16.740
+Então você vai entrar aqui
+
+00:35:16.740 --> 00:35:18.180
+Você vai apagar
+
+00:35:18.180 --> 00:35:20.940
+Todas as pastas menos uma
+
+00:35:20.940 --> 00:35:22.320
+Que é a config
+
+00:35:22.320 --> 00:35:25.680
+Certo? Então você seleciona tudo e seleciona ela
+
+00:35:25.680 --> 00:35:28.640
+Aí você apaga
+
+00:35:28.640 --> 00:35:30.900
+Aí você vem com o outro
+
+00:35:30.900 --> 00:35:33.600
+Com outra pastinha de arquivos
+
+00:35:33.600 --> 00:35:35.500
+E incorpora aqui dentro
+
+00:35:35.500 --> 00:35:36.660
+Entendeu?
+
+00:35:45.080 --> 00:35:45.640
+Isso
+
+00:35:45.640 --> 00:35:49.360
+Você não vai subir na sua máquina
+
+00:35:49.360 --> 00:35:50.380
+Você vai subir na minha máquina
+
+00:35:50.380 --> 00:35:52.240
+Entendeu?
+
+00:35:52.660 --> 00:35:54.120
+Porque a minha máquina é o servidor
+
+00:35:54.120 --> 00:35:56.920
+A minha máquina centraliza tudo nela
+
+00:35:56.920 --> 00:35:58.060
+Entendeu?
+
+00:35:59.100 --> 00:36:00.760
+Então você não vai subir na sua, você vai subir na minha
+
+00:36:00.760 --> 00:36:03.440
+Então eu vou te dar o acesso
+
+00:36:03.440 --> 00:36:04.260
+A minha máquina
+
+00:36:04.260 --> 00:36:07.000
+Como que eu vou fazer isso?
+
+00:36:07.460 --> 00:36:08.880
+Aqui no nosso grupo
+
+00:36:08.880 --> 00:36:10.440
+Eu tenho aqui
+
+00:36:10.440 --> 00:36:12.440
+Acessa a máquina Gabriel
+
+00:36:12.440 --> 00:36:15.920
+Essas pastas estão compartilhadas
+
+00:36:15.920 --> 00:36:18.280
+Entendeu? Então você consegue ter acesso
+
+00:36:18.280 --> 00:36:20.940
+Então você vai entrar aqui, ó
+
+00:36:20.940 --> 00:36:22.180
+Arquivos e Sykes
+
+00:36:22.180 --> 00:36:25.660
+Deixa eu mandar aí
+
+00:36:25.660 --> 00:36:28.440
+É, ó
+
+00:36:28.440 --> 00:36:30.980
+Entra nesse link aí
+
+00:36:30.980 --> 00:36:33.620
+Esse link não, né? Aí você vai dar o Ctrl R aqui, né?
+
+00:36:34.220 --> 00:36:35.440
+E vai colocar esse aqui aqui
+
+00:36:42.440 --> 00:37:05.060
+Abriu?
+
+00:37:05.440 --> 00:37:08.160
+Então, você deve estar vendo uma estrutura dessa, certo?
+
+00:37:08.300 --> 00:37:08.600
+Aqui, ó.
+
+00:37:09.120 --> 00:37:10.700
+Então, você está vendo essa estrutura aqui, certo?
+
+00:37:12.440 --> 00:37:17.320
+Certo? Então quando você quiser abrir o autorizador
+
+00:37:17.320 --> 00:37:18.680
+Você vai aqui no website
+
+00:37:18.680 --> 00:37:20.820
+Autorizador
+
+00:37:20.820 --> 00:37:22.360
+Certo? E vai
+
+00:37:22.360 --> 00:37:25.580
+Pegar a versão nova e colocar aqui dentro
+
+00:37:25.580 --> 00:37:26.960
+Nessa pasta, entendeu?
+
+00:37:28.240 --> 00:37:29.660
+Você só não pode apagar
+
+00:37:29.660 --> 00:37:31.220
+A config, certo?
+
+00:37:31.280 --> 00:37:32.920
+Porque já tá tudo configurado aqui
+
+00:37:32.920 --> 00:37:35.540
+Certo? Então se você vir aqui
+
+00:37:35.540 --> 00:37:36.380
+No app settings
+
+00:37:36.380 --> 00:37:39.280
+Então assim, você não vai precisar ficar quebrando a cabeça
+
+00:37:39.280 --> 00:37:41.560
+Mas você tem que configurar o app settings
+
+00:37:41.560 --> 00:37:42.480
+Fazer
+
+00:37:42.480 --> 00:37:44.600
+É, todas essas coisas
+
+00:37:44.600 --> 00:37:46.060
+Você não vai precisar disso
+
+00:37:46.060 --> 00:37:47.940
+Porque já tá configurado aqui
+
+00:37:47.940 --> 00:37:51.700
+Matei o config
+
+00:37:51.700 --> 00:37:53.500
+Tá vendo aqui? Olha só o config aqui
+
+00:37:53.500 --> 00:37:54.540
+Esse aqui é o config
+
+00:37:54.540 --> 00:37:56.560
+A gente teve que configurar a primeira vez antes
+
+00:37:56.560 --> 00:37:58.720
+Olha o tanto de coisa que tem nele
+
+00:37:58.720 --> 00:37:59.640
+Tudo configurado
+
+00:37:59.640 --> 00:38:01.940
+Todos esses sites aqui, se você clicar, eles vão abrir
+
+00:38:01.940 --> 00:38:03.860
+Tá tudo funcionando
+
+00:38:03.860 --> 00:38:05.140
+Entendeu?
+
+00:38:06.220 --> 00:38:07.780
+Então por isso que você não pode apagar
+
+00:38:07.780 --> 00:38:09.860
+De hipótese alguma
+
+00:38:09.860 --> 00:38:15.640
+Isso, exatamente
+
+00:38:15.640 --> 00:38:17.020
+Você paga tudo, deixa o config
+
+00:38:17.020 --> 00:38:19.360
+Roda as procs, né, obviamente
+
+00:38:19.360 --> 00:38:21.580
+Aí se tiver alguma
+
+00:38:21.580 --> 00:38:24.060
+Atualização de proc
+
+00:38:24.060 --> 00:38:25.080
+Você regulariza
+
+00:38:25.080 --> 00:38:27.740
+É a mesma coisa, só que aí você vai ter que apontar
+
+00:38:27.740 --> 00:38:30.000
+Pra o dele que você estiver usando
+
+00:38:30.000 --> 00:38:31.840
+Aí quando acontecer isso, a gente entra
+
+00:38:31.840 --> 00:38:34.120
+E eu te mostro, só pra não ficar muita coisa
+
+00:38:34.120 --> 00:38:36.100
+É
+
+00:38:36.100 --> 00:38:39.840
+Então isso vai valer pra qualquer coisa
+
+00:38:39.840 --> 00:38:41.940
+Então sempre que você tiver que alterar
+
+00:38:41.940 --> 00:38:43.300
+Uma
+
+00:38:43.300 --> 00:38:45.800
+Uma versão de algo
+
+00:38:45.800 --> 00:38:47.360
+Que for da minha máquina
+
+00:38:47.360 --> 00:38:48.500
+Você vai entrar no meu link
+
+00:38:48.500 --> 00:38:51.200
+E vai alterar
+
+00:38:51.200 --> 00:38:52.980
+Ah é API, você vai vir aqui na API
+
+00:38:52.980 --> 00:38:55.220
+Vai ver se ela já existe aqui
+
+00:38:55.220 --> 00:38:58.180
+Ela existindo, você vem e altera
+
+00:38:58.180 --> 00:39:00.400
+E mesma coisa, não tira o config de nenhuma
+
+00:39:00.400 --> 00:39:01.920
+Deu nessas partes
+
+00:39:01.920 --> 00:39:03.640
+Você vai excluir o config
+
+00:39:03.640 --> 00:39:06.380
+Você pode ter que alterar o config
+
+00:39:06.380 --> 00:39:07.520
+Mas excluir nunca
+
+00:39:07.520 --> 00:39:08.560
+Entendeu?
+
+00:39:08.560 --> 00:39:10.140
+De nada
+
+00:39:10.140 --> 00:39:11.540
+Beleza
+
+00:39:11.540 --> 00:39:14.540
+Essa parte você entendeu então, certo?
+
+00:39:15.880 --> 00:39:16.180
+Então
+
+00:39:16.180 --> 00:39:18.040
+E aí o mesmo vale pra
+
+00:39:18.040 --> 00:39:19.420
+A outra
+
+00:39:19.420 --> 00:39:21.580
+Base que a gente tem
+
+00:39:21.580 --> 00:39:23.460
+Então essa é a minha, certo?
+
+00:39:23.580 --> 00:39:24.620
+A gente também tem o acesso
+
+00:39:24.620 --> 00:39:27.120
+A base do servidor, tá vendo aqui?
+
+00:39:27.200 --> 00:39:28.620
+Acesso a marca do Gabriel
+
+00:39:28.620 --> 00:39:31.400
+E aqui o DL servidor
+
+00:39:31.400 --> 00:39:34.040
+Ó, o DL servidor
+
+00:39:34.040 --> 00:39:35.480
+Então vamos pegar aqui
+
+00:39:35.480 --> 00:39:36.940
+É
+
+00:39:36.940 --> 00:39:40.240
+Nossa, tá duplicado agora que eu vi
+
+00:39:40.240 --> 00:39:43.160
+Mas beleza, então
+
+00:39:43.160 --> 00:39:44.700
+Ó, vou clicar aqui
+
+00:39:44.700 --> 00:39:45.620
+Abre link
+
+00:39:45.620 --> 00:39:49.240
+E eu vou pegar aqui o linkzinho
+
+00:39:49.240 --> 00:39:51.520
+Ó
+
+00:39:51.520 --> 00:39:52.780
+Você tá vendo aqui
+
+00:39:52.780 --> 00:39:54.140
+Eu te mostrei
+
+00:39:54.140 --> 00:39:55.860
+Esse aqui, certo?
+
+00:39:55.980 --> 00:39:57.800
+Que equivale aquilo que eu te mostrei do Amix
+
+00:39:57.800 --> 00:39:58.800
+Certo?
+
+00:39:58.920 --> 00:39:59.920
+As API e tal
+
+00:39:59.920 --> 00:40:02.080
+E eu tenho a mesma coisa aqui
+
+00:40:02.080 --> 00:40:04.740
+Só que outro URL, tá vendo?
+
+00:40:04.740 --> 00:40:07.960
+Que são bases
+
+00:40:07.960 --> 00:40:09.860
+E UDLs diferentes
+
+00:40:09.860 --> 00:40:11.960
+Mas é a mesma coisa
+
+00:40:11.960 --> 00:40:13.720
+Vai funcionando do mesmo jeito
+
+00:40:13.720 --> 00:40:14.920
+Tem aqui o Sykes e tal
+
+00:40:14.920 --> 00:40:16.720
+Você vai alterar
+
+00:40:16.720 --> 00:40:19.580
+Só que quando você quiser alterar um daqui
+
+00:40:19.580 --> 00:40:21.280
+Desse cara aqui
+
+00:40:21.280 --> 00:40:21.980
+O que você tem que fazer?
+
+00:40:34.740 --> 00:40:36.700
+Não
+
+00:40:36.700 --> 00:40:38.980
+Aqui você vai abrir só o site
+
+00:40:38.980 --> 00:40:40.920
+Isso aqui é uma tela de site
+
+00:40:40.920 --> 00:40:43.280
+Você não está aqui
+
+00:40:43.280 --> 00:40:44.280
+Nessa
+
+00:40:44.280 --> 00:40:46.700
+Na estrutura de pastas
+
+00:40:46.700 --> 00:40:48.260
+Você está na estrutura de site
+
+00:40:48.260 --> 00:40:50.160
+Certo?
+
+00:40:50.900 --> 00:40:51.220
+Então
+
+00:40:51.220 --> 00:40:53.880
+Me responde a pergunta agora de novo
+
+00:40:53.880 --> 00:40:56.440
+Esse cara aqui
+
+00:40:56.440 --> 00:40:57.760
+Você entra aqui, certo?
+
+00:40:57.820 --> 00:40:58.680
+No meu que eu te mandei
+
+00:40:58.680 --> 00:41:01.740
+E esse cara aqui, como que você faz?
+
+00:41:04.740 --> 00:41:09.740
+Vai ser no mesmo cara aqui
+
+00:41:09.740 --> 00:41:11.360
+Certo? Ou vai ser em outro?
+
+00:41:15.980 --> 00:41:17.140
+Exatamente, vai ser em outro
+
+00:41:17.140 --> 00:41:18.760
+Então, é isso aí
+
+00:41:18.760 --> 00:41:21.560
+Não, eu tô perguntando pra você saber se você tá entendendo o que eu tô falando
+
+00:41:21.560 --> 00:41:25.740
+Tá? Então, assim como você
+
+00:41:25.740 --> 00:41:27.820
+Eu te mandei esse linkzinho aqui
+
+00:41:27.820 --> 00:41:29.760
+Certo? Eu vou te mandar o outro
+
+00:41:29.760 --> 00:41:33.080
+Certo? Então você vai vir aqui
+
+00:41:33.080 --> 00:41:35.740
+Vai vir aqui
+
+00:41:35.740 --> 00:41:36.500
+O DL
+
+00:41:36.500 --> 00:41:38.340
+É que aí essa está direcionada para o DL
+
+00:41:38.340 --> 00:41:40.840
+Mas você consegue voltar uma aí
+
+00:41:40.840 --> 00:41:43.100
+Você volta uma casinha aqui em C6
+
+00:41:43.100 --> 00:41:43.940
+Vai ser a mesma coisa
+
+00:41:43.940 --> 00:41:46.840
+Abre aí para poder ver se está igual
+
+00:42:03.080 --> 00:42:17.420
+Então a mesma coisa
+
+00:42:17.420 --> 00:42:19.880
+Você entendeu agora
+
+00:42:19.880 --> 00:42:21.560
+Por que são UDLs diferentes
+
+00:42:21.560 --> 00:42:22.540
+E bases diferentes
+
+00:42:22.540 --> 00:42:25.520
+Então como é UDL e bases diferentes
+
+00:42:25.520 --> 00:42:27.380
+Vai ser pasta diferente
+
+00:42:27.380 --> 00:42:29.320
+Então a rede vai ser diferente
+
+00:42:29.320 --> 00:42:30.320
+Certo
+
+00:42:30.320 --> 00:42:33.720
+Então quando você quiser alterar alguma do servidor
+
+00:42:33.720 --> 00:42:34.940
+Vai ser essa
+
+00:42:34.940 --> 00:42:37.380
+Você vai vir aqui, site, install, mesma coisa
+
+00:42:37.380 --> 00:42:39.380
+Pode alterar, só deixa config
+
+00:42:39.380 --> 00:42:40.260
+Não mexa no config
+
+00:42:40.260 --> 00:42:42.700
+E quando for minha máquina
+
+00:42:42.700 --> 00:42:44.160
+Você vai vir na outra estrutura de página
+
+00:42:44.160 --> 00:42:47.360
+Que vai estar o WK10.58
+
+00:42:47.360 --> 00:42:49.460
+Pra você aí, aí você vem aqui e altera
+
+00:42:49.460 --> 00:42:51.140
+X conteúdo, certo?
+
+00:42:58.840 --> 00:42:59.280
+É...
+
+00:42:59.280 --> 00:43:00.840
+Isso, e aí o servidor é aquele
+
+00:43:00.840 --> 00:43:02.320
+FII, não sei o que lá.
+
+00:43:03.840 --> 00:43:04.180
+Isso.
+
+00:43:05.320 --> 00:43:05.720
+Exatamente.
+
+00:43:06.880 --> 00:43:08.880
+Deixa eu pensar em outras coisas que eu tenho que te falar
+
+00:43:08.880 --> 00:43:10.100
+sobre estrutura de pastas.
+
+00:43:11.100 --> 00:43:12.260
+Tá aqui e tal.
+
+00:43:12.740 --> 00:43:15.000
+E aí, beleza. E aí, no...
+
+00:43:15.000 --> 00:43:16.960
+No...
+
+00:43:18.020 --> 00:43:18.780
+Aqui no SQL
+
+00:43:18.780 --> 00:43:19.640
+vai ser a mesma coisa.
+
+00:43:20.600 --> 00:43:23.380
+Então, tá vendo aqui? Tem aqui, ó, WK1058CQ.
+
+00:43:23.900 --> 00:43:24.340
+Certo?
+
+00:43:24.340 --> 00:43:25.720
+E tem aqui
+
+00:43:25.720 --> 00:43:28.600
+a FII DP...
+
+00:43:28.600 --> 00:43:31.120
+06V que é essa outra
+
+00:43:31.120 --> 00:43:32.440
+Entendeu? Então tipo assim
+
+00:43:32.440 --> 00:43:35.060
+Quando você estiver fazendo uma coisa na minha máquina
+
+00:43:35.060 --> 00:43:37.100
+A base que você vai estar consultando vai ser essa
+
+00:43:37.100 --> 00:43:39.020
+Quando você estiver fazendo uma coisa no servidor
+
+00:43:39.020 --> 00:43:40.740
+A base que você vai estar consultando
+
+00:43:40.740 --> 00:43:41.900
+Obviamente vai ter que ser essa
+
+00:43:41.900 --> 00:43:43.040
+Entendeu?
+
+00:43:44.340 --> 00:43:45.720
+E cada uma tem um login
+
+00:43:45.720 --> 00:43:47.060
+Então aqui novamente
+
+00:43:47.060 --> 00:43:48.660
+Aqui no
+
+00:43:48.660 --> 00:43:53.900
+Então eu vou te passar aqui
+
+00:43:53.900 --> 00:43:56.700
+Aqui é o server, WK, tal, login, senha
+
+00:43:56.700 --> 00:43:57.600
+Certo?
+
+00:43:57.600 --> 00:43:59.400
+Que essa aqui é da minha máquina
+
+00:43:59.400 --> 00:44:02.180
+Certo? Porque tem o nome da minha máquina aqui
+
+00:44:02.180 --> 00:44:02.800
+Certo?
+
+00:44:03.580 --> 00:44:05.140
+E aqui é o da outra
+
+00:44:05.140 --> 00:44:06.420
+Que é essa aqui, ó
+
+00:44:06.420 --> 00:44:08.460
+FIDP tal 2016A
+
+00:44:08.460 --> 00:44:11.020
+Que é da outra máquina, entendeu?
+
+00:44:12.120 --> 00:44:13.920
+Então, você vai trabalhar
+
+00:44:13.920 --> 00:44:14.920
+Em diferentes lugares
+
+00:44:14.920 --> 00:44:18.360
+Fazendo diferentes coisas
+
+00:44:18.360 --> 00:44:19.580
+Né? Então
+
+00:44:19.580 --> 00:44:21.720
+Diferentes coisas não, né? Você pode fazer a mesma coisa
+
+00:44:21.720 --> 00:44:23.160
+Só que você vai ter que saber
+
+00:44:23.160 --> 00:44:24.960
+Onde você tem que estar sempre olhando
+
+00:44:24.960 --> 00:44:27.160
+Certo?
+
+00:44:27.600 --> 00:44:30.000
+É...
+
+00:44:30.000 --> 00:44:30.500
+Beleza
+
+00:44:30.500 --> 00:44:34.400
+Deixa eu pensar agora
+
+00:44:53.120 --> 00:44:53.560
+Tá
+
+00:44:53.560 --> 00:44:54.300
+Tá, vou te mandar já
+
+00:44:54.300 --> 00:44:56.520
+Então eu vou te colocar no grupo aqui
+
+00:44:56.520 --> 00:44:59.300
+Nesse grupo
+
+00:44:59.300 --> 00:45:04.520
+E aí você vai
+
+00:45:04.520 --> 00:45:15.500
+Vou churrar no grupo aqui nosso
+
+00:45:15.500 --> 00:45:16.920
+Da equipe do CQ
+
+00:45:16.920 --> 00:45:18.900
+E aí você vai vir aqui no fixado
+
+00:45:18.900 --> 00:45:19.880
+Você vai ter todas as informações
+
+00:45:19.880 --> 00:45:22.540
+Se não estiver aparecendo pra você
+
+00:45:22.540 --> 00:45:24.940
+Deixa eu já enviar no seu PV
+
+00:45:24.940 --> 00:45:33.380
+pra você ver o que fica mais falha não me dá um e eu vou colocar agora
+
+00:45:48.840 --> 00:45:54.620
+o que pronto eu vou te mudar também o fixado porque às vezes não mostro fixado para você
+
+00:45:54.940 --> 00:46:20.160
+Tá, aí você pode fixar na nossa conversa aí, se você quiser, eu posso fixar também, fixei pra você, fica mais fácil, certo? Coloquei você, é, depois eu vou te apresentar pra galera, tá, é que o pessoal tá testando um projeto aí, então eu não vou parar eles pra poder falar, tá?
+
+00:46:20.160 --> 00:46:22.860
+e aí eu vou te passar
+
+00:46:22.860 --> 00:46:24.520
+o treinamento, tá?
+
+00:46:26.140 --> 00:46:27.540
+o treinamento é o seguinte
+
+00:46:27.540 --> 00:46:29.060
+eu tenho aqui uma pastinha
+
+00:46:29.060 --> 00:46:30.400
+vamos ver se tá completo aqui
+
+00:46:30.400 --> 00:46:32.920
+tá
+
+00:46:32.920 --> 00:46:34.740
+é só isso aqui, tá?
+
+00:46:34.880 --> 00:46:36.260
+não parece muita coisa, mas
+
+00:46:36.260 --> 00:46:38.980
+isso aqui, tipo assim
+
+00:46:38.980 --> 00:46:41.180
+a expectativa que você termina
+
+00:46:41.180 --> 00:46:42.460
+isso é no máximo uma semana
+
+00:46:42.460 --> 00:46:44.900
+tá? mas não precisa se colocar
+
+00:46:44.900 --> 00:46:46.960
+pressão, tá? o importante
+
+00:46:46.960 --> 00:46:48.620
+é que você entenda e saiba o que você tá fazendo
+
+00:46:48.620 --> 00:46:51.240
+Não que você só faça de uma maneira
+
+00:46:51.240 --> 00:46:55.000
+Tipo automática, sabe
+
+00:46:55.000 --> 00:46:56.120
+Então o importante é você entender
+
+00:46:56.120 --> 00:47:00.480
+Até porque também
+
+00:47:00.480 --> 00:47:03.120
+Eu acho que até semana que vem
+
+00:47:03.120 --> 00:47:05.040
+Eu não vou ter outro projeto pra estar te passando
+
+00:47:05.040 --> 00:47:07.740
+Eu não sei se vai entrar mais projetos
+
+00:47:07.740 --> 00:47:08.800
+Enfim
+
+00:47:08.800 --> 00:47:11.420
+Então eu vou te mandar aqui
+
+00:47:11.420 --> 00:47:13.360
+Essa lista de treinamentos
+
+00:47:13.360 --> 00:47:14.760
+Esse treinamento, tá
+
+00:47:14.760 --> 00:47:16.440
+Então o que que é, vamos ler
+
+00:47:16.440 --> 00:47:17.620
+Vamos ler juntos aqui
+
+00:47:17.620 --> 00:47:19.860
+ó, treinamento
+
+00:47:19.860 --> 00:47:22.500
+a execução do treinamento deveria ser feita de forma individual
+
+00:47:22.500 --> 00:47:24.380
+caso ocorra problemas dos quais
+
+00:47:24.380 --> 00:47:26.420
+você não consiga resolver sozinho
+
+00:47:26.420 --> 00:47:27.820
+por favor, entre em contato via Teams
+
+00:47:27.820 --> 00:47:29.060
+se não, você vai falar comigo
+
+00:47:29.060 --> 00:47:32.240
+dessa forma fica mais fácil de comparar como está o desenvolvimento
+
+00:47:32.240 --> 00:47:34.460
+as rotinas na função
+
+00:47:34.460 --> 00:47:36.600
+em grande maioria possuem nomes indicativos
+
+00:47:36.600 --> 00:47:38.620
+então é orientado que se atente
+
+00:47:38.620 --> 00:47:41.100
+a isso no momento em que estiver realizando os passos
+
+00:47:41.100 --> 00:47:42.920
+a segunda parte
+
+00:47:42.920 --> 00:47:43.980
+tem o intuito de vocês
+
+00:47:43.980 --> 00:47:45.860
+se familiarizarem com as telas
+
+00:47:45.860 --> 00:47:48.080
+na textura de cadastrar, se possui campos
+
+00:47:48.080 --> 00:47:49.920
+obrigatórios, preenchendo, se retornando
+
+00:47:49.920 --> 00:47:52.040
+a crítica. Então, sempre que você for
+
+00:47:52.040 --> 00:47:53.960
+preencher, você coloca todos os campos
+
+00:47:53.960 --> 00:47:55.980
+obrigatórios, senão vai retornar a crítica
+
+00:47:55.980 --> 00:47:56.780
+do campo obrigatório.
+
+00:47:58.560 --> 00:48:00.340
+Uma dica é tirar do pico as configurações
+
+00:48:00.340 --> 00:48:02.200
+que contarem e posteriormente ir copiando.
+
+00:48:03.800 --> 00:48:04.700
+Será necessário
+
+00:48:04.700 --> 00:48:07.080
+criar evidências, então essa parte aqui é importante, tá?
+
+00:48:07.740 --> 00:48:08.900
+Então, será necessário
+
+00:48:08.900 --> 00:48:10.760
+criar evidências das etapas do
+
+00:48:10.760 --> 00:48:12.820
+treinamento, não é obrigatório, o detalhamento
+
+00:48:12.820 --> 00:48:14.780
+é muito grande, o intuito é ter um documento
+
+00:48:14.780 --> 00:48:16.340
+Para consultas posteriormente
+
+00:48:16.340 --> 00:48:18.980
+Caso esqueça de algum fluxo base
+
+00:48:18.980 --> 00:48:20.980
+Esse fluxo de CQ
+
+00:48:20.980 --> 00:48:22.180
+A medida que você for pegando projetos
+
+00:48:22.180 --> 00:48:24.080
+Ainda não mais sobre as outras funcionalidades
+
+00:48:24.080 --> 00:48:26.120
+Então eu escrevi isso aqui bem
+
+00:48:26.120 --> 00:48:28.580
+De maneira genérica aqui
+
+00:48:28.580 --> 00:48:29.240
+Para poder
+
+00:48:29.240 --> 00:48:32.040
+Não colocar nome de ninguém nem nada
+
+00:48:32.040 --> 00:48:33.640
+Mas talvez você possa encontrar
+
+00:48:33.640 --> 00:48:35.320
+Alguma coisinha assim
+
+00:48:35.320 --> 00:48:37.900
+Então qual que é a primeira parte
+
+00:48:37.900 --> 00:48:40.620
+No acesso você vai cadastrar um usuário
+
+00:48:40.620 --> 00:48:42.760
+Para você e vai dar acesso a ele
+
+00:48:42.760 --> 00:48:44.700
+Você já fez isso alguma vez?
+
+00:48:44.780 --> 00:48:50.300
+então não vai fazer isso mais
+
+00:48:50.300 --> 00:48:51.380
+você vai ter que criar um usuário
+
+00:48:51.380 --> 00:48:53.220
+e dar acesso a ele
+
+00:48:53.220 --> 00:48:55.520
+dar direito a eles
+
+00:48:55.520 --> 00:48:56.920
+então como eu disse aqui
+
+00:48:56.920 --> 00:48:58.480
+é intuitivo
+
+00:48:58.480 --> 00:49:01.240
+os nomes são intuitivos
+
+00:49:01.240 --> 00:49:03.020
+cadastrar usuário no webassess
+
+00:49:03.020 --> 00:49:04.460
+e atribuir direito de acesso
+
+00:49:04.460 --> 00:49:05.560
+às rotinas do autorizador
+
+00:49:05.560 --> 00:49:07.640
+por meio do novo usuário cadastrado
+
+00:49:07.640 --> 00:49:10.800
+acessar o autorizador e cadastrar o novo cliente
+
+00:49:10.800 --> 00:49:13.120
+isso aqui geralmente você aprende
+
+00:49:13.120 --> 00:49:14.560
+No próprio treinamento
+
+00:49:14.560 --> 00:49:16.500
+Da função
+
+00:49:16.500 --> 00:49:17.420
+Na primeira semana
+
+00:49:17.420 --> 00:49:20.200
+Eu não sei
+
+00:49:20.200 --> 00:49:31.520
+Ok
+
+00:49:31.520 --> 00:49:33.960
+Ixi, que não usa
+
+00:49:33.960 --> 00:49:36.540
+Porque se eu usar como seu supervisor e você também
+
+00:49:36.540 --> 00:49:37.880
+Vai cair sua sessão
+
+00:49:37.880 --> 00:49:40.260
+Você não consegue usar
+
+00:49:40.260 --> 00:49:41.700
+Várias pessoas usando supervisor
+
+00:49:41.700 --> 00:49:44.080
+que é o mesmo perfil, como que eu vou
+
+00:49:44.080 --> 00:49:46.360
+usar várias pessoas do mesmo perfil?
+
+00:49:46.420 --> 00:49:47.300
+Não dá, né?
+
+00:50:02.300 --> 00:50:03.900
+É, não é
+
+00:50:03.900 --> 00:50:04.940
+nada difícil, tá?
+
+00:50:06.520 --> 00:50:07.760
+Beleza, aí na segunda parte
+
+00:50:07.760 --> 00:50:09.900
+você vai cadastrar um produto e convênio
+
+00:50:09.900 --> 00:50:12.420
+você vai fazer a execução
+
+00:50:12.420 --> 00:50:14.100
+dessa etapa, pode utilizar convênios
+
+00:50:14.100 --> 00:50:15.360
+e produtos cadastrados previamente
+
+00:50:15.360 --> 00:50:17.640
+na base e comprar os devidos campos
+
+00:50:17.640 --> 00:50:20.080
+então você pode olhar o que já tem e fazer igual
+
+00:50:20.080 --> 00:50:22.320
+é só
+
+00:50:22.320 --> 00:50:23.900
+para você ter um tato do que
+
+00:50:23.900 --> 00:50:26.060
+para que serve, como você está fazendo aquilo
+
+00:50:26.060 --> 00:50:28.580
+a consulta
+
+00:50:28.580 --> 00:50:30.420
+pode ser realizada de duas maneiras
+
+00:50:30.420 --> 00:50:32.220
+diferentes, comprando convênios e produtos
+
+00:50:32.220 --> 00:50:34.160
+aleatórios ou realizando
+
+00:50:34.160 --> 00:50:35.500
+uma consulta na tabela
+
+00:50:35.500 --> 00:50:38.460
+isso aqui é mais difícil
+
+00:50:38.460 --> 00:50:41.320
+É bem mais fácil você só ver o que tem lá
+
+00:50:41.320 --> 00:50:42.580
+E copiar, é bem mais fácil
+
+00:50:42.580 --> 00:50:45.060
+Dessa forma é necessário buscar os campos
+
+00:50:45.060 --> 00:50:47.100
+Tal, tal
+
+00:50:47.100 --> 00:50:48.760
+Pra segunda forma, beleza
+
+00:50:48.760 --> 00:50:51.260
+Será enviado o príncipe
+
+00:50:51.260 --> 00:50:52.620
+Conforme utilizar a base
+
+00:50:52.620 --> 00:50:54.580
+Isso aqui eu não vou fazer não
+
+00:50:54.580 --> 00:50:55.940
+Já mostrei
+
+00:50:55.940 --> 00:50:58.600
+Tudo como funciona na parte do
+
+00:50:58.600 --> 00:51:01.140
+Pra poder utilizar
+
+00:51:01.140 --> 00:51:02.980
+Então, ó
+
+00:51:02.980 --> 00:51:05.600
+Cadastrar uma esteira nova no sistema
+
+00:51:05.600 --> 00:51:07.420
+E posteriormente vincular ao produto
+
+00:51:07.420 --> 00:51:10.040
+fluxo base em esteira, aprova a proposta do Tomás
+
+00:51:10.040 --> 00:51:11.900
+finaliza a proposta, análise de crédito
+
+00:51:11.900 --> 00:51:13.420
+averba a proposta
+
+00:51:13.420 --> 00:51:15.460
+remessa online e fluxo integra
+
+00:51:15.460 --> 00:51:18.280
+então você vai criar uma esteira e vai atrelar todos esses processos
+
+00:51:18.280 --> 00:51:19.860
+nela, certo?
+
+00:51:20.560 --> 00:51:21.360
+e depois você vai
+
+00:51:21.360 --> 00:51:23.820
+cadastrar uma proposta, utilizando
+
+00:51:23.820 --> 00:51:25.520
+as configurações realizadas posteriormente
+
+00:51:25.520 --> 00:51:27.840
+então você vai usar o seu convênio que você cadastrou
+
+00:51:27.840 --> 00:51:29.480
+você vai usar o seu produto
+
+00:51:29.480 --> 00:51:31.640
+e isso tudo tem que estar atrelado
+
+00:51:31.640 --> 00:51:33.400
+na sua esteira, certo?
+
+00:51:34.240 --> 00:51:35.120
+e depois você vai fazer
+
+00:51:35.120 --> 00:51:36.720
+você vai fazer o movimento
+
+00:51:36.720 --> 00:51:38.740
+da proposta na esteira
+
+00:51:38.740 --> 00:51:44.880
+atribuir um controle de processo na esteira
+
+00:51:44.880 --> 00:51:46.520
+em decisão para análise de crédito
+
+00:51:46.520 --> 00:51:48.900
+o controle de processo é
+
+00:51:48.900 --> 00:51:51.120
+ensinar os campos
+
+00:51:51.120 --> 00:51:52.520
+que desejar para a exibição da tela
+
+00:51:52.520 --> 00:51:54.660
+isso aqui é só você copiar o que já existe lá
+
+00:51:54.660 --> 00:51:57.080
+análise de crédito
+
+00:51:57.080 --> 00:51:58.540
+é um processo que possui tela, então
+
+00:51:58.540 --> 00:52:01.040
+o controle de acesso dela é basicamente a configuração
+
+00:52:01.040 --> 00:52:02.180
+dos campos que serão exibidos
+
+00:52:02.180 --> 00:52:04.280
+beleza, isso aqui é só
+
+00:52:04.280 --> 00:52:06.080
+uma observação
+
+00:52:06.080 --> 00:52:11.120
+realizar a integração da proposta
+
+00:52:11.120 --> 00:52:12.840
+utilizando o processo de esteira e arremesso online
+
+00:52:12.840 --> 00:52:15.340
+comprovar que a proposta foi integrada
+
+00:52:15.340 --> 00:52:16.980
+com sucesso, via
+
+00:52:16.980 --> 00:52:18.820
+rotina do utilizador
+
+00:52:18.820 --> 00:52:20.540
+ou consultar na base de dados
+
+00:52:20.540 --> 00:52:21.020
+do C-Oper
+
+00:52:21.020 --> 00:52:24.260
+então você vai cadastrar tudo
+
+00:52:24.260 --> 00:52:26.740
+vai integrar ela, depois vai mostrar
+
+00:52:26.740 --> 00:52:28.540
+que foi integrada
+
+00:52:28.540 --> 00:52:30.880
+e vai mostrar a tabelinha da C-Oper
+
+00:52:30.880 --> 00:52:31.940
+certo?
+
+00:52:31.940 --> 00:52:34.520
+E aí você vai fazer o que aqui?
+
+00:52:34.580 --> 00:52:36.020
+Vai atribuir uma URL no SIC
+
+00:52:36.020 --> 00:52:38.580
+Essa parquinha vai estar configurada
+
+00:52:38.580 --> 00:52:40.480
+O meu truqueador e tal
+
+00:52:40.480 --> 00:52:41.380
+ES7
+
+00:52:41.380 --> 00:52:45.480
+Na rotina de aprovação
+
+00:52:45.480 --> 00:52:46.600
+Com cada número da proposta
+
+00:52:46.600 --> 00:52:47.800
+Você vai gerar um SIC
+
+00:52:47.800 --> 00:52:53.000
+Aí depois você vai fazer o uso da API
+
+00:52:53.000 --> 00:52:54.120
+Você já usou a API uma vez?
+
+00:52:54.120 --> 00:53:03.240
+Tá, então você vai usar o teste API aqui também
+
+00:53:03.240 --> 00:53:04.960
+Então você vai usar o teste API
+
+00:53:04.960 --> 00:53:07.000
+Você vai fazer uma inclusão de proposta
+
+00:53:07.000 --> 00:53:08.360
+E uma simulação de proposta
+
+00:53:08.360 --> 00:53:10.920
+Tá, primeiro você faz a simulação
+
+00:53:10.920 --> 00:53:13.020
+E depois você faz a inclusão, aqui tá invertido
+
+00:53:13.020 --> 00:53:14.560
+Tá
+
+00:53:14.560 --> 00:53:16.720
+Quer dizer, a inclusão de uma proposta via teste API
+
+00:53:16.720 --> 00:53:18.640
+Utilizando o mesmo dado da proposta feita no anterior
+
+00:53:18.640 --> 00:53:20.800
+Então assim, você vai inserir as informações
+
+00:53:20.800 --> 00:53:22.460
+A mão no teste API
+
+00:53:22.460 --> 00:53:24.620
+só que as informações que você vai inserir
+
+00:53:24.620 --> 00:53:26.500
+vai ser as mesmas que você criou antes
+
+00:53:26.500 --> 00:53:28.380
+então vai ser o mesmo convênio que você tinha feito antes
+
+00:53:28.380 --> 00:53:30.480
+o mesmo produto, o mesmo tudo, entendeu?
+
+00:53:34.000 --> 00:53:34.680
+é... e aqui
+
+00:53:34.680 --> 00:53:36.420
+caso tenha... ah, esse aqui
+
+00:53:36.420 --> 00:53:38.560
+tanto faz, na real, né, que você vai ter que criar
+
+00:53:38.560 --> 00:53:40.660
+com N, com C e tal, e aí se tiver
+
+00:53:40.660 --> 00:53:41.860
+algum erro, você vai regularizar
+
+00:53:41.860 --> 00:53:44.460
+provavelmente não vai ter nenhum erro, então essa parte não precisa
+
+00:53:44.460 --> 00:53:45.940
+não vou inventar pra vocês
+
+00:53:45.940 --> 00:53:46.840
+tá
+
+00:53:46.840 --> 00:53:51.560
+é...
+
+00:53:52.460 --> 00:53:54.620
+Tá
+
+00:53:54.620 --> 00:54:00.480
+Aqui você vai cadastrar um usuário
+
+00:54:00.480 --> 00:54:01.700
+E cadastrar um cliente, tá
+
+00:54:01.700 --> 00:54:04.200
+Ó, pro meio do novo usuário
+
+00:54:04.200 --> 00:54:06.740
+Cadastrar o outro jogador e cadastrar um cliente novo
+
+00:54:06.740 --> 00:54:08.660
+Então você vai cadastrar um usuário
+
+00:54:08.660 --> 00:54:10.280
+E um cliente, beleza
+
+00:54:10.280 --> 00:54:12.320
+É
+
+00:54:12.320 --> 00:54:14.520
+É isso, tá
+
+00:54:14.520 --> 00:54:15.260
+Eu vou
+
+00:54:15.260 --> 00:54:18.700
+Eu vou deixar você
+
+00:54:18.700 --> 00:54:20.380
+Se você tiver
+
+00:54:20.380 --> 00:54:22.160
+Algum documento lá do seu treinamento
+
+00:54:22.160 --> 00:54:24.600
+Eu quero que você passe e se vire
+
+00:54:24.600 --> 00:54:26.500
+Você quer que você se vire um pouco
+
+00:54:26.500 --> 00:54:27.940
+Então eu vou deixar você quebrar a cabeça um pouco
+
+00:54:27.940 --> 00:54:30.960
+Aí se você ver que você não conseguiu
+
+00:54:30.960 --> 00:54:32.520
+Sei lá, você não conseguiu passar
+
+00:54:32.520 --> 00:54:34.720
+Chegar dentro da segunda parte
+
+00:54:34.720 --> 00:54:35.840
+Certo?
+
+00:54:36.580 --> 00:54:38.940
+Você não conseguiu cadastrar um cliente
+
+00:54:38.940 --> 00:54:41.280
+Não conseguiu cadastrar um usuário pra você
+
+00:54:41.280 --> 00:54:42.860
+Tá? Aí você me fala
+
+00:54:42.860 --> 00:54:44.580
+Beleza? Mas assim
+
+00:54:44.580 --> 00:54:46.000
+Isso aqui é
+
+00:54:46.000 --> 00:54:47.280
+Super intuitivo
+
+00:54:47.280 --> 00:54:49.120
+Como você não teve o treinamento
+
+00:54:49.120 --> 00:54:51.180
+Eu não sei se você
+
+00:54:51.180 --> 00:54:54.480
+vai conseguir, né, mas eu tenho um doc
+
+00:54:54.480 --> 00:54:56.020
+qualquer coisa eu posso te mostrar, tá
+
+00:54:56.020 --> 00:54:57.840
+mas se você tiver
+
+00:54:57.840 --> 00:55:00.660
+se você tiver os docs do treinamento
+
+00:55:00.660 --> 00:55:02.560
+volta lá nas páginas
+
+00:55:02.560 --> 00:55:04.480
+né, não sei se você tem um pdf, não sei como
+
+00:55:04.480 --> 00:55:06.040
+funciona aí, mas, né
+
+00:55:06.040 --> 00:55:13.340
+isso, então
+
+00:55:21.180 --> 00:55:22.860
+Ah, então ela não passou
+
+00:55:22.860 --> 00:55:23.640
+Nem passou
+
+00:55:23.640 --> 00:55:26.120
+Entendi
+
+00:55:26.120 --> 00:55:28.960
+Tá
+
+00:55:28.960 --> 00:55:31.680
+Sim
+
+00:55:31.680 --> 00:55:35.140
+No Web Access
+
+00:55:35.140 --> 00:55:36.360
+Você vai ter que entrar como supervisor
+
+00:55:36.360 --> 00:55:37.880
+E criar um novo cliente
+
+00:55:37.880 --> 00:55:39.900
+Mas enfim
+
+00:55:39.900 --> 00:55:41.720
+E eu quero que você
+
+00:55:41.720 --> 00:55:43.180
+Você vai ter que fazer uma coisa diferente
+
+00:55:43.180 --> 00:55:45.000
+Você copia
+
+00:55:45.000 --> 00:55:47.600
+Pra sua máquina
+
+00:55:47.600 --> 00:55:49.660
+Esses caras aqui
+
+00:55:49.660 --> 00:55:51.120
+Então vai na minha máquina
+
+00:55:51.120 --> 00:55:53.660
+Copia o autorizador, copia o acesso
+
+00:55:53.660 --> 00:55:55.800
+Copia a API
+
+00:55:55.800 --> 00:55:56.740
+De
+
+00:55:56.740 --> 00:55:59.100
+Simulação
+
+00:55:59.100 --> 00:56:01.100
+E
+
+00:56:01.100 --> 00:56:03.260
+Sobe na sua máquina, tá
+
+00:56:03.260 --> 00:56:05.560
+Tipo assim, só sobe na sua máquina
+
+00:56:05.560 --> 00:56:07.700
+Isso, porque como a gente tá testando
+
+00:56:07.700 --> 00:56:09.560
+Aqui, pode ser que atrapalhe alguma coisinha
+
+00:56:09.560 --> 00:56:11.100
+Tal, tá
+
+00:56:11.100 --> 00:56:12.840
+E aí qualquer coisa você vai
+
+00:56:12.840 --> 00:56:14.660
+Me dando um salve aí
+
+00:56:14.660 --> 00:56:17.400
+Mas o intuito é você quebrar a cabeça um pouco
+
+00:56:17.400 --> 00:56:18.220
+Sim, tá
+
+00:56:18.220 --> 00:56:19.840
+Se você ver que tá muito difícil
+
+00:56:19.840 --> 00:56:22.380
+vai me mandando mensagem, tipo assim, você pode falar
+
+00:56:22.380 --> 00:56:24.480
+como que faz tal parte, tipo, ó, eu cheguei até aqui
+
+00:56:24.480 --> 00:56:26.340
+aí você me manda um print, o que eu faço aqui agora
+
+00:56:26.340 --> 00:56:28.520
+eu vou te falar, faz, procura uma coisa assim
+
+00:56:28.520 --> 00:56:29.680
+faz assado, sabe
+
+00:56:29.680 --> 00:56:31.920
+pode ir me mandando
+
+00:56:31.920 --> 00:56:34.720
+eu quero que você crie isso
+
+00:56:34.720 --> 00:56:36.500
+entendeu, e
+
+00:56:36.500 --> 00:56:38.660
+aí se eu ver
+
+00:56:38.660 --> 00:56:40.060
+que tá muito difícil, aí eu vou te mandar
+
+00:56:40.060 --> 00:56:41.560
+um doc de outra pessoa
+
+00:56:41.560 --> 00:56:43.660
+de outra pessoa
+
+00:56:43.660 --> 00:56:45.760
+que já fez treinamento
+
+00:56:45.760 --> 00:56:47.800
+e aí você vai ver o passo a passo dela
+
+00:56:47.800 --> 00:56:48.940
+também não vai ser um passo a passo
+
+00:56:48.940 --> 00:56:50.700
+Totalmente
+
+00:56:50.700 --> 00:56:55.380
+Detalhado
+
+00:56:55.380 --> 00:56:56.680
+Mas você vai ter um norte
+
+00:56:56.680 --> 00:56:58.320
+De como fazer boa parte das coisas
+
+00:56:58.320 --> 00:57:01.760
+Fechou?
+
+00:57:04.100 --> 00:57:04.680
+Então é isso
+
+00:57:04.680 --> 00:57:05.440
+Beleza
+
+00:57:05.440 --> 00:57:08.960
+Isso
+
+00:57:08.960 --> 00:57:10.720
+Pode ser
+
+00:57:10.720 --> 00:57:14.100
+Pode ser um dock simples
+
+00:57:14.100 --> 00:57:15.100
+Não precisa inventar nada
+
+00:57:15.100 --> 00:57:16.720
+Só abrir um org
+
+00:57:16.720 --> 00:57:17.360
+Coloca aí
+
+00:57:17.360 --> 00:57:18.600
+Segunda parte
+
+00:57:18.600 --> 00:57:20.340
+copia aqui e tal, e coloca os prints
+
+00:57:20.340 --> 00:57:22.020
+embaixo, entendeu? Pode ser desse jeito.
+
+00:57:23.340 --> 00:57:23.700
+Beleza?
+
+00:57:24.420 --> 00:57:26.380
+Então é isso. Valeu. Até mais tarde, então.
+
+00:57:27.800 --> 00:57:28.160
+Falou.
+
+00:57:29.220 --> 00:57:29.580
+Valeu.

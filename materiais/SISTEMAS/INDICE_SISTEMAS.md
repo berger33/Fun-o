@@ -73,3 +73,16 @@ Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição 
 | **CTC / CIP** | Troca de arquivos descrita, sem tela ou sistema receptor identificado | Contextualizar uma portabilidade que o interlocutor diz ter testado pouco | `ClientSecret EWEN TREINAMENTO.mp4` — 00:45:51–00:47:12 (fala introdutória) | [`../clientsecret-ewen-treinamento/procedimentos.md`](../clientsecret-ewen-treinamento/procedimentos.md) Fluxo E | — |
 
 > Nomes, ambiente, versão, configuração e resultados não foram confirmados; o vídeo não foi baixado/revisto visualmente neste lote. Não publicar segredo/código nem usar o relato como runbook.
+
+
+## Sistemas e áreas de `explicacao mesa c6.mp4` — ASR somente, sem inspeção visual
+
+| Sistema / módulo | Área citada verbalmente | Objetivo relatado | Gravação e timestamps | Procedimento | Capturas |
+|---|---|---|---|---|---|
+| **Autorizador / Empregador** | Relação entre módulos, esteira/plugin/averbação | Configurar componentes para uma implementação que atravessa módulos | `explicacao mesa c6.mp4` — 00:00:00–00:03:02 (fala; arquitetura não verificada) | [`../explicacao-mesa-c6/procedimentos.md`](../explicacao-mesa-c6/procedimentos.md) Fluxo A | — |
+| **Planner / Gantt** | Projetos, cartões, responsáveis, horas e prazos | Explicar organização da fila de CQ por sprint | `explicacao mesa c6.mp4` — 00:07:56–00:12:16 (sem tela revisada) | [`../explicacao-mesa-c6/guia_de_estudo.md`](../explicacao-mesa-c6/guia_de_estudo.md) §2 | — |
+| **EF / EPT / Excel / Geradoc** | Documento funcional, casos de teste, planilha e geração DOCX | Ler EF, escrever EPT e preparar documento de teste/evidência | `explicacao mesa c6.mp4` — 00:22:51–00:33:10 (somente ASR) | [`../explicacao-mesa-c6/procedimentos.md`](../explicacao-mesa-c6/procedimentos.md) Fluxo B | — |
+| **Autorizador / Web Access / Test API** | Cadastro de usuário/cliente, produto, convênio, esteira, proposta e teste | Treinar fluxo de cadastro/simulação/inclusão em base de testes | `explicacao mesa c6.mp4` — 00:46:20–00:57:29 (sem execução/telas verificadas) | [`../explicacao-mesa-c6/procedimentos.md`](../explicacao-mesa-c6/procedimentos.md) Fluxo D | — |
+| **Bases/servidores, sites e pastas (`config`, UDL)** | Ambientes local/compartilhado/servidor descritos verbalmente | Orientar atualização de versão e escolha de base | `explicacao mesa c6.mp4` — 00:33:11–00:45:04 (rótulos ASR, sem inspeção) | [`../explicacao-mesa-c6/procedimentos.md`](../explicacao-mesa-c6/procedimentos.md) Fluxo C (bloqueado) | — |
+
+> ASR sem VAD; há nomes/rótulos internos e instruções conflitantes de ambiente. Nenhuma tela, configuração, host ou credencial foi validada ou alterada. Não usar como runbook.

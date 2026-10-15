@@ -1,0 +1,14 @@
+{
+  "arquivo": "explicacao mesa c6.mp4",
+  "bytes": 1982033592,
+  "sha256": "44344aaad2c507992b90790b981678729dac4abe7d20f0015ee533da74b54998",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 3461.57,
+  "segmentos": 1394,
+  "filtro_vad": false,
+  "duracao_transcricao_s": 2802.8,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
