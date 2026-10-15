@@ -118,3 +118,14 @@ Ver [`primeiro-projeto/glossario.md`](primeiro-projeto/glossario.md) e [`primeir
 - **Etapas 2/3/4:** numeração corrigida/alternada na fala; não usar como sequência oficial (`00:10:12`–`00:12:23`).
 
 Ver [`gravando-2026-08-24-124650/glossario.md`](gravando-2026-08-24-124650/glossario.md) e [`gravando-2026-08-24-124650/incertezas.md`](gravando-2026-08-24-124650/incertezas.md). Identificadores/valores de teste estão mascarados e o trecho `00:06:01.19–00:09:31.31` foi omitido.
+
+## Termos de `Gravando 2026-10-06 110907.mp4`
+
+- **CDC / CQ:** siglas das áreas/sistemas citados na reunião; expansão e fronteira técnica não confirmadas (`00:00:08–00:00:11; 00:09:57–00:10:16`).
+- **SIC jobs / linha de comando:** mecanismo descrito para agendar o plugin/remessa com parâmetros de data; tela e sintaxe não demonstradas (`00:02:47–00:03:23; 00:05:26–00:06:29`).
+- **Itens 1.1 / 1.2 / 1.3:** numeração falada para configuração, remessa e consulta/relatório; validar na EF vigente (`00:01:34–00:03:34`).
+- **Histórico financeiro / liquidação:** critérios citados para selecionar operações com seguro, sem definição completa de eventos (`00:10:47–00:12:15`).
+- **Reenvio/reprocessamento:** repetir uma solicitação com erro, isolada ou em lote; controles, autorização e idempotência não descritos (`00:04:06–00:04:17; 00:16:29–00:17:25`).
+- **`DTN`, “PT fim”, “Gearlog”; `CECOMP`, `TRDSP`, `PDT`, “CDCM”; `SRL`, `RPT`, `SIG`:** grafias/siglas reconhecidas pelo ASR que exigem validação; não são nomes de parâmetro, campo ou rotina confirmados (`00:01:17–00:01:22; 00:06:00–00:06:29; 00:07:32–00:07:57; 00:12:34–00:12:58; 00:14:11–00:14:42`).
+
+Ver [`gravando-2026-10-06-110907/glossario.md`](gravando-2026-10-06-110907/glossario.md) e [`gravando-2026-10-06-110907/incertezas.md`](gravando-2026-10-06-110907/incertezas.md); sistema/projeto de referência foi mascarado e o trecho paralelo foi omitido.

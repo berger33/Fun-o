@@ -112,3 +112,10 @@ O ramo de **partes** do jonas re-publicado pela sessão paralela (run 3848044119
 - **Duplicidade:** `Gravando 2026-08-24 161729.mp4` tem o mesmo OID LFS `1b9b6afd…`; um único pacote sanitizado atende ambos.
 - **Objeto upstream possivelmente retido:** o commit `b26af329e7c0524a4f5151aa864c6dce4d82e1ba` (registrado também em §9) contém transcrições integrais de origem, inclusive este conteúdo, além de outros arquivos/ponteiros. A sanitização local não remove nem altera o commit upstream.
 - **Ação recomendada:** incluir a referência ao vídeo no pedido existente ao GitHub Support se a política exigir remoção de transcrições integrais acessíveis por SHA. Excluir refs não garante remoção do commit órfão; manter derivados públicos sanitizados e `STATUS.md` em revisão.
+
+## 11. Registro — derivado sanitizado de `Gravando 2026-10-06 110907.mp4` (2026-10-15)
+
+- **Coleta:** transcrição ASR e metadados foram copiados da referência `origin/arena/17453ccc-fun-o`. O README/metadata dessa execução registram `faster-whisper large-v3`, 683 segmentos, `770228772` bytes e SHA-256 `66e36717be17ba97597a75eb1cf057a4b34a33f843d528ea90f1c3a42f90deb3`; o ponteiro LFS e o manifesto conferem. O MP4 não foi baixado nem re-hasheado neste lote.
+- **Sanitização do derivado local:** a referência nominal a outro sistema/projeto foi substituída por marcador; a fala de formato de data ininteligível foi marcada, sem completar valores; conversa paralela sobre incidente/validação/liberação entre `00:23:04.06–00:23:47.48` foi omitida. Não há URL, credencial, SQL literal, payload ou identificador de operação nos derivados.
+- **Objeto upstream:** commit `0bf2514b357ca6dae6e1927ce9d43d3684c12057`, mensagem “Salva transcricao preliminar Gravando 2026-10-06”, contém os artefatos ASR integrais e ponteiro LFS (não os bytes do MP4). A sanitização desta branch não remove nem altera aquele objeto.
+- **Ação recomendada:** se a política exigir remoção do ASR integral acessível por commit, incluir o SHA no pedido ao GitHub Support; exclusão de refs não garante remoção de objeto órfão. Manter publicada apenas a cópia sanitizada e o status **em revisão** até análise visual/humana.

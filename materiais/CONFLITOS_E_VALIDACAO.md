@@ -114,3 +114,16 @@ Detalhes e timestamps em [`gravando-2026-08-24-124650/incertezas.md`](gravando-2
 5. **Sanitização:** o intervalo `00:06:01.19–00:09:31.31` foi omitido por privacidade/segurança; nenhuma consulta SQL ou dado de identificador foi transferido para o derivado público.
 6. **Cobertura:** ASR `large-v3` com 352 segmentos, áudio declarado `00:18:45.82`; vídeo/telas não foram revisados neste lote. Não houve teste, execução SQL ou captura. Manter estado **em revisão**.
 7. **Duplicidade:** `Gravando 2026-08-24 161729.mp4` tem o mesmo OID LFS e fica coberto por referência; não criar uma segunda análise.
+
+## Pendências de `Gravando 2026-10-06 110907.mp4` (2026-10-15)
+
+Detalhes e timestamps em [`gravando-2026-10-06-110907/incertezas.md`](gravando-2026-10-06-110907/incertezas.md).
+
+1. **Regra do produto:** confirmar eventos elegíveis para cancelamento (liquidação/quitação/refinanciamento/estorno/cancelamento) e a razão transmitida; a fala é hesitante.
+2. **Origem da despesa de seguro na operação:** não identificada. Nomes `CECOMP`, `TRDSP`, `PDT` e “CDCM” são candidatos ASR incertos; não construir consulta/rotina a partir deles.
+3. **Sistema e integração:** confirmar CDC/CQ/SIC, fronteira com Autorizador, nome do plugin/serviço e contrato externo. URL, segredo e proxy foram apenas citados; não há valores publicados.
+4. **Datas e parâmetros:** confirmar sintaxe/semântica de `DTN`, “PT fim”, “Gearlog”, limites do período e calendário de dia útil.
+5. **Reenvio e consistência:** definir retry, idempotência, auditoria e proteção contra duplicação, sobretudo para seleção em lote.
+6. **Relatório:** resolver campos, filtros, formato (fala oscila entre `RPT`/`SIG`) e padrão de emissão.
+7. **Estado da entrega:** comitê, horas, urgência e release descritos são históricos e não representam aprovação/prazo atual.
+8. **Privacidade/cobertura:** sistema/projeto de referência em `00:18:23.90–00:18:27.28` foi substituído; conversa paralela sobre incidente em `00:23:04.06–00:23:47.48` foi omitida. ASR 683 segmentos; MP4/EF/telas não foram revisados, e não houve teste/SQL. Manter **em revisão**.
