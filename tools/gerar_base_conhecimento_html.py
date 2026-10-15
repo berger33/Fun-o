@@ -986,6 +986,10 @@ META_REFERENCIAS: list[tuple[str, str]] = [
     (r"(?i)\bfala relata\b", "há menção a"),
     (r"(?i)\bfala sugere\b", "há indício de"),
     (r"(?i)\bItem que:\s*", ""),
+    (r"(?i)\ba fonte\s*\*{0,2}\s*n[ãa]o\b[^.;]*[.;]?", ""),
+    (r"(?i)\b(?:o|a) (?:registro|material|acervo)\s*\*{0,2}\s*n[ãa]o\b[^.;]*[.;]?", ""),
+    (r"(?i)\bA apresentadora atribui\b", "Atribui-se"),
+    (r"(?i)\bO apresentador atribui\b", "Atribui-se"),
     (r"(?i)\bA há ind[íi]cio\b", "Há indício"),
     (r"(?i)\bEm conversa seguinte\b", "Em novo contato"),
     (r"(?i)\be a reuni[ãa]o\b", ""),
@@ -1113,6 +1117,10 @@ SEM_CERTEZA = re.compile(
     r"registra|registram|comprova|comprovam|tem|havia"
     r")\b[^.;]{0,90}?" + PARTICIPIOS_DE_FALTA +
     r"|\b(?:n[ãa]o|nunca)\s+(?:mais\s+)?" + PARTICIPIOS_DE_FALTA +
+    r"|\b(?:precisa|precisam|deve|devem|carece|carecem|falta|faltam)\s+(?:ser\s+|de\s+)?"
+    r"(?:confirmad|verificad|valid|definid|esclarecid|checad|testad|ajustad|revist|corrigid|"
+    r"padronizad|aprofundad)"
+    r"|\b(?:nome|grafia|significado|sentido|escrita|nomenclatura|sigla) aproximad\w+"
     r"|\bsem\s+(?:confirmar|validar|verificar|definir|conferir)\b"
     r"|\bfalta\s+(?:descobrir|confirmar|definir|saber|verificar|esclarecer)\b"
     r"|\bsem\s+(?:confirma[çc][ãa]o|registro|evid[êe]ncia|comprova[çc][ãa]o|documenta[çc][ãa]o|"
