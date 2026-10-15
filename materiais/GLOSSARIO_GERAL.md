@@ -166,3 +166,15 @@ Detalhes em [`como-fazer-ept/glossario.md`](como-fazer-ept/glossario.md) e [`com
 - **Cue SRT/VTT:** bloco temporizado; o cue final termina `13.28 s` depois da duração de áudio declarada.
 
 Fonte: [`projeto-ept/glossario.md`](projeto-ept/glossario.md) e [`projeto-ept/metadados.md`](projeto-ept/metadados.md); pendente de revisão audiovisual.
+
+
+## Termos de `ClientSecret EWEN TREINAMENTO.mp4` (ASR não validado)
+
+- **Client Secret / “CloudSecret”:** credencial de aplicação/serviço mencionada ao configurar uma API; nomenclatura, escopo, expiração e rotação não foram confirmados. Não inserir segredo em Git, chat ou evidência.
+- **Client ID:** identificador usado no exemplo do Test API; ASR reconhece números diferentes em `00:15:09` e `00:21:12`; nenhum está validado.
+- **Test API / `WPWebService`:** ferramenta e serviço citados para simular proposta; grafia, endpoint, ambiente e contrato não conferidos.
+- **Arquivo de licença / “contrassenha”:** licença de métodos/API e código/autorização de instalação, conforme relato; origem e fluxo oficiais pendentes.
+- **Direitos por rotina / opções `A` e `M`:** áreas/opções citadas para conceder acesso e registrar métodos; uso depende da versão e da matriz de privilégios aprovada.
+- **CTC / CIP:** integração de portabilidade descrita verbalmente por troca de arquivos; interlocutor relata pouca experiência/teste, sem fluxo validado.
+
+Ver [`clientsecret-ewen-treinamento/glossario.md`](clientsecret-ewen-treinamento/glossario.md), [`clientsecret-ewen-treinamento/incertezas.md`](clientsecret-ewen-treinamento/incertezas.md) e a nota de privacidade §§13, 16. A transcrição integral preserva conversa pessoal conforme instrução do responsável.

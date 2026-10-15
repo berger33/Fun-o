@@ -26,5 +26,6 @@ Consultas e comandos SQL identificados nas gravações analisadas:
 
 | `Como fazer EPT.mp4` | **não aplicável** | Nenhuma query ou comando SQL é reproduzido ou demonstrado; a conversa trata de elaboração de EPT, API, proposta e recálculo. Nenhum SQL foi executado nesta análise. |
 | `projeto EPT.mp4` | **não determinável** | A saída ASR não sustenta conteúdo técnico; nenhuma query/comando é reconhecível ou foi executado nesta análise. Reavaliar após revisar a fonte. |
+| `ClientSecret EWEN TREINAMENTO.mp4` | **não aplicável** | “SQL Result” é mencionado como ferramenta/área, mas nenhuma consulta/comando é reproduzido. Nenhum SQL foi executado; revisar após inspeção da fonte. |
 
 Cada entrada traz objetivo, gravação e timestamp (`HH:MM:SS`), dialeto, tabelas/colunas citadas, tipo (`somente leitura` / `altera dados`) e link para a análise detalhada no vídeo. Comandos que alteram dados (`INSERT`, `UPDATE`, `DELETE`, DDL) recebem sinalização explícita de efeito e de validação operacional; nenhum comando é executado.

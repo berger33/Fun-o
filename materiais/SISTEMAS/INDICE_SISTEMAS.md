@@ -61,3 +61,15 @@ Quando houver entradas, cada linha deve trazer: nome visível do sistema/módulo
 ## Fonte sem sistema/tela identificável — `projeto EPT.mp4`
 
 Nenhum produto, sistema, módulo ou tela pode ser identificado na transcrição disponível. A frase repetida pelo ASR não confirma legenda nem conteúdo visual; o vídeo não foi revisado. Ver [`../projeto-ept/guia_de_estudo.md`](../projeto-ept/guia_de_estudo.md) e [`../projeto-ept/capturas.md`](../projeto-ept/capturas.md).
+
+
+## Sistemas citados em `ClientSecret EWEN TREINAMENTO.mp4` — ASR somente, sem inspeção visual
+
+| Sistema / módulo | Área/tela citada verbalmente | Objetivo relatado | Gravação e timestamps | Procedimento | Capturas |
+|---|---|---|---|---|---|
+| **Acesso / Web Acesso** | Serviços, gerenciamento de licenças, cadastro de usuários, direitos por rotina | Gerar Client Secret, associar licenças e conceder direitos a usuário | `ClientSecret EWEN TREINAMENTO.mp4` — 00:08:12–00:12:34, 00:18:01–00:20:05, 00:34:21–00:35:19, 00:42:48–00:43:31 (somente ASR) | [`../clientsecret-ewen-treinamento/procedimentos.md`](../clientsecret-ewen-treinamento/procedimentos.md) Fluxos A, C–D | — |
+| **Test API** | Configurações, catálogo de APIs, grupo/cenário, método e teste | Simular proposta usando Client ID/segredo e payload de cenário | `ClientSecret EWEN TREINAMENTO.mp4` — 00:11:32–00:17:48, 00:20:03–00:23:55 (ASR; URL/payload/telas não conferidos) | [`../clientsecret-ewen-treinamento/procedimentos.md`](../clientsecret-ewen-treinamento/procedimentos.md) Fluxo B | — |
+| **APIs / SQL Result** | Instalação de licença e cadastro de métodos/rotinas (`A`/`M`, conforme a fala) | Disponibilizar método/API e direitos relacionados | `ClientSecret EWEN TREINAMENTO.mp4` — 00:35:30–00:45:44 (sem inspeção visual) | [`../clientsecret-ewen-treinamento/procedimentos.md`](../clientsecret-ewen-treinamento/procedimentos.md) Fluxos C–D | — |
+| **CTC / CIP** | Troca de arquivos descrita, sem tela ou sistema receptor identificado | Contextualizar uma portabilidade que o interlocutor diz ter testado pouco | `ClientSecret EWEN TREINAMENTO.mp4` — 00:45:51–00:47:12 (fala introdutória) | [`../clientsecret-ewen-treinamento/procedimentos.md`](../clientsecret-ewen-treinamento/procedimentos.md) Fluxo E | — |
+
+> Nomes, ambiente, versão, configuração e resultados não foram confirmados; o vídeo não foi baixado/revisto visualmente neste lote. Não publicar segredo/código nem usar o relato como runbook.

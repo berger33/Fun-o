@@ -165,3 +165,17 @@ Detalhes em [`projeto-ept/incertezas.md`](projeto-ept/incertezas.md).
 4. **Temporização:** duração `00:36:16.70`, cue final `00:36:29.98` (13.28 s além); `duracao_transcricao_s: 788.8` não está definido.
 5. **Identidade/legenda:** nome e frase retornados pelo ASR não estão confirmados; não inferir crédito visual ou identidade pessoal.
 6. **Conteúdo técnico:** nenhum sistema, processo, requisito, SQL ou procedimento pode ser extraído com segurança desta saída; não concluir até revisão humana/audiovisual.
+
+
+## Pendências de `ClientSecret EWEN TREINAMENTO.mp4` (2026-10-15)
+
+Detalhes em [`clientsecret-ewen-treinamento/incertezas.md`](clientsecret-ewen-treinamento/incertezas.md).
+
+1. **Credencial/expiração:** fala sugere prazo longo para Client Secret; validar política vigente, menor duração, rotação, escopo, revogação e cofre seguro. Não adotar instrução oral como padrão.
+2. **Privilégio:** `Supervisor` é usado no relato; confirmar necessidade, aprovação e alternativa de menor privilégio antes de conceder acesso.
+3. **Client ID e terminologia:** valores lidos pelo ASR divergem em `00:15:09` e `00:21:12`; `Client Secret`/`CloudSecret` alternam. Não reutilizar valor nem grafia sem fonte autorizada.
+4. **Teste de API:** produto, URL, ambiente, endpoint, método e payload não foram conferidos; resultado do teste não é demonstrado de forma verificável.
+5. **Licença:** arquivo, versões, API/métodos, origem, integridade e autorização/“contrassenha” carecem de confirmação. A própria fala corrige números e uma alteração anterior de licença teria causado erro de token.
+6. **Direitos por rotina:** sequência e opções `A`/`M` dependem da versão; validar com a matriz e o runbook atual. Nenhuma mudança foi executada.
+7. **CTC/CIP:** menção é introdutória; o interlocutor diz que testou pouco. Obter EF/fluxo oficial antes de elaborar cenários.
+8. **Cobertura/privacidade:** ASR sem VAD (649 segmentos), sem revisão audiovisual. TXT/SRT/VTT não incluem valor literal reconhecível de segredo, mas não permitem afirmar o que aparece nas telas. A transcrição integral preserva conversa pessoal, inclusive autodeclaração de saúde, conforme instrução registrada na nota de privacidade §13.

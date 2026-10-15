@@ -1,0 +1,1948 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.760
+Opa! Beleza, William?
+
+00:00:12.020 --> 00:00:12.980
+Tô te ouvindo.
+
+00:00:16.240 --> 00:00:21.200
+Então, o Gabriel falou pra eu passar umas coisas pra você que eu acho que você não tinha visto ainda.
+
+00:00:21.200 --> 00:00:23.360
+Seria o
+
+00:00:23.360 --> 00:00:24.440
+CloudSecret
+
+00:00:24.440 --> 00:00:27.340
+Licença, quando disponibiliza
+
+00:00:27.340 --> 00:00:29.500
+Alguma API nova, um método novo
+
+00:00:29.500 --> 00:00:30.260
+De alguma API
+
+00:00:30.260 --> 00:00:31.840
+E
+
+00:00:31.840 --> 00:00:34.640
+CTC
+
+00:00:34.640 --> 00:00:36.880
+O CTC eu tô vendo aqui, tô preparando
+
+00:00:36.880 --> 00:00:38.920
+A base no servidor
+
+00:00:38.920 --> 00:00:41.020
+Pra ver se eu consigo te
+
+00:00:41.020 --> 00:00:43.240
+Te mostrar, né, antes de eu ir
+
+00:00:43.240 --> 00:00:45.040
+Mas aí, por enquanto
+
+00:00:45.040 --> 00:00:47.280
+Vamos fazendo lá o CloudSecret
+
+00:00:47.280 --> 00:00:49.300
+Aí se você quiser
+
+00:00:49.300 --> 00:00:50.440
+Compartilhar na tela
+
+00:00:50.440 --> 00:00:52.980
+que aí você vai falando pra mim
+
+00:00:52.980 --> 00:00:55.320
+o que você entendeu lá dos vídeos
+
+00:00:55.320 --> 00:00:57.120
+e qualquer coisa eu vou te auxiliando em alguma
+
+00:00:57.120 --> 00:01:17.120
+isso mesmo
+
+00:01:20.440 --> 00:01:29.340
+Mas aí, então, vamos criar um
+
+00:01:29.340 --> 00:01:30.540
+Client Secret pra você
+
+00:01:30.540 --> 00:01:33.540
+Geralmente, tipo assim, a gente só vai fazer isso
+
+00:01:33.540 --> 00:01:34.160
+Uma vez na vida
+
+00:01:34.160 --> 00:01:36.580
+Mas, né, você sabe
+
+00:01:50.440 --> 00:01:58.520
+Opa, agora eu estou vendo
+
+00:01:58.520 --> 00:02:00.740
+Então
+
+00:02:00.740 --> 00:02:03.000
+Isso daí é o ORECA
+
+00:02:03.000 --> 00:02:05.400
+Aí pode abrir o site do acesso
+
+00:02:17.400 --> 00:02:18.340
+Ah não
+
+00:02:18.340 --> 00:02:20.660
+É o nosso acesso mesmo
+
+00:02:20.660 --> 00:02:22.380
+O site que a gente tem do C6
+
+00:02:22.380 --> 00:02:48.040
+Ah, você subiu na sua própria
+
+00:02:48.040 --> 00:02:48.680
+a máquina?
+
+00:02:57.320 --> 00:02:57.760
+Boa.
+
+00:03:02.060 --> 00:03:03.940
+Ah, legal. Mas aí, então,
+
+00:03:04.400 --> 00:03:05.960
+é...
+
+00:03:05.960 --> 00:03:08.000
+Vai estar apontando para as nossas UDLs
+
+00:03:08.000 --> 00:03:08.420
+mesmo, né?
+
+00:03:10.840 --> 00:03:11.680
+Ah, então, ok.
+
+00:03:11.740 --> 00:03:12.600
+Então pode abrir por aí.
+
+00:03:18.040 --> 00:03:24.520
+E é uma coisa assim que meio que você vai fazer
+
+00:03:24.520 --> 00:03:26.580
+Só pra
+
+00:03:26.580 --> 00:03:28.660
+Uma vez na vida, né
+
+00:03:28.660 --> 00:03:30.640
+Aqui mesmo eu só fiz uma vez
+
+00:03:30.640 --> 00:03:32.200
+Na mesa, lá na fábrica
+
+00:03:32.200 --> 00:03:35.120
+Eu tive que fazer várias vezes porque eram várias bases diferentes
+
+00:03:35.120 --> 00:03:38.860
+Mas é sempre bom colocar a mão na massa
+
+00:03:48.040 --> 00:04:06.720
+Já voou
+
+00:04:06.720 --> 00:04:08.860
+Esse vai dar certo, né
+
+00:04:13.120 --> 00:04:14.600
+Mano, desde os meus
+
+00:04:14.600 --> 00:04:17.740
+18 anos
+
+00:04:17.740 --> 00:04:25.240
+Nada, é só
+
+00:04:25.240 --> 00:04:26.520
+Tô com 23
+
+00:04:26.520 --> 00:04:30.060
+Eu vou desenrolando
+
+00:04:30.060 --> 00:04:31.680
+Eu vou pegando
+
+00:04:31.680 --> 00:04:33.440
+E vou aprendendo, sabe
+
+00:04:33.440 --> 00:04:34.760
+Eu tenho a base toda
+
+00:04:34.760 --> 00:04:37.380
+Mas nunca toquei
+
+00:04:37.380 --> 00:04:39.580
+É que a função é o meu primeiro trabalho na vida
+
+00:04:39.580 --> 00:04:41.420
+Então, tipo assim
+
+00:04:41.420 --> 00:04:43.640
+Nunca fiz algum trampo
+
+00:04:43.640 --> 00:04:44.720
+Real, profissional
+
+00:04:44.720 --> 00:04:46.600
+Com programação
+
+00:04:46.600 --> 00:04:47.600
+Obrigado.
+
+00:05:16.600 --> 00:05:37.880
+Não, então
+
+00:05:37.880 --> 00:05:40.200
+eu acho que se você tiver a base
+
+00:05:40.200 --> 00:05:42.380
+eu acho que tem que primeiro entender a base
+
+00:05:42.380 --> 00:05:44.200
+e pegar a lógica de programação
+
+00:05:44.200 --> 00:05:45.820
+porque IA
+
+00:05:45.820 --> 00:05:47.500
+eu acho que ninguém vai conseguir fugir
+
+00:05:47.500 --> 00:05:49.980
+todo mundo no futuro vai ter que usar IA
+
+00:05:49.980 --> 00:05:51.960
+mas tipo, se você
+
+00:05:51.960 --> 00:05:53.600
+não tiver uma base de programação
+
+00:05:53.600 --> 00:05:55.380
+quando der algum problema
+
+00:05:55.380 --> 00:05:57.480
+eu acho que você não iria conseguir resolver
+
+00:05:57.480 --> 00:05:58.740
+mesmo se tivesse IA
+
+00:05:58.740 --> 00:06:01.400
+então eu acho que se você criar uma base
+
+00:06:01.400 --> 00:06:03.480
+e depois você pode
+
+00:06:03.480 --> 00:06:05.640
+utilizar sim IA pra te ajudar
+
+00:06:05.640 --> 00:06:07.640
+auxiliar, a IA dá pra você usar
+
+00:06:07.640 --> 00:06:09.560
+pra aprender muito mais rápido mesmo
+
+00:06:09.560 --> 00:06:13.720
+mas eu acho importante criar
+
+00:06:13.720 --> 00:06:23.480
+Sim, é, tipo, você vai
+
+00:06:23.480 --> 00:06:25.160
+Você falou o Python
+
+00:06:25.160 --> 00:06:26.460
+Então você vai
+
+00:06:26.460 --> 00:06:29.800
+Pegar a base do Python
+
+00:06:29.800 --> 00:06:31.100
+Que é a sintaxe
+
+00:06:31.100 --> 00:06:34.060
+Como que algumas coisas são estruturadas
+
+00:06:34.060 --> 00:06:35.700
+Alguns padrões de projetos dele
+
+00:06:35.700 --> 00:06:37.360
+E depois que você começa a ver isso
+
+00:06:37.360 --> 00:06:38.460
+Você começa a fazer
+
+00:06:38.460 --> 00:06:40.540
+Alguns projetinhos
+
+00:06:40.540 --> 00:06:43.500
+E aí, o que você pode fazer
+
+00:06:43.500 --> 00:06:45.880
+que foi uma coisa que eu fiz
+
+00:06:45.880 --> 00:06:47.240
+quando fiz a prova do Dev aqui
+
+00:06:47.240 --> 00:06:49.800
+eu não usei IA, o que eu usei IA
+
+00:06:49.800 --> 00:06:52.280
+foi pra, tipo, eu implementava
+
+00:06:52.280 --> 00:06:54.040
+aí não saiu
+
+00:06:54.040 --> 00:06:54.880
+o que eu esperava
+
+00:06:54.880 --> 00:06:58.060
+aí eu pegava aquilo e mostrava
+
+00:06:58.060 --> 00:06:59.960
+pra IA, mas eu não falava pra IA
+
+00:06:59.960 --> 00:07:01.540
+me dar a solução
+
+00:07:01.540 --> 00:07:04.320
+ela apontar o que eu errei
+
+00:07:04.320 --> 00:07:05.960
+aí nisso
+
+00:07:05.960 --> 00:07:07.700
+eu voltei pra ela, se eu falasse
+
+00:07:07.700 --> 00:07:09.880
+implementar essa coisa pra mim, ela iria fazer
+
+00:07:09.880 --> 00:07:11.580
+com certeza, mas
+
+00:07:11.580 --> 00:07:13.180
+aí eu não iria aprender, né
+
+00:07:13.180 --> 00:07:19.940
+então acho que
+
+00:07:43.180 --> 00:08:05.520
+Isso.
+
+00:08:05.520 --> 00:08:08.520
+Então, aí você pode...
+
+00:08:08.520 --> 00:08:12.460
+serviços mesmo
+
+00:08:12.460 --> 00:08:15.940
+aí vai ter
+
+00:08:22.120 --> 00:08:22.760
+isso
+
+00:08:22.760 --> 00:08:24.600
+gerenciamento de licenças
+
+00:08:24.600 --> 00:08:26.300
+aí primeiro
+
+00:08:26.300 --> 00:08:28.140
+dessa daí que você tem que entrar
+
+00:08:28.140 --> 00:08:30.020
+seria
+
+00:08:30.020 --> 00:08:35.860
+liberação de acesso para geração de
+
+00:08:35.860 --> 00:08:36.600
+Cloud Secret
+
+00:08:36.600 --> 00:08:42.600
+Incluir.
+
+00:09:06.600 --> 00:09:19.580
+Aí, ó, você vai colocar
+
+00:09:19.580 --> 00:09:21.700
+Não, aí não precisa, não
+
+00:09:21.700 --> 00:09:23.660
+É o que você vai fazer
+
+00:09:23.660 --> 00:09:26.560
+Você vai colocar o nome do seu
+
+00:09:26.560 --> 00:09:28.180
+Você já tem um usuário criado aí, né?
+
+00:09:31.080 --> 00:09:31.580
+Aí você pode
+
+00:09:31.580 --> 00:09:34.680
+Não, não, pode deixar
+
+00:09:34.680 --> 00:09:35.980
+Supervisor mesmo
+
+00:09:35.980 --> 00:09:38.420
+Aí você coloca o seu usuário ali
+
+00:09:38.420 --> 00:09:43.680
+Aí incluir
+
+00:09:43.680 --> 00:09:45.320
+Isso
+
+00:09:45.320 --> 00:09:47.440
+Aí você pode
+
+00:09:47.440 --> 00:09:50.680
+Pegar
+
+00:09:50.680 --> 00:09:54.560
+Pode jogar esses dois pro lado
+
+00:09:54.560 --> 00:10:00.060
+Aí tem dois MPJs
+
+00:10:00.060 --> 00:10:01.520
+Agora seleciona ali o outro
+
+00:10:01.520 --> 00:10:01.900
+Isso
+
+00:10:01.900 --> 00:10:04.440
+Ah, pode clicar em OK
+
+00:10:04.440 --> 00:10:05.760
+Ah não, então é esse daí mesmo
+
+00:10:05.760 --> 00:10:08.760
+Isso, aí pode clicar em gravar.
+
+00:10:10.760 --> 00:10:14.760
+Ah, coloca alguma coisa ali na descrição.
+
+00:10:28.760 --> 00:10:32.760
+Ah, é que a gente clicou em incluir, é alterar.
+
+00:10:32.760 --> 00:10:35.760
+Porque já tem isso aí.
+
+00:10:47.760 --> 00:10:50.760
+Aí a chave de acesso, pesquisa aí.
+
+00:10:56.760 --> 00:10:58.760
+É esse primeiro.
+
+00:11:02.760 --> 00:11:11.560
+Isso, agora sim, aí você, tá certo, aí é só você adicionar ali o nome do seu usuário, incluir e salvar.
+
+00:11:14.260 --> 00:11:17.860
+Beleza, aí você já pode deslogar o acesso.
+
+00:11:29.860 --> 00:11:31.020
+E logo funciona.
+
+00:11:32.760 --> 00:11:52.700
+Aí você vai em geração de client-secret para WPWebService, aí clica ali nesse link
+
+00:11:52.700 --> 00:12:06.000
+Aí você pode colocar ali uma descrição e a data de expiração coloca bem longa.
+
+00:12:06.000 --> 00:12:20.860
+Aí copie esse número aí, que depois a gente não vai conseguir ver ele de novo.
+
+00:12:20.860 --> 00:12:25.960
+aí pode confirmar
+
+00:12:25.960 --> 00:12:30.600
+e gravar
+
+00:12:30.600 --> 00:12:32.120
+beleza
+
+00:12:32.120 --> 00:12:34.060
+aí esse é o seu
+
+00:12:34.060 --> 00:12:34.820
+client secret
+
+00:12:34.820 --> 00:12:37.020
+agora abre o
+
+00:12:37.020 --> 00:12:37.700
+test API
+
+00:12:37.700 --> 00:12:47.360
+aí eu vou ter que
+
+00:12:47.360 --> 00:12:48.680
+reiniciar minha máquina
+
+00:12:48.680 --> 00:12:49.680
+Obrigado.
+
+00:13:18.680 --> 00:13:21.980
+aí clica ali em configurações
+
+00:13:21.980 --> 00:13:28.640
+aí coloca
+
+00:13:28.640 --> 00:13:29.720
+a CloudSecret
+
+00:13:29.720 --> 00:13:32.920
+aí, ó, isso daí depende
+
+00:13:32.920 --> 00:13:34.740
+um pouco de cada API
+
+00:13:34.740 --> 00:13:36.980
+mas o CloudSecret sempre vai ser esse mesmo
+
+00:13:36.980 --> 00:13:38.860
+o login e a senha também
+
+00:13:38.860 --> 00:13:39.920
+o do seu usuário
+
+00:13:39.920 --> 00:13:47.140
+e aí, ó, vai lá no
+
+00:13:47.140 --> 00:13:50.920
+onde ficam as APIs
+
+00:13:50.920 --> 00:13:52.500
+e abre uma API aí no
+
+00:13:52.500 --> 00:13:53.580
+navegador.
+
+00:14:00.340 --> 00:14:02.340
+Deixa eu te mandar o caminho aqui.
+
+00:14:17.140 --> 00:14:21.220
+Aí pode colar isso daqui no navegador
+
+00:14:21.220 --> 00:14:25.180
+Aí vai ter todas as aplicações que a gente tem aqui no Sensei
+
+00:14:25.180 --> 00:14:27.520
+Tá tudo na máquina do Gabriel
+
+00:14:27.520 --> 00:14:35.300
+Aí pesquisa aí o
+
+00:14:35.300 --> 00:14:38.160
+Simula a proposta
+
+00:14:45.160 --> 00:14:46.800
+Aí abre a documentação
+
+00:14:46.800 --> 00:14:55.260
+aí como a gente está fazendo pelo test API
+
+00:14:55.260 --> 00:14:56.920
+a gente não vai usar todas as informações
+
+00:14:56.920 --> 00:14:58.540
+já se a gente fosse usar pelo
+
+00:14:58.540 --> 00:15:00.200
+postman
+
+00:15:00.200 --> 00:15:02.620
+a gente teria que
+
+00:15:02.620 --> 00:15:05.160
+usar algumas outras, mas como a gente está
+
+00:15:05.160 --> 00:15:06.820
+usando o test API, a gente só precisa pegar
+
+00:15:06.820 --> 00:15:09.240
+aquele client ID ali
+
+00:15:09.240 --> 00:15:11.240
+que é 99500
+
+00:15:11.240 --> 00:15:15.000
+em algumas APIs
+
+00:15:15.000 --> 00:15:16.320
+esse número muda
+
+00:15:16.320 --> 00:15:18.780
+aí você pode botar lá
+
+00:15:18.780 --> 00:15:20.760
+essa API, colocar ele lá
+
+00:15:20.760 --> 00:15:23.240
+aí beleza, teoricamente você já
+
+00:15:23.240 --> 00:15:24.980
+vai conseguir usar a API, você pode
+
+00:15:24.980 --> 00:15:26.520
+clicar ali, ó, incluir cenário
+
+00:15:26.520 --> 00:15:31.280
+ele já salva automaticamente
+
+00:15:31.280 --> 00:15:33.280
+e se incluir
+
+00:15:33.280 --> 00:15:33.640
+grupo
+
+00:15:33.640 --> 00:15:38.220
+aí dá um, coloca
+
+00:15:38.220 --> 00:15:40.700
+C6 APIs
+
+00:15:40.700 --> 00:15:47.140
+Aí você já pode clicar ali em cima
+
+00:15:47.140 --> 00:15:48.000
+Que surge uma
+
+00:15:48.000 --> 00:15:51.200
+Aí sim que você clica em incluir cenário
+
+00:15:51.200 --> 00:15:55.680
+Aí você coloca como nome
+
+00:15:55.680 --> 00:15:59.420
+API de simulação
+
+00:16:04.960 --> 00:16:07.320
+Aí você pode colar o URL daquela API
+
+00:16:07.320 --> 00:16:07.480
+E aí?
+
+00:16:19.080 --> 00:16:19.700
+Isso daí.
+
+00:16:20.420 --> 00:16:21.440
+Essa URL aí.
+
+00:16:23.420 --> 00:16:24.140
+Não, não, não.
+
+00:16:24.520 --> 00:16:25.320
+Isso, essa daí.
+
+00:16:37.320 --> 00:16:41.320
+Aí você pode selecionar o primeiro método
+
+00:16:41.320 --> 00:16:43.880
+E aí
+
+00:16:43.880 --> 00:16:46.080
+Abriu ela
+
+00:16:46.080 --> 00:16:48.880
+E você pode preencher nos campos
+
+00:16:48.880 --> 00:16:51.180
+Aí eu vou te mandar aqui
+
+00:16:51.180 --> 00:16:52.280
+Só preencher mais rápido
+
+00:16:52.280 --> 00:16:53.680
+Já o Jason tudo completo
+
+00:17:07.320 --> 00:17:31.120
+Aí você copia esse Jason aí.
+
+00:17:37.320 --> 00:17:42.040
+aí cola, aí pode ir salvar
+
+00:17:42.040 --> 00:17:44.260
+aí é só apertar no botão
+
+00:17:44.260 --> 00:17:46.240
+lá embaixo de incluir
+
+00:17:46.240 --> 00:17:48.440
+de testar cenário
+
+00:17:48.440 --> 00:18:01.600
+vai lá no acesso
+
+00:18:01.600 --> 00:18:07.300
+no web acesso mesmo
+
+00:18:07.300 --> 00:18:09.660
+Aí clica ali
+
+00:18:09.660 --> 00:18:11.040
+Entra como Supervisor
+
+00:18:11.040 --> 00:18:18.960
+Aí vai em Cadastro
+
+00:18:18.960 --> 00:18:23.320
+Usuários
+
+00:18:23.320 --> 00:18:26.940
+Alterar
+
+00:18:26.940 --> 00:18:31.480
+Aí você coloca o seu usuário aí
+
+00:18:31.480 --> 00:18:34.120
+Confirmar
+
+00:18:37.300 --> 00:18:53.520
+Aí você pode descer tudo
+
+00:18:53.520 --> 00:18:57.140
+Aí velho, direitos por rotina
+
+00:19:07.300 --> 00:19:20.320
+aí você pesquisa aí
+
+00:19:20.320 --> 00:19:25.740
+é que tem cp no nome
+
+00:19:25.740 --> 00:19:28.060
+vê se tem uma que não seja com cp
+
+00:19:28.060 --> 00:19:31.780
+simulação, proposta
+
+00:19:31.780 --> 00:19:37.620
+Ali, ó
+
+00:19:37.620 --> 00:19:44.960
+Ah, já tá com merda
+
+00:19:44.960 --> 00:19:46.560
+Abre aquela caixinha ali pra ver
+
+00:19:46.560 --> 00:19:57.660
+Ok
+
+00:19:57.660 --> 00:19:59.940
+Pode clicar em confirmar
+
+00:19:59.940 --> 00:20:03.440
+pode gravar aí, já está certo
+
+00:20:03.440 --> 00:20:05.500
+então peraí, tem uma outra coisa
+
+00:20:05.500 --> 00:20:08.040
+que estamos deixando passar
+
+00:20:29.940 --> 00:20:37.920
+Deixa eu ver de novo a sua config lá
+
+00:20:37.920 --> 00:20:39.540
+Ué, mas
+
+00:20:59.940 --> 00:21:07.380
+O Client Secret que você colou lá tá certinho, né?
+
+00:21:12.380 --> 00:21:17.180
+O Client ID também, né? 995000
+
+00:21:29.940 --> 00:21:56.100
+É isso mesmo.
+
+00:21:59.940 --> 00:22:10.260
+Arrasta ele para o lado aí
+
+00:22:10.260 --> 00:22:14.440
+Aí coloca o seu usuário
+
+00:22:14.440 --> 00:22:16.700
+Ah, você já está ali
+
+00:22:16.700 --> 00:22:24.720
+Não, então está certo
+
+00:22:29.940 --> 00:22:59.920
+E aí
+
+00:22:59.940 --> 00:23:18.980
+É o 99, é lá naquela tela de configurações do teste API.
+
+00:23:29.940 --> 00:23:39.020
+Coloca aí
+
+00:23:39.020 --> 00:23:41.100
+Supervisor, sim, a 1, 2, 3, 4, 5, 6
+
+00:23:41.100 --> 00:23:42.500
+Só pra, não sei
+
+00:23:42.500 --> 00:23:54.940
+Já altera automático
+
+00:23:54.940 --> 00:23:55.320
+Isso
+
+00:23:55.320 --> 00:23:56.320
+Obrigado.
+
+00:24:25.320 --> 00:24:53.320
+Peraí, peraí, deixa eu...
+
+00:24:55.320 --> 00:24:58.500
+ver se está rodando
+
+00:24:58.500 --> 00:25:02.220
+na base os pulmões.
+
+00:25:25.320 --> 00:25:30.480
+só tá rodando
+
+00:25:30.480 --> 00:25:36.260
+um tipo só
+
+00:25:55.320 --> 00:26:08.320
+Eu que tinha feito o teste antes de vir aqui, eu também não tô conseguindo não. Alguma coisa que mexeram.
+
+00:26:21.320 --> 00:26:24.320
+É, sempre isso que acontece.
+
+00:26:25.320 --> 00:26:55.300
+E aí
+
+00:26:55.320 --> 00:27:25.300
+E aí
+
+00:27:25.320 --> 00:27:55.300
+E aí
+
+00:27:55.320 --> 00:27:57.240
+do meu teste, peraí que eu vou alterar aqui o convênio
+
+00:28:25.320 --> 00:28:55.300
+E aí
+
+00:28:55.320 --> 00:29:23.680
+Bom dia, Sérgio da Escada.
+
+00:29:25.320 --> 00:29:28.360
+Você já trabalhou em quais empresas?
+
+00:29:43.020 --> 00:29:43.780
+Nossa, que top!
+
+00:29:49.660 --> 00:29:50.680
+Ah não, você tem uma...
+
+00:29:55.320 --> 00:30:07.620
+Mexer com o público deve ser muito estressante, né?
+
+00:30:25.320 --> 00:30:31.600
+Ah, mano, é porque o povo não conhece, eles olham o código na tela e falam
+
+00:30:31.600 --> 00:30:33.180
+Nossa, meu Deus, que coisa complicada, meu Deus
+
+00:30:33.180 --> 00:30:35.340
+Mas não é tudo isso, não
+
+00:30:35.340 --> 00:30:51.380
+Muito
+
+00:30:51.380 --> 00:30:56.320
+e essa daqui
+
+00:30:56.320 --> 00:30:58.340
+é uma empresa boa
+
+00:30:58.340 --> 00:30:58.840
+porque tipo
+
+00:30:58.840 --> 00:31:02.300
+eu tenho uns amigos que já trabalham
+
+00:31:02.300 --> 00:31:04.040
+aqui, né, aí eles falaram
+
+00:31:04.040 --> 00:31:06.220
+que aqui a oportunidade de crescer
+
+00:31:06.220 --> 00:31:07.500
+é bem alta, mano, que nem
+
+00:31:07.500 --> 00:31:10.080
+eu, antes de ir pro desenvolvimento
+
+00:31:10.080 --> 00:31:11.480
+eu já recebi proposta
+
+00:31:11.480 --> 00:31:13.420
+pra poder ir pra
+
+00:31:13.420 --> 00:31:15.000
+é
+
+00:31:15.000 --> 00:31:18.440
+implantação, recentemente
+
+00:31:18.440 --> 00:31:20.000
+e
+
+00:31:20.000 --> 00:31:21.720
+é suporte que se fala?
+
+00:31:24.280 --> 00:31:26.420
+Não, não se fala suporte, mas é uma outra área aqui da função
+
+00:31:26.420 --> 00:31:28.220
+também. Sustentação.
+
+00:31:29.080 --> 00:31:30.320
+Quando eu tava na fábrica,
+
+00:31:30.420 --> 00:31:32.060
+já me chamaram pra ir pra sustentação
+
+00:31:32.060 --> 00:31:34.440
+e agora com eu aqui na mesa, me chamaram
+
+00:31:34.440 --> 00:31:36.500
+pra ir pra implantação. Só que eu sempre falei
+
+00:31:36.500 --> 00:31:38.240
+não, porque o meu objetivo era
+
+00:31:38.240 --> 00:31:40.280
+deve. Aí
+
+00:31:40.280 --> 00:31:41.860
+hoje consegui realizar.
+
+00:31:43.000 --> 00:31:44.480
+Mas tipo assim, depois de um tempo
+
+00:31:44.480 --> 00:31:46.020
+a oportunidade aqui vai
+
+00:31:46.020 --> 00:31:47.580
+elas vão surgindo, sabe?
+
+00:31:47.580 --> 00:31:50.760
+Aí você tem que ver o que você mais gosta
+
+00:31:50.760 --> 00:31:52.960
+Se é negócio, sustentação, implantação
+
+00:31:52.960 --> 00:31:54.000
+Continuar não sei o que
+
+00:31:54.000 --> 00:31:58.340
+Tenta aí agora de novo
+
+00:32:17.580 --> 00:32:24.800
+Mano, então, aparentemente
+
+00:32:24.800 --> 00:32:26.600
+agora
+
+00:32:26.600 --> 00:32:28.540
+estão precisando, porque
+
+00:32:28.540 --> 00:32:31.060
+esses meus amigos
+
+00:32:31.060 --> 00:32:33.080
+também, eles falaram que eles fizeram a prova
+
+00:32:33.080 --> 00:32:35.000
+e demoraram, eles fizeram, foram
+
+00:32:35.000 --> 00:32:36.760
+aprovados, mas demoraram bastante
+
+00:32:36.760 --> 00:32:39.080
+aí eu fiz a prova
+
+00:32:39.080 --> 00:32:40.200
+e já vou entrar
+
+00:32:40.200 --> 00:32:42.200
+foi muito rápido
+
+00:32:42.200 --> 00:32:44.800
+eu queria até um tempinho a mais pra poder
+
+00:32:44.800 --> 00:32:46.940
+pegar, estudar um pouco
+
+00:32:46.940 --> 00:32:49.100
+mais, mas já me chamaram, então
+
+00:32:49.100 --> 00:32:50.600
+aparentemente tá com vaga.
+
+00:32:51.100 --> 00:32:52.880
+Uma coisa que a função não faz
+
+00:32:52.880 --> 00:32:54.560
+é abrir vaga
+
+00:32:54.560 --> 00:32:56.360
+desde o 18.
+
+00:32:57.740 --> 00:32:59.100
+Uns 4 anos que eu tô aqui.
+
+00:33:00.460 --> 00:33:01.140
+É 5 anos.
+
+00:33:01.360 --> 00:33:03.260
+É que eu entrei com 18
+
+00:33:03.260 --> 00:33:04.980
+e uma semana
+
+00:33:04.980 --> 00:33:05.860
+depois eu fiz 19.
+
+00:33:14.520 --> 00:33:15.080
+Sim.
+
+00:33:16.940 --> 00:33:17.900
+Aí foi isso.
+
+00:33:20.500 --> 00:33:22.540
+Aí se você quiser, você pode salvar aí.
+
+00:33:23.760 --> 00:33:24.440
+Ah não, é.
+
+00:33:24.460 --> 00:33:24.900
+Você vai ver.
+
+00:33:25.220 --> 00:33:26.280
+A empresa aqui é boa.
+
+00:33:30.400 --> 00:33:32.120
+Ah não, ali você pode clicar em sim.
+
+00:33:34.440 --> 00:33:34.900
+Aí beleza.
+
+00:33:35.000 --> 00:33:38.820
+Já fica salvo aí quando você precisar mexer de novo.
+
+00:33:39.560 --> 00:33:41.340
+Aí esse foi a criação do Clash Secret.
+
+00:33:42.140 --> 00:33:43.880
+E aí agora, lembra que a gente...
+
+00:33:43.880 --> 00:33:45.240
+Deixa eu te mostrar o que aconteceu.
+
+00:33:45.360 --> 00:33:46.660
+O que a gente tinha feito de errado lá.
+
+00:33:46.660 --> 00:33:47.740
+Vai lá no acesso
+
+00:33:47.740 --> 00:33:59.020
+Sim, é
+
+00:33:59.020 --> 00:34:01.220
+Você nunca mais vai precisar fazer isso na sua vida
+
+00:34:01.220 --> 00:34:03.000
+Se você não perdeu o seu Client Secret
+
+00:34:03.000 --> 00:34:05.320
+Você nunca mais vai ter que fazer isso na sua vida
+
+00:34:05.320 --> 00:34:15.500
+É, então
+
+00:34:15.500 --> 00:34:17.560
+Aí depois eu posso até te explicar pra você como que faz
+
+00:34:17.560 --> 00:34:18.840
+Pelo post, né
+
+00:34:18.840 --> 00:34:21.960
+Aí, ó
+
+00:34:21.960 --> 00:34:22.580
+Vai lá
+
+00:34:22.580 --> 00:34:26.320
+Vai ali em serviços
+
+00:34:26.320 --> 00:34:29.640
+Em semento
+
+00:34:29.640 --> 00:34:31.560
+Aí lembra que a gente tinha clicado em incluir?
+
+00:34:32.120 --> 00:34:33.420
+Aí quando a gente clicou em incluir
+
+00:34:33.420 --> 00:34:34.680
+A gente mudou umas coisas
+
+00:34:34.680 --> 00:34:37.500
+O certo era só a gente ir em alterar
+
+00:34:37.500 --> 00:34:38.800
+Aí vai em alterar
+
+00:34:38.800 --> 00:34:42.540
+Coloca aí o primeiro
+
+00:34:45.500 --> 00:34:47.820
+E aí a gente tinha mudado
+
+00:34:47.820 --> 00:34:50.440
+A gente tinha pegado essa licença aí
+
+00:34:50.440 --> 00:34:52.640
+E arrastado para o lado
+
+00:34:52.640 --> 00:34:54.100
+Mas na verdade ela tem que ficar ali
+
+00:34:54.100 --> 00:34:56.240
+Do lado, por isso estava dando aquele erro de token
+
+00:34:56.240 --> 00:34:58.640
+Aí vocês
+
+00:34:58.640 --> 00:35:00.080
+Não, não
+
+00:35:00.080 --> 00:35:01.720
+Tinha que ficar licença selecionadas
+
+00:35:01.720 --> 00:35:03.800
+Porque essa licença aí
+
+00:35:03.800 --> 00:35:05.520
+Vai ficar para todos esses usuários
+
+00:35:05.520 --> 00:35:06.980
+Que está aí embaixo
+
+00:35:06.980 --> 00:35:09.400
+Aí como a gente tinha mexido
+
+00:35:09.400 --> 00:35:11.160
+A gente deixou ela
+
+00:35:11.160 --> 00:35:13.960
+Para esse outro lado, licenças disponíveis
+
+00:35:13.960 --> 00:35:16.140
+E depois adicionou, mas tá errado
+
+00:35:16.140 --> 00:35:18.760
+A gente só tinha que adicionar o usuário
+
+00:35:18.760 --> 00:35:19.800
+E gravar, era só isso
+
+00:35:19.800 --> 00:35:24.020
+Aí beleza
+
+00:35:24.020 --> 00:35:26.580
+Aí ó
+
+00:35:26.580 --> 00:35:28.120
+Clica em voltar aí
+
+00:35:28.120 --> 00:35:30.820
+Voltar
+
+00:35:30.820 --> 00:35:32.640
+Aí o que acontece
+
+00:35:32.640 --> 00:35:35.060
+É meio difícil de acontecer isso
+
+00:35:35.060 --> 00:35:36.880
+Mas eu já peguei algumas vezes
+
+00:35:36.880 --> 00:35:37.900
+Aqui quando eu tava na mesa
+
+00:35:37.900 --> 00:35:41.040
+Que vai surgir um novo produto da função
+
+00:35:41.040 --> 00:35:42.960
+E o C6 ele quis
+
+00:35:42.960 --> 00:35:44.720
+contratar. Aí
+
+00:35:44.720 --> 00:35:47.020
+a função fez uma API
+
+00:35:47.020 --> 00:35:48.960
+nova, ou dentro de uma mesma
+
+00:35:48.960 --> 00:35:50.520
+API criou um método novo.
+
+00:35:52.180 --> 00:35:52.760
+Aí o que
+
+00:35:52.760 --> 00:35:55.220
+o...
+
+00:35:55.220 --> 00:35:56.320
+como que funciona, né?
+
+00:35:57.080 --> 00:35:58.760
+Tem um arquivo de licenças.
+
+00:35:58.840 --> 00:36:01.060
+Esse arquivo de licenças é o
+
+00:36:01.060 --> 00:36:03.080
+que o C6 precisa
+
+00:36:03.080 --> 00:36:04.740
+pra ele conseguir
+
+00:36:04.740 --> 00:36:07.020
+poder
+
+00:36:07.020 --> 00:36:08.820
+usar esses novos métodos,
+
+00:36:08.900 --> 00:36:09.700
+essas novas APIs.
+
+00:36:11.080 --> 00:36:12.940
+Aí, ó, vai lá no grupo, no grupo
+
+00:36:12.940 --> 00:36:15.120
+eu tinha pedido, no grupo dos devs, eu tinha pedido
+
+00:36:15.120 --> 00:36:17.020
+se alguém poderia me mandar uma licença.
+
+00:36:17.220 --> 00:36:18.360
+Aí eles mandaram lá pra mim.
+
+00:36:24.560 --> 00:36:26.280
+Você tá no grupo dos devs com isso aqui?
+
+00:36:28.600 --> 00:36:30.320
+Ah, então pera, deixa eu...
+
+00:36:30.320 --> 00:36:32.320
+Nossa, deixa eu te colocar então.
+
+00:36:35.100 --> 00:36:37.460
+Ah, é que você ainda não tava...
+
+00:36:37.460 --> 00:36:39.320
+É que agora que você veio direto pra cá,
+
+00:36:39.400 --> 00:36:40.900
+então já dá pra eu te colocar já aqui.
+
+00:36:42.940 --> 00:36:55.080
+Ai, peraí
+
+00:36:55.080 --> 00:36:55.400
+Eu fiz
+
+00:36:55.400 --> 00:36:57.880
+É que eu quero te
+
+00:36:57.880 --> 00:37:00.980
+Peraí, eu vou retirar você
+
+00:37:00.980 --> 00:37:02.160
+E vou colocar de novo
+
+00:37:02.160 --> 00:37:04.660
+Pra eu incluir o histórico de chat
+
+00:37:04.660 --> 00:37:08.880
+Aí você vai ver todas as conversas que a gente tem
+
+00:37:08.880 --> 00:37:10.180
+Anteriores
+
+00:37:10.180 --> 00:37:12.160
+Aí quem sabe isso um dia te ajuda
+
+00:37:12.160 --> 00:37:24.260
+Nunca demais
+
+00:37:24.260 --> 00:37:27.560
+Aí, ó, sobe um pouquinho a conversa
+
+00:37:34.280 --> 00:37:35.760
+Aí eu tinha pedido, né
+
+00:37:35.760 --> 00:37:38.480
+E o Zé me mandou
+
+00:37:38.480 --> 00:37:42.020
+Um caminho pra máquina dele
+
+00:37:42.020 --> 00:37:42.980
+Onde tem a licença
+
+00:37:42.980 --> 00:37:46.100
+Só quem gera a licença
+
+00:37:46.100 --> 00:37:46.720
+É o dev
+
+00:37:46.720 --> 00:37:50.880
+Tá mais pra baixo
+
+00:37:50.880 --> 00:37:53.160
+Tá bem no comecinho
+
+00:37:53.160 --> 00:37:55.200
+Foi ontem às 16
+
+00:37:55.200 --> 00:37:56.620
+16h50
+
+00:38:12.020 --> 00:38:15.260
+Isso, aí você copia isso
+
+00:38:15.260 --> 00:38:17.460
+Aí o Zé mandou pra mim
+
+00:38:17.460 --> 00:38:19.920
+Aí você pode
+
+00:38:19.920 --> 00:38:23.980
+Abrir aí no gerenciador, né
+
+00:38:23.980 --> 00:38:27.340
+Aí você pode copiar isso pra sua máquina
+
+00:38:27.340 --> 00:38:34.140
+Pode...
+
+00:38:34.140 --> 00:38:36.440
+É, pode colocar aí na mesa
+
+00:38:36.440 --> 00:38:38.420
+Pode deixar ela em qualquer lugar
+
+00:38:38.420 --> 00:38:41.300
+Aí, ó, vai lá no acesso
+
+00:38:41.300 --> 00:38:47.300
+aí vai ter serviços
+
+00:38:47.300 --> 00:38:51.380
+gerenciamento de licenças
+
+00:38:51.380 --> 00:38:53.000
+aí primeiro vamos fazer o seguinte
+
+00:38:53.000 --> 00:38:54.760
+vamos consultar licenças instaladas
+
+00:39:06.760 --> 00:39:07.440
+aí
+
+00:39:07.440 --> 00:39:08.500
+abre o primeiro
+
+00:39:08.500 --> 00:39:10.860
+que esse é o CNPJ
+
+00:39:10.860 --> 00:39:12.760
+do C6. Aí,
+
+00:39:12.940 --> 00:39:14.860
+ó, tudo isso que tá
+
+00:39:14.860 --> 00:39:16.600
+aparecendo aí são todas as APIs
+
+00:39:16.600 --> 00:39:18.660
+e os métodos dela
+
+00:39:18.660 --> 00:39:20.120
+que o C6
+
+00:39:20.120 --> 00:39:22.520
+comprou da função. Então, ó,
+
+00:39:22.580 --> 00:39:24.060
+abre aí
+
+00:39:24.060 --> 00:39:26.700
+qualquer API, qualquer API, tipo, não é esse
+
+00:39:26.700 --> 00:39:29.060
+maisinho. Aí vai mostrar
+
+00:39:29.060 --> 00:39:30.560
+os métodos de cada API.
+
+00:39:31.300 --> 00:39:32.840
+Vai abrindo outros aí pra ver
+
+00:39:32.840 --> 00:39:34.500
+se tem um que tenha mais métodos.
+
+00:39:40.860 --> 00:39:43.480
+Aí ó, essa daí já tem mais métodos
+
+00:39:43.480 --> 00:39:45.840
+Cadastro, consulta de cliente PF
+
+00:39:45.840 --> 00:39:46.360
+Já tem
+
+00:39:46.360 --> 00:39:48.860
+Quatro métodos nessa daí
+
+00:39:48.860 --> 00:39:51.140
+Aí vamos supor
+
+00:39:51.140 --> 00:39:52.880
+Que teve um trabalho
+
+00:39:52.880 --> 00:39:54.880
+Que
+
+00:39:54.880 --> 00:39:57.400
+Nessa API adicionou um outro método
+
+00:39:57.400 --> 00:39:59.440
+Sobe lá em cima
+
+00:39:59.440 --> 00:40:01.040
+Pra ver qual que é a versão do arquivo leak
+
+00:40:01.040 --> 00:40:01.400
+Que tá
+
+00:40:01.400 --> 00:40:05.380
+Versão 42, o nosso é versão 45
+
+00:40:05.380 --> 00:40:05.760
+Vê lá
+
+00:40:10.860 --> 00:40:13.460
+Ó, versão
+
+00:40:13.460 --> 00:40:16.440
+42
+
+00:40:16.440 --> 00:40:19.140
+Isso, 92, eu falei errado
+
+00:40:19.140 --> 00:40:21.220
+Eu tenho TDAH
+
+00:40:21.220 --> 00:40:22.840
+Aí, ó
+
+00:40:22.840 --> 00:40:23.980
+Então
+
+00:40:23.980 --> 00:40:26.560
+Então o arquivo que o Zé passou
+
+00:40:26.560 --> 00:40:28.960
+Ele é maior, né
+
+00:40:28.960 --> 00:40:31.220
+Porque ele passou, era 45
+
+00:40:31.220 --> 00:40:37.160
+Isso, a 45, então a gente pode
+
+00:40:37.160 --> 00:40:38.800
+Isso, 95
+
+00:40:38.800 --> 00:40:40.680
+Por que eu tô com 40 na cabeça, meu Deus
+
+00:40:40.680 --> 00:40:43.680
+Aí então vamos pegar essa licença
+
+00:40:43.680 --> 00:40:44.820
+E vamos instalar ela
+
+00:40:44.820 --> 00:40:46.220
+Aí pode clicar em voltar
+
+00:40:46.220 --> 00:40:48.360
+Serviços
+
+00:40:48.360 --> 00:40:52.000
+Instalar licenças
+
+00:40:52.000 --> 00:40:57.640
+E aí você vai ali
+
+00:40:57.640 --> 00:40:59.300
+Escolher arquivo
+
+00:40:59.300 --> 00:41:03.780
+Aí você vai selecionar o arquivo
+
+00:41:03.780 --> 00:41:04.080
+Lá do
+
+00:41:04.080 --> 00:41:09.640
+Beleza, aí clica ali
+
+00:41:09.640 --> 00:41:10.760
+em gerar
+
+00:41:10.760 --> 00:41:13.920
+ele gerou esse número
+
+00:41:13.920 --> 00:41:15.740
+esse número aí, a gente vai
+
+00:41:15.740 --> 00:41:17.880
+pegar ele, aí você
+
+00:41:17.880 --> 00:41:19.600
+vai mandar pra alguém que é analista
+
+00:41:19.600 --> 00:41:21.660
+que no caso é o Gabriel
+
+00:41:21.660 --> 00:41:23.460
+então manda uma mensagem pro Gabriel
+
+00:41:23.460 --> 00:41:26.120
+mano, você pode gerar autorização pra arquivo de licença
+
+00:41:26.120 --> 00:41:27.140
+aí você manda esse número
+
+00:41:27.140 --> 00:41:29.960
+porque o que o Gabriel vai fazer
+
+00:41:29.960 --> 00:41:31.760
+ele vai pegar
+
+00:41:31.760 --> 00:41:33.000
+esse número que você vai mandar pra ele
+
+00:41:33.000 --> 00:41:35.500
+vai numa rotina do atende
+
+00:41:35.500 --> 00:41:36.820
+e vai gerar
+
+00:41:36.820 --> 00:41:39.100
+uma contrassenha
+
+00:41:39.100 --> 00:41:41.000
+Que é essa autorização para a gente poder instalar
+
+00:41:41.000 --> 00:41:59.860
+É, agora vamos esperar ele
+
+00:41:59.860 --> 00:42:01.940
+Gerar para a gente, para a gente colocar
+
+00:42:01.940 --> 00:42:03.740
+Naquele
+
+00:42:03.740 --> 00:42:06.180
+Naquela outra caixa
+
+00:42:06.180 --> 00:42:07.880
+Para poder instalar
+
+00:42:07.880 --> 00:42:12.720
+Eita, alguém ligou pra mim
+
+00:42:12.720 --> 00:42:15.040
+Alguém ligou pra mim
+
+00:42:19.040 --> 00:42:19.760
+Alguém ligou
+
+00:42:19.760 --> 00:42:32.560
+Instaladas com sucesso
+
+00:42:32.560 --> 00:42:33.500
+Beleza
+
+00:42:33.500 --> 00:42:35.780
+Aí, o que aconteceu?
+
+00:42:35.780 --> 00:42:38.220
+como esse é um arquivo novo, então teve
+
+00:42:38.220 --> 00:42:39.700
+alguma mudança aí que a gente
+
+00:42:39.700 --> 00:42:42.240
+não viu, né? Mas quando a gente for
+
+00:42:42.240 --> 00:42:44.040
+pegar algum trabalho, vai falar com
+
+00:42:44.040 --> 00:42:46.100
+os 10 e vão falar pra gente que foi
+
+00:42:46.100 --> 00:42:48.220
+adicionado. E aí, sempre
+
+00:42:48.220 --> 00:42:50.080
+que a gente instalar uma licença nova e a gente for
+
+00:42:50.080 --> 00:42:52.240
+testar o que é de novo, a gente
+
+00:42:52.240 --> 00:42:54.260
+tem que entrar naquela rotina lá de cadastro,
+
+00:42:54.340 --> 00:42:56.440
+no acesso, usuários
+
+00:42:56.440 --> 00:42:58.160
+e dar permissão
+
+00:42:58.160 --> 00:43:00.200
+pro nosso
+
+00:43:00.200 --> 00:43:02.560
+usuário pra nova coisa que foi disponibilizada.
+
+00:43:05.780 --> 00:43:15.480
+Aí vai ter lá direitos por rotina
+
+00:43:15.480 --> 00:43:19.300
+E aí a gente vai selecionar aí
+
+00:43:19.300 --> 00:43:20.860
+O que é que tem de novo
+
+00:43:20.860 --> 00:43:23.320
+E dá
+
+00:43:23.320 --> 00:43:25.640
+Clicar no botão adicionar
+
+00:43:25.640 --> 00:43:27.640
+Clicar naquele checkbox ali e gravar
+
+00:43:27.640 --> 00:43:29.080
+Para o nosso usuário ter
+
+00:43:29.080 --> 00:43:31.840
+Os acessos a essa nova implementação
+
+00:43:31.840 --> 00:43:34.000
+Ah, uma outra coisa importante
+
+00:43:34.000 --> 00:43:37.400
+aí a gente vai
+
+00:43:37.400 --> 00:43:38.160
+instalar essa API
+
+00:43:38.160 --> 00:43:40.600
+na nossa máquina
+
+00:43:40.600 --> 00:43:42.840
+aí o que você pode fazer
+
+00:43:42.840 --> 00:43:44.420
+é o que você sempre tem que fazer
+
+00:43:44.420 --> 00:43:46.540
+abre o SQL Result
+
+00:43:46.540 --> 00:43:57.040
+de alguma API
+
+00:43:57.040 --> 00:43:57.780
+aleatória aí
+
+00:44:01.840 --> 00:44:02.800
+ah nossa
+
+00:44:02.800 --> 00:44:03.240
+eu falei
+
+00:44:03.240 --> 00:44:16.600
+É, pode ser, pode abrir aí.
+
+00:44:17.980 --> 00:44:21.580
+Só que aí, no caso, a gente iria para a API nova, né?
+
+00:44:22.460 --> 00:44:24.100
+Mas no acesso também é importante ir.
+
+00:44:24.700 --> 00:44:28.240
+Porque, ó, no acesso vai ter essa opção A,
+
+00:44:28.760 --> 00:44:31.240
+cadastrar rotinas no website do acesso,
+
+00:44:31.240 --> 00:44:33.800
+mas nas APIs
+
+00:44:33.800 --> 00:44:35.740
+vai ter
+
+00:44:35.740 --> 00:44:36.560
+a opção M
+
+00:44:36.560 --> 00:44:38.740
+que é cadastrar métodos
+
+00:44:38.740 --> 00:44:41.020
+então a gente
+
+00:44:41.020 --> 00:44:47.060
+você tem alguma API aí?
+
+00:44:47.380 --> 00:44:49.040
+ali ó, API similar proposta
+
+00:45:01.240 --> 00:45:15.620
+Aí vai ter a opção M
+
+00:45:15.620 --> 00:45:17.020
+Cadastrar método no acesso
+
+00:45:17.020 --> 00:45:20.140
+Então, nas APIs a gente vai rodar com M
+
+00:45:20.140 --> 00:45:24.680
+E no SQL Result
+
+00:45:24.680 --> 00:45:27.220
+Do acesso a gente vai rodar com A
+
+00:45:27.220 --> 00:45:30.440
+E aí, assim que a gente fazer isso
+
+00:45:30.440 --> 00:45:33.000
+que vai aparecer lá no
+
+00:45:33.000 --> 00:45:34.600
+website do acesso
+
+00:45:34.600 --> 00:45:36.460
+na rotina
+
+00:45:36.460 --> 00:45:38.140
+direitos por rotina
+
+00:45:38.140 --> 00:45:43.440
+a disponibilização nova
+
+00:45:43.440 --> 00:45:44.780
+isso
+
+00:45:44.780 --> 00:45:51.460
+aí sobre licença
+
+00:45:51.460 --> 00:45:52.720
+e credit circuit é isso
+
+00:45:52.720 --> 00:45:57.480
+aí o que o Gabriel tinha me falado também
+
+00:45:57.480 --> 00:45:59.580
+que a gente vai
+
+00:45:59.580 --> 00:46:01.580
+criar uma portabilidade
+
+00:46:01.580 --> 00:46:03.900
+mandar um arquivo pra CIP
+
+00:46:03.900 --> 00:46:05.820
+a CIP vai retornar um arquivo
+
+00:46:05.820 --> 00:46:07.160
+pro nosso sistema e a gente vai
+
+00:46:07.160 --> 00:46:09.920
+e aí a gente vai mandar de novo
+
+00:46:09.920 --> 00:46:11.880
+um arquivo pra CIP pra falar que chegou
+
+00:46:11.880 --> 00:46:12.720
+aqui
+
+00:46:12.720 --> 00:46:15.740
+o fluxo de CTC é esse
+
+00:46:15.740 --> 00:46:16.700
+aí eu queria
+
+00:46:16.700 --> 00:46:20.040
+só preparar a base
+
+00:46:20.040 --> 00:46:22.140
+aqui pra eu conseguir mostrar isso pra você
+
+00:46:22.140 --> 00:46:26.020
+aqui na mesa eu não testei muito
+
+00:46:26.020 --> 00:46:28.040
+o CTC, eu acho que eu testei umas duas
+
+00:46:28.040 --> 00:46:29.460
+vezes CTC, tanto que eu estou
+
+00:46:29.460 --> 00:46:31.540
+meio esquecido de CTC,
+
+00:46:31.940 --> 00:46:33.280
+porque eu testava mais na fábrica.
+
+00:46:33.860 --> 00:46:35.280
+Mas pode
+
+00:46:35.280 --> 00:46:37.420
+acontecer de cair
+
+00:46:37.420 --> 00:46:39.940
+algum projeto de CTC aqui, porque CTC
+
+00:46:39.940 --> 00:46:41.880
+é do módulo do autorizador, né?
+
+00:46:41.960 --> 00:46:43.980
+E a gente está numa mesa que é do autorizador.
+
+00:46:44.740 --> 00:46:45.920
+Então pode cair em algum
+
+00:46:45.920 --> 00:46:46.340
+momento.
+
+00:46:50.860 --> 00:46:52.080
+Aí eu vou preparar
+
+00:46:52.080 --> 00:46:53.880
+aqui, aí se
+
+00:46:53.880 --> 00:46:55.740
+eu conseguir, eu
+
+00:46:55.740 --> 00:46:57.860
+te chamo mais tarde, beleza?
+
+00:46:58.040 --> 00:47:03.400
+no Eureka
+
+00:47:03.400 --> 00:47:08.120
+eu acho que ele tem
+
+00:47:08.120 --> 00:47:09.740
+uma coisa explicando sobre
+
+00:47:09.740 --> 00:47:12.840
+essa relação do nosso sistema
+
+00:47:12.840 --> 00:47:13.660
+com a CIP
+
+00:47:28.040 --> 00:47:41.540
+Deixa eu ver se tem alguma coisa
+
+00:47:41.540 --> 00:47:42.540
+de CTC aí
+
+00:47:42.540 --> 00:47:46.680
+Só tem isso?
+
+00:47:49.440 --> 00:47:51.160
+É que tem como pedir
+
+00:47:51.160 --> 00:47:52.160
+pra solicitar
+
+00:47:52.160 --> 00:47:57.440
+outras trilhas também
+
+00:47:57.440 --> 00:48:18.520
+então
+
+00:48:18.520 --> 00:48:20.920
+a gente tem que abrir uma OS
+
+00:48:20.920 --> 00:48:23.420
+a gente tem que abrir uma OS
+
+00:48:23.420 --> 00:48:24.680
+não sei se é pra infra
+
+00:48:24.680 --> 00:48:26.380
+ou pro RH
+
+00:48:26.380 --> 00:48:27.900
+aí o RH vai
+
+00:48:27.900 --> 00:48:30.660
+colocar um curso
+
+00:48:30.660 --> 00:48:32.440
+aí pra você visualizar
+
+00:48:32.440 --> 00:48:34.640
+só que eu não sei
+
+00:48:34.640 --> 00:48:36.440
+agora se a gente tem que pedir direto pro RH
+
+00:48:36.440 --> 00:48:38.600
+ou pro Gabriel
+
+00:48:38.600 --> 00:48:40.480
+mas o Gabriel, eu não sei se ele também sabe
+
+00:48:40.480 --> 00:48:47.700
+ai, tem alguém me ligando
+
+00:48:47.700 --> 00:48:50.240
+mas fica assim, mano, eu vou ver aqui
+
+00:48:50.240 --> 00:48:52.120
+aí eu tento te falar
+
+00:48:52.120 --> 00:48:53.820
+beleza? falou
+
+00:48:53.820 --> 00:48:54.820
+Obrigado.
