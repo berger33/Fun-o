@@ -140,3 +140,16 @@ Detalhes em [`gravando-2026-09-23-164626/incertezas.md`](gravando-2026-09-23-164
 6. **Retorno versus loop:** conversa não fecha o fluxo de reentrada, retry ou idempotência.
 7. **Cobertura:** 396 segmentos; último cue `00:26:14.39`, áudio `00:33:59.98`, com aproximadamente `00:07:45.59` sem transcrição no final e outros intervalos sem segmentos. Revisão humana integral pendente; manter **em revisão**.
 8. **Fonte primária:** o MP4 não foi baixado nem inspecionado visualmente neste lote; relatos de anexação e sucesso não foram confirmados contra tela/JSON.
+
+## Pendências de `Como fazer EPT.mp4` (2026-10-15)
+
+Detalhes em [`como-fazer-ept/incertezas.md`](como-fazer-ept/incertezas.md).
+
+1. **Exemplo × exercício:** o início demonstra uma EPT/API com objetos de despesa e reaproveitamento; o final apresenta um exercício sobre recálculo/margem de tolerância. Confirmar se são projetos/EFs distintos.
+2. **Template:** a fala diz que o modelo tem seis colunas, mas a enumeração não é clara. Conferir cabeçalhos oficiais, numeração de casos/etapas e regras de pré/pós-condição.
+3. **API:** conferir nome/rota, parâmetros, objetos/campos/tipos/nulabilidade e cenários sem dados na EF e documentação vigentes.
+4. **Reaproveitamento:** regra geral é explicada verbalmente para refinanciamento; valores numéricos são didáticos, não requisito nem massa aprovada.
+5. **Margem de tolerância:** fórmula, valores mínimo/máximo, tolerância percentual, arredondamento, fronteiras, precedência e estados sem configuração não definidos.
+6. **Dependência/identificador:** implementação anterior é descrita como requisito; ID ouvido pelo ASR precisa de validação antes de ser usado para localizar projeto.
+7. **Demonstração da EPT:** o próprio interlocutor critica o exemplo mostrado. Não copiar seus passos sem confronto com o template e a EF atuais.
+8. **Cobertura:** áudio `00:35:47.18`, último cue `00:35:43.14`, duração ASR declarada `1651.5 s`; existem intervalos sem segmentos. MP4/telas não revistos; manter **em revisão**.

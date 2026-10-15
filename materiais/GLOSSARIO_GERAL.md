@@ -142,3 +142,17 @@ Ver [`gravando-2026-10-06-110907/glossario.md`](gravando-2026-10-06-110907/gloss
 - **CPS / CCD:** siglas reconhecidas ao falar de um tipo de documento; grafia e significado incertos.
 
 Detalhes e timestamps em [`gravando-2026-09-23-164626/glossario.md`](gravando-2026-09-23-164626/glossario.md) e [`gravando-2026-09-23-164626/incertezas.md`](gravando-2026-09-23-164626/incertezas.md). A transcrição está integral conforme a diretriz de preservação registrada em [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md) §13.
+
+## Termos de `Como fazer EPT.mp4`
+
+- **EPT / “IPT”:** plano/artefato de teste que descreve cenários, pré-condições, passos e resultados esperados; “IPT” pode ser erro ASR (`00:02:19`, `00:07:08`, `00:31:16`).
+- **EF:** especificação funcional; fonte para objetivo, comportamento atual, requisitos, premissas e dependências (`00:02:19–00:02:48`, `00:27:40–00:30:21`).
+- **Web API Consulta de Propostas detalhada:** endpoint verbalmente descrito com número de proposta/usuário como entradas e novos objetos na saída; rota e schema não conferidos (`00:02:48–00:06:18`).
+- **Objeto `Despesa`:** objeto de retorno citado na EF/exemplo; campos não enumerados com clareza no ASR.
+- **Objeto `Reaproveitamento`:** objeto relacionado ao reaproveitamento de seguro em refinanciamento; campos/regra devem vir da EF, não dos valores da aula.
+- **Margem de tolerância:** exercício de recálculo com limites de valor solicitado no convênio e tolerância percentual; fórmula e limites não confirmados (`00:28:03–00:29:36`).
+- **Caso / etapa:** organização da EPT em um caso com passos, com novo bloco ao iniciar caso distinto; convenção atual depende do template (`00:09:36–00:12:47`).
+- **Pré-condição / premissa / resultado esperado:** itens do modelo de teste usados para descrever o estado necessário, suposições e resultado conforme a EF (`00:09:17–00:10:05`, `00:13:05–00:15:06`).
+- **`Nexo`, `UTE`, `UTPT`:** grafias ASR sem definição; não as tratar como ferramentas/repositórios confirmados.
+
+Detalhes em [`como-fazer-ept/glossario.md`](como-fazer-ept/glossario.md) e [`como-fazer-ept/incertezas.md`](como-fazer-ept/incertezas.md). Nenhum campo ou procedimento da gravação foi verificado visualmente.

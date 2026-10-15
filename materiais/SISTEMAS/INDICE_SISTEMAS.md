@@ -47,3 +47,12 @@ Quando houver entradas, cada linha deve trazer: nome visível do sistema/módulo
 | **Plugin de envio ao sistema externo** | Payload JSON para um ou mais documentos; esquema/objeto não confirmado | A conversa relata `null` sem documentos e dois documentos no JSON após retorno/reenvio; nenhum payload foi conferido | `Gravando 2026-09-23 164626.mp4` — 00:04:19–00:05:01, 00:19:46–00:20:53, 00:21:45–00:25:34 (sem inspeção visual) | [`../gravando-2026-09-23-164626/procedimentos.md`](../gravando-2026-09-23-164626/procedimentos.md) Fluxos B e D | — |
 
 > As referências a perfil/chaves GED são observações da fala ASR, não configuração aprovada. O MP4 não foi baixado/revisto neste lote; ver [`../gravando-2026-09-23-164626/incertezas.md`](../gravando-2026-09-23-164626/incertezas.md).
+
+## Entradas de `Como fazer EPT.mp4` — somente ASR, sem inspeção visual
+
+| Sistema / módulo | Tela ou área | Objetivo relatado | Gravação e timestamp | Procedimento | Capturas |
+|---|---|---|---|---|---|
+| **Autorizador Web / Web API Consulta de Propostas (detalhada)** | Documentação da API e resposta de consulta; rota, versão e tela não confirmadas | Demonstrar novos objetos de despesa e reaproveitamento na saída, preparando proposta com os dados necessários; relato didático, sem payload conferido | `Como fazer EPT.mp4` — 00:02:48–00:07:08, 00:13:05–00:21:18 (descrição verbal/ASR; sem inspeção visual) | [`../como-fazer-ept/procedimentos.md`](../como-fazer-ept/procedimentos.md) Fluxo C | — |
+| **Excel / EPT, EF e documentação de API** | Modelo de EPT, documento funcional e referência de teste | Orientação para descrever cenários, pré-condições, passos e resultados esperados; o número/nome das colunas e modelo oficial não foram conferidos | `Como fazer EPT.mp4` — 00:08:57–00:15:06, 00:23:14–00:27:16, 00:27:40–00:31:13 (sem inspeção visual) | [`../como-fazer-ept/procedimentos.md`](../como-fazer-ept/procedimentos.md) Fluxos A–B e D | — |
+
+> A gravação é aula e exemplo verbal. Não confirma a EF, schema, planilha, valores de configuração nem implementação; ver [`../como-fazer-ept/incertezas.md`](../como-fazer-ept/incertezas.md).

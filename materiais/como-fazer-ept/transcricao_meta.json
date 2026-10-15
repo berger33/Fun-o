@@ -1,0 +1,13 @@
+{
+  "arquivo": "Como fazer EPT.mp4",
+  "bytes": 1229228708,
+  "sha256": "52cbfc76a421a37d639f7e9a2887386687f175f04dfda2cf41c65abb577102b6",
+  "modelo": "large-v3",
+  "idioma_declarado": "pt",
+  "idioma_detectado": "pt",
+  "probabilidade_idioma": 1,
+  "duracao_audio_s": 2147.18,
+  "segmentos": 854,
+  "duracao_transcricao_s": 1651.5,
+  "ferramenta": "faster-whisper (CTranslate2)"
+}
