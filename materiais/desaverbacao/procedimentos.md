@@ -43,3 +43,6 @@
 ## Limites desta análise
 
 Este plano não contém SQL reproduzido, payload, endpoint, credenciais, configuração ou comando executável. Nenhum SQL, API de produto ou teste de sistema foi executado; nenhum banco, dado, configuração ou ambiente foi alterado. A gravação e suas telas não foram revisadas nesta sessão.
+
+--- Atualização Passo 8 (2026-10-15) ---
+Fluxos mencionados pelo ASR (não confirmados como sequência oficial): introdução (00:00:43), modelo de averbação (00:01:36), referência a stub (00:03:04), conferência final (01:05:36–01:06:33). Nenhum passo, entrada, saída ou exceção pode ser numerado sem o MP4 revisado.

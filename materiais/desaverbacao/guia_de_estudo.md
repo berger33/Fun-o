@@ -58,3 +58,10 @@ Ao final, são mencionados como cenários diferentes a exclusão de operação n
 ## Resumo
 
 O ASR sustenta que a conversa trata de investigar e testar um fluxo de cancelamento/desaverbação, passando por parâmetros de Consignado Privado, stub, esteira e retorno. A causa da falha inicial, a semântica dos tipos `A/P/F`, os valores de configuração, a consulta SQL, a versão e o sucesso final continuam sem confirmação. Use o pacote apenas como lista de perguntas para revisão e validação autorizada; não o use como runbook.
+
+--- Atualização Passo 8 (2026-10-15) — timestamps reais do ASR (não validado visualmente) ---
+- 00:00:43 — "exclusão de averbação" (conceito reconhecido pelo ASR; não confirmar como procedimento oficial sem revisão visual).
+- 00:01:36 — "modelo de averbação" (rotina mencionada; nome oficial da tela não confirmado).
+- 00:03:04 / 00:03:38 / 00:03:44 — "stub", "exclusão", "link do stub" (componentes mencionados; endpoint/configuração não registrados nesta sessão).
+- 01:05:36–01:06:33 — "consulta movimentações de contrato" / status "desaverbado" (último trecho instrutivo do ASR; último cue excede áudio em 26,39 s).
+Nenhum destes timestamps substitui validação visual, confirção de SQL ou verificação de configuração.

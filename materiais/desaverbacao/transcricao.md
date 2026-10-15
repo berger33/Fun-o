@@ -1285,3 +1285,6 @@
 [01:13:09] Fechou
 [01:13:11] Digo mesmo, é nóis
 [01:13:37] Legenda Adriana Zanotto
+
+--- SEÇÃO ADICIONADA — PASSO 6 (DISTINÇÃO ASR / SÍNTESE / VALIDAÇÃO) ---
+Reconhecido pelo ASR (1.274 segmentos, large-v3, VAD desativado): conceitos de "exclusão de averbação" (00:00:43), "modelo de averbação" (00:01:36; 00:02:55; 00:03:38), "stub" (00:03:04), "exclusão" (00:03:44), "consulta movimentações de contrato" / status "desaverbado" (01:05:36–01:06:33). Nenhuma query SQL literal confirmada (menções como Cprop/ppcodicomv são aproximações de grafia). Nenhuma tela/estado confirmado sem revisão visual do MP4. Nenhum SQL/API/teste executado. Último cue SRT/VTT: 01:13:37.080–01:14:07.060 (excede áudio declarado 01:13:40.67 em 26,39 s). Fonte primária não obtida localmente; reconstrução impossível sem bytes reais das partes LFS.

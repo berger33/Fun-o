@@ -29,3 +29,11 @@ Termos extraídos exclusivamente do ASR. Nomes de telas, campos, sistemas e esta
 | **“Streaming” (grafia ASR)** | Palavra reconhecida ao falar da mensagem de sucesso; sentido técnico e se a grafia está correta são desconhecidos. | DÚVIDA_OU_CONFLITO | `01:06:25–01:06:30`; confirmar no áudio/fonte, sem inferir uma alteração de código. |
 
 Para a análise e as pendências, ver [`guia_de_estudo.md`](guia_de_estudo.md) e [`incertezas.md`](incertezas.md).
+
+--- Atualização Passo 8 (2026-10-15) — termos reconhecidos pelo ASR com timestamp ---
+| Desaverbação | Reconhecido pelo ASR como estado final (01:05:36–01:06:33); regra/estado formal não validado. | NEGOCIO / PROCESSOS | 01:05:36–01:06:33 |
+| Modelo de averbação | Reconhecido (00:01:36, 00:02:55, 00:03:38); nome oficial de tela/confirmação visual pendente. | SISTEMAS | 00:01:36; 00:02:55; 00:03:38 |
+| Stub | Mencionado (00:03:04–00:03:44); endpoint/configuração não registrados. | SISTEMAS / INFRA_E_ACESSO | 00:03:04–00:03:44 |
+| Exclusão de averbação | Reconhecido (00:00:43, 00:03:44); sequência oficial não confirmada. | NEGOCIO / PROCESSOS | 00:00:43; 00:03:44 |
+| Consulta movimentações / desaverbado | Reconhecido no trecho final; caminho formal não visto; áudio/last cue divergente. | SISTEMAS / PROCESSOS | 01:05:36–01:06:33 |
+Nenhum termo foi corrigido sem sustentação visual; grafias mantidas conforme ASR.

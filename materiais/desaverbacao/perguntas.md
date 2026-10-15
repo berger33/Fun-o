@@ -89,3 +89,10 @@ Respostas abaixo descrevem somente o que o ASR reconheceu. Não são confirmaç�
 22. **Houve captura de tela revisada para este pacote?**
 
     **Resposta:** não. O ASR menciona tirar/mandar um print durante a conversa (`00:18:45–00:19:06`), mas nenhum quadro ou imagem foi obtido/revisado nesta sessão; ver [`capturas.md`](capturas.md).
+
+--- Atualização Passo 8 (2026-10-15) — referências de timestamp do ASR ---
+- Q1 (condição anterior): 00:00:43 — reconhecido pelo ASR; não validado como regra oficial.
+- Q2 (modelo): 00:01:36 — menção ao ASR; nome oficial da tela não confirmado.
+- Q6 (SQL): nenhum timestamp traz query literal; menções a Cprop/ppcodicomv (00:24:47–00:25:44) são aproximações de grafia.
+- Q14 (tipos A/P/F): 00:32:33–00:40:44 — reconhecidos pelo ASR; semântica não validada.
+- Q21 (gravação comprova fluxo padrão?): não confirmável; última fala 01:13:37 excede áudio.
