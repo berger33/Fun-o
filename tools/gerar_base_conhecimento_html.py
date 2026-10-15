@@ -900,6 +900,17 @@ def _texto_util(frase: str) -> str:
     return limpa
 
 
+def remover_blocos_sql(md: str) -> str:
+    """Tira do texto corrido os blocos de SQL: o código completo vive no capítulo de consultas."""
+    def troca(m: re.Match) -> str:
+        corpo = m.group(1).strip()
+        if re.search(r"(?i)\b(?:SELECT|INSERT|UPDATE|DELETE|USE|EXEC|CREATE\s+PROCEDURE)\b", corpo):
+            return ""
+        return m.group(0)
+
+    return re.sub(r"```(?:sql|SQL)?\s*\n(.*?)```", troca, md, flags=re.S)
+
+
 def limpar_codigo_inline(t: str) -> str:
     """Tira da marcação de código a sobra de uma remoção ao lado: "`null — `" → "`null`"."""
     def arruma(m: re.Match) -> str:
@@ -1306,7 +1317,10 @@ descritiva de item e de processo, passo a passo de execução e o vocabulário d
     <li><b>Precisa entender o negócio?</b> <i>Negócio</i> explica consignado, convênio, produto,
     despesas, esteira, refinanciamento e cálculo.</li>
     <li><b>Vai mexer em sistema?</b> <i>Sistemas, telas e rotinas</i> diz onde cada coisa fica e o que
-    a rotina exige; <i>Banco de dados e consultas</i> traz as consultas de apoio com campos e tabelas.</li>
+    a rotina exige.</li>
+    <li><b>Precisa consultar o banco?</b> <i>Consultas SQL</i> traz <b>todas</b> as consultas do
+    acervo com o código completo: o que cada uma faz, em que banco roda, que tabelas e colunas usa e
+    como ler o resultado.</li>
     <li><b>Vai chamar a API?</b> <i>API, integrações e payloads</i> descreve endpoints, blocos do
     payload, erros conhecidos e como rastrear a execução.</li>
     <li><b>Vai testar?</b> <i>Testes, qualidade e evidências</i> cobre da especificação ao fechamento do
@@ -1368,6 +1382,11 @@ revisão de privacidade antes de virar documentação.</p>
 # O material é uma base de consulta: o conhecimento aparece por assunto (procedimento, regra,
 # campo, tela), não por reunião. Cada seção dos documentos de origem é classificada por tema,
 # agrupada com as seções equivalentes das outras origens e apresentada uma única vez.
+
+# seções que só reproduzem a consulta: agora elas vivem no capítulo de SQL, com explicação
+SECAO_SQL = re.compile(
+    r"(?i)^(?:sql\b|an[áa]lise de sql.*|sql exibido.*|consultas? (?:sql|preparadas|complementares).*|"
+    r"consultas? no\b.*|banco de dados e consultas.*|rastreio no banco.*)")
 
 SECAO_DESCARTE = re.compile(
     r"(?i)^(?:contexto(?: e escopo.*)?|participantes.*|natureza e limites.*|mascaramento.*|"
@@ -1527,9 +1546,9 @@ def detalhe_por_assunto(chave: str) -> str:
             continue
         for titulo_bruto, corpo_md in dividir_secoes(ler(caminho)):
             titulo = limpar_titulo_secao(titulo_bruto)
-            if SECAO_DESCARTE.match(titulo):
+            if SECAO_DESCARTE.match(titulo) or SECAO_SQL.match(titulo):
                 continue
-            corpo = limpar(corpo_md)
+            corpo = limpar(remover_blocos_sql(corpo_md))
             if len(corpo) < 80:
                 continue
             if TITULO_SEM_CONTEUDO.search(titulo) or not titulo:
@@ -1667,6 +1686,231 @@ def cap_sistemas() -> tuple[str, int]:
                 continue
             quantidade += 1
             partes.append(cartao(nome, "<ul>%s</ul>" % "".join(itens), "ficha rotina"))
+    return "".join(partes), quantidade
+
+
+# -*- coding: utf-8 -*-
+SQL_CONSULTAS = [
+    {
+        "titulo": "Identificar o perfil de consulta pelo código do serviço",
+        "banco": "FCSMONITOREMPR",
+        "assunto": "Monitoramento de integrações — banco FCSMONITOREMPR",
+        "codigo": "SELECT * FROM FCSMONITOREMPR..TBPERFCON WHERE PRCODPFCON LIKE ('%chsInOferta%')",
+        "serve": "Descobrir o registro do <b>perfil de consulta</b> a partir de um trecho do "
+                 "código do perfil. É o primeiro passo do rastreio: <code>TBPERFCON</code> é o "
+                 "cadastro de perfis de consulta, e o resultado traz o identificador de perfil "
+                 "(<code>PRIDPFCON</code>) usado pela consulta principal.",
+        "tabelas": "Banco <code>FCSMONITOREMPR</code> · tabela <code>TBPERFCON</code> · coluna "
+                   "<code>PRCODPFCON</code> (código do perfil).",
+        "tipo": "somente leitura (<code>SELECT</code>)",
+        "leitura": "Pesquisar pelo trecho do código do perfil. O valor encontrado em "
+                   "<code>PRIDPFCON</code> liga o perfil às execuções registradas em "
+                   "<code>ECONSULT</code>.",
+    },
+    {
+        "titulo": "Listar as execuções do serviço de envio da proposta ao sistema externo",
+        "banco": "FCSMONITOREMPR",
+        "assunto": "Monitoramento de integrações — banco FCSMONITOREMPR",
+        "codigo": "USE FCSMONITOREMPR\n"
+                  "SELECT TOP 1000 PRDESCPFCON, CSVERPLUG, CSNRPROP, CSSERVER, CSRETTEXT, CSERRO, "
+                  "CSDTHRAGEN, CSSTATUS, *\n"
+                  "FROM FCSMONITOREMPR..ECONSULT(NOLOCK)\n"
+                  "INNER JOIN FCSMONITOREMPR..TBPERFCON ON CSIDPFCON = PRIDPFCON\n"
+                  "WHERE PRDESCPFCON LIKE ('%Servico de Envio da Proposta ao Sistema Externo%')\n"
+                  "ORDER BY CSIDCONS DESC",
+        "serve": "Encontrar a <b>execução do serviço</b> que envia a proposta ao sistema externo e "
+                 "obter a chave do evento. Filtra pela <b>descrição do serviço</b> — e não pelo "
+                 "número da proposta — para ver todas as chamadas daquele serviço; a linha mais "
+                 "recente aparece primeiro. A chave <code>CSIDCONS</code> da linha encontrada é o "
+                 "que abre o detalhe do payload na consulta seguinte.",
+        "tabelas": "Banco <code>FCSMONITOREMPR</code> · <code>ECONSULT</code> (eventos de execução "
+                   "de serviços e plugins do monitor) com <code>INNER JOIN</code> em "
+                   "<code>TBPERFCON</code> (cadastro de perfis, <code>CSIDPFCON = PRIDPFCON</code>) "
+                   "· dica <code>NOLOCK</code> na leitura.",
+        "tipo": "somente leitura (<code>SELECT</code>, com <code>USE</code> para trocar o contexto "
+                "de banco)",
+        "leitura": "Confira a descrição do perfil (<code>PRDESCPFCON</code>), a versão do plugin "
+                   "(<code>CSVERPLUG</code>), o número da proposta (<code>CSNRPROP</code>), o "
+                   "servidor (<code>CSSERVER</code>), o texto de retorno (<code>CSRETTEXT</code>), "
+                   "o erro (<code>CSERRO</code>), a data/hora de agendamento "
+                   "(<code>CSDTHRAGEN</code>) e a situação (<code>CSSTATUS</code>). O "
+                   "<code>ORDER BY CSIDCONS DESC</code> traz a execução mais recente no topo.",
+        "nota": "Uma variante da mesma consulta substitui o filtro por proposta: "
+                "<code>WHERE CSNRPROP = 'número-da-proposta'</code>, com o filtro por descrição "
+                "deixado como comentário. É a mesma leitura, trocando o eixo da busca.",
+    },
+    {
+        "titulo": "Abrir o detalhe (chave-valor) do evento e ler o payload enviado",
+        "banco": "FCSMONITOREMPR",
+        "assunto": "Monitoramento de integrações — banco FCSMONITOREMPR",
+        "codigo": "SELECT * FROM ECONSULTD WHERE CDIDCONS='84942'",
+        "serve": "Abrir o <b>detalhe da execução</b> em formato chave-valor: cada linha traz o nome "
+                 "de um campo do corpo enviado e o seu conteúdo. É onde o payload JSON do envio é "
+                 "conferido campo a campo.",
+        "tabelas": "Banco <code>FCSMONITOREMPR</code> · tabela <code>ECONSULTD</code> · colunas "
+                   "<code>CDIDCONS</code> (id da consulta), <code>CDCONTROLE</code> (sequencial do "
+                   "detalhe) e <code>CDCAMPO</code> (nome do campo).",
+        "tipo": "somente leitura (<code>SELECT</code>)",
+        "leitura": "Use o <code>CDIDCONS</code> da linha encontrada na consulta anterior. No "
+                   "resultado aparecem campos de consulta do trabalhador (por exemplo "
+                   "<code>DATAPREV_CNPJEMPR</code>, <code>DATAPREV_CODCATEG</code>, "
+                   "<code>DATAPREV_DESCCBO</code>, <code>VLRMRGDL…</code>) e os demais blocos do "
+                   "envio.",
+        "nota": "O mesmo comando aparece com outro identificador "
+                "(<code>CDIDCONS='915516'</code>) para abrir um segundo detalhe no editor.",
+    },
+    {
+        "titulo": "Monitorar esteira e averbação de uma proposta",
+        "banco": "FCSMONITOREMPR",
+        "assunto": "Diagnóstico de esteira e averbação — banco FCSMONITOREMPR",
+        "codigo": "--INTEGRAÇÃO DE REAPROVEITAMENTO DE SEGURO\n"
+                  "SELECT TOP 1000 PRDESCPFCON, CSNRPROP, CSSERVER, CSRETTEXT, CSDTHRAGEN, "
+                  "CSSTATUS, *\n"
+                  "FROM FCSMONITOREMPR..ECONSULT(NOLOCK)\n"
+                  "INNER JOIN FCSMONITOREMPR..TBPERFCON ON CSIDPFCON = PRIDPFCON\n"
+                  "WHERE CSNRPROP = '000033373'\n"
+                  "--where PRDESCPFCON LIKE ('%INSS - Plugin de levantamento para exclusão de averbação%')\n"
+                  "ORDER BY CSIDCONS DESC\n"
+                  "\n"
+                  "USE FCSMONITOREMPR",
+        "serve": "Ver os <b>eventos de esteira e averbação</b> de uma proposta específica, no "
+                 "contexto de integração de reaproveitamento de seguro: quais etapas rodaram, com "
+                 "que retorno e em que ordem.",
+        "tabelas": "Banco <code>FCSMONITOREMPR</code> · <code>ECONSULT</code> "
+                   "(<code>PRDESCPFCON</code>, <code>CSNRPROP</code>, <code>CSSERVER</code>, "
+                   "<code>CSRETTEXT</code>, <code>CSDTHRAGEN</code>, <code>CSSTATUS</code>) com "
+                   "<code>INNER JOIN</code> em <code>TBPERFCON</code>.",
+        "tipo": "somente leitura (<code>SELECT</code>, com <code>USE</code> para trocar o contexto "
+                "de banco)",
+        "leitura": "Filtre pelo número da proposta (<code>CSNRPROP</code>). Leia a etapa "
+                   "(<code>PRDESCPFCON</code>), a situação (<code>CSSTATUS</code>), o texto de "
+                   "retorno (<code>CSRETTEXT</code>) e a data/hora de agendamento "
+                   "(<code>CSDTHRAGEN</code>). O primeiro comentário identifica a finalidade do "
+                   "diagnóstico; o segundo, dentro do <code>WHERE</code>, é o filtro alternativo "
+                   "por descrição do plugin — troque um pelo outro conforme o que se procura.",
+    },
+    {
+        "titulo": "Consultar o log de refinanciamento",
+        "banco": "FCSPROPEMPR",
+        "assunto": "Consultas de apoio — banco FCSPROPEMPR",
+        "codigo": "USE FCSPROPEMPR\nSELECT * FROM CLOGREFIN\nSELECT * FROM CLOGREFIND",
+        "serve": "Ler o <b>log de refinanciamento</b> e o seu detalhe. <code>CLOGREFIN</code> guarda "
+                 "o registro do processamento; <code>CLOGREFIND</code> traz o detalhamento linha a "
+                 "linha do mesmo evento.",
+        "tabelas": "Banco <code>FCSPROPEMPR</code> · tabelas <code>CLOGREFIN</code> e "
+                   "<code>CLOGREFIND</code>.",
+        "tipo": "somente leitura (<code>SELECT</code>)",
+        "leitura": "As duas consultas aparecem juntas no editor: primeiro o registro do log, depois "
+                   "o detalhe. São consultas de apoio para investigar um processamento de "
+                   "refinanciamento.",
+    },
+    {
+        "titulo": "Consultar reaproveitamento de seguro por proposta",
+        "banco": "FCSPROPEMPR",
+        "assunto": "Consultas de apoio — banco FCSPROPEMPR",
+        "codigo": "USE FCSPROPEMPR\nSELECT * FROM EREAPSEG WHERE EPRNRPROP='número-da-proposta'",
+        "serve": "Ver o <b>reaproveitamento de seguro</b> registrado para uma proposta.",
+        "tabelas": "Banco <code>FCSPROPEMPR</code> · tabela <code>EREAPSEG</code> · coluna "
+                   "<code>EPRNRPROP</code> (número da proposta, usada como filtro).",
+        "tipo": "somente leitura (<code>SELECT</code>)",
+        "leitura": "Filtre pelo número da proposta. É a consulta de apoio que acompanha a "
+                   "investigação de reaproveitamento — a mesma frente monitorada na consulta de "
+                   "esteira e averbação.",
+    },
+    {
+        "titulo": "Consultar o complemento da proposta",
+        "banco": "FCSPROPEMPR",
+        "assunto": "Consultas de apoio — banco FCSPROPEMPR",
+        "codigo": "USE FCSPROPEMPR\nSELECT * FROM CCOMP WHERE CSNRPROP=número-da-proposta",
+        "serve": "Ler o <b>complemento da proposta</b> pelo número da proposta.",
+        "tabelas": "Banco <code>FCSPROPEMPR</code> · tabela <code>CCOMP</code> · coluna "
+                   "<code>CSNRPROP</code> (número da proposta, usada como filtro).",
+        "tipo": "somente leitura (<code>SELECT</code>)",
+        "leitura": "Filtre pelo número da proposta. Serve para conferir os dados que complementam a "
+                   "proposta no banco de propostas.",
+    },
+]
+
+SQL_SEM_CODIGO = [
+    ("<b>Alias de conexão e rotinas de site</b>",
+     "configurar alias em <code>TPARWFIUTIL.PWALIAS</code>, criar as procedures <code>.NET</code> "
+     "(opções <code>C</code> e <code>W</code>) e apagar os registros do site atual em "
+     "<code>TRTHB</code> antes de cadastrar as rotinas. Vêm como passos de planilha operacional, "
+     "sem comando SQL escrito."),
+    ("<b>Correção pontual em base</b>",
+     "<code>INSERT</code> e <code>UPDATE</code> são citados como possibilidade de ajuste em base "
+     "local, na investigação de despesa e liquidação; o script não é exibido."),
+    ("<b>Consulta por número de operação</b>",
+     "a orientação é rodar um <code>SELECT</code> para localizar o número da operação; o texto da "
+     "consulta não é exibido."),
+    ("<b>Conferência das operações do cliente</b>",
+     "a orientação é dar um <code>select</code> na tabela referida como <code>coper</code>, "
+     "filtrando pelo CPF, para conferir as operações do cliente; o comando não é exibido."),
+    ("<b>Convênio e produto de uma proposta</b>",
+     "há menção a editar um <code>SELECT</code> e rodar a consulta para conferir convênio e "
+     "produto, com nomes parciais (<code>Cprop</code>, <code>ppcodicomv</code>, "
+     "<code>ppcodprd</code>) como apareceram na transcrição, ainda não conferidos na base."),
+    ("<b>Campo de origem do CNPJ do empregador</b>",
+     "a menção é incluir no <code>select</code> o campo de origem do CNPJ do empregador "
+     "(<code>ETRACPD.*</code>) para identificar o campo; a consulta não é escrita."),
+]
+
+
+def cap_sql() -> tuple[str, int]:
+    """Monta o capítulo de SQL: todas as consultas do acervo, com título e explicação.
+
+    Cada consulta sai com o texto completo (como apareceu na tela), o que ela faz, onde roda,
+    que tipo de comando é e como ler o resultado.
+    """
+    partes: list[str] = []
+
+    # -- índice: uma linha por consulta
+    linhas = []
+    for i, c in enumerate(SQL_CONSULTAS, 1):
+        linhas.append(
+            "<tr><td>%d</td><td><a href=\"#sql-%d\">%s</a></td><td><code>%s</code></td>"
+            "<td>%s</td></tr>"
+            % (i, i, html.escape(c["titulo"]), html.escape(c["banco"]),
+               c["tipo"].replace(", com <code>USE</code> para trocar o contexto de banco", "")))
+    partes.append('<h4 class="assunto">Todas as consultas, em uma linha cada</h4>')
+    partes.append('<table class="tabela"><thead><tr><th>#</th><th>Consulta</th>'
+                  "<th>Banco</th><th>Tipo de comando</th></tr></thead><tbody>%s</tbody></table>"
+                  % "".join(linhas))
+
+    # -- detalhe por assunto, na ordem em que aparecem
+    assuntos: list[str] = []
+    for c in SQL_CONSULTAS:
+        if c["assunto"] not in assuntos:
+            assuntos.append(c["assunto"])
+    for assunto in assuntos:
+        partes.append('<h4 class="assunto">%s</h4>' % html.escape(assunto))
+        for i, c in enumerate(SQL_CONSULTAS, 1):
+            if c["assunto"] != assunto:
+                continue
+            corpo = [
+                "<p><b>O que faz:</b> %s</p>" % c["serve"],
+                "<p><b>Onde roda:</b> %s</p>" % c["tabelas"],
+                "<p><b>Tipo de comando:</b> %s</p>" % c["tipo"],
+                "<p><b>Como ler o resultado:</b> %s</p>" % c["leitura"],
+            ]
+            if c.get("nota"):
+                corpo.append('<p class="nota"><b>Observação:</b> %s</p>' % c["nota"])
+            corpo.append("<pre>%s</pre>" % html.escape(c["codigo"]))
+            partes.append(
+                '<details class="bloco dobra consulta" id="sql-%d">'
+                "<summary>%d. %s</summary><div class=\"bloco-corpo\">%s</div></details>"
+                % (i, i, html.escape(c["titulo"]), "".join(corpo)))
+
+    # -- o que existe em banco sem comando escrito
+    if SQL_SEM_CODIGO:
+        itens = "".join("<li>%s — %s</li>" % (nome, texto) for nome, texto in SQL_SEM_CODIGO)
+        partes.append('<h4 class="assunto">Operações de banco citadas sem o comando</h4>')
+        partes.append(
+            '<p>Pontos do trabalho em que a operação no banco é descrita em palavras, sem o '
+            'comando escrito. Entram aqui porque mostram onde essas consultas aparecem na '
+            'rotina.</p><ul>%s</ul>' % itens)
+
+    quantidade = len(SQL_CONSULTAS)
     return "".join(partes), quantidade
 
 
@@ -1967,12 +2211,13 @@ def montar_corpo() -> tuple[str, str, int]:
                           "%d fichas: onde cada coisa fica, para que serve, o que a rotina exige e o que dá errado."
                           % ref_total, conta(ref)))
 
-    # -- referência: banco de dados e consultas
-    bd, bd_total = cap_banco()
+    # -- referência: banco de dados e consultas (todas as consultas, por extenso)
+    bd, bd_total = cap_sql()
     if bd.strip():
-        capitulos.append(("banco", "Banco de dados e consultas",
-                          "Para que serve cada consulta, quais bancos, tabelas e colunas ela usa, se é leitura ou "
-                          "alteração e o SQL completo das consultas de apoio.", conta(bd)))
+        capitulos.append(("banco", "Consultas SQL",
+                          "%d consultas com o código completo — o que cada uma faz, em que banco roda, que "
+                          "tabelas e colunas usa, que tipo de comando é e como ler o resultado. Todas de "
+                          "leitura; nenhuma foi executada." % bd_total, conta(bd)))
 
     # -- glossário único
     gloss = glossario_consolidado()
