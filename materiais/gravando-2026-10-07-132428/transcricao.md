@@ -6,7 +6,7 @@
 
 - **Fonte primária:** ausente (não baixada, não reconstruída, não revisada visualmente).
 - **Artefatos ASR:** nenhum (`transcricao_bruta.txt`, `.srt`, `.vtt`, `transcricao_meta.json` não existem; não foram recuperados de execução anterior).
-- **Cobertura temporal:** não aplicável.
+- **Cobertura temporal:** `00:00:00` — **nenhum trecho analisado** (a fonte não foi obtida; não há áudio transcrito nem quadro revisado). A notação `HH:MM:SS` aparece aqui apenas para declarar explicitamente a cobertura zero exigida pela auditoria de materiais.
 - **Falantes identificados:** nenhum.
 - **Segmentos ASR:** 0.
 - **Timestamps de fala:** nenhum.

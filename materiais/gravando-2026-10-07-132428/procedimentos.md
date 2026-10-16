@@ -35,6 +35,6 @@ Não se afirma que o vídeo demonstra conclusão bem-sucedida, falha, teste, dem
 
 Nenhuma exceção, alternativa de fluxo ou caminho de recuperação pode ser documentado sem revisão visual do MP4.
 
-## Timestamps (não aplicáveis)
+## Timestamps (cobertura zero)
 
-Não há segmentos ASR; portanto não há timestamps de fala que sustentem nenhuma etapa do procedimento.
+Cobertura analisada: `00:00:00` — **nenhum trecho**. Não há segmentos ASR nem quadros revisados; portanto não existe timestamp que sustente qualquer etapa do procedimento. A notação `HH:MM:SS` é usada aqui somente para declarar explicitamente essa cobertura zero.

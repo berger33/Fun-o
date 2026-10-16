@@ -11,6 +11,8 @@ name: Transferir gravação por ponte temporária
 # Regras de uso:
 #   - NUNCA usar isto para o repositório inteiro: sempre um arquivo por vez;
 #   - apagar o ramo de entrega assim que os bytes forem transferidos e conferidos;
+#   - para republicar SOMENTE a ponte de partes (sem re-executar a transcrição automática),
+#     altere apenas este arquivo: o workflow de transcrição observa `transferencia/tarefa.json`.
 #   - o ramo de entrega contém cópia temporária de conteúdo já publicado no repositório
 #     via LFS; não é material derivado e não deve ser mantido.
 
