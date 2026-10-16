@@ -468,8 +468,10 @@ def _limpar_segmento(t: str, narrativa: bool | str = True) -> str:
     # travessão que sobrou de uma remoção: "attachment_document —." → "attachment_document."
     t = re.sub(r"[ \t]*[—–][ \t]*(?=[.,;:])", "", t)
     # negrito que ficou sem conteúdo depois de uma remoção: "chamado de **." → "chamado de."
-    t = re.sub(r"\*\*(?=\s*[.,;:!?)\]\-–—]|\s*$)", "", t)
-    t = re.sub(r"(?<=[(\[\-–—])\s*\*\*", "", t)
+    # A marca só sai quando é órfã — depois de espaço/abertura/início e antes de pontuação ou fim.
+    # Sem essa condição a regra apagava o fechamento de um negrito legítimo ("**Autorizador
+    # Web**, acessar") e desalinhava todos os pares seguintes do trecho.
+    t = re.sub(r"(?:(?<=\s)|(?<=[(\[\-–—])|^)\*\*(?=\s*[.,;:!?)\]\-–—]|\s*$)", "", t)
     t = re.sub(r"\*\*\s*\*\*", "", t)
     t = re.sub(r"[ \t]+(?=[.,;:](?:\s|$))", "", t)
 
@@ -2520,6 +2522,9 @@ VAZAMENTOS = {
     "marca de tempo": re.compile(r"\b\d{1,2}:\d{2}(?::\d{2})?\b"),
     "aspas de citação": re.compile(r"[“”«»]"),
     "marcação de negrito solta": re.compile(r"\*\*"),
+    # o conversor de markdown às vezes deixa uma marca interna no lugar de um trecho de código;
+    # se isso escapar, o texto perde conteúdo, então a geração falha em vez de publicar
+    "marca de conversão": re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]"),
     "âncora de mensagem": re.compile(r"\[[MP]\d+\]|\[[MP]nn\]"),
     "nome de arquivo de mídia": re.compile(r"\.(?:mp4|md|json|srt|vtt|png|jpe?g|xlsx)\b"),
     # o material só leva o que está confirmado: se um ponto em aberto passar, a geração falha

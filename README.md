@@ -28,6 +28,7 @@ Os índices transversais em `materiais/` conectam gravações, consultas SQL, si
 | `python3 tools/transcrever.py --video "ARQUIVO.mp4"` | Transcreve com timestamps (`faster-whisper`), gerando `transcricao_bruta.txt`, `.srt`, `.vtt` e `transcricao_meta.json`. Precisa dos pesos do modelo — rode no runner do CI. |
 | `python3 tools/reconstruir_videos.py` | Reconstrói os quatro vídeos divididos (exige todas as partes). |
 | `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`) como **base de consulta**: capítulos temáticos (negócio, sistemas e telas, **consultas SQL**, API, procedimentos, testes, infraestrutura, automação, comunicação) escritos por assunto, com glossário único A–Z e perguntas de revisão. Entra só o que é certo — afirmação confirmada, procedimento e descrição de item ou processo; o que dependia de confirmação de alguém fica fora, e o gerador **falha** se um ponto em aberto escapar. O texto **explica** o conhecimento: não há marcas de tempo, trechos citados de fala nem nomes de arquivo, ligação interna ou jargão de controle do acervo. A limpeza acontece **antes** de escrever a saída e o gerador **falha** se algum resquício passar. |
+| `python3 tools/gerar_doc_editavel.py` | Converte o material publicado no **`.docx` editável** (`material-de-estudo/base-de-conhecimento-funcao-sistemas.docx`): mesmo conteúdo do HTML, com capítulos em Título 1, assuntos em Título 2 e cada ficha em Título 3 (navegação pelo Painel de Navegação e recolher/expandir por título), tabelas nativas, listas, blocos de código, notas em caixa e rodapé com número de página. Lê o HTML já gerado — rode o gerador do HTML antes. Precisa de `pip install python-docx`. |
 | `python3 tools/servir_material.py` | Serve o material gerado em `0.0.0.0:8000` (rota `/download` para baixar o arquivo). Não expõe nada além da pasta de saída; listagem de diretório desativada. |
 
 As duas verificações rodam automaticamente em cada push/PR pelo workflow `.github/workflows/auditar-materiais.yml`, que faz checkout **sem** baixar LFS.
@@ -62,12 +63,37 @@ A mesma execução grava **duas** cópias do documento:
 | `saida/index.html` | build local, servido por `tools/servir_material.py`. Fora do Git (artefato). |
 | `material-de-estudo/base-de-conhecimento-funcao-sistemas.html` | **arquivo que circula** — versionado, para leitura e download. |
 | `material-de-estudo/base-de-conhecimento-funcao-sistemas.zip` | mesmo documento empacotado — é o link que **baixa com um clique** (o GitHub serve `.html` como texto simples). |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.docx` | **versão editável** do mesmo documento, para abrir e editar no Word (gerada por `tools/gerar_doc_editavel.py`). |
 
 Link de download (ramo de trabalho; troque por `main` depois do merge):
 
 ```
 https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.zip
 ```
+
+## Versão editável (`.docx`) do mesmo material
+
+Para editar o conteúdo no Word — e não apenas ler —, converta o material publicado:
+
+```bash
+python3 tools/gerar_base_conhecimento_html.py     # 1. gera/atualiza o HTML que circula
+python3 tools/gerar_doc_editavel.py               # 2. cria a versão .docx (precisa de python-docx)
+```
+
+A conversão roda depois do gerador do HTML, de propósito: o `.docx` acompanha o que o HTML publica.
+O documento sai **autocontido** (fonte, estilos, tabelas e listas nativas, sem imagens nem ligações
+externas), com as mesmas travas do material — sem nome de arquivo, ligação interna, marca de tempo
+ou trecho citado de fala. Duas execuções geram o mesmo arquivo (byte a byte).
+
+Link de download da versão editável (ramo de trabalho; troque por `main` depois do merge):
+
+```
+https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.docx
+```
+
+O formato é `.docx` (Word 2007 em diante, Google Docs, LibreOffice, Pages). O `.doc` binário
+antigo não é gerado: é formato fechado, sem as tabelas e estilos acima, e o Word converte o
+`.docx` para ele em um clique, se for preciso.
 
 A cópia versionada é **escrita pelo gerador** a cada execução (use `--sem-distribuivel` para pular):
 não edite o arquivo à mão nem o versione separadamente do gerador, senão ele divergirá do acervo.
