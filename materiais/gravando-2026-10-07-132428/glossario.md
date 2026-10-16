@@ -1,10 +1,10 @@
 # Glossário — `Gravando 2026-10-07 132428.mp4`
 
-> **Estado: vazio intencionalmente.** Nenhum termo, sigla, campo, sistema ou expressão pode ser sustentado pela fonte porque o vídeo não foi obtido nem revisado. Não se afirma grafia, significado, categoria ou timestamp de nenhum conceito.
+> **Estado: vazio intencionalmente.** Nenhum termo, sigla, campo, sistema ou expressão pode ser sustentado pela fonte porque o vídeo não foi obtido nem revisado. Não se afirma grafia, significado, categoria ou timestamp de nenhum conceito; a única referência temporal possível é a declaração de cobertura zero (`00:00:00`).
 
 | Termo / expressão | Significado sustentado pelo ASR / fonte | Categoria | Timestamp / ressalva |
 |---|---|---|---|
-| **(nenhum)** | Nenhum termo foi reconhecido, transcrito ou confirmado. | — | — |
+| **(nenhum)** | Nenhum termo foi reconhecido, transcrito ou confirmado. | — | `00:00:00` (cobertura zero — nenhum trecho analisado) |
 
 ## Nota sobre preservação (§13)
 

@@ -1,6 +1,6 @@
 # Conflitos e validações pendentes
 
-Atualizado em **2026-10-15**.
+Atualizado em **2026-10-16**.
 
 ## Conflitos entre gravações
 
@@ -60,15 +60,16 @@ Detalhes e evidências em [`jonas-ept-explicacao/incertezas.md`](jonas-ept-expli
 3. **Finalidade das tabelas `CLOGREFIN`, `CLOGREFIND`, `EREAPSEG`, `CCOMP` (`FCSPROPEMPR`):** consultas preparadas no editor, sem execução ou explicação na gravação.
 4. **Ajuste do número da proposta no envio ao sistema externo (`00:09:31`–`00:09:39`):** citado como "a única coisa que a gente tem que ajustar", sem detalhamento (EPT, relatório ou payload).
 
-## Pendências de `Gravando 2026-07-08 182343.mp4` (2026-10-14)
+## Pendências de `Gravando 2026-07-08 182343.mp4` — atualizadas em 2026-10-16 (fonte primária verificada)
 
-Detalhes em [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
+Detalhes e evidências em [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md) e [`gravando-2026-07-08-182343/capturas.md`](gravando-2026-07-08-182343/capturas.md).
 
-1. **Exclusão de arquivos/configuração (`00:00:33` × `00:02:34`):** falas incompatíveis sobre preservar ou apagar `config`; mais adiante, o interlocutor recomenda backup (`00:03:09`–`00:03:24`). **Não executar exclusão** até confirmação por responsável técnico e runbook vigente.
-2. **Matriz WebAutorizador/WS/API/SIC (`00:02:04`–`00:04:27`):** relação entre componentes e exceção de atualização não foram demonstradas; “AWS” pode ser reconhecimento incorreto. Confirmar nomes, dependências e versões.
-3. **Opção “N” e erro genérico (`00:03:41`, `00:04:29`–`00:04:39`):** contexto e efeito não comprovados; não tratar como padrão seguro.
-4. **Importação da esteira/teste de tolerância (`00:05:48`–`00:08:03`):** sistema, arquivo, destino, campos e critério de sucesso ausentes; números falados não devem ser reutilizados como regras.
-5. **Cobertura:** o ASR termina em `00:08:20.29`; detector de silêncio a `-42 dB` aponta silêncio a partir de aproximadamente `00:08:28`, mas não houve escuta humana integral nem inspeção visual quadro a quadro. Manter estado `em revisão`.
+1. **Exclusão × preservação da configuração (RESOLVIDO no material / PENDENTE de validação técnica):** as falas de `00:00:33` (“apagar tudo, menos a config”) e `00:02:34` (“apaga config”) colidem com a recomendação de backup de `00:03:09`–`00:03:24`. O material marca o fluxo como **bloqueado**; a rotina vigente precisa ser confirmada pelo responsável técnico.
+2. **Matriz de atualização de componentes (PENDENTE):** `00:04:03`–`00:04:27` distingue casos (API × autorizador × “caso do SIC”) e cita que “o AWS não atualiza”. A sigla pode ser o próprio WS ou erro de reconhecimento. **Não usar como matriz de implantação.**
+3. **Desfecho do incidente de tolerância (PENDENTE):** a gravação mostra a regra da EF (0–99, opcional, 2 casas decimais), a evidência de tela com `100,00` e o encaminhamento a “Michelle de negócios” (`00:07:40`), mas **não** mostra correção, reprovação ou encerramento. Confirmar o estado atual do ajuste antes de tratar como resolvido.
+4. **Erro durante a cópia de arquivos (PENDENTE):** as mensagens em vermelho de `00:03:40`–`00:05:05` não são legíveis nos quadros amostrados e a avaliação “é um erro genérico, não interfere em nada” (`00:04:29`–`00:04:39`) é apenas fala, sem diagnóstico.
+5. **Validação do resultado da importação (PENDENTE):** a única evidência de sucesso é a mensagem “As informações foram salvas” (`00:07:20`–`00:07:25`). Não houve reexportação, vinculação a proposta ou teste funcional do modelo `9999` (`teste_tolerancia`).
+6. **Escuta humana da transcrição (PENDENTE):** a cobertura foi validada tecnicamente (nenhum trecho audível acima de `-50 dB` sem segmento de ASR; silêncio digital confirmado a partir de `00:08:28`), mas não houve escuta integral nem revisão do chat dos primeiros segundos.
 
 ## Pendências de `MICHELLE CTC PORTABILIDADE REFIN.mp4` (2026-10-14)
 

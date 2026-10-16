@@ -62,15 +62,20 @@ Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo
 - **Planilha EPT (`EPT_586780`):** documento de casos de teste do CQ (colunas `CT`, `Ref.`, `Etapa`, `Resultado esperado`, `Status`, `Observações`; seções de prê-missas e validações básicas) — aqui vista **preenchida**, complementando a visão de `Gravando 2026-07-07 155307.mp4` (`00:05:50`–`00:08:10`).
 - **Relatório de Testes (`Relatorio_de_Testes_586780`):** documento Word padrão "CQ - Controle de Qualidade / Evidências de Testes" com cenários prontos a reaproveitar na EPT (`00:08:27`–`00:09:30`).
 
-## Termos de `Gravando 2026-07-08 182343.mp4`
+## Termos de `Gravando 2026-07-08 182343.mp4` (fonte primária verificada em 2026-10-16)
 
-- **WebAutorizador / WS / API:** componentes citados numa conversa sobre versões e atualização em ambiente de teste; a relação técnica e a matriz de implantação não foram confirmadas (`00:00:23`–`00:04:27`).
-- **SIC / GDOK:** identificadores citados como parte da configuração, sem expansão nem valores expostos (`00:02:58`–`00:03:04`).
-- **Pasta de configuração (`config`):** área descrita verbalmente como contendo parâmetros de SIC, GDOK e API; instruções conflitantes sobre preservá-la ou apagá-la permanecem em validação (`00:00:33`, `00:02:34`–`00:03:24`).
-- **Esteira:** objeto que o interlocutor tenta importar; sistema, formato e significado não identificados (`00:05:48`–`00:07:20`).
-- **Teste de tolerância:** nome falado para uma tentativa de teste, sem campo, valor, critério de sucesso ou regra de negócio verificáveis (`00:05:26`, `00:07:31`–`00:08:03`).
+- **Esteira / Modelo de Decisão:** no próprio diálogo do sistema, a esteira aparece como “nova esteira ‘9999 - teste’” e é criada/atualizada por importação de um arquivo `Estaira*.xml` identificado por `Nº Modelo` e descrição (`00:06:55`–`00:07:35`).
+- **`Serviços → Decisão`:** caminho do Autorizador Web que reúne `Tabela de Modelos`, `Tabela de Decisão`, `Relacionamento Modelo X Produto`, `Exportar Modelo Decisão`, `Importar Modelo Decisão` e `Visualizador de Fluxo Decisão` (`00:05:45`–`00:06:40`).
+- **Tolerância mínimo/máximo:** percentual aplicado sobre o valor **solicitado** — mínimo define a margem de variação inferior; máximo, a margem superior. Campo **opcional**, **2 casas decimais**, faixa prevista pela EF de **0 a 99**; a evidência do incidente mostra `100,00` aceito (`00:03:12`).
+- **`Aplicar tolerância em`:** lista da mesma tela; no exemplo, `NaoSelecionado`. Valores possíveis não demonstrados (`00:03:12`).
+- **`WebAutorizador` / `WS\WSAutorizador`:** aplicação Web e serviço Web do mesmo pacote de teste, com as pastas `bin`, `Config`, `Estreia` e `Web References` e arquivos `WSAutorizador.asmx`, `WsRegChaveLicenca.asmx` (`00:00:35`–`00:02:36`).
+- **`Config` (pasta de configuração):** contém, segundo a fala, parâmetros de **SIC**, **GDOK** e **API**, e deve ser preservada/copiada como backup (`00:02:58`–`00:03:24`).
+- **`WS`:** sigla usada para o serviço Web; a fala sugere que acompanha o autorizador (“atualizou um, tem que atualizar o outro”) — dependência não confirmada (`00:02:25`–`00:02:32`).
+- **`Estaira112233.xml`:** nome do arquivo de importação exibido no diálogo de modelo de decisão — padrão `Estaira*` (`00:06:55`–`00:07:20`).
+- **Incidente (`Incidente01.pdf`) / EF:** documento que registra a regra (“De acordo com a EF: Detalhamento dos Campos”) e a evidência de tela da divergência de tolerância (`00:03:00`–`00:03:22`).
+- **“AWS”, “N” e “erro genérico”:** termos **não confirmados** — podem ser sigla diferente, opção sem diálogo visível ou avaliação informal sem diagnóstico (`00:04:26`, `00:03:41`, `00:04:29`–`00:04:39`).
 
-Ver a análise completa e as ambiguidades em [`gravando-2026-07-08-182343/glossario.md`](gravando-2026-07-08-182343/glossario.md) e [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
+Detalhes, timestamps por termo e ressalvas em [`gravando-2026-07-08-182343/glossario.md`](gravando-2026-07-08-182343/glossario.md) e [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
 
 ## Termos de `MICHELLE CTC PORTABILIDADE REFIN.mp4`
 
@@ -217,6 +222,6 @@ Fonte: [`recalculo/glossario.md`](recalculo/glossario.md); timestamps e ressalva
 
 Detalhes e limitações em [`desaverbacao/glossario.md`](desaverbacao/glossario.md), [`desaverbacao/incertezas.md`](desaverbacao/incertezas.md) e [`desaverbacao/metadados.md`](desaverbacao/metadados.md). A fonte primária não foi revisada visualmente nesta sessão.
 
-- `AVERBACAO.mp4` (`averbacao`): pacote preliminar em revisão; fonte (4 partes LFS, 5.033.624.752 bytes) não obtida; nenhuma análise de conteúdo confirmada. Ver [`materiais/averbacao/LEIA-ME.md`](materiais/averbacao/LEIA-ME.md).
-- `Gravando 2026-10-07 132428.mp4` (`gravando-2026-10-07-132428`): pacote preliminar em revisão; fonte (2 partes LFS, 3.151.497.131 bytes) não obtida. Ver [`materiais/gravando-2026-10-07-132428/LEIA-ME.md`](materiais/gravando-2026-10-07-132428/LEIA-ME.md).
+- `AVERBACAO.mp4` (`averbacao`): pacote preliminar em revisão; fonte (4 partes LFS, 5.033.624.752 bytes) não obtida; nenhuma análise de conteúdo confirmada. Ver [`materiais/averbacao/LEIA-ME.md`](averbacao/LEIA-ME.md).
+- `Gravando 2026-10-07 132428.mp4` (`gravando-2026-10-07-132428`): pacote preliminar em revisão; fonte (2 partes LFS, 3.151.497.131 bytes) não obtida. Ver [`materiais/gravando-2026-10-07-132428/LEIA-ME.md`](gravando-2026-10-07-132428/LEIA-ME.md).
 
