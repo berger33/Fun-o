@@ -179,22 +179,32 @@ def enxugar(linhas: list[str]) -> str:
 # ------------------------------------------------------------------ estilos do documento
 
 
-def _sucessores(tipo: str) -> tuple[str, ...]:
-    if tipo == "pPr":
-        return ("w:pBdr", "w:shd", "w:tabs", "w:suppressAutoHyphens", "w:kinsoku", "w:wordWrap",
+def _sucessores(tipo: str, a_partir: str | None = None) -> tuple[str, ...]:
+    """Ordem dos elementos filhos exigida pelo Word; `a_partir` corta a lista na posição certa.
+
+    A ordem importa: `pBdr` vem antes de `shd`, e os dois antes de `spacing`/`ind`. Inserir fora de
+    ordem faz o Word reclamar do arquivo.
+    """
+    lista = (
+        ("w:pBdr", "w:shd", "w:tabs", "w:suppressAutoHyphens", "w:kinsoku", "w:wordWrap",
                 "w:overflowPunct", "w:topLinePunct", "w:autoSpaceDE", "w:autoSpaceDN", "w:bidi",
                 "w:adjustRightInd", "w:snapToGrid", "w:spacing", "w:ind", "w:contextualSpacing",
-                "w:mirrorIndents", "w:suppressOverlap", "w:jc", "w:textDirection",
-                "w:textAlignment", "w:textboxTightWrap", "w:outlineLvl", "w:divId", "w:cnfStyle",
-                "w:rPr", "w:sectPr", "w:pPrChange")
-    return ("w:tcBorders", "w:shd", "w:noWrap", "w:tcMar", "w:textDirection", "w:tcFitText",
-            "w:vAlign", "w:hideMark", "w:headers", "w:cellIns", "w:cellDel", "w:cellMerge",
-            "w:tcPrChange")
+            "w:mirrorIndents", "w:suppressOverlap", "w:jc", "w:textDirection",
+            "w:textAlignment", "w:textboxTightWrap", "w:outlineLvl", "w:divId", "w:cnfStyle",
+            "w:rPr", "w:sectPr", "w:pPrChange")
+        if tipo == "pPr" else
+        ("w:tcBorders", "w:shd", "w:noWrap", "w:tcMar", "w:textDirection", "w:tcFitText",
+         "w:vAlign", "w:hideMark", "w:headers", "w:cellIns", "w:cellDel", "w:cellMerge",
+         "w:tcPrChange")
+    )
+    if a_partir and a_partir in lista:
+        lista = lista[lista.index(a_partir):]
+    return lista
 
 
 def fundo(pPr, cor: str) -> None:
     shd = parse_xml('<w:shd %s w:val="clear" w:color="auto" w:fill="%s"/>' % (nsdecls("w"), cor))
-    pPr.insert_element_before(shd, *_sucessores("pPr"))
+    pPr.insert_element_before(shd, *_sucessores("pPr", a_partir="w:tabs"))
 
 
 def borda_esquerda(pPr, cor: str, tamanho: int = 18) -> None:
@@ -202,7 +212,7 @@ def borda_esquerda(pPr, cor: str, tamanho: int = 18) -> None:
         '<w:pBdr %s><w:left w:val="single" w:sz="%d" w:space="6" w:color="%s"/></w:pBdr>'
         % (nsdecls("w"), tamanho, cor)
     )
-    pPr.insert_element_before(pBdr, *_sucessores("pPr"))
+    pPr.insert_element_before(pBdr, *_sucessores("pPr", a_partir="w:pBdr"))
 
 
 def estilo_novo(doc, nome: str):
