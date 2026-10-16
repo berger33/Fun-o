@@ -10,3 +10,12 @@
 *.parcial
 __pycache__/
 *.pyc
+
+# Material pessoal/restrito: fica no disco, fora do Git (ver restrito/LEIA-ME.md)
+/restrito/
+
+# Conversas brutas de trabalho com identificadores diretos
+/conversas-brutas/
+
+# Material de estudo gerado (HTML autocontido) — artefato de build
+/saida/

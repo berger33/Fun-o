@@ -217,3 +217,40 @@ Detalhes e timestamps em [`desaverbacao/incertezas.md`](desaverbacao/incertezas.
 5. **Consulta e retorno:** menção a SQL sem query literal (`00:24:47–00:25:44`); código “BF”/“competência”, versão e resultado final não verificados (`00:18:06–00:23:39`; `01:05:15–01:06:33`). Nenhum SQL foi executado.
 6. **Ambiente e margem:** mock, massa sintética, limites de WebTabelas e qualquer integração externa precisam de validação; a fala não autoriza Dataprev/cliente/produção (`00:44:32–00:48:10`).
 7. **Evidência visual:** ASR menciona um print, mas nenhuma captura foi obtida ou revisada nesta sessão. Manter **em revisão** até revisão humana/audiovisual, validação do fluxo e resolução das incertezas.
+
+## Pendências das conversas de trabalho (2026-10-15)
+
+Detalhes e âncoras em [`ANALISE_CONVERSAS_2026-10-15.md`](ANALISE_CONVERSAS_2026-10-15.md) e no
+`incertezas.md` de cada pacote. Itens abaixo exigem **validação humana**; nenhum foi resolvido por
+suposição.
+
+1. **`SubTipoRefin` — hipótese cross-source (mais relevante do lote).** A conversa com **Jonas** mostra
+   erro de conversão quando o campo chega nulo; a conversa com **Matheus** mostra o mesmo campo
+   preenchido com `"NaoDefinido"` em um envio que passou. As fontes são independentes e não provam a
+   relação: **validar** com o responsável pela API se `"NaoDefinido"` é valor válido do enum e qual é o
+   catálogo completo. Ver [`conversa-jonas-testa-api/incertezas.md`](conversa-jonas-testa-api/incertezas.md) item 2.
+2. **Tabela `coper` (conversa com Matheus, `[M14]`).** Nome, esquema, colunas e **ambiente** não
+   confirmados; o índice de SQL também registra “C-Oper” em outra fonte sem confirmação. Nenhuma consulta
+   executada.
+3. **Duas publicações do endpoint `FIApiAutIncluirProposta` (conversa com Jonas, `[M04]`/`[M05]`).**
+   Qual é a vigente para teste? Hospedeiros mascarados nos derivados.
+4. **Comportamento de “operação quitada” (conversa com Matheus, `[M13]`).** Onde o bloqueio ocorre e qual
+   é a mensagem? Nenhuma tela ou retorno foi fornecido.
+5. **Critério visual dos contratos (conversa com Matheus, `[M16]`–`[M19]`).** “Em vermelhinho” existe
+   apenas como fala; a imagem citada **não** foi fornecida. Pedir demonstração sanitizada.
+6. **`UDL` e `SETHI`/`DIG A` (conversa com Cler).** Siglas sem expansão e resposta obtida por via oral.
+   Pendência de **nome, conteúdo e canal oficial** de obtenção do artefato — ver
+   [`conversa-cler-artefatos-acesso/incertezas.md`](conversa-cler-artefatos-acesso/incertezas.md) itens 1–4.
+7. **`PSA` / `PEGEUT` (conversa com Oscar).** Nenhuma definição no acervo; ninguém no diálogo tem
+   experiência. Pedir material de treinamento para cobrir a lacuna.
+8. **PoC com Cypress (conversa com Oscar, `[M09]`–`[M12]`).** Intenção, não plano aprovado; nenhum
+   ambiente/escopo/critério. Não tratar como prática vigente nem introduzir ferramenta sem aval.
+9. **Catálogo de erros da API de inclusão.** O código `100000002` aparece sem significado documentado.
+10. **Publicação reduzida da conversa com Gabriel.** Os parágrafos de contexto pessoal privado de `[M07]`
+    **não** foram publicados; a íntegra está em área restrita, **fora do Git** (ver
+    [`PRIVACIDADE_E_RETENCAO.md`](PRIVACIDADE_E_RETENCAO.md) §20). **Decisão pendente do titular:** manter
+    privado ou publicar (decisão dele, não do material). O registro existe para que a omissão seja
+    consciente e reversível.
+11. **Autoria não determinável.** Nas conversas com Oscar (todas as falas) e no bloco de abertura da
+    conversa com Gabriel, o recorte não indica quem falou — não vincular opinião, proposta ou
+    dificuldade a pessoas.

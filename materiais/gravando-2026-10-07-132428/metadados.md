@@ -2,6 +2,10 @@
 
 ## Fonte primária e manifesto
 
+- **Fonte obtida:** não — partes LFS não baixadas (`git-lfs` ausente e host de conteúdo inacessível),
+  nenhum byte de vídeo recebido, nenhum ASR produzido. Enquanto esta declaração existir, o auditor
+  (`tools/validar_materiais.py`) registra a ausência de rastreabilidade como **aviso**, e não como
+  falha: não há timestamp a exigir de uma fonte que não foi analisada.
 - **Nome no manifesto:** `Gravando 2026-10-07 132428.mp4`.
 - **Tamanho declarado do original:** `3151497131` bytes.
 - **Divisão:** 2 partes LFS (`True`), ordem `part001`, `part002`.

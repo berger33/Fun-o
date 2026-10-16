@@ -27,6 +27,9 @@ Os índices transversais em `materiais/` conectam gravações, consultas SQL, si
 | `python3 tools/validar_materiais.py` | Auditoria do §6 do plano: arquivos obrigatórios, metadados, timestamps, perguntas, links e varredura de privacidade (CPF/CNPJ, e-mail, telefone, segredos). Nunca imprime o valor sensível encontrado. Saída: 0 ok, 1 falhas, 2 achado de privacidade. |
 | `python3 tools/transcrever.py --video "ARQUIVO.mp4"` | Transcreve com timestamps (`faster-whisper`), gerando `transcricao_bruta.txt`, `.srt`, `.vtt` e `transcricao_meta.json`. Precisa dos pesos do modelo — rode no runner do CI. |
 | `python3 tools/reconstruir_videos.py` | Reconstrói os quatro vídeos divididos (exige todas as partes). |
+| `python3 tools/gerar_base_conhecimento_html.py` | Gera o **material de estudo em HTML único** (`saida/index.html`) como **base de consulta**: capítulos temáticos (negócio, sistemas e telas, **consultas SQL**, API, procedimentos, testes, infraestrutura, automação, comunicação) escritos por assunto, com glossário único A–Z e perguntas de revisão. Entra só o que é certo — afirmação confirmada, procedimento e descrição de item ou processo; o que dependia de confirmação de alguém fica fora, e o gerador **falha** se um ponto em aberto escapar. O texto **explica** o conhecimento: não há marcas de tempo, trechos citados de fala nem nomes de arquivo, ligação interna ou jargão de controle do acervo. A limpeza acontece **antes** de escrever a saída e o gerador **falha** se algum resquício passar. |
+| `python3 tools/gerar_doc_editavel.py` | Converte o material publicado no **`.docx` editável** (`material-de-estudo/base-de-conhecimento-funcao-sistemas.docx`): mesmo conteúdo do HTML, com capítulos em Título 1, assuntos em Título 2 e cada ficha em Título 3 (navegação pelo Painel de Navegação e recolher/expandir por título), tabelas nativas, listas, blocos de código, notas em caixa e rodapé com número de página. Lê o HTML já gerado — rode o gerador do HTML antes. Precisa de `pip install python-docx`. |
+| `python3 tools/servir_material.py` | Serve o material gerado em `0.0.0.0:8000` (rota `/download` para baixar o arquivo). Não expõe nada além da pasta de saída; listagem de diretório desativada. |
 
 As duas verificações rodam automaticamente em cada push/PR pelo workflow `.github/workflows/auditar-materiais.yml`, que faz checkout **sem** baixar LFS.
 
@@ -36,6 +39,104 @@ Workflows auxiliares para ambientes sem acesso ao host de conteúdo do LFS (uma 
 - `.github/workflows/transcrever-gravacao.yml` — transcreve **uma** gravação com timestamps e publica o texto no mesmo tipo de ramo temporário (os pesos do modelo são alcançáveis no runner).
 
 **Materiais restritos** (documentação interna, informação de cliente, nomes/imagens de pessoas) **não** devem ser publicados neste repositório: mantenha-os em área privada fora do Git e registre a pendência em `materiais/CONFLITOS_E_VALIDACAO.md` sem revelar o conteúdo.
+
+## Material de estudo em HTML (leitura e download)
+
+Para ler o acervo inteiro como um só documento — e não como dezenas de arquivos — gere a base de
+conhecimento:
+
+```bash
+python3 tools/gerar_base_conhecimento_html.py     # cria saida/index.html
+python3 tools/servir_material.py                  # serve em http://localhost:8000
+```
+
+O documento é **autocontido** (CSS e busca embutidos, sem dependência de rede), tem índice lateral,
+busca instantânea, blocos recolhíveis e estilo de impressão. Ele não cita nomes de arquivos nem
+ligações internas e não relata reuniões: cada assunto aparece uma única vez, reunido de todas as
+fontes, e **só o que está confirmado** — sem capítulo de pendências, avisos de dúvida ou ressalva de
+fonte no meio do texto.
+
+A mesma execução grava **duas** cópias do documento:
+
+| Caminho | Papel |
+|---|---|
+| `saida/index.html` | build local, servido por `tools/servir_material.py`. Fora do Git (artefato). |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.html` | **arquivo que circula** — versionado, para leitura e download. |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.zip` | mesmo documento empacotado — é o link que **baixa com um clique** (o GitHub serve `.html` como texto simples). |
+| `material-de-estudo/base-de-conhecimento-funcao-sistemas.docx` | **versão editável** do mesmo documento, para abrir e editar no Word (gerada por `tools/gerar_doc_editavel.py`). |
+
+Link de download (ramo de trabalho; troque por `main` depois do merge):
+
+```
+https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.zip
+```
+
+## Versão editável (`.docx`) do mesmo material
+
+Para editar o conteúdo no Word — e não apenas ler —, converta o material publicado:
+
+```bash
+python3 tools/gerar_base_conhecimento_html.py     # 1. gera/atualiza o HTML que circula
+python3 tools/gerar_doc_editavel.py               # 2. cria a versão .docx (precisa de python-docx)
+```
+
+A conversão roda depois do gerador do HTML, de propósito: o `.docx` acompanha o que o HTML publica.
+O documento sai **autocontido** (fonte, estilos, tabelas e listas nativas, sem imagens nem ligações
+externas), com as mesmas travas do material — sem nome de arquivo, ligação interna, marca de tempo
+ou trecho citado de fala. Duas execuções geram o mesmo arquivo (byte a byte).
+
+Link de download da versão editável (ramo de trabalho; troque por `main` depois do merge):
+
+```
+https://github.com/berger33/Fun-o/raw/arena/0b7ca577-fun-o/material-de-estudo/base-de-conhecimento-funcao-sistemas.docx
+```
+
+O formato é `.docx` (Word 2007 em diante, Google Docs, LibreOffice, Pages). O `.doc` binário
+antigo não é gerado: é formato fechado, sem as tabelas e estilos acima, e o Word converte o
+`.docx` para ele em um clique, se for preciso.
+
+A cópia versionada é **escrita pelo gerador** a cada execução (use `--sem-distribuivel` para pular):
+não edite o arquivo à mão nem o versione separadamente do gerador, senão ele divergirá do acervo.
+
+**Consultas SQL (capítulo próprio).** O material traz **todas** as consultas que aparecem escritas
+no acervo, com o texto como foi exibido na tela e, para cada uma: o que faz, em que banco roda, que
+tabelas e colunas usa, o tipo de comando e como ler o resultado — mais um índice de uma linha por
+consulta e a lista das operações de banco **citadas sem o comando escrito**. As consultas ficam
+escritas no gerador (`SQL_CONSULTAS`), não são garimpadas do texto: assim o capítulo não depende de
+o trecho ter sobrevivido à limpeza. Os blocos de SQL que existiam espalhados nos capítulos
+temáticos são removidos para não duplicar o mesmo código em dois lugares. No acervo, o texto
+completo também está em [`materiais/SQL/CONSULTAS_COMPLETAS.md`](materiais/SQL/CONSULTAS_COMPLETAS.md).
+
+**Como o material foi escrito.** O objetivo é aprender o assunto, não acompanhar o registro. Cada
+capítulo temático começa com uma explicação autoral do domínio (regras, fluxo, nomenclatura) e
+segue com as fichas de consulta do mesmo assunto; as seções equivalentes de todas as fontes são
+fundidas em um único texto, sem repetição. Nada no texto aponta *quando* algo foi dito nem *quem*
+disse — carimbos de tempo, âncoras de mensagem, datas de análise, narrativa de captura (ASR,
+transcrição, amostragem de tela) e o vocabulário de registro ("nesta gravação", "a conversa mostra")
+saem na limpeza — e nada que dependa de confirmação de alguém entra: a frase que só relata o que
+falta saber é descartada, junto com a ficha que ficaria vazia. O que sobra é afirmação confirmada,
+procedimento e descrição de item ou processo. As falas citadas saem inteiras em vez de saírem apenas
+as aspas. Quando a fonte indicava horário como **dado** de negócio — um `SELECT` com coluna de
+data, um payload com timestamp — o valor permanece, porque ali ele é conteúdo técnico e não
+referência de vídeo.
+
+A verificação é parte do gerador: ele recusa a saída se encontrar marca de tempo, aspas de citação,
+âncora de mensagem, nome de arquivo de mídia, caminho de pasta do acervo ou jargão interno (LFS,
+manifesto, ponteiro, checksum, commit). Basta rodar `python3 tools/gerar_base_conhecimento_html.py` e
+conferir a linha de resumo.
+
+## Fontes textuais (conversas de trabalho)
+
+A biblioteca aceita um segundo tipo de fonte primária: **recortes de conversa de trabalho** (chat/Teams),
+analisados com **âncoras `[Mnn]`** (índice da mensagem) em vez de timestamps de mídia — conversa não tem
+`HH:MM:SS`. As regras estão em [`materiais/CONVENCOES_FONTES_TEXTUAIS.md`](materiais/CONVENCOES_FONTES_TEXTUAIS.md)
+e o auditor (`tools/validar_materiais.py`) reconhece o pacote que se declara `**Tipo de fonte:** conversa`
+em `metadados.md`.
+
+- **Síntese do lote de conversas:** [`materiais/ANALISE_CONVERSAS_2026-10-15.md`](materiais/ANALISE_CONVERSAS_2026-10-15.md).
+- **Trilhas de estudo derivadas:** [`materiais/TRILHAS_DE_ESTUDO.md`](materiais/TRILHAS_DE_ESTUDO.md).
+- **Material pessoal/restrito** (contexto privado que não deve ser publicado) fica em `restrito/`,
+  **ignorado pelo Git** — ver [`restrito/LEIA-ME.md`](restrito/LEIA-ME.md). Nunca usar `git add -f` nessa pasta.
 
 ## Integridade, privacidade e limites de publicação
 
