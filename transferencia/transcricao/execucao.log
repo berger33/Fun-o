@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[0;93m2026-10-17 02:28:03.290235728 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+[1/3] extraindo áudio de MCB - QISTA.mp4 (543851523 bytes)
+[2/3] transcrevendo com large-v3 (idioma pt)
+      (PyAV 19.0.1 — decodificação feita pelo próprio script)
+[3/3] pronto: 228 segmentos, 400.9s de processamento
+      arquivos em saida
+codigo_saida=0
