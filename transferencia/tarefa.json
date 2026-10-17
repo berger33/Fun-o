@@ -1,11 +1,11 @@
 {
-  "arquivo": "MICHELLE CTC PORTABILIDADE REFIN.mp4",
-  "slug": "michelle-ctc-portabilidade-refin",
+  "arquivo": "MCB - QISTA.mp4",
+  "slug": "mcb-qista",
   "modelo": "large-v3",
   "idioma": "pt",
-  "ramo_entrega_partes": "entrega/partes-michelle-ctc-portabilidade-refin",
-  "ramo_entrega_transcricao": "entrega/transcricao-michelle-ctc-portabilidade-refin",
+  "ramo_entrega_partes": "entrega/partes-mcb-qista",
+  "ramo_entrega_transcricao": "entrega/transcricao-mcb-qista",
   "tamanho_bloco_mb": "64",
-  "lote": "proximo menor da fila (473540507 bytes) apos a conclusao de Gravando 2026-07-08 182343.mp4; a ponte de partes e a transcricao foram disparadas por este push (regra: um arquivo por vez).",
-  "sessao": "arena/792a3d47-fun-o"
+  "lote": "proximo menor da fila (543851523 bytes) apos a conclusao de MICHELLE CTC PORTABILIDADE REFIN.mp4; a ponte de partes e a transcricao foram disparadas por este push (regra: um arquivo por vez). Coleta pendente para o proximo lote: baixar os dois ramos entrega/*-mcb-qista por codeload, conferir 543851523 bytes e o SHA-256 do ponteiro LFS, e apagar os ramos.",
+  "sessao": "arena/584f44dd-fun-o"
 }

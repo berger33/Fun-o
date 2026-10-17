@@ -1,57 +1,55 @@
 # Perguntas e respostas — MICHELLE CTC PORTABILIDADE REFIN.mp4
 
-1. **Qual é a finalidade geral da conversa? (00:00:05–00:00:23)**
+1. **Qual é o assunto geral da gravação? (00:00:05–00:01:22)**
+   Uma explicação, sobre um fluxograma compartilhado, de como as esteiras de **portabilidade** e de **refim** se coordenam — seguida do desenho de um teste para verificar se a portabilidade pode avançar sem depender do refim.
 
-   Explicar uma hipótese de esteira de portabilidade e refim, depois discutir como testar o acionamento e a etapa de espera.
+2. **O fluxograma exibido é a esteira do C6? (00:00:05–00:00:23; 00:15:34–00:16:07)**
+   Não. A apresentadora diz duas vezes que o desenho foi feito para **outro cliente**, “não é exatamente do C6”, e serve só como exemplo do mecanismo. Não copie a configuração dele para o cliente-alvo.
 
-2. **O desenho apresentado representa exatamente o C6? (00:00:05–00:00:23; 00:15:34–00:16:07)**
+3. **Que processos antecedem a pergunta “Tem Refin Vinculado?” no desenho? (00:00:36–00:01:00)**
+   Na faixa da portabilidade: `Envio/Aguarda Retorno da Núclea` → `CTC – Atualizar Proposta com NU da Portabilidade` → `CTC - Verificação de Alteração de Saldo e Prazo` (que, havendo divergência, direciona a `Pendente` e ao `Recálculo de PMT e Prazo da Portabilidade`) → losango `Tem Refin Vinculado?`.
 
-   Não. A fala diz que o desenho foi feito para outro cliente e serve apenas como exemplo; não se deve copiar sua configuração para o C6.
+4. **O que acontece se não houver refim vinculado? (00:01:00)**
+   Segundo a nuvem do próprio desenho, “a proposta seguirá o fluxo de uma portabilidade "pura"” (captura 01).
 
-3. **Como portabilidade e refim são descritos? (00:00:24–00:01:22)**
+5. **Qual é o nome exato do processo de acionamento lido na tela — e o que ele faz? (00:01:11–00:02:30)**
+   `CTC – Aciona Esteira de Refinanciamento`, mnemônico `CTCACIPROPREF`. É um processo **sem tela** que verifica a **última** proposta de portabilidade vinculada: só quando ela passa é que o acionamento da proposta de refinanciamento é realizado.
 
-   Como propostas/esteiras distintas, mas relacionadas, que precisam coordenar o andamento quando o refim está vinculado à portabilidade.
+6. **Que cuidado a anotação do desenho registra para esse acionamento? (00:02:00–00:02:30)**
+   O parâmetro de rotina `G_AVERERR` “deve estar desligado, a fim de não validar a averbação no momento de andar a esteira de refim”. A fala reforça que o refim não pode estar averbado nesse momento.
 
-4. **O que o processo chamado “CTC aciona refim” parece fazer? (00:01:07–00:01:22; 00:05:31–00:06:00)**
+7. **E se houver várias portabilidades para o mesmo refinanciamento? (00:02:00–00:02:30)**
+   Todas precisam ter passado pelo processo de acionamento para o refim andar — é a regra da “última proposta” descrita na nuvem e na fala.
 
-   Segundo a conversa, acionar o avanço do refim. Nome e comportamento não foram confirmados em tela.
+8. **Qual é o nome exato do processo de espera da portabilidade no desenho — e o que ele faz? (00:03:02–00:03:36)**
+   `CTC – Aguarda Analise do Refin de Portabilidade`, mnemônico `CTCAGANREFIN`. Processo sem tela que “permite o bloqueio da proposta de portabilidade de acordo com a situação da proposta de refinanciamento vinculada a ela”.
 
-5. **O que é dito sobre múltiplas portabilidades vinculadas a um refim? (00:02:00–00:02:30)**
+9. **Por que, no mecanismo descrito, a portabilidade espera o refim? (00:03:36–00:04:59)**
+   Para garantir a consistência dos valores antes de gerar/avançar a **CCB**: se a portabilidade andasse antes da validação do refim (saldo retornado da CIP/Núclea), “a CCB saiu com valores diferentes”.
 
-   A explicação afirma que todas precisariam passar por uma etapa antes do refim avançar; a etapa e a regra exatas precisam de confirmação.
+10. **O que é a “tela unificada” e onde ela entra na conversa? (00:02:40–00:03:15)**
+    É a tela do C6 que, segundo a fala, faz **refim e portabilidade juntos**. O problema discutido é que, nesse caminho, as duas propostas teriam de parar num processo de espera (“aguarda alteração unificada”, na fala) para entrarem juntas na atividade seguinte. Nenhuma caixa com esse nome aparece legível no desenho exibido.
 
-6. **Por que a portabilidade poderia aguardar o refim? (00:03:36–00:04:59)**
+11. **O processo de acionamento também “segura” a proposta? (00:05:31–00:06:00)**
+    Não, segundo o esclarecimento atribuído ao Zé: ele **só aciona, não valida**; quem segura é a **próxima etapa configurada** na esteira. Daí a hipótese de que bastaria configurar a etapa seguinte (“verdadeira”) como o processo de aguardo desejado.
 
-   Para conferir os valores do refim antes de gerar/avançar a CCB de portabilidade, evitando divergência. Não são especificados os campos nem o critério de validação.
+12. **O que o banco/cliente quer, afinal? (00:05:09–00:08:19)**
+    Que as propostas da tela unificada e da tela de cadastro caiam no **mesmo** processo de espera e que, depois do acionamento, a portabilidade **continue andando sem dependência** do refim. O cliente relatou não conseguir; a hipótese da reunião é erro de configuração — nada disso é demonstrado.
 
-7. **Quais etapas de espera são mencionadas? (00:03:02–00:03:15; 00:07:25–00:07:47)**
+13. **Como nasce o cenário de duas propostas usado no teste? (00:12:48–00:13:18)**
+    Na tela de cadastro normal: grava-se a portabilidade, um **pop-up** pergunta se quer fazer o refinanciamento da proposta, grava-se o refim e, ao final, o sistema mostra **dois números de proposta** (portabilidade e refim).
 
-   “Aguarda análise de refim de portabilidade” e “aguarda alteração unificada”. A conversa não fecha qual etapa é a configuração correta para C6.
+14. **Por que o teste precisa de duas esteiras (e dois convênios/produtos)? (00:10:34–00:11:57)**
+    Para isolar o comportamento de cada tipo de proposta; a equipe declara não ter esteiras separadas por tipo (“a gente costuma usar uma pra todos os tipos de propostas”), então o isolamento seria obtido com convênio/produto diferentes para portabilidade e refim.
 
-8. **O que a tela unificada deve coordenar, segundo a fala? (00:02:40–00:03:15)**
+15. **Onde as propostas devem parar no teste — e o que é pulado? (00:06:39–00:07:47; 00:09:23–00:09:50)**
+    As duas andam até a **análise de crédito**; o refim fica parado nela. Na portabilidade, pulam-se os processos de CTC (atualização/envio) — porque a equipe não consegue exercitar o CTC naquele ambiente — e coloca-se o processo de acionamento seguido da etapa de aguardo em discussão. Isso é limitação do ambiente de teste, não autorização para contornar o CTC fora de sandbox.
 
-   A entrada/andamento conjunto das propostas de refim e portabilidade. A tela não foi inspecionada visualmente neste lote.
+16. **O teste foi executado ou alguma tela de sistema foi demonstrada? (00:00:00–00:16:50)**
+    Não. A tela compartilhada é o fluxograma o tempo todo; o teste é apenas combinado (Santana executa depois, com William acompanhando) e nenhum resultado é mostrado.
 
-9. **Qual cenário de teste é proposto? (00:06:22–00:07:47; 00:12:50–00:13:18)**
+17. **Há SQL nesta gravação? (00:00:00–00:16:56)**
+    Não — nenhum comando, consulta, tabela ou dialeto é demonstrado ou ditado.
 
-   Criar uma portabilidade com refim associado, confirmar se existem duas propostas e observar o comportamento das etapas. É uma proposta verbal, não um teste executado.
-
-10. **O CTC foi exercitado nessa conversa? (00:06:39–00:06:49; 00:09:23–00:09:46)**
-
-    Não. Os participantes dizem que não conseguem fazer o CTC naquele momento e sugerem pular etapas no teste. Isso não autoriza contornar a integração em produção.
-
-11. **Por que se fala em esteiras/produtos/convênios separados? (00:10:34–00:12:14)**
-
-    A conversa tenta isolar portabilidade e refim para testar comportamentos diferentes. Não define a arquitetura correta nem se o C6 já possui esse desenho.
-
-12. **É necessário que a portabilidade e o refim avancem juntos ou podem ser independentes? (00:00:24–00:00:36; 00:03:36–00:04:59; 00:08:02–00:08:29)**
-
-    A gravação contém ambas as ideias: coordenação/dependência e desejo de testar avanço sem uma dependência rígida. É uma pendência de regra de negócio.
-
-13. **O que significa “MEI” na conversa? (00:15:17–00:15:28)**
-
-    Não é definido. Não expandir nem tratar como nome confirmado de processo.
-
-14. **Há SQL, configuração efetivamente demonstrada ou teste aprovado? (00:00:00–00:16:50)**
-
-    Não. O vídeo é uma explicação verbal e uma discussão de teste; não houve SQL, tela de produto verificada ou resultado de execução nesta análise.
+18. **A regra “portabilidade espera o refim integrado” ficou confirmada? (00:03:15–00:04:59; 00:07:50–00:08:29)**
+    Não. A mesma conversa apresenta a espera (status “integrada”, apenas falado) e o desejo oposto de avançar sem dependência. É uma decisão de negócio pendente — ver [`incertezas.md`](incertezas.md) §2.

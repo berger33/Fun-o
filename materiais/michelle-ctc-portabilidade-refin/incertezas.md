@@ -1,43 +1,56 @@
 # Incertezas e pendências — MICHELLE CTC PORTABILIDADE REFIN.mp4
 
-## 1. O diagrama não é do cliente-alvo
+## 1. O desenho não é do cliente-alvo (confirmado na fonte)
 
-A apresentadora afirma que o desenho é de outro cliente, não exatamente do C6 (**00:00:05–00:00:23; 00:15:34–00:16:07**). Não usar nomes de etapas, ordem ou configuração do desenho como especificação do C6. É necessário obter o fluxo atual aprovado para o cliente-alvo.
+- A apresentadora declara em `00:00:05–00:00:23` que o fluxograma é desenho dela para **outro cliente** (“Não é exatamente do C6”) e repete a ressalva em `00:15:34–00:16:07` (“é só um exemplo de como funciona”).
+- Consequência: nomes, mnemônicos (`CTCACIPROPREF`, `CTCAGANREFIN`, `AJREFPORT`, `AGAPREXT`, `ACNCALLBACK`), ordem das caixas e o parâmetro `G_AVERERR` descrevem **o exemplo**. Nada disso foi confirmado como configuração vigente do C6.
+- **Pendência:** obter o fluxo/EF vigentes do cliente-alvo antes de reutilizar qualquer elemento.
 
-## 2. Dependência entre portabilidade e refim
+## 2. Dependência × independência entre portabilidade e refim (não resolvido)
 
-- No início, as esteiras são descritas como paralelas, mas precisam andar em conjunto (**00:00:24–00:00:36**).
-- A explicação diz que a portabilidade deveria esperar o refim para conferir valores antes de gerar/avançar a CCB (**00:03:36–00:04:59**).
-- Mais adiante, os participantes discutem permitir o avanço da portabilidade sem dependência rígida ou em etapas diferentes (**00:08:02–00:08:29; 00:10:34–00:12:14**).
+- Formulação com dependência: as esteiras “têm que andar em conjunto” (`00:00:24–00:00:36`) e a portabilidade “para… até que todas as propostas de refinanciamento estejam… com status de integrada” (`00:03:15–00:03:36`).
+- Formulação sem dependência: o banco “não quer” a dependência e quer “continuar andando a esteira de portabilidade” após o acionamento (`00:07:50–00:08:29`).
+- **Pendência:** decisão de negócio sobre a regra de sincronização, os status de bloqueio/liberação e o caso de **várias portabilidades para um mesmo refim** (a regra da “última proposta” é do desenho de exemplo, `00:02:00–00:02:30`).
 
-**Pendência:** responsável de negócio deve definir a regra de sincronização, os status de bloqueio/liberação e o comportamento desejado quando houver mais de uma portabilidade para o mesmo refim.
+## 3. Nomes de processos: tela × fala
 
-## 3. Nome e função dos processos
-
-- **“CTC aciona refim” / “CTC aciona esteira de financiamento” / “CTC aciona esteira externa”:** variantes reconhecidas em momentos diferentes; nome oficial e ponto de execução desconhecidos (**00:01:07–00:01:22; 00:06:47–00:07:02; 00:09:46–00:09:50; 00:11:49–00:11:57**).
-- **“Aguarda análise de refim de portabilidade” × “aguarda alteração unificada”:** alternativas mencionadas sem configuração ou tela que confirme a escolha (**00:03:02–00:03:15; 00:07:25–00:07:47**).
-- **“Guarda” × “aguarda”:** possível erro de ASR na descrição da etapa (**00:01:51–00:01:56; 00:08:24–00:08:29; 00:11:55–00:11:59**).
-- **MEI:** aparece como sigla no trecho de CTC, sem definição (**00:15:17–00:15:28**).
-- **CIP, remessa online e liberação:** são mencionadas sem explicar os contratos de integração nem os critérios de passagem (**00:04:01–00:04:59; 00:12:03–00:12:11**).
+- **Confirmados pela tela** (grafias literais do desenho): `CTC – Aciona Esteira de Refinanciamento (CTCACIPROPREF)`, `CTC – Aguarda Analise do Refin de Portabilidade (CTCAGANREFIN)`, `CTC – Atualizar Proposta com NU da Portabilidade`, `CTC - Verificação de Alteração de Saldo e Prazo`, `CTC - Validação de Refinanciamento de Portabilidade Após retorno da CIP (AJREFPORT)`, `Tem Refin Vinculado?`, `Analise de Crédito`, `Aguarda Aprovação Externa (AGAPREXT)`, `Acionamento de Callback (ACNCALLBACK)`.
+- **Só falados** (sem caixa legível nos 218 quadros examinados): “aguarda alteração unificada” / “aguarda tela unificada”, “CTC aciona esteira externa”, “CTC permite acionar”, “remessa (online)”, “liberação” e o status “integrada”. No intervalo em que “unificada” é dito (`00:03:00–00:03:15`), o enquadramento está sobre `Tem Refin Vinculado?` → `CTC – Aciona…` (quadros dirigidos de `00:02:55–00:03:40`); portanto **não é possível afirmar** se existe uma caixa com esse nome em região nunca ampliada do desenho.
+- **Leitura com cautela:** o parâmetro da nuvem foi lido como **`G_AVERERR`** em dois quadros independentes (`00:02:25` e `00:15:35`), mas a imagem é uma captura de compartilhamento (1186×710); confirmar a grafia exata no ambiente antes de citá-lo como parâmetro real.
+- **Variações do ASR resolvidas pelo contexto/tela** (mantidas no texto bruto): “Porsche” (`00:10:00`) e “exportabilidade” (`00:10:49`) = portabilidade; “refino/refém” = refim/refin; “guarda” = aguarda; “font” = fonte (código-fonte); “MEI” (`00:15:17`/`00:15:34`) provavelmente “do meio” / “e-mail”; “a Siona” (`00:01:51`) inaudível como nome — provavelmente início de frase (“esse aqui que tem a configuração é o aguarda”).
 
 ## 4. Cenário de teste e cadastros
 
-- A criação de portabilidade com refim parece gerar duas propostas, mas a conversa alterna entre fluxo automático via popup e cadastros/esteiras separados (**00:06:22–00:06:53; 00:10:34–00:12:14; 00:12:50–00:13:18**).
-- Não foram especificados convênios, produtos, dados de teste, critérios de aceite nem como restaurar a esteira.
-- Os participantes sugerem pular etapas de CTC porque não estavam configuradas naquele momento (**00:06:39–00:06:49; 00:09:23–00:09:46**). Isso não valida nem autoriza contornar a integração em produção.
-- A conversa não registra um teste concluído nem prova que a configuração proposta funcionou.
+- O teste é **apenas combinado verbalmente** (`00:06:22–00:16:39`); nenhum cadastro, pop-up, número de proposta ou configuração de esteira é mostrado.
+- Não foram definidos: convênios/produtos concretos, dados de teste, critério de aceite, evidências esperadas nem restauração da esteira.
+- “Pular o CTC” decorre de ausência de configuração/acesso naquele ambiente (`00:09:23–00:09:50`); não valida nem autoriza contornar a integração fora de sandbox aprovado.
+- O relato de que o cliente “não estava conseguindo” e a hipótese de “configurando errado” (`00:13:55–00:14:18`) são falas de segunda mão; a causa não é diagnosticada na gravação.
 
-## 5. Cobertura e qualidade
+## 5. Conteúdo visual não legível ou não enquadrado
 
-- A transcrição tem 388 segmentos; o último vai de `00:16:48.56` a `00:16:50.26`, ante a duração de áudio declarada de `00:16:56.62`.
-- A mídia e o desenho não foram inspecionados visualmente neste lote; a fala e os rótulos de processo precisam de conferência contra o áudio/tela.
-- Termos possivelmente mal reconhecidos incluem “guarda/aguarda”, “exportabilidade”, “Porsche” (possível referência à portabilidade), “MEI” e nomes de etapas.
-- Não há SQL, captura sanitizada ou evidência de execução nesta análise.
+- Os **rótulos verticais das duas faixas** do fluxograma (visíveis no zoom afastado de `00:07:00–00:09:20`) não são legíveis nos quadros amostrados; a atribuição “faixa da portabilidade × faixa do refim” vem da sequência das caixas e da fala.
+- Caixas à **direita de `CTCAGANREFIN`** ficam parcialmente cobertas pela coluna de participantes em `00:03:20–00:03:55`; foram registradas apenas quando legíveis em outros enquadramentos.
+- O título completo do arquivo do desenho é legível só em parte (`…portabilidade-Refin - Port.drawio.png`); o início do nome não é registrado como dado.
+- Nenhuma tela de sistema (Autorizador, cadastro, pop-up de refinanciamento) é aberta em toda a gravação — confirmações sobre telas reais **não** podem ser extraídas deste vídeo.
 
-## 6. Próximas validações necessárias
+## 6. Cobertura de áudio e transcrição (conferido)
 
-1. Confirmar diagrama e regra atuais do cliente-alvo.
-2. Confirmar nomes oficiais e semântica dos processos/status.
-3. Definir se as propostas têm dependência obrigatória e como tratar múltiplas portabilidades.
-4. Aprovar um cenário isolado em sandbox, sem contornar controles de produção.
-5. Conferir a transcrição e a tela com a fonte antes de elevar a confiança ou marcar o material como concluído.
+- Duração do contêiner: `00:16:56.62`. Último segmento de ASR: `00:16:48.56–00:16:50.26`; áudio em silêncio (limiar `-60 dB`) a partir de `00:16:50.28`, com ruído breve não verbal em ~`00:16:55.7`.
+- Nível global baixo (média `-51,8 dB`, pico `-31,0 dB`); com `silencedetect` a `-60 dB` (41 regiões ≥ 1 s), **nenhum trecho audível > 4 s ficou sem segmento de ASR**; maior pausa entre segmentos: 3,0 s (`00:00:02.40–00:00:05.40`).
+- Os quatro artefatos brutos da ponte desta retomada conferem: TXT/SRT/VTT **byte a byte idênticos** aos da execução anterior; o `transcricao_meta.json` difere só no tempo de processamento (`951.3` × `958.0` s).
+- Permanece pendente a **escuta humana integral**: termos de baixa confiança do ASR estão listados no §3 e não foram “corrigidos” no texto bruto.
+
+## 7. Privacidade — decisões tomadas neste lote
+
+- **Não publicadas:** imagens/nomes completos dos participantes (câmeras/avatares e a barra de título da reunião com sobrenomes) — recortados de todas as capturas.
+- **Recortadas para fora das capturas:** coluna de participantes, barra de ferramentas da reunião, barra de tarefas com data/hora da estação e título da janela do visualizador.
+- **Não reproduzidos nos textos:** sobrenomes dos participantes, nomes de cliente (o desenho é de um cliente não nomeado), identificadores de proposta e qualquer valor. Nomes de operadores citados (Michelle, Gabriel, Matheus/Santana, William, Zé) são preservados conforme autorização de 2026-10-13.
+- Nenhuma credencial, token, senha ou chave aparece na gravação analisada nem nas capturas publicadas.
+
+## 8. Pendências para validação humana
+
+1. Confirmar o fluxo vigente do C6 e a existência/semântica da etapa de espera “unificada” e do status que libera a portabilidade.
+2. Decidir a regra de dependência (§2) e o tratamento de múltiplas portabilidades por refim.
+3. Executar o teste combinado em sandbox aprovado e registrar evidências (na gravação, ele é apenas delegado).
+4. Conferir, em fonte oficial, os mnemônicos e o parâmetro lidos do desenho de exemplo antes de qualquer referência operacional.
+5. Escuta humana da transcrição nos trechos de baixa confiança do ASR (§§3 e 6).

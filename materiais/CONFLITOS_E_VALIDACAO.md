@@ -1,6 +1,6 @@
 # Conflitos e validações pendentes
 
-Atualizado em **2026-10-16**.
+Atualizado em **2026-10-17**.
 
 ## Conflitos entre gravações
 
@@ -71,16 +71,17 @@ Detalhes e evidências em [`gravando-2026-07-08-182343/incertezas.md`](gravando-
 5. **Validação do resultado da importação (PENDENTE):** a única evidência de sucesso é a mensagem “As informações foram salvas” (`00:07:20`–`00:07:25`). Não houve reexportação, vinculação a proposta ou teste funcional do modelo `9999` (`teste_tolerancia`).
 6. **Escuta humana da transcrição (PENDENTE):** a cobertura foi validada tecnicamente (nenhum trecho audível acima de `-50 dB` sem segmento de ASR; silêncio digital confirmado a partir de `00:08:28`), mas não houve escuta integral nem revisão do chat dos primeiros segundos.
 
-## Pendências de `MICHELLE CTC PORTABILIDADE REFIN.mp4` (2026-10-14)
+## Pendências de `MICHELLE CTC PORTABILIDADE REFIN.mp4` — atualizadas em 2026-10-17 (fonte primária verificada)
 
-Detalhes e timestamps em [`michelle-ctc-portabilidade-refin/incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md).
+Detalhes e timestamps em [`michelle-ctc-portabilidade-refin/incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md) e [`michelle-ctc-portabilidade-refin/capturas.md`](michelle-ctc-portabilidade-refin/capturas.md).
 
-1. **Diagrama de outro cliente:** não é especificação do alvo C6; obter e validar a configuração vigente antes de reutilizar qualquer etapa.
-2. **Esteiras dependentes ou independentes:** a conversa oscila entre avanço coordenado/aguarda validação do refim e avanço independente; definir com negócio os status e condições de bloqueio/liberação.
-3. **Nomes e sequência das etapas:** “CTC aciona refim”, “aguarda alteração unificada” e “aguarda análise de refim de portabilidade” são rótulos aproximados/alternativos, sem confirmação em tela.
-4. **Criação e vínculo de propostas:** esclarecer se o cenário gera automaticamente duas propostas, como tratar múltiplas portabilidades e quais produtos/convênios/esteiras são aplicáveis.
-5. **Limite do teste CTC:** sugestão de pular CTC decorre de indisponibilidade durante aquela discussão; não é autorização para contornar integração/controles em produção.
-6. **Cobertura da fonte:** 388 segmentos ASR; mídia, tela e desenho não foram revisados visualmente nesta etapa. Manter estado **em revisão** até conferência humana e validação técnica.
+1. **Diagrama de outro cliente (PENDENTE):** a fonte confirma a declaração da autora (`00:00:05–00:00:23`); o desenho lido quadro a quadro **não** é especificação do C6. Obter e validar a configuração vigente antes de reutilizar qualquer etapa, mnemônico ou parâmetro (incl. `G_AVERERR`, lido da tela).
+2. **Esteiras dependentes ou independentes (PENDENTE):** a gravação sustenta as duas formulações (espera até o refim “integrado” em `00:03:15–00:03:36` × avanço sem dependência em `00:07:50–00:08:29`). Definir com negócio os status e condições de bloqueio/liberação.
+3. **Nomes das etapas (PARCIALMENTE RESOLVIDO no material):** a tela confirma, **no desenho de exemplo**, `CTC – Aciona Esteira de Refinanciamento (CTCACIPROPREF)` e `CTC – Aguarda Analise do Refin de Portabilidade (CTCAGANREFIN)`; já “aguarda alteração/tela unificada”, “remessa online” e o status “integrada” permanecem **só falados** (nenhuma caixa legível nos 218 quadros examinados). Nomes oficiais no ambiente do C6 continuam pendentes.
+4. **Criação e vínculo de propostas (PENDENTE de demonstração):** a fala descreve pop-up na tela de cadastro gerando **dois números de proposta** (`00:12:48–00:13:18`), mas nenhuma tela de sistema é aberta; produtos/convênios do teste também não foram definidos. O caso de várias portabilidades por refim aparece só como regra do desenho (“última proposta”, `00:02:00–00:02:30`).
+5. **Limite do teste CTC (PENDENTE):** “pular CTC” decorre de indisponibilidade naquele ambiente (`00:09:23–00:09:50`); não é autorização para contornar integração/controles fora de sandbox aprovado.
+6. **Execução do teste (PENDENTE):** o cenário combinado (Santana + William, duas esteiras, parada na análise de crédito) **não foi executado** na gravação; sem critério de aceite nem evidências.
+7. **Cobertura da fonte (RESOLVIDO tecnicamente):** fonte obtida e conferida byte a byte; nenhum trecho audível > 4 s (limiar `-60 dB`) sem segmento de ASR; escuta humana integral continua pendente. Estado do pacote: **concluído** para os critérios do roteiro.
 
 ## Pendências de `MCB - QISTA.mp4` (2026-10-14)
 

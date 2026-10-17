@@ -77,17 +77,20 @@ Quando houver entradas, cada termo/sigla deve trazer definição sustentada pelo
 
 Detalhes, timestamps por termo e ressalvas em [`gravando-2026-07-08-182343/glossario.md`](gravando-2026-07-08-182343/glossario.md) e [`gravando-2026-07-08-182343/incertezas.md`](gravando-2026-07-08-182343/incertezas.md).
 
-## Termos de `MICHELLE CTC PORTABILIDADE REFIN.mp4`
+## Termos de `MICHELLE CTC PORTABILIDADE REFIN.mp4` (fonte primária verificada em 2026-10-17)
 
-- **Portabilidade / refim:** propostas/fluxos tratados como distintos e relacionados; regras de associação e sincronização não foram fechadas (`00:00:24`–`00:01:22`).
-- **CTC:** sigla usada para acionamento/retorno de etapa, sem expansão ou semântica técnica confirmada (`00:00:36`–`00:01:22`).
-- **“CTC aciona refim”:** nome aproximado de processo falado como acionador; confirmar nome e efeito na configuração real (`00:01:07`–`00:01:22`).
-- **Tela unificada / “aguarda alteração unificada”:** descrição verbal de tela e etapa de coordenação; não inspecionadas visualmente (`00:02:40`–`00:03:15`).
-- **“Aguarda análise de refim de portabilidade”:** etapa alternativa citada, sem resolução quanto ao nome/uso correto (`00:07:25`–`00:07:47`).
-- **CCB:** documento cuja emissão/avanço é citado como dependente da conferência dos valores do refim; campos/critério não especificados (`00:03:36`–`00:04:59`).
-- **MEI:** sigla ASR sem definição na conversa (`00:15:17`–`00:15:28`).
+- **Portabilidade / refim:** propostas/fluxos distintos e vinculados; a regra de sincronização (dependência × avanço independente) **não** foi fechada na reunião (`00:00:24`–`00:01:22`; `00:07:50`–`00:08:29`).
+- **CTC / Núclea / CIP:** no desenho exibido, a contraparte externa do envio/retorno é grafada **Núclea** (`Envio/Aguarda Retorno da Núclea`, número único — **NU** — retornado, saldo/prazo retornados); a fala usa “CIP” (`00:04:01`) e o próprio desenho usa “CIP” na caixa `AJREFPORT`. A expansão da sigla CTC não é ditada (`00:00:36`–`00:01:22`).
+- **`CTC – Aciona Esteira de Refinanciamento` (`CTCACIPROPREF`):** processo **sem tela** (lido do desenho) que só aciona a proposta de refinanciamento quando passa por ele a **última** portabilidade vinculada; a anotação do desenho exige o parâmetro de rotina **`G_AVERERR`** desligado para não validar a averbação nesse momento (`00:01:11`–`00:02:30`).
+- **`CTC – Aguarda Analise do Refin de Portabilidade` (`CTCAGANREFIN`):** processo sem tela (lido do desenho) que permite bloquear a portabilidade conforme a situação do refim vinculado (`00:03:02`–`00:03:36`).
+- **Tela unificada / “aguarda alteração unificada”:** termos **só falados** para a tela do C6 que faz refim e portabilidade juntos e para a etapa de espera desejada nesse caminho; nenhuma caixa com esse nome é legível no desenho (`00:02:40`–`00:03:15`).
+- **`CTC - Validação de Refinanciamento de Portabilidade Após retorno da CIP (AJREFPORT)`:** processo **com tela** da faixa do refim (mostra valores após o retorno e permite alterá-los) — contraste útil com os processos “sem tela” (`00:04:01`–`00:04:43`).
+- **`*AGAPREXT* / *ACNCALLBACK*:** mnemônicos do desenho para `Aguarda Aprovação Externa` e `Acionamento de Callback` (este último também “para informar a reprovação das propostas”) (`00:01:35`–`00:03:15`).
+- **CCB:** documento que, na justificativa falada, poderia “sair com valores diferentes” se a portabilidade avançasse antes da validação do refim; no desenho, a geração é notificada ao SIC (`Notifica a geração de documentos no SIC (CCB)`) (`00:03:49`–`00:04:43`).
+- **Integrada (status):** status apenas falado como condição de liberação da portabilidade; não aparece no desenho (`00:03:15`–`00:03:49`).
+- **“MEI” (ASR):** provável reconhecimento de “do meio”/“e-mail” pelo contexto de tela; não é sigla confirmada (`00:15:17`–`00:15:34`).
 
-Ver [`michelle-ctc-portabilidade-refin/glossario.md`](michelle-ctc-portabilidade-refin/glossario.md) e [`incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md); não tratar os nomes de etapa/processo como rótulos confirmados.
+Ver [`michelle-ctc-portabilidade-refin/glossario.md`](michelle-ctc-portabilidade-refin/glossario.md) e [`incertezas.md`](michelle-ctc-portabilidade-refin/incertezas.md). ⚠️ Os rótulos lidos da tela pertencem a um fluxograma de **outro cliente** exibido como exemplo — vocabulário do mecanismo, não configuração confirmada do C6.
 
 ## Termos de `MCB - QISTA.mp4`
 
