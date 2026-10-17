@@ -1,38 +1,49 @@
-> **Status:** hipótese de teste extraída de conversa; não é configuração aprovada nem instrução de produção.
+> **Status:** fonte primária conferida byte a byte; o conteúdo demonstrado é um **fluxograma de outro cliente** e uma **conversa de desenho de teste**. Nenhuma configuração, cadastro ou integração é executada na gravação. Nada aqui autoriza alterar esteiras, parâmetros ou ambientes.
 
 # Procedimentos — MICHELLE CTC PORTABILIDADE REFIN.mp4
 
-A gravação descreve um processo conceitual e uma possível configuração de esteiras. O desenho mencionado é de outro cliente. Não há capturas, tela de produto, status técnico verificado ou execução de teste nesta análise. Antes de alterar qualquer configuração, validar o fluxo C6 vigente com o responsável técnico e de negócio.
+A gravação contém **um mecanismo descrito** (Fluxo A, lido do desenho de exemplo) e **um teste proposto** (Fluxo B, apenas falado). Não há demonstração em tela de sistema, nem resultado esperado aprovado. Use este documento para reconhecer o mecanismo e preparar a validação — não para executar.
 
-## Fluxo A — Modelo conceitual falado (não executar como runbook)
+## Fluxo A — Mecanismo de coordenação no desenho de exemplo (observação)
 
-1. **Vínculo de propostas:** a conversa descreve uma proposta de portabilidade associada a um refim e sugere que a jornada possa gerar dois registros/propostas (**00:01:00–00:01:22; 00:12:50–00:13:18**).
-2. **Coordenação das esteiras:** portabilidade e refim são descritos como fluxos distintos que precisam coordenar seus estados (**00:00:24–00:00:36**). A quantidade de esteiras e a divisão por produto/convênio variam na própria conversa (**00:10:34–00:12:14**).
-3. **Acionamento:** é mencionado um processo com nome aproximado “CTC aciona refim” que acionaria o avanço da esteira de refim (**00:01:07–00:01:22; 00:05:31–00:06:00**). O nome e o comportamento não foram confirmados na tela.
-4. **Ponto de espera:** a conversa contrapõe “aguarda análise de refim de portabilidade” a “aguarda alteração unificada” (**00:07:25–00:07:47**). A etapa correta para o cenário C6 está pendente de confirmação.
-5. **Validação de consistência:** a justificativa falada é evitar avançar a portabilidade/gerar a CCB antes de validar os valores do refim (**00:03:36–00:04:59**). Quais valores, estados e eventos são necessários não é especificado.
+- **Objetivo (do desenho):** coordenar a proposta de portabilidade e a(s) proposta(s) de refinanciamento vinculadas, de modo que a CCB só seja gerada com valores já validados (`00:03:36–00:04:59`). ⚠️ Desenho de **outro cliente** (`00:00:05–00:00:23`).
+- **Pré-condições (no desenho):** proposta de portabilidade cadastrada e retornada do CTC/Núclea (`00:00:36–00:00:58`); refinanciamento vinculado à portabilidade (`00:01:07`).
+- **Sequência lida da tela:**
+  1. Faixa da portabilidade: `Envio/Aguarda Retorno da Núclea` → `CTC – Atualizar Proposta com NU da Portabilidade` → `CTC - Verificação de Alteração de Saldo e Prazo` (divergência → `Pendente` → `Recálculo de PMT e Prazo da Portabilidade`) — `00:00:36–00:00:58`; capturas em [`capturas.md`](capturas.md).
+  2. Losango **`Tem Refin Vinculado?`** — sem refim, a proposta “seguirá o fluxo de uma portabilidade "pura"” (nuvem do desenho); com refim, segue pelo ramo **Sim** (`00:01:00–00:01:22`).
+  3. **`CTC – Aciona Esteira de Refinanciamento (CTCACIPROPREF)`**: processo sem tela que só aciona o refim quando passa por ele a **última** portabilidade vinculada; a anotação do desenho exige o parâmetro de rotina **`G_AVERERR`** desligado para não validar a averbação nesse momento (`00:01:11–00:02:30`; captura 02).
+  4. A esteira do refim anda (faixa própria: `Início da Esteira` → `Analise de Crédito` → … → `CTC - Validação de Refinanciamento de Portabilidade Após retorno da CIP (AJREFPORT)` → `Notifica as Condições Aprovadas` → documentos no SIC/CCB), enquanto a portabilidade…
+  5. …**para** em **`CTC – Aguarda Analise do Refin de Portabilidade (CTCAGANREFIN)`**, “que permite o bloqueio da proposta de portabilidade de acordo com a situação da proposta de refinanciamento vinculada a ela” (nuvem do desenho; `00:03:15–00:03:36`; captura 03).
+- **Decisões registradas:** quem decide a parada é a **próxima etapa configurada** após o acionamento — o processo de acionamento, por si, “só aciona, ele não valida” (`00:05:31–00:06:00`).
+- **Validação:** nenhuma. O desenho não é executado e o fluxo do cliente-alvo não é exibido.
+- **Resultado:** compreensão do mecanismo; nada pode ser transplantado para o C6 sem o fluxo vigente.
 
-## Fluxo B — Proposta de teste a confirmar em sandbox
+## Fluxo B — Teste proposto na conversa — **NÃO EXECUTADO**
 
-A transcrição permite registrar somente uma hipótese para desenho de teste:
+- **Objetivo do teste:** verificar se, apontando a etapa seguinte ao acionamento para a espera desejada pelo banco, a portabilidade consegue **continuar andando sem dependência** do refim (`00:07:47–00:08:29`).
+- **Pré-condições combinadas verbalmente:**
+  - ambiente de teste da equipe (sem CTC configurado — limitação declarada em `00:09:23–00:09:30`);
+  - **duas esteiras** distintas (a equipe não separa esteiras por tipo de proposta: `00:11:14–00:11:29`), obtidas com **convênios e produtos diferentes** para portabilidade e refim (`00:11:00–00:11:57`);
+  - uma “esteirinha bem pequenininha”: `Analise de Crédito` + processo de acionamento + etapa de aguardo (e, se fizer sentido, notificação/liberação), **sem** os processos de CTC que chamam a integração real (`00:14:21–00:15:28`).
+- **Sequência falada:**
+  1. Cadastrar a portabilidade na **tela de cadastro normal** e gravar; no **pop-up**, aceitar fazer o refinanciamento da proposta; gravar o refim; ao final o sistema mostra **dois números de proposta** (`00:12:48–00:13:18`).
+  2. Andar com as **duas propostas até a análise de crédito**, “não vou averbar nem nada” (`00:06:39–00:07:02`; `00:10:22–00:10:28`).
+  3. Deixar o **refim parado na análise de crédito** (“ele pode estar na análise de crédito… não precisa estar nenhum [outro processo]”, `00:07:02–00:07:22`).
+  4. Na esteira da portabilidade, **pular os processos de CTC** de atualização/envio e colocar o processo de acionamento (“CTC atualiza, envio, tudo isso aqui você pula; você só vai colocar isso aqui, aciona esteira de referenciamento”, `00:09:38–00:09:50`).
+  5. Configurar como próxima etapa (“verdadeira”) a espera em discussão — na fala, o **“aguarda tela unificada”** no lugar do “aguarda análise de refim de portabilidade” do desenho (`00:07:22–00:07:47`).
+  6. Observar se, após o acionamento, a portabilidade **anda para a próxima etapa sem parar** por dependência do refim (`00:07:47–00:08:36`).
+- **Responsáveis combinados:** Santana executa, William acompanha para aprender; andamento reportado por mensagem ao grupo (`00:08:47–00:09:23`; `00:13:36–00:13:45`). Sem urgência (`00:13:47–00:13:54`).
+- **Validação prevista:** apenas observação do comportamento das duas propostas; **não há critério de aceite escrito, massa de teste definida nem forma de restaurar a esteira** registrados na conversa.
+- **Exceções e bloqueios:**
+  - não é possível exercitar o CTC real naquele ambiente (“você não vai usar nada [do CTC]… você vai pular”, `00:09:28–00:09:32`) — limitação do teste, **não** autorização para contornar integração fora de sandbox aprovado;
+  - a etapa de espera correta para o C6 (“aguarda alteração/tela unificada”) **não aparece no desenho** e não foi confirmada em sistema;
+  - o comportamento com **várias portabilidades para um mesmo refim** (regra da “última proposta”, `00:02:00–00:02:30`) não entra no cenário combinado.
 
-- criar, em ambiente de teste autorizado, um caso de portabilidade com refim associado e confirmar se surgem dois registros de proposta;
-- definir com o responsável se os fluxos precisam de esteiras distintas para isolar os comportamentos;
-- confirmar a etapa de acionamento e a etapa de espera que devem ser exercitadas;
-- verificar o status de cada proposta e a consistência dos dados da CCB antes de permitir qualquer avanço posterior.
+## O que falta para aprovar qualquer procedimento
 
-**Bloqueios antes de executar:** o responsável deve confirmar o diagrama específico do C6, as etapas e nomes oficiais, os status permitidos, o isolamento dos dados e como restaurar a configuração. O teste não foi executado nesta análise e não há resultado esperado aprovado.
+1. Obter o **fluxo e a configuração vigentes do cliente-alvo** (o desenho exibido é de outro cliente — `00:00:05–00:00:23`).
+2. Confirmar **nomes oficiais e mnemônicos** dos processos no ambiente (os lidos da tela pertencem ao desenho de exemplo) e a existência/semântica da etapa “unificada”.
+3. Decidir, com o negócio, a **regra de dependência** entre portabilidade e refim, incluindo o caso de múltiplas portabilidades e o status que libera o avanço (a fala cita “integrada”, sem confirmação).
+4. Definir pré-condições, entradas, resultados esperados, critérios de parada, restauração da esteira e evidências — e só então executar em sandbox aprovado.
 
-### Limite sobre CTC
-
-Os interlocutores dizem que não conseguiriam exercitar o CTC naquele momento e sugerem pular etapas de CTC no teste (**00:06:39–00:06:49; 00:09:23–00:09:46**). Isso é uma limitação/contexto daquele ambiente, não autorização para contornar CTC em produção. Qualquer simulação deve ocorrer somente em sandbox e ser aprovada.
-
-## O que falta para aprovar o procedimento
-
-- obter o fluxo e a configuração atuais do cliente-alvo; não usar o desenho de outro cliente;
-- confirmar a nomenclatura e a função de “CTC aciona refim”, “aguarda alteração unificada”, “aguarda análise” e demais processos;
-- resolver se a regra exige dependência entre as duas propostas ou se a portabilidade pode avançar independentemente;
-- definir pré-condições, statuses, entradas, resultados esperados, critérios de parada e rollback;
-- executar e registrar evidências sanitizadas em ambiente autorizado.
-
-Nenhum SQL, comando de implantação ou alteração de dados foi demonstrado ou executado.
+Nenhum SQL foi demonstrado, ditado ou executado nesta gravação; nenhuma tela de produto foi aberta.

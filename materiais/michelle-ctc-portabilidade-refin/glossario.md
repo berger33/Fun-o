@@ -1,17 +1,30 @@
 # Glossário — MICHELLE CTC PORTABILIDADE REFIN.mp4
 
-| Termo / sigla | Significado sustentado pela gravação | Categoria | Timestamp |
-|---|---|---|---|
-| **Portabilidade** | Tipo de proposta/fluxo que a conversa relaciona a um possível refim; regras e integração não são detalhadas. | NEGOCIO / PROCESSOS | 00:00:18–00:01:22 |
-| **Refim** | Abreviação oral de refinanciamento, tratado como proposta/esteira associada à portabilidade. | NEGOCIO | 00:00:18–00:01:22 |
-| **CTC** | Sigla repetida ao falar do retorno e do acionamento entre etapas; expansão/função técnica não é definida nesta gravação. | SISTEMAS / PROCESSOS | 00:00:36–00:01:22 |
-| **Esteira** | Sequência de processos/etapas pela qual as propostas avançam; o desenho mostrado é verbalmente descrito como exemplo de outro cliente. | SISTEMAS / PROCESSOS | 00:00:05–00:00:23; 00:02:00–00:03:36 |
-| **Tela unificada** | Tela de cadastro que, segundo a fala, reúne a jornada da portabilidade e do refim. Não foi inspecionada visualmente neste lote. | SISTEMAS / PROCESSOS | 00:02:40–00:03:15 |
-| **CTC aciona refim** | Nome aproximado de um processo mencionado como acionador do avanço do refim; grafia e comportamento precisam de validação. | PROCESSOS | 00:01:07–00:01:22; 00:05:31–00:06:00 |
-| **Aguarda alteração unificada** | Nome aproximado de uma etapa de espera que a conversa considera para coordenar as propostas na tela unificada. Não é uma configuração aprovada. | PROCESSOS | 00:03:02–00:03:15; 00:05:42–00:05:52 |
-| **Aguarda análise de refim de portabilidade** | Outra etapa de espera citada como alternativa; significado e grafia exata precisam ser confirmados. | PROCESSOS | 00:07:25–00:07:47 |
-| **Integrada (status)** | Exemplo de status que o refim poderia atingir antes de a portabilidade avançar; não foram apresentados códigos nem regra oficial. | PROCESSOS | 00:03:15–00:03:49 |
-| **CCB** | Documento mencionado como resultado que poderia conter valores diferentes se as etapas avançassem fora de ordem. | NEGOCIO | 00:03:49–00:04:43 |
-| **MEI (ASR)** | Sigla ou palavra reconhecida em referência a processos de CTC; significado não explicado. | DÚVIDA_OU_CONFLITO | 00:15:17–00:15:28 |
+Termos sustentados pela **fala (ASR)** e/ou pela **tela** (verificado quadro a quadro). Onde a única fonte é o ASR, o campo “Fonte” indica isso. Os rótulos de tela pertencem ao fluxograma de **outro cliente** exibido como exemplo (`00:00:05–00:00:23`) — não são, por si, a configuração do C6.
 
-Ver [`incertezas.md`](incertezas.md) para as divergências e termos cuja identificação depende de conferência na gravação.
+| Termo / sigla | Significado sustentado pela gravação | Categoria | Timestamp | Fonte |
+|---|---|---|---|---|
+| **Portabilidade** | Tipo de proposta/fluxo cuja esteira é a faixa percorrida na primeira metade do desenho; pode ter um refinanciamento vinculado. | NEGOCIO / PROCESSOS | 00:00:18–00:01:22 | tela + fala |
+| **Refim** | Abreviação oral de **refinanciamento** da portabilidade; tratado como proposta/esteira própria, vinculada à portabilidade. | NEGOCIO | 00:00:18–00:01:22 | tela + fala |
+| **Esteira** | Sequência de processos/etapas (modelo de decisão) pela qual a proposta avança; no teste discutido, portabilidade e refim exigiriam esteiras distintas. | SISTEMAS / PROCESSOS | 00:00:24–00:00:36; 00:10:34–00:12:14 | tela + fala |
+| **Cliente** | Sigla repetida para o conjunto de processos de troca/verificação com a registradora na jornada de portabilidade; a expansão da sigla não é ditada na gravação. | SISTEMAS / PROCESSOS | 00:00:36–00:01:22 | tela + fala |
+| **Núclea** | Grafia usada **no desenho** para a contraparte externa do envio/retorno (`Envio/Aguarda Retorno da Núclea`, número único retornado, saldo/prazo retornados). A fala usa “CIP” em `00:04:01`, e o próprio desenho usa “CIP” na caixa `AJREFPORT`. | SISTEMAS | 00:00:36–00:01:00; 00:04:01–00:04:28 | tela (+ fala “CIP”) |
+| **NU (número único)** | Identificador retornado pela Núclea e gravado na proposta pelo processo `CTC – Atualizar Proposta com NU da Portabilidade`. | SISTEMAS / NEGOCIO | 00:00:51–00:01:00 | tela |
+| **`CTC – Aciona Esteira de Refinanciamento` (`CTCACIPROPREF`)** | Processo **sem tela** (caixa rosa) que verifica a **última** proposta de portabilidade vinculada e só então aciona a proposta de refinanciamento; a anotação exige o parâmetro `G_AVERERR` desligado. | PROCESSOS / SISTEMAS | 00:01:11–00:02:30 | tela + fala |
+| **`G_AVERERR`** | Parâmetro de rotina citado **na nuvem do desenho**: deve estar desligado “a fim de não validar a averbação no momento de andar a esteira de refim”. Leitura da tela em dois quadros; confirmar a grafia no ambiente antes de qualquer uso. | INFRA_E_ACESSO / PROCESSOS | 00:02:00–00:02:30 | tela |
+| **`Tem Refin Vinculado?`** | Losango de decisão da faixa de portabilidade; sem refim, “a proposta seguirá o fluxo de uma portabilidade "pura"” (nuvem do desenho). | PROCESSOS | 00:01:00–00:01:22 | tela |
+| **`CTC – Aguarda Analise do Refin de Portabilidade` (`CTCAGANREFIN`)** | Processo **sem tela** (caixa rosa) que “permite o bloqueio da proposta de portabilidade de acordo com a situação da proposta de refinanciamento vinculada a ela”. | PROCESSOS / SISTEMAS | 00:03:02–00:03:36 | tela + fala |
+| **“Aguarda alteração unificada” / “aguarda tela unificada” (fala)** | Nome usado **só na fala** para a etapa de espera desejada no caminho da tela unificada do C6; **não** localizado como caixa legível no desenho exibido. Não usar como nome oficial sem confirmação. | PROCESSOS / DÚVIDA_OU_CONFLITO | 00:03:02–00:03:15; 00:05:42–00:05:52; 00:07:25–00:07:47 | fala (ASR) |
+| **Tela unificada** | Tela do C6 que, segundo a fala, cadastra refim e portabilidade juntos, em contraste com a “tela de cadastro normal”. Não é exibida. | SISTEMAS / PROCESSOS | 00:02:40–00:03:15 | fala (ASR) |
+| **`CTC - Verificação de Alteração de Saldo e Prazo`** | Processo sem tela que compara saldo/prazo retornados pela Núclea com os valores digitados; divergência direciona a proposta a `Pendente`; também atualiza os dados bancários da instituição originadora (nuvem do desenho). | PROCESSOS / NEGOCIO | 00:00:51–00:01:00 | tela |
+| **`Recálculo de PMT e Prazo da Portabilidade`** | Processo sem tela que recalcula os valores da proposta com os dados retornados, “variando a quantidade de parcela e taxa para encontrar o valor da parcela” (nuvem do desenho). | PROCESSOS / NEGOCIO | 00:04:47–00:04:59 | tela |
+| **`CTC - Validação de Refinanciamento de Portabilidade Após retorno da CIP (AJREFPORT)`** | Processo **com tela** da faixa do refim que mostra os valores após o retorno da CIP e permite alterá-los (nuvem do desenho). | PROCESSOS / SISTEMAS | 00:04:01–00:04:43 | tela |
+| **`Analise de Crédito`** | Primeira caixa da faixa do refim no desenho (`Início da Esteira` → `Analise de Crédito`); no teste combinado, é o ponto até onde as duas propostas andam e onde o refim fica parado. | PROCESSOS | 00:07:02–00:07:25; 00:15:45 | tela + fala |
+| **`Aguarda Aprovação Externa (AGAPREXT)` / `Acionamento de Callback (ACNCALLBACK)`** | Caixas verdes recorrentes no desenho (espera de aprovação externa; callback — inclusive “para informar a reprovação das propostas”). Não são o foco da conversa. | SISTEMAS / PROCESSOS | 00:01:35–00:03:15 | tela |
+| **Integrada (status)** | Status que, segundo a fala, as propostas de refinanciamento deveriam atingir antes de a portabilidade avançar no caminho “normal”. Não aparece como texto no desenho. | PROCESSOS / NEGOCIO | 00:03:15–00:03:49 | fala (ASR) |
+| **CCB** | Documento da operação que poderia “sair com valores diferentes” se a portabilidade avançasse antes da validação do refim; no desenho, a geração é notificada por `Notifica a geração de documentos no SIC (CCB)`. | NEGOCIO | 00:03:49–00:04:43 | tela + fala |
+| **SIC** | Sistema citado no desenho como destino da geração de documentos (`SIC (CCB)`); não é aberto nem explicado. | SISTEMAS | 00:04:28–00:04:43 | tela |
+| **Processo sem tela / com tela** | Qualificação usada nas nuvens do desenho: processos automáticos de esteira (“sem tela”) × processo interativo de validação (`AJREFPORT`, “com tela”). Termo reutilizável para ler modelos de decisão. | SISTEMAS / PROCESSOS | 00:00:51–00:04:28 | tela |
+| **“MEI” (ASR)** | Reconhecimento em `00:15:17` e `00:15:34`; pelas cenas (apontando caixas centrais do desenho / envio do desenho), as leituras prováveis são **“do meio”** e **“no e-mail”**. Não é sigla confirmada. | DÚVIDA_OU_CONFLITO | 00:15:17–00:15:34 | fala (ASR) + contexto de tela |
+
+Ver [`incertezas.md`](incertezas.md) para divergências, termos só falados e leituras de tela com legibilidade parcial.

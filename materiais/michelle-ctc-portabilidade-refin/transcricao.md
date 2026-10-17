@@ -1,10 +1,12 @@
 # Transcrição — MICHELLE CTC PORTABILIDADE REFIN.mp4
 
-> **Transcrição automática preliminar.** Saída de `faster-whisper large-v3` em português, sem revisão lexical humana. Mantive o texto reconhecido e os timestamps sem corrigir termos por suposição. As ambiguidades de processo e vocabulário estão em [`incertezas.md`](incertezas.md); não usar a transcrição como configuração aprovada.
+> **Transcrição automática (ASR) + observação de tela.** O texto de fala abaixo foi copiado da execução `faster-whisper large-v3` em português. Os timestamps e as palavras reconhecidas foram preservados, inclusive erros evidentes de reconhecimento (por exemplo “Porsche mais refim” em `00:10:00`, “exportabilidade” em `00:10:49`); as leituras confirmadas contra a tela estão em [`glossario.md`](glossario.md) e em [`incertezas.md`](incertezas.md). Não use este arquivo isoladamente como instrução operacional.
 
-- **Fonte:** `MICHELLE CTC PORTABILIDADE REFIN.mp4` — 473540507 bytes; SHA-256 declarado pelo processamento `621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493` (confere com o ponteiro LFS e o manifesto; os bytes do vídeo não foram baixados neste lote).
-- **Cobertura ASR:** 388 segmentos, de `00:00:00` a `00:16:50.26`; duração de áudio declarada `00:16:56.62`.
-- **Falantes:** não identificados. Não atribuí falas a pessoas específicas.
+- **Fonte:** `MICHELLE CTC PORTABILIDADE REFIN.mp4` — 473540507 bytes; SHA-256 `621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493` (conferido byte a byte nesta análise).
+- **Contêiner:** H.264 1186×710 30 fps; áudio AAC 48 kHz estéreo; duração `00:16:56.62`.
+- **Cobertura da fala:** primeiro segmento em `00:00:00`; último em `00:16:48.56–00:16:50.26`. Conferência técnica nesta análise: com limiar de `-60 dB` (a gravação é baixa: pico de `-31,0 dB`, média de `-51,8 dB`) foram detectadas 41 regiões de silêncio de pelo menos 1 s e **nenhum trecho audível com mais de 4 s ficou sem segmento de ASR**; a maior pausa entre segmentos consecutivos é de 3,0 s. A faixa fica em silêncio a partir de `00:16:50.28`, com um ruído breve não verbal em torno de `00:16:55.7` (máximo de `-42,9 dB` após o fim da fala). Isso não substitui escuta humana, mas indica que a ASR cobre toda a fala acima do limiar.
+- **Falantes:** não identificados segmento a segmento. A apresentadora do desenho é Michelle (compartilhando a tela); os demais participantes fazem perguntas e combinam o teste. Falas não são atribuídas nominalmente neste arquivo.
+- **Tela:** durante toda a gravação a tela compartilhada é uma única imagem de fluxograma (arquivo `…portabilidade-Refin - Port.drawio.png`, aberto no visualizador de fotos), que a própria apresentadora declara ser desenho feito para **outro cliente** — ver a tabela de cenas ao final. Nenhuma tela de sistema é aberta e nenhuma configuração é executada.
 
 ## Fala reconhecida (ASR, sem correções inferidas)
 
@@ -396,3 +398,23 @@
 [00:16:44] então beleza, é isso
 [00:16:46] qualquer coisa é só chamar
 [00:16:48] obrigada
+
+
+## Cenas observadas na tela (amostragem verificada quadro a quadro)
+
+A revisão visual foi feita por amostragem de 203 quadros (1 quadro a cada 5 s em toda a gravação) mais 15 quadros dirigidos entre `00:02:55–00:03:40` (1 a cada 3 s). Cada linha foi conferida contra o quadro do timestamp indicado antes de ser rotulada. A tela é o compartilhamento da apresentadora em uma reunião; a coluna de participantes (câmeras/avatares) **não** é publicada em nenhuma captura (ver [`capturas.md`](capturas.md)).
+
+| Timestamp | Cena observada | Observação |
+|---|---|---|
+| `00:00:00–00:00:10` | Janela de reunião sobre a área de trabalho; o compartilhamento abre o visualizador de fotos com o fluxograma (janela pequena, maximizada em seguida). No título lê-se, em parte, `…portabilidade-Refin - Port.drawio.png`. | Barra de tarefas da estação indica `20/08/2026 12:15`; não é reproduzida nas capturas. |
+| `00:00:15–00:00:55` | Zoom (~239%) sobre o início da faixa de portabilidade: `Envio/Aguarda Retorno da Núclea` → `CTC – Atualizar Proposta com NU da Portabilidade` → `CTC - Verificação de Alteração de Saldo e Prazo` → `Pendente` / `Recálculo de PMT e Prazo da Portabilidade`. | Três nuvens de anotação legíveis descrevem esses processos (transcritas no guia §2.2). |
+| `00:01:00–00:01:55` | Deslocamento para o losango **`Tem Refin Vinculado?`** e para a caixa rosa **`CTC – Aciona Esteira de Refinanciamento (CTCACIPROPREF)`**; acima, `Aguarda Aprovação Externa (AGAPREXT)` e `Acionamento de Callback (ACNCALLBACK)`. | Nuvem ao lado do losango: “Caso não exista refin vinculado a proposta seguirá o fluxo de uma portabilidade "pura".” (captura 01). |
+| `00:02:00–00:02:55` | Foco na caixa `CTC – Aciona Esteira de Refinanciamento` e na nuvem abaixo dela, que cita o parâmetro de rotina `G_AVERERR`. | Texto integral da nuvem no guia §2.3 (captura 02). |
+| `00:03:00–00:03:55` | Pan para a caixa rosa **`CTC – Aguarda Analise do Refin de Portabilidade (CTCAGANREFIN)`** e sua nuvem de bloqueio. À direita, parcialmente cobertas pela coluna de participantes, caixas de notificação de formalização e de callback. | É neste trecho que a fala contrapõe “aguarda alteração unificada” e “aguarda análise”; **nenhuma caixa “unificada” é enquadrada** (captura 03). |
+| `00:04:00–00:04:55` | Faixa do refinanciamento: caixa rosa anotada `Parada na esteira para evitar andamento enquanto não retorna o saldo` → `CTC - Validação de Refinanciamento de Portabilidade Após retorno da CIP (AJREFPORT)` → `Notifica as Condições Aprovadas` → losango `Condições aprovadas?` → `Notifica a geração de documentos no SIC (CCB)`. | A nuvem sobre a validação diz ser um processo **com tela** que mostra os valores após o retorno da CIP e permite alterá-los. |
+| `00:05:00–00:06:55` | Retorno à caixa `CTC – Aciona Esteira de Refinanciamento` e à sua nuvem; o mouse percorre a caixa e a linha do `Sim`. | Corresponde à fala sobre apontar a próxima etapa (“verdadeira”) para o processo de espera desejado. |
+| `00:07:00–00:09:20` | Zoom afastado (100%–170%): o desenho inteiro aparece em **duas faixas horizontais** separadas por uma linha, com conectores tracejados entre as faixas; o título do visualizador (`portabilidade-Refin - Port.drawio.png`) fica visível. | Os rótulos verticais das faixas não são legíveis nos quadros amostrados. |
+| `00:09:25–00:12:15` | Navegação pelo início das faixas (região de `Analise de Crédito` e das caixas do CTC) enquanto o passo a passo do teste é combinado. | Nenhuma tela de sistema é aberta; o teste é só **falado**. |
+| `00:12:20–00:14:55` | Desenho praticamente parado na região `Tem Refin Vinculado?` → `CTC – Aciona…`; conversa sobre o cadastro com pop-up e os dois números de proposta. | Sem demonstração visual do cadastro. |
+| `00:15:00–00:16:40` | Pan pelo início da faixa do refin: círculo `Início da Esteira` → `Analise de Crédito` → losango `Existe regras de validação?` (Sim → `Reprova Proposta` + callback; Não → caixa rosa de parada). | Base do desenho da “esteirinha” de teste discutida na fala (captura 04). |
+| `00:16:40–00:16:56` | Encerramento: mouse sobre os controles da reunião; a fala termina em `00:16:50`. | Sem áudio após `00:16:50.28`, exceto ruído breve não verbal (~`00:16:55.7`). |

@@ -1,13 +1,21 @@
-# MICHELLE CTC PORTABILIDADE REFIN.mp4 — análise em revisão
+# MICHELLE CTC PORTABILIDADE REFIN.mp4 — análise concluída
 
-Esta pasta contém a transcrição automática e uma primeira síntese da conversa sobre portabilidade e refinanciamento (`refim`). **Não é um procedimento operacional aprovado.** A própria fala diz que o desenho de esteira apresentado é de outro cliente e não representa exatamente o C6; termos de processo e condições de teste precisam de validação humana.
+Esta pasta reúne a transcrição e a organização do conhecimento da gravação, agora analisada a partir da **fonte primária** (bytes baixados e conferidos), com revisão visual quadro a quadro do fluxograma compartilhado.
 
-- **Fonte:** `MICHELLE CTC PORTABILIDADE REFIN.mp4` — 473540507 bytes; SHA-256 `621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493`.
-- **Integridade:** o tamanho e o OID SHA-256 do ponteiro LFS em `MICHELLE CTC PORTABILIDADE REFIN.mp4` coincidem com `manifesto.csv` e com os metadados da transcrição anterior. Os bytes do vídeo não foram baixados nem re-hashados neste lote; a execução anterior registrou a conferência da fonte.
-- **Transcrição:** `faster-whisper` `large-v3`, português, 388 segmentos; duração de áudio declarada `00:16:56.62`; último segmento em `00:16:48.56–00:16:50.26`.
-- **Cobertura:** transcrição automática copiada da execução anterior. Não houve escuta humana integral nem inspeção visual do desenho/telas neste lote.
-- **Escopo e cautela:** transcrição e análise em [`transcricao.md`](transcricao.md), [`guia_de_estudo.md`](guia_de_estudo.md), [`procedimentos.md`](procedimentos.md), [`perguntas.md`](perguntas.md), [`glossario.md`](glossario.md), [`incertezas.md`](incertezas.md), [`metadados.md`](metadados.md) e [`capturas.md`](capturas.md). Não há imagens: `capturas.md` registra a ausência de capturas neste lote.
-- **Validação local (2026-10-14):** `python3 tools/validar_materiais.py --video michelle-ctc-portabilidade-refin` — 9 verificações ok, 0 avisos, 0 falhas e 0 achados automatizados de privacidade. Resultado heurístico; não substitui escuta/revisão humana.
-- **Estado:** `em revisão`. A distinção entre as duas esteiras, os nomes dos processos, o comportamento de espera e o cenário de teste precisam de confirmação com a fonte e com o responsável técnico.
+- **Fonte:** `MICHELLE CTC PORTABILIDADE REFIN.mp4` — 473540507 bytes; SHA-256 `621565bd87d2c0240cc9c1802ab8509363095a69dd63d3ebe24fb6181a5b2493` (idêntico ao ponteiro LFS e ao manifesto). Duração `00:16:56.62`; fala até `00:16:50.26`.
+- **Transcrição:** `faster-whisper` `large-v3`, `pt`, 388 segmentos. Conferência de cobertura: nenhum trecho audível (limiar `-60 dB`) com mais de 4 s ficou sem segmento de ASR; TXT/SRT/VTT desta coleta são byte a byte idênticos aos da execução anterior.
+- **O que a gravação ensina:** o mecanismo de coordenação entre portabilidade e refim desenhado no fluxograma — o losango `Tem Refin Vinculado?`, o acionamento `CTC – Aciona Esteira de Refinanciamento (CTCACIPROPREF)` (regra da “última proposta” + parâmetro `G_AVERERR`) e a espera `CTC – Aguarda Analise do Refin de Portabilidade (CTCAGANREFIN)` — e o desenho verbal de um teste (duas propostas, duas esteiras, parada na análise de crédito).
+- **Cautela central:** o fluxograma exibido é, por declaração da autora, desenho feito para **outro cliente** — **não** é a esteira do C6 (`00:00:05–00:00:23`). A regra de dependência entre as propostas **não foi decidida** na reunião, a etapa “unificada” só existe na fala e o teste foi apenas delegado, não executado. Não replique configuração nem “pule” o CTC fora de sandbox aprovado com base nesta gravação.
+- **Privacidade:** 4 capturas publicadas, recortadas no fluxograma (sem participantes, sem nomes completos, sem barra de tarefas, sem identificação de cliente). Detalhes e omissões em [`capturas.md`](capturas.md).
 
-A conversa propõe hipóteses de configuração/teste. Não replique para produção, não altere esteiras e não pule integração real de CTC com base apenas nesta gravação.
+## Arquivos de análise
+
+- [`transcricao.md`](transcricao.md) — fala reconhecida com timestamps + **cenas observadas na tela** (tabela verificada quadro a quadro).
+- [`guia_de_estudo.md`](guia_de_estudo.md) — síntese com timestamps: as duas faixas do desenho, as nuvens transcritas literalmente, o problema do cliente e o teste combinado.
+- [`procedimentos.md`](procedimentos.md) — mecanismo do desenho (observação) e o teste proposto marcado como **não executado**, com bloqueios.
+- [`perguntas.md`](perguntas.md) — 18 perguntas com respostas e timestamps.
+- [`glossario.md`](glossario.md) — termos e siglas sustentados por fala e/ou tela, com a fonte indicada.
+- [`incertezas.md`](incertezas.md) — conflitos, termos só falados, cobertura de áudio e decisões de privacidade.
+- [`metadados.md`](metadados.md) — origem, integridade, coleta dos ramos temporários, processamento, auditorias e limitações.
+- [`capturas.md`](capturas.md) + [`capturas/`](capturas/) — 4 imagens sanitizadas com legenda, timestamp e finalidade.
+- Artefatos brutos preservados: `transcricao_bruta.txt`, `transcricao.srt`, `transcricao.vtt`, `transcricao_meta.json`.
